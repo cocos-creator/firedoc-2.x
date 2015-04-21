@@ -1,14 +1,16 @@
-YUIDoc
+FireDoc
 ======
 
 YUI's JavaScript Documentation engine.
 
-[![npm Version](https://img.shields.io/npm/v/yuidocjs.svg?style=flat-square)](https://www.npmjs.org/package/yuidocjs)
-[![Build Status](http://img.shields.io/travis/yui/yuidoc.svg?style=flat-square)](https://travis-ci.org/yui/yuidoc)
-[![Dependency Status](https://img.shields.io/david/yui/yuidoc.svg?style=flat-square)](https://david-dm.org/yui/yuidoc)
+[![npm Version](https://img.shields.io/npm/v/firedoc.svg?style=flat-square)](https://www.npmjs.org/package/firedoc)
+[![Build Status](http://img.shields.io/travis/fireball-x/firedoc.svg?style=flat-square)](https://travis-ci.org/fireball-x/firedoc)
+[![Dependency Status](https://img.shields.io/david/fireball-x/firedoc.svg?style=flat-square)](https://david-dm.org/fireball-x/firedoc)
 
 Overview
 --------
+
+FireDoc is forked from YUIDoc.
 
 YUIDoc is a [Node.js](http://nodejs.org/) application used at build time to
 generate API documentation for JavaScript code. YUIDoc is comment-driven and supports a wide
