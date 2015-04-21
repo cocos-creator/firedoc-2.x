@@ -1,7 +1,7 @@
 {
-  "name": "yuidocjs",
-  "version": "0.6.0",
-  "description": "YUIDoc, YUI's JavaScript Documentation engine.",
+  "name": "fireball-docx",
+  "version": "0.6.1",
+  "description": "Fireball-Docx, Fireball-x's JavaScript Documentation engine forked from YUI.",
   "author": "Dav Glass <davglass@gmail.com>",
   "bugs": {
     "url": "http://github.com/yui/yuidoc/issues"
@@ -50,6 +50,10 @@
     {
       "name": "Thomas Boyt",
       "email": "me@thomasboyt.com"
+    },
+    {
+      "name": "Yorkie Liu",
+      "email": "yorkiefixer@gmail.com"
     }
   ],
   "engines": {
