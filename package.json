@@ -1,7 +1,7 @@
 {
-  "name": "fireball-docx",
-  "version": "0.6.1",
-  "description": "Fireball-Docx, Fireball-x's JavaScript Documentation engine forked from YUI.",
+  "name": "firedoc",
+  "version": "0.6.2",
+  "description": "Fire Doc, Fireball-x's JavaScript Documentation engine forked from YUI.",
   "author": "Dav Glass <davglass@gmail.com>",
   "bugs": {
     "url": "http://github.com/yui/yuidoc/issues"
@@ -71,7 +71,7 @@
   ],
   "main": "./lib/index",
   "bin": {
-    "yuidoc": "./lib/cli.js"
+    "firedoc": "./lib/cli.js"
   },
   "dependencies": {
     "express": "^4.12.3",
