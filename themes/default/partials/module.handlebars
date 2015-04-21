@@ -55,6 +55,32 @@
 
 <div class="yui3-g">
     <div class="yui3-u-1-2">
+    {{#if moduleProperties}}
+        <p>This module provides the following properties:</p>
+        <ul class="module-classes">
+        {{#moduleProperties}}
+            {{>props}}
+        {{/moduleProperties}}
+        </ul>
+    {{/if}}
+    </div>
+</div>
+
+<div class="yui3-g">
+    <div class="yui3-u-1-2">
+    {{#if moduleMethods}}
+        <p>This module provides the following methods:</p>
+        <ul class="module-classes">
+        {{#moduleMethods}}
+            {{>method}}
+        {{/moduleMethods}}
+        </ul>
+    {{/if}}
+    </div>
+</div>
+
+<div class="yui3-g">
+    <div class="yui3-u-1-2">
         {{#if moduleClasses}}
             <p>This module provides the following classes:</p>
 
