@@ -1,4 +1,5 @@
 *.swp
+*.DS_Store
 out
 node_modules
 coverage
