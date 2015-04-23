@@ -53,151 +53,170 @@
     {{{classDescription}}}
 </div>
 
+<!-- Class member index -->
+
+<a name="index" class="anchor-link"></a>
+<div class="index">
+<h2>Index</h2>
+
+{{>options}}
+
+{{#if properties}}
+    <div class="index-section properties">
+        <h3>Properties</h3>
+
+        <ul class="index-list properties{{#if extends}} extends{{/if}}">
+            {{#properties}}
+                <li class="index-item property{{#if access}} {{access}}{{/if}}{{#if deprecated}} deprecated{{/if}}{{#if overwritten_from}} inherited{{/if}}{{#if extended_from}} inherited{{/if}}">
+                    <a href="#property_{{name}}">{{name}}</a>
+
+                    {{#if static}}
+                        <span class="flag static">static</span>
+                    {{/if}}
+                </li>
+            {{/properties}}
+        </ul>
+    </div>
+{{/if}}
+
+{{#if attrs}}
+    <div class="index-section attrs">
+        <h3>Attributes</h3>
+
+        <ul class="index-list attrs{{#if extends}} extends{{/if}}">
+            {{#attrs}}
+                <li class="index-item attr{{#if access}} {{access}}{{/if}}{{#if deprecated}} deprecated{{/if}}{{#if overwritten_from}} inherited{{/if}}{{#if extended_from}} inherited{{/if}}">
+                    <a href="#attr_{{name}}">{{name}}</a>
+                </li>
+            {{/attrs}}
+        </ul>
+    </div>
+{{/if}}
+
+
+{{#if methods}}
+    <div class="index-section methods">
+        <h3>Methods</h3>
+
+        <ul class="index-list methods{{#if extends}} extends{{/if}}">
+
+            {{#is_constructor}}
+                <li class="index-item method{{#if access}} {{access}}{{/if}}{{#if deprecated}} deprecated{{/if}} constructor">
+                    <a href="#method_{{name}}">{{name}}</a>
+
+                    <span class="flag constructor">constructor</span>
+
+                    {{#if static}}
+                        <span class="flag static">static</span>
+                    {{/if}}
+                    {{#if deprecated}}
+                        <span class="flag deprecated">deprecated</span>
+                    {{/if}}
+                </li>
+            {{/is_constructor}}
+
+            {{#methods}}
+                <li class="index-item method{{#if access}} {{access}}{{/if}}{{#if deprecated}} deprecated{{/if}}{{#if overwritten_from}} inherited{{/if}}{{#if extended_from}} inherited{{/if}}">
+                    <a href="#method_{{name}}">{{name}}</a>
+
+                    {{#if static}}
+                        <span class="flag static">static</span>
+                    {{/if}}
+                    {{#if deprecated}}
+                        <span class="flag deprecated">deprecated</span>
+                    {{/if}}
+                </li>
+            {{/methods}}
+        </ul>
+    </div>
+{{/if}}
+
+{{#if events}}
+        <div class="index-section events">
+            <h3>Events</h3>
+
+            <ul class="index-list events{{#if extends}} extends{{/if}}">
+                {{#events}}
+                    <li class="index-item event{{#if access}} {{access}}{{/if}}{{#if deprecated}} deprecated{{/if}}{{#if overwritten_from}} inherited{{/if}}{{#if extended_from}} inherited{{/if}}">
+                        <a href="#event_{{name}}">{{name}}</a>
+
+                        {{#if static}}
+                            <span class="flag static">static</span>
+                        {{/if}}
+                        {{#if deprecated}}
+                            <span class="flag deprecated">deprecated</span>
+                        {{/if}}
+                    </li>
+                {{/events}}
+            </ul>
+        </div>
+    {{/if}}
+</div>
+
+
+<div class="class-detail">
+
+{{#if properties}}
+    <div class="properties-detail">
+        <h2>Properties</h2>
+
+        {{#properties}}
+            {{>props}}
+        {{/properties}}
+
+        <div class="no-visible-items-message">
+            <p>There are no properties that match your current filter settings. You can change your filter settings in the index section on this page. <a href="#index" class="index-jump-link">index</a></p>
+        </div>
+
+    </div>
+{{/if}}
+
+{{#if attrs}}
+    <div class="attrs-detail">
+        <h2>Attributes</h2>
+
+        {{#attrs}}
+            {{>attrs}}
+        {{/attrs}}
+    </div>
+{{/if}}
+
 {{#is_constructor}}
     <div class="constructor">
         <h2>Constructor</h2>
-{{>method}}
+        {{>method}}
     </div>
 {{/is_constructor}}
 
-<div id="classdocs" class="tabview">
-    <ul class="api-class-tabs">
-        <li class="api-class-tab index"><a href="#index">Index</a></li>
+{{#if methods}}
+    <div class="methods-detail">
+        <h2>Methods</h2>
 
-        {{#if methods}}
-            <li class="api-class-tab methods"><a href="#methods">Methods</a></li>
-        {{/if}}
-        {{#if properties}}
-            <li class="api-class-tab properties"><a href="#properties">Properties</a></li>
-        {{/if}}
-        {{#if attrs}}
-            <li class="api-class-tab attrs"><a href="#attrs">Attributes</a></li>
-        {{/if}}
-        {{#if events}}
-            <li class="api-class-tab events"><a href="#events">Events</a></li>
-        {{/if}}
-    </ul>
+        {{#methods}}
+            {{>method}}
+        {{/methods}}
 
-    <div>
-        <div id="index" class="api-class-tabpanel index">
-            <h2 class="off-left">Item Index</h2>
-
-            {{#if methods}}
-                <div class="index-section methods">
-                    <h3>Methods</h3>
-
-                    <ul class="index-list methods{{#if extends}} extends{{/if}}">
-                        {{#methods}}
-                            <li class="index-item method{{#if access}} {{access}}{{/if}}{{#if deprecated}} deprecated{{/if}}{{#if overwritten_from}} inherited{{/if}}{{#if extended_from}} inherited{{/if}}">
-                                <a href="#method_{{name}}">{{name}}</a>
-
-                                {{#if static}}
-                                    <span class="flag static">static</span>
-                                {{/if}}
-                                {{#if deprecated}}
-                                    <span class="flag deprecated">deprecated</span>
-                                {{/if}}
-                            </li>
-                        {{/methods}}
-                    </ul>
-                </div>
-            {{/if}}
-
-            {{#if properties}}
-                <div class="index-section properties">
-                    <h3>Properties</h3>
-
-                    <ul class="index-list properties{{#if extends}} extends{{/if}}">
-                        {{#properties}}
-                            <li class="index-item property{{#if access}} {{access}}{{/if}}{{#if deprecated}} deprecated{{/if}}{{#if overwritten_from}} inherited{{/if}}{{#if extended_from}} inherited{{/if}}">
-                                <a href="#property_{{name}}">{{name}}</a>
-
-                                {{#if static}}
-                                    <span class="flag static">static</span>
-                                {{/if}}
-                                {{#if deprecated}}
-                                    <span class="flag deprecated">deprecated</span>
-                                {{/if}}
-                            </li>
-                        {{/properties}}
-                    </ul>
-                </div>
-            {{/if}}
-
-            {{#if attrs}}
-                <div class="index-section attrs">
-                    <h3>Attributes</h3>
-
-                    <ul class="index-list attrs{{#if extends}} extends{{/if}}">
-                        {{#attrs}}
-                            <li class="index-item attr{{#if access}} {{access}}{{/if}}{{#if deprecated}} deprecated{{/if}}{{#if overwritten_from}} inherited{{/if}}{{#if extended_from}} inherited{{/if}}">
-                                <a href="#attr_{{name}}">{{name}}</a>
-                            </li>
-                        {{/attrs}}
-                    </ul>
-                </div>
-            {{/if}}
-
-            {{#if events}}
-                <div class="index-section events">
-                    <h3>Events</h3>
-
-                    <ul class="index-list events{{#if extends}} extends{{/if}}">
-                        {{#events}}
-                            <li class="index-item event{{#if access}} {{access}}{{/if}}{{#if deprecated}} deprecated{{/if}}{{#if overwritten_from}} inherited{{/if}}{{#if extended_from}} inherited{{/if}}">
-                                <a href="#event_{{name}}">{{name}}</a>
-
-                                {{#if static}}
-                                    <span class="flag static">static</span>
-                                {{/if}}
-                                {{#if deprecated}}
-                                    <span class="flag deprecated">deprecated</span>
-                                {{/if}}
-                            </li>
-                        {{/events}}
-                    </ul>
-                </div>
-            {{/if}}
+        <div class="no-visible-items-message">
+            <p>There are no methods that match your current filter settings. You can change your filter settings in the index section on this page. <a href="#index" class="index-jump-link">index</a></p>
         </div>
 
-        {{#if methods}}
-            <div id="methods" class="api-class-tabpanel">
-                <h2 class="off-left">Methods</h2>
-
-                {{#methods}}
-                    {{>method}}
-                {{/methods}}
-            </div>
-        {{/if}}
-
-        {{#if properties}}
-            <div id="properties" class="api-class-tabpanel">
-                <h2 class="off-left">Properties</h2>
-
-                {{#properties}}
-                    {{>props}}
-                {{/properties}}
-            </div>
-        {{/if}}
-
-        {{#if attrs}}
-            <div id="attrs" class="api-class-tabpanel">
-                <h2 class="off-left">Attributes</h2>
-
-                {{#attrs}}
-                    {{>attrs}}
-                {{/attrs}}
-            </div>
-        {{/if}}
-
-        {{#if events}}
-            <div id="events" class="api-class-tabpanel">
-                <h2 class="off-left">Events</h2>
-
-                {{#events}}
-                    {{>events}}
-                {{/events}}
-            </div>
-        {{/if}}
     </div>
+{{/if}}
+
+{{#if events}}
+    <div class="events-detail">
+        <h2>Events</h2>
+
+        {{#events}}
+            {{>events}}
+        {{/events}}
+
+        <div class="no-visible-items-message">
+            <p>There are no events that match your current filter settings. You can change your filter settings in the index section on this page. <a href="#index" class="index-jump-link">index</a></p>
+        </div>
+
+    </div>
+{{/if}}
+
 </div>
+

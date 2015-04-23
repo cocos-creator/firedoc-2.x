@@ -1,4 +1,5 @@
 <div id="api-list">
+    <h2 class="off-left">APIs</h2>
     <div id="api-tabview" class="tabview">
         <ul class="tabs">
             <li><a href="#api-classes">Classes</a></li>
@@ -12,15 +13,13 @@
         <div id="api-tabview-panel">
             <ul id="api-classes" class="apis classes">
             {{#classes}}
-                <li><a class="type" href="{{../projectRoot}}classes/{{name}}.html">
-                    {{displayName}}
-                </a></li>
+                <li><a href="{{../projectRoot}}classes/{{name}}.html">{{displayName}}</a></li>
             {{/classes}}
             </ul>
 
             <ul id="api-modules" class="apis modules">
             {{#allModules}}
-                <li><a class="module" href="{{../projectRoot}}modules/{{name}}.html">{{displayName}}</a></li>
+                <li><a href="{{../projectRoot}}modules/{{name}}.html">{{displayName}}</a></li>
             {{/allModules}}
             </ul>
         </div>

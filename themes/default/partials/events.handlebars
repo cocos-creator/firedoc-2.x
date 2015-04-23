@@ -1,6 +1,9 @@
-<div id="event_{{name}}" class="events item{{#if access}} {{access}}{{/if}}{{#if deprecated}} deprecated{{/if}}{{#if extended_from}} inherited{{/if}}">
+<a name="event_{{name}}" class="anchor-link"></a>
+<div class="events item{{#if access}} {{access}}{{/if}}{{#if deprecated}} deprecated{{/if}}{{#if extended_from}} inherited{{/if}}">
     <h3 class="name"><code>{{name}}</code></h3>
+    {{#if type}}
     <span class="type">{{#crossLink type}}{{/crossLink}}</span>
+    {{/if}}
 
     {{#if deprecated}}
         <span class="flag deprecated"{{#if deprecationMessage}} title="{{deprecationMessage}}"{{/if}}>deprecated</span>
@@ -21,7 +24,7 @@
     <div class="meta">
         {{#if overwritten_from}}
             <p>Inherited from
-            <a href="{{crossLinkRaw overwritten_from/class}}#event_{{overwritten_from/name}}">
+            <a href="{{crossLinkRaw overwritten_from/class}}#event_{{overwritten_from/name}}" class="type">
                 {{overwritten_from/class}}
             </a>
             {{#if foundAt}}
@@ -30,10 +33,10 @@
         {{else}}
             {{#if extended_from}}
                 <p>Inherited from
-                <a href="{{crossLinkRaw extended_from}}#event_{{name}}">{{extended_from}}</a>:
+                <a href="{{crossLinkRaw extended_from}}#event_{{name}}" class="type">{{extended_from}}</a>:
             {{else}}
                 {{#providedBy}}
-                    <p>Provided by the <a href="../modules/{{.}}.html">{{.}}</a> module.</p>
+                    <p>Provided by the <a href="../modules/{{.}}.html" class="module-name">{{.}}</a> module.</p>
                 {{/providedBy}}
                 <p>
                 {{#if foundAt}}
@@ -47,91 +50,94 @@
         </p>
 
         {{#if deprecationMessage}}
-            <p>Deprecated: {{deprecationMessage}}</p>
+            <p class="deprecated">Deprecated: <span class="message">{{deprecationMessage}}</span></p>
         {{/if}}
 
         {{#if since}}
-            <p>Available since {{since}}</p>
+            <p class="since">Available since <span class="message">{{since}}</span></p>
         {{/if}}
     </div>
 
-    <div class="description">
-        {{{eventDescription}}}
-    </div>
+    <div class="extended-detail">
 
-    {{#if params}}
-        <div class="params">
-            <h4>Event Payload:</h4>
-
-            <ul class="params-list">
-            {{#params}}
-                <li class="param">
-                    {{#if optional}}
-                        <code class="param-name optional">[{{name}}{{#if optdefault}}={{optdefault}}{{/if}}]</code>
-                        <span class="type">{{#crossLink type}}{{/crossLink}}</span>
-                        <span class="flag optional" title="This parameter is optional.">optional</span>
-                    {{else}}
-                        <code class="param-name">{{name}}</code>
-                        <span class="type">{{#crossLink type}}{{/crossLink}}</span>
-                    {{/if}}
-
-                    {{#if multiple}}
-                        <span class="flag multiple" title="This parameter may occur one or more times.">Multiple</span>
-                    {{/if}}
-
-                    <div class="param-description">
-                        {{{description}}}
-                    </div>
-
-                    {{#if props}}
-                        <ul class="params-list">
-                            {{#props}}
-                            <li class="param">
-                                {{#if optional}}
-                                    <code class="param-name optional">[{{name}}{{#if optdefault}}={{optdefault}}{{/if}}]</code>
-                                    <span class="type">{{#crossLink type}}{{/crossLink}}</span>
-                                    <span class="flag optional" title="This parameter is optional.">optional</span>
-                                {{else}}
-                                    <code class="param-name">{{name}}</code>
-                                    <span class="type">{{#crossLink type}}{{/crossLink}}</span>
-                                {{/if}}
-
-                                <div class="param-description">
-                                    {{{description}}}
-                                </div>
-
-                                {{#if props}}
-                                    <ul class="params-list">
-                                        {{#props}}
-                                        <li class="param">
-                                            <code class="param-name">{{name}}</code>
-                                            <span class="type">{{#crossLink type}}{{/crossLink}}</span>
-
-                                            <div class="param-description">
-                                                {{{description}}}
-                                            </div>
-                                        </li>
-                                        {{/props}}
-                                    </ul>
-                                {{/if}}
-                            </li>
-                            {{/props}}
-                        </ul>
-                    {{/if}}
-                </li>
-            {{/params}}
-            </ul>
+        <div class="description">
+            {{{eventDescription}}}
         </div>
-    {{/if}}
 
+        {{#if params}}
+            <div class="params">
+                <h4>Event Payload:</h4>
 
-    {{#example}}
-        <div class="example">
-            <h4>Example:</h4>
+                <ul class="params-list">
+                {{#params}}
+                    <li class="param">
+                        {{#if optional}}
+                            <code class="param-name optional">[{{name}}{{#if optdefault}}={{optdefault}}{{/if}}]</code>
+                            <span class="type">{{#crossLink type}}{{/crossLink}}</span>
+                            <span class="flag optional" title="This parameter is optional.">optional</span>
+                        {{else}}
+                            <code class="param-name">{{name}}</code>
+                            <span class="type">{{#crossLink type}}{{/crossLink}}</span>
+                        {{/if}}
 
-            <div class="example-content">
-                {{{.}}}
+                        {{#if multiple}}
+                            <span class="flag multiple" title="This parameter may occur one or more times.">Multiple</span>
+                        {{/if}}
+
+                        <div class="param-description">
+                            {{{description}}}
+                        </div>
+
+                        {{#if props}}
+                            <ul class="params-list">
+                                {{#props}}
+                                <li class="param">
+                                    {{#if optional}}
+                                        <code class="param-name optional">[{{name}}{{#if optdefault}}={{optdefault}}{{/if}}]</code>
+                                        <span class="type">{{#crossLink type}}{{/crossLink}}</span>
+                                        <span class="flag optional" title="This parameter is optional.">optional</span>
+                                    {{else}}
+                                        <code class="param-name">{{name}}</code>
+                                        <span class="type">{{#crossLink type}}{{/crossLink}}</span>
+                                    {{/if}}
+
+                                    <div class="param-description">
+                                        {{{description}}}
+                                    </div>
+
+                                    {{#if props}}
+                                        <ul class="params-list">
+                                            {{#props}}
+                                            <li class="param">
+                                                <code class="param-name">{{name}}</code>
+                                                <span class="type">{{#crossLink type}}{{/crossLink}}</span>
+
+                                                <div class="param-description">
+                                                    {{{description}}}
+                                                </div>
+                                            </li>
+                                            {{/props}}
+                                        </ul>
+                                    {{/if}}
+                                </li>
+                                {{/props}}
+                            </ul>
+                        {{/if}}
+                    </li>
+                {{/params}}
+                </ul>
             </div>
-        </div>
-    {{/example}}
+        {{/if}}
+
+
+        {{#example}}
+            <div class="example">
+                <h4>Example:</h4>
+
+                <div class="example-content">
+                    {{{.}}}
+                </div>
+            </div>
+        {{/example}}
+    </div>
 </div>
