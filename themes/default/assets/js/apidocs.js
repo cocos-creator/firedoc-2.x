@@ -45,6 +45,12 @@ YUI().use(
                     callbacks: defaultRoute
                 },
 
+                // -- /enum/* ----------------------------------------------------------
+                {
+                    path: '/enums/:enum.html*',
+                    callbacks: [defaultRoute, 'handleClasses']
+                },
+
                 // -- /classes/* -------------------------------------------------------
                 {
                     path: '/classes/:class.html*',
@@ -111,7 +117,7 @@ YUI().use(
         };
 
         pjax.initRoot = function() {
-            var terminators = /^(?:classes|files|modules)$/,
+            var terminators = /^(?:enums|classes|files|modules)$/,
                 parts = pjax._getPathRoot().split('/'),
                 root = [],
                 i, len, part;

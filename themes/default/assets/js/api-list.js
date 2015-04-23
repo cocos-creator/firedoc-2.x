@@ -5,6 +5,7 @@ var Lang   = Y.Lang,
 
     APIList = Y.namespace('APIList'),
 
+    enumsNode      = Y.one('#api-enums'),
     classesNode    = Y.one('#api-classes'),
     inputNode      = Y.one('#api-filter'),
     modulesNode    = Y.one('#api-modules'),
@@ -97,7 +98,14 @@ tabview.get('panelNode').all('a').each(function (link) {
 
 // -- Private Functions --------------------------------------------------------
 function getFilterResultNode() {
-    return filter.get('queryType') === 'classes' ? classesNode : modulesNode;
+    var type = filter.get('queryType');
+    if (type === 'enums') {
+        return enumsNode;
+    } else if (type === 'classes') {
+        return classesNode;
+    } else {
+        return modulesNode;
+    }
 }
 
 // -- Event Handlers -----------------------------------------------------------
@@ -105,7 +113,15 @@ function onFilterResults(e) {
     var frag         = Y.one(Y.config.doc.createDocumentFragment()),
         resultNode   = getFilterResultNode(),
         typePlural   = filter.get('queryType'),
-        typeSingular = typePlural === 'classes' ? 'class' : 'module';
+        typeSingular;
+
+    if (typePlural === 'enums') {
+        typeSingular = 'enum';
+    } else if (typePlural === 'classes') {
+        typeSingular = 'class';
+    } else {
+        typeSingular = 'module';
+    }
 
     if (e.results.length) {
         YArray.each(e.results, function (result) {
@@ -181,6 +197,7 @@ function onTabSelectionChange(e) {
     };
 
     switch (name) {
+    // case 'enums':   // fallthru
     case 'classes': // fallthru
     case 'modules':
         filter.setAttrs({

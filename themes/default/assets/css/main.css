@@ -261,14 +261,14 @@ td {
 }
 
 #docs-sidebar {
-    width: 220px;
+    width: 250px;
     margin: 0 8px;
     padding-top: 36px;
     float: left;
 }
 
 #docs-main {
-    margin-left: 240px;
+    margin-left: 270px;
     margin-right: 10px;
 }
 
