@@ -48,9 +48,15 @@ var Lang   = Y.Lang,
         keys       : {next: 'down:40', previous: 'down:38'}
     }).focusManager,
 
-    LIST_ITEM_TEMPLATE =
+    LIST_ITEM_TEMPLATE = 
         '<li class="api-list-item {typeSingular}">' +
             '<a href="{rootPath}{typePlural}/{name}.html">{displayName}</a>' +
+        '</li>',
+
+    LIST_ITEM_TEMPLATE_WITH_MODULE =
+        '<li class="api-list-item {typeSingular}">' +
+            '<a href="{rootPath}{typePlural}/{name}.html">{displayName}</a>' +
+            '<a href="{rootPath}modules/{module}.html" class="api-list-item-module">{module}</a>' +
         '</li>';
 
 // -- Init ---------------------------------------------------------------------
@@ -125,10 +131,12 @@ function onFilterResults(e) {
 
     if (e.results.length) {
         YArray.each(e.results, function (result) {
-            frag.append(Lang.sub(LIST_ITEM_TEMPLATE, {
+            var tmpl = result.raw.module ? LIST_ITEM_TEMPLATE_WITH_MODULE : LIST_ITEM_TEMPLATE;
+            frag.append(Lang.sub(tmpl, {
                 rootPath    : APIList.rootPath,
-                displayName : filter.getDisplayName(result.highlighted),
-                name        : result.text,
+                displayName : filter.getDisplayName(result.raw.name),
+                name        : result.raw.name,
+                module      : result.raw.module,
                 typePlural  : typePlural,
                 typeSingular: typeSingular
             }));
@@ -197,7 +205,7 @@ function onTabSelectionChange(e) {
     };
 
     switch (name) {
-    // case 'enums':   // fallthru
+    case 'enums':   // fallthru
     case 'classes': // fallthru
     case 'modules':
         filter.setAttrs({

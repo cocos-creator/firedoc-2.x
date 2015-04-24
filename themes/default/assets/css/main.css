@@ -543,6 +543,12 @@ ul.apis li {
     box-sizing: border-box;
 }
 
+ul.apis .api-list-item-module {
+    float: right;
+    color: #888;
+    font-size: 13px;
+}
+
 .apis .type {
     font-weight: bold;
 }

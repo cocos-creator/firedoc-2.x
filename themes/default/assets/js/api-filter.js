@@ -12,7 +12,6 @@ Y.APIFilter = Y.Base.create('apiFilter', Y.Base, [Y.AutoCompleteBase], {
                 name = i.displayName;
             }
         });
-
         return name;
     }
 
@@ -23,24 +22,25 @@ Y.APIFilter = Y.Base.create('apiFilter', Y.Base, [Y.AutoCompleteBase], {
             value: 'phraseMatch'
         },
 
-        // May be set to "classes" or "modules".
+        // May be set to "enums", "classes" or "modules".
         queryType: {
-            value: 'classes'
+            value: 'enums'
         },
 
         source: {
             valueFn: function() {
                 var self = this;
                 return function(q) {
-                    var data = Y.YUIDoc.meta[self.get('queryType')],
-                        out = [];
-                    console.log(data);
-                    Y.each(data, function(v) {
-                        if (v.toLowerCase().indexOf(q.toLowerCase()) > -1) {
-                            out.push(v);
-                        }
+                    var type = self.get('queryType');
+                    var data = Y.YUIDoc.meta[type];
+                    return data.sort(function (a, b) {
+                        if (!a.module || !b.module) return 0;
+                        return a.module > b.module;
+                    }).filter(function (item) {
+                        return (item.name.toLowerCase().indexOf(q.toLowerCase()) > -1)
+                    }).map(function (item) {
+                        return item;
                     });
-                    return out;
                 };
             }
         }
