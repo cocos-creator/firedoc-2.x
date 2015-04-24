@@ -56,7 +56,7 @@ var Lang   = Y.Lang,
     LIST_ITEM_TEMPLATE_WITH_MODULE =
         '<li class="api-list-item {typeSingular}">' +
             '<a href="{rootPath}{typePlural}/{name}.html">{displayName}</a>' +
-            '<a href="{rootPath}modules/{module}.html" class="api-list-item-module">{module}</a>' +
+            '<a href="{rootPath}modules/{module}.html" class="api-list-item-module">@{module}</a>' +
         '</li>';
 
 // -- Init ---------------------------------------------------------------------
