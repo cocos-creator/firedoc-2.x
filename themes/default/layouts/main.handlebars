@@ -14,14 +14,22 @@
     <header class="main-header">
         <div class="content">
             <div class="project-title">
-                {{#if projectLogo}}
-                    <img class="logo" src="{{projectLogo}}" title="{{projectName}}">
-                {{/if}}
+                <a href="http://docs-zh.fireball-x.com">
+                    {{#if projectLogo}}
+                        <img class="logo" src="{{projectLogo}}" title="{{projectName}}">
+                    {{else}}
+                        <img class="logo" src="http://docs-zh.fireball-x.com/images/logo.png" title="Fireball Engine API">
+                    {{/if}}
+                </a>
                 {{#if projectName}}
                     <h1 class="project-name">{{projectName}}</h1>{{#if projectVersion}} <span class="project-version">{{projectVersion}}</span>{{/if}}
+                {{else}}
+                    <h1 class="project-name">Fireball Engine API</h1>
                 {{/if}}
                 {{#if projectDescription}}
                     <p class="description">{{projectDescription}}</p>
+                {{else}}
+                    <p class="description">Fireball is the game engine for the future.</p>
                 {{/if}}
             </div>
             <ul class="jump-links">

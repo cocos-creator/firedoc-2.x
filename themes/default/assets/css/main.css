@@ -143,12 +143,12 @@ td {
 }
 
 .main-header img.logo {
-    max-height: 64px;
-    max-width: 64px;
+    height: 30px;
+    width: 92px;
     vertical-align: top;
     position: absolute;
     top: 0px;
-    left: 8px;
+    left: 0px;
     transition: top 0.4s ease 0.5s;
 }
 
@@ -160,7 +160,8 @@ td {
 .main-header .project-title {
     position: relative;
     top: 8px;
-    padding-left: 84px;
+    padding-left: 127px;
+    padding-top: 8px;
     transition: padding 0.5s, top 0.5s;
     transition-delay: 0.2s, 0s;
     float: left;
