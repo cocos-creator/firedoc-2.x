@@ -155,15 +155,15 @@
         <h3>Inherited members</h3>
         <h4>Properties</h4>
         {{#inheritedItems.properties}}
-            <a href="#prop_{{name}}">{{name}}</a>
+            <a href="{{extended_from}}.html#property_{{name}}">{{name}}</a>
         {{/inheritedItems.properties}}
         <h4>Attributes</h4>
         {{#inheritedItems.attrs}}
-            <a href="#attr_{{name}}">{{name}}</a>
+            <a href="{{extended_from}}.html#attr_{{name}}">{{name}}</a>
         {{/inheritedItems.attrs}}
         <h4>Methods</h4>
         {{#inheritedItems.methods}}
-            <a href="#method_{{name}}">{{name}}</a>
+            <a href="{{extended_from}}.html#method_{{name}}">{{name}}</a>
         {{/inheritedItems.methods}}
     </div>
 {{/if}}
