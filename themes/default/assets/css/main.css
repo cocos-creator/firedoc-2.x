@@ -643,6 +643,13 @@ ul.index-list {
     opacity: .7;
 }
 
+.index-section.inherits-members {
+    background: #fff;
+    padding: 5px;
+    margin-top: 25px;
+    border: 1px solid #fff;
+}
+
 /*---- YUI component style overrides ----*/
 
 .tabs {

@@ -63,7 +63,7 @@
 {{#if properties}}
     <div class="index-section properties">
         <h3>Properties</h3>
-        <ul class="index-list properties{{#if extends}} extends{{/if}}">
+        <ul class="index-list properties">
             {{#properties}}
                 <li class="index-item property{{#if access}} {{access}}{{/if}}{{#if deprecated}} deprecated{{/if}}{{#if overwritten_from}} inherited{{/if}}{{#if extended_from}} inherited{{/if}}">
                     <a href="#property_{{name}}">{{name}}</a>
@@ -81,7 +81,7 @@
     <div class="index-section attrs">
         <h3>Attributes</h3>
 
-        <ul class="index-list attrs{{#if extends}} extends{{/if}}">
+        <ul class="index-list attrs">
             {{#attrs}}
                 <li class="index-item attr{{#if access}} {{access}}{{/if}}{{#if deprecated}} deprecated{{/if}}{{#if overwritten_from}} inherited{{/if}}{{#if extended_from}} inherited{{/if}}">
                     <a href="#attr_{{name}}">{{name}}</a>
@@ -96,7 +96,7 @@
     <div class="index-section methods">
         <h3>Methods</h3>
 
-        <ul class="index-list methods{{#if extends}} extends{{/if}}">
+        <ul class="index-list methods">
 
             {{#is_constructor}}
                 <li class="index-item method{{#if access}} {{access}}{{/if}}{{#if deprecated}} deprecated{{/if}} constructor">
@@ -133,7 +133,7 @@
     <div class="index-section events">
         <h3>Events</h3>
 
-        <ul class="index-list events{{#if extends}} extends{{/if}}">
+        <ul class="index-list events">
             {{#events}}
                 <li class="index-item event{{#if access}} {{access}}{{/if}}{{#if deprecated}} deprecated{{/if}}{{#if overwritten_from}} inherited{{/if}}{{#if extended_from}} inherited{{/if}}">
                     <a href="#event_{{name}}">{{name}}</a>
@@ -151,7 +151,7 @@
 {{/if}}
 
 {{#if extends}}
-    <div class="index-section inherits">
+    <div class="index-section inherits-members">
         <h3>Inherited members</h3>
         <h4>Properties</h4>
         {{#inheritedItems.properties}}
@@ -165,6 +165,10 @@
         {{#inheritedItems.methods}}
             <a href="{{extended_from}}.html#method_{{name}}">{{name}}</a>
         {{/inheritedItems.methods}}
+        <h4>Events</h4>
+        {{#inheritedItems.events}}
+            <a href="{{extended_from}}.html#method_{{name}}">{{name}}</a>
+        {{/inheritedItems.events}}
     </div>
 {{/if}}
 </div>
