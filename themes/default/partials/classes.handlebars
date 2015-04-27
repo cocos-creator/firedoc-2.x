@@ -171,6 +171,14 @@
         {{/inheritedItems.events}}
     </div>
 {{/if}}
+
+{{#if children}}
+    <div class="index-section inherits-tree">
+        <h3>Inheritance tree</h3>
+        {{> class-tree}}
+    </div>
+{{/if}}
+
 </div>
 
 <div class="class-detail">
