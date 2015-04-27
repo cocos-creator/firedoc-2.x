@@ -153,22 +153,43 @@
 {{#if extends}}
     <div class="index-section inherits-members">
         <h3>Inherited members</h3>
+        
         <h4>Properties</h4>
+        <ul class="index-list properties">
         {{#inheritedItems.properties}}
-            <a href="{{extended_from}}.html#property_{{name}}">{{name}}</a>
+            <li class="index-item property">
+                <a href="{{extended_from}}.html#property_{{name}}">{{name}}</a>
+            </li>
         {{/inheritedItems.properties}}
+        </ul>
+        
         <h4>Attributes</h4>
+        <ul class="index-list attrs">
         {{#inheritedItems.attrs}}
-            <a href="{{extended_from}}.html#attr_{{name}}">{{name}}</a>
+            <li class="index-item attr">
+                <a href="{{extended_from}}.html#attr_{{name}}">{{name}}</a>
+            </li>
         {{/inheritedItems.attrs}}
+        </ul>
+
         <h4>Methods</h4>
+        <ul class="index-list methods">
         {{#inheritedItems.methods}}
-            <a href="{{extended_from}}.html#method_{{name}}">{{name}}</a>
+            <li class="index-item method">
+                <a href="{{extended_from}}.html#method_{{name}}">{{name}}</a>
+            </li>
         {{/inheritedItems.methods}}
+        </ul>
+
         <h4>Events</h4>
+        <ul class="index-list events">
         {{#inheritedItems.events}}
-            <a href="{{extended_from}}.html#method_{{name}}">{{name}}</a>
+            <li class="index-item event">
+                <a href="{{extended_from}}.html#event_{{name}}">{{name}}</a>
+            </li>
         {{/inheritedItems.events}}
+        </ul>
+
     </div>
 {{/if}}
 
