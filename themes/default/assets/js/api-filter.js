@@ -34,9 +34,14 @@ Y.APIFilter = Y.Base.create('apiFilter', Y.Base, [Y.AutoCompleteBase], {
                     var type = self.get('queryType');
                     var data = Y.YUIDoc.meta[type];
                     var classifiedData = {};
+
+                    // optimize for empty array, directly returns []
+                    if (!data.length) return [];
+
                     data.filter(function (item) {
                         return (item.name.toLowerCase().indexOf(q.toLowerCase()) > -1)
                     }).forEach(function (item) {
+                        // generate classifiedData via item.module
                         if (!classifiedData[item.module])
                             classifiedData[item.module] = [];
                         classifiedData[item.module].push(item);
