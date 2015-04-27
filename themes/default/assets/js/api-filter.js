@@ -33,13 +33,20 @@ Y.APIFilter = Y.Base.create('apiFilter', Y.Base, [Y.AutoCompleteBase], {
                 return function(q) {
                     var type = self.get('queryType');
                     var data = Y.YUIDoc.meta[type];
-                    return data.sort(function (a, b) {
-                        if (!a.module || !b.module) return 0;
-                        return a.module > b.module;
-                    }).filter(function (item) {
+                    var classifiedData = {};
+                    data.filter(function (item) {
                         return (item.name.toLowerCase().indexOf(q.toLowerCase()) > -1)
-                    }).map(function (item) {
-                        return item;
+                    }).forEach(function (item) {
+                        if (!classifiedData[item.module])
+                            classifiedData[item.module] = [];
+                        classifiedData[item.module].push(item);
+                    });
+                    return Object.keys(classifiedData).sort(function (prev, next) {
+                        return prev > next;
+                    }).map(function (key) {
+                        return classifiedData[key];
+                    }).reduce(function (prev, next) {
+                        return prev.concat(next);
                     });
                 };
             }
