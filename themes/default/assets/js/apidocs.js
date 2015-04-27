@@ -144,7 +144,8 @@ YUI().use(
         pjax.updateVisibility = function() {
             var container = pjax.get('container');
 
-            container.toggleClass('hide-inherited', !Y.one('#api-show-inherited').get('checked'));
+            // TODO(@yorkie): to be removed
+            // container.toggleClass('hide-inherited', !Y.one('#api-show-inherited').get('checked'));
 
             container.toggleClass('show-deprecated',
                 Y.one('#api-show-deprecated').get('checked'));
