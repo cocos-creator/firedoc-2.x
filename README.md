@@ -3,6 +3,9 @@ FireDoc
 
 API Doc generator based on YUIDoc.
 
+[![NPM](https://nodei.co/npm/51degrees.png?stars&downloads)](https://nodei.co/npm/firedoc/)
+[![NPM](https://nodei.co/npm-dl/51degrees.png)](https://nodei.co/npm/firedoc/)
+
 [![npm Version](https://img.shields.io/npm/v/firedoc.svg?style=flat-square)](https://www.npmjs.org/package/firedoc)
 [![Dependency Status](https://img.shields.io/david/fireball-x/firedoc.svg?style=flat-square)](https://david-dm.org/fireball-x/firedoc)
 

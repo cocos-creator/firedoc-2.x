@@ -4,7 +4,7 @@
   "description": "Fire Doc, Fireball-x's JavaScript Documentation engine forked from YUI.",
   "author": "Dav Glass <davglass@gmail.com>",
   "bugs": {
-    "url": "http://github.com/yui/yuidoc/issues"
+    "url": "http://github.com/fireball-x/firedoc/issues"
   },
   "contributors": [
     {
