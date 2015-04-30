@@ -9,7 +9,14 @@ API Doc generator based on YUIDoc.
 Overview
 --------
 
-FireDoc is forked from YUIDoc.
+FireDoc is forked from YUIDoc and mainly supported the following features:
+
+- methods of module
+- file-based `@example`
+- single-line `@property`
+- added new tag `@enum`
+- added new tag `@callback`
+- added "Inherited tree"
 
 YUIDoc is a [Node.js](http://nodejs.org/) application used at build time to
 generate API documentation for JavaScript code. YUIDoc is comment-driven and supports a wide
