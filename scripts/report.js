@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* global __dirname */
 
 var istanbul = require('istanbul');
 var fs = require('fs');
