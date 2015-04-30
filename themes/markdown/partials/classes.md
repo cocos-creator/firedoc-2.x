@@ -140,6 +140,7 @@ This class is deprecated.
 
 {{#if methods}}
 
+<!-- Method Block -->
 ##### Methods
 
 {{#is_constructor}}
