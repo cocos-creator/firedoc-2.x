@@ -1,10 +1,9 @@
 FireDoc
 ======
 
-YUI's JavaScript Documentation engine.
+API Doc generator based on YUIDoc.
 
 [![npm Version](https://img.shields.io/npm/v/firedoc.svg?style=flat-square)](https://www.npmjs.org/package/firedoc)
-[![Build Status](http://img.shields.io/travis/fireball-x/firedoc.svg?style=flat-square)](https://travis-ci.org/fireball-x/firedoc)
 [![Dependency Status](https://img.shields.io/david/fireball-x/firedoc.svg?style=flat-square)](https://david-dm.org/fireball-x/firedoc)
 
 Overview
@@ -30,10 +29,9 @@ Installation
 Documentation
 -------------
 
-* [User Guides](http://yui.github.io/yuidoc/)
-* [Change Logs](https://github.com/yui/yuidoc/releases)
-* [API Docs](http://yui.github.io/yuidoc/api/)
-* [Mailing List](https://groups.google.com/forum/#!forum/yuidoc)
+* [User Guides](http://fireball-x.github.io/firedoc/)
+* [Change Logs](https://github.com/fireball-x/firedoc/releases)
+* [API Docs](http://fireball-x.github.io/firedoc/api/)
 
 Contributing
 ------------
