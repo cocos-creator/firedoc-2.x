@@ -5,7 +5,7 @@ Extends `{{extends}}`
 {{/if}}
 
 {{#if foundAt}}
-Defined in: {{{file}}}:{{{line}}}
+Defined in: [{{{file}}}:{{{line}}}](../files/{{{file}}}.js)
 {{/if}}
 
 {{#if module}}
