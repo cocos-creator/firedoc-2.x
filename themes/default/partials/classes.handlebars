@@ -207,43 +207,28 @@
 {{#if properties}}
     <div class="properties-detail">
         <h2>Properties</h2>
-
-        {{#properties}}
-            {{>props}}
-        {{/properties}}
-
+        {{#properties}}{{>props}}{{/properties}}
         <div class="no-visible-items-message">
             <p>There are no properties that match your current filter settings. You can change your filter settings in the index section on this page. <a href="#index" class="index-jump-link">index</a></p>
         </div>
-
     </div>
 {{/if}}
 
 {{#if attrs}}
     <div class="attrs-detail">
         <h2>Attributes</h2>
-
-        {{#attrs}}
-            {{>attrs}}
-        {{/attrs}}
+        {{#attrs}}{{> attrs}}{{/attrs}}
     </div>
 {{/if}}
 
 {{#is_constructor}}
-    <div class="constructor">
-        <h2>Constructor</h2>
-        {{>method}}
-    </div>
+    <div class="constructor"><h2>Constructor</h2>{{>method}}</div>
 {{/is_constructor}}
 
 {{#if methods}}
     <div class="methods-detail">
         <h2>Methods</h2>
-
-        {{#methods}}
-            {{>method}}
-        {{/methods}}
-
+        {{#methods}}{{> method}}{{/methods}}
         <div class="no-visible-items-message">
             <p>There are no methods that match your current filter settings. You can change your filter settings in the index section on this page. <a href="#index" class="index-jump-link">index</a></p>
         </div>
@@ -254,11 +239,7 @@
 {{#if events}}
     <div class="events-detail">
         <h2>Events</h2>
-
-        {{#events}}
-            {{>events}}
-        {{/events}}
-
+        {{#events}}{{> events}}{{/events}}
         <div class="no-visible-items-message">
             <p>There are no events that match your current filter settings. You can change your filter settings in the index section on this page. <a href="#index" class="index-jump-link">index</a></p>
         </div>
