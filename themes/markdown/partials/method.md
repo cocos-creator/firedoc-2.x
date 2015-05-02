@@ -1,6 +1,6 @@
 
-`{{name}}` {{#if params}}
-({{#params}}`{{name}}`{{/params}})
+{{name}} {{#if params}}
+({{#params}}`{{name}}`,{{/params}})
 {{else}}()
 {{/if}}
 {{#if return}}
@@ -24,21 +24,21 @@ Defined in `{{{file}}}:{{{line}}}`
 Available since {{since}}
 {{/if}}
 
----------------------
-
 {{{methodDescription}}}
 
-{{#params}}
+{{#if params}}
 ##### Parameters
-
+{{#params}}
 - `{{#crossLink type}}{{/crossLink}}` {{name}} {{{description}}}
 {{/params}}
+{{/if}}
 
-{{#return}}
+{{#if return}}
 ##### Returns
-
+{{#return}}
 `{{#crossLink type}}{{/crossLink}}` {{{descrition}}}
 {{/return}}
+{{/if}}
 
 {{#example}}
 ##### Examples

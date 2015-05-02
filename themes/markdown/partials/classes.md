@@ -118,7 +118,7 @@ This class is deprecated.
 
 {{#if properties}}
 
-##### Properties
+#### Properties
 
 {{#properties}}
 {{> props}}
@@ -128,7 +128,7 @@ This class is deprecated.
 
 {{#if attrs}}
 
-##### Attributes
+#### Attributes
 
 {{#attrs}}
 {{> attrs}}
@@ -139,10 +139,10 @@ This class is deprecated.
 {{#if methods}}
 
 <!-- Method Block -->
-##### Methods
+#### Methods
 
 {{#is_constructor}}
-###### Constructor
+##### Constructor
 {{> method}}
 {{/is_constructor}}
 
@@ -154,7 +154,7 @@ This class is deprecated.
 
 {{#if events}}
 
-##### Events
+#### Events
 
 {{#events}}
 {{> events}}
