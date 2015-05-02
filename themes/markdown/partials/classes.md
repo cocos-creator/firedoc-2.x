@@ -114,9 +114,7 @@ This class is deprecated.
 
 {{/if}}
 
------------------------------------------
-
-### Class Details
+### Details
 
 {{#if properties}}
 
