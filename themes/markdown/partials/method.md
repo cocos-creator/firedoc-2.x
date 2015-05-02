@@ -1,47 +1,41 @@
 
-{{name}} {{#if params}}
-({{#params}}`{{name}}`,{{/params}})
-{{else}}()
-{{/if}}
-{{#if return}}
-`{{#crossLink returnType}}{{/crossLink}}`
-{{/if}}
+--------------------------
+#### {{name}}() 
 
 {{#if overwritten_from}}
-> Inherited from {{overwritten_from/class}} {{#if foundAt}}but overwritten in{{/if}} `{{{file}}}:{{{line}}}`
+Inherited from {{overwritten_from/class}} {{#if foundAt}}but overwritten in{{/if}} `{{{file}}}:{{{line}}}`
 {{else}}
 {{#if extended_from}}
-> Inherited from `{{extended_from}}`
+Inherited from `{{extended_from}}`
 {{/if}}
 Defined in `{{{file}}}:{{{line}}}`
 {{/if}}
 
 {{#if deprecationMessage}}
-**Deprecated**: {{deprecationMessage}}
+Deprecated: {{deprecationMessage}}
 {{/if}}
 
 {{#if since}}
 Available since {{since}}
 {{/if}}
 
-{{{methodDescription}}}
+> {{{methodDescription}}}
 
 {{#if params}}
-##### Parameters
+**Parameters**
 {{#params}}
-- `{{#crossLink type}}{{/crossLink}}` {{name}} {{{description}}}
+- {{name}} `{{#crossLink type}}{{/crossLink}}` {{{description}}}
 {{/params}}
 {{/if}}
 
 {{#if return}}
-##### Returns
+**Returns**
 {{#return}}
 `{{#crossLink type}}{{/crossLink}}` {{{descrition}}}
 {{/return}}
 {{/if}}
 
 {{#example}}
-##### Examples
-
+**Examples**
 {{{.}}}
 {{/example}}

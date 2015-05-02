@@ -10,13 +10,10 @@ Defined in: [{{{file}}}:{{{line}}}](../files/{{{file}}}.js)
 
 {{#if module}}
   {{#if submodule}}
-
-Module: {{#crossLinkModule submodule}}{{/crossLinkModule}}
-
-Parent Module: {{#crossLinkModule module}}{{/crossLinkModule}}
+Module: [{{submodule}}](../modules/{{submodule}}.md)
+Parent Module: [{{module}}](../modules/{{module}}.md)
   {{else}}
-
-Module: {{#crossLinkModule module}}{{/crossLinkModule}}
+Module: [{{module}}](../modules/{{module}}.md)
   {{/if}}
 {{/if}}
 
@@ -26,7 +23,7 @@ Available since {{since}}</p>
 
 {{#if deprecated}}
   {{#if deprecationMessage}}
-**Deprecated**: {{deprecationMessage}}
+Deprecated: {{deprecationMessage}}
   {{else}}
 This class is deprecated.
   {{/if}}
