@@ -5,7 +5,6 @@
 # Fireball Engine API
 {{/if}}
 
--------------------------
 {{#if projectDescription}}
 {{projectDescription}}
 {{else}}
