@@ -44,6 +44,13 @@ This module provides the following classes:
   {{/moduleClasses}}
 {{/if}}
 
+{{#if moduleEnums}}
+This module provides the following enums:
+  {{#moduleClasses}}
+  - [{{displayName}}](../enums/{{name}}.md)
+  {{/moduleClasses}}
+{{/if}}
+
 {{#if subModules}}
 This module is a rollup of the following modules:
   {{#subModules}}
