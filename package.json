@@ -125,17 +125,14 @@
     "yui": true
   },
   "yuidoc": {
-    "name": "YUIDoc",
+    "name": "FireDoc",
     "options": {
-      "external": {
-        "data": "http://yuilibrary.com/yui/docs/api/data.json"
-      },
       "linkNatives": "true",
       "attributesEmit": "true",
       "paths": [
         "./lib"
       ],
-      "outdir": "./output/api"
+      "outdir": "./docs"
     }
   }
 }
