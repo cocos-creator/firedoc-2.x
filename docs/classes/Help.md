@@ -25,7 +25,6 @@ Shows the help text
 
 ##### Methods
 
-
   - `renderHelp`
   - `showHelp`
 
@@ -57,7 +56,6 @@ The help text to display
 
 <!-- Method Block -->
 #### Methods
-
 
 
 --------------------------

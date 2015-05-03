@@ -21,7 +21,6 @@ Utilities Class
 
 ##### Methods
 
-
   - `escapeHTML`
   - `fixType`
   - `getDirs`
@@ -47,7 +46,6 @@ Utilities Class
 
 <!-- Method Block -->
 #### Methods
-
 
 
 --------------------------

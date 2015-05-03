@@ -21,7 +21,6 @@ Handles argument parsing
 
 ##### Methods
 
-
   - `Options`
 
 
@@ -35,7 +34,6 @@ Handles argument parsing
 
 <!-- Method Block -->
 #### Methods
-
 
 
 --------------------------

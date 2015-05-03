@@ -45,7 +45,6 @@ with the parsers data (aggregated in the `'data'` property).
 ##### Methods
 
   - `DocParser` **constructor**
-
   - `_resolveFor`
   - `extract`
   - `handlecomment`
@@ -373,7 +372,6 @@ Defined in `lib/docparser.js:812`
 
 **Parameters**
 - o `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a>` the config object
-
 
 
 

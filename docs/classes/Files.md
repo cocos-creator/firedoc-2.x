@@ -21,7 +21,6 @@ Ported fileutils methods from [Selleck](http://github.com/rgrove/selleck)
 
 ##### Methods
 
-
   - `copyAssets`
   - `copyDirectory`
   - `copyFile`
@@ -46,7 +45,6 @@ Ported fileutils methods from [Selleck](http://github.com/rgrove/selleck)
 
 <!-- Method Block -->
 #### Methods
-
 
 
 --------------------------

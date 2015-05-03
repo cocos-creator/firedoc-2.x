@@ -25,7 +25,6 @@ Provides the `--server` server option for YUIDoc
 
 ##### Methods
 
-
   - `clazz`
   - `files`
   - `home`
@@ -63,7 +62,6 @@ Cache for external mixed in data.
 
 <!-- Method Block -->
 #### Methods
-
 
 
 --------------------------

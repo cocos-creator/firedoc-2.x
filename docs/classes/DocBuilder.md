@@ -29,7 +29,6 @@ based templates to generate static HTML content
 
 ##### Methods
 
-
   - `_addHelpers`
   - `_inlineCode`
   - `_mixExternal`
@@ -129,7 +128,6 @@ List of native types to cross link to MDN
 
 <!-- Method Block -->
 #### Methods
-
 
 
 --------------------------

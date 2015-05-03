@@ -41,7 +41,6 @@ YUIDoc main class
 ##### Methods
 
   - `YUIDoc` **constructor**
-
   - `_processConfig`
   - `_setDefaultExcludes`
   - `parsedir`
@@ -184,7 +183,6 @@ Defined in `lib/yuidoc.js:49`
 
 **Parameters**
 - config `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a>` The config object
-
 
 
 
