@@ -89,6 +89,7 @@
     "yuitest": "^0.7.9"
   },
   "scripts": {
+    "docs": "lib/cli.js ./ --md",
     "pretest": "jshint ./lib/*.js ./tests/*.js",
     "test": "istanbul cover --print=both --yui ytestrunner -- --include ./tests/options.js --include ./tests/builder.js --include ./tests/parser.js --include ./tests/parser_coffee.js --include ./tests/files.js --include ./tests/utils.js --include ./tests/preprocessor.js"
   },
