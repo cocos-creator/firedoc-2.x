@@ -8,7 +8,7 @@ help:
 	./scripts/help.sh
 
 docs:
-	./lib/cli.js ./lib --markdown && git commit -a -m 'docs: updated automatically'
+	./lib/cli.js ./lib --markdown
 
 deploydocs: version
 	./scripts/docs.sh
