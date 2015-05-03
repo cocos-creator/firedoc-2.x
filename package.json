@@ -1,6 +1,6 @@
 {
   "name": "firedoc",
-  "version": "0.6.18",
+  "version": "0.6.19",
   "description": "Fire Doc, Fireball-x's JavaScript Documentation engine forked from YUI.",
   "author": "Dav Glass <davglass@gmail.com>",
   "bugs": {
