@@ -36,46 +36,30 @@ This enum is deprecated.
 
 {{#if properties}}
 ##### Properties
-
 {{#properties}}
   - `{{name}}`
 {{/properties}}
-
 {{/if}}
 
 {{#if attrs}}
 ##### Attributes
-
 {{#attrs}}
   - `{{name}}`
 {{/attrs}}
-
-{{/if}}
-
-### Inheritance tree
-
 {{/if}}
 
 ### Details
 
 {{#if properties}}
-
 #### Properties
-
 {{#properties}}
 {{> props}}
 {{/properties}}
-
 {{/if}}
 
 {{#if attrs}}
-
 #### Attributes
-
 {{#attrs}}
 {{> attrs}}
 {{/attrs}}
-
 {{/if}}
-
-{{#if methods}}
