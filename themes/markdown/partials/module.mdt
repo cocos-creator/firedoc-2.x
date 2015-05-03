@@ -54,6 +54,6 @@ This module provides the following enums:
 {{#if subModules}}
 This module is a rollup of the following modules:
   {{#subModules}}
-  - [{{displayName}}({{name}}.md) {{{description}}}
+  - [{{displayName}}]({{name}}.md) {{{description}}}
   {{/subModules}}
 {{/if}}
