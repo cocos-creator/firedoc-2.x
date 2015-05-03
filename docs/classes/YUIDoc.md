@@ -182,7 +182,7 @@ Defined in `lib/yuidoc.js:49`
 > 
 
 **Parameters**
-- config `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a>` The config object
+- config <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The config object
 
 
 
@@ -220,7 +220,7 @@ Defined in `lib/yuidoc.js:149`
 > Walks the passed directory and grabs all the files recursively.
 
 **Parameters**
-- dir `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a>` The directory to parse the contents of.
+- dir <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The directory to parse the contents of.
 
 
 
@@ -234,8 +234,8 @@ Defined in `lib/yuidoc.js:189`
 > Gathers all the file data and populates the filemap and dirmap hashes.
 
 **Parameters**
-- dir `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a>` The directory to start from.
-- files `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a>` List of files to parse.
+- dir <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The directory to start from.
+- files <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> List of files to parse.
 
 
 
@@ -250,7 +250,7 @@ Defined in `lib/yuidoc.js:360`
 
 
 **Returns**
-`<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a>` 
+<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 
 --------------------------
@@ -265,7 +265,7 @@ This function first clones the data and operates on the clone.
 
 
 **Returns**
-`<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a>` 
+<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 
 --------------------------
@@ -291,10 +291,10 @@ Defined in `lib/yuidoc.js:278`
 Applies preprocessors, if any.
 
 **Parameters**
-- parser `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a>` The DocParser instance to use
+- parser <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The DocParser instance to use
 
 **Returns**
-`<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a>` 
+<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 
 

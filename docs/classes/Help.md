@@ -69,7 +69,7 @@ Defined in `lib/help.js:62`
 
 
 **Returns**
-`<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a>` 
+<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 
 --------------------------

@@ -57,10 +57,10 @@ Defined in `lib/files.js:360`
 > Copy the theme assets directory
 
 **Parameters**
-- from `Path` The source directory
-- dest `Path` The destination directory
-- deleteFirst `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a>` Should the directory be deleted if it exists
-- callback `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a>` The callback to be executed
+- from Path The source directory
+- dest Path The destination directory
+- deleteFirst <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> Should the directory be deleted if it exists
+- callback <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> The callback to be executed
 
 
 
@@ -74,11 +74,11 @@ Defined in `lib/files.js:37`
 > Copy a directory from one location to another
 
 **Parameters**
-- source `Path` The source directory
-- dest `Path` The destination directory
-- overwrite `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a>` Whether or not to overwrite destination files
+- source Path The source directory
+- dest Path The destination directory
+- overwrite <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> Whether or not to overwrite destination files
     if they already exist.
-- callback `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a>` The callback to be executed when complete.
+- callback <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> The callback to be executed when complete.
 
 
 
@@ -92,12 +92,12 @@ Defined in `lib/files.js:125`
 > Copy a file from one location to another
 
 **Parameters**
-- source `Path` The source file
-- dest `Path` The destination file
-- overwrite `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a>` Whether or not to overwrite destination files
+- source Path The source file
+- dest Path The destination file
+- overwrite <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> Whether or not to overwrite destination files
     if they already exist.
-- callback `Callback` The callback to be executed when complete.
-	- err `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Error" class="crosslink external" target="_blank">Error</a>` The Error returned from Node
+- callback Callback The callback to be executed when complete.
+	- err <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Error" class="crosslink external" target="_blank">Error</a> The Error returned from Node
 
 
 
@@ -120,12 +120,12 @@ Known issues:
 - Doesn't preserve ownership or permissions on copied files/directories.
 
 **Parameters**
-- source `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a>` Source path.
-- dest `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a>` Destination path.
-- overwrite `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a>` Whether or not to overwrite destination files
+- source <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> Source path.
+- dest <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> Destination path.
+- overwrite <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> Whether or not to overwrite destination files
 if they already exist.
-- callback `Callback` The callback to execute when completed.
-	- err `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Error" class="crosslink external" target="_blank">Error</a>` 
+- callback Callback The callback to execute when completed.
+	- err <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Error" class="crosslink external" target="_blank">Error</a> 
 
 
 
@@ -142,7 +142,7 @@ it and all files and directories it contains.
 This method is synchronous.
 
 **Parameters**
-- path `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a>` File or directory to delete.
+- path <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> File or directory to delete.
 
 
 
@@ -156,10 +156,10 @@ Defined in `lib/files.js:407`
 > Helper method for getting JSON data from a local file
 
 **Parameters**
-- filename `Path` The filename to parse JSON from
+- filename Path The filename to parse JSON from
 
 **Returns**
-`<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a>` 
+<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 
 --------------------------
@@ -172,11 +172,11 @@ Defined in `lib/files.js:248`
 > Check to see if this is a directory
 
 **Parameters**
-- path `Path` The path to check
-- link `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a>` Also validate a symlink
+- path Path The path to check
+- link <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> Also validate a symlink
 
 **Returns**
-`<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a>` 
+<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> 
 
 
 --------------------------
@@ -189,11 +189,11 @@ Defined in `lib/files.js:278`
 > Check to see if this is a File
 
 **Parameters**
-- path `Path` The path to check
-- link `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a>` Also validate a symlink
+- path Path The path to check
+- link <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> Also validate a symlink
 
 **Returns**
-`<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a>` 
+<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> 
 
 
 --------------------------
@@ -206,10 +206,10 @@ Defined in `lib/files.js:305`
 > Check to see if this is a SymLink
 
 **Parameters**
-- path `Path` The path to check
+- path Path The path to check
 
 **Returns**
-`<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a>` 
+<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> 
 
 
 --------------------------
@@ -223,10 +223,10 @@ Defined in `lib/files.js:319`
 doesn't exist. Will still throw on other types of errors.
 
 **Parameters**
-- path `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a>` Path to stat.
+- path <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> Path to stat.
 
 **Returns**
-`fs.Stats | Null` 
+fs.Stats | Null 
 
 
 --------------------------
@@ -240,10 +240,10 @@ Defined in `lib/files.js:340`
 doesn't exist. Will still throw on other types of errors.
 
 **Parameters**
-- path `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a>` Path to stat.
+- path <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> Path to stat.
 
 **Returns**
-`fs.Stats | Null` 
+fs.Stats | Null 
 
 
 --------------------------
@@ -256,9 +256,9 @@ Defined in `lib/files.js:422`
 > Helper method for writing files to disk. It wraps the NodeJS file API
 
 **Parameters**
-- file `Path` The filename to write to
-- data `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a>` The data to write
-- callback `Callback`  
+- file Path The filename to write to
+- data <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The data to write
+- callback Callback  
 
 
 

@@ -74,8 +74,8 @@ Defined in `lib/server.js:129`
 > `/classes` endpoint
 
 **Parameters**
-- req `Request` Express request object
-- res `Response` Express response object
+- req Request Express request object
+- res Response Express response object
 
 
 
@@ -89,8 +89,8 @@ Defined in `lib/server.js:106`
 > `/files` endpoint
 
 **Parameters**
-- req `Request` Express request object
-- res `Response` Express response object
+- req Request Express request object
+- res Response Express response object
 
 
 
@@ -104,8 +104,8 @@ Defined in `lib/server.js:161`
 > `/` endpoint
 
 **Parameters**
-- req `Request` Express request object
-- res `Response` Express response object
+- req Request Express request object
+- res Response Express response object
 
 
 
@@ -131,8 +131,8 @@ Defined in `lib/server.js:145`
 > `/modules` endpoint
 
 **Parameters**
-- req `Request` Express request object
-- res `Response` Express response object
+- req Request Express request object
+- res Response Express response object
 
 
 
@@ -146,9 +146,9 @@ Defined in `lib/server.js:22`
 > Middleware to parse the API docs per request
 
 **Parameters**
-- req `Request` Express request object
-- res `Response` Express response object
-- next `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a>` Express next callback
+- req Request Express request object
+- res Response Express response object
+- next <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> Express next callback
 
 
 
@@ -174,7 +174,7 @@ Defined in `lib/server.js:191`
 > Start the server with the supplied options.
 
 **Parameters**
-- options `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a>` Server options
+- options <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> Server options
 
 
 
