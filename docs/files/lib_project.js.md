@@ -69,7 +69,8 @@ YUI.add('project', function (Y) {
           options.tabspace += ' ';
         }
       }
-
+  	 
+      console.log(options);
       return options;
     }
   };
