@@ -60,7 +60,7 @@ YUIDoc main class
 #### Properties
 
 
-`dirmap`: `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a>`
+`dirmap`: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a>
 
 Defined in `lib/yuidoc.js:87`
 
@@ -73,7 +73,7 @@ Holder for the list of directories we are processing.
 
 
 
-`endtime`: `Timestamp`
+`endtime`: Timestamp
 
 Defined in `lib/yuidoc.js:387`
 
@@ -86,7 +86,7 @@ Timestamp holder so we know when YUIDoc has finished the parse process.
 
 
 
-`filecount`: `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a>`
+`filecount`: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a>
 
 Defined in `lib/yuidoc.js:66`
 
@@ -99,7 +99,7 @@ Holds the number of files that we are processing.
 
 
 
-`filemap`: `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a>`
+`filemap`: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a>
 
 Defined in `lib/yuidoc.js:80`
 
@@ -112,7 +112,7 @@ Holder for the list of files we are processing.
 
 
 
-`OPTIONS`: `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a>`
+`OPTIONS`: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a>
 
 Defined in `lib/yuidoc.js:29`
 
@@ -125,7 +125,7 @@ The default list of configuration options
 
 
 
-`options`: `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a>`
+`options`: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a>
 
 Defined in `lib/yuidoc.js:95`
 
@@ -138,7 +138,7 @@ Internal holder for configuration options.
 
 
 
-`selleck`: `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a>`
+`selleck`: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a>
 
 Defined in `lib/yuidoc.js:73`
 
@@ -151,7 +151,7 @@ Hash map of dirnames to selleck config options.
 
 
 
-`starttime`: `Timestamp`
+`starttime`: Timestamp
 
 Defined in `lib/yuidoc.js:366`
 

@@ -81,7 +81,7 @@ with the parsers data (aggregated in the `'data'` property).
 #### Properties
 
 
-`CORRECTIONS`: `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a>`
+`CORRECTIONS`: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a>
 
 Defined in `lib/docparser.js:187`
 
@@ -94,7 +94,7 @@ Common errors will get scrubbed instead of being ignored.
 
 
 
-`DIGESTERS`: `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a>`
+`DIGESTERS`: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a>
 
 Defined in `lib/docparser.js:210`
 
@@ -110,7 +110,7 @@ implementation rather than a function.
 
 
 
-`IGNORE_TAGLIST`: `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a>`
+`IGNORE_TAGLIST`: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a>
 
 Defined in `lib/docparser.js:175`
 
@@ -124,7 +124,7 @@ likely to be used for purposes other than JSDoc tags in JavaScript comments.
 
 
 
-`TAGLIST`: `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a>`
+`TAGLIST`: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a>
 
 Defined in `lib/docparser.js:93`
 

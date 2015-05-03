@@ -38,7 +38,7 @@ Shows the help text
 #### Properties
 
 
-`help`: `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a>`
+`help`: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a>
 
 Defined in `lib/help.js:14`
 

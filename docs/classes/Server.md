@@ -44,7 +44,7 @@ Provides the `--server` server option for YUIDoc
 #### Properties
 
 
-`_externalData`: `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a>`
+`_externalData`: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a>
 
 Defined in `lib/server.js:15`
 

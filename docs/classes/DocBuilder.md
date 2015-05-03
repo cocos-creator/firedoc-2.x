@@ -71,7 +71,7 @@ based templates to generate static HTML content
 #### Properties
 
 
-`_mergeCounter`: `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a>`
+`_mergeCounter`: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a>
 
 Defined in `lib/builder.js:1076`
 
@@ -84,7 +84,7 @@ Counter for stepping into merges
 
 
 
-`_meta`: `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a>`
+`_meta`: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a>
 
 Defined in `lib/builder.js:451`
 
@@ -97,7 +97,7 @@ Holder for project meta data
 
 
 
-`files`: `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a>`
+`files`: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a>
 
 Defined in `lib/builder.js:445`
 
@@ -110,7 +110,7 @@ File counter
 
 
 
-`NATIVES`: `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a>`
+`NATIVES`: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a>
 
 Defined in `lib/builder.js:270`
 
