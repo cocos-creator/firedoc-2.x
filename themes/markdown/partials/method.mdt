@@ -24,13 +24,13 @@ Available since {{since}}
 {{#if params}}
 **Parameters**
 {{#params}}
-- {{name}} `{{#crossLink type}}{{/crossLink}}` {{{description}}}
+- {{name}} {{#crossLink type}}{{/crossLink}} {{{description}}}
 	{{#if props}}
 	{{#props}}
-	- {{name}} `{{#crossLink type}}{{/crossLink}}` {{{description}}}
+	- {{name}} {{#crossLink type}}{{/crossLink}} {{{description}}}
 		{{#if props}}
 		{{#props}}
-		- {{name}} `{{#crossLink type}}{{/crossLink}}` {{{description}}}
+		- {{name}} {{#crossLink type}}{{/crossLink}} {{{description}}}
 		{{/props}}
 		{{/if}}
 	{{/props}}
@@ -41,7 +41,7 @@ Available since {{since}}
 {{#if return}}
 **Returns**
 {{#return}}
-`{{#crossLink type}}{{/crossLink}}` {{{descrition}}}
+{{#crossLink type}}{{/crossLink}} {{{descrition}}}
 {{/return}}
 {{/if}}
 
