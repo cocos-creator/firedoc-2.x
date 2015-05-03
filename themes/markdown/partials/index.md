@@ -3,17 +3,17 @@
 ### Enums
 
 {{#enums}}
-- `{{displayName}}`(@{{module}})
+- [`{{displayName}}](enums/{{name}}.md) from [{{module}}](modules/{{module}}.md)
 {{/enums}}
 
 ### Classes
 
 {{#classes}}
-- `{{displayName}}`(@{{module}})
+- [`{{displayName}}](classes/{{name}}.md) from [{{module}}](modules/{{module}}.md)
 {{/classes}}
 
 ### Module
 
 {{#modules}}
-- `{{displayName}}`
+- [`{{displayName}}](modules/{{name}}.md)
 {{/modules}}
