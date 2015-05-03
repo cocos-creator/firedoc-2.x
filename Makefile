@@ -7,16 +7,8 @@ version:
 help:
 	./scripts/help.sh
 
-doc:
-	./node_modules/.bin/selleck --out ./output/
-
-clean:
-	rm -rRf ./output/*
-
-api:
-	./lib/cli.js
-
-docs: clean help doc api
+docs:
+	./lib/cli.js ./ --markdown && git commit -a -m 'docs: updated automatically'
 
 deploydocs: version
 	./scripts/docs.sh

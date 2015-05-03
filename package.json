@@ -1,6 +1,6 @@
 {
   "name": "firedoc",
-  "version": "0.6.21",
+  "version": "0.8.0",
   "description": "Fire Doc, Fireball-x's JavaScript Documentation engine forked from YUI.",
   "author": "Dav Glass <davglass@gmail.com>",
   "bugs": {
@@ -62,7 +62,6 @@
   "keywords": [
     "yui",
     "jsdoc",
-    "coffeescript",
     "api",
     "documentation",
     "javadoc",
@@ -89,7 +88,7 @@
     "yuitest": "^0.7.9"
   },
   "scripts": {
-    "docs": "lib/cli.js ./ --md",
+    "docs": "make docs",
     "pretest": "jshint ./lib/*.js ./tests/*.js",
     "test": "istanbul cover --print=both --yui ytestrunner -- --include ./tests/options.js --include ./tests/builder.js --include ./tests/parser.js --include ./tests/parser_coffee.js --include ./tests/files.js --include ./tests/utils.js --include ./tests/preprocessor.js"
   },
@@ -97,12 +96,12 @@
   "licenses": [
     {
       "type": "BSD",
-      "url": "https://github.com/yui/yuidoc/blob/master/LICENSE"
+      "url": "https://github.com/fireball-x/firedoc/blob/master/LICENSE"
     }
   ],
   "repository": {
     "type": "git",
-    "url": "http://github.com/yui/yuidoc.git"
+    "url": "http://github.com/fireball-x/firedoc.git"
   },
   "jshintConfig": {
     "bitwise": true,
