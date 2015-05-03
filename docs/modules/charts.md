@@ -66,4 +66,4 @@ This module provides the following classes:
 
 
 This module is a rollup of the following modules:
-  - [charts-legend(charts-legend.md) Adds legend functionality to charts.
+  - [charts-legend](charts-legend.md) Adds legend functionality to charts.

@@ -25,4 +25,4 @@ This module provides the following classes:
 
 
 This module is a rollup of the following modules:
-  - [mysubmodule(mysubmodule.md) The submodule
+  - [mysubmodule](mysubmodule.md) The submodule

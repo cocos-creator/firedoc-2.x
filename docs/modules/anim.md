@@ -22,6 +22,6 @@ This module provides the following classes:
 
 
 This module is a rollup of the following modules:
-  - [anim-easing(anim-easing.md) The easing module provides methods for customizing
+  - [anim-easing](anim-easing.md) The easing module provides methods for customizing
 how an animation behaves during each run.
-  - [anim-easing-foo(anim-easing-foo.md) FOO FOO FOO FOO FOO The easing module provides methods for customizing
+  - [anim-easing-foo](anim-easing-foo.md) FOO FOO FOO FOO FOO The easing module provides methods for customizing

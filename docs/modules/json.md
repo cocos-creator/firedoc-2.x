@@ -37,6 +37,6 @@ This module provides the following classes:
 
 
 This module is a rollup of the following modules:
-  - [json-parse(json-parse.md) Provides Y.JSON.parse method to accept JSON strings and return native
+  - [json-parse](json-parse.md) Provides Y.JSON.parse method to accept JSON strings and return native
 JavaScript objects.
-  - [json-stringify(json-stringify.md) Provides Y.JSON.stringify method for converting objects to JSON strings.
+  - [json-stringify](json-stringify.md) Provides Y.JSON.stringify method for converting objects to JSON strings.
