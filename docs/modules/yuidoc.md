@@ -1,5 +1,5 @@
 
-# yuidoc-root 0.8.0
+# firedoc 0.8.0
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -30,6 +30,7 @@ This module provides the following classes:
   - [DocView](../classes/DocView.md)
   - [Files](../classes/Files.md)
   - [Help](../classes/Help.md)
+  - [Main](../classes/Main.md)
   - [Options](../classes/Options.md)
   - [Server](../classes/Server.md)
   - [Utils](../classes/Utils.md)

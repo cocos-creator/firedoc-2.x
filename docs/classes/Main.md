@@ -1,25 +1,31 @@
 
-# yuidoc-root 0.8.0
+# firedoc 0.8.0
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
 ### `Main` Class
 
 
-Defined in: [tests/input/test2/slashes.js:6](../files/tests/input/test2/slashes.js.js)
+Defined in: [lib/index.js:7](../files/lib/index.js.js)
 
-Module: [myapp/views/index](../modules/myapp/views/index.md)
-
-
+Module: [yuidoc](../modules/yuidoc.md)
 
 
-This is the main class
+
+
+Module creates the YUI instance with the required modules, uses them and exports the **Y** to be used
+by the _CLI class_ or by extenders: `require('yuidocjs');`  
+You can use it like this:  
+
+    var options = {
+        paths: [ './lib' ],
+        outdir: './out'
+    };
+
+    var Y = require('yuidocjs');
+    var json = (new Y.YUIDoc(options)).run();
 
 ### Index
-
-##### Properties
-
-  - `STATIC`
 
 
 
@@ -28,23 +34,6 @@ This is the main class
 
 
 ### Details
-
-
-#### Properties
-
-
-`STATIC`: `Unknown`
-
-Defined in `tests/input/test2/slashes.js:12`
-
-
-
----------------------
-
-Static Property
-
-
-
 
 
 

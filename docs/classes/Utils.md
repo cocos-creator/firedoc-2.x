@@ -1,5 +1,5 @@
 
-# yuidoc-root 0.8.0
+# firedoc 0.8.0
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -69,7 +69,7 @@ Defined in `lib/utils.js:31`
 --------------------------
 #### fixType() 
 
-Defined in `lib/utils.js:453`
+Defined in `lib/utils.js:452`
 
 
 
@@ -85,7 +85,7 @@ Defined in `lib/utils.js:453`
 --------------------------
 #### getDirs() 
 
-Defined in `lib/utils.js:339`
+Defined in `lib/utils.js:338`
 
 
 
@@ -183,7 +183,7 @@ Defined in `lib/utils.js:224`
 --------------------------
 #### localize() 
 
-Defined in `lib/utils.js:493`
+Defined in `lib/utils.js:492`
 
 
 
@@ -236,7 +236,7 @@ lines will be unindented four spaces.
 --------------------------
 #### validatePaths() 
 
-Defined in `lib/utils.js:365`
+Defined in `lib/utils.js:364`
 
 
 
@@ -251,7 +251,7 @@ Defined in `lib/utils.js:365`
 --------------------------
 #### webpath() 
 
-Defined in `lib/utils.js:475`
+Defined in `lib/utils.js:474`
 
 
 

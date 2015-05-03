@@ -1,5 +1,5 @@
 
-# yuidoc-root 0.8.0
+# firedoc 0.8.0
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -70,7 +70,6 @@ YUI.add('project', function (Y) {
         }
       }
   	 
-      console.log(options);
       return options;
     }
   };
