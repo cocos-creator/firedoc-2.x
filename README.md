@@ -41,7 +41,7 @@ Documentation
 
 * [User Guides](http://fireball-x.github.io/firedoc/)
 * [Change Logs](https://github.com/fireball-x/firedoc/releases)
-* [API Docs](http://fireball-x.github.io/firedoc/api/)
+* [API Docs](docs)
 
 Contributing
 ------------
