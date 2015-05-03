@@ -58,7 +58,6 @@ This class is deprecated.
 {{#is_constructor}}
   - `{{name}}` **constructor**
 {{/is_constructor}}
-
 {{#methods}}
   - `{{name}}`
 {{/methods}}
@@ -142,7 +141,6 @@ This class is deprecated.
 ##### Constructor
 {{> method}}
 {{/is_constructor}}
-
 {{#methods}}
 {{> method}}
 {{/methods}}
