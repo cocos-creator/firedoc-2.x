@@ -5,11 +5,7 @@ Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
 
 
-### Enums
-
-
 ### Classes
-
 - [`Anim`](classes/Anim.md) from [anim](modules/anim.md)
 - [`AreaSeries`](classes/AreaSeries.md) from [charts](modules/charts.md)
 - [`AreaSplineSeries`](classes/AreaSplineSeries.md) from [charts](modules/charts.md)
@@ -91,7 +87,6 @@ Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 - [`YUI~oop`](classes/YUI~oop.md) from [oop](modules/oop.md)
 
 ### Module
-
 - [`anim`](modules/anim.md)
 - [`charts`](modules/charts.md)
 - [`dump`](modules/dump.md)
