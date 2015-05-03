@@ -1,92 +1,52 @@
-<h1>{{name}} Module</h1>
-<div class="box clearfix meta">
-    {{#extra}}
-        {{#selleck}}
-            <a class="button link-docs" href="/yui/docs/{{name}}">User Guide &amp; Examples</a>
-        {{/selleck}}
-    {{/extra}}
 
-    {{#if requires}}
-        <div class="uses">
-            Requires
-            <ul class="inline commas">
-                {{#requires}}
-                    <li>{{#crossLinkModule .}}{{/crossLinkModule}}</li>
-                {{/requires}}
-            </ul>
-        </div>
-    {{/if}}
+## {{name}} Module
 
-    {{#if foundAt}}
-        <div class="foundat">
-            Defined in: <a href="{{foundAt}}">`{{{file}}}:{{{line}}}`</a>
-        </div>
-    {{/if}}
+{{#extra}}
+  {{#selleck}}
+  [User Guide & Examples](/yui/docs/{{name}})
+  {{/selleck}}
+{{/extra}}
 
-    {{#if since}}
-        <p>Available since {{since}}</p>
-    {{/if}}
-</div>
-
-{{#if deprecated}}
-    <div class="box deprecated">
-        <p>
-        {{#if deprecationMessage}}
-            <strong>Deprecated:</strong> {{deprecationMessage}}
-        {{else}}
-            This module is deprecated.
-        {{/if}}
-        </p>
-    </div>
+{{#if requires}}
+### Requires
+{{#requires}}
+- {{#crossLinkModule .}}{{/crossLinkModule}}
+{{/requires}}
 {{/if}}
 
-<div class="box intro">
-    {{{moduleDescription}}}
-</div>
+{{#if foundAt}}
+Defined in [{{{file}}}:{{{line}}}]({{foundAt}})
+{{/if}}
+
+{{#if since}}
+Available since {{since}}
+{{/if}}
+
+{{#if deprecated}}
+  {{#if deprecationMessage}}
+Deprecated: {{deprecationMessage}}
+  {{else}}
+This module is deprecated.
+  {{/if}}
+{{/if}}
+
+{{moduleDescription}}
 
 {{#example}}
-    <div class="example">
-        <h4>Example:</h4>
-        <div class="example-content">
-            {{{.}}}
-        </div>
-    </div>
+### Example
+{{{.}}}
 {{/example}}
 
-<div class="yui3-g">
-    <div class="yui3-u-1-2">
-        {{#if moduleClasses}}
-            <p>This module provides the following classes:</p>
+{{#if moduleClasses}}
+This module provides the following classes:
+  {{#moduleClasses}}
+  - [{{displayName}}(../classes/{{name}}.md)
+  {{/moduleClasses}}
+{{/if}}
 
-            <ul class="module-classes">
-            {{#moduleClasses}}
-                <li class="module-class">
-                    <a href="{{../projectRoot}}classes/{{name}}.html">
-                        {{displayName}}
-                    </a>
-                </li>
-            {{/moduleClasses}}
-            </ul>
-        {{/if}}
-    </div>
-
-    <div class="yui3-u-1-2">
-        {{#if subModules}}
-            <p>This module is a rollup of the following modules:</p>
-
-            <ul class="module-submodules">
-            {{#subModules}}
-                <li class="module-submodule">
-                    <a href="{{../projectRoot}}modules/{{name}}.html">
-                        {{displayName}}
-                    </a>
-
-                    <div class="module-submodule-description">
-                        {{{description}}}
-                    </div>
-                </li>
-            {{/subModules}}
-            </ul>
-        {{/if}}
-    </div>
-</div>
+{{#if subModules}}
+This module is a rollup of the following modules:
+  {{#subModules}}
+  - [{{displayName}}({{name}}.md) {{{description}}}
+  {{/subModules}}
+{{/if}
