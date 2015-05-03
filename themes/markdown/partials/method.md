@@ -25,6 +25,16 @@ Available since {{since}}
 **Parameters**
 {{#params}}
 - {{name}} `{{#crossLink type}}{{/crossLink}}` {{{description}}}
+	{{#if props}}
+	{{#props}}
+	- {{name}} `{{#crossLink type}}{{/crossLink}}` {{{description}}}
+		{{#if props}}
+		{{#props}}
+		- {{name}} `{{#crossLink type}}{{/crossLink}}` {{{description}}}
+		{{/props}}
+		{{/if}}
+	{{/props}}
+	{{/if}}
 {{/params}}
 {{/if}}
 
