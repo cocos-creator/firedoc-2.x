@@ -40,7 +40,7 @@ This module is deprecated.
 {{#if moduleClasses}}
 This module provides the following classes:
   {{#moduleClasses}}
-  - [{{displayName}}(../classes/{{name}}.md)
+  - [{{displayName}}](../classes/{{name}}.md)
   {{/moduleClasses}}
 {{/if}}
 
