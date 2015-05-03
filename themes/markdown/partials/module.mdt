@@ -46,9 +46,9 @@ This module provides the following classes:
 
 {{#if moduleEnums}}
 This module provides the following enums:
-  {{#moduleClasses}}
+  {{#moduleEnums}}
   - [{{displayName}}](../enums/{{name}}.md)
-  {{/moduleClasses}}
+  {{/moduleEnums}}
 {{/if}}
 
 {{#if subModules}}
