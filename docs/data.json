@@ -4837,7 +4837,7 @@
         },
         {
             "file": "lib/utils.js",
-            "line": 338,
+            "line": 339,
             "description": "Walks the tree from this dir and returns all the subdirs",
             "itemtype": "method",
             "name": "getDirs",
@@ -4858,7 +4858,7 @@
         },
         {
             "file": "lib/utils.js",
-            "line": 364,
+            "line": 365,
             "description": "Make sure all the paths passed are directories and that they are not in the ignore list.",
             "itemtype": "method",
             "name": "validatePaths",
@@ -4882,7 +4882,7 @@
         },
         {
             "file": "lib/utils.js",
-            "line": 452,
+            "line": 453,
             "description": "Takes a type string and converts it to a \"First letter upper cased\" type. e.g. `(string -> String, object -> Object)`",
             "itemtype": "method",
             "name": "fixType",
@@ -4903,7 +4903,7 @@
         },
         {
             "file": "lib/utils.js",
-            "line": 474,
+            "line": 475,
             "description": "Produces a normalized web path by joining all the parts and normalizing the\nfilesystem-like path into web compatible url.\nSupports relative and absolute paths.\nCourtesy of [Mojito's utils](https://github.com/yahoo/mojito/)",
             "itemtype": "method",
             "name": "webpath",
@@ -4924,7 +4924,7 @@
         },
         {
             "file": "lib/utils.js",
-            "line": 492,
+            "line": 493,
             "description": "Localize the string via current Y.options",
             "itemtype": "method",
             "name": "localize",

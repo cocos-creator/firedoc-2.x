@@ -69,7 +69,7 @@ Defined in `lib/utils.js:31`
 --------------------------
 #### fixType() 
 
-Defined in `lib/utils.js:452`
+Defined in `lib/utils.js:453`
 
 
 
@@ -85,7 +85,7 @@ Defined in `lib/utils.js:452`
 --------------------------
 #### getDirs() 
 
-Defined in `lib/utils.js:338`
+Defined in `lib/utils.js:339`
 
 
 
@@ -183,7 +183,7 @@ Defined in `lib/utils.js:224`
 --------------------------
 #### localize() 
 
-Defined in `lib/utils.js:492`
+Defined in `lib/utils.js:493`
 
 
 
@@ -236,7 +236,7 @@ lines will be unindented four spaces.
 --------------------------
 #### validatePaths() 
 
-Defined in `lib/utils.js:364`
+Defined in `lib/utils.js:365`
 
 
 
@@ -251,7 +251,7 @@ Defined in `lib/utils.js:364`
 --------------------------
 #### webpath() 
 
-Defined in `lib/utils.js:474`
+Defined in `lib/utils.js:475`
 
 
 
