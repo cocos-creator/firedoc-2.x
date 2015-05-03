@@ -1,143 +1,160 @@
-<a name="event_{{name}}" class="anchor-link"></a>
-<div class="events item{{#if access}} {{access}}{{/if}}{{#if deprecated}} deprecated{{/if}}{{#if extended_from}} inherited{{/if}}">
-    <h3 class="name"><code>{{name}}</code></h3>
-    {{#if type}}
-    <span class="type">{{#crossLink type}}{{/crossLink}}</span>
-    {{/if}}
+### `{{name}}` Event
 
-    {{#if deprecated}}
-        <span class="flag deprecated"{{#if deprecationMessage}} title="{{deprecationMessage}}"{{/if}}>deprecated</span>
-    {{/if}}
+{{#if extends}}
+Extends `{{extends}}`
+{{/if}}
 
-    {{#if access}}
-        <span class="flag {{access}}">{{access}}</span>
-    {{/if}}
+{{#if foundAt}}
+Defined in: [{{{file}}}:{{{line}}}](../files/{{{file}}}.js)
+{{/if}}
 
-    {{#if final}}
-        <span class="flag final">final</span>
-    {{/if}}
+{{#if module}}
+  {{#if submodule}}
+Module: [{{submodule}}](../modules/{{submodule}}.md)
+Parent Module: [{{module}}](../modules/{{module}}.md)
+  {{else}}
+Module: [{{module}}](../modules/{{module}}.md)
+  {{/if}}
+{{/if}}
 
-    {{#if static}}
-        <span class="flag static">static</span>
-    {{/if}}
+{{#if since}}
+Available since {{since}}</p>
+{{/if}}
 
-    <div class="meta">
-        {{#if overwritten_from}}
-            <p>Inherited from
-            <a href="{{crossLinkRaw overwritten_from/class}}#event_{{overwritten_from/name}}" class="type">
-                {{overwritten_from/class}}
-            </a>
-            {{#if foundAt}}
-            but overwritten in
-            {{/if}}
-        {{else}}
-            {{#if extended_from}}
-                <p>Inherited from
-                <a href="{{crossLinkRaw extended_from}}#event_{{name}}" class="type">{{extended_from}}</a>:
-            {{else}}
-                {{#providedBy}}
-                    <p>Provided by the <a href="../modules/{{.}}.html" class="module-name">{{.}}</a> module.</p>
-                {{/providedBy}}
-                <p>
-                {{#if foundAt}}
-                Defined in
-                {{/if}}
-            {{/if}}
-        {{/if}}
-        {{#if foundAt}}
-        <a href="{{foundAt}}">`{{{file}}}:{{{line}}}`</a>
-        {{/if}}
-        </p>
-
-        {{#if deprecationMessage}}
-            <p class="deprecated">Deprecated: <span class="message">{{deprecationMessage}}</span></p>
-        {{/if}}
-
-        {{#if since}}
-            <p class="since">Available since <span class="message">{{since}}</span></p>
-        {{/if}}
-    </div>
-
-    <div class="extended-detail">
-
-        <div class="description">
-            {{{eventDescription}}}
-        </div>
-
-        {{#if params}}
-            <div class="params">
-                <h4>Event Payload:</h4>
-
-                <ul class="params-list">
-                {{#params}}
-                    <li class="param">
-                        {{#if optional}}
-                            <code class="param-name optional">[{{name}}{{#if optdefault}}={{optdefault}}{{/if}}]</code>
-                            <span class="type">{{#crossLink type}}{{/crossLink}}</span>
-                            <span class="flag optional" title="This parameter is optional.">optional</span>
-                        {{else}}
-                            <code class="param-name">{{name}}</code>
-                            <span class="type">{{#crossLink type}}{{/crossLink}}</span>
-                        {{/if}}
-
-                        {{#if multiple}}
-                            <span class="flag multiple" title="This parameter may occur one or more times.">Multiple</span>
-                        {{/if}}
-
-                        <div class="param-description">
-                            {{{description}}}
-                        </div>
-
-                        {{#if props}}
-                            <ul class="params-list">
-                                {{#props}}
-                                <li class="param">
-                                    {{#if optional}}
-                                        <code class="param-name optional">[{{name}}{{#if optdefault}}={{optdefault}}{{/if}}]</code>
-                                        <span class="type">{{#crossLink type}}{{/crossLink}}</span>
-                                        <span class="flag optional" title="This parameter is optional.">optional</span>
-                                    {{else}}
-                                        <code class="param-name">{{name}}</code>
-                                        <span class="type">{{#crossLink type}}{{/crossLink}}</span>
-                                    {{/if}}
-
-                                    <div class="param-description">
-                                        {{{description}}}
-                                    </div>
-
-                                    {{#if props}}
-                                        <ul class="params-list">
-                                            {{#props}}
-                                            <li class="param">
-                                                <code class="param-name">{{name}}</code>
-                                                <span class="type">{{#crossLink type}}{{/crossLink}}</span>
-
-                                                <div class="param-description">
-                                                    {{{description}}}
-                                                </div>
-                                            </li>
-                                            {{/props}}
-                                        </ul>
-                                    {{/if}}
-                                </li>
-                                {{/props}}
-                            </ul>
-                        {{/if}}
-                    </li>
-                {{/params}}
-                </ul>
-            </div>
-        {{/if}}
+{{#if deprecated}}
+  {{#if deprecationMessage}}
+Deprecated: {{deprecationMessage}}
+  {{else}}
+This event is deprecated.
+  {{/if}}
+{{/if}}
 
 
-        {{#example}}
-            <div class="example">
-                <h4>Example:</h4>
+{{{eventDescription}}}
 
-                <div class="example-content">
-                    {{{.}}}
-                </div>
-            </div>
-        {{/example}}
-    </div>
-</div>
+### Index
+
+{{#if properties}}
+##### Properties
+
+{{#properties}}
+  - `{{name}}`
+{{/properties}}
+
+{{/if}}
+
+{{#if attrs}}
+##### Attributes
+
+{{#attrs}}
+  - `{{name}}`
+{{/attrs}}
+
+{{/if}}
+
+{{#if methods}}
+##### Methods
+
+{{#is_constructor}}
+  - `{{name}}` **constructor**
+{{/is_constructor}}
+
+{{#methods}}
+  - `{{name}}`
+{{/methods}}
+
+{{/if}}
+
+{{#if events}}
+
+##### Events
+
+{{#events}}
+  - `{{name}}`
+{{/events}}
+
+{{/if}}
+
+{{#if extends}}
+
+### Inherited members
+
+##### Properties
+
+{{#inheritedItems.properties}}
+- `{{name}}`
+{{/inheritedItems.properties}}
+
+##### Attributes
+
+{{#inheritedItems.attrs}}
+- `{{name}}`
+{{/inheritedItems.attrs}}
+
+##### Methods
+
+{{#inheritedItems.methods}}
+- `{{name}}
+{{/inheritedItems.methods}}
+
+##### Events
+
+{{#inheritedItems.events}}
+- `{{name}}
+{{/inheritedItems.events}}
+
+{{/if}}
+
+{{#if children}}
+
+### Inheritance tree
+
+{{/if}}
+
+### Details
+
+{{#if properties}}
+
+#### Properties
+
+{{#properties}}
+{{> props}}
+{{/properties}}
+
+{{/if}}
+
+{{#if attrs}}
+
+#### Attributes
+
+{{#attrs}}
+{{> attrs}}
+{{/attrs}}
+
+{{/if}}
+
+{{#if methods}}
+
+<!-- Method Block -->
+#### Methods
+
+{{#is_constructor}}
+##### Constructor
+{{> method}}
+{{/is_constructor}}
+
+{{#methods}}
+{{> method}}
+{{/methods}}
+
+{{/if}}
+
+{{#if events}}
+
+#### Events
+
+{{#events}}
+{{> events}}
+{{/events}}
+
+{{/if}}

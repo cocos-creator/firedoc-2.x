@@ -25,7 +25,7 @@ Available since {{since}}</p>
   {{#if deprecationMessage}}
 Deprecated: {{deprecationMessage}}
   {{else}}
-This class is deprecated.
+This enum is deprecated.
   {{/if}}
 {{/if}}
 
