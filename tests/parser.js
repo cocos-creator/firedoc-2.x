@@ -51,8 +51,16 @@ suite.add(new YUITest.TestCase({
     },
     'test: parser': function () {
         var keys = Object.keys(this.data);
-        Assert.areEqual(6, keys.length, 'Failed to populate all fields');
-        ArrayAssert.itemsAreSame(['project', 'files', 'modules', 'classes', 'classitems', 'warnings'], keys, 'Object keys are wrong');
+        Assert.areEqual(7, keys.length, 'Failed to populate all fields');
+        ArrayAssert.itemsAreSame([
+            'project', 
+            'files', 
+            'modules', 
+            'classes', 
+            'classitems', 
+            'classinherits', 
+            'warnings'
+        ], keys, 'Object keys are wrong');
     },
     'test: project data': function () {
         Assert.areSame(path.normalize('input/test/test.js'), this.project.file, 'Project data loaded from wrong file');
@@ -246,11 +254,11 @@ suite.add(new YUITest.TestCase({
             'example',
             'class',
             'module',
+            '_global',
             'submodule'
         ];
 
         ArrayAssert.itemsAreSame(keys, Object.keys(item), 'Item missing from output');
-
         Assert.areSame('', item.evil, 'Single tag not found');
         Assert.areSame('HTML', item.injects.type, 'Injection type not found');
 
