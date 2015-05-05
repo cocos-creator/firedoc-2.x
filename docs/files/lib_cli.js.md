@@ -1,5 +1,5 @@
 
-# firedoc 0.8.1
+# firedoc 0.8.7
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -26,13 +26,13 @@ var Y = require('./index');
 
 var options = Y.Options(Y.Array(process.argv, 2));
 
-Y.log('Starting YUIDoc@' + Y.packageInfo.version + ' using YUI@' + Y.version + ' with NodeJS@' + process.versions.node, 'info', 'yuidoc');
+Y.log('Starting FireDoc@' + Y.packageInfo.version + ' using FireDoc@' + Y.version + ' with NodeJS@' + process.versions.node, 'info', 'yuidoc');
 
 var starttime = (new Date()).getTime();
 
 options = Y.Project.init(options);
 
-Y.log('Starting YUIDoc with the following options:', 'info', 'yuidoc');
+Y.log('Starting FireDoc with the following options:', 'info', 'yuidoc');
 var opts = Y.clone(options);
 if (opts.paths && opts.paths.length && (opts.paths.length > 10)) {
   opts.paths = [].concat(opts.paths.slice(0, 5), ['<paths truncated>'], options.paths.slice(-5));

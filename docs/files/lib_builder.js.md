@@ -1,5 +1,5 @@
 
-# firedoc 0.8.1
+# firedoc 0.8.7
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -928,7 +928,8 @@ YUI.add('doc-builder', function (Y) {
         //opts.meta.htmlTitle = v.name + ': ' + self.data.project.name;
         opts.meta.title = self.data.project.name;
         opts.meta.moduleName = data.displayName || data.name;
-        opts.meta.moduleDescription = self._parseCode(self.markdown(data.description || ' '));
+        opts.meta.moduleDescription = self._parseCode(self.markdown(
+          Y.localize(data.description || ' ')));
         opts.meta.file = data.file;
         opts.meta.line = data.line;
         opts.meta = self.addFoundAt(opts.meta);
@@ -1702,7 +1703,8 @@ YUI.add('doc-builder', function (Y) {
         opts.meta[id].forEach(function (v, k) {
           if (v.submodules) {
             v.submodules.forEach(function (s) {
-              opts.meta[id].push(s.displayName);
+              s.name = s.displayName;
+              opts.meta[id].push(s);
             });
           }
         });

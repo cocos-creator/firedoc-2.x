@@ -1,5 +1,5 @@
 
-# firedoc 0.8.1
+# firedoc 0.8.7
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -506,7 +506,7 @@ YUI.add('utils', function (Y) {
    * @return {String} localized string from the param `str`
    */
   function localize(str) {
-    var splitedStrArr = (str || '').split('#!');
+    var splitedStrArr = (str || '').split('!#');
     var supportedLang = ['en', 'zh'];
     return splitedStrArr.map(function(block) {
       var langFlag = block.slice(0, 2);

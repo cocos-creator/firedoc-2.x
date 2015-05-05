@@ -1,5 +1,5 @@
 
-# firedoc 0.8.1
+# firedoc 0.8.7
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -16,19 +16,19 @@ Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 YUI.add('docview', function (Y) {
 
   /*
-  Selleck
-  Copyright (c) 2011 Yahoo! Inc.
-  Licensed under the BSD License.
+   * Selleck
+   * Copyright (c) 2011 Yahoo! Inc.
+   * Licensed under the BSD License.
   */
 
   /**
-  View class borrowed from [Selleck](https://github.com/rgrove/selleck)  
-  The view class is a **`handlebars`** template helper.
-  @class DocView
-  @constructor
-  @param {Object} data Meta data to use in this template
-  @param {String} templateName The name of the template file to render.
-  **/
+   * View class borrowed from [Selleck](https://github.com/rgrove/selleck)  
+   * The view class is a **`handlebars`** template helper.
+   * @class DocView
+   * @constructor
+   * @param {Object} data Meta data to use in this template
+   * @param {String} templateName The name of the template file to render.
+   **/
   function DocView(data, templateName) {
     this.templateName = templateName;
     Y.mix(this, data);

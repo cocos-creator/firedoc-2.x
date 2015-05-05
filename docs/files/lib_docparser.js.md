@@ -1,5 +1,5 @@
 
-# firedoc 0.8.1
+# firedoc 0.8.7
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -680,6 +680,7 @@ YUI.add('docparser', function (Y) {
             var examplePath = process.cwd() + '/' + linkMatch[1];
             if (Y.Files.exists(examplePath)) {
               value = Y.Files.readFileSync(examplePath, 'utf8');
+              value = '```' + value;
             }
           }
         }

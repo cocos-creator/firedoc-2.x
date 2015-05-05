@@ -1,5 +1,5 @@
 
-# firedoc 0.8.1
+# firedoc 0.8.7
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -7,7 +7,7 @@ Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
 Extends `Base`
 
-Defined in: [lib/docparser.js:812](../files/lib/docparser.js.js)
+Defined in: [lib/docparser.js:813](../files/lib/docparser.js.js)
 
 Module: [yuidoc](../modules/yuidoc.md)
 
@@ -146,7 +146,7 @@ digesters are added.
 
 `currentclass`: `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a>`
 
-Defined in `lib/docparser.js:1052`
+Defined in `lib/docparser.js:1053`
 
 
 
@@ -167,7 +167,7 @@ attribute's value has changed.
 
 `currentfile`: `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a>`
 
-Defined in `lib/docparser.js:900`
+Defined in `lib/docparser.js:901`
 
 
 
@@ -188,7 +188,7 @@ attribute's value has changed.
 
 `currentmodule`: `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a>`
 
-Defined in `lib/docparser.js:957`
+Defined in `lib/docparser.js:958`
 
 
 
@@ -209,7 +209,7 @@ attribute's value has changed.
 
 `currentsubmodule`: `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a>`
 
-Defined in `lib/docparser.js:1016`
+Defined in `lib/docparser.js:1017`
 
 
 
@@ -230,7 +230,7 @@ attribute's value has changed.
 
 `digesters`: ``
 
-Defined in `lib/docparser.js:840`
+Defined in `lib/docparser.js:841`
 
 
 
@@ -251,7 +251,7 @@ attribute's value has changed.
 
 `dirmap`: ``
 
-Defined in `lib/docparser.js:890`
+Defined in `lib/docparser.js:891`
 
 
 
@@ -272,7 +272,7 @@ attribute's value has changed.
 
 `emitters`: ``
 
-Defined in `lib/docparser.js:862`
+Defined in `lib/docparser.js:863`
 
 
 
@@ -293,7 +293,7 @@ attribute's value has changed.
 
 `filemap`: ``
 
-Defined in `lib/docparser.js:882`
+Defined in `lib/docparser.js:883`
 
 
 
@@ -314,7 +314,7 @@ attribute's value has changed.
 
 `mainmodule`: `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a>`
 
-Defined in `lib/docparser.js:921`
+Defined in `lib/docparser.js:922`
 
 
 
@@ -335,7 +335,7 @@ attribute's value has changed.
 
 `syntaxtype`: `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a>`
 
-Defined in `lib/docparser.js:873`
+Defined in `lib/docparser.js:874`
 
 
 
@@ -364,7 +364,7 @@ attribute's value has changed.
 --------------------------
 #### DocParser() 
 
-Defined in `lib/docparser.js:812`
+Defined in `lib/docparser.js:813`
 
 
 
@@ -378,7 +378,7 @@ Defined in `lib/docparser.js:812`
 --------------------------
 #### _resolveFor() 
 
-Defined in `lib/docparser.js:1091`
+Defined in `lib/docparser.js:1092`
 
 
 
@@ -394,7 +394,7 @@ Defined in `lib/docparser.js:1091`
 --------------------------
 #### extract() 
 
-Defined in `lib/docparser.js:1261`
+Defined in `lib/docparser.js:1262`
 
 
 
@@ -416,7 +416,7 @@ alternative comment parser.
 --------------------------
 #### handlecomment() 
 
-Defined in `lib/docparser.js:1183`
+Defined in `lib/docparser.js:1184`
 
 
 
@@ -467,7 +467,7 @@ Defined in `lib/docparser.js:47`
 --------------------------
 #### parse() 
 
-Defined in `lib/docparser.js:1507`
+Defined in `lib/docparser.js:1508`
 
 
 
@@ -484,7 +484,7 @@ Defined in `lib/docparser.js:1507`
 --------------------------
 #### processblock() 
 
-Defined in `lib/docparser.js:1317`
+Defined in `lib/docparser.js:1318`
 
 
 
@@ -515,7 +515,7 @@ filename and line number: `/file/name.js:123`
 --------------------------
 #### transform() 
 
-Defined in `lib/docparser.js:1391`
+Defined in `lib/docparser.js:1392`
 
 
 
@@ -533,7 +533,7 @@ and relationships between elements for the entire project.
 --------------------------
 #### unindent() 
 
-Defined in `lib/docparser.js:1162`
+Defined in `lib/docparser.js:1163`
 
 
 

@@ -1,5 +1,5 @@
 
-# firedoc 0.8.1
+# firedoc 0.8.7
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -28,11 +28,11 @@ YUI.add('help', function (Y) {
    */
   var help = [
     "",
-    "YUI Doc generates API documentation from a modified JavaDoc syntax.",
+    "FireDoc generates API documentation from a modified JavaDoc syntax.",
     "",
     "Current version ({VERSION})",
     "",
-    "Usage: yuidoc <options> <input path>",
+    "Usage: firedoc <options> <input path>",
     "",
     "Common Options:",
     "  -c, --config, --configfile <filename>  A JSON config file to provide configuration data.",
