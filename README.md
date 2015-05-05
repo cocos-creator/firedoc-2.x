@@ -36,10 +36,17 @@ Installation
 
     npm install -g firedoc
 
+Usage
+-------
+
+    firedoc source-path --lang
+    
+`--lang` option is required for multi-language description. Currently firedoc supports `--en` and `--zh` language option. Adding those option will generate docs for that specific language.
+    
 Documentation
 -------------
 
-* [User Guides](http://fireball-x.github.io/firedoc/)
+* [User Guides](user-guide.md)
 * [Change Logs](https://github.com/fireball-x/firedoc/releases)
 * [API Docs](docs)
 
