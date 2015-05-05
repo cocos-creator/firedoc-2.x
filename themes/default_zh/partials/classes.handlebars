@@ -209,7 +209,6 @@
         {{#properties}}
             {{>props}}
         {{/properties}}
-
         <div class="no-visible-items-message">
             <p>There are no properties that match your current filter settings. You can change your filter settings in the index section on this page. <a href="#index" class="index-jump-link">index</a></p>
         </div>
@@ -219,47 +218,33 @@
 {{#if attrs}}
     <div class="attrs-detail">
         <h2>属性(Attribute)</h2>
-
-        {{#attrs}}
-            {{>attrs}}
-        {{/attrs}}
+        {{#attrs}}{{>attrs}}{{/attrs}}
     </div>
 {{/if}}
 
 {{#is_constructor}}
     <div class="constructor">
-        <h2>构造函数</h2>
-        {{>method}}
+        <h2>构造函数</h2>{{>method}}
     </div>
 {{/is_constructor}}
 
 {{#if methods}}
     <div class="methods-detail">
         <h2>方法</h2>
-
-        {{#methods}}
-            {{>method}}
-        {{/methods}}
-
+        {{#methods}}{{>method}}{{/methods}}
         <div class="no-visible-items-message">
             <p>There are no methods that match your current filter settings. You can change your filter settings in the index section on this page. <a href="#index" class="index-jump-link">index</a></p>
         </div>
-
     </div>
 {{/if}}
 
 {{#if events}}
     <div class="events-detail">
         <h2>事件</h2>
-
-        {{#events}}
-            {{>events}}
-        {{/events}}
-
+        {{#events}}{{>events}}{{/events}}
         <div class="no-visible-items-message">
             <p>There are no events that match your current filter settings. You can change your filter settings in the index section on this page. <a href="#index" class="index-jump-link">index</a></p>
         </div>
-
     </div>
 {{/if}}
 
