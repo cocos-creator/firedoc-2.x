@@ -46,7 +46,7 @@ Usage
 Documentation
 -------------
 
-* [User Guides](user-guide.md)
+* [User Guides](GUIDE.md)
 * [Change Logs](https://github.com/fireball-x/firedoc/releases)
 * [API Docs](docs)
 
