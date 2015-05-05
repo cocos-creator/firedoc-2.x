@@ -104,9 +104,12 @@
                 {{#params}}
                     <li class="param">
                         {{#if optional}}
-                            <code class="param-name optional">[{{name}}{{#if optdefault}}={{optdefault}}{{/if}}]</code>
+                            <code class="param-name optional">{{name}}</code>
                             <span class="type">{{#crossLink type}}{{/crossLink}}</span>
                             <span class="flag optional" title="This parameter is optional.">optional</span>
+                            {{#if optdefault}}
+                                <span>，默认值：{{optdefault}}</span>
+                            {{/if}}
                         {{else}}
                             <code class="param-name">{{name}}</code>
                             <span class="type">{{#crossLink type}}{{/crossLink}}</span>
@@ -125,9 +128,12 @@
                                 {{#props}}
                                 <li class="param">
                                     {{#if optional}}
-                                        <code class="param-name optional">[{{name}}{{#if optdefault}}={{optdefault}}{{/if}}]</code>
+                                        <code class="param-name optional">{{name}}</code>
                                         <span class="type">{{#crossLink type}}{{/crossLink}}</span>
                                         <span class="flag optional" title="This parameter is optional.">optional</span>
+                                        {{#if optdefault}}
+                                            <span>，默认值：{{optdefault}}</span>
+                                        {{/if}}
                                     {{else}}
                                         <code class="param-name">{{name}}</code>
                                         <span class="type">{{#crossLink type}}{{/crossLink}}</span>
@@ -142,9 +148,12 @@
                                             {{#props}}
                                             <li class="param">
                                                 {{#if optional}}
-                                                    <code class="param-name optional">[{{name}}{{#if optdefault}}={{optdefault}}{{/if}}]</code>
+                                                    <code class="param-name optional">{{name}}</code>
                                                     <span class="type">{{#crossLink type}}{{/crossLink}}</span>
                                                     <span class="flag optional" title="This parameter is optional.">optional</span>
+                                                    {{#if optdefault}}
+                                                        <span>，默认值：{{optdefault}}</span>
+                                                    {{/if}}
                                                 {{else}}
                                                     <code class="param-name">{{name}}</code>
                                                     <span class="type">{{#crossLink type}}{{/crossLink}}</span>
