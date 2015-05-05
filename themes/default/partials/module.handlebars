@@ -89,4 +89,26 @@
             </ul>
         {{/if}}
     </div>
+
+    {{#if moduleProperties}}
+        <div class="yui3-u-1-2">
+            <p>This module provides the following properties:</p>
+            {{#moduleProperties}}{{> props}}{{/moduleProperties}}
+        </div>
+    {{/if}}
+
+    {{#if moduleAttributes}}
+        <div class="yui3-u-1-2">
+            <p>This module provides the following attributes:</p>
+            {{#moduleAttributes}}{{> attrs}}{{/moduleAttributes}}
+        </div>
+    {{/if}}
+    
+    {{#if moduleMethods}}
+        <div class="yui3-u-1-2">
+            <p>This module provides the following methods:</p>
+            {{#moduleMethods}}{{> method}}{{/moduleMethods}}
+        </div>
+    {{/if}}
+
 </div>

@@ -54,6 +54,7 @@
 {{/example}}
 
 <div class="yui3-g">
+
     <div class="yui3-u-1-2">
         {{#if moduleClasses}}
             <p>该模组支持如下类(class)：</p>
@@ -88,4 +89,26 @@
             </ul>
         {{/if}}
     </div>
+
+    {{#if moduleProperties}}
+        <div class="yui3-u-1-2">
+            <p>该模组包含一下直属属性(method)：</p>
+            {{#moduleProperties}}{{> props}}{{/moduleProperties}}
+        </div>
+    {{/if}}
+
+    {{#if moduleAttributes}}
+        <div class="yui3-u-1-2">
+            <p>该模组包含一下直属属性(attributes)：</p>
+            {{#moduleAttributes}}{{> attrs}}{{/moduleAttributes}}
+        </div>
+    {{/if}}
+    
+    {{#if moduleMethods}}
+        <div class="yui3-u-1-2">
+            <p>该模组包含一下直属方法(method)：</p>
+            {{#moduleMethods}}{{> method}}{{/moduleMethods}}
+        </div>
+    {{/if}}
+
 </div>
