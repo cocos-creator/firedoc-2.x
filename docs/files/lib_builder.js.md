@@ -1,5 +1,5 @@
 
-# firedoc 0.8.7
+# firedoc 0.8.9
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -470,40 +470,40 @@ YUI.add('doc-builder', function (Y) {
      * @return {Object} The project metadata
      */
     getProjectMeta: function () {
-        var obj = {
-          meta: {
-            yuiSeedUrl: 'http://yui.yahooapis.com/3.5.0/build/yui/yui-min.js',
-            yuiGridsUrl: 'http://yui.yahooapis.com/3.5.0/build/cssgrids/cssgrids-min.css'
-          }
-        };
-        if (!this._meta) {
-          try {
-            var meta, theme = path.join(themeDir, 'theme.json');
+      var obj = {
+        meta: {
+          yuiSeedUrl: 'http://yui.yahooapis.com/3.5.0/build/yui/yui-min.js',
+          yuiGridsUrl: 'http://yui.yahooapis.com/3.5.0/build/cssgrids/cssgrids-min.css'
+        }
+      };
+      if (!this._meta) {
+        try {
+          var meta, theme = path.join(themeDir, 'theme.json');
+          if (Y.Files.exists(theme)) {
+            Y.log('Loading theme from ' + theme, 'info', 'builder');
+            meta = Y.Files.getJSON(theme);
+          } else if (DEFAULT_THEME !== themeDir) {
+            theme = path.join(DEFAULT_THEME, 'theme.json');
             if (Y.Files.exists(theme)) {
               Y.log('Loading theme from ' + theme, 'info', 'builder');
               meta = Y.Files.getJSON(theme);
-            } else if (DEFAULT_THEME !== themeDir) {
-              theme = path.join(DEFAULT_THEME, 'theme.json');
-              if (Y.Files.exists(theme)) {
-                Y.log('Loading theme from ' + theme, 'info', 'builder');
-                meta = Y.Files.getJSON(theme);
-              }
             }
-            if (meta) {
-              obj.meta = meta;
-              this._meta = meta;
-            }
-          } catch (e) {
-            console.error('Error', e);
           }
-        } else {
-          obj.meta = this._meta;
+          if (meta) {
+            obj.meta = meta;
+            this._meta = meta;
+          }
+        } catch (e) {
+          console.error('Error', e);
         }
-        Y.each(this.data.project, function (v, k) {
-          var key = k.substring(0, 1).toUpperCase() + k.substring(1, k.length);
-          obj.meta['project' + key] = v;
-        });
-        return obj;
+      } else {
+        obj.meta = this._meta;
+      }
+      Y.each(this.data.project, function (v, k) {
+        var key = k.substring(0, 1).toUpperCase() + k.substring(1, k.length);
+        obj.meta['project' + key] = v;
+      });
+      return obj;
     },
     /**
      * Populate the meta data for classes
@@ -755,8 +755,6 @@ YUI.add('doc-builder', function (Y) {
         }
       });
     },
-
-
     _resolveUrl: function (url, opts) {
       if (!url) {
         return null;
@@ -766,7 +764,6 @@ YUI.add('doc-builder', function (Y) {
       }
       return path.join(opts.meta.projectRoot, url);
     },
-
     /**
      * Parses `<pre><code>` tags and adds the __prettyprint__ `className` to them
      * @method _parseCode
@@ -781,15 +778,17 @@ YUI.add('doc-builder', function (Y) {
       return html;
     },
     /**
-    * Ported from [Selleck](https://github.com/rgrove/selleck), this handles ```'s in fields
-    that are not parsed by the **Markdown** parser.
-    * @method _inlineCode
-    * @private
-    * @param {HTML} html The HTML to parse
-    * @return {HTML} The parsed HTML
-    */
+     * Ported from [Selleck](https://github.com/rgrove/selleck), this handles ```'s in fields
+     * that are not parsed by the **Markdown** parser.
+     * @method _inlineCode
+     * @private
+     * @param {HTML} html The HTML to parse
+     * @return {HTML} The parsed HTML
+     */
     _inlineCode: function (html) {
-      if (Y.options.useMarkdown) return html;
+      if (Y.options.useMarkdown) {
+        return html;
+      }
       html = html.replace(/\\`/g, '__{{SELLECK_BACKTICK}}__');
       html = html.replace(/`(.+?)`/g, function (match, code) {
         return '<code>' + Y.escapeHTML(code) + '</code>';
@@ -798,17 +797,17 @@ YUI.add('doc-builder', function (Y) {
       return html;
     },
     /**
-    * Ported from [Selleck](https://github.com/rgrove/selleck)
-    Renders the handlebars templates with the default View class.
-    * @method render
-    * @param {HTML} source The default template to parse
-    * @param {Class} view The default view handler
-    * @param {HTML} [layout=null] The HTML from the layout to use.
-    * @param {Object} [partials=object] List of partials to include in this template
-    * @param {Callback} callback
-    * @param {Error} callback.err
-    * @param {HTML} callback.html The assembled template markup
-    */
+     * Ported from [Selleck](https://github.com/rgrove/selleck)
+     * Renders the handlebars templates with the default View class.
+     * @method render
+     * @param {HTML} source The default template to parse
+     * @param {Class} view The default view handler
+     * @param {HTML} [layout=null] The HTML from the layout to use.
+     * @param {Object} [partials=object] List of partials to include in this template
+     * @param {Callback} callback
+     * @param {Error} callback.err
+     * @param {HTML} callback.html The assembled template markup
+     */
     render: function (source, view, layout, partials, callback) {
       var html = [];
 
@@ -937,7 +936,7 @@ YUI.add('doc-builder', function (Y) {
         opts.meta.projectAssets = '../assets';
         opts.meta.projectLogo = self._resolveUrl(self.data.project.logo, opts);
         opts.meta.moduleItems = self.data.classitems.filter(function (i) {
-          return i['module'] === opts.meta.moduleName;
+          return i.module === opts.meta.moduleName;
         }).filter(function (i) {
           return !i['class'];
         });
@@ -946,13 +945,16 @@ YUI.add('doc-builder', function (Y) {
         opts.meta.moduleAttributes = [];
         opts.meta.moduleItems.forEach(function (i) {
           if (i.itemtype === 'method') {
-            i['methodDescription'] = i.description;
+            i.methodDescription = i.description;
+            if (i['return'] && i['return'].type) {
+              i.returnType = i['return'].type;
+            }
             opts.meta.moduleMethods.push(i);
           } else if (i.itemtype === 'property') {
-            i['propertyDescription'] = i.description;
+            i.propertyDescription = i.description;
             opts.meta.moduleProperties.push(i);
           } else if (i.itemtype === 'attribute') {
-            i['attributeDescription'] = i.description;
+            i.attributeDescription = i.description;
             opts.meta.moduleAttributes.push(i);
           }
         });
@@ -1465,16 +1467,24 @@ YUI.add('doc-builder', function (Y) {
           'events': []
         };
         (view.properties || []).forEach(function (item) {
-          if (item.extended_from) view.inheritedItems['properties'].push(item);
+          if (item.extended_from) {
+            view.inheritedItems.properties.push(item);
+          }
         });
         (view.attrs || []).forEach(function (item) {
-          if (item.extended_from) view.inheritedItems['attrs'].push(item);
+          if (item.extended_from) {
+            view.inheritedItems.attrs.push(item);
+          }
         });
         (view.methods || []).forEach(function (item) {
-          if (item.extended_from) view.inheritedItems['methods'].push(item);
+          if (item.extended_from) {
+            view.inheritedItems.methods.push(item);
+          }
         });
         (view.events || []).forEach(function (item) {
-          if (item.extended_from) view.inheritedItems['events'].push(item);
+          if (item.extended_from) {
+            view.inheritedItems.events.push(item);
+          }
         });
 
         self.render(tmpl, view, mainLayout, opts.partials, stack.add(function (err, html) {

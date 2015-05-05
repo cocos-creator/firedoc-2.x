@@ -1,5 +1,5 @@
 
-# firedoc 0.8.7
+# firedoc 0.8.9
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -73,7 +73,7 @@ based templates to generate static HTML content
 
 `_mergeCounter`: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a>
 
-Defined in `lib/builder.js:1077`
+Defined in `lib/builder.js:1079`
 
 
 
@@ -147,12 +147,12 @@ Defined in `lib/builder.js:121`
 --------------------------
 #### _inlineCode() 
 
-Defined in `lib/builder.js:774`
+Defined in `lib/builder.js:771`
 
 
 
 > Ported from [Selleck](https://github.com/rgrove/selleck), this handles ```'s in fields
-   that are not parsed by the **Markdown** parser.
+that are not parsed by the **Markdown** parser.
 
 **Parameters**
 - html HTML The HTML to parse
@@ -177,7 +177,7 @@ it with flags.
 --------------------------
 #### _parseCode() 
 
-Defined in `lib/builder.js:761`
+Defined in `lib/builder.js:758`
 
 
 
@@ -242,7 +242,7 @@ with the `Markdown Parser`
 --------------------------
 #### compile() 
 
-Defined in `lib/builder.js:1724`
+Defined in `lib/builder.js:1734`
 
 
 
@@ -256,7 +256,7 @@ Defined in `lib/builder.js:1724`
 --------------------------
 #### filterFileName() 
 
-Defined in `lib/builder.js:1711`
+Defined in `lib/builder.js:1721`
 
 
 
@@ -289,7 +289,7 @@ Defined in `lib/builder.js:458`
 --------------------------
 #### hasProperty() 
 
-Defined in `lib/builder.js:1060`
+Defined in `lib/builder.js:1062`
 
 
 
@@ -336,7 +336,7 @@ HTML
 --------------------------
 #### mergeExtends() 
 
-Defined in `lib/builder.js:1084`
+Defined in `lib/builder.js:1086`
 
 
 
@@ -366,7 +366,7 @@ Defined in `lib/builder.js:370`
 --------------------------
 #### nameSort() 
 
-Defined in `lib/builder.js:1532`
+Defined in `lib/builder.js:1542`
 
 
 
@@ -447,12 +447,12 @@ Defined in `lib/builder.js:532`
 --------------------------
 #### render() 
 
-Defined in `lib/builder.js:791`
+Defined in `lib/builder.js:790`
 
 
 
 > Ported from [Selleck](https://github.com/rgrove/selleck)
-   Renders the handlebars templates with the default View class.
+Renders the handlebars templates with the default View class.
 
 **Parameters**
 - source HTML The default template to parse
@@ -468,7 +468,7 @@ Defined in `lib/builder.js:791`
 --------------------------
 #### renderAPIMeta() 
 
-Defined in `lib/builder.js:1678`
+Defined in `lib/builder.js:1688`
 
 
 
@@ -483,7 +483,7 @@ Defined in `lib/builder.js:1678`
 --------------------------
 #### renderClass() 
 
-Defined in `lib/builder.js:1135`
+Defined in `lib/builder.js:1137`
 
 
 
@@ -499,7 +499,7 @@ Defined in `lib/builder.js:1135`
 --------------------------
 #### renderFile() 
 
-Defined in `lib/builder.js:1613`
+Defined in `lib/builder.js:1623`
 
 
 
@@ -515,7 +515,7 @@ Defined in `lib/builder.js:1613`
 --------------------------
 #### renderIndex() 
 
-Defined in `lib/builder.js:844`
+Defined in `lib/builder.js:843`
 
 
 
@@ -531,7 +531,7 @@ Defined in `lib/builder.js:844`
 --------------------------
 #### renderModule() 
 
-Defined in `lib/builder.js:902`
+Defined in `lib/builder.js:901`
 
 
 
@@ -547,7 +547,7 @@ Defined in `lib/builder.js:902`
 --------------------------
 #### writeAPIMeta() 
 
-Defined in `lib/builder.js:1665`
+Defined in `lib/builder.js:1675`
 
 
 
@@ -561,7 +561,7 @@ Defined in `lib/builder.js:1665`
 --------------------------
 #### writeClasses() 
 
-Defined in `lib/builder.js:1483`
+Defined in `lib/builder.js:1493`
 
 
 
@@ -577,7 +577,7 @@ Defined in `lib/builder.js:1483`
 --------------------------
 #### writeFiles() 
 
-Defined in `lib/builder.js:1555`
+Defined in `lib/builder.js:1565`
 
 
 
@@ -593,7 +593,7 @@ Defined in `lib/builder.js:1555`
 --------------------------
 #### writeIndex() 
 
-Defined in `lib/builder.js:870`
+Defined in `lib/builder.js:869`
 
 
 
@@ -609,7 +609,7 @@ Defined in `lib/builder.js:870`
 --------------------------
 #### writeModules() 
 
-Defined in `lib/builder.js:1012`
+Defined in `lib/builder.js:1014`
 
 
 

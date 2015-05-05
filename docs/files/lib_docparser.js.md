@@ -1,5 +1,5 @@
 
-# firedoc 0.8.7
+# firedoc 0.8.9
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -51,7 +51,7 @@ YUI.add('docparser', function (Y) {
      * @return {String} The modified string
      */
     implodeString = function (str) {
-        return str.replace(REGEX_GLOBAL_LINES, '!~YUIDOC_LINE~!');
+      return str.replace(REGEX_GLOBAL_LINES, '!~YUIDOC_LINE~!');
     },
     /**
      * Un-flatten a string, replace tokens injected with `implodeString`
@@ -71,7 +71,7 @@ YUI.add('docparser', function (Y) {
     CURRENT_CLASS = 'currentclass',
 
     REGEX_TYPE = /(.*?)\{(.*?)\}(.*)/,
-    REGEX_FIRSTWORD = /^\s*?(\[.+\]\*?|[^\s]+)(.*)/,
+    REGEX_FIRSTWORD = /^\s*?(\[.+\]\*?|[^\s]+)\s*\-?\s*(.*)/,
     REGEX_OPTIONAL = /^\[(.*)\]$/,
     REGEX_START_COMMENT = {
       js: /^\s*\/\*\*/,
@@ -536,12 +536,16 @@ YUI.add('docparser', function (Y) {
               for (var i = 0; i < self.classinherits.length; i++) {
                 item = self.classinherits[i];
                 at = item.indexOf(extended);
-                if (item.length - 1 === at) break;
+                if (item.length - 1 === at) {
+                  break;
+                }
                 if (item[at + 1] === value) {
                   needNewItem = false;
                   break;
                 }
-                if (at !== -1) break;
+                if (at !== -1) {
+                  break;
+                }
               }
               if (needNewItem) {
                 if (extended !== item[item.length - 1]) {
@@ -605,7 +609,7 @@ YUI.add('docparser', function (Y) {
         target.itemtype = tagname;
         target.name = value;
         if (tagname === 'property') {
-          var propM = value.match(/^\{(.+)\} ([a-zA-Z0-0_]+) \- (.+)$/);
+          var propM = value.match(/^\{(.+)\} ([a-zA-Z0-0_]+)\s*\-?\s*(.+)$/);
           if (propM && propM.length === 4) {
             value = propM[2];
             target.type = propM[1];
