@@ -1,5 +1,5 @@
 
-# firedoc 0.8.9
+# firedoc 0.8.10
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -927,8 +927,7 @@ YUI.add('doc-builder', function (Y) {
         //opts.meta.htmlTitle = v.name + ': ' + self.data.project.name;
         opts.meta.title = self.data.project.name;
         opts.meta.moduleName = data.displayName || data.name;
-        opts.meta.moduleDescription = self._parseCode(self.markdown(
-          Y.localize(data.description || ' ')));
+        opts.meta.moduleDescription = self._parseCode(self.markdown(data.description || ' '));
         opts.meta.file = data.file;
         opts.meta.line = data.line;
         opts.meta = self.addFoundAt(opts.meta);
@@ -1174,7 +1173,7 @@ YUI.add('doc-builder', function (Y) {
         opts = self.populateFiles(opts);
 
         opts.meta.classDescription = self._parseCode(
-          self.markdown(Y.localize(data.description || ' ')));
+          self.markdown(data.description || ' '));
 
         opts.meta.methods = [];
         opts.meta.properties = [];
@@ -1257,7 +1256,7 @@ YUI.add('doc-builder', function (Y) {
                 i.paramsList.push(name);
               });
             }
-            i.methodDescription = self._parseCode(Y.localize(i.description));
+            i.methodDescription = self._parseCode(i.description);
             if (i.example && i.example.length) {
               if (i.example.forEach) {
                 e = '';
@@ -1296,7 +1295,7 @@ YUI.add('doc-builder', function (Y) {
           case 'property':
             i = self.augmentData(i);
             //i.propertyDescription = self._parseCode(markdown(i.description || ''));
-            i.propertyDescription = self._parseCode(Y.localize(i.description));
+            i.propertyDescription = self._parseCode(i.description);
             if (!i.type) {
               i.type = 'unknown';
             }
@@ -1331,7 +1330,7 @@ YUI.add('doc-builder', function (Y) {
           case 'config':
             i = self.augmentData(i);
             //i.attrDescription = self._parseCode(markdown(i.description || ''));
-            i.attrDescription = self._parseCode(Y.localize(i.description));
+            i.attrDescription = self._parseCode(i.description);
 
             if (i.itemtype === 'config') {
               i.config = true;
@@ -1368,7 +1367,7 @@ YUI.add('doc-builder', function (Y) {
           case 'event':
               i = self.augmentData(i);
               //i.eventDescription = self._parseCode(markdown(i.description || ''));
-              i.eventDescription = self._parseCode(Y.localize(i.description));
+              i.eventDescription = self._parseCode(i.description);
 
               if (i.example && i.example.length) {
                 if (i.example.forEach) {

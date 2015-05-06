@@ -1,5 +1,5 @@
 
-# firedoc 0.8.9
+# firedoc 0.8.10
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -38,12 +38,12 @@ YUI.add('utils', function (Y) {
   };
 
   /**
-  Escapes HTML characters in _html_.
-
-  @method escapeHTML
-  @param {String} html String to escape.
-  @return {String} Escaped string.
-  **/
+   * Escapes HTML characters in _html_.
+   *
+   * @method escapeHTML
+   * @param {String} html String to escape.
+   * @return {String} Escaped string.
+   **/
   Y.escapeHTML = function (html) {
     return html.replace(/[&<>"'\/`]/g, function (match) {
       return HTML_CHARS[match];
@@ -51,16 +51,16 @@ YUI.add('utils', function (Y) {
   };
 
   /**
-  Normalizes the initial indentation of the given _content_ so that the first line
-  is unindented, and all other lines are unindented to the same degree as the
-  first line. So if the first line has four spaces at the beginning, then all
-  lines will be unindented four spaces.
-
-  @method unindent
-  @param {String} content Text to unindent.
-  @return {String} Unindented text.
-  @private
-  **/
+   * Normalizes the initial indentation of the given _content_ so that the first line
+   * is unindented, and all other lines are unindented to the same degree as the
+   * first line. So if the first line has four spaces at the beginning, then all
+   * lines will be unindented four spaces.
+   *
+   * @method unindent
+   * @param {String} content Text to unindent.
+   * @return {String} Unindented text.
+   * @private
+   **/
   Y.unindent = function (content) {
     var indent = content.match(/^(\s+)/);
     if (indent) {
@@ -70,25 +70,25 @@ YUI.add('utils', function (Y) {
   };
 
   /**
-  Like `getPages()`, but returns only the files under the `layout/` subdirectory
-  of the specified _dir_.
-
-  @method getLayouts
-  @param {String} dir Directory path.
-  @return {Object} Mapping of layout names to layout content.
-  **/
+   * Like `getPages()`, but returns only the files under the `layout/` subdirectory
+   * of the specified _dir_.
+   *
+   * @method getLayouts
+   * @param {String} dir Directory path.
+   * @return {Object} Mapping of layout names to layout content.
+   **/
   function getLayouts(dir) {
     return getPages(path.join(dir, 'layouts'));
   }
   Y.getLayouts = getLayouts;
 
   /**
-  Loads and returns the content of the specified page file.
-
-  @method getPage
-  @param {String} pagePath Path to a single `.handlebars` page.
-  @return {String|null} Page content, or `null` if not found.
-  **/
+   * Loads and returns the content of the specified page file.
+   *
+   * @method getPage
+   * @param {String} pagePath Path to a single `.handlebars` page.
+   * @return {String|null} Page content, or `null` if not found.
+   **/
   function getPage(pagePath) {
     if (!Y.Files.isFile(pagePath)) {
       return null;
@@ -98,14 +98,14 @@ YUI.add('utils', function (Y) {
   Y.getPage = getPage;
 
   /**
-  Loads pages (files with a `.handlebars` extension) in the specified directory and
-  returns an object containing a mapping of page names (the part of the filename)
-  preceding the `.handlebars` extension) to page content.
-
-  @method getPages
-  @param {String} dir Directory path.
-  @return {Object} Mapping of page names to page content.
-  **/
+   * Loads pages (files with a `.handlebars` extension) in the specified directory and
+   * returns an object containing a mapping of page names (the part of the filename)
+   * preceding the `.handlebars` extension) to page content.
+   *
+   * @method getPages
+   * @param {String} dir Directory path.
+   * @return {Object} Mapping of page names to page content.
+   **/
   var cache = {};
   function getPages(dir) {
     if (cache[dir]) {
@@ -132,13 +132,13 @@ YUI.add('utils', function (Y) {
   Y.getPages = getPages;
 
   /**
-  Like `getPages()`, but returns only the files under the `partial/` subdirectory
-  of the specified _dir_.
-
-  @method getPartials
-  @param {String} dir Directory path.
-  @return {Object} Mapping of partial names to partial content.
-  **/
+   * Like `getPages()`, but returns only the files under the `partial/` subdirectory
+   * of the specified _dir_.
+   *
+   * @method getPartials
+   * @param {String} dir Directory path.
+   * @return {Object} Mapping of partial names to partial content.
+   **/
   function getPartials(dir) {
     return getPages(path.join(dir, 'partials'));
   }
@@ -146,15 +146,15 @@ YUI.add('utils', function (Y) {
 
 
   /**
-  Mix/merge/munge data into the template.
-
-  @method prepare
-  @param {String} inDir The starting directory
-  @param {Object} options The `options` for the meta data.
-  @param {callback} callback The callback to excecute when complete
-  @param {Error} callback.err
-  @param {Object} callback.options Merged options.
-  **/
+   * Mix/merge/munge data into the template.
+   *
+   * @method prepare
+   * @param {String} inDir The starting directory
+   * @param {Object} options The `options` for the meta data.
+   * @param {callback} callback The callback to excecute when complete
+   * @param {Error} callback.err
+   * @param {Object} callback.options Merged options.
+   **/
   function prepare(inDirs, options, callback) {
     var layouts, partials, type = 'project';
     if (options && options.skipLoad) {
