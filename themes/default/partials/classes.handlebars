@@ -130,7 +130,7 @@
 
         <ul class="index-list events">
             {{#events}}
-                <li class="index-item event{{#if access}} {{access}}{{/if}}{{#if deprecated}} deprecated{{/if}}{{#if overwritten_from}} inherited{{/if}}{{#if extended_from}} inherited{{/if}}">
+                <li class="index-item event{{#if access}} {{access}}{{/if}}{{#if deprecated}} deprecated{{/if}}{{#if overwritten_from}} inherited{{/if}}">
                     <a href="#event_{{name}}">{{name}}</a>
 
                     {{#if static}}
@@ -152,7 +152,7 @@
         <h4>Properties</h4>
         <ul class="index-list properties">
         {{#inheritedItems.properties}}
-            <li class="index-item property">
+            <li class="index-item property{{#if access}} {{access}}{{/if}}{{#if deprecated}} deprecated{{/if}}{{#if overwritten_from}} inherited{{/if}}">
                 <a href="{{extended_from}}.html#property_{{name}}">{{name}}</a>
             </li>
         {{/inheritedItems.properties}}
@@ -161,7 +161,7 @@
         <h4>Attributes</h4>
         <ul class="index-list attrs">
         {{#inheritedItems.attrs}}
-            <li class="index-item attr">
+            <li class="index-item attr{{#if access}} {{access}}{{/if}}{{#if deprecated}} deprecated{{/if}}">
                 <a href="{{extended_from}}.html#attr_{{name}}">{{name}}</a>
             </li>
         {{/inheritedItems.attrs}}
@@ -170,7 +170,7 @@
         <h4>Methods</h4>
         <ul class="index-list methods">
         {{#inheritedItems.methods}}
-            <li class="index-item method">
+            <li class="index-item method{{#if access}} {{access}}{{/if}}{{#if deprecated}} deprecated{{/if}}">
                 <a href="{{extended_from}}.html#method_{{name}}">{{name}}</a>
             </li>
         {{/inheritedItems.methods}}
@@ -179,7 +179,7 @@
         <h4>Events</h4>
         <ul class="index-list events">
         {{#inheritedItems.events}}
-            <li class="index-item event">
+            <li class="index-item event{{#if access}} {{access}}{{/if}}{{#if deprecated}} deprecated{{/if}}">
                 <a href="{{extended_from}}.html#event_{{name}}">{{name}}</a>
             </li>
         {{/inheritedItems.events}}
