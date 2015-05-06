@@ -53,61 +53,67 @@
     </div>
 {{/example}}
 
+<!-- Class member index -->
+{{#if moduleClasses}}
+<div class="index-section properties">
+    <h3>Class</h3>
+    <ul class="index-list properties">
+        {{#moduleClasses}}
+        <li class="index-item">
+            <a href="{{../projectRoot}}classes/{{name}}.html">
+                {{displayName}}
+            </a>
+        </li>
+        {{/moduleClasses}}
+    </ul>
+</div>
+{{/if}}
+
+{{#if subModules}}
+<div class="index-section properties">
+    <h3>Sub-Module</h3>
+    <ul class="index-list properties">
+        {{#subModules}}
+        <li class="index-item">
+            <a href="{{../projectRoot}}modules/{{name}}.html">
+                {{displayName}}
+            </a>
+        </li>
+        {{/subModules}}
+    </ul>
+</div>
+{{/if}}
+
+<h3>Direct Members</h3>
+{{#moduleItems}}{{> items-index}}{{/moduleItems}}
+
 <div class="yui3-g">
-    <div class="yui3-u-1-2">
-        {{#if moduleClasses}}
-            <p>This module provides the following classes:</p>
 
-            <ul class="module-classes">
-            {{#moduleClasses}}
-                <li class="module-class">
-                    <a href="{{../projectRoot}}classes/{{name}}.html">
-                        {{displayName}}
-                    </a>
-                </li>
-            {{/moduleClasses}}
-            </ul>
-        {{/if}}
-    </div>
-
-    <div class="yui3-u-1-2">
-        {{#if subModules}}
-            <p>This module is a rollup of the following modules:</p>
-
-            <ul class="module-submodules">
-            {{#subModules}}
-                <li class="module-submodule">
-                    <a href="{{../projectRoot}}modules/{{name}}.html">
-                        {{displayName}}
-                    </a>
-
-                    <div class="module-submodule-description">
-                        {{{description}}}
-                    </div>
-                </li>
-            {{/subModules}}
-            </ul>
-        {{/if}}
-    </div>
-
-    {{#if moduleProperties}}
+    {{#if moduleItems.properties}}
         <div class="yui3-u-1-2">
-            <p>This module provides the following properties:</p>
-            {{#moduleProperties}}{{> props}}{{/moduleProperties}}
+            <h3>Properties:</h3>
+            {{#moduleItems.properties}}{{> props}}{{/moduleItems.properties}}
         </div>
     {{/if}}
 
-    {{#if moduleAttributes}}
+    {{#if moduleItems.attrs}}
         <div class="yui3-u-1-2">
-            <p>This module provides the following attributes:</p>
-            {{#moduleAttributes}}{{> attrs}}{{/moduleAttributes}}
+            <h3>Attributes:</h3>
+            {{#moduleItems.attrs}}{{> attrs}}{{/moduleItems.attrs}}
         </div>
     {{/if}}
     
-    {{#if moduleMethods}}
+    {{#if moduleItems.methods}}
         <div class="yui3-u-1-2">
-            <p>This module provides the following methods:</p>
-            {{#moduleMethods}}{{> method}}{{/moduleMethods}}
+            <h3>Methods:</h3>
+            {{#moduleItems.methods}}{{> method}}{{/moduleItems.methods}}
+        </div>
+    {{/if}}
+
+    {{#if moduleItems.events}}
+        <div class="yui3-u-1-2">
+            <h3>Events:</h3>
+            {{#moduleItems.events}}{{> method}}{{/moduleItems.events}}
         </div>
     {{/if}}
 
