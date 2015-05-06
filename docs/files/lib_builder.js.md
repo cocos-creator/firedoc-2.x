@@ -1,5 +1,5 @@
 
-# firedoc 0.8.10
+# firedoc 0.8.12
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -943,17 +943,18 @@ YUI.add('doc-builder', function (Y) {
         opts.meta.moduleProperties = [];
         opts.meta.moduleAttributes = [];
         opts.meta.moduleItems.forEach(function (i) {
+          i.foundAt = self.addFoundAt(i);
           if (i.itemtype === 'method') {
-            i.methodDescription = i.description;
+            i.methodDescription = self._parseCode(self.markdown(i.description));
             if (i['return'] && i['return'].type) {
               i.returnType = i['return'].type;
             }
             opts.meta.moduleMethods.push(i);
           } else if (i.itemtype === 'property') {
-            i.propertyDescription = i.description;
+            i.propertyDescription = self._parseCode(self.markdown(i.description));
             opts.meta.moduleProperties.push(i);
           } else if (i.itemtype === 'attribute') {
-            i.attributeDescription = i.description;
+            i.attributeDescription = self._parseCode(self.markdown(i.description));
             opts.meta.moduleAttributes.push(i);
           }
         });
@@ -1152,6 +1153,14 @@ YUI.add('doc-builder', function (Y) {
     renderClass: function (cb, data, layout) {
       var self = this;
       var stack = new Y.Parallel();
+      var classitemPlurals = {
+        'property'  : 'properties',
+        'config'    : 'attrs',
+        'attr'      : 'attrs',
+        'attribute' : 'attrs',
+        'event'     : 'events',
+        'method'    : 'methods'
+      };
 
       Y.prepare([DEFAULT_THEME, themeDir], self.getProjectMeta(), function (err, opts) {
         if (err) {
@@ -1197,8 +1206,15 @@ YUI.add('doc-builder', function (Y) {
             classItems.push(i);
           }
         });
-
         classItems = self.mergeExtends(data, classItems, true);
+
+        // add `.inheritedItems`
+        opts.meta.inheritedItems = {
+          'properties': [],
+          'attrs': [],
+          'methods': [],
+          'events': []
+        };
 
         if (data.is_constructor) {
           var i = Y.mix({}, data);
@@ -1241,7 +1257,17 @@ YUI.add('doc-builder', function (Y) {
           }
         }
 
-        classItems.forEach(function (i) {
+        classItems.map(function (i) {
+          if (i && i.extended_from) {
+            var plural = classitemPlurals[i.itemtype];
+            if (plural) {
+              opts.meta.inheritedItems[plural].push(i);
+            }
+          }
+          return i;
+        }).filter(function (i) {
+          return !i.extended_from || i.overwritten_from;
+        }).forEach(function (i) {
           var e;
           switch (i.itemtype) {
           case 'method':
@@ -1457,34 +1483,6 @@ YUI.add('doc-builder', function (Y) {
         if (data.is_enum) {
           tmpl = '{{>enums}}';
         }
-
-        // add `.inheritedItems`
-        view.inheritedItems = {
-          'properties': [],
-          'attrs': [],
-          'methods': [],
-          'events': []
-        };
-        (view.properties || []).forEach(function (item) {
-          if (item.extended_from) {
-            view.inheritedItems.properties.push(item);
-          }
-        });
-        (view.attrs || []).forEach(function (item) {
-          if (item.extended_from) {
-            view.inheritedItems.attrs.push(item);
-          }
-        });
-        (view.methods || []).forEach(function (item) {
-          if (item.extended_from) {
-            view.inheritedItems.methods.push(item);
-          }
-        });
-        (view.events || []).forEach(function (item) {
-          if (item.extended_from) {
-            view.inheritedItems.events.push(item);
-          }
-        });
 
         self.render(tmpl, view, mainLayout, opts.partials, stack.add(function (err, html) {
           self.files++;
