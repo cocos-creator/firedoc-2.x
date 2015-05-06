@@ -1,5 +1,5 @@
 
-# firedoc 0.8.12
+# firedoc 0.8.13
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -73,7 +73,7 @@ based templates to generate static HTML content
 
 `_mergeCounter`: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a>
 
-Defined in `lib/builder.js:1079`
+Defined in `lib/builder.js:1082`
 
 
 
@@ -242,7 +242,7 @@ with the `Markdown Parser`
 --------------------------
 #### compile() 
 
-Defined in `lib/builder.js:1731`
+Defined in `lib/builder.js:1734`
 
 
 
@@ -256,7 +256,7 @@ Defined in `lib/builder.js:1731`
 --------------------------
 #### filterFileName() 
 
-Defined in `lib/builder.js:1718`
+Defined in `lib/builder.js:1721`
 
 
 
@@ -289,7 +289,7 @@ Defined in `lib/builder.js:458`
 --------------------------
 #### hasProperty() 
 
-Defined in `lib/builder.js:1062`
+Defined in `lib/builder.js:1065`
 
 
 
@@ -336,7 +336,7 @@ HTML
 --------------------------
 #### mergeExtends() 
 
-Defined in `lib/builder.js:1086`
+Defined in `lib/builder.js:1089`
 
 
 
@@ -366,7 +366,7 @@ Defined in `lib/builder.js:370`
 --------------------------
 #### nameSort() 
 
-Defined in `lib/builder.js:1539`
+Defined in `lib/builder.js:1542`
 
 
 
@@ -468,7 +468,7 @@ Renders the handlebars templates with the default View class.
 --------------------------
 #### renderAPIMeta() 
 
-Defined in `lib/builder.js:1685`
+Defined in `lib/builder.js:1688`
 
 
 
@@ -483,7 +483,7 @@ Defined in `lib/builder.js:1685`
 --------------------------
 #### renderClass() 
 
-Defined in `lib/builder.js:1137`
+Defined in `lib/builder.js:1140`
 
 
 
@@ -499,7 +499,7 @@ Defined in `lib/builder.js:1137`
 --------------------------
 #### renderFile() 
 
-Defined in `lib/builder.js:1620`
+Defined in `lib/builder.js:1623`
 
 
 
@@ -547,7 +547,7 @@ Defined in `lib/builder.js:901`
 --------------------------
 #### writeAPIMeta() 
 
-Defined in `lib/builder.js:1672`
+Defined in `lib/builder.js:1675`
 
 
 
@@ -561,7 +561,7 @@ Defined in `lib/builder.js:1672`
 --------------------------
 #### writeClasses() 
 
-Defined in `lib/builder.js:1490`
+Defined in `lib/builder.js:1493`
 
 
 
@@ -577,7 +577,7 @@ Defined in `lib/builder.js:1490`
 --------------------------
 #### writeFiles() 
 
-Defined in `lib/builder.js:1562`
+Defined in `lib/builder.js:1565`
 
 
 
@@ -609,7 +609,7 @@ Defined in `lib/builder.js:869`
 --------------------------
 #### writeModules() 
 
-Defined in `lib/builder.js:1014`
+Defined in `lib/builder.js:1017`
 
 
 
