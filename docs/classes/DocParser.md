@@ -1,5 +1,5 @@
 
-# firedoc 0.8.14
+# firedoc 0.8.15
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -81,61 +81,49 @@ with the parsers data (aggregated in the `'data'` property).
 #### Properties
 
 
+
 `CORRECTIONS`: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a>
 
-Defined in `lib/docparser.js:187`
-
-
-
----------------------
-
-Common errors will get scrubbed instead of being ignored.
+| name | value |
+|------|-------|
+| defined | `lib/docparser.js:187` |
+| description | Common errors will get scrubbed instead of being ignored. |
 
 
 
 
 `DIGESTERS`: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a>
 
-Defined in `lib/docparser.js:210`
-
-
-
----------------------
-
-A map of the default tag processors, keyed by the
+| name | value |
+|------|-------|
+| defined | `lib/docparser.js:210` |
+| description | A map of the default tag processors, keyed by the
 tag name.  Multiple tags can use the same digester
 by supplying the string name that points to the
-implementation rather than a function.
+implementation rather than a function. |
 
 
 
 
 `IGNORE_TAGLIST`: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a>
 
-Defined in `lib/docparser.js:175`
-
-
-
----------------------
-
-A list of ignored tags. These tags should be ignored because there is
-likely to be used for purposes other than JSDoc tags in JavaScript comments.
+| name | value |
+|------|-------|
+| defined | `lib/docparser.js:175` |
+| description | A list of ignored tags. These tags should be ignored because there is
+likely to be used for purposes other than JSDoc tags in JavaScript comments. |
 
 
 
 
 `TAGLIST`: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a>
 
-Defined in `lib/docparser.js:93`
-
-
-
----------------------
-
-A list of known tags.  This populates a member variable
+| name | value |
+|------|-------|
+| defined | `lib/docparser.js:93` |
+| description | A list of known tags.  This populates a member variable
 during initialization, and will be updated if additional
-digesters are added.
-
+digesters are added. |
 
 
 

@@ -1,5 +1,5 @@
 
-# firedoc 0.8.14
+# firedoc 0.8.15
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -44,16 +44,13 @@ Provides the `--server` server option for YUIDoc
 #### Properties
 
 
+
 `_externalData`: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a>
 
-Defined in `lib/server.js:15`
-
-
-
----------------------
-
-Cache for external mixed in data.
-
+| name | value |
+|------|-------|
+| defined | `lib/server.js:15` |
+| description | Cache for external mixed in data. |
 
 
 

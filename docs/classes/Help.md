@@ -1,5 +1,5 @@
 
-# firedoc 0.8.14
+# firedoc 0.8.15
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -38,16 +38,13 @@ Shows the help text
 #### Properties
 
 
+
 `help`: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a>
 
-Defined in `lib/help.js:14`
-
-
-
----------------------
-
-The help text to display
-
+| name | value |
+|------|-------|
+| defined | `lib/help.js:14` |
+| description | The help text to display |
 
 
 

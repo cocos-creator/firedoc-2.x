@@ -1,5 +1,5 @@
 
-# firedoc 0.8.14
+# firedoc 0.8.15
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -71,55 +71,43 @@ based templates to generate static HTML content
 #### Properties
 
 
+
 `_mergeCounter`: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a>
 
-Defined in `lib/builder.js:1082`
-
-
-
----------------------
-
-Counter for stepping into merges
+| name | value |
+|------|-------|
+| defined | `lib/builder.js:1082` |
+| description | Counter for stepping into merges |
 
 
 
 
 `_meta`: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a>
 
-Defined in `lib/builder.js:451`
-
-
-
----------------------
-
-Holder for project meta data
+| name | value |
+|------|-------|
+| defined | `lib/builder.js:451` |
+| description | Holder for project meta data |
 
 
 
 
 `files`: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a>
 
-Defined in `lib/builder.js:445`
-
-
-
----------------------
-
-File counter
+| name | value |
+|------|-------|
+| defined | `lib/builder.js:445` |
+| description | File counter |
 
 
 
 
 `NATIVES`: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a>
 
-Defined in `lib/builder.js:270`
-
-
-
----------------------
-
-List of native types to cross link to MDN
-
+| name | value |
+|------|-------|
+| defined | `lib/builder.js:270` |
+| description | List of native types to cross link to MDN |
 
 
 
