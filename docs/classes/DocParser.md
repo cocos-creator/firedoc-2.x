@@ -363,11 +363,10 @@ attribute's value has changed.
 
 | meta | description |
 |------|-------------|
-| defined | `lib/docparser.js:827` |
+| Defined | `lib/docparser.js:827` |
 
 ###### Parameters
 - o <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> the config object
-
 
 
 ##### method: `_resolveFor()`
@@ -376,13 +375,11 @@ Takes a non-namespaced classname and resolves it to a namespace (to support `@fo
 
 | meta | description |
 |------|-------------|
-| defined | `lib/docparser.js:1106` |
+| Defined | `lib/docparser.js:1106` |
+| Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 ###### Parameters
 - value <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The classname to resolve
-
-**Returns**
-<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 
 ##### method: `extract()`
@@ -396,14 +393,12 @@ alternative comment parser.
 
 | meta | description |
 |------|-------------|
-| defined | `lib/docparser.js:1276` |
+| Defined | `lib/docparser.js:1276` |
+| Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 ###### Parameters
 - filemap <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> A map of filenames to file content
 - dirmap <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> A map of file names to directory name
-
-**Returns**
-<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 
 ##### method: `handlecomment()`
@@ -415,13 +410,12 @@ friendly for both markdown and html parsers.
 
 | meta | description |
 |------|-------------|
-| defined | `lib/docparser.js:1198` |
+| Defined | `lib/docparser.js:1198` |
 
 ###### Parameters
 - comment <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The comment to parse
 - file <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The file it was parsed from
 - line <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The line number it was found on
-
 
 
 ##### method: `implodeString()`
@@ -430,13 +424,11 @@ Flatten a string, remove all line breaks and replace them with a token
 
 | meta | description |
 |------|-------------|
-| defined | `lib/docparser.js:37` |
+| Defined | `lib/docparser.js:37` |
+| Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 ###### Parameters
 - str <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The string to operate on
-
-**Returns**
-<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 
 ##### method: `implodeString()`
@@ -445,13 +437,11 @@ Un-flatten a string, replace tokens injected with `implodeString`
 
 | meta | description |
 |------|-------------|
-| defined | `lib/docparser.js:47` |
+| Defined | `lib/docparser.js:47` |
+| Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 ###### Parameters
 - str <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The string to operate on
-
-**Returns**
-<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 
 ##### method: `parse()`
@@ -460,14 +450,12 @@ Extracts and transforms the filemap provided to constructor
 
 | meta | description |
 |------|-------------|
-| defined | `lib/docparser.js:1522` |
+| Defined | `lib/docparser.js:1522` |
+| Return 		 | <a href="../classes/DocParser.html" class="crosslink">DocParser</a> 
 
 ###### Parameters
 - filemap <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> A map of filenames to file content
 - dirmap <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> A map of file names to directory name
-
-**Returns**
-<a href="../classes/DocParser.html" class="crosslink">DocParser</a> 
 
 
 ##### method: `processblock()`
@@ -476,11 +464,10 @@ Processes all the tags in a single comment block
 
 | meta | description |
 |------|-------------|
-| defined | `lib/docparser.js:1332` |
+| Defined | `lib/docparser.js:1332` |
 
 ###### Parameters
 - an <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> array of the tag/text pairs
-
 
 
 ##### method: `stringlog()`
@@ -490,13 +477,11 @@ filename and line number: `/file/name.js:123`
 
 | meta | description |
 |------|-------------|
-| defined | `lib/docparser.js:11` |
+| Defined | `lib/docparser.js:11` |
+| Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 ###### Parameters
 - data <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The data block from the parser
-
-**Returns**
-<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 
 ##### method: `transform()`
@@ -507,13 +492,11 @@ and relationships between elements for the entire project.
 
 | meta | description |
 |------|-------------|
-| defined | `lib/docparser.js:1406` |
+| Defined | `lib/docparser.js:1406` |
+| Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 ###### Parameters
 - commentmap <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The hash of files and parsed comment blocks
-
-**Returns**
-<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 
 ##### method: `unindent()`
@@ -525,13 +508,11 @@ lines will be unindented four spaces. Ported from [Selleck](https://github.com/r
 
 | meta | description |
 |------|-------------|
-| defined | `lib/docparser.js:1177` |
+| Defined | `lib/docparser.js:1177` |
+| Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 ###### Parameters
 - content <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> Text to unindent.
-
-**Returns**
-<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 
 

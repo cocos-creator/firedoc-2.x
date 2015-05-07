@@ -63,11 +63,9 @@ Render the help message as a string
 
 | meta | description |
 |------|-------------|
-| defined | `lib/help.js:62` |
+| Defined | `lib/help.js:62` |
+| Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
-
-**Returns**
-<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 
 ##### method: `showHelp()`
@@ -76,8 +74,7 @@ Display the help message, write it to the screen and exit
 
 | meta | description |
 |------|-------------|
-| defined | `lib/help.js:72` |
-
+| Defined | `lib/help.js:72` |
 
 
 

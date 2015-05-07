@@ -42,13 +42,11 @@ Parses arguments and returns an Object of config options
 
 | meta | description |
 |------|-------------|
-| defined | `lib/options.js:20` |
+| Defined | `lib/options.js:20` |
+| Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 ###### Parameters
 - args <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> Arguments to parse
-
-**Returns**
-<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 
 

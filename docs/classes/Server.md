@@ -69,12 +69,11 @@ Cache for external mixed in data.
 
 | meta | description |
 |------|-------------|
-| defined | `lib/server.js:129` |
+| Defined | `lib/server.js:129` |
 
 ###### Parameters
 - req Request Express request object
 - res Response Express response object
-
 
 
 ##### method: `files()`
@@ -83,12 +82,11 @@ Cache for external mixed in data.
 
 | meta | description |
 |------|-------------|
-| defined | `lib/server.js:106` |
+| Defined | `lib/server.js:106` |
 
 ###### Parameters
 - req Request Express request object
 - res Response Express response object
-
 
 
 ##### method: `home()`
@@ -97,12 +95,11 @@ Cache for external mixed in data.
 
 | meta | description |
 |------|-------------|
-| defined | `lib/server.js:161` |
+| Defined | `lib/server.js:161` |
 
 ###### Parameters
 - req Request Express request object
 - res Response Express response object
-
 
 
 ##### method: `init()`
@@ -111,8 +108,7 @@ Creates the Express server and prep's YUI for serving
 
 | meta | description |
 |------|-------------|
-| defined | `lib/server.js:173` |
-
+| Defined | `lib/server.js:173` |
 
 
 
@@ -122,12 +118,11 @@ Creates the Express server and prep's YUI for serving
 
 | meta | description |
 |------|-------------|
-| defined | `lib/server.js:145` |
+| Defined | `lib/server.js:145` |
 
 ###### Parameters
 - req Request Express request object
 - res Response Express response object
-
 
 
 ##### method: `parse()`
@@ -136,13 +131,12 @@ Middleware to parse the API docs per request
 
 | meta | description |
 |------|-------------|
-| defined | `lib/server.js:22` |
+| Defined | `lib/server.js:22` |
 
 ###### Parameters
 - req Request Express request object
 - res Response Express response object
 - next <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> Express next callback
-
 
 
 ##### method: `routes()`
@@ -151,8 +145,7 @@ Create the routes used to serve YUIDoc files dynamically
 
 | meta | description |
 |------|-------------|
-| defined | `lib/server.js:40` |
-
+| Defined | `lib/server.js:40` |
 
 
 
@@ -162,11 +155,10 @@ Start the server with the supplied options.
 
 | meta | description |
 |------|-------------|
-| defined | `lib/server.js:191` |
+| Defined | `lib/server.js:191` |
 
 ###### Parameters
 - options <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> Server options
-
 
 
 

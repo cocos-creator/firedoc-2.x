@@ -53,7 +53,7 @@ Copy the theme assets directory
 
 | meta | description |
 |------|-------------|
-| defined | `lib/files.js:360` |
+| Defined | `lib/files.js:360` |
 
 ###### Parameters
 - from Path The source directory
@@ -62,14 +62,13 @@ Copy the theme assets directory
 - callback <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> The callback to be executed
 
 
-
 ##### method: `copyDirectory()`
 
 Copy a directory from one location to another
 
 | meta | description |
 |------|-------------|
-| defined | `lib/files.js:37` |
+| Defined | `lib/files.js:37` |
 
 ###### Parameters
 - source Path The source directory
@@ -79,14 +78,13 @@ Copy a directory from one location to another
 - callback <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> The callback to be executed when complete.
 
 
-
 ##### method: `copyFile()`
 
 Copy a file from one location to another
 
 | meta | description |
 |------|-------------|
-| defined | `lib/files.js:125` |
+| Defined | `lib/files.js:125` |
 
 ###### Parameters
 - source Path The source file
@@ -95,7 +93,6 @@ Copy a file from one location to another
     if they already exist.
 - callback Callback The callback to be executed when complete.
 	- err <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Error" class="crosslink external" target="_blank">Error</a> The Error returned from Node
-
 
 
 ##### method: `copyPath()`
@@ -113,7 +110,7 @@ Known issues:
 
 | meta | description |
 |------|-------------|
-| defined | `lib/files.js:178` |
+| Defined | `lib/files.js:178` |
 
 ###### Parameters
 - source <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> Source path.
@@ -122,7 +119,6 @@ Known issues:
 if they already exist.
 - callback Callback The callback to execute when completed.
 	- err <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Error" class="crosslink external" target="_blank">Error</a> 
-
 
 
 ##### method: `deletePath()`
@@ -134,11 +130,10 @@ This method is synchronous.
 
 | meta | description |
 |------|-------------|
-| defined | `lib/files.js:224` |
+| Defined | `lib/files.js:224` |
 
 ###### Parameters
 - path <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> File or directory to delete.
-
 
 
 ##### method: `getJSON()`
@@ -147,13 +142,11 @@ Helper method for getting JSON data from a local file
 
 | meta | description |
 |------|-------------|
-| defined | `lib/files.js:407` |
+| Defined | `lib/files.js:407` |
+| Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 ###### Parameters
 - filename Path The filename to parse JSON from
-
-**Returns**
-<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 
 ##### method: `isDirectory()`
@@ -162,14 +155,12 @@ Check to see if this is a directory
 
 | meta | description |
 |------|-------------|
-| defined | `lib/files.js:248` |
+| Defined | `lib/files.js:248` |
+| Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> 
 
 ###### Parameters
 - path Path The path to check
 - link <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> Also validate a symlink
-
-**Returns**
-<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> 
 
 
 ##### method: `isFile()`
@@ -178,14 +169,12 @@ Check to see if this is a File
 
 | meta | description |
 |------|-------------|
-| defined | `lib/files.js:278` |
+| Defined | `lib/files.js:278` |
+| Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> 
 
 ###### Parameters
 - path Path The path to check
 - link <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> Also validate a symlink
-
-**Returns**
-<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> 
 
 
 ##### method: `isSymbolicLink()`
@@ -194,13 +183,11 @@ Check to see if this is a SymLink
 
 | meta | description |
 |------|-------------|
-| defined | `lib/files.js:305` |
+| Defined | `lib/files.js:305` |
+| Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> 
 
 ###### Parameters
 - path Path The path to check
-
-**Returns**
-<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> 
 
 
 ##### method: `lstatSync()`
@@ -210,13 +197,11 @@ doesn't exist. Will still throw on other types of errors.
 
 | meta | description |
 |------|-------------|
-| defined | `lib/files.js:319` |
+| Defined | `lib/files.js:319` |
+| Return 		 | fs.Stats | Null 
 
 ###### Parameters
 - path <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> Path to stat.
-
-**Returns**
-fs.Stats | Null 
 
 
 ##### method: `statSync()`
@@ -226,13 +211,11 @@ doesn't exist. Will still throw on other types of errors.
 
 | meta | description |
 |------|-------------|
-| defined | `lib/files.js:340` |
+| Defined | `lib/files.js:340` |
+| Return 		 | fs.Stats | Null 
 
 ###### Parameters
 - path <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> Path to stat.
-
-**Returns**
-fs.Stats | Null 
 
 
 ##### method: `writeFile()`
@@ -241,13 +224,12 @@ Helper method for writing files to disk. It wraps the NodeJS file API
 
 | meta | description |
 |------|-------------|
-| defined | `lib/files.js:422` |
+| Defined | `lib/files.js:422` |
 
 ###### Parameters
 - file Path The filename to write to
 - data <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The data to write
 - callback Callback  
-
 
 
 
