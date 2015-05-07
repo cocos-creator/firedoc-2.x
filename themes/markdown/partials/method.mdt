@@ -1,8 +1,10 @@
 
 ##### `{{name}}()`
 
-|      | description |
-|------|-------------|
+{{{methodDescription}}}
+
+| name |  |
+|------|--|
 {{#if overwritten_from}}
 | overwritten | inherited from {{overwritten_from/class}} but overwritten in `{{{file}}}:{{{line}}}` |
 {{else}}
@@ -20,7 +22,6 @@
 {{#if default}}
 | default    | {{default}} |
 {{/if}}
-| description | {{{methodDescription}}} |
 
 {{#if params}}
 ###### Parameters

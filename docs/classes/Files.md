@@ -49,10 +49,11 @@ Ported fileutils methods from [Selleck](http://github.com/rgrove/selleck)
 
 ##### `copyAssets()`
 
-|      | description |
-|------|-------------|
+Copy the theme assets directory
+
+| name |  |
+|------|--|
 | defined | `lib/files.js:360` |
-| description | Copy the theme assets directory |
 
 ###### Parameters
 - from Path The source directory
@@ -64,10 +65,11 @@ Ported fileutils methods from [Selleck](http://github.com/rgrove/selleck)
 
 ##### `copyDirectory()`
 
-|      | description |
-|------|-------------|
+Copy a directory from one location to another
+
+| name |  |
+|------|--|
 | defined | `lib/files.js:37` |
-| description | Copy a directory from one location to another |
 
 ###### Parameters
 - source Path The source directory
@@ -80,10 +82,11 @@ Ported fileutils methods from [Selleck](http://github.com/rgrove/selleck)
 
 ##### `copyFile()`
 
-|      | description |
-|------|-------------|
+Copy a file from one location to another
+
+| name |  |
+|------|--|
 | defined | `lib/files.js:125` |
-| description | Copy a file from one location to another |
 
 ###### Parameters
 - source Path The source file
@@ -97,10 +100,7 @@ Ported fileutils methods from [Selleck](http://github.com/rgrove/selleck)
 
 ##### `copyPath()`
 
-|      | description |
-|------|-------------|
-| defined | `lib/files.js:178` |
-| description | If _source_ is a file, copies it to _dest_. If it's a directory, recursively
+If _source_ is a file, copies it to _dest_. If it's a directory, recursively
 copies it and all files and directories it contains to _dest_.
 
 Note that when attempting to copy a file into a directory, you should specify
@@ -109,7 +109,11 @@ be interpreted as an attempt to copy the _source_ file *over* the _dest_
 directory instead of *into* it.
 
 Known issues:
-- Doesn't preserve ownership or permissions on copied files/directories. |
+- Doesn't preserve ownership or permissions on copied files/directories.
+
+| name |  |
+|------|--|
+| defined | `lib/files.js:178` |
 
 ###### Parameters
 - source <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> Source path.
@@ -123,13 +127,14 @@ if they already exist.
 
 ##### `deletePath()`
 
-|      | description |
-|------|-------------|
-| defined | `lib/files.js:224` |
-| description | If _path_ is a file, deletes it. If _path_ is a directory, recursively deletes
+If _path_ is a file, deletes it. If _path_ is a directory, recursively deletes
 it and all files and directories it contains.
 
-This method is synchronous. |
+This method is synchronous.
+
+| name |  |
+|------|--|
+| defined | `lib/files.js:224` |
 
 ###### Parameters
 - path <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> File or directory to delete.
@@ -138,10 +143,11 @@ This method is synchronous. |
 
 ##### `getJSON()`
 
-|      | description |
-|------|-------------|
+Helper method for getting JSON data from a local file
+
+| name |  |
+|------|--|
 | defined | `lib/files.js:407` |
-| description | Helper method for getting JSON data from a local file |
 
 ###### Parameters
 - filename Path The filename to parse JSON from
@@ -152,10 +158,11 @@ This method is synchronous. |
 
 ##### `isDirectory()`
 
-|      | description |
-|------|-------------|
+Check to see if this is a directory
+
+| name |  |
+|------|--|
 | defined | `lib/files.js:248` |
-| description | Check to see if this is a directory |
 
 ###### Parameters
 - path Path The path to check
@@ -167,10 +174,11 @@ This method is synchronous. |
 
 ##### `isFile()`
 
-|      | description |
-|------|-------------|
+Check to see if this is a File
+
+| name |  |
+|------|--|
 | defined | `lib/files.js:278` |
-| description | Check to see if this is a File |
 
 ###### Parameters
 - path Path The path to check
@@ -182,10 +190,11 @@ This method is synchronous. |
 
 ##### `isSymbolicLink()`
 
-|      | description |
-|------|-------------|
+Check to see if this is a SymLink
+
+| name |  |
+|------|--|
 | defined | `lib/files.js:305` |
-| description | Check to see if this is a SymLink |
 
 ###### Parameters
 - path Path The path to check
@@ -196,11 +205,12 @@ This method is synchronous. |
 
 ##### `lstatSync()`
 
-|      | description |
-|------|-------------|
+Like `fs.lstatSync()`, but returns `null` instead of throwing when _path_
+doesn't exist. Will still throw on other types of errors.
+
+| name |  |
+|------|--|
 | defined | `lib/files.js:319` |
-| description | Like `fs.lstatSync()`, but returns `null` instead of throwing when _path_
-doesn't exist. Will still throw on other types of errors. |
 
 ###### Parameters
 - path <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> Path to stat.
@@ -211,11 +221,12 @@ fs.Stats | Null
 
 ##### `statSync()`
 
-|      | description |
-|------|-------------|
+Like `fs.statSync()`, but returns `null` instead of throwing when _path_
+doesn't exist. Will still throw on other types of errors.
+
+| name |  |
+|------|--|
 | defined | `lib/files.js:340` |
-| description | Like `fs.statSync()`, but returns `null` instead of throwing when _path_
-doesn't exist. Will still throw on other types of errors. |
 
 ###### Parameters
 - path <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> Path to stat.
@@ -226,10 +237,11 @@ fs.Stats | Null
 
 ##### `writeFile()`
 
-|      | description |
-|------|-------------|
+Helper method for writing files to disk. It wraps the NodeJS file API
+
+| name |  |
+|------|--|
 | defined | `lib/files.js:422` |
-| description | Helper method for writing files to disk. It wraps the NodeJS file API |
 
 ###### Parameters
 - file Path The filename to write to

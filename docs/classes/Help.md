@@ -41,11 +41,13 @@ Shows the help text
 
 ##### `help`
 
-|      | description |
-|------|-------------|
+The help text to display
+
+| meta |  |
+|------|--|
 | type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> |
 | defined | `lib/help.js:14` |
-| description | The help text to display |
+| description |  |
 
 
 
@@ -58,10 +60,11 @@ Shows the help text
 
 ##### `renderHelp()`
 
-|      | description |
-|------|-------------|
+Render the help message as a string
+
+| name |  |
+|------|--|
 | defined | `lib/help.js:62` |
-| description | Render the help message as a string |
 
 
 **Returns**
@@ -70,10 +73,11 @@ Shows the help text
 
 ##### `showHelp()`
 
-|      | description |
-|------|-------------|
+Display the help message, write it to the screen and exit
+
+| name |  |
+|------|--|
 | defined | `lib/help.js:72` |
-| description | Display the help message, write it to the screen and exit |
 
 
 

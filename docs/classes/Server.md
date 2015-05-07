@@ -47,11 +47,13 @@ Provides the `--server` server option for YUIDoc
 
 ##### `_externalData`
 
-|      | description |
-|------|-------------|
+Cache for external mixed in data.
+
+| meta |  |
+|------|--|
 | type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
 | defined | `lib/server.js:15` |
-| description | Cache for external mixed in data. |
+| description |  |
 
 
 
@@ -64,10 +66,11 @@ Provides the `--server` server option for YUIDoc
 
 ##### `clazz()`
 
-|      | description |
-|------|-------------|
+`/classes` endpoint
+
+| name |  |
+|------|--|
 | defined | `lib/server.js:129` |
-| description | `/classes` endpoint |
 
 ###### Parameters
 - req Request Express request object
@@ -77,10 +80,11 @@ Provides the `--server` server option for YUIDoc
 
 ##### `files()`
 
-|      | description |
-|------|-------------|
+`/files` endpoint
+
+| name |  |
+|------|--|
 | defined | `lib/server.js:106` |
-| description | `/files` endpoint |
 
 ###### Parameters
 - req Request Express request object
@@ -90,10 +94,11 @@ Provides the `--server` server option for YUIDoc
 
 ##### `home()`
 
-|      | description |
-|------|-------------|
+`/` endpoint
+
+| name |  |
+|------|--|
 | defined | `lib/server.js:161` |
-| description | `/` endpoint |
 
 ###### Parameters
 - req Request Express request object
@@ -103,20 +108,22 @@ Provides the `--server` server option for YUIDoc
 
 ##### `init()`
 
-|      | description |
-|------|-------------|
+Creates the Express server and prep's YUI for serving
+
+| name |  |
+|------|--|
 | defined | `lib/server.js:173` |
-| description | Creates the Express server and prep's YUI for serving |
 
 
 
 
 ##### `modules()`
 
-|      | description |
-|------|-------------|
+`/modules` endpoint
+
+| name |  |
+|------|--|
 | defined | `lib/server.js:145` |
-| description | `/modules` endpoint |
 
 ###### Parameters
 - req Request Express request object
@@ -126,10 +133,11 @@ Provides the `--server` server option for YUIDoc
 
 ##### `parse()`
 
-|      | description |
-|------|-------------|
+Middleware to parse the API docs per request
+
+| name |  |
+|------|--|
 | defined | `lib/server.js:22` |
-| description | Middleware to parse the API docs per request |
 
 ###### Parameters
 - req Request Express request object
@@ -140,20 +148,22 @@ Provides the `--server` server option for YUIDoc
 
 ##### `routes()`
 
-|      | description |
-|------|-------------|
+Create the routes used to serve YUIDoc files dynamically
+
+| name |  |
+|------|--|
 | defined | `lib/server.js:40` |
-| description | Create the routes used to serve YUIDoc files dynamically |
 
 
 
 
 ##### `start()`
 
-|      | description |
-|------|-------------|
+Start the server with the supplied options.
+
+| name |  |
+|------|--|
 | defined | `lib/server.js:191` |
-| description | Start the server with the supplied options. |
 
 ###### Parameters
 - options <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> Server options

@@ -63,88 +63,104 @@ YUIDoc main class
 
 ##### `dirmap`
 
-|      | description |
-|------|-------------|
+Holder for the list of directories we are processing.
+
+| meta |  |
+|------|--|
 | type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
 | defined | `lib/yuidoc.js:87` |
-| description | Holder for the list of directories we are processing. |
+| description |  |
 
 
 
 
 ##### `endtime`
 
-|      | description |
-|------|-------------|
+Timestamp holder so we know when YUIDoc has finished the parse process.
+
+| meta |  |
+|------|--|
 | type | Timestamp |
 | defined | `lib/yuidoc.js:387` |
-| description | Timestamp holder so we know when YUIDoc has finished the parse process. |
+| description |  |
 
 
 
 
 ##### `filecount`
 
-|      | description |
-|------|-------------|
+Holds the number of files that we are processing.
+
+| meta |  |
+|------|--|
 | type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> |
 | defined | `lib/yuidoc.js:66` |
-| description | Holds the number of files that we are processing. |
+| description |  |
 
 
 
 
 ##### `filemap`
 
-|      | description |
-|------|-------------|
+Holder for the list of files we are processing.
+
+| meta |  |
+|------|--|
 | type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
 | defined | `lib/yuidoc.js:80` |
-| description | Holder for the list of files we are processing. |
+| description |  |
 
 
 
 
 ##### `OPTIONS`
 
-|      | description |
-|------|-------------|
+The default list of configuration options
+
+| meta |  |
+|------|--|
 | type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
 | defined | `lib/yuidoc.js:29` |
-| description | The default list of configuration options |
+| description |  |
 
 
 
 
 ##### `options`
 
-|      | description |
-|------|-------------|
+Internal holder for configuration options.
+
+| meta |  |
+|------|--|
 | type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
 | defined | `lib/yuidoc.js:95` |
-| description | Internal holder for configuration options. |
+| description |  |
 
 
 
 
 ##### `selleck`
 
-|      | description |
-|------|-------------|
+Hash map of dirnames to selleck config options.
+
+| meta |  |
+|------|--|
 | type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
 | defined | `lib/yuidoc.js:73` |
-| description | Hash map of dirnames to selleck config options. |
+| description |  |
 
 
 
 
 ##### `starttime`
 
-|      | description |
-|------|-------------|
+Timestamp holder so we know when YUIDoc started the parse process.
+
+| meta |  |
+|------|--|
 | type | Timestamp |
 | defined | `lib/yuidoc.js:366` |
-| description | Timestamp holder so we know when YUIDoc started the parse process. |
+| description |  |
 
 
 
@@ -158,10 +174,11 @@ YUIDoc main class
 
 ##### `YUIDoc()`
 
-|      | description |
-|------|-------------|
+
+
+| name |  |
+|------|--|
 | defined | `lib/yuidoc.js:49` |
-| description |  |
 
 ###### Parameters
 - config <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The config object
@@ -170,30 +187,33 @@ YUIDoc main class
 
 ##### `_processConfig()`
 
-|      | description |
-|------|-------------|
+Does post process on self.options.
+
+| name |  |
+|------|--|
 | defined | `lib/yuidoc.js:127` |
-| description | Does post process on self.options. |
 
 
 
 
 ##### `_setDefaultExcludes()`
 
-|      | description |
-|------|-------------|
+Always exclude these directories
+
+| name |  |
+|------|--|
 | defined | `lib/yuidoc.js:112` |
-| description | Always exclude these directories |
 
 
 
 
 ##### `parsedir()`
 
-|      | description |
-|------|-------------|
+Walks the passed directory and grabs all the files recursively.
+
+| name |  |
+|------|--|
 | defined | `lib/yuidoc.js:149` |
-| description | Walks the passed directory and grabs all the files recursively. |
 
 ###### Parameters
 - dir <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The directory to parse the contents of.
@@ -202,10 +222,11 @@ YUIDoc main class
 
 ##### `parsefiles()`
 
-|      | description |
-|------|-------------|
+Gathers all the file data and populates the filemap and dirmap hashes.
+
+| name |  |
+|------|--|
 | defined | `lib/yuidoc.js:189` |
-| description | Gathers all the file data and populates the filemap and dirmap hashes. |
 
 ###### Parameters
 - dir <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The directory to start from.
@@ -215,10 +236,11 @@ YUIDoc main class
 
 ##### `run()`
 
-|      | description |
-|------|-------------|
+Process the config, walk the file tree and write out the JSON data.
+
+| name |  |
+|------|--|
 | defined | `lib/yuidoc.js:360` |
-| description | Process the config, walk the file tree and write out the JSON data. |
 
 
 **Returns**
@@ -227,11 +249,12 @@ YUIDoc main class
 
 ##### `runPreprocessors()`
 
-|      | description |
-|------|-------------|
+Applies preprocessors to the data tree. 
+This function first clones the data and operates on the clone.
+
+| name |  |
+|------|--|
 | defined | `lib/yuidoc.js:243` |
-| description | Applies preprocessors to the data tree. 
-This function first clones the data and operates on the clone. |
 
 
 **Returns**
@@ -240,21 +263,23 @@ This function first clones the data and operates on the clone. |
 
 ##### `walk()`
 
-|      | description |
-|------|-------------|
+Walks the paths and parses the directory contents
+
+| name |  |
+|------|--|
 | defined | `lib/yuidoc.js:138` |
-| description | Walks the paths and parses the directory contents |
 
 
 
 
 ##### `writeJSON()`
 
-|      | description |
-|------|-------------|
+Writes the parser JSON data to disk.
+Applies preprocessors, if any.
+
+| name |  |
+|------|--|
 | defined | `lib/yuidoc.js:278` |
-| description | Writes the parser JSON data to disk.
-Applies preprocessors, if any. |
 
 ###### Parameters
 - parser <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The DocParser instance to use

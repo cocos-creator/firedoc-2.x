@@ -2,8 +2,10 @@
 
 ##### `{{name}}`
 
-|      | description |
-|------|-------------|
+{{{propertyDescription}}}
+
+| meta |  |
+|------|--|
 | type | {{#crossLink type}}{{/crossLink}} |
 {{#if overwritten_from}}
 | overwritten | inherited from {{overwritten_from/class}} but overwritten in `{{{file}}}:{{{line}}}` |
@@ -22,7 +24,7 @@
 {{#if default}}
 | default    | {{default}} |
 {{/if}}
-| description | {{{propertyDescription}}} |
+| description |  |
 
 {{#example}}
 ##### Examples
