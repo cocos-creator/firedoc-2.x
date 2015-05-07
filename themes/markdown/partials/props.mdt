@@ -6,23 +6,23 @@
 
 | meta | description |
 |------|-------------|
-| type | {{#crossLink type}}{{/crossLink}} |
+| Type | {{#crossLink type}}{{/crossLink}} |
 {{#if overwritten_from}}
-| overwritten | inherited from {{overwritten_from/class}} but overwritten in `{{{file}}}:{{{line}}}` |
+| Overwritten | inherited from {{overwritten_from/class}} but overwritten in `{{{file}}}:{{{line}}}` |
 {{else}}
   {{#if extended_from}}
-| extends | `{{extended_from}}` |
+| Extends | `{{extended_from}}` |
   {{/if}}
 {{/if}}
-| defined | `{{{file}}}:{{{line}}}` |
+| Defined | `{{{file}}}:{{{line}}}` |
 {{#if deprecationMessage}}
-| deprecated | {{deprecationMessage}} |
+| Deprecated | {{deprecationMessage}} |
 {{/if}}
 {{#if since}}
-| available  | {{since}} |
+| Available  | {{since}} |
 {{/if}}
 {{#if default}}
-| default    | {{default}} |
+| Default    | {{default}} |
 {{/if}}
 
 {{#example}}
