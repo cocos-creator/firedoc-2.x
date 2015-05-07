@@ -40,7 +40,7 @@ The view class is a **`handlebars`** template helper.
 
 ##### Constructor
 
-##### `DocView()`
+##### method: `DocView()`
 
 
 
@@ -54,7 +54,7 @@ The view class is a **`handlebars`** template helper.
 
 
 
-##### `htmlTitle()`
+##### method: `htmlTitle()`
 
 **Mustache** `lambda` method for setting the HTML title
 
@@ -65,7 +65,7 @@ The view class is a **`handlebars`** template helper.
 
 
 
-##### `title()`
+##### method: `title()`
 
 **Mustache** `lambda` method for setting the title
 

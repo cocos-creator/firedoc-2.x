@@ -48,7 +48,7 @@ Utilities Class
 #### Methods
 
 
-##### `escapeHTML()`
+##### method: `escapeHTML()`
 
 Escapes HTML characters in _html_.
 
@@ -63,7 +63,7 @@ Escapes HTML characters in _html_.
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 
-##### `fixType()`
+##### method: `fixType()`
 
 Takes a type string and converts it to a "First letter upper cased" type. e.g. `(string -> String, object -> Object)`
 
@@ -78,7 +78,7 @@ Takes a type string and converts it to a "First letter upper cased" type. e.g. `
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 
-##### `getDirs()`
+##### method: `getDirs()`
 
 Walks the tree from this dir and returns all the subdirs
 
@@ -93,7 +93,7 @@ Walks the tree from this dir and returns all the subdirs
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> 
 
 
-##### `getLayouts()`
+##### method: `getLayouts()`
 
 Like `getPages()`, but returns only the files under the `layout/` subdirectory
 of the specified _dir_.
@@ -109,7 +109,7 @@ of the specified _dir_.
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 
-##### `getPage()`
+##### method: `getPage()`
 
 Loads and returns the content of the specified page file.
 
@@ -124,7 +124,7 @@ Loads and returns the content of the specified page file.
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> | Null 
 
 
-##### `getPages()`
+##### method: `getPages()`
 
 Loads pages (files with a `.handlebars` extension) in the specified directory and
 returns an object containing a mapping of page names (the part of the filename)
@@ -141,7 +141,7 @@ preceding the `.handlebars` extension) to page content.
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 
-##### `getPartials()`
+##### method: `getPartials()`
 
 Like `getPages()`, but returns only the files under the `partial/` subdirectory
 of the specified _dir_.
@@ -157,7 +157,7 @@ of the specified _dir_.
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 
-##### `getProjectData()`
+##### method: `getProjectData()`
 
 Walk the directory tree to locate the yuidoc.json file.
 
@@ -170,7 +170,7 @@ Walk the directory tree to locate the yuidoc.json file.
 
 
 
-##### `localize()`
+##### method: `localize()`
 
 Localize the string via current Y.options
 
@@ -185,7 +185,7 @@ Localize the string via current Y.options
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 
-##### `prepare()`
+##### method: `prepare()`
 
 Mix/merge/munge data into the template.
 
@@ -202,7 +202,7 @@ Mix/merge/munge data into the template.
 
 
 
-##### `unindent()`
+##### method: `unindent()`
 
 Normalizes the initial indentation of the given _content_ so that the first line
 is unindented, and all other lines are unindented to the same degree as the
@@ -220,7 +220,7 @@ lines will be unindented four spaces.
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 
-##### `validatePaths()`
+##### method: `validatePaths()`
 
 Make sure all the paths passed are directories and that they are not in the ignore list.
 
@@ -234,7 +234,7 @@ Make sure all the paths passed are directories and that they are not in the igno
 
 
 
-##### `webpath()`
+##### method: `webpath()`
 
 Produces a normalized web path by joining all the parts and normalizing the
 filesystem-like path into web compatible url.

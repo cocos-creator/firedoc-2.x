@@ -61,7 +61,7 @@ YUIDoc main class
 
 
 
-##### `dirmap`
+##### property: `dirmap`
 
 Holder for the list of directories we are processing.
 
@@ -74,7 +74,7 @@ Holder for the list of directories we are processing.
 
 
 
-##### `endtime`
+##### property: `endtime`
 
 Timestamp holder so we know when YUIDoc has finished the parse process.
 
@@ -87,7 +87,7 @@ Timestamp holder so we know when YUIDoc has finished the parse process.
 
 
 
-##### `filecount`
+##### property: `filecount`
 
 Holds the number of files that we are processing.
 
@@ -100,7 +100,7 @@ Holds the number of files that we are processing.
 
 
 
-##### `filemap`
+##### property: `filemap`
 
 Holder for the list of files we are processing.
 
@@ -113,7 +113,7 @@ Holder for the list of files we are processing.
 
 
 
-##### `OPTIONS`
+##### property: `OPTIONS`
 
 The default list of configuration options
 
@@ -126,7 +126,7 @@ The default list of configuration options
 
 
 
-##### `options`
+##### property: `options`
 
 Internal holder for configuration options.
 
@@ -139,7 +139,7 @@ Internal holder for configuration options.
 
 
 
-##### `selleck`
+##### property: `selleck`
 
 Hash map of dirnames to selleck config options.
 
@@ -152,7 +152,7 @@ Hash map of dirnames to selleck config options.
 
 
 
-##### `starttime`
+##### property: `starttime`
 
 Timestamp holder so we know when YUIDoc started the parse process.
 
@@ -172,7 +172,7 @@ Timestamp holder so we know when YUIDoc started the parse process.
 
 ##### Constructor
 
-##### `YUIDoc()`
+##### method: `YUIDoc()`
 
 
 
@@ -185,7 +185,7 @@ Timestamp holder so we know when YUIDoc started the parse process.
 
 
 
-##### `_processConfig()`
+##### method: `_processConfig()`
 
 Does post process on self.options.
 
@@ -196,7 +196,7 @@ Does post process on self.options.
 
 
 
-##### `_setDefaultExcludes()`
+##### method: `_setDefaultExcludes()`
 
 Always exclude these directories
 
@@ -207,7 +207,7 @@ Always exclude these directories
 
 
 
-##### `parsedir()`
+##### method: `parsedir()`
 
 Walks the passed directory and grabs all the files recursively.
 
@@ -220,7 +220,7 @@ Walks the passed directory and grabs all the files recursively.
 
 
 
-##### `parsefiles()`
+##### method: `parsefiles()`
 
 Gathers all the file data and populates the filemap and dirmap hashes.
 
@@ -234,7 +234,7 @@ Gathers all the file data and populates the filemap and dirmap hashes.
 
 
 
-##### `run()`
+##### method: `run()`
 
 Process the config, walk the file tree and write out the JSON data.
 
@@ -247,7 +247,7 @@ Process the config, walk the file tree and write out the JSON data.
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 
-##### `runPreprocessors()`
+##### method: `runPreprocessors()`
 
 Applies preprocessors to the data tree. 
 This function first clones the data and operates on the clone.
@@ -261,7 +261,7 @@ This function first clones the data and operates on the clone.
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 
-##### `walk()`
+##### method: `walk()`
 
 Walks the paths and parses the directory contents
 
@@ -272,7 +272,7 @@ Walks the paths and parses the directory contents
 
 
 
-##### `writeJSON()`
+##### method: `writeJSON()`
 
 Writes the parser JSON data to disk.
 Applies preprocessors, if any.

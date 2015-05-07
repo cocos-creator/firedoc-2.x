@@ -82,7 +82,7 @@ with the parsers data (aggregated in the `'data'` property).
 
 
 
-##### `CORRECTIONS`
+##### property: `CORRECTIONS`
 
 Common errors will get scrubbed instead of being ignored.
 
@@ -95,7 +95,7 @@ Common errors will get scrubbed instead of being ignored.
 
 
 
-##### `DIGESTERS`
+##### property: `DIGESTERS`
 
 A map of the default tag processors, keyed by the
 tag name.  Multiple tags can use the same digester
@@ -111,7 +111,7 @@ implementation rather than a function.
 
 
 
-##### `IGNORE_TAGLIST`
+##### property: `IGNORE_TAGLIST`
 
 A list of ignored tags. These tags should be ignored because there is
 likely to be used for purposes other than JSDoc tags in JavaScript comments.
@@ -125,7 +125,7 @@ likely to be used for purposes other than JSDoc tags in JavaScript comments.
 
 
 
-##### `TAGLIST`
+##### property: `TAGLIST`
 
 A list of known tags.  This populates a member variable
 during initialization, and will be updated if additional
@@ -361,7 +361,7 @@ attribute's value has changed.
 
 ##### Constructor
 
-##### `DocParser()`
+##### method: `DocParser()`
 
 
 
@@ -374,7 +374,7 @@ attribute's value has changed.
 
 
 
-##### `_resolveFor()`
+##### method: `_resolveFor()`
 
 Takes a non-namespaced classname and resolves it to a namespace (to support `@for`)
 
@@ -389,7 +389,7 @@ Takes a non-namespaced classname and resolves it to a namespace (to support `@fo
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 
-##### `extract()`
+##### method: `extract()`
 
 Accepts a map of filenames to file content.  Returns
 a map of filenames to an array of API comment block
@@ -410,7 +410,7 @@ alternative comment parser.
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 
-##### `handlecomment()`
+##### method: `handlecomment()`
 
 Transforms a JavaDoc style comment block (less the start and end of it)
 into a list of tag/text pairs. The leading space and '*' are removed,
@@ -428,7 +428,7 @@ friendly for both markdown and html parsers.
 
 
 
-##### `implodeString()`
+##### method: `implodeString()`
 
 Flatten a string, remove all line breaks and replace them with a token
 
@@ -443,7 +443,7 @@ Flatten a string, remove all line breaks and replace them with a token
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 
-##### `implodeString()`
+##### method: `implodeString()`
 
 Un-flatten a string, replace tokens injected with `implodeString`
 
@@ -458,7 +458,7 @@ Un-flatten a string, replace tokens injected with `implodeString`
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 
-##### `parse()`
+##### method: `parse()`
 
 Extracts and transforms the filemap provided to constructor
 
@@ -474,7 +474,7 @@ Extracts and transforms the filemap provided to constructor
 <a href="../classes/DocParser.html" class="crosslink">DocParser</a> 
 
 
-##### `processblock()`
+##### method: `processblock()`
 
 Processes all the tags in a single comment block
 
@@ -487,7 +487,7 @@ Processes all the tags in a single comment block
 
 
 
-##### `stringlog()`
+##### method: `stringlog()`
 
 Parses the JSON data and formats it into a nice log string for
 filename and line number: `/file/name.js:123`
@@ -503,7 +503,7 @@ filename and line number: `/file/name.js:123`
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 
-##### `transform()`
+##### method: `transform()`
 
 Transforms a map of filenames to arrays of comment blocks into a
 JSON structure that represents the entire processed API doc info
@@ -520,7 +520,7 @@ and relationships between elements for the entire project.
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 
-##### `unindent()`
+##### method: `unindent()`
 
 Normalizes the initial indentation of the given _content_ so that the first line
 is unindented, and all other lines are unindented to the same degree as the

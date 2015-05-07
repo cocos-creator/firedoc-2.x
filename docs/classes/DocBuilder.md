@@ -72,7 +72,7 @@ based templates to generate static HTML content
 
 
 
-##### `_mergeCounter`
+##### property: `_mergeCounter`
 
 Counter for stepping into merges
 
@@ -85,7 +85,7 @@ Counter for stepping into merges
 
 
 
-##### `_meta`
+##### property: `_meta`
 
 Holder for project meta data
 
@@ -98,7 +98,7 @@ Holder for project meta data
 
 
 
-##### `files`
+##### property: `files`
 
 File counter
 
@@ -111,7 +111,7 @@ File counter
 
 
 
-##### `NATIVES`
+##### property: `NATIVES`
 
 List of native types to cross link to MDN
 
@@ -130,7 +130,7 @@ List of native types to cross link to MDN
 #### Methods
 
 
-##### `_addHelpers()`
+##### method: `_addHelpers()`
 
 Register a `Y.Handlebars` helper method
 
@@ -143,7 +143,7 @@ Register a `Y.Handlebars` helper method
 
 
 
-##### `_inlineCode()`
+##### method: `_inlineCode()`
 
 Ported from [Selleck](https://github.com/rgrove/selleck), this handles ```'s in fields
 that are not parsed by the **Markdown** parser.
@@ -159,7 +159,7 @@ that are not parsed by the **Markdown** parser.
 HTML 
 
 
-##### `_mixExternal()`
+##### method: `_mixExternal()`
 
 Mixes the various external data soures together into the local data, augmenting
 it with flags.
@@ -171,7 +171,7 @@ it with flags.
 
 
 
-##### `_parseCode()`
+##### method: `_parseCode()`
 
 Parses `<pre class="code prettyprint"><code>` tags and adds the __prettyprint__ `className` to them
 
@@ -186,7 +186,7 @@ Parses `<pre class="code prettyprint"><code>` tags and adds the __prettyprint__ 
 HTML 
 
 
-##### `_parseCrossLink()`
+##### method: `_parseCrossLink()`
 
 Parse the item to be cross linked and return an HREF linked to the item
 
@@ -201,7 +201,7 @@ Parse the item to be cross linked and return an HREF linked to the item
 
 
 
-##### `addFoundAt()`
+##### method: `addFoundAt()`
 
 Parses file and line number from an item object and build's an HREF
 
@@ -216,7 +216,7 @@ Parses file and line number from an item object and build's an HREF
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 
-##### `augmentData()`
+##### method: `augmentData()`
 
 Augments the **DocParser** meta data to provide default values for certain keys as well as parses all descriptions
 with the `Markdown Parser`
@@ -232,7 +232,7 @@ with the `Markdown Parser`
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 
-##### `compile()`
+##### method: `compile()`
 
 Compiles the templates from the meta-data provided by DocParser
 
@@ -245,7 +245,7 @@ Compiles the templates from the meta-data provided by DocParser
 
 
 
-##### `filterFileName()`
+##### method: `filterFileName()`
 
 Normalizes a file path to a writable filename:
 
@@ -263,7 +263,7 @@ Normalizes a file path to a writable filename:
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 
-##### `getProjectMeta()`
+##### method: `getProjectMeta()`
 
 Prep the meta data to be fed to Selleck
 
@@ -276,7 +276,7 @@ Prep the meta data to be fed to Selleck
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 
-##### `hasProperty()`
+##### method: `hasProperty()`
 
 Checks an array of items (class items) to see if an item is in that list
 
@@ -292,7 +292,7 @@ Checks an array of items (class items) to see if an item is in that list
  
 
 
-##### `makeDirs()`
+##### method: `makeDirs()`
 
 Makes the default directories needed
 
@@ -305,7 +305,7 @@ Makes the default directories needed
 
 
 
-##### `markdown()`
+##### method: `markdown()`
 
 Wrapper around the Markdown parser so it can be normalized or even side stepped
 
@@ -320,7 +320,7 @@ Wrapper around the Markdown parser so it can be normalized or even side stepped
 HTML 
 
 
-##### `mergeExtends()`
+##### method: `mergeExtends()`
 
 Merge superclass data into a child class
 
@@ -335,7 +335,7 @@ Merge superclass data into a child class
 
 
 
-##### `mixExternal()`
+##### method: `mixExternal()`
 
 Fetches the remote data and fires the callback when it's all complete
 
@@ -348,7 +348,7 @@ Fetches the remote data and fires the callback when it's all complete
 
 
 
-##### `nameSort()`
+##### method: `nameSort()`
 
 Sort method of array of objects with a property called __name__
 
@@ -364,7 +364,7 @@ Sort method of array of objects with a property called __name__
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a> 
 
 
-##### `NATIVES_LINKER()`
+##### method: `NATIVES_LINKER()`
 
 Function to link an external type uses `NATIVES` object
 
@@ -379,7 +379,7 @@ Function to link an external type uses `NATIVES` object
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 
-##### `populateClasses()`
+##### method: `populateClasses()`
 
 Populate the meta data for classes
 
@@ -394,7 +394,7 @@ Populate the meta data for classes
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 
-##### `populateFiles()`
+##### method: `populateFiles()`
 
 Populate the meta data for files
 
@@ -409,7 +409,7 @@ Populate the meta data for files
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 
-##### `populateModules()`
+##### method: `populateModules()`
 
 Populate the meta data for modules
 
@@ -424,7 +424,7 @@ Populate the meta data for modules
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 
-##### `render()`
+##### method: `render()`
 
 Ported from [Selleck](https://github.com/rgrove/selleck)
 Renders the handlebars templates with the default View class.
@@ -444,7 +444,7 @@ Renders the handlebars templates with the default View class.
 
 
 
-##### `renderAPIMeta()`
+##### method: `renderAPIMeta()`
 
 Render the API meta and return the JavaScript
 
@@ -458,7 +458,7 @@ Render the API meta and return the JavaScript
 
 
 
-##### `renderClass()`
+##### method: `renderClass()`
 
 Render the class file
 
@@ -473,7 +473,7 @@ Render the class file
 
 
 
-##### `renderFile()`
+##### method: `renderFile()`
 
 Render the source file
 
@@ -488,7 +488,7 @@ Render the source file
 
 
 
-##### `renderIndex()`
+##### method: `renderIndex()`
 
 Render the index file
 
@@ -503,7 +503,7 @@ Render the index file
 
 
 
-##### `renderModule()`
+##### method: `renderModule()`
 
 Render a module
 
@@ -518,7 +518,7 @@ Render a module
 
 
 
-##### `writeAPIMeta()`
+##### method: `writeAPIMeta()`
 
 Write the API meta data used for the AutoComplete widget
 
@@ -531,7 +531,7 @@ Write the API meta data used for the AutoComplete widget
 
 
 
-##### `writeClasses()`
+##### method: `writeClasses()`
 
 Generates the class files under "out"/classes/
 
@@ -546,7 +546,7 @@ Generates the class files under "out"/classes/
 
 
 
-##### `writeFiles()`
+##### method: `writeFiles()`
 
 Generates the syntax files under `"out"/files/`
 
@@ -561,7 +561,7 @@ Generates the syntax files under `"out"/files/`
 
 
 
-##### `writeIndex()`
+##### method: `writeIndex()`
 
 Generates the index.html file
 
@@ -576,7 +576,7 @@ Generates the index.html file
 
 
 
-##### `writeModules()`
+##### method: `writeModules()`
 
 Generates the module files under "out"/modules/
 

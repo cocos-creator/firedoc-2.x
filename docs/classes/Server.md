@@ -45,7 +45,7 @@ Provides the `--server` server option for YUIDoc
 
 
 
-##### `_externalData`
+##### property: `_externalData`
 
 Cache for external mixed in data.
 
@@ -64,7 +64,7 @@ Cache for external mixed in data.
 #### Methods
 
 
-##### `clazz()`
+##### method: `clazz()`
 
 `/classes` endpoint
 
@@ -78,7 +78,7 @@ Cache for external mixed in data.
 
 
 
-##### `files()`
+##### method: `files()`
 
 `/files` endpoint
 
@@ -92,7 +92,7 @@ Cache for external mixed in data.
 
 
 
-##### `home()`
+##### method: `home()`
 
 `/` endpoint
 
@@ -106,7 +106,7 @@ Cache for external mixed in data.
 
 
 
-##### `init()`
+##### method: `init()`
 
 Creates the Express server and prep's YUI for serving
 
@@ -117,7 +117,7 @@ Creates the Express server and prep's YUI for serving
 
 
 
-##### `modules()`
+##### method: `modules()`
 
 `/modules` endpoint
 
@@ -131,7 +131,7 @@ Creates the Express server and prep's YUI for serving
 
 
 
-##### `parse()`
+##### method: `parse()`
 
 Middleware to parse the API docs per request
 
@@ -146,7 +146,7 @@ Middleware to parse the API docs per request
 
 
 
-##### `routes()`
+##### method: `routes()`
 
 Create the routes used to serve YUIDoc files dynamically
 
@@ -157,7 +157,7 @@ Create the routes used to serve YUIDoc files dynamically
 
 
 
-##### `start()`
+##### method: `start()`
 
 Start the server with the supplied options.
 

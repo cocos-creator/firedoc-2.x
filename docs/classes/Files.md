@@ -47,7 +47,7 @@ Ported fileutils methods from [Selleck](http://github.com/rgrove/selleck)
 #### Methods
 
 
-##### `copyAssets()`
+##### method: `copyAssets()`
 
 Copy the theme assets directory
 
@@ -63,7 +63,7 @@ Copy the theme assets directory
 
 
 
-##### `copyDirectory()`
+##### method: `copyDirectory()`
 
 Copy a directory from one location to another
 
@@ -80,7 +80,7 @@ Copy a directory from one location to another
 
 
 
-##### `copyFile()`
+##### method: `copyFile()`
 
 Copy a file from one location to another
 
@@ -98,7 +98,7 @@ Copy a file from one location to another
 
 
 
-##### `copyPath()`
+##### method: `copyPath()`
 
 If _source_ is a file, copies it to _dest_. If it's a directory, recursively
 copies it and all files and directories it contains to _dest_.
@@ -125,7 +125,7 @@ if they already exist.
 
 
 
-##### `deletePath()`
+##### method: `deletePath()`
 
 If _path_ is a file, deletes it. If _path_ is a directory, recursively deletes
 it and all files and directories it contains.
@@ -141,7 +141,7 @@ This method is synchronous.
 
 
 
-##### `getJSON()`
+##### method: `getJSON()`
 
 Helper method for getting JSON data from a local file
 
@@ -156,7 +156,7 @@ Helper method for getting JSON data from a local file
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 
-##### `isDirectory()`
+##### method: `isDirectory()`
 
 Check to see if this is a directory
 
@@ -172,7 +172,7 @@ Check to see if this is a directory
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> 
 
 
-##### `isFile()`
+##### method: `isFile()`
 
 Check to see if this is a File
 
@@ -188,7 +188,7 @@ Check to see if this is a File
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> 
 
 
-##### `isSymbolicLink()`
+##### method: `isSymbolicLink()`
 
 Check to see if this is a SymLink
 
@@ -203,7 +203,7 @@ Check to see if this is a SymLink
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> 
 
 
-##### `lstatSync()`
+##### method: `lstatSync()`
 
 Like `fs.lstatSync()`, but returns `null` instead of throwing when _path_
 doesn't exist. Will still throw on other types of errors.
@@ -219,7 +219,7 @@ doesn't exist. Will still throw on other types of errors.
 fs.Stats | Null 
 
 
-##### `statSync()`
+##### method: `statSync()`
 
 Like `fs.statSync()`, but returns `null` instead of throwing when _path_
 doesn't exist. Will still throw on other types of errors.
@@ -235,7 +235,7 @@ doesn't exist. Will still throw on other types of errors.
 fs.Stats | Null 
 
 
-##### `writeFile()`
+##### method: `writeFile()`
 
 Helper method for writing files to disk. It wraps the NodeJS file API
 

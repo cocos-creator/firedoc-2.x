@@ -39,7 +39,7 @@ Shows the help text
 
 
 
-##### `help`
+##### property: `help`
 
 The help text to display
 
@@ -58,7 +58,7 @@ The help text to display
 #### Methods
 
 
-##### `renderHelp()`
+##### method: `renderHelp()`
 
 Render the help message as a string
 
@@ -71,7 +71,7 @@ Render the help message as a string
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 
-##### `showHelp()`
+##### method: `showHelp()`
 
 Display the help message, write it to the screen and exit
 
