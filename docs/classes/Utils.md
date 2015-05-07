@@ -50,13 +50,12 @@ Utilities Class
 
 ##### `escapeHTML()`
 
-Defined in `lib/utils.js:31`
+|      | description |
+|------|-------------|
+| defined | `lib/utils.js:31` |
+| description | Escapes HTML characters in _html_. |
 
-
-
-> Escapes HTML characters in _html_.
-
-**Parameters**
+###### Parameters
 - html <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> String to escape.
 
 **Returns**
@@ -65,13 +64,12 @@ Defined in `lib/utils.js:31`
 
 ##### `fixType()`
 
-Defined in `lib/utils.js:452`
+|      | description |
+|------|-------------|
+| defined | `lib/utils.js:452` |
+| description | Takes a type string and converts it to a "First letter upper cased" type. e.g. `(string -> String, object -> Object)` |
 
-
-
-> Takes a type string and converts it to a "First letter upper cased" type. e.g. `(string -> String, object -> Object)`
-
-**Parameters**
+###### Parameters
 - t <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The type string to convert
 
 **Returns**
@@ -80,13 +78,12 @@ Defined in `lib/utils.js:452`
 
 ##### `getDirs()`
 
-Defined in `lib/utils.js:338`
+|      | description |
+|------|-------------|
+| defined | `lib/utils.js:338` |
+| description | Walks the tree from this dir and returns all the subdirs |
 
-
-
-> Walks the tree from this dir and returns all the subdirs
-
-**Parameters**
+###### Parameters
 - dir <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The dir to begin at
 
 **Returns**
@@ -95,14 +92,13 @@ Defined in `lib/utils.js:338`
 
 ##### `getLayouts()`
 
-Defined in `lib/utils.js:63`
+|      | description |
+|------|-------------|
+| defined | `lib/utils.js:63` |
+| description | Like `getPages()`, but returns only the files under the `layout/` subdirectory
+of the specified _dir_. |
 
-
-
-> Like `getPages()`, but returns only the files under the `layout/` subdirectory
-of the specified _dir_.
-
-**Parameters**
+###### Parameters
 - dir <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> Directory path.
 
 **Returns**
@@ -111,13 +107,12 @@ of the specified _dir_.
 
 ##### `getPage()`
 
-Defined in `lib/utils.js:76`
+|      | description |
+|------|-------------|
+| defined | `lib/utils.js:76` |
+| description | Loads and returns the content of the specified page file. |
 
-
-
-> Loads and returns the content of the specified page file.
-
-**Parameters**
+###### Parameters
 - pagePath <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> Path to a single `.handlebars` page.
 
 **Returns**
@@ -126,15 +121,14 @@ Defined in `lib/utils.js:76`
 
 ##### `getPages()`
 
-Defined in `lib/utils.js:91`
-
-
-
-> Loads pages (files with a `.handlebars` extension) in the specified directory and
+|      | description |
+|------|-------------|
+| defined | `lib/utils.js:91` |
+| description | Loads pages (files with a `.handlebars` extension) in the specified directory and
 returns an object containing a mapping of page names (the part of the filename)
-preceding the `.handlebars` extension) to page content.
+preceding the `.handlebars` extension) to page content. |
 
-**Parameters**
+###### Parameters
 - dir <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> Directory path.
 
 **Returns**
@@ -143,14 +137,13 @@ preceding the `.handlebars` extension) to page content.
 
 ##### `getPartials()`
 
-Defined in `lib/utils.js:125`
+|      | description |
+|------|-------------|
+| defined | `lib/utils.js:125` |
+| description | Like `getPages()`, but returns only the files under the `partial/` subdirectory
+of the specified _dir_. |
 
-
-
-> Like `getPages()`, but returns only the files under the `partial/` subdirectory
-of the specified _dir_.
-
-**Parameters**
+###### Parameters
 - dir <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> Directory path.
 
 **Returns**
@@ -159,26 +152,24 @@ of the specified _dir_.
 
 ##### `getProjectData()`
 
-Defined in `lib/utils.js:224`
+|      | description |
+|------|-------------|
+| defined | `lib/utils.js:224` |
+| description | Walk the directory tree to locate the yuidoc.json file. |
 
-
-
-> Walk the directory tree to locate the yuidoc.json file.
-
-**Parameters**
+###### Parameters
 - dir Path The directory to start from
 
 
 
 ##### `localize()`
 
-Defined in `lib/utils.js:492`
+|      | description |
+|------|-------------|
+| defined | `lib/utils.js:492` |
+| description | Localize the string via current Y.options |
 
-
-
-> Localize the string via current Y.options
-
-**Parameters**
+###### Parameters
 - str <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> the original string that you want to input
 
 **Returns**
@@ -187,13 +178,12 @@ Defined in `lib/utils.js:492`
 
 ##### `prepare()`
 
-Defined in `lib/utils.js:139`
+|      | description |
+|------|-------------|
+| defined | `lib/utils.js:139` |
+| description | Mix/merge/munge data into the template. |
 
-
-
-> Mix/merge/munge data into the template.
-
-**Parameters**
+###### Parameters
 - inDir <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The starting directory
 - options <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The `options` for the meta data.
 - callback Callback The callback to excecute when complete
@@ -204,16 +194,15 @@ Defined in `lib/utils.js:139`
 
 ##### `unindent()`
 
-Defined in `lib/utils.js:44`
-
-
-
-> Normalizes the initial indentation of the given _content_ so that the first line
+|      | description |
+|------|-------------|
+| defined | `lib/utils.js:44` |
+| description | Normalizes the initial indentation of the given _content_ so that the first line
 is unindented, and all other lines are unindented to the same degree as the
 first line. So if the first line has four spaces at the beginning, then all
-lines will be unindented four spaces.
+lines will be unindented four spaces. |
 
-**Parameters**
+###### Parameters
 - content <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> Text to unindent.
 
 **Returns**
@@ -222,13 +211,12 @@ lines will be unindented four spaces.
 
 ##### `validatePaths()`
 
-Defined in `lib/utils.js:364`
+|      | description |
+|------|-------------|
+| defined | `lib/utils.js:364` |
+| description | Make sure all the paths passed are directories and that they are not in the ignore list. |
 
-
-
-> Make sure all the paths passed are directories and that they are not in the ignore list.
-
-**Parameters**
+###### Parameters
 - paths <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> The array of paths to validate
 - ignore <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> A string to call `.indexOf` on a path to determine if it should be ignored
 
@@ -236,16 +224,15 @@ Defined in `lib/utils.js:364`
 
 ##### `webpath()`
 
-Defined in `lib/utils.js:474`
-
-
-
-> Produces a normalized web path by joining all the parts and normalizing the
+|      | description |
+|------|-------------|
+| defined | `lib/utils.js:474` |
+| description | Produces a normalized web path by joining all the parts and normalizing the
 filesystem-like path into web compatible url.
 Supports relative and absolute paths.
-Courtesy of [Mojito's utils](https://github.com/yahoo/mojito/)
+Courtesy of [Mojito's utils](https://github.com/yahoo/mojito/) |
 
-**Parameters**
+###### Parameters
 - url <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String*</a> the list of parts to be joined and normalized
 
 **Returns**

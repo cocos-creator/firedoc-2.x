@@ -38,13 +38,12 @@ Handles argument parsing
 
 ##### `Options()`
 
-Defined in `lib/options.js:20`
+|      | description |
+|------|-------------|
+| defined | `lib/options.js:20` |
+| description | Parses arguments and returns an Object of config options |
 
-
-
-> Parses arguments and returns an Object of config options
-
-**Parameters**
+###### Parameters
 - args <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> Arguments to parse
 
 **Returns**

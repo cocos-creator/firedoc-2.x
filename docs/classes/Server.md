@@ -64,13 +64,12 @@ Provides the `--server` server option for YUIDoc
 
 ##### `clazz()`
 
-Defined in `lib/server.js:129`
+|      | description |
+|------|-------------|
+| defined | `lib/server.js:129` |
+| description | `/classes` endpoint |
 
-
-
-> `/classes` endpoint
-
-**Parameters**
+###### Parameters
 - req Request Express request object
 - res Response Express response object
 
@@ -78,13 +77,12 @@ Defined in `lib/server.js:129`
 
 ##### `files()`
 
-Defined in `lib/server.js:106`
+|      | description |
+|------|-------------|
+| defined | `lib/server.js:106` |
+| description | `/files` endpoint |
 
-
-
-> `/files` endpoint
-
-**Parameters**
+###### Parameters
 - req Request Express request object
 - res Response Express response object
 
@@ -92,13 +90,12 @@ Defined in `lib/server.js:106`
 
 ##### `home()`
 
-Defined in `lib/server.js:161`
+|      | description |
+|------|-------------|
+| defined | `lib/server.js:161` |
+| description | `/` endpoint |
 
-
-
-> `/` endpoint
-
-**Parameters**
+###### Parameters
 - req Request Express request object
 - res Response Express response object
 
@@ -106,24 +103,22 @@ Defined in `lib/server.js:161`
 
 ##### `init()`
 
-Defined in `lib/server.js:173`
-
-
-
-> Creates the Express server and prep's YUI for serving
+|      | description |
+|------|-------------|
+| defined | `lib/server.js:173` |
+| description | Creates the Express server and prep's YUI for serving |
 
 
 
 
 ##### `modules()`
 
-Defined in `lib/server.js:145`
+|      | description |
+|------|-------------|
+| defined | `lib/server.js:145` |
+| description | `/modules` endpoint |
 
-
-
-> `/modules` endpoint
-
-**Parameters**
+###### Parameters
 - req Request Express request object
 - res Response Express response object
 
@@ -131,13 +126,12 @@ Defined in `lib/server.js:145`
 
 ##### `parse()`
 
-Defined in `lib/server.js:22`
+|      | description |
+|------|-------------|
+| defined | `lib/server.js:22` |
+| description | Middleware to parse the API docs per request |
 
-
-
-> Middleware to parse the API docs per request
-
-**Parameters**
+###### Parameters
 - req Request Express request object
 - res Response Express response object
 - next <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> Express next callback
@@ -146,24 +140,22 @@ Defined in `lib/server.js:22`
 
 ##### `routes()`
 
-Defined in `lib/server.js:40`
-
-
-
-> Create the routes used to serve YUIDoc files dynamically
+|      | description |
+|------|-------------|
+| defined | `lib/server.js:40` |
+| description | Create the routes used to serve YUIDoc files dynamically |
 
 
 
 
 ##### `start()`
 
-Defined in `lib/server.js:191`
+|      | description |
+|------|-------------|
+| defined | `lib/server.js:191` |
+| description | Start the server with the supplied options. |
 
-
-
-> Start the server with the supplied options.
-
-**Parameters**
+###### Parameters
 - options <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> Server options
 
 

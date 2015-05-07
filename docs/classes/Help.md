@@ -58,11 +58,10 @@ Shows the help text
 
 ##### `renderHelp()`
 
-Defined in `lib/help.js:62`
-
-
-
-> Render the help message as a string
+|      | description |
+|------|-------------|
+| defined | `lib/help.js:62` |
+| description | Render the help message as a string |
 
 
 **Returns**
@@ -71,11 +70,10 @@ Defined in `lib/help.js:62`
 
 ##### `showHelp()`
 
-Defined in `lib/help.js:72`
-
-
-
-> Display the help message, write it to the screen and exit
+|      | description |
+|------|-------------|
+| defined | `lib/help.js:72` |
+| description | Display the help message, write it to the screen and exit |
 
 
 

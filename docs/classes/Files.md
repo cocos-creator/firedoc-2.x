@@ -49,13 +49,12 @@ Ported fileutils methods from [Selleck](http://github.com/rgrove/selleck)
 
 ##### `copyAssets()`
 
-Defined in `lib/files.js:360`
+|      | description |
+|------|-------------|
+| defined | `lib/files.js:360` |
+| description | Copy the theme assets directory |
 
-
-
-> Copy the theme assets directory
-
-**Parameters**
+###### Parameters
 - from Path The source directory
 - dest Path The destination directory
 - deleteFirst <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> Should the directory be deleted if it exists
@@ -65,13 +64,12 @@ Defined in `lib/files.js:360`
 
 ##### `copyDirectory()`
 
-Defined in `lib/files.js:37`
+|      | description |
+|------|-------------|
+| defined | `lib/files.js:37` |
+| description | Copy a directory from one location to another |
 
-
-
-> Copy a directory from one location to another
-
-**Parameters**
+###### Parameters
 - source Path The source directory
 - dest Path The destination directory
 - overwrite <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> Whether or not to overwrite destination files
@@ -82,13 +80,12 @@ Defined in `lib/files.js:37`
 
 ##### `copyFile()`
 
-Defined in `lib/files.js:125`
+|      | description |
+|------|-------------|
+| defined | `lib/files.js:125` |
+| description | Copy a file from one location to another |
 
-
-
-> Copy a file from one location to another
-
-**Parameters**
+###### Parameters
 - source Path The source file
 - dest Path The destination file
 - overwrite <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> Whether or not to overwrite destination files
@@ -100,11 +97,10 @@ Defined in `lib/files.js:125`
 
 ##### `copyPath()`
 
-Defined in `lib/files.js:178`
-
-
-
-> If _source_ is a file, copies it to _dest_. If it's a directory, recursively
+|      | description |
+|------|-------------|
+| defined | `lib/files.js:178` |
+| description | If _source_ is a file, copies it to _dest_. If it's a directory, recursively
 copies it and all files and directories it contains to _dest_.
 
 Note that when attempting to copy a file into a directory, you should specify
@@ -113,9 +109,9 @@ be interpreted as an attempt to copy the _source_ file *over* the _dest_
 directory instead of *into* it.
 
 Known issues:
-- Doesn't preserve ownership or permissions on copied files/directories.
+- Doesn't preserve ownership or permissions on copied files/directories. |
 
-**Parameters**
+###### Parameters
 - source <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> Source path.
 - dest <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> Destination path.
 - overwrite <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> Whether or not to overwrite destination files
@@ -127,29 +123,27 @@ if they already exist.
 
 ##### `deletePath()`
 
-Defined in `lib/files.js:224`
-
-
-
-> If _path_ is a file, deletes it. If _path_ is a directory, recursively deletes
+|      | description |
+|------|-------------|
+| defined | `lib/files.js:224` |
+| description | If _path_ is a file, deletes it. If _path_ is a directory, recursively deletes
 it and all files and directories it contains.
 
-This method is synchronous.
+This method is synchronous. |
 
-**Parameters**
+###### Parameters
 - path <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> File or directory to delete.
 
 
 
 ##### `getJSON()`
 
-Defined in `lib/files.js:407`
+|      | description |
+|------|-------------|
+| defined | `lib/files.js:407` |
+| description | Helper method for getting JSON data from a local file |
 
-
-
-> Helper method for getting JSON data from a local file
-
-**Parameters**
+###### Parameters
 - filename Path The filename to parse JSON from
 
 **Returns**
@@ -158,13 +152,12 @@ Defined in `lib/files.js:407`
 
 ##### `isDirectory()`
 
-Defined in `lib/files.js:248`
+|      | description |
+|------|-------------|
+| defined | `lib/files.js:248` |
+| description | Check to see if this is a directory |
 
-
-
-> Check to see if this is a directory
-
-**Parameters**
+###### Parameters
 - path Path The path to check
 - link <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> Also validate a symlink
 
@@ -174,13 +167,12 @@ Defined in `lib/files.js:248`
 
 ##### `isFile()`
 
-Defined in `lib/files.js:278`
+|      | description |
+|------|-------------|
+| defined | `lib/files.js:278` |
+| description | Check to see if this is a File |
 
-
-
-> Check to see if this is a File
-
-**Parameters**
+###### Parameters
 - path Path The path to check
 - link <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> Also validate a symlink
 
@@ -190,13 +182,12 @@ Defined in `lib/files.js:278`
 
 ##### `isSymbolicLink()`
 
-Defined in `lib/files.js:305`
+|      | description |
+|------|-------------|
+| defined | `lib/files.js:305` |
+| description | Check to see if this is a SymLink |
 
-
-
-> Check to see if this is a SymLink
-
-**Parameters**
+###### Parameters
 - path Path The path to check
 
 **Returns**
@@ -205,14 +196,13 @@ Defined in `lib/files.js:305`
 
 ##### `lstatSync()`
 
-Defined in `lib/files.js:319`
+|      | description |
+|------|-------------|
+| defined | `lib/files.js:319` |
+| description | Like `fs.lstatSync()`, but returns `null` instead of throwing when _path_
+doesn't exist. Will still throw on other types of errors. |
 
-
-
-> Like `fs.lstatSync()`, but returns `null` instead of throwing when _path_
-doesn't exist. Will still throw on other types of errors.
-
-**Parameters**
+###### Parameters
 - path <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> Path to stat.
 
 **Returns**
@@ -221,14 +211,13 @@ fs.Stats | Null
 
 ##### `statSync()`
 
-Defined in `lib/files.js:340`
+|      | description |
+|------|-------------|
+| defined | `lib/files.js:340` |
+| description | Like `fs.statSync()`, but returns `null` instead of throwing when _path_
+doesn't exist. Will still throw on other types of errors. |
 
-
-
-> Like `fs.statSync()`, but returns `null` instead of throwing when _path_
-doesn't exist. Will still throw on other types of errors.
-
-**Parameters**
+###### Parameters
 - path <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> Path to stat.
 
 **Returns**
@@ -237,13 +226,12 @@ fs.Stats | Null
 
 ##### `writeFile()`
 
-Defined in `lib/files.js:422`
+|      | description |
+|------|-------------|
+| defined | `lib/files.js:422` |
+| description | Helper method for writing files to disk. It wraps the NodeJS file API |
 
-
-
-> Helper method for writing files to disk. It wraps the NodeJS file API
-
-**Parameters**
+###### Parameters
 - file Path The filename to write to
 - data <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The data to write
 - callback Callback  

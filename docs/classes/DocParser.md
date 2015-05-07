@@ -355,26 +355,24 @@ attribute's value has changed.
 
 ##### `DocParser()`
 
-Defined in `lib/docparser.js:827`
+|      | description |
+|------|-------------|
+| defined | `lib/docparser.js:827` |
+| description |  |
 
-
-
-> 
-
-**Parameters**
+###### Parameters
 - o <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> the config object
 
 
 
 ##### `_resolveFor()`
 
-Defined in `lib/docparser.js:1106`
+|      | description |
+|------|-------------|
+| defined | `lib/docparser.js:1106` |
+| description | Takes a non-namespaced classname and resolves it to a namespace (to support `@for`) |
 
-
-
-> Takes a non-namespaced classname and resolves it to a namespace (to support `@for`)
-
-**Parameters**
+###### Parameters
 - value <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The classname to resolve
 
 **Returns**
@@ -383,18 +381,17 @@ Defined in `lib/docparser.js:1106`
 
 ##### `extract()`
 
-Defined in `lib/docparser.js:1276`
-
-
-
-> Accepts a map of filenames to file content.  Returns
+|      | description |
+|------|-------------|
+| defined | `lib/docparser.js:1276` |
+| description | Accepts a map of filenames to file content.  Returns
 a map of filenames to an array of API comment block
 text.  This expects the comment to start with / **
 on its own line, and end with * / on its own
 line.  Override this function to provide an
-alternative comment parser.
+alternative comment parser. |
 
-**Parameters**
+###### Parameters
 - filemap <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> A map of filenames to file content
 - dirmap <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> A map of file names to directory name
 
@@ -404,16 +401,15 @@ alternative comment parser.
 
 ##### `handlecomment()`
 
-Defined in `lib/docparser.js:1198`
-
-
-
-> Transforms a JavaDoc style comment block (less the start and end of it)
+|      | description |
+|------|-------------|
+| defined | `lib/docparser.js:1198` |
+| description | Transforms a JavaDoc style comment block (less the start and end of it)
 into a list of tag/text pairs. The leading space and '*' are removed,
 but the remaining whitespace is preserved so that the output should be
-friendly for both markdown and html parsers.
+friendly for both markdown and html parsers. |
 
-**Parameters**
+###### Parameters
 - comment <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The comment to parse
 - file <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The file it was parsed from
 - line <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The line number it was found on
@@ -422,13 +418,12 @@ friendly for both markdown and html parsers.
 
 ##### `implodeString()`
 
-Defined in `lib/docparser.js:37`
+|      | description |
+|------|-------------|
+| defined | `lib/docparser.js:37` |
+| description | Flatten a string, remove all line breaks and replace them with a token |
 
-
-
-> Flatten a string, remove all line breaks and replace them with a token
-
-**Parameters**
+###### Parameters
 - str <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The string to operate on
 
 **Returns**
@@ -437,13 +432,12 @@ Defined in `lib/docparser.js:37`
 
 ##### `implodeString()`
 
-Defined in `lib/docparser.js:47`
+|      | description |
+|------|-------------|
+| defined | `lib/docparser.js:47` |
+| description | Un-flatten a string, replace tokens injected with `implodeString` |
 
-
-
-> Un-flatten a string, replace tokens injected with `implodeString`
-
-**Parameters**
+###### Parameters
 - str <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The string to operate on
 
 **Returns**
@@ -452,13 +446,12 @@ Defined in `lib/docparser.js:47`
 
 ##### `parse()`
 
-Defined in `lib/docparser.js:1522`
+|      | description |
+|------|-------------|
+| defined | `lib/docparser.js:1522` |
+| description | Extracts and transforms the filemap provided to constructor |
 
-
-
-> Extracts and transforms the filemap provided to constructor
-
-**Parameters**
+###### Parameters
 - filemap <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> A map of filenames to file content
 - dirmap <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> A map of file names to directory name
 
@@ -468,27 +461,25 @@ Defined in `lib/docparser.js:1522`
 
 ##### `processblock()`
 
-Defined in `lib/docparser.js:1332`
+|      | description |
+|------|-------------|
+| defined | `lib/docparser.js:1332` |
+| description | Processes all the tags in a single comment block |
 
-
-
-> Processes all the tags in a single comment block
-
-**Parameters**
+###### Parameters
 - an <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> array of the tag/text pairs
 
 
 
 ##### `stringlog()`
 
-Defined in `lib/docparser.js:11`
+|      | description |
+|------|-------------|
+| defined | `lib/docparser.js:11` |
+| description | Parses the JSON data and formats it into a nice log string for
+filename and line number: `/file/name.js:123` |
 
-
-
-> Parses the JSON data and formats it into a nice log string for
-filename and line number: `/file/name.js:123`
-
-**Parameters**
+###### Parameters
 - data <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The data block from the parser
 
 **Returns**
@@ -497,15 +488,14 @@ filename and line number: `/file/name.js:123`
 
 ##### `transform()`
 
-Defined in `lib/docparser.js:1406`
-
-
-
-> Transforms a map of filenames to arrays of comment blocks into a
+|      | description |
+|------|-------------|
+| defined | `lib/docparser.js:1406` |
+| description | Transforms a map of filenames to arrays of comment blocks into a
 JSON structure that represents the entire processed API doc info
-and relationships between elements for the entire project.
+and relationships between elements for the entire project. |
 
-**Parameters**
+###### Parameters
 - commentmap <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The hash of files and parsed comment blocks
 
 **Returns**
@@ -514,16 +504,15 @@ and relationships between elements for the entire project.
 
 ##### `unindent()`
 
-Defined in `lib/docparser.js:1177`
-
-
-
-> Normalizes the initial indentation of the given _content_ so that the first line
+|      | description |
+|------|-------------|
+| defined | `lib/docparser.js:1177` |
+| description | Normalizes the initial indentation of the given _content_ so that the first line
 is unindented, and all other lines are unindented to the same degree as the
 first line. So if the first line has four spaces at the beginning, then all
-lines will be unindented four spaces. Ported from [Selleck](https://github.com/rgrove/selleck)
+lines will be unindented four spaces. Ported from [Selleck](https://github.com/rgrove/selleck) |
 
-**Parameters**
+###### Parameters
 - content <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> Text to unindent.
 
 **Returns**

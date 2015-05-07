@@ -42,13 +42,12 @@ The view class is a **`handlebars`** template helper.
 
 ##### `DocView()`
 
-Defined in `lib/docview.js:15`
+|      | description |
+|------|-------------|
+| defined | `lib/docview.js:15` |
+| description |  |
 
-
-
-> 
-
-**Parameters**
+###### Parameters
 - data <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> Meta data to use in this template
 - templateName <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The name of the template file to render.
 
@@ -56,22 +55,20 @@ Defined in `lib/docview.js:15`
 
 ##### `htmlTitle()`
 
-Defined in `lib/docview.js:29`
-
-
-
-> **Mustache** `lambda` method for setting the HTML title
+|      | description |
+|------|-------------|
+| defined | `lib/docview.js:29` |
+| description | **Mustache** `lambda` method for setting the HTML title |
 
 
 
 
 ##### `title()`
 
-Defined in `lib/docview.js:47`
-
-
-
-> **Mustache** `lambda` method for setting the title
+|      | description |
+|------|-------------|
+| defined | `lib/docview.js:47` |
+| description | **Mustache** `lambda` method for setting the title |
 
 
 
