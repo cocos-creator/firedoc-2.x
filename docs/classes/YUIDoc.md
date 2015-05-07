@@ -156,129 +156,379 @@ YUIDoc main class
 
 ##### Constructor
 
---------------------------
 #### YUIDoc() 
 
-Defined in `lib/yuidoc.js:49`
+<table>
+	<tr>
+		<td></td>
+		<td></description>
+	</tr>
+	<tr>
+		<td>type</td>
+		<td></td>
+	</tr>
+	
+
+  <tr>
+		<td>defined</td>
+		<td>`lib/yuidoc.js:49`</td>
+	</tr>
+	
+	
 
 
 
-> 
+	<tr>
+		<td>Parameters</td>
+		<td>
+		- config <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The config object
+		</td>
+	</tr>
 
-**Parameters**
-- config <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The config object
+	<tr>
+		<td>Return</td>
+		<td>
+		</td>
+	</tr>
+
+</table>
 
 
-
---------------------------
 #### _processConfig() 
 
-Defined in `lib/yuidoc.js:127`
+<table>
+	<tr>
+		<td></td>
+		<td></description>
+	</tr>
+	<tr>
+		<td>type</td>
+		<td></td>
+	</tr>
+	
+
+  <tr>
+		<td>defined</td>
+		<td>`lib/yuidoc.js:127`</td>
+	</tr>
+	
+	
 
 
+	<tr>
+		<td>description</td>
+		<td>Does post process on self.options.</td>
+	</tr>
 
-> Does post process on self.options.
+	<tr>
+		<td>Parameters</td>
+		<td>
+		</td>
+	</tr>
+
+	<tr>
+		<td>Return</td>
+		<td>
+		</td>
+	</tr>
+
+</table>
 
 
-
-
---------------------------
 #### _setDefaultExcludes() 
 
-Defined in `lib/yuidoc.js:112`
+<table>
+	<tr>
+		<td></td>
+		<td></description>
+	</tr>
+	<tr>
+		<td>type</td>
+		<td></td>
+	</tr>
+	
+
+  <tr>
+		<td>defined</td>
+		<td>`lib/yuidoc.js:112`</td>
+	</tr>
+	
+	
 
 
+	<tr>
+		<td>description</td>
+		<td>Always exclude these directories</td>
+	</tr>
 
-> Always exclude these directories
+	<tr>
+		<td>Parameters</td>
+		<td>
+		</td>
+	</tr>
+
+	<tr>
+		<td>Return</td>
+		<td>
+		</td>
+	</tr>
+
+</table>
 
 
-
-
---------------------------
 #### parsedir() 
 
-Defined in `lib/yuidoc.js:149`
+<table>
+	<tr>
+		<td></td>
+		<td></description>
+	</tr>
+	<tr>
+		<td>type</td>
+		<td></td>
+	</tr>
+	
+
+  <tr>
+		<td>defined</td>
+		<td>`lib/yuidoc.js:149`</td>
+	</tr>
+	
+	
 
 
+	<tr>
+		<td>description</td>
+		<td>Walks the passed directory and grabs all the files recursively.</td>
+	</tr>
 
-> Walks the passed directory and grabs all the files recursively.
+	<tr>
+		<td>Parameters</td>
+		<td>
+		- dir <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The directory to parse the contents of.
+		</td>
+	</tr>
 
-**Parameters**
-- dir <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The directory to parse the contents of.
+	<tr>
+		<td>Return</td>
+		<td>
+		</td>
+	</tr>
+
+</table>
 
 
-
---------------------------
 #### parsefiles() 
 
-Defined in `lib/yuidoc.js:189`
+<table>
+	<tr>
+		<td></td>
+		<td></description>
+	</tr>
+	<tr>
+		<td>type</td>
+		<td></td>
+	</tr>
+	
+
+  <tr>
+		<td>defined</td>
+		<td>`lib/yuidoc.js:189`</td>
+	</tr>
+	
+	
 
 
+	<tr>
+		<td>description</td>
+		<td>Gathers all the file data and populates the filemap and dirmap hashes.</td>
+	</tr>
 
-> Gathers all the file data and populates the filemap and dirmap hashes.
+	<tr>
+		<td>Parameters</td>
+		<td>
+		- dir <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The directory to start from.
+		- files <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> List of files to parse.
+		</td>
+	</tr>
 
-**Parameters**
-- dir <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The directory to start from.
-- files <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> List of files to parse.
+	<tr>
+		<td>Return</td>
+		<td>
+		</td>
+	</tr>
+
+</table>
 
 
-
---------------------------
 #### run() 
 
-Defined in `lib/yuidoc.js:360`
+<table>
+	<tr>
+		<td></td>
+		<td></description>
+	</tr>
+	<tr>
+		<td>type</td>
+		<td></td>
+	</tr>
+	
+
+  <tr>
+		<td>defined</td>
+		<td>`lib/yuidoc.js:360`</td>
+	</tr>
+	
+	
 
 
+	<tr>
+		<td>description</td>
+		<td>Process the config, walk the file tree and write out the JSON data.</td>
+	</tr>
 
-> Process the config, walk the file tree and write out the JSON data.
+	<tr>
+		<td>Parameters</td>
+		<td>
+		</td>
+	</tr>
+
+	<tr>
+		<td>Return</td>
+		<td>
+			<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
+		</td>
+	</tr>
+
+</table>
 
 
-**Returns**
-<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
-
-
---------------------------
 #### runPreprocessors() 
 
-Defined in `lib/yuidoc.js:243`
+<table>
+	<tr>
+		<td></td>
+		<td></description>
+	</tr>
+	<tr>
+		<td>type</td>
+		<td></td>
+	</tr>
+	
+
+  <tr>
+		<td>defined</td>
+		<td>`lib/yuidoc.js:243`</td>
+	</tr>
+	
+	
 
 
+	<tr>
+		<td>description</td>
+		<td>Applies preprocessors to the data tree. 
+This function first clones the data and operates on the clone.</td>
+	</tr>
 
-> Applies preprocessors to the data tree. 
-This function first clones the data and operates on the clone.
+	<tr>
+		<td>Parameters</td>
+		<td>
+		</td>
+	</tr>
+
+	<tr>
+		<td>Return</td>
+		<td>
+			<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
+		</td>
+	</tr>
+
+</table>
 
 
-**Returns**
-<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
-
-
---------------------------
 #### walk() 
 
-Defined in `lib/yuidoc.js:138`
+<table>
+	<tr>
+		<td></td>
+		<td></description>
+	</tr>
+	<tr>
+		<td>type</td>
+		<td></td>
+	</tr>
+	
+
+  <tr>
+		<td>defined</td>
+		<td>`lib/yuidoc.js:138`</td>
+	</tr>
+	
+	
 
 
+	<tr>
+		<td>description</td>
+		<td>Walks the paths and parses the directory contents</td>
+	</tr>
 
-> Walks the paths and parses the directory contents
+	<tr>
+		<td>Parameters</td>
+		<td>
+		</td>
+	</tr>
+
+	<tr>
+		<td>Return</td>
+		<td>
+		</td>
+	</tr>
+
+</table>
 
 
-
-
---------------------------
 #### writeJSON() 
 
-Defined in `lib/yuidoc.js:278`
+<table>
+	<tr>
+		<td></td>
+		<td></description>
+	</tr>
+	<tr>
+		<td>type</td>
+		<td></td>
+	</tr>
+	
+
+  <tr>
+		<td>defined</td>
+		<td>`lib/yuidoc.js:278`</td>
+	</tr>
+	
+	
 
 
+	<tr>
+		<td>description</td>
+		<td>Writes the parser JSON data to disk.
+Applies preprocessors, if any.</td>
+	</tr>
 
-> Writes the parser JSON data to disk.
-Applies preprocessors, if any.
+	<tr>
+		<td>Parameters</td>
+		<td>
+		- parser <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The DocParser instance to use
+		</td>
+	</tr>
 
-**Parameters**
-- parser <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The DocParser instance to use
+	<tr>
+		<td>Return</td>
+		<td>
+			<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
+		</td>
+	</tr>
 
-**Returns**
-<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
+</table>
 
 
 

@@ -56,30 +56,87 @@ Shows the help text
 #### Methods
 
 
---------------------------
 #### renderHelp() 
 
-Defined in `lib/help.js:62`
+<table>
+	<tr>
+		<td></td>
+		<td></description>
+	</tr>
+	<tr>
+		<td>type</td>
+		<td></td>
+	</tr>
+	
+
+  <tr>
+		<td>defined</td>
+		<td>`lib/help.js:62`</td>
+	</tr>
+	
+	
 
 
+	<tr>
+		<td>description</td>
+		<td>Render the help message as a string</td>
+	</tr>
 
-> Render the help message as a string
+	<tr>
+		<td>Parameters</td>
+		<td>
+		</td>
+	</tr>
+
+	<tr>
+		<td>Return</td>
+		<td>
+			<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
+		</td>
+	</tr>
+
+</table>
 
 
-**Returns**
-<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
-
-
---------------------------
 #### showHelp() 
 
-Defined in `lib/help.js:72`
+<table>
+	<tr>
+		<td></td>
+		<td></description>
+	</tr>
+	<tr>
+		<td>type</td>
+		<td></td>
+	</tr>
+	
+
+  <tr>
+		<td>defined</td>
+		<td>`lib/help.js:72`</td>
+	</tr>
+	
+	
 
 
+	<tr>
+		<td>description</td>
+		<td>Display the help message, write it to the screen and exit</td>
+	</tr>
 
-> Display the help message, write it to the screen and exit
+	<tr>
+		<td>Parameters</td>
+		<td>
+		</td>
+	</tr>
 
+	<tr>
+		<td>Return</td>
+		<td>
+		</td>
+	</tr>
 
+</table>
 
 
 

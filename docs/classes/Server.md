@@ -62,118 +62,344 @@ Provides the `--server` server option for YUIDoc
 #### Methods
 
 
---------------------------
 #### clazz() 
 
-Defined in `lib/server.js:129`
+<table>
+	<tr>
+		<td></td>
+		<td></description>
+	</tr>
+	<tr>
+		<td>type</td>
+		<td></td>
+	</tr>
+	
+
+  <tr>
+		<td>defined</td>
+		<td>`lib/server.js:129`</td>
+	</tr>
+	
+	
 
 
+	<tr>
+		<td>description</td>
+		<td>&#x60;/classes&#x60; endpoint</td>
+	</tr>
 
-> `/classes` endpoint
+	<tr>
+		<td>Parameters</td>
+		<td>
+		- req Request Express request object
+		- res Response Express response object
+		</td>
+	</tr>
 
-**Parameters**
-- req Request Express request object
-- res Response Express response object
+	<tr>
+		<td>Return</td>
+		<td>
+		</td>
+	</tr>
+
+</table>
 
 
-
---------------------------
 #### files() 
 
-Defined in `lib/server.js:106`
+<table>
+	<tr>
+		<td></td>
+		<td></description>
+	</tr>
+	<tr>
+		<td>type</td>
+		<td></td>
+	</tr>
+	
+
+  <tr>
+		<td>defined</td>
+		<td>`lib/server.js:106`</td>
+	</tr>
+	
+	
 
 
+	<tr>
+		<td>description</td>
+		<td>&#x60;/files&#x60; endpoint</td>
+	</tr>
 
-> `/files` endpoint
+	<tr>
+		<td>Parameters</td>
+		<td>
+		- req Request Express request object
+		- res Response Express response object
+		</td>
+	</tr>
 
-**Parameters**
-- req Request Express request object
-- res Response Express response object
+	<tr>
+		<td>Return</td>
+		<td>
+		</td>
+	</tr>
+
+</table>
 
 
-
---------------------------
 #### home() 
 
-Defined in `lib/server.js:161`
+<table>
+	<tr>
+		<td></td>
+		<td></description>
+	</tr>
+	<tr>
+		<td>type</td>
+		<td></td>
+	</tr>
+	
+
+  <tr>
+		<td>defined</td>
+		<td>`lib/server.js:161`</td>
+	</tr>
+	
+	
 
 
+	<tr>
+		<td>description</td>
+		<td>&#x60;/&#x60; endpoint</td>
+	</tr>
 
-> `/` endpoint
+	<tr>
+		<td>Parameters</td>
+		<td>
+		- req Request Express request object
+		- res Response Express response object
+		</td>
+	</tr>
 
-**Parameters**
-- req Request Express request object
-- res Response Express response object
+	<tr>
+		<td>Return</td>
+		<td>
+		</td>
+	</tr>
+
+</table>
 
 
-
---------------------------
 #### init() 
 
-Defined in `lib/server.js:173`
+<table>
+	<tr>
+		<td></td>
+		<td></description>
+	</tr>
+	<tr>
+		<td>type</td>
+		<td></td>
+	</tr>
+	
+
+  <tr>
+		<td>defined</td>
+		<td>`lib/server.js:173`</td>
+	</tr>
+	
+	
 
 
+	<tr>
+		<td>description</td>
+		<td>Creates the Express server and prep&#x27;s YUI for serving</td>
+	</tr>
 
-> Creates the Express server and prep's YUI for serving
+	<tr>
+		<td>Parameters</td>
+		<td>
+		</td>
+	</tr>
+
+	<tr>
+		<td>Return</td>
+		<td>
+		</td>
+	</tr>
+
+</table>
 
 
-
-
---------------------------
 #### modules() 
 
-Defined in `lib/server.js:145`
+<table>
+	<tr>
+		<td></td>
+		<td></description>
+	</tr>
+	<tr>
+		<td>type</td>
+		<td></td>
+	</tr>
+	
+
+  <tr>
+		<td>defined</td>
+		<td>`lib/server.js:145`</td>
+	</tr>
+	
+	
 
 
+	<tr>
+		<td>description</td>
+		<td>&#x60;/modules&#x60; endpoint</td>
+	</tr>
 
-> `/modules` endpoint
+	<tr>
+		<td>Parameters</td>
+		<td>
+		- req Request Express request object
+		- res Response Express response object
+		</td>
+	</tr>
 
-**Parameters**
-- req Request Express request object
-- res Response Express response object
+	<tr>
+		<td>Return</td>
+		<td>
+		</td>
+	</tr>
+
+</table>
 
 
-
---------------------------
 #### parse() 
 
-Defined in `lib/server.js:22`
+<table>
+	<tr>
+		<td></td>
+		<td></description>
+	</tr>
+	<tr>
+		<td>type</td>
+		<td></td>
+	</tr>
+	
+
+  <tr>
+		<td>defined</td>
+		<td>`lib/server.js:22`</td>
+	</tr>
+	
+	
 
 
+	<tr>
+		<td>description</td>
+		<td>Middleware to parse the API docs per request</td>
+	</tr>
 
-> Middleware to parse the API docs per request
+	<tr>
+		<td>Parameters</td>
+		<td>
+		- req Request Express request object
+		- res Response Express response object
+		- next <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> Express next callback
+		</td>
+	</tr>
 
-**Parameters**
-- req Request Express request object
-- res Response Express response object
-- next <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> Express next callback
+	<tr>
+		<td>Return</td>
+		<td>
+		</td>
+	</tr>
+
+</table>
 
 
-
---------------------------
 #### routes() 
 
-Defined in `lib/server.js:40`
+<table>
+	<tr>
+		<td></td>
+		<td></description>
+	</tr>
+	<tr>
+		<td>type</td>
+		<td></td>
+	</tr>
+	
+
+  <tr>
+		<td>defined</td>
+		<td>`lib/server.js:40`</td>
+	</tr>
+	
+	
 
 
+	<tr>
+		<td>description</td>
+		<td>Create the routes used to serve YUIDoc files dynamically</td>
+	</tr>
 
-> Create the routes used to serve YUIDoc files dynamically
+	<tr>
+		<td>Parameters</td>
+		<td>
+		</td>
+	</tr>
+
+	<tr>
+		<td>Return</td>
+		<td>
+		</td>
+	</tr>
+
+</table>
 
 
-
-
---------------------------
 #### start() 
 
-Defined in `lib/server.js:191`
+<table>
+	<tr>
+		<td></td>
+		<td></description>
+	</tr>
+	<tr>
+		<td>type</td>
+		<td></td>
+	</tr>
+	
+
+  <tr>
+		<td>defined</td>
+		<td>`lib/server.js:191`</td>
+	</tr>
+	
+	
 
 
+	<tr>
+		<td>description</td>
+		<td>Start the server with the supplied options.</td>
+	</tr>
 
-> Start the server with the supplied options.
+	<tr>
+		<td>Parameters</td>
+		<td>
+		- options <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> Server options
+		</td>
+	</tr>
 
-**Parameters**
-- options <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> Server options
+	<tr>
+		<td>Return</td>
+		<td>
+		</td>
+	</tr>
 
+</table>
 
 
 

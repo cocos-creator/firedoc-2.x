@@ -353,192 +353,488 @@ attribute's value has changed.
 
 ##### Constructor
 
---------------------------
 #### DocParser() 
 
-Defined in `lib/docparser.js:827`
+<table>
+	<tr>
+		<td></td>
+		<td></description>
+	</tr>
+	<tr>
+		<td>type</td>
+		<td></td>
+	</tr>
+	
+
+  <tr>
+		<td>defined</td>
+		<td>`lib/docparser.js:827`</td>
+	</tr>
+	
+	
 
 
 
-> 
+	<tr>
+		<td>Parameters</td>
+		<td>
+		- o <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> the config object
+		</td>
+	</tr>
 
-**Parameters**
-- o <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> the config object
+	<tr>
+		<td>Return</td>
+		<td>
+		</td>
+	</tr>
+
+</table>
 
 
-
---------------------------
 #### _resolveFor() 
 
-Defined in `lib/docparser.js:1106`
+<table>
+	<tr>
+		<td></td>
+		<td></description>
+	</tr>
+	<tr>
+		<td>type</td>
+		<td></td>
+	</tr>
+	
+
+  <tr>
+		<td>defined</td>
+		<td>`lib/docparser.js:1106`</td>
+	</tr>
+	
+	
 
 
+	<tr>
+		<td>description</td>
+		<td>Takes a non-namespaced classname and resolves it to a namespace (to support &#x60;@for&#x60;)</td>
+	</tr>
 
-> Takes a non-namespaced classname and resolves it to a namespace (to support `@for`)
+	<tr>
+		<td>Parameters</td>
+		<td>
+		- value <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The classname to resolve
+		</td>
+	</tr>
 
-**Parameters**
-- value <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The classname to resolve
+	<tr>
+		<td>Return</td>
+		<td>
+			<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
+		</td>
+	</tr>
 
-**Returns**
-<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
+</table>
 
 
---------------------------
 #### extract() 
 
-Defined in `lib/docparser.js:1276`
+<table>
+	<tr>
+		<td></td>
+		<td></description>
+	</tr>
+	<tr>
+		<td>type</td>
+		<td></td>
+	</tr>
+	
+
+  <tr>
+		<td>defined</td>
+		<td>`lib/docparser.js:1276`</td>
+	</tr>
+	
+	
 
 
-
-> Accepts a map of filenames to file content.  Returns
+	<tr>
+		<td>description</td>
+		<td>Accepts a map of filenames to file content.  Returns
 a map of filenames to an array of API comment block
 text.  This expects the comment to start with / **
 on its own line, and end with * / on its own
 line.  Override this function to provide an
-alternative comment parser.
+alternative comment parser.</td>
+	</tr>
 
-**Parameters**
-- filemap <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> A map of filenames to file content
-- dirmap <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> A map of file names to directory name
+	<tr>
+		<td>Parameters</td>
+		<td>
+		- filemap <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> A map of filenames to file content
+		- dirmap <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> A map of file names to directory name
+		</td>
+	</tr>
 
-**Returns**
-<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
+	<tr>
+		<td>Return</td>
+		<td>
+			<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
+		</td>
+	</tr>
+
+</table>
 
 
---------------------------
 #### handlecomment() 
 
-Defined in `lib/docparser.js:1198`
+<table>
+	<tr>
+		<td></td>
+		<td></description>
+	</tr>
+	<tr>
+		<td>type</td>
+		<td></td>
+	</tr>
+	
+
+  <tr>
+		<td>defined</td>
+		<td>`lib/docparser.js:1198`</td>
+	</tr>
+	
+	
 
 
-
-> Transforms a JavaDoc style comment block (less the start and end of it)
-into a list of tag/text pairs. The leading space and '*' are removed,
+	<tr>
+		<td>description</td>
+		<td>Transforms a JavaDoc style comment block (less the start and end of it)
+into a list of tag/text pairs. The leading space and &#x27;*&#x27; are removed,
 but the remaining whitespace is preserved so that the output should be
-friendly for both markdown and html parsers.
+friendly for both markdown and html parsers.</td>
+	</tr>
 
-**Parameters**
-- comment <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The comment to parse
-- file <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The file it was parsed from
-- line <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The line number it was found on
+	<tr>
+		<td>Parameters</td>
+		<td>
+		- comment <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The comment to parse
+		- file <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The file it was parsed from
+		- line <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The line number it was found on
+		</td>
+	</tr>
+
+	<tr>
+		<td>Return</td>
+		<td>
+		</td>
+	</tr>
+
+</table>
 
 
-
---------------------------
 #### implodeString() 
 
-Defined in `lib/docparser.js:37`
+<table>
+	<tr>
+		<td></td>
+		<td></description>
+	</tr>
+	<tr>
+		<td>type</td>
+		<td></td>
+	</tr>
+	
+
+  <tr>
+		<td>defined</td>
+		<td>`lib/docparser.js:37`</td>
+	</tr>
+	
+	
 
 
+	<tr>
+		<td>description</td>
+		<td>Flatten a string, remove all line breaks and replace them with a token</td>
+	</tr>
 
-> Flatten a string, remove all line breaks and replace them with a token
+	<tr>
+		<td>Parameters</td>
+		<td>
+		- str <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The string to operate on
+		</td>
+	</tr>
 
-**Parameters**
-- str <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The string to operate on
+	<tr>
+		<td>Return</td>
+		<td>
+			<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
+		</td>
+	</tr>
 
-**Returns**
-<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
+</table>
 
 
---------------------------
 #### implodeString() 
 
-Defined in `lib/docparser.js:47`
+<table>
+	<tr>
+		<td></td>
+		<td></description>
+	</tr>
+	<tr>
+		<td>type</td>
+		<td></td>
+	</tr>
+	
+
+  <tr>
+		<td>defined</td>
+		<td>`lib/docparser.js:47`</td>
+	</tr>
+	
+	
 
 
+	<tr>
+		<td>description</td>
+		<td>Un-flatten a string, replace tokens injected with &#x60;implodeString&#x60;</td>
+	</tr>
 
-> Un-flatten a string, replace tokens injected with `implodeString`
+	<tr>
+		<td>Parameters</td>
+		<td>
+		- str <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The string to operate on
+		</td>
+	</tr>
 
-**Parameters**
-- str <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The string to operate on
+	<tr>
+		<td>Return</td>
+		<td>
+			<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
+		</td>
+	</tr>
 
-**Returns**
-<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
+</table>
 
 
---------------------------
 #### parse() 
 
-Defined in `lib/docparser.js:1522`
+<table>
+	<tr>
+		<td></td>
+		<td></description>
+	</tr>
+	<tr>
+		<td>type</td>
+		<td></td>
+	</tr>
+	
+
+  <tr>
+		<td>defined</td>
+		<td>`lib/docparser.js:1522`</td>
+	</tr>
+	
+	
 
 
+	<tr>
+		<td>description</td>
+		<td>Extracts and transforms the filemap provided to constructor</td>
+	</tr>
 
-> Extracts and transforms the filemap provided to constructor
+	<tr>
+		<td>Parameters</td>
+		<td>
+		- filemap <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> A map of filenames to file content
+		- dirmap <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> A map of file names to directory name
+		</td>
+	</tr>
 
-**Parameters**
-- filemap <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> A map of filenames to file content
-- dirmap <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> A map of file names to directory name
+	<tr>
+		<td>Return</td>
+		<td>
+			<a href="../classes/DocParser.html" class="crosslink">DocParser</a> 
+		</td>
+	</tr>
 
-**Returns**
-<a href="../classes/DocParser.html" class="crosslink">DocParser</a> 
+</table>
 
 
---------------------------
 #### processblock() 
 
-Defined in `lib/docparser.js:1332`
+<table>
+	<tr>
+		<td></td>
+		<td></description>
+	</tr>
+	<tr>
+		<td>type</td>
+		<td></td>
+	</tr>
+	
+
+  <tr>
+		<td>defined</td>
+		<td>`lib/docparser.js:1332`</td>
+	</tr>
+	
+	
 
 
+	<tr>
+		<td>description</td>
+		<td>Processes all the tags in a single comment block</td>
+	</tr>
 
-> Processes all the tags in a single comment block
+	<tr>
+		<td>Parameters</td>
+		<td>
+		- an <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> array of the tag/text pairs
+		</td>
+	</tr>
 
-**Parameters**
-- an <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> array of the tag/text pairs
+	<tr>
+		<td>Return</td>
+		<td>
+		</td>
+	</tr>
+
+</table>
 
 
-
---------------------------
 #### stringlog() 
 
-Defined in `lib/docparser.js:11`
+<table>
+	<tr>
+		<td></td>
+		<td></description>
+	</tr>
+	<tr>
+		<td>type</td>
+		<td></td>
+	</tr>
+	
+
+  <tr>
+		<td>defined</td>
+		<td>`lib/docparser.js:11`</td>
+	</tr>
+	
+	
 
 
+	<tr>
+		<td>description</td>
+		<td>Parses the JSON data and formats it into a nice log string for
+filename and line number: &#x60;/file/name.js:123&#x60;</td>
+	</tr>
 
-> Parses the JSON data and formats it into a nice log string for
-filename and line number: `/file/name.js:123`
+	<tr>
+		<td>Parameters</td>
+		<td>
+		- data <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The data block from the parser
+		</td>
+	</tr>
 
-**Parameters**
-- data <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The data block from the parser
+	<tr>
+		<td>Return</td>
+		<td>
+			<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
+		</td>
+	</tr>
 
-**Returns**
-<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
+</table>
 
 
---------------------------
 #### transform() 
 
-Defined in `lib/docparser.js:1406`
+<table>
+	<tr>
+		<td></td>
+		<td></description>
+	</tr>
+	<tr>
+		<td>type</td>
+		<td></td>
+	</tr>
+	
+
+  <tr>
+		<td>defined</td>
+		<td>`lib/docparser.js:1406`</td>
+	</tr>
+	
+	
 
 
-
-> Transforms a map of filenames to arrays of comment blocks into a
+	<tr>
+		<td>description</td>
+		<td>Transforms a map of filenames to arrays of comment blocks into a
 JSON structure that represents the entire processed API doc info
-and relationships between elements for the entire project.
+and relationships between elements for the entire project.</td>
+	</tr>
 
-**Parameters**
-- commentmap <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The hash of files and parsed comment blocks
+	<tr>
+		<td>Parameters</td>
+		<td>
+		- commentmap <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The hash of files and parsed comment blocks
+		</td>
+	</tr>
 
-**Returns**
-<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
+	<tr>
+		<td>Return</td>
+		<td>
+			<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
+		</td>
+	</tr>
+
+</table>
 
 
---------------------------
 #### unindent() 
 
-Defined in `lib/docparser.js:1177`
+<table>
+	<tr>
+		<td></td>
+		<td></description>
+	</tr>
+	<tr>
+		<td>type</td>
+		<td></td>
+	</tr>
+	
+
+  <tr>
+		<td>defined</td>
+		<td>`lib/docparser.js:1177`</td>
+	</tr>
+	
+	
 
 
-
-> Normalizes the initial indentation of the given _content_ so that the first line
+	<tr>
+		<td>description</td>
+		<td>Normalizes the initial indentation of the given _content_ so that the first line
 is unindented, and all other lines are unindented to the same degree as the
 first line. So if the first line has four spaces at the beginning, then all
-lines will be unindented four spaces. Ported from [Selleck](https://github.com/rgrove/selleck)
+lines will be unindented four spaces. Ported from [Selleck](https://github.com/rgrove/selleck)</td>
+	</tr>
 
-**Parameters**
-- content <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> Text to unindent.
+	<tr>
+		<td>Parameters</td>
+		<td>
+		- content <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> Text to unindent.
+		</td>
+	</tr>
 
-**Returns**
-<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
+	<tr>
+		<td>Return</td>
+		<td>
+			<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
+		</td>
+	</tr>
+
+</table>
 
 
 
