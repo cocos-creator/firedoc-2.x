@@ -30,7 +30,7 @@ This module is deprecated.
   {{/if}}
 {{/if}}
 
-{{moduleDescription}}
+{{{moduleDescription}}}
 
 {{#example}}
 ### Example
