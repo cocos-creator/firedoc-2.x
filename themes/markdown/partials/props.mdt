@@ -2,7 +2,7 @@
 
 ##### property: `{{name}}`
 
-{{propertyDescription}}
+{{{propertyDescription}}}
 
 | meta |   |
 |------|---|

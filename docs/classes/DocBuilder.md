@@ -128,7 +128,7 @@ List of native types to cross link to MDN
 
 ##### method: `_addHelpers()`
 
-Register a &#x60;Y.Handlebars&#x60; helper method
+Register a `Y.Handlebars` helper method
 
 | meta |   |
 |------|---|
@@ -141,7 +141,7 @@ Register a &#x60;Y.Handlebars&#x60; helper method
 
 ##### method: `_inlineCode()`
 
-Ported from [Selleck](https://github.com/rgrove/selleck), this handles &#x60;&#x60;&#x60;&#x27;s in fields
+Ported from [Selleck](https://github.com/rgrove/selleck), this handles ```'s in fields
 that are not parsed by the **Markdown** parser.
 
 | meta |   |
@@ -169,7 +169,7 @@ it with flags.
 
 ##### method: `_parseCode()`
 
-Parses &#x60;&lt;pre class=&quot;code prettyprint&quot;&gt;&lt;code&gt;&#x60; tags and adds the __prettyprint__ &#x60;className&#x60; to them
+Parses `<pre class="code prettyprint"><code>` tags and adds the __prettyprint__ `className` to them
 
 | meta |   |
 |------|---|
@@ -199,7 +199,7 @@ Parse the item to be cross linked and return an HREF linked to the item
 
 ##### method: `addFoundAt()`
 
-Parses file and line number from an item object and build&#x27;s an HREF
+Parses file and line number from an item object and build's an HREF
 
 | meta |   |
 |------|---|
@@ -215,7 +215,7 @@ Parses file and line number from an item object and build&#x27;s an HREF
 ##### method: `augmentData()`
 
 Augments the **DocParser** meta data to provide default values for certain keys as well as parses all descriptions
-with the &#x60;Markdown Parser&#x60;
+with the `Markdown Parser`
 
 | meta |   |
 |------|---|
@@ -245,8 +245,8 @@ Compiles the templates from the meta-data provided by DocParser
 
 Normalizes a file path to a writable filename:
 
-   var path = &#x27;lib/file.js&#x27;;
-   returns &#x27;lib_file.js&#x27;;
+   var path = 'lib/file.js';
+   returns 'lib_file.js';
 
 | meta |   |
 |------|---|
@@ -333,7 +333,7 @@ Merge superclass data into a child class
 
 ##### method: `mixExternal()`
 
-Fetches the remote data and fires the callback when it&#x27;s all complete
+Fetches the remote data and fires the callback when it's all complete
 
 | meta |   |
 |------|---|
@@ -362,7 +362,7 @@ Sort method of array of objects with a property called __name__
 
 ##### method: `NATIVES_LINKER()`
 
-Function to link an external type uses &#x60;NATIVES&#x60; object
+Function to link an external type uses `NATIVES` object
 
 | meta |   |
 |------|---|
@@ -529,7 +529,7 @@ Write the API meta data used for the AutoComplete widget
 
 ##### method: `writeClasses()`
 
-Generates the class files under &quot;out&quot;/classes/
+Generates the class files under "out"/classes/
 
 | meta |   |
 |------|---|
@@ -544,7 +544,7 @@ Generates the class files under &quot;out&quot;/classes/
 
 ##### method: `writeFiles()`
 
-Generates the syntax files under &#x60;&quot;out&quot;/files/&#x60;
+Generates the syntax files under `"out"/files/`
 
 | meta |   |
 |------|---|
@@ -574,7 +574,7 @@ Generates the index.html file
 
 ##### method: `writeModules()`
 
-Generates the module files under &quot;out&quot;/modules/
+Generates the module files under "out"/modules/
 
 | meta |   |
 |------|---|

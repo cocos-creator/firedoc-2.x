@@ -65,7 +65,7 @@ Cache for external mixed in data.
 
 ##### method: `clazz()`
 
-&#x60;/classes&#x60; endpoint
+`/classes` endpoint
 
 | meta |   |
 |------|---|
@@ -79,7 +79,7 @@ Cache for external mixed in data.
 
 ##### method: `files()`
 
-&#x60;/files&#x60; endpoint
+`/files` endpoint
 
 | meta |   |
 |------|---|
@@ -93,7 +93,7 @@ Cache for external mixed in data.
 
 ##### method: `home()`
 
-&#x60;/&#x60; endpoint
+`/` endpoint
 
 | meta |   |
 |------|---|
@@ -107,7 +107,7 @@ Cache for external mixed in data.
 
 ##### method: `init()`
 
-Creates the Express server and prep&#x27;s YUI for serving
+Creates the Express server and prep's YUI for serving
 
 | meta |   |
 |------|---|
@@ -118,7 +118,7 @@ Creates the Express server and prep&#x27;s YUI for serving
 
 ##### method: `modules()`
 
-&#x60;/modules&#x60; endpoint
+`/modules` endpoint
 
 | meta |   |
 |------|---|

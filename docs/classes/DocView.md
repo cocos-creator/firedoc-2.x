@@ -56,7 +56,7 @@ The view class is a **`handlebars`** template helper.
 
 ##### method: `htmlTitle()`
 
-**Mustache** &#x60;lambda&#x60; method for setting the HTML title
+**Mustache** `lambda` method for setting the HTML title
 
 | meta |   |
 |------|---|
@@ -67,7 +67,7 @@ The view class is a **`handlebars`** template helper.
 
 ##### method: `title()`
 
-**Mustache** &#x60;lambda&#x60; method for setting the title
+**Mustache** `lambda` method for setting the title
 
 | meta |   |
 |------|---|
