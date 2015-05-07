@@ -1,5 +1,5 @@
 
-## {{name}} Module
+## `{{name}}` Module
 
 {{#extra}}
   {{#selleck}}
@@ -38,21 +38,21 @@ This module is deprecated.
 {{/example}}
 
 {{#if moduleClasses}}
-This module provides the following classes:
+### Classes
   {{#moduleClasses}}
   - [{{displayName}}](../classes/{{name}}.md)
   {{/moduleClasses}}
 {{/if}}
 
 {{#if moduleEnums}}
-This module provides the following enums:
+### Enums
   {{#moduleEnums}}
   - [{{displayName}}](../enums/{{name}}.md)
   {{/moduleEnums}}
 {{/if}}
 
 {{#if subModules}}
-This module is a rollup of the following modules:
+### Sub Modules
   {{#subModules}}
   - [{{displayName}}]({{name}}.md) {{{description}}}
   {{/subModules}}
