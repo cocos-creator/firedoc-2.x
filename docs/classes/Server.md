@@ -45,10 +45,11 @@ Provides the `--server` server option for YUIDoc
 
 
 
-`_externalData`: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a>
+- `_externalData`
 
-| name | value |
-|------|-------|
+|      | description |
+|------|-------------|
+| type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
 | defined | `lib/server.js:15` |
 | description | Cache for external mixed in data. |
 

@@ -39,10 +39,11 @@ Shows the help text
 
 
 
-`help`: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a>
+- `help`
 
-| name | value |
-|------|-------|
+|      | description |
+|------|-------------|
+| type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> |
 | defined | `lib/help.js:14` |
 | description | The help text to display |
 

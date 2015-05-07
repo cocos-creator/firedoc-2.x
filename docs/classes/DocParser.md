@@ -82,20 +82,22 @@ with the parsers data (aggregated in the `'data'` property).
 
 
 
-`CORRECTIONS`: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a>
+- `CORRECTIONS`
 
-| name | value |
-|------|-------|
+|      | description |
+|------|-------------|
+| type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
 | defined | `lib/docparser.js:187` |
 | description | Common errors will get scrubbed instead of being ignored. |
 
 
 
 
-`DIGESTERS`: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a>
+- `DIGESTERS`
 
-| name | value |
-|------|-------|
+|      | description |
+|------|-------------|
+| type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
 | defined | `lib/docparser.js:210` |
 | description | A map of the default tag processors, keyed by the
 tag name.  Multiple tags can use the same digester
@@ -105,10 +107,11 @@ implementation rather than a function. |
 
 
 
-`IGNORE_TAGLIST`: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a>
+- `IGNORE_TAGLIST`
 
-| name | value |
-|------|-------|
+|      | description |
+|------|-------------|
+| type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> |
 | defined | `lib/docparser.js:175` |
 | description | A list of ignored tags. These tags should be ignored because there is
 likely to be used for purposes other than JSDoc tags in JavaScript comments. |
@@ -116,10 +119,11 @@ likely to be used for purposes other than JSDoc tags in JavaScript comments. |
 
 
 
-`TAGLIST`: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a>
+- `TAGLIST`
 
-| name | value |
-|------|-------|
+|      | description |
+|------|-------------|
+| type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> |
 | defined | `lib/docparser.js:93` |
 | description | A list of known tags.  This populates a member variable
 during initialization, and will be updated if additional
