@@ -49,8 +49,8 @@ Provides the `--server` server option for YUIDoc
 
 Cache for external mixed in data.
 
-| meta |  |
-|------|--|
+| meta |   |
+|------|---|
 | type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
 | defined | `lib/server.js:15` |
 | description |  |
@@ -68,8 +68,8 @@ Cache for external mixed in data.
 
 `/classes` endpoint
 
-| name |  |
-|------|--|
+| meta |   |
+|------|---|
 | defined | `lib/server.js:129` |
 
 ###### Parameters
@@ -82,8 +82,8 @@ Cache for external mixed in data.
 
 `/files` endpoint
 
-| name |  |
-|------|--|
+| meta |   |
+|------|---|
 | defined | `lib/server.js:106` |
 
 ###### Parameters
@@ -96,8 +96,8 @@ Cache for external mixed in data.
 
 `/` endpoint
 
-| name |  |
-|------|--|
+| meta |   |
+|------|---|
 | defined | `lib/server.js:161` |
 
 ###### Parameters
@@ -110,8 +110,8 @@ Cache for external mixed in data.
 
 Creates the Express server and prep's YUI for serving
 
-| name |  |
-|------|--|
+| meta |   |
+|------|---|
 | defined | `lib/server.js:173` |
 
 
@@ -121,8 +121,8 @@ Creates the Express server and prep's YUI for serving
 
 `/modules` endpoint
 
-| name |  |
-|------|--|
+| meta |   |
+|------|---|
 | defined | `lib/server.js:145` |
 
 ###### Parameters
@@ -135,8 +135,8 @@ Creates the Express server and prep's YUI for serving
 
 Middleware to parse the API docs per request
 
-| name |  |
-|------|--|
+| meta |   |
+|------|---|
 | defined | `lib/server.js:22` |
 
 ###### Parameters
@@ -150,8 +150,8 @@ Middleware to parse the API docs per request
 
 Create the routes used to serve YUIDoc files dynamically
 
-| name |  |
-|------|--|
+| meta |   |
+|------|---|
 | defined | `lib/server.js:40` |
 
 
@@ -161,8 +161,8 @@ Create the routes used to serve YUIDoc files dynamically
 
 Start the server with the supplied options.
 
-| name |  |
-|------|--|
+| meta |   |
+|------|---|
 | defined | `lib/server.js:191` |
 
 ###### Parameters

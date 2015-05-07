@@ -40,8 +40,8 @@ Handles argument parsing
 
 Parses arguments and returns an Object of config options
 
-| name |  |
-|------|--|
+| meta |   |
+|------|---|
 | defined | `lib/options.js:20` |
 
 ###### Parameters

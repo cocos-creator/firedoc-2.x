@@ -3,8 +3,8 @@
 
 {{{methodDescription}}}
 
-| name |  |
-|------|--|
+| meta |   |
+|------|---|
 {{#if overwritten_from}}
 | overwritten | inherited from {{overwritten_from/class}} but overwritten in `{{{file}}}:{{{line}}}` |
 {{else}}

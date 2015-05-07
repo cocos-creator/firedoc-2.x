@@ -44,8 +44,8 @@ The view class is a **`handlebars`** template helper.
 
 
 
-| name |  |
-|------|--|
+| meta |   |
+|------|---|
 | defined | `lib/docview.js:15` |
 
 ###### Parameters
@@ -58,8 +58,8 @@ The view class is a **`handlebars`** template helper.
 
 **Mustache** `lambda` method for setting the HTML title
 
-| name |  |
-|------|--|
+| meta |   |
+|------|---|
 | defined | `lib/docview.js:29` |
 
 
@@ -69,8 +69,8 @@ The view class is a **`handlebars`** template helper.
 
 **Mustache** `lambda` method for setting the title
 
-| name |  |
-|------|--|
+| meta |   |
+|------|---|
 | defined | `lib/docview.js:47` |
 
 

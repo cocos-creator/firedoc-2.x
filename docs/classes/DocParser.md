@@ -86,8 +86,8 @@ with the parsers data (aggregated in the `'data'` property).
 
 Common errors will get scrubbed instead of being ignored.
 
-| meta |  |
-|------|--|
+| meta |   |
+|------|---|
 | type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
 | defined | `lib/docparser.js:187` |
 | description |  |
@@ -102,8 +102,8 @@ tag name.  Multiple tags can use the same digester
 by supplying the string name that points to the
 implementation rather than a function.
 
-| meta |  |
-|------|--|
+| meta |   |
+|------|---|
 | type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
 | defined | `lib/docparser.js:210` |
 | description |  |
@@ -116,8 +116,8 @@ implementation rather than a function.
 A list of ignored tags. These tags should be ignored because there is
 likely to be used for purposes other than JSDoc tags in JavaScript comments.
 
-| meta |  |
-|------|--|
+| meta |   |
+|------|---|
 | type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> |
 | defined | `lib/docparser.js:175` |
 | description |  |
@@ -131,8 +131,8 @@ A list of known tags.  This populates a member variable
 during initialization, and will be updated if additional
 digesters are added.
 
-| meta |  |
-|------|--|
+| meta |   |
+|------|---|
 | type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> |
 | defined | `lib/docparser.js:93` |
 | description |  |
@@ -365,8 +365,8 @@ attribute's value has changed.
 
 
 
-| name |  |
-|------|--|
+| meta |   |
+|------|---|
 | defined | `lib/docparser.js:827` |
 
 ###### Parameters
@@ -378,8 +378,8 @@ attribute's value has changed.
 
 Takes a non-namespaced classname and resolves it to a namespace (to support `@for`)
 
-| name |  |
-|------|--|
+| meta |   |
+|------|---|
 | defined | `lib/docparser.js:1106` |
 
 ###### Parameters
@@ -398,8 +398,8 @@ on its own line, and end with * / on its own
 line.  Override this function to provide an
 alternative comment parser.
 
-| name |  |
-|------|--|
+| meta |   |
+|------|---|
 | defined | `lib/docparser.js:1276` |
 
 ###### Parameters
@@ -417,8 +417,8 @@ into a list of tag/text pairs. The leading space and '*' are removed,
 but the remaining whitespace is preserved so that the output should be
 friendly for both markdown and html parsers.
 
-| name |  |
-|------|--|
+| meta |   |
+|------|---|
 | defined | `lib/docparser.js:1198` |
 
 ###### Parameters
@@ -432,8 +432,8 @@ friendly for both markdown and html parsers.
 
 Flatten a string, remove all line breaks and replace them with a token
 
-| name |  |
-|------|--|
+| meta |   |
+|------|---|
 | defined | `lib/docparser.js:37` |
 
 ###### Parameters
@@ -447,8 +447,8 @@ Flatten a string, remove all line breaks and replace them with a token
 
 Un-flatten a string, replace tokens injected with `implodeString`
 
-| name |  |
-|------|--|
+| meta |   |
+|------|---|
 | defined | `lib/docparser.js:47` |
 
 ###### Parameters
@@ -462,8 +462,8 @@ Un-flatten a string, replace tokens injected with `implodeString`
 
 Extracts and transforms the filemap provided to constructor
 
-| name |  |
-|------|--|
+| meta |   |
+|------|---|
 | defined | `lib/docparser.js:1522` |
 
 ###### Parameters
@@ -478,8 +478,8 @@ Extracts and transforms the filemap provided to constructor
 
 Processes all the tags in a single comment block
 
-| name |  |
-|------|--|
+| meta |   |
+|------|---|
 | defined | `lib/docparser.js:1332` |
 
 ###### Parameters
@@ -492,8 +492,8 @@ Processes all the tags in a single comment block
 Parses the JSON data and formats it into a nice log string for
 filename and line number: `/file/name.js:123`
 
-| name |  |
-|------|--|
+| meta |   |
+|------|---|
 | defined | `lib/docparser.js:11` |
 
 ###### Parameters
@@ -509,8 +509,8 @@ Transforms a map of filenames to arrays of comment blocks into a
 JSON structure that represents the entire processed API doc info
 and relationships between elements for the entire project.
 
-| name |  |
-|------|--|
+| meta |   |
+|------|---|
 | defined | `lib/docparser.js:1406` |
 
 ###### Parameters
@@ -527,8 +527,8 @@ is unindented, and all other lines are unindented to the same degree as the
 first line. So if the first line has four spaces at the beginning, then all
 lines will be unindented four spaces. Ported from [Selleck](https://github.com/rgrove/selleck)
 
-| name |  |
-|------|--|
+| meta |   |
+|------|---|
 | defined | `lib/docparser.js:1177` |
 
 ###### Parameters

@@ -51,8 +51,8 @@ Ported fileutils methods from [Selleck](http://github.com/rgrove/selleck)
 
 Copy the theme assets directory
 
-| name |  |
-|------|--|
+| meta |   |
+|------|---|
 | defined | `lib/files.js:360` |
 
 ###### Parameters
@@ -67,8 +67,8 @@ Copy the theme assets directory
 
 Copy a directory from one location to another
 
-| name |  |
-|------|--|
+| meta |   |
+|------|---|
 | defined | `lib/files.js:37` |
 
 ###### Parameters
@@ -84,8 +84,8 @@ Copy a directory from one location to another
 
 Copy a file from one location to another
 
-| name |  |
-|------|--|
+| meta |   |
+|------|---|
 | defined | `lib/files.js:125` |
 
 ###### Parameters
@@ -111,8 +111,8 @@ directory instead of *into* it.
 Known issues:
 - Doesn't preserve ownership or permissions on copied files/directories.
 
-| name |  |
-|------|--|
+| meta |   |
+|------|---|
 | defined | `lib/files.js:178` |
 
 ###### Parameters
@@ -132,8 +132,8 @@ it and all files and directories it contains.
 
 This method is synchronous.
 
-| name |  |
-|------|--|
+| meta |   |
+|------|---|
 | defined | `lib/files.js:224` |
 
 ###### Parameters
@@ -145,8 +145,8 @@ This method is synchronous.
 
 Helper method for getting JSON data from a local file
 
-| name |  |
-|------|--|
+| meta |   |
+|------|---|
 | defined | `lib/files.js:407` |
 
 ###### Parameters
@@ -160,8 +160,8 @@ Helper method for getting JSON data from a local file
 
 Check to see if this is a directory
 
-| name |  |
-|------|--|
+| meta |   |
+|------|---|
 | defined | `lib/files.js:248` |
 
 ###### Parameters
@@ -176,8 +176,8 @@ Check to see if this is a directory
 
 Check to see if this is a File
 
-| name |  |
-|------|--|
+| meta |   |
+|------|---|
 | defined | `lib/files.js:278` |
 
 ###### Parameters
@@ -192,8 +192,8 @@ Check to see if this is a File
 
 Check to see if this is a SymLink
 
-| name |  |
-|------|--|
+| meta |   |
+|------|---|
 | defined | `lib/files.js:305` |
 
 ###### Parameters
@@ -208,8 +208,8 @@ Check to see if this is a SymLink
 Like `fs.lstatSync()`, but returns `null` instead of throwing when _path_
 doesn't exist. Will still throw on other types of errors.
 
-| name |  |
-|------|--|
+| meta |   |
+|------|---|
 | defined | `lib/files.js:319` |
 
 ###### Parameters
@@ -224,8 +224,8 @@ fs.Stats | Null
 Like `fs.statSync()`, but returns `null` instead of throwing when _path_
 doesn't exist. Will still throw on other types of errors.
 
-| name |  |
-|------|--|
+| meta |   |
+|------|---|
 | defined | `lib/files.js:340` |
 
 ###### Parameters
@@ -239,8 +239,8 @@ fs.Stats | Null
 
 Helper method for writing files to disk. It wraps the NodeJS file API
 
-| name |  |
-|------|--|
+| meta |   |
+|------|---|
 | defined | `lib/files.js:422` |
 
 ###### Parameters
