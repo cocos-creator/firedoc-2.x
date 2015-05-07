@@ -1,5 +1,5 @@
 
-# firedoc 0.8.15
+# firedoc 0.8.16
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -61,7 +61,7 @@ YUIDoc main class
 
 
 
-#### `dirmap`
+##### `dirmap`
 
 |      | description |
 |------|-------------|
@@ -72,7 +72,7 @@ YUIDoc main class
 
 
 
-#### `endtime`
+##### `endtime`
 
 |      | description |
 |------|-------------|
@@ -83,7 +83,7 @@ YUIDoc main class
 
 
 
-#### `filecount`
+##### `filecount`
 
 |      | description |
 |------|-------------|
@@ -94,7 +94,7 @@ YUIDoc main class
 
 
 
-#### `filemap`
+##### `filemap`
 
 |      | description |
 |------|-------------|
@@ -105,7 +105,7 @@ YUIDoc main class
 
 
 
-#### `OPTIONS`
+##### `OPTIONS`
 
 |      | description |
 |------|-------------|
@@ -116,7 +116,7 @@ YUIDoc main class
 
 
 
-#### `options`
+##### `options`
 
 |      | description |
 |------|-------------|
@@ -127,7 +127,7 @@ YUIDoc main class
 
 
 
-#### `selleck`
+##### `selleck`
 
 |      | description |
 |------|-------------|
@@ -138,7 +138,7 @@ YUIDoc main class
 
 
 
-#### `starttime`
+##### `starttime`
 
 |      | description |
 |------|-------------|
@@ -156,7 +156,7 @@ YUIDoc main class
 
 ##### Constructor
 
-#### `YUIDoc()`
+##### `YUIDoc()`
 
 Defined in `lib/yuidoc.js:49`
 
@@ -169,7 +169,7 @@ Defined in `lib/yuidoc.js:49`
 
 
 
-#### `_processConfig()`
+##### `_processConfig()`
 
 Defined in `lib/yuidoc.js:127`
 
@@ -180,7 +180,7 @@ Defined in `lib/yuidoc.js:127`
 
 
 
-#### `_setDefaultExcludes()`
+##### `_setDefaultExcludes()`
 
 Defined in `lib/yuidoc.js:112`
 
@@ -191,7 +191,7 @@ Defined in `lib/yuidoc.js:112`
 
 
 
-#### `parsedir()`
+##### `parsedir()`
 
 Defined in `lib/yuidoc.js:149`
 
@@ -204,7 +204,7 @@ Defined in `lib/yuidoc.js:149`
 
 
 
-#### `parsefiles()`
+##### `parsefiles()`
 
 Defined in `lib/yuidoc.js:189`
 
@@ -218,7 +218,7 @@ Defined in `lib/yuidoc.js:189`
 
 
 
-#### `run()`
+##### `run()`
 
 Defined in `lib/yuidoc.js:360`
 
@@ -231,7 +231,7 @@ Defined in `lib/yuidoc.js:360`
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 
-#### `runPreprocessors()`
+##### `runPreprocessors()`
 
 Defined in `lib/yuidoc.js:243`
 
@@ -245,7 +245,7 @@ This function first clones the data and operates on the clone.
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 
-#### `walk()`
+##### `walk()`
 
 Defined in `lib/yuidoc.js:138`
 
@@ -256,7 +256,7 @@ Defined in `lib/yuidoc.js:138`
 
 
 
-#### `writeJSON()`
+##### `writeJSON()`
 
 Defined in `lib/yuidoc.js:278`
 

@@ -1,5 +1,5 @@
 
-# firedoc 0.8.15
+# firedoc 0.8.16
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -47,7 +47,7 @@ Ported fileutils methods from [Selleck](http://github.com/rgrove/selleck)
 #### Methods
 
 
-#### `copyAssets()`
+##### `copyAssets()`
 
 Defined in `lib/files.js:360`
 
@@ -63,7 +63,7 @@ Defined in `lib/files.js:360`
 
 
 
-#### `copyDirectory()`
+##### `copyDirectory()`
 
 Defined in `lib/files.js:37`
 
@@ -80,7 +80,7 @@ Defined in `lib/files.js:37`
 
 
 
-#### `copyFile()`
+##### `copyFile()`
 
 Defined in `lib/files.js:125`
 
@@ -98,7 +98,7 @@ Defined in `lib/files.js:125`
 
 
 
-#### `copyPath()`
+##### `copyPath()`
 
 Defined in `lib/files.js:178`
 
@@ -125,7 +125,7 @@ if they already exist.
 
 
 
-#### `deletePath()`
+##### `deletePath()`
 
 Defined in `lib/files.js:224`
 
@@ -141,7 +141,7 @@ This method is synchronous.
 
 
 
-#### `getJSON()`
+##### `getJSON()`
 
 Defined in `lib/files.js:407`
 
@@ -156,7 +156,7 @@ Defined in `lib/files.js:407`
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 
-#### `isDirectory()`
+##### `isDirectory()`
 
 Defined in `lib/files.js:248`
 
@@ -172,7 +172,7 @@ Defined in `lib/files.js:248`
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> 
 
 
-#### `isFile()`
+##### `isFile()`
 
 Defined in `lib/files.js:278`
 
@@ -188,7 +188,7 @@ Defined in `lib/files.js:278`
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> 
 
 
-#### `isSymbolicLink()`
+##### `isSymbolicLink()`
 
 Defined in `lib/files.js:305`
 
@@ -203,7 +203,7 @@ Defined in `lib/files.js:305`
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> 
 
 
-#### `lstatSync()`
+##### `lstatSync()`
 
 Defined in `lib/files.js:319`
 
@@ -219,7 +219,7 @@ doesn't exist. Will still throw on other types of errors.
 fs.Stats | Null 
 
 
-#### `statSync()`
+##### `statSync()`
 
 Defined in `lib/files.js:340`
 
@@ -235,7 +235,7 @@ doesn't exist. Will still throw on other types of errors.
 fs.Stats | Null 
 
 
-#### `writeFile()`
+##### `writeFile()`
 
 Defined in `lib/files.js:422`
 

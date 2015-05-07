@@ -1,5 +1,5 @@
 
-# firedoc 0.8.15
+# firedoc 0.8.16
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -39,7 +39,7 @@ Shows the help text
 
 
 
-#### `help`
+##### `help`
 
 |      | description |
 |------|-------------|
@@ -56,7 +56,7 @@ Shows the help text
 #### Methods
 
 
-#### `renderHelp()`
+##### `renderHelp()`
 
 Defined in `lib/help.js:62`
 
@@ -69,7 +69,7 @@ Defined in `lib/help.js:62`
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 
-#### `showHelp()`
+##### `showHelp()`
 
 Defined in `lib/help.js:72`
 

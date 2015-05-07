@@ -1,5 +1,5 @@
 
-# firedoc 0.8.15
+# firedoc 0.8.16
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -82,7 +82,7 @@ with the parsers data (aggregated in the `'data'` property).
 
 
 
-#### `CORRECTIONS`
+##### `CORRECTIONS`
 
 |      | description |
 |------|-------------|
@@ -93,7 +93,7 @@ with the parsers data (aggregated in the `'data'` property).
 
 
 
-#### `DIGESTERS`
+##### `DIGESTERS`
 
 |      | description |
 |------|-------------|
@@ -107,7 +107,7 @@ implementation rather than a function. |
 
 
 
-#### `IGNORE_TAGLIST`
+##### `IGNORE_TAGLIST`
 
 |      | description |
 |------|-------------|
@@ -119,7 +119,7 @@ likely to be used for purposes other than JSDoc tags in JavaScript comments. |
 
 
 
-#### `TAGLIST`
+##### `TAGLIST`
 
 |      | description |
 |------|-------------|
@@ -353,7 +353,7 @@ attribute's value has changed.
 
 ##### Constructor
 
-#### `DocParser()`
+##### `DocParser()`
 
 Defined in `lib/docparser.js:827`
 
@@ -366,7 +366,7 @@ Defined in `lib/docparser.js:827`
 
 
 
-#### `_resolveFor()`
+##### `_resolveFor()`
 
 Defined in `lib/docparser.js:1106`
 
@@ -381,7 +381,7 @@ Defined in `lib/docparser.js:1106`
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 
-#### `extract()`
+##### `extract()`
 
 Defined in `lib/docparser.js:1276`
 
@@ -402,7 +402,7 @@ alternative comment parser.
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 
-#### `handlecomment()`
+##### `handlecomment()`
 
 Defined in `lib/docparser.js:1198`
 
@@ -420,7 +420,7 @@ friendly for both markdown and html parsers.
 
 
 
-#### `implodeString()`
+##### `implodeString()`
 
 Defined in `lib/docparser.js:37`
 
@@ -435,7 +435,7 @@ Defined in `lib/docparser.js:37`
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 
-#### `implodeString()`
+##### `implodeString()`
 
 Defined in `lib/docparser.js:47`
 
@@ -450,7 +450,7 @@ Defined in `lib/docparser.js:47`
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 
-#### `parse()`
+##### `parse()`
 
 Defined in `lib/docparser.js:1522`
 
@@ -466,7 +466,7 @@ Defined in `lib/docparser.js:1522`
 <a href="../classes/DocParser.html" class="crosslink">DocParser</a> 
 
 
-#### `processblock()`
+##### `processblock()`
 
 Defined in `lib/docparser.js:1332`
 
@@ -479,7 +479,7 @@ Defined in `lib/docparser.js:1332`
 
 
 
-#### `stringlog()`
+##### `stringlog()`
 
 Defined in `lib/docparser.js:11`
 
@@ -495,7 +495,7 @@ filename and line number: `/file/name.js:123`
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 
-#### `transform()`
+##### `transform()`
 
 Defined in `lib/docparser.js:1406`
 
@@ -512,7 +512,7 @@ and relationships between elements for the entire project.
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 
-#### `unindent()`
+##### `unindent()`
 
 Defined in `lib/docparser.js:1177`
 

@@ -1,5 +1,5 @@
 
-# firedoc 0.8.15
+# firedoc 0.8.16
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -72,7 +72,7 @@ based templates to generate static HTML content
 
 
 
-#### `_mergeCounter`
+##### `_mergeCounter`
 
 |      | description |
 |------|-------------|
@@ -83,7 +83,7 @@ based templates to generate static HTML content
 
 
 
-#### `_meta`
+##### `_meta`
 
 |      | description |
 |------|-------------|
@@ -94,7 +94,7 @@ based templates to generate static HTML content
 
 
 
-#### `files`
+##### `files`
 
 |      | description |
 |------|-------------|
@@ -105,7 +105,7 @@ based templates to generate static HTML content
 
 
 
-#### `NATIVES`
+##### `NATIVES`
 
 |      | description |
 |------|-------------|
@@ -122,7 +122,7 @@ based templates to generate static HTML content
 #### Methods
 
 
-#### `_addHelpers()`
+##### `_addHelpers()`
 
 Defined in `lib/builder.js:121`
 
@@ -135,7 +135,7 @@ Defined in `lib/builder.js:121`
 
 
 
-#### `_inlineCode()`
+##### `_inlineCode()`
 
 Defined in `lib/builder.js:771`
 
@@ -151,7 +151,7 @@ that are not parsed by the **Markdown** parser.
 HTML 
 
 
-#### `_mixExternal()`
+##### `_mixExternal()`
 
 Defined in `lib/builder.js:323`
 
@@ -163,7 +163,7 @@ it with flags.
 
 
 
-#### `_parseCode()`
+##### `_parseCode()`
 
 Defined in `lib/builder.js:758`
 
@@ -178,7 +178,7 @@ Defined in `lib/builder.js:758`
 HTML 
 
 
-#### `_parseCrossLink()`
+##### `_parseCrossLink()`
 
 Defined in `lib/builder.js:166`
 
@@ -193,7 +193,7 @@ Defined in `lib/builder.js:166`
 
 
 
-#### `addFoundAt()`
+##### `addFoundAt()`
 
 Defined in `lib/builder.js:633`
 
@@ -208,7 +208,7 @@ Defined in `lib/builder.js:633`
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 
-#### `augmentData()`
+##### `augmentData()`
 
 Defined in `lib/builder.js:649`
 
@@ -224,7 +224,7 @@ with the `Markdown Parser`
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 
-#### `compile()`
+##### `compile()`
 
 Defined in `lib/builder.js:1734`
 
@@ -237,7 +237,7 @@ Defined in `lib/builder.js:1734`
 
 
 
-#### `filterFileName()`
+##### `filterFileName()`
 
 Defined in `lib/builder.js:1721`
 
@@ -255,7 +255,7 @@ Defined in `lib/builder.js:1721`
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 
-#### `getProjectMeta()`
+##### `getProjectMeta()`
 
 Defined in `lib/builder.js:458`
 
@@ -268,7 +268,7 @@ Defined in `lib/builder.js:458`
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 
-#### `hasProperty()`
+##### `hasProperty()`
 
 Defined in `lib/builder.js:1065`
 
@@ -284,7 +284,7 @@ Defined in `lib/builder.js:1065`
  
 
 
-#### `makeDirs()`
+##### `makeDirs()`
 
 Defined in `lib/builder.js:708`
 
@@ -297,7 +297,7 @@ Defined in `lib/builder.js:708`
 
 
 
-#### `markdown()`
+##### `markdown()`
 
 Defined in `lib/builder.js:138`
 
@@ -312,7 +312,7 @@ Defined in `lib/builder.js:138`
 HTML 
 
 
-#### `mergeExtends()`
+##### `mergeExtends()`
 
 Defined in `lib/builder.js:1089`
 
@@ -327,7 +327,7 @@ Defined in `lib/builder.js:1089`
 
 
 
-#### `mixExternal()`
+##### `mixExternal()`
 
 Defined in `lib/builder.js:370`
 
@@ -340,7 +340,7 @@ Defined in `lib/builder.js:370`
 
 
 
-#### `nameSort()`
+##### `nameSort()`
 
 Defined in `lib/builder.js:1542`
 
@@ -356,7 +356,7 @@ Defined in `lib/builder.js:1542`
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a> 
 
 
-#### `NATIVES_LINKER()`
+##### `NATIVES_LINKER()`
 
 Defined in `lib/builder.js:309`
 
@@ -371,7 +371,7 @@ Defined in `lib/builder.js:309`
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 
-#### `populateClasses()`
+##### `populateClasses()`
 
 Defined in `lib/builder.js:499`
 
@@ -386,7 +386,7 @@ Defined in `lib/builder.js:499`
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 
-#### `populateFiles()`
+##### `populateFiles()`
 
 Defined in `lib/builder.js:578`
 
@@ -401,7 +401,7 @@ Defined in `lib/builder.js:578`
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 
-#### `populateModules()`
+##### `populateModules()`
 
 Defined in `lib/builder.js:532`
 
@@ -416,7 +416,7 @@ Defined in `lib/builder.js:532`
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 
-#### `render()`
+##### `render()`
 
 Defined in `lib/builder.js:790`
 
@@ -436,7 +436,7 @@ Renders the handlebars templates with the default View class.
 
 
 
-#### `renderAPIMeta()`
+##### `renderAPIMeta()`
 
 Defined in `lib/builder.js:1688`
 
@@ -450,7 +450,7 @@ Defined in `lib/builder.js:1688`
 
 
 
-#### `renderClass()`
+##### `renderClass()`
 
 Defined in `lib/builder.js:1140`
 
@@ -465,7 +465,7 @@ Defined in `lib/builder.js:1140`
 
 
 
-#### `renderFile()`
+##### `renderFile()`
 
 Defined in `lib/builder.js:1623`
 
@@ -480,7 +480,7 @@ Defined in `lib/builder.js:1623`
 
 
 
-#### `renderIndex()`
+##### `renderIndex()`
 
 Defined in `lib/builder.js:843`
 
@@ -495,7 +495,7 @@ Defined in `lib/builder.js:843`
 
 
 
-#### `renderModule()`
+##### `renderModule()`
 
 Defined in `lib/builder.js:901`
 
@@ -510,7 +510,7 @@ Defined in `lib/builder.js:901`
 
 
 
-#### `writeAPIMeta()`
+##### `writeAPIMeta()`
 
 Defined in `lib/builder.js:1675`
 
@@ -523,7 +523,7 @@ Defined in `lib/builder.js:1675`
 
 
 
-#### `writeClasses()`
+##### `writeClasses()`
 
 Defined in `lib/builder.js:1493`
 
@@ -538,7 +538,7 @@ Defined in `lib/builder.js:1493`
 
 
 
-#### `writeFiles()`
+##### `writeFiles()`
 
 Defined in `lib/builder.js:1565`
 
@@ -553,7 +553,7 @@ Defined in `lib/builder.js:1565`
 
 
 
-#### `writeIndex()`
+##### `writeIndex()`
 
 Defined in `lib/builder.js:869`
 
@@ -568,7 +568,7 @@ Defined in `lib/builder.js:869`
 
 
 
-#### `writeModules()`
+##### `writeModules()`
 
 Defined in `lib/builder.js:1017`
 
