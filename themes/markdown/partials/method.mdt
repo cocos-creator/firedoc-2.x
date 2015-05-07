@@ -1,49 +1,89 @@
 
---------------------------
 #### {{name}}() 
 
-{{#if overwritten_from}}
-Inherited from {{overwritten_from/class}} {{#if foundAt}}but overwritten in{{/if}} `{{{file}}}:{{{line}}}`
-{{else}}
-{{#if extended_from}}
-Inherited from `{{extended_from}}`
-{{/if}}
-Defined in `{{{file}}}:{{{line}}}`
-{{/if}}
-
-{{#if deprecationMessage}}
-Deprecated: {{deprecationMessage}}
-{{/if}}
-
-{{#if since}}
-Available since {{since}}
-{{/if}}
-
-> {{{methodDescription}}}
-
-{{#if params}}
-**Parameters**
-{{#params}}
-- {{name}} {{#crossLink type}}{{/crossLink}} {{{description}}}
-	{{#if props}}
-	{{#props}}
-	- {{name}} {{#crossLink type}}{{/crossLink}} {{{description}}}
-		{{#if props}}
-		{{#props}}
-		- {{name}} {{#crossLink type}}{{/crossLink}} {{{description}}}
-		{{/props}}
-		{{/if}}
-	{{/props}}
+<table>
+	<tr>
+		<td></td>
+		<td></description>
+	</tr>
+	<tr>
+		<td>type</td>
+		<td>{{#crossLink type}}{{/crossLink}}</td>
+	</tr>
+	
+	{{#if overwritten_from}}
+	<tr>
+		<td>overwritten</td>
+		<td>inherited from {{overwritten_from/class}} but overwritten in `{{{file}}}:{{{line}}}`</td>
+	</tr>
 	{{/if}}
-{{/params}}
-{{/if}}
+  {{#if extended_from}}
+  	<td>extends</td>
+  	<td>`{{extended_from}}`</td>
+  {{/if}}
 
-{{#if return}}
-**Returns**
-{{#return}}
-{{#crossLink type}}{{/crossLink}} {{{descrition}}}
-{{/return}}
-{{/if}}
+  <tr>
+		<td>defined</td>
+		<td>`{{{file}}}:{{{line}}}`</td>
+	</tr>
+	
+	{{#if deprecationMessage}}
+	<tr>
+		<td>deprecated</td>
+		<td>{{deprecationMessage}}</td>
+	</tr>
+	{{/if}}
+	
+	{{#if since}}
+	<tr>
+		<td>available</td>
+		<td>{{since}}</td>
+	</tr>
+	{{/if}}
+
+	{{#if default}}
+	<tr>
+		<td>default</td>
+		<td>{{default}}</td>
+	</tr>
+	{{/if}}
+
+	{{#if methodDescription}}
+	<tr>
+		<td>description</td>
+		<td>{{methodDescription}}</td>
+	</tr>
+	{{/if}}
+
+	<tr>
+		<td>Parameters</td>
+		<td>
+		{{#params}}
+		- {{name}} {{#crossLink type}}{{/crossLink}} {{{description}}}
+			{{#if props}}
+			{{#props}}
+			- {{name}} {{#crossLink type}}{{/crossLink}} {{{description}}}
+				{{#if props}}
+				{{#props}}
+				- {{name}} {{#crossLink type}}{{/crossLink}} {{{description}}}
+				{{/props}}
+				{{/if}}
+			{{/props}}
+			{{/if}}
+		{{/params}}
+		</td>
+	</tr>
+
+	<tr>
+		<td>Return</td>
+		<td>
+		{{#return}}
+			{{#crossLink type}}{{/crossLink}} {{{descrition}}}
+		{{/return}}
+		</td>
+	</tr>
+
+</table>
 
 {{#example}}
 **Examples**
