@@ -12,14 +12,14 @@ Defined in [lib/yuidoc.js:10](../files/lib_yuidoc.js.html#l10)
 
 
 
-This is the __module__ description for the &#x60;YUIDoc&#x60; module.
+This is the __module__ description for the `YUIDoc` module.
 
     var options = {
-        paths: [ &#x27;./lib&#x27; ],
-        outdir: &#x27;./out&#x27;
+        paths: [ './lib' ],
+        outdir: './out'
     };
 
-    var Y = require(&#x27;yuidocjs&#x27;);
+    var Y = require('yuidocjs');
     var json = (new Y.YUIDoc(options)).run();
 
 
@@ -35,5 +35,16 @@ This is the __module__ description for the &#x60;YUIDoc&#x60; module.
   - [Server](../classes/Server.md)
   - [Utils](../classes/Utils.md)
   - [YUIDoc](../classes/YUIDoc.md)
+
+
+
+### Direct Members
+### Index
+
+
+
+
+
+
 
 
