@@ -1,0 +1,77 @@
+### Index
+
+{{#if properties}}
+##### Properties
+
+{{#properties}}
+  - `{{name}}`
+{{/properties}}
+
+{{/if}}
+
+{{#if attrs}}
+##### Attributes
+
+{{#attrs}}
+  - `{{name}}`
+{{/attrs}}
+
+{{/if}}
+
+{{#if methods}}
+##### Methods
+
+{{#is_constructor}}
+  - `{{name}}` **constructor**
+{{/is_constructor}}
+{{#methods}}
+  - `{{name}}`
+{{/methods}}
+
+{{/if}}
+
+{{#if events}}
+
+##### Events
+
+{{#events}}
+  - `{{name}}`
+{{/events}}
+
+{{/if}}
+
+{{#if extends}}
+
+### Inherited members
+
+##### Properties
+
+{{#inheritedItems.properties}}
+- `{{name}}`
+{{/inheritedItems.properties}}
+
+##### Attributes
+
+{{#inheritedItems.attrs}}
+- `{{name}}`
+{{/inheritedItems.attrs}}
+
+##### Methods
+
+{{#inheritedItems.methods}}
+- `{{name}}
+{{/inheritedItems.methods}}
+
+##### Events
+
+{{#inheritedItems.events}}
+- `{{name}}
+{{/inheritedItems.events}}
+
+{{/if}}
+
+{{#if children}}
+
+### Inheritance tree
+
+{{/if}}
