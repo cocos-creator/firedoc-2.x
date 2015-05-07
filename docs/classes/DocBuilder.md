@@ -80,7 +80,6 @@ Counter for stepping into merges
 |------|---|
 | type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a> |
 | defined | `lib/builder.js:1082` |
-| description |  |
 
 
 
@@ -93,7 +92,6 @@ Holder for project meta data
 |------|---|
 | type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
 | defined | `lib/builder.js:451` |
-| description |  |
 
 
 
@@ -106,7 +104,6 @@ File counter
 |------|---|
 | type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a> |
 | defined | `lib/builder.js:445` |
-| description |  |
 
 
 
@@ -119,7 +116,6 @@ List of native types to cross link to MDN
 |------|---|
 | type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
 | defined | `lib/builder.js:270` |
-| description |  |
 
 
 
@@ -132,7 +128,7 @@ List of native types to cross link to MDN
 
 ##### method: `_addHelpers()`
 
-Register a `Y.Handlebars` helper method
+Register a &#x60;Y.Handlebars&#x60; helper method
 
 | meta |   |
 |------|---|
@@ -145,7 +141,7 @@ Register a `Y.Handlebars` helper method
 
 ##### method: `_inlineCode()`
 
-Ported from [Selleck](https://github.com/rgrove/selleck), this handles ```'s in fields
+Ported from [Selleck](https://github.com/rgrove/selleck), this handles &#x60;&#x60;&#x60;&#x27;s in fields
 that are not parsed by the **Markdown** parser.
 
 | meta |   |
@@ -173,7 +169,7 @@ it with flags.
 
 ##### method: `_parseCode()`
 
-Parses `<pre class="code prettyprint"><code>` tags and adds the __prettyprint__ `className` to them
+Parses &#x60;&lt;pre class=&quot;code prettyprint&quot;&gt;&lt;code&gt;&#x60; tags and adds the __prettyprint__ &#x60;className&#x60; to them
 
 | meta |   |
 |------|---|
@@ -203,7 +199,7 @@ Parse the item to be cross linked and return an HREF linked to the item
 
 ##### method: `addFoundAt()`
 
-Parses file and line number from an item object and build's an HREF
+Parses file and line number from an item object and build&#x27;s an HREF
 
 | meta |   |
 |------|---|
@@ -219,7 +215,7 @@ Parses file and line number from an item object and build's an HREF
 ##### method: `augmentData()`
 
 Augments the **DocParser** meta data to provide default values for certain keys as well as parses all descriptions
-with the `Markdown Parser`
+with the &#x60;Markdown Parser&#x60;
 
 | meta |   |
 |------|---|
@@ -249,8 +245,8 @@ Compiles the templates from the meta-data provided by DocParser
 
 Normalizes a file path to a writable filename:
 
-   var path = 'lib/file.js';
-   returns 'lib_file.js';
+   var path = &#x27;lib/file.js&#x27;;
+   returns &#x27;lib_file.js&#x27;;
 
 | meta |   |
 |------|---|
@@ -337,7 +333,7 @@ Merge superclass data into a child class
 
 ##### method: `mixExternal()`
 
-Fetches the remote data and fires the callback when it's all complete
+Fetches the remote data and fires the callback when it&#x27;s all complete
 
 | meta |   |
 |------|---|
@@ -366,7 +362,7 @@ Sort method of array of objects with a property called __name__
 
 ##### method: `NATIVES_LINKER()`
 
-Function to link an external type uses `NATIVES` object
+Function to link an external type uses &#x60;NATIVES&#x60; object
 
 | meta |   |
 |------|---|
@@ -533,7 +529,7 @@ Write the API meta data used for the AutoComplete widget
 
 ##### method: `writeClasses()`
 
-Generates the class files under "out"/classes/
+Generates the class files under &quot;out&quot;/classes/
 
 | meta |   |
 |------|---|
@@ -548,7 +544,7 @@ Generates the class files under "out"/classes/
 
 ##### method: `writeFiles()`
 
-Generates the syntax files under `"out"/files/`
+Generates the syntax files under &#x60;&quot;out&quot;/files/&#x60;
 
 | meta |   |
 |------|---|
@@ -578,7 +574,7 @@ Generates the index.html file
 
 ##### method: `writeModules()`
 
-Generates the module files under "out"/modules/
+Generates the module files under &quot;out&quot;/modules/
 
 | meta |   |
 |------|---|

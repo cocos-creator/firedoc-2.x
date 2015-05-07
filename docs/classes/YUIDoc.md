@@ -69,7 +69,6 @@ Holder for the list of directories we are processing.
 |------|---|
 | type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
 | defined | `lib/yuidoc.js:87` |
-| description |  |
 
 
 
@@ -82,7 +81,6 @@ Timestamp holder so we know when YUIDoc has finished the parse process.
 |------|---|
 | type | Timestamp |
 | defined | `lib/yuidoc.js:387` |
-| description |  |
 
 
 
@@ -95,7 +93,6 @@ Holds the number of files that we are processing.
 |------|---|
 | type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> |
 | defined | `lib/yuidoc.js:66` |
-| description |  |
 
 
 
@@ -108,7 +105,6 @@ Holder for the list of files we are processing.
 |------|---|
 | type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
 | defined | `lib/yuidoc.js:80` |
-| description |  |
 
 
 
@@ -121,7 +117,6 @@ The default list of configuration options
 |------|---|
 | type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
 | defined | `lib/yuidoc.js:29` |
-| description |  |
 
 
 
@@ -134,7 +129,6 @@ Internal holder for configuration options.
 |------|---|
 | type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
 | defined | `lib/yuidoc.js:95` |
-| description |  |
 
 
 
@@ -147,7 +141,6 @@ Hash map of dirnames to selleck config options.
 |------|---|
 | type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
 | defined | `lib/yuidoc.js:73` |
-| description |  |
 
 
 
@@ -160,7 +153,6 @@ Timestamp holder so we know when YUIDoc started the parse process.
 |------|---|
 | type | Timestamp |
 | defined | `lib/yuidoc.js:366` |
-| description |  |
 
 
 

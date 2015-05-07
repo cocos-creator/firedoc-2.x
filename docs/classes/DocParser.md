@@ -90,7 +90,6 @@ Common errors will get scrubbed instead of being ignored.
 |------|---|
 | type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
 | defined | `lib/docparser.js:187` |
-| description |  |
 
 
 
@@ -106,7 +105,6 @@ implementation rather than a function.
 |------|---|
 | type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
 | defined | `lib/docparser.js:210` |
-| description |  |
 
 
 
@@ -120,7 +118,6 @@ likely to be used for purposes other than JSDoc tags in JavaScript comments.
 |------|---|
 | type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> |
 | defined | `lib/docparser.js:175` |
-| description |  |
 
 
 
@@ -135,7 +132,6 @@ digesters are added.
 |------|---|
 | type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> |
 | defined | `lib/docparser.js:93` |
-| description |  |
 
 
 
@@ -376,7 +372,7 @@ attribute's value has changed.
 
 ##### method: `_resolveFor()`
 
-Takes a non-namespaced classname and resolves it to a namespace (to support `@for`)
+Takes a non-namespaced classname and resolves it to a namespace (to support &#x60;@for&#x60;)
 
 | meta |   |
 |------|---|
@@ -413,7 +409,7 @@ alternative comment parser.
 ##### method: `handlecomment()`
 
 Transforms a JavaDoc style comment block (less the start and end of it)
-into a list of tag/text pairs. The leading space and '*' are removed,
+into a list of tag/text pairs. The leading space and &#x27;*&#x27; are removed,
 but the remaining whitespace is preserved so that the output should be
 friendly for both markdown and html parsers.
 
@@ -445,7 +441,7 @@ Flatten a string, remove all line breaks and replace them with a token
 
 ##### method: `implodeString()`
 
-Un-flatten a string, replace tokens injected with `implodeString`
+Un-flatten a string, replace tokens injected with &#x60;implodeString&#x60;
 
 | meta |   |
 |------|---|
@@ -490,7 +486,7 @@ Processes all the tags in a single comment block
 ##### method: `stringlog()`
 
 Parses the JSON data and formats it into a nice log string for
-filename and line number: `/file/name.js:123`
+filename and line number: &#x60;/file/name.js:123&#x60;
 
 | meta |   |
 |------|---|

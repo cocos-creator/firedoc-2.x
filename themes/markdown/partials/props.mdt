@@ -2,7 +2,7 @@
 
 ##### property: `{{name}}`
 
-{{{propertyDescription}}}
+{{propertyDescription}}
 
 | meta |   |
 |------|---|
@@ -24,7 +24,6 @@
 {{#if default}}
 | default    | {{default}} |
 {{/if}}
-| description |  |
 
 {{#example}}
 ##### Examples

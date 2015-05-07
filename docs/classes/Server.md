@@ -53,7 +53,6 @@ Cache for external mixed in data.
 |------|---|
 | type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
 | defined | `lib/server.js:15` |
-| description |  |
 
 
 
@@ -66,7 +65,7 @@ Cache for external mixed in data.
 
 ##### method: `clazz()`
 
-`/classes` endpoint
+&#x60;/classes&#x60; endpoint
 
 | meta |   |
 |------|---|
@@ -80,7 +79,7 @@ Cache for external mixed in data.
 
 ##### method: `files()`
 
-`/files` endpoint
+&#x60;/files&#x60; endpoint
 
 | meta |   |
 |------|---|
@@ -94,7 +93,7 @@ Cache for external mixed in data.
 
 ##### method: `home()`
 
-`/` endpoint
+&#x60;/&#x60; endpoint
 
 | meta |   |
 |------|---|
@@ -108,7 +107,7 @@ Cache for external mixed in data.
 
 ##### method: `init()`
 
-Creates the Express server and prep's YUI for serving
+Creates the Express server and prep&#x27;s YUI for serving
 
 | meta |   |
 |------|---|
@@ -119,7 +118,7 @@ Creates the Express server and prep's YUI for serving
 
 ##### method: `modules()`
 
-`/modules` endpoint
+&#x60;/modules&#x60; endpoint
 
 | meta |   |
 |------|---|

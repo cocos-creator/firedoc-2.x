@@ -65,7 +65,7 @@ Escapes HTML characters in _html_.
 
 ##### method: `fixType()`
 
-Takes a type string and converts it to a "First letter upper cased" type. e.g. `(string -> String, object -> Object)`
+Takes a type string and converts it to a &quot;First letter upper cased&quot; type. e.g. &#x60;(string -&gt; String, object -&gt; Object)&#x60;
 
 | meta |   |
 |------|---|
@@ -95,7 +95,7 @@ Walks the tree from this dir and returns all the subdirs
 
 ##### method: `getLayouts()`
 
-Like `getPages()`, but returns only the files under the `layout/` subdirectory
+Like &#x60;getPages()&#x60;, but returns only the files under the &#x60;layout/&#x60; subdirectory
 of the specified _dir_.
 
 | meta |   |
@@ -126,9 +126,9 @@ Loads and returns the content of the specified page file.
 
 ##### method: `getPages()`
 
-Loads pages (files with a `.handlebars` extension) in the specified directory and
+Loads pages (files with a &#x60;.handlebars&#x60; extension) in the specified directory and
 returns an object containing a mapping of page names (the part of the filename)
-preceding the `.handlebars` extension) to page content.
+preceding the &#x60;.handlebars&#x60; extension) to page content.
 
 | meta |   |
 |------|---|
@@ -143,7 +143,7 @@ preceding the `.handlebars` extension) to page content.
 
 ##### method: `getPartials()`
 
-Like `getPages()`, but returns only the files under the `partial/` subdirectory
+Like &#x60;getPages()&#x60;, but returns only the files under the &#x60;partial/&#x60; subdirectory
 of the specified _dir_.
 
 | meta |   |
@@ -239,7 +239,7 @@ Make sure all the paths passed are directories and that they are not in the igno
 Produces a normalized web path by joining all the parts and normalizing the
 filesystem-like path into web compatible url.
 Supports relative and absolute paths.
-Courtesy of [Mojito's utils](https://github.com/yahoo/mojito/)
+Courtesy of [Mojito&#x27;s utils](https://github.com/yahoo/mojito/)
 
 | meta |   |
 |------|---|

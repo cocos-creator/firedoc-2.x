@@ -100,7 +100,7 @@ Copy a file from one location to another
 
 ##### method: `copyPath()`
 
-If _source_ is a file, copies it to _dest_. If it's a directory, recursively
+If _source_ is a file, copies it to _dest_. If it&#x27;s a directory, recursively
 copies it and all files and directories it contains to _dest_.
 
 Note that when attempting to copy a file into a directory, you should specify
@@ -109,7 +109,7 @@ be interpreted as an attempt to copy the _source_ file *over* the _dest_
 directory instead of *into* it.
 
 Known issues:
-- Doesn't preserve ownership or permissions on copied files/directories.
+- Doesn&#x27;t preserve ownership or permissions on copied files/directories.
 
 | meta |   |
 |------|---|
@@ -205,8 +205,8 @@ Check to see if this is a SymLink
 
 ##### method: `lstatSync()`
 
-Like `fs.lstatSync()`, but returns `null` instead of throwing when _path_
-doesn't exist. Will still throw on other types of errors.
+Like &#x60;fs.lstatSync()&#x60;, but returns &#x60;null&#x60; instead of throwing when _path_
+doesn&#x27;t exist. Will still throw on other types of errors.
 
 | meta |   |
 |------|---|
@@ -221,8 +221,8 @@ fs.Stats | Null
 
 ##### method: `statSync()`
 
-Like `fs.statSync()`, but returns `null` instead of throwing when _path_
-doesn't exist. Will still throw on other types of errors.
+Like &#x60;fs.statSync()&#x60;, but returns &#x60;null&#x60; instead of throwing when _path_
+doesn&#x27;t exist. Will still throw on other types of errors.
 
 | meta |   |
 |------|---|
