@@ -4,7 +4,7 @@
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
 
-## yuidoc Module
+## `yuidoc` Module
 
 
 
@@ -23,7 +23,7 @@ This is the __module__ description for the &#x60;YUIDoc&#x60; module.
     var json = (new Y.YUIDoc(options)).run();
 
 
-This module provides the following classes:
+### Classes
   - [CLI](../classes/CLI.md)
   - [DocBuilder](../classes/DocBuilder.md)
   - [DocParser](../classes/DocParser.md)
