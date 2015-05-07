@@ -83,11 +83,12 @@
 				<!-- level 2 -->
 
 				</li>
+			{{/params}}
 			</ul>
 		</td>
 	</tr>
 
-	{{if #return}}
+	{{#if return}}
 	<tr>
 		<td>Return</td>
 		<td>
