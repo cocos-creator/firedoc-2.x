@@ -1,30 +1,27 @@
 
+
 `{{name}}`: {{#crossLink type}}{{/crossLink}}
 
+| name | value |
+|------|-------|
 {{#if overwritten_from}}
-> Inherited from {{overwritten_from/class}} {{#if foundAt}}but overwritten in{{/if}} `{{{file}}}:{{{line}}}`
+| overwritten | inherited from {{overwritten_from/class}} but overwritten in `{{{file}}}:{{{line}}}` |
 {{else}}
-{{#if extended_from}}
-> Inherited from `{{extended_from}}`
+  {{#if extended_from}}
+| extends | `{{extended_from}}` |
+  {{/if}}
 {{/if}}
-Defined in `{{{file}}}:{{{line}}}`
-{{/if}}
-
+| defined | `{{{file}}}:{{{line}}}` |
 {{#if deprecationMessage}}
-**Deprecated**: {{deprecationMessage}}
+| deprecated | {{deprecationMessage}} |
 {{/if}}
-
 {{#if since}}
-Available since {{since}}
+| available  | {{since}} |
 {{/if}}
-
----------------------
-
-{{{propertyDescription}}}
-
 {{#if default}}
-**Default**: {{default}}
+| default    | {{default}} |
 {{/if}}
+| description | {{{propertyDescription}}} |
 
 {{#example}}
 ##### Examples
