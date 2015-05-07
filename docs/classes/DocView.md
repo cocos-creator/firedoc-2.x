@@ -40,128 +40,40 @@ The view class is a **`handlebars`** template helper.
 
 ##### Constructor
 
-#### DocView() 
+- `DocView()`
 
-<table>
-	<tr>
-		<th></th>
-		<th>description</th>
-	</tr>
-	<tr>
-		<th>type</th>
-		<td></td>
-	</tr>
-	
-
-  <tr>
-		<th>defined</th>
-		<td>`lib/docview.js:15`</td>
-	</tr>
-	
-	
+Defined in `lib/docview.js:15`
 
 
 
-	<tr>
-		<th>Parameters</th>
-		<td>
-			<ul>
-				<li> 
-				data <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> Meta data to use in this template
+> 
 
-				<!-- level 2 -->
-				<!-- level 2 -->
-
-				</li>
-				<li> 
-				templateName <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The name of the template file to render.
-
-				<!-- level 2 -->
-				<!-- level 2 -->
-
-				</li>
-			</ul>
-		</td>
-	</tr>
+**Parameters**
+- data <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> Meta data to use in this template
+- templateName <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The name of the template file to render.
 
 
-</table>
+
+- `htmlTitle()`
+
+Defined in `lib/docview.js:29`
 
 
-#### htmlTitle() 
 
-<table>
-	<tr>
-		<th></th>
-		<th>description</th>
-	</tr>
-	<tr>
-		<th>type</th>
-		<td></td>
-	</tr>
-	
-
-  <tr>
-		<th>defined</th>
-		<td>`lib/docview.js:29`</td>
-	</tr>
-	
-	
+> **Mustache** `lambda` method for setting the HTML title
 
 
-	<tr>
-		<th>description</th>
-		<td>**Mustache** &#x60;lambda&#x60; method for setting the HTML title</td>
-	</tr>
-
-	<tr>
-		<th>Parameters</th>
-		<td>
-			<ul>
-			</ul>
-		</td>
-	</tr>
 
 
-</table>
+- `title()`
+
+Defined in `lib/docview.js:47`
 
 
-#### title() 
 
-<table>
-	<tr>
-		<th></th>
-		<th>description</th>
-	</tr>
-	<tr>
-		<th>type</th>
-		<td></td>
-	</tr>
-	
-
-  <tr>
-		<th>defined</th>
-		<td>`lib/docview.js:47`</td>
-	</tr>
-	
-	
+> **Mustache** `lambda` method for setting the title
 
 
-	<tr>
-		<th>description</th>
-		<td>**Mustache** &#x60;lambda&#x60; method for setting the title</td>
-	</tr>
-
-	<tr>
-		<th>Parameters</th>
-		<td>
-			<ul>
-			</ul>
-		</td>
-	</tr>
-
-
-</table>
 
 
 

@@ -36,55 +36,19 @@ Handles argument parsing
 #### Methods
 
 
-#### Options() 
+- `Options()`
 
-<table>
-	<tr>
-		<th></th>
-		<th>description</th>
-	</tr>
-	<tr>
-		<th>type</th>
-		<td></td>
-	</tr>
-	
-
-  <tr>
-		<th>defined</th>
-		<td>`lib/options.js:20`</td>
-	</tr>
-	
-	
+Defined in `lib/options.js:20`
 
 
-	<tr>
-		<th>description</th>
-		<td>Parses arguments and returns an Object of config options</td>
-	</tr>
 
-	<tr>
-		<th>Parameters</th>
-		<td>
-			<ul>
-				<li> 
-				args <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> Arguments to parse
+> Parses arguments and returns an Object of config options
 
-				<!-- level 2 -->
-				<!-- level 2 -->
+**Parameters**
+- args <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> Arguments to parse
 
-				</li>
-			</ul>
-		</td>
-	</tr>
-
-	<tr>
-		<td>Return</td>
-		<td>
-			<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
-		</td>
-	</tr>
-
-</table>
+**Returns**
+<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 
 
