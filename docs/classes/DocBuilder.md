@@ -76,8 +76,8 @@ based templates to generate static HTML content
 
 Counter for stepping into merges
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a> |
 | defined | `lib/builder.js:1082` |
 
@@ -88,8 +88,8 @@ Counter for stepping into merges
 
 Holder for project meta data
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
 | defined | `lib/builder.js:451` |
 
@@ -100,8 +100,8 @@ Holder for project meta data
 
 File counter
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a> |
 | defined | `lib/builder.js:445` |
 
@@ -112,8 +112,8 @@ File counter
 
 List of native types to cross link to MDN
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
 | defined | `lib/builder.js:270` |
 
@@ -130,8 +130,8 @@ List of native types to cross link to MDN
 
 Register a `Y.Handlebars` helper method
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/builder.js:121` |
 
 ###### Parameters
@@ -144,8 +144,8 @@ Register a `Y.Handlebars` helper method
 Ported from [Selleck](https://github.com/rgrove/selleck), this handles ```'s in fields
 that are not parsed by the **Markdown** parser.
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/builder.js:771` |
 
 ###### Parameters
@@ -160,8 +160,8 @@ HTML
 Mixes the various external data soures together into the local data, augmenting
 it with flags.
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/builder.js:323` |
 
 
@@ -171,8 +171,8 @@ it with flags.
 
 Parses `<pre class="code prettyprint"><code>` tags and adds the __prettyprint__ `className` to them
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/builder.js:758` |
 
 ###### Parameters
@@ -186,8 +186,8 @@ HTML
 
 Parse the item to be cross linked and return an HREF linked to the item
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/builder.js:166` |
 
 ###### Parameters
@@ -201,8 +201,8 @@ Parse the item to be cross linked and return an HREF linked to the item
 
 Parses file and line number from an item object and build's an HREF
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/builder.js:633` |
 
 ###### Parameters
@@ -217,8 +217,8 @@ Parses file and line number from an item object and build's an HREF
 Augments the **DocParser** meta data to provide default values for certain keys as well as parses all descriptions
 with the `Markdown Parser`
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/builder.js:649` |
 
 ###### Parameters
@@ -232,8 +232,8 @@ with the `Markdown Parser`
 
 Compiles the templates from the meta-data provided by DocParser
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/builder.js:1734` |
 
 ###### Parameters
@@ -248,8 +248,8 @@ Normalizes a file path to a writable filename:
    var path = 'lib/file.js';
    returns 'lib_file.js';
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/builder.js:1721` |
 
 ###### Parameters
@@ -263,8 +263,8 @@ Normalizes a file path to a writable filename:
 
 Prep the meta data to be fed to Selleck
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/builder.js:458` |
 
 
@@ -276,8 +276,8 @@ Prep the meta data to be fed to Selleck
 
 Checks an array of items (class items) to see if an item is in that list
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/builder.js:1065` |
 
 ###### Parameters
@@ -292,8 +292,8 @@ Checks an array of items (class items) to see if an item is in that list
 
 Makes the default directories needed
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/builder.js:708` |
 
 ###### Parameters
@@ -305,8 +305,8 @@ Makes the default directories needed
 
 Wrapper around the Markdown parser so it can be normalized or even side stepped
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/builder.js:138` |
 
 ###### Parameters
@@ -320,8 +320,8 @@ HTML
 
 Merge superclass data into a child class
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/builder.js:1089` |
 
 ###### Parameters
@@ -335,8 +335,8 @@ Merge superclass data into a child class
 
 Fetches the remote data and fires the callback when it's all complete
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/builder.js:370` |
 
 ###### Parameters
@@ -348,8 +348,8 @@ Fetches the remote data and fires the callback when it's all complete
 
 Sort method of array of objects with a property called __name__
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/builder.js:1542` |
 
 ###### Parameters
@@ -364,8 +364,8 @@ Sort method of array of objects with a property called __name__
 
 Function to link an external type uses `NATIVES` object
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/builder.js:309` |
 
 ###### Parameters
@@ -379,8 +379,8 @@ Function to link an external type uses `NATIVES` object
 
 Populate the meta data for classes
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/builder.js:499` |
 
 ###### Parameters
@@ -394,8 +394,8 @@ Populate the meta data for classes
 
 Populate the meta data for files
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/builder.js:578` |
 
 ###### Parameters
@@ -409,8 +409,8 @@ Populate the meta data for files
 
 Populate the meta data for modules
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/builder.js:532` |
 
 ###### Parameters
@@ -425,8 +425,8 @@ Populate the meta data for modules
 Ported from [Selleck](https://github.com/rgrove/selleck)
 Renders the handlebars templates with the default View class.
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/builder.js:790` |
 
 ###### Parameters
@@ -444,8 +444,8 @@ Renders the handlebars templates with the default View class.
 
 Render the API meta and return the JavaScript
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/builder.js:1688` |
 
 ###### Parameters
@@ -458,8 +458,8 @@ Render the API meta and return the JavaScript
 
 Render the class file
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/builder.js:1140` |
 
 ###### Parameters
@@ -473,8 +473,8 @@ Render the class file
 
 Render the source file
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/builder.js:1623` |
 
 ###### Parameters
@@ -488,8 +488,8 @@ Render the source file
 
 Render the index file
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/builder.js:843` |
 
 ###### Parameters
@@ -503,8 +503,8 @@ Render the index file
 
 Render a module
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/builder.js:901` |
 
 ###### Parameters
@@ -518,8 +518,8 @@ Render a module
 
 Write the API meta data used for the AutoComplete widget
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/builder.js:1675` |
 
 ###### Parameters
@@ -531,8 +531,8 @@ Write the API meta data used for the AutoComplete widget
 
 Generates the class files under "out"/classes/
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/builder.js:1493` |
 
 ###### Parameters
@@ -546,8 +546,8 @@ Generates the class files under "out"/classes/
 
 Generates the syntax files under `"out"/files/`
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/builder.js:1565` |
 
 ###### Parameters
@@ -561,8 +561,8 @@ Generates the syntax files under `"out"/files/`
 
 Generates the index.html file
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/builder.js:869` |
 
 ###### Parameters
@@ -576,8 +576,8 @@ Generates the index.html file
 
 Generates the module files under "out"/modules/
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/builder.js:1017` |
 
 ###### Parameters

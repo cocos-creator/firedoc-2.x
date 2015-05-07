@@ -52,8 +52,8 @@ Utilities Class
 
 Escapes HTML characters in _html_.
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/utils.js:31` |
 
 ###### Parameters
@@ -67,8 +67,8 @@ Escapes HTML characters in _html_.
 
 Takes a type string and converts it to a "First letter upper cased" type. e.g. `(string -> String, object -> Object)`
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/utils.js:452` |
 
 ###### Parameters
@@ -82,8 +82,8 @@ Takes a type string and converts it to a "First letter upper cased" type. e.g. `
 
 Walks the tree from this dir and returns all the subdirs
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/utils.js:338` |
 
 ###### Parameters
@@ -98,8 +98,8 @@ Walks the tree from this dir and returns all the subdirs
 Like `getPages()`, but returns only the files under the `layout/` subdirectory
 of the specified _dir_.
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/utils.js:63` |
 
 ###### Parameters
@@ -113,8 +113,8 @@ of the specified _dir_.
 
 Loads and returns the content of the specified page file.
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/utils.js:76` |
 
 ###### Parameters
@@ -130,8 +130,8 @@ Loads pages (files with a `.handlebars` extension) in the specified directory an
 returns an object containing a mapping of page names (the part of the filename)
 preceding the `.handlebars` extension) to page content.
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/utils.js:91` |
 
 ###### Parameters
@@ -146,8 +146,8 @@ preceding the `.handlebars` extension) to page content.
 Like `getPages()`, but returns only the files under the `partial/` subdirectory
 of the specified _dir_.
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/utils.js:125` |
 
 ###### Parameters
@@ -161,8 +161,8 @@ of the specified _dir_.
 
 Walk the directory tree to locate the yuidoc.json file.
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/utils.js:224` |
 
 ###### Parameters
@@ -174,8 +174,8 @@ Walk the directory tree to locate the yuidoc.json file.
 
 Localize the string via current Y.options
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/utils.js:492` |
 
 ###### Parameters
@@ -189,8 +189,8 @@ Localize the string via current Y.options
 
 Mix/merge/munge data into the template.
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/utils.js:139` |
 
 ###### Parameters
@@ -209,8 +209,8 @@ is unindented, and all other lines are unindented to the same degree as the
 first line. So if the first line has four spaces at the beginning, then all
 lines will be unindented four spaces.
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/utils.js:44` |
 
 ###### Parameters
@@ -224,8 +224,8 @@ lines will be unindented four spaces.
 
 Make sure all the paths passed are directories and that they are not in the ignore list.
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/utils.js:364` |
 
 ###### Parameters
@@ -241,8 +241,8 @@ filesystem-like path into web compatible url.
 Supports relative and absolute paths.
 Courtesy of [Mojito's utils](https://github.com/yahoo/mojito/)
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/utils.js:474` |
 
 ###### Parameters

@@ -43,8 +43,8 @@ Shows the help text
 
 The help text to display
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> |
 | defined | `lib/help.js:14` |
 
@@ -61,8 +61,8 @@ The help text to display
 
 Render the help message as a string
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/help.js:62` |
 
 
@@ -74,8 +74,8 @@ Render the help message as a string
 
 Display the help message, write it to the screen and exit
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/help.js:72` |
 
 

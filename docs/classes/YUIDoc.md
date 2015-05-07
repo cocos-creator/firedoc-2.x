@@ -65,8 +65,8 @@ YUIDoc main class
 
 Holder for the list of directories we are processing.
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
 | defined | `lib/yuidoc.js:87` |
 
@@ -77,8 +77,8 @@ Holder for the list of directories we are processing.
 
 Timestamp holder so we know when YUIDoc has finished the parse process.
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | type | Timestamp |
 | defined | `lib/yuidoc.js:387` |
 
@@ -89,8 +89,8 @@ Timestamp holder so we know when YUIDoc has finished the parse process.
 
 Holds the number of files that we are processing.
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> |
 | defined | `lib/yuidoc.js:66` |
 
@@ -101,8 +101,8 @@ Holds the number of files that we are processing.
 
 Holder for the list of files we are processing.
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
 | defined | `lib/yuidoc.js:80` |
 
@@ -113,8 +113,8 @@ Holder for the list of files we are processing.
 
 The default list of configuration options
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
 | defined | `lib/yuidoc.js:29` |
 
@@ -125,8 +125,8 @@ The default list of configuration options
 
 Internal holder for configuration options.
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
 | defined | `lib/yuidoc.js:95` |
 
@@ -137,8 +137,8 @@ Internal holder for configuration options.
 
 Hash map of dirnames to selleck config options.
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
 | defined | `lib/yuidoc.js:73` |
 
@@ -149,8 +149,8 @@ Hash map of dirnames to selleck config options.
 
 Timestamp holder so we know when YUIDoc started the parse process.
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | type | Timestamp |
 | defined | `lib/yuidoc.js:366` |
 
@@ -168,8 +168,8 @@ Timestamp holder so we know when YUIDoc started the parse process.
 
 
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/yuidoc.js:49` |
 
 ###### Parameters
@@ -181,8 +181,8 @@ Timestamp holder so we know when YUIDoc started the parse process.
 
 Does post process on self.options.
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/yuidoc.js:127` |
 
 
@@ -192,8 +192,8 @@ Does post process on self.options.
 
 Always exclude these directories
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/yuidoc.js:112` |
 
 
@@ -203,8 +203,8 @@ Always exclude these directories
 
 Walks the passed directory and grabs all the files recursively.
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/yuidoc.js:149` |
 
 ###### Parameters
@@ -216,8 +216,8 @@ Walks the passed directory and grabs all the files recursively.
 
 Gathers all the file data and populates the filemap and dirmap hashes.
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/yuidoc.js:189` |
 
 ###### Parameters
@@ -230,8 +230,8 @@ Gathers all the file data and populates the filemap and dirmap hashes.
 
 Process the config, walk the file tree and write out the JSON data.
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/yuidoc.js:360` |
 
 
@@ -244,8 +244,8 @@ Process the config, walk the file tree and write out the JSON data.
 Applies preprocessors to the data tree. 
 This function first clones the data and operates on the clone.
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/yuidoc.js:243` |
 
 
@@ -257,8 +257,8 @@ This function first clones the data and operates on the clone.
 
 Walks the paths and parses the directory contents
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/yuidoc.js:138` |
 
 
@@ -269,8 +269,8 @@ Walks the paths and parses the directory contents
 Writes the parser JSON data to disk.
 Applies preprocessors, if any.
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/yuidoc.js:278` |
 
 ###### Parameters

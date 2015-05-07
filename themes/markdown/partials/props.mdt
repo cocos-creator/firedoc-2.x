@@ -4,8 +4,8 @@
 
 {{{propertyDescription}}}
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | type | {{#crossLink type}}{{/crossLink}} |
 {{#if overwritten_from}}
 | overwritten | inherited from {{overwritten_from/class}} but overwritten in `{{{file}}}:{{{line}}}` |

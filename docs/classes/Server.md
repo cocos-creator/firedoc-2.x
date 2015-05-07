@@ -49,8 +49,8 @@ Provides the `--server` server option for YUIDoc
 
 Cache for external mixed in data.
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
 | defined | `lib/server.js:15` |
 
@@ -67,8 +67,8 @@ Cache for external mixed in data.
 
 `/classes` endpoint
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/server.js:129` |
 
 ###### Parameters
@@ -81,8 +81,8 @@ Cache for external mixed in data.
 
 `/files` endpoint
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/server.js:106` |
 
 ###### Parameters
@@ -95,8 +95,8 @@ Cache for external mixed in data.
 
 `/` endpoint
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/server.js:161` |
 
 ###### Parameters
@@ -109,8 +109,8 @@ Cache for external mixed in data.
 
 Creates the Express server and prep's YUI for serving
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/server.js:173` |
 
 
@@ -120,8 +120,8 @@ Creates the Express server and prep's YUI for serving
 
 `/modules` endpoint
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/server.js:145` |
 
 ###### Parameters
@@ -134,8 +134,8 @@ Creates the Express server and prep's YUI for serving
 
 Middleware to parse the API docs per request
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/server.js:22` |
 
 ###### Parameters
@@ -149,8 +149,8 @@ Middleware to parse the API docs per request
 
 Create the routes used to serve YUIDoc files dynamically
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/server.js:40` |
 
 
@@ -160,8 +160,8 @@ Create the routes used to serve YUIDoc files dynamically
 
 Start the server with the supplied options.
 
-| meta |   |
-|------|---|
+| meta | description |
+|------|-------------|
 | defined | `lib/server.js:191` |
 
 ###### Parameters
