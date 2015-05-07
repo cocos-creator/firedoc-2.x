@@ -48,7 +48,7 @@ Utilities Class
 #### Methods
 
 
-- `escapeHTML()`
+#### `escapeHTML()`
 
 Defined in `lib/utils.js:31`
 
@@ -63,7 +63,7 @@ Defined in `lib/utils.js:31`
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 
-- `fixType()`
+#### `fixType()`
 
 Defined in `lib/utils.js:452`
 
@@ -78,7 +78,7 @@ Defined in `lib/utils.js:452`
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 
-- `getDirs()`
+#### `getDirs()`
 
 Defined in `lib/utils.js:338`
 
@@ -93,7 +93,7 @@ Defined in `lib/utils.js:338`
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> 
 
 
-- `getLayouts()`
+#### `getLayouts()`
 
 Defined in `lib/utils.js:63`
 
@@ -109,7 +109,7 @@ of the specified _dir_.
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 
-- `getPage()`
+#### `getPage()`
 
 Defined in `lib/utils.js:76`
 
@@ -124,7 +124,7 @@ Defined in `lib/utils.js:76`
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> | Null 
 
 
-- `getPages()`
+#### `getPages()`
 
 Defined in `lib/utils.js:91`
 
@@ -141,7 +141,7 @@ preceding the `.handlebars` extension) to page content.
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 
-- `getPartials()`
+#### `getPartials()`
 
 Defined in `lib/utils.js:125`
 
@@ -157,7 +157,7 @@ of the specified _dir_.
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 
-- `getProjectData()`
+#### `getProjectData()`
 
 Defined in `lib/utils.js:224`
 
@@ -170,7 +170,7 @@ Defined in `lib/utils.js:224`
 
 
 
-- `localize()`
+#### `localize()`
 
 Defined in `lib/utils.js:492`
 
@@ -185,7 +185,7 @@ Defined in `lib/utils.js:492`
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 
-- `prepare()`
+#### `prepare()`
 
 Defined in `lib/utils.js:139`
 
@@ -202,7 +202,7 @@ Defined in `lib/utils.js:139`
 
 
 
-- `unindent()`
+#### `unindent()`
 
 Defined in `lib/utils.js:44`
 
@@ -220,7 +220,7 @@ lines will be unindented four spaces.
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 
-- `validatePaths()`
+#### `validatePaths()`
 
 Defined in `lib/utils.js:364`
 
@@ -234,7 +234,7 @@ Defined in `lib/utils.js:364`
 
 
 
-- `webpath()`
+#### `webpath()`
 
 Defined in `lib/utils.js:474`
 

@@ -40,7 +40,7 @@ The view class is a **`handlebars`** template helper.
 
 ##### Constructor
 
-- `DocView()`
+#### `DocView()`
 
 Defined in `lib/docview.js:15`
 
@@ -54,7 +54,7 @@ Defined in `lib/docview.js:15`
 
 
 
-- `htmlTitle()`
+#### `htmlTitle()`
 
 Defined in `lib/docview.js:29`
 
@@ -65,7 +65,7 @@ Defined in `lib/docview.js:29`
 
 
 
-- `title()`
+#### `title()`
 
 Defined in `lib/docview.js:47`
 

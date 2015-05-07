@@ -36,7 +36,7 @@ Handles argument parsing
 #### Methods
 
 
-- `Options()`
+#### `Options()`
 
 Defined in `lib/options.js:20`
 
