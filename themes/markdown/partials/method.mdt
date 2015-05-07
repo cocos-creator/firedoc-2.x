@@ -3,77 +3,91 @@
 
 <table>
 	<tr>
-		<td></td>
-		<td></description>
+		<th></th>
+		<th>description</th>
 	</tr>
 	<tr>
-		<td>type</td>
+		<th>type</th>
 		<td>{{#crossLink type}}{{/crossLink}}</td>
 	</tr>
 	
 	{{#if overwritten_from}}
 	<tr>
-		<td>overwritten</td>
+		<th>overwritten</th>
 		<td>inherited from {{overwritten_from/class}} but overwritten in `{{{file}}}:{{{line}}}`</td>
 	</tr>
 	{{/if}}
   {{#if extended_from}}
-  	<td>extends</td>
+  	<th>extends</th>
   	<td>`{{extended_from}}`</td>
   {{/if}}
 
   <tr>
-		<td>defined</td>
+		<th>defined</th>
 		<td>`{{{file}}}:{{{line}}}`</td>
 	</tr>
 	
 	{{#if deprecationMessage}}
 	<tr>
-		<td>deprecated</td>
+		<th>deprecated</th>
 		<td>{{deprecationMessage}}</td>
 	</tr>
 	{{/if}}
 	
 	{{#if since}}
 	<tr>
-		<td>available</td>
+		<th>available</th>
 		<td>{{since}}</td>
 	</tr>
 	{{/if}}
 
 	{{#if default}}
 	<tr>
-		<td>default</td>
+		<th>default</th>
 		<td>{{default}}</td>
 	</tr>
 	{{/if}}
 
 	{{#if methodDescription}}
 	<tr>
-		<td>description</td>
+		<th>description</th>
 		<td>{{methodDescription}}</td>
 	</tr>
 	{{/if}}
 
 	<tr>
-		<td>Parameters</td>
+		<th>Parameters</th>
 		<td>
-		{{#params}}
-		- {{name}} {{#crossLink type}}{{/crossLink}} {{{description}}}
-			{{#if props}}
-			{{#props}}
-			- {{name}} {{#crossLink type}}{{/crossLink}} {{{description}}}
+			<ul>
+			{{#params}}
+				<li> 
+				{{name}} {{#crossLink type}}{{/crossLink}} {{{description}}}
+
+				<!-- level 2 -->
 				{{#if props}}
-				{{#props}}
-				- {{name}} {{#crossLink type}}{{/crossLink}} {{{description}}}
-				{{/props}}
+					{{#props}}
+						<li>
+						{{name}} {{#crossLink type}}{{/crossLink}} {{{description}}}
+
+						<!-- level 3 -->
+						{{#if props}}
+							{{#props}}
+								<li>{{name}} {{#crossLink type}}{{/crossLink}} {{{description}}}</li>
+							{{/props}}
+						{{/if}}
+						<!-- level 3 -->
+
+						</li>
+					{{/props}}
 				{{/if}}
-			{{/props}}
-			{{/if}}
-		{{/params}}
+				<!-- level 2 -->
+
+				</li>
+			</ul>
 		</td>
 	</tr>
 
+	{{if #return}}
 	<tr>
 		<td>Return</td>
 		<td>
@@ -82,6 +96,7 @@
 		{{/return}}
 		</td>
 	</tr>
+	{{/if}}
 
 </table>
 
