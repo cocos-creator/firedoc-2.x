@@ -57,3 +57,7 @@ This module is deprecated.
   - [{{displayName}}]({{name}}.md) {{{description}}}
   {{/subModules}}
 {{/if}}
+
+### Direct Members
+{{#moduleItems}}{{> items-index}}{{/moduleItems}}
+
