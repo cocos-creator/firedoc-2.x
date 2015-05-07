@@ -66,17 +66,17 @@ Provides the `--server` server option for YUIDoc
 
 <table>
 	<tr>
-		<td></td>
-		<td></description>
+		<th></th>
+		<th>description</th>
 	</tr>
 	<tr>
-		<td>type</td>
+		<th>type</th>
 		<td></td>
 	</tr>
 	
 
   <tr>
-		<td>defined</td>
+		<th>defined</th>
 		<td>`lib/server.js:129`</td>
 	</tr>
 	
@@ -84,23 +84,32 @@ Provides the `--server` server option for YUIDoc
 
 
 	<tr>
-		<td>description</td>
+		<th>description</th>
 		<td>&#x60;/classes&#x60; endpoint</td>
 	</tr>
 
 	<tr>
-		<td>Parameters</td>
+		<th>Parameters</th>
 		<td>
-		- req Request Express request object
-		- res Response Express response object
+			<ul>
+				<li> 
+				req Request Express request object
+
+				<!-- level 2 -->
+				<!-- level 2 -->
+
+				</li>
+				<li> 
+				res Response Express response object
+
+				<!-- level 2 -->
+				<!-- level 2 -->
+
+				</li>
+			</ul>
 		</td>
 	</tr>
 
-	<tr>
-		<td>Return</td>
-		<td>
-		</td>
-	</tr>
 
 </table>
 
@@ -109,17 +118,17 @@ Provides the `--server` server option for YUIDoc
 
 <table>
 	<tr>
-		<td></td>
-		<td></description>
+		<th></th>
+		<th>description</th>
 	</tr>
 	<tr>
-		<td>type</td>
+		<th>type</th>
 		<td></td>
 	</tr>
 	
 
   <tr>
-		<td>defined</td>
+		<th>defined</th>
 		<td>`lib/server.js:106`</td>
 	</tr>
 	
@@ -127,23 +136,32 @@ Provides the `--server` server option for YUIDoc
 
 
 	<tr>
-		<td>description</td>
+		<th>description</th>
 		<td>&#x60;/files&#x60; endpoint</td>
 	</tr>
 
 	<tr>
-		<td>Parameters</td>
+		<th>Parameters</th>
 		<td>
-		- req Request Express request object
-		- res Response Express response object
+			<ul>
+				<li> 
+				req Request Express request object
+
+				<!-- level 2 -->
+				<!-- level 2 -->
+
+				</li>
+				<li> 
+				res Response Express response object
+
+				<!-- level 2 -->
+				<!-- level 2 -->
+
+				</li>
+			</ul>
 		</td>
 	</tr>
 
-	<tr>
-		<td>Return</td>
-		<td>
-		</td>
-	</tr>
 
 </table>
 
@@ -152,17 +170,17 @@ Provides the `--server` server option for YUIDoc
 
 <table>
 	<tr>
-		<td></td>
-		<td></description>
+		<th></th>
+		<th>description</th>
 	</tr>
 	<tr>
-		<td>type</td>
+		<th>type</th>
 		<td></td>
 	</tr>
 	
 
   <tr>
-		<td>defined</td>
+		<th>defined</th>
 		<td>`lib/server.js:161`</td>
 	</tr>
 	
@@ -170,23 +188,32 @@ Provides the `--server` server option for YUIDoc
 
 
 	<tr>
-		<td>description</td>
+		<th>description</th>
 		<td>&#x60;/&#x60; endpoint</td>
 	</tr>
 
 	<tr>
-		<td>Parameters</td>
+		<th>Parameters</th>
 		<td>
-		- req Request Express request object
-		- res Response Express response object
+			<ul>
+				<li> 
+				req Request Express request object
+
+				<!-- level 2 -->
+				<!-- level 2 -->
+
+				</li>
+				<li> 
+				res Response Express response object
+
+				<!-- level 2 -->
+				<!-- level 2 -->
+
+				</li>
+			</ul>
 		</td>
 	</tr>
 
-	<tr>
-		<td>Return</td>
-		<td>
-		</td>
-	</tr>
 
 </table>
 
@@ -195,17 +222,17 @@ Provides the `--server` server option for YUIDoc
 
 <table>
 	<tr>
-		<td></td>
-		<td></description>
+		<th></th>
+		<th>description</th>
 	</tr>
 	<tr>
-		<td>type</td>
+		<th>type</th>
 		<td></td>
 	</tr>
 	
 
   <tr>
-		<td>defined</td>
+		<th>defined</th>
 		<td>`lib/server.js:173`</td>
 	</tr>
 	
@@ -213,21 +240,18 @@ Provides the `--server` server option for YUIDoc
 
 
 	<tr>
-		<td>description</td>
+		<th>description</th>
 		<td>Creates the Express server and prep&#x27;s YUI for serving</td>
 	</tr>
 
 	<tr>
-		<td>Parameters</td>
+		<th>Parameters</th>
 		<td>
+			<ul>
+			</ul>
 		</td>
 	</tr>
 
-	<tr>
-		<td>Return</td>
-		<td>
-		</td>
-	</tr>
 
 </table>
 
@@ -236,17 +260,17 @@ Provides the `--server` server option for YUIDoc
 
 <table>
 	<tr>
-		<td></td>
-		<td></description>
+		<th></th>
+		<th>description</th>
 	</tr>
 	<tr>
-		<td>type</td>
+		<th>type</th>
 		<td></td>
 	</tr>
 	
 
   <tr>
-		<td>defined</td>
+		<th>defined</th>
 		<td>`lib/server.js:145`</td>
 	</tr>
 	
@@ -254,23 +278,32 @@ Provides the `--server` server option for YUIDoc
 
 
 	<tr>
-		<td>description</td>
+		<th>description</th>
 		<td>&#x60;/modules&#x60; endpoint</td>
 	</tr>
 
 	<tr>
-		<td>Parameters</td>
+		<th>Parameters</th>
 		<td>
-		- req Request Express request object
-		- res Response Express response object
+			<ul>
+				<li> 
+				req Request Express request object
+
+				<!-- level 2 -->
+				<!-- level 2 -->
+
+				</li>
+				<li> 
+				res Response Express response object
+
+				<!-- level 2 -->
+				<!-- level 2 -->
+
+				</li>
+			</ul>
 		</td>
 	</tr>
 
-	<tr>
-		<td>Return</td>
-		<td>
-		</td>
-	</tr>
 
 </table>
 
@@ -279,17 +312,17 @@ Provides the `--server` server option for YUIDoc
 
 <table>
 	<tr>
-		<td></td>
-		<td></description>
+		<th></th>
+		<th>description</th>
 	</tr>
 	<tr>
-		<td>type</td>
+		<th>type</th>
 		<td></td>
 	</tr>
 	
 
   <tr>
-		<td>defined</td>
+		<th>defined</th>
 		<td>`lib/server.js:22`</td>
 	</tr>
 	
@@ -297,24 +330,39 @@ Provides the `--server` server option for YUIDoc
 
 
 	<tr>
-		<td>description</td>
+		<th>description</th>
 		<td>Middleware to parse the API docs per request</td>
 	</tr>
 
 	<tr>
-		<td>Parameters</td>
+		<th>Parameters</th>
 		<td>
-		- req Request Express request object
-		- res Response Express response object
-		- next <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> Express next callback
+			<ul>
+				<li> 
+				req Request Express request object
+
+				<!-- level 2 -->
+				<!-- level 2 -->
+
+				</li>
+				<li> 
+				res Response Express response object
+
+				<!-- level 2 -->
+				<!-- level 2 -->
+
+				</li>
+				<li> 
+				next <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> Express next callback
+
+				<!-- level 2 -->
+				<!-- level 2 -->
+
+				</li>
+			</ul>
 		</td>
 	</tr>
 
-	<tr>
-		<td>Return</td>
-		<td>
-		</td>
-	</tr>
 
 </table>
 
@@ -323,17 +371,17 @@ Provides the `--server` server option for YUIDoc
 
 <table>
 	<tr>
-		<td></td>
-		<td></description>
+		<th></th>
+		<th>description</th>
 	</tr>
 	<tr>
-		<td>type</td>
+		<th>type</th>
 		<td></td>
 	</tr>
 	
 
   <tr>
-		<td>defined</td>
+		<th>defined</th>
 		<td>`lib/server.js:40`</td>
 	</tr>
 	
@@ -341,21 +389,18 @@ Provides the `--server` server option for YUIDoc
 
 
 	<tr>
-		<td>description</td>
+		<th>description</th>
 		<td>Create the routes used to serve YUIDoc files dynamically</td>
 	</tr>
 
 	<tr>
-		<td>Parameters</td>
+		<th>Parameters</th>
 		<td>
+			<ul>
+			</ul>
 		</td>
 	</tr>
 
-	<tr>
-		<td>Return</td>
-		<td>
-		</td>
-	</tr>
 
 </table>
 
@@ -364,17 +409,17 @@ Provides the `--server` server option for YUIDoc
 
 <table>
 	<tr>
-		<td></td>
-		<td></description>
+		<th></th>
+		<th>description</th>
 	</tr>
 	<tr>
-		<td>type</td>
+		<th>type</th>
 		<td></td>
 	</tr>
 	
 
   <tr>
-		<td>defined</td>
+		<th>defined</th>
 		<td>`lib/server.js:191`</td>
 	</tr>
 	
@@ -382,22 +427,25 @@ Provides the `--server` server option for YUIDoc
 
 
 	<tr>
-		<td>description</td>
+		<th>description</th>
 		<td>Start the server with the supplied options.</td>
 	</tr>
 
 	<tr>
-		<td>Parameters</td>
+		<th>Parameters</th>
 		<td>
-		- options <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> Server options
+			<ul>
+				<li> 
+				options <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> Server options
+
+				<!-- level 2 -->
+				<!-- level 2 -->
+
+				</li>
+			</ul>
 		</td>
 	</tr>
 
-	<tr>
-		<td>Return</td>
-		<td>
-		</td>
-	</tr>
 
 </table>
 

@@ -40,17 +40,17 @@ Handles argument parsing
 
 <table>
 	<tr>
-		<td></td>
-		<td></description>
+		<th></th>
+		<th>description</th>
 	</tr>
 	<tr>
-		<td>type</td>
+		<th>type</th>
 		<td></td>
 	</tr>
 	
 
   <tr>
-		<td>defined</td>
+		<th>defined</th>
 		<td>`lib/options.js:20`</td>
 	</tr>
 	
@@ -58,14 +58,22 @@ Handles argument parsing
 
 
 	<tr>
-		<td>description</td>
+		<th>description</th>
 		<td>Parses arguments and returns an Object of config options</td>
 	</tr>
 
 	<tr>
-		<td>Parameters</td>
+		<th>Parameters</th>
 		<td>
-		- args <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> Arguments to parse
+			<ul>
+				<li> 
+				args <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> Arguments to parse
+
+				<!-- level 2 -->
+				<!-- level 2 -->
+
+				</li>
+			</ul>
 		</td>
 	</tr>
 

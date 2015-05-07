@@ -60,17 +60,17 @@ Shows the help text
 
 <table>
 	<tr>
-		<td></td>
-		<td></description>
+		<th></th>
+		<th>description</th>
 	</tr>
 	<tr>
-		<td>type</td>
+		<th>type</th>
 		<td></td>
 	</tr>
 	
 
   <tr>
-		<td>defined</td>
+		<th>defined</th>
 		<td>`lib/help.js:62`</td>
 	</tr>
 	
@@ -78,13 +78,15 @@ Shows the help text
 
 
 	<tr>
-		<td>description</td>
+		<th>description</th>
 		<td>Render the help message as a string</td>
 	</tr>
 
 	<tr>
-		<td>Parameters</td>
+		<th>Parameters</th>
 		<td>
+			<ul>
+			</ul>
 		</td>
 	</tr>
 
@@ -102,17 +104,17 @@ Shows the help text
 
 <table>
 	<tr>
-		<td></td>
-		<td></description>
+		<th></th>
+		<th>description</th>
 	</tr>
 	<tr>
-		<td>type</td>
+		<th>type</th>
 		<td></td>
 	</tr>
 	
 
   <tr>
-		<td>defined</td>
+		<th>defined</th>
 		<td>`lib/help.js:72`</td>
 	</tr>
 	
@@ -120,21 +122,18 @@ Shows the help text
 
 
 	<tr>
-		<td>description</td>
+		<th>description</th>
 		<td>Display the help message, write it to the screen and exit</td>
 	</tr>
 
 	<tr>
-		<td>Parameters</td>
+		<th>Parameters</th>
 		<td>
+			<ul>
+			</ul>
 		</td>
 	</tr>
 
-	<tr>
-		<td>Return</td>
-		<td>
-		</td>
-	</tr>
 
 </table>
 

@@ -126,17 +126,17 @@ based templates to generate static HTML content
 
 <table>
 	<tr>
-		<td></td>
-		<td></description>
+		<th></th>
+		<th>description</th>
 	</tr>
 	<tr>
-		<td>type</td>
+		<th>type</th>
 		<td></td>
 	</tr>
 	
 
   <tr>
-		<td>defined</td>
+		<th>defined</th>
 		<td>`lib/builder.js:121`</td>
 	</tr>
 	
@@ -144,22 +144,25 @@ based templates to generate static HTML content
 
 
 	<tr>
-		<td>description</td>
+		<th>description</th>
 		<td>Register a &#x60;Y.Handlebars&#x60; helper method</td>
 	</tr>
 
 	<tr>
-		<td>Parameters</td>
+		<th>Parameters</th>
 		<td>
-		- helpers <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> Object containing a hash of names and functions
+			<ul>
+				<li> 
+				helpers <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> Object containing a hash of names and functions
+
+				<!-- level 2 -->
+				<!-- level 2 -->
+
+				</li>
+			</ul>
 		</td>
 	</tr>
 
-	<tr>
-		<td>Return</td>
-		<td>
-		</td>
-	</tr>
 
 </table>
 
@@ -168,17 +171,17 @@ based templates to generate static HTML content
 
 <table>
 	<tr>
-		<td></td>
-		<td></description>
+		<th></th>
+		<th>description</th>
 	</tr>
 	<tr>
-		<td>type</td>
+		<th>type</th>
 		<td></td>
 	</tr>
 	
 
   <tr>
-		<td>defined</td>
+		<th>defined</th>
 		<td>`lib/builder.js:771`</td>
 	</tr>
 	
@@ -186,15 +189,23 @@ based templates to generate static HTML content
 
 
 	<tr>
-		<td>description</td>
+		<th>description</th>
 		<td>Ported from [Selleck](https://github.com/rgrove/selleck), this handles &#x60;&#x60;&#x60;&#x27;s in fields
 that are not parsed by the **Markdown** parser.</td>
 	</tr>
 
 	<tr>
-		<td>Parameters</td>
+		<th>Parameters</th>
 		<td>
-		- html HTML The HTML to parse
+			<ul>
+				<li> 
+				html HTML The HTML to parse
+
+				<!-- level 2 -->
+				<!-- level 2 -->
+
+				</li>
+			</ul>
 		</td>
 	</tr>
 
@@ -212,17 +223,17 @@ that are not parsed by the **Markdown** parser.</td>
 
 <table>
 	<tr>
-		<td></td>
-		<td></description>
+		<th></th>
+		<th>description</th>
 	</tr>
 	<tr>
-		<td>type</td>
+		<th>type</th>
 		<td></td>
 	</tr>
 	
 
   <tr>
-		<td>defined</td>
+		<th>defined</th>
 		<td>`lib/builder.js:323`</td>
 	</tr>
 	
@@ -230,22 +241,19 @@ that are not parsed by the **Markdown** parser.</td>
 
 
 	<tr>
-		<td>description</td>
+		<th>description</th>
 		<td>Mixes the various external data soures together into the local data, augmenting
 it with flags.</td>
 	</tr>
 
 	<tr>
-		<td>Parameters</td>
+		<th>Parameters</th>
 		<td>
+			<ul>
+			</ul>
 		</td>
 	</tr>
 
-	<tr>
-		<td>Return</td>
-		<td>
-		</td>
-	</tr>
 
 </table>
 
@@ -254,17 +262,17 @@ it with flags.</td>
 
 <table>
 	<tr>
-		<td></td>
-		<td></description>
+		<th></th>
+		<th>description</th>
 	</tr>
 	<tr>
-		<td>type</td>
+		<th>type</th>
 		<td></td>
 	</tr>
 	
 
   <tr>
-		<td>defined</td>
+		<th>defined</th>
 		<td>`lib/builder.js:758`</td>
 	</tr>
 	
@@ -272,14 +280,22 @@ it with flags.</td>
 
 
 	<tr>
-		<td>description</td>
+		<th>description</th>
 		<td>Parses &#x60;&lt;pre class=&quot;code prettyprint&quot;&gt;&lt;code&gt;&#x60; tags and adds the __prettyprint__ &#x60;className&#x60; to them</td>
 	</tr>
 
 	<tr>
-		<td>Parameters</td>
+		<th>Parameters</th>
 		<td>
-		- html HTML The HTML to parse
+			<ul>
+				<li> 
+				html HTML The HTML to parse
+
+				<!-- level 2 -->
+				<!-- level 2 -->
+
+				</li>
+			</ul>
 		</td>
 	</tr>
 
@@ -297,17 +313,17 @@ it with flags.</td>
 
 <table>
 	<tr>
-		<td></td>
-		<td></description>
+		<th></th>
+		<th>description</th>
 	</tr>
 	<tr>
-		<td>type</td>
+		<th>type</th>
 		<td></td>
 	</tr>
 	
 
   <tr>
-		<td>defined</td>
+		<th>defined</th>
 		<td>`lib/builder.js:166`</td>
 	</tr>
 	
@@ -315,24 +331,39 @@ it with flags.</td>
 
 
 	<tr>
-		<td>description</td>
+		<th>description</th>
 		<td>Parse the item to be cross linked and return an HREF linked to the item</td>
 	</tr>
 
 	<tr>
-		<td>Parameters</td>
+		<th>Parameters</th>
 		<td>
-		- item <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The item to crossLink
-		- raw <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> Do not wrap it in HTML
-		- content <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> crossLink helper content
+			<ul>
+				<li> 
+				item <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The item to crossLink
+
+				<!-- level 2 -->
+				<!-- level 2 -->
+
+				</li>
+				<li> 
+				raw <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> Do not wrap it in HTML
+
+				<!-- level 2 -->
+				<!-- level 2 -->
+
+				</li>
+				<li> 
+				content <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> crossLink helper content
+
+				<!-- level 2 -->
+				<!-- level 2 -->
+
+				</li>
+			</ul>
 		</td>
 	</tr>
 
-	<tr>
-		<td>Return</td>
-		<td>
-		</td>
-	</tr>
 
 </table>
 
@@ -341,17 +372,17 @@ it with flags.</td>
 
 <table>
 	<tr>
-		<td></td>
-		<td></description>
+		<th></th>
+		<th>description</th>
 	</tr>
 	<tr>
-		<td>type</td>
+		<th>type</th>
 		<td></td>
 	</tr>
 	
 
   <tr>
-		<td>defined</td>
+		<th>defined</th>
 		<td>`lib/builder.js:633`</td>
 	</tr>
 	
@@ -359,14 +390,22 @@ it with flags.</td>
 
 
 	<tr>
-		<td>description</td>
+		<th>description</th>
 		<td>Parses file and line number from an item object and build&#x27;s an HREF</td>
 	</tr>
 
 	<tr>
-		<td>Parameters</td>
+		<th>Parameters</th>
 		<td>
-		- a <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The item to parse
+			<ul>
+				<li> 
+				a <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The item to parse
+
+				<!-- level 2 -->
+				<!-- level 2 -->
+
+				</li>
+			</ul>
 		</td>
 	</tr>
 
@@ -384,17 +423,17 @@ it with flags.</td>
 
 <table>
 	<tr>
-		<td></td>
-		<td></description>
+		<th></th>
+		<th>description</th>
 	</tr>
 	<tr>
-		<td>type</td>
+		<th>type</th>
 		<td></td>
 	</tr>
 	
 
   <tr>
-		<td>defined</td>
+		<th>defined</th>
 		<td>`lib/builder.js:649`</td>
 	</tr>
 	
@@ -402,15 +441,23 @@ it with flags.</td>
 
 
 	<tr>
-		<td>description</td>
+		<th>description</th>
 		<td>Augments the **DocParser** meta data to provide default values for certain keys as well as parses all descriptions
 with the &#x60;Markdown Parser&#x60;</td>
 	</tr>
 
 	<tr>
-		<td>Parameters</td>
+		<th>Parameters</th>
 		<td>
-		- o <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The object to recurse and augment
+			<ul>
+				<li> 
+				o <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The object to recurse and augment
+
+				<!-- level 2 -->
+				<!-- level 2 -->
+
+				</li>
+			</ul>
 		</td>
 	</tr>
 
@@ -428,17 +475,17 @@ with the &#x60;Markdown Parser&#x60;</td>
 
 <table>
 	<tr>
-		<td></td>
-		<td></description>
+		<th></th>
+		<th>description</th>
 	</tr>
 	<tr>
-		<td>type</td>
+		<th>type</th>
 		<td></td>
 	</tr>
 	
 
   <tr>
-		<td>defined</td>
+		<th>defined</th>
 		<td>`lib/builder.js:1734`</td>
 	</tr>
 	
@@ -446,22 +493,25 @@ with the &#x60;Markdown Parser&#x60;</td>
 
 
 	<tr>
-		<td>description</td>
+		<th>description</th>
 		<td>Compiles the templates from the meta-data provided by DocParser</td>
 	</tr>
 
 	<tr>
-		<td>Parameters</td>
+		<th>Parameters</th>
 		<td>
-		- cb Callback The callback to execute after it's completed
+			<ul>
+				<li> 
+				cb Callback The callback to execute after it's completed
+
+				<!-- level 2 -->
+				<!-- level 2 -->
+
+				</li>
+			</ul>
 		</td>
 	</tr>
 
-	<tr>
-		<td>Return</td>
-		<td>
-		</td>
-	</tr>
 
 </table>
 
@@ -470,17 +520,17 @@ with the &#x60;Markdown Parser&#x60;</td>
 
 <table>
 	<tr>
-		<td></td>
-		<td></description>
+		<th></th>
+		<th>description</th>
 	</tr>
 	<tr>
-		<td>type</td>
+		<th>type</th>
 		<td></td>
 	</tr>
 	
 
   <tr>
-		<td>defined</td>
+		<th>defined</th>
 		<td>`lib/builder.js:1721`</td>
 	</tr>
 	
@@ -488,7 +538,7 @@ with the &#x60;Markdown Parser&#x60;</td>
 
 
 	<tr>
-		<td>description</td>
+		<th>description</th>
 		<td>Normalizes a file path to a writable filename:
 
    var path = &#x27;lib/file.js&#x27;;
@@ -496,9 +546,17 @@ with the &#x60;Markdown Parser&#x60;</td>
 	</tr>
 
 	<tr>
-		<td>Parameters</td>
+		<th>Parameters</th>
 		<td>
-		- f <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The filename to normalize
+			<ul>
+				<li> 
+				f <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The filename to normalize
+
+				<!-- level 2 -->
+				<!-- level 2 -->
+
+				</li>
+			</ul>
 		</td>
 	</tr>
 
@@ -516,17 +574,17 @@ with the &#x60;Markdown Parser&#x60;</td>
 
 <table>
 	<tr>
-		<td></td>
-		<td></description>
+		<th></th>
+		<th>description</th>
 	</tr>
 	<tr>
-		<td>type</td>
+		<th>type</th>
 		<td></td>
 	</tr>
 	
 
   <tr>
-		<td>defined</td>
+		<th>defined</th>
 		<td>`lib/builder.js:458`</td>
 	</tr>
 	
@@ -534,13 +592,15 @@ with the &#x60;Markdown Parser&#x60;</td>
 
 
 	<tr>
-		<td>description</td>
+		<th>description</th>
 		<td>Prep the meta data to be fed to Selleck</td>
 	</tr>
 
 	<tr>
-		<td>Parameters</td>
+		<th>Parameters</th>
 		<td>
+			<ul>
+			</ul>
 		</td>
 	</tr>
 
@@ -558,17 +618,17 @@ with the &#x60;Markdown Parser&#x60;</td>
 
 <table>
 	<tr>
-		<td></td>
-		<td></description>
+		<th></th>
+		<th>description</th>
 	</tr>
 	<tr>
-		<td>type</td>
+		<th>type</th>
 		<td></td>
 	</tr>
 	
 
   <tr>
-		<td>defined</td>
+		<th>defined</th>
 		<td>`lib/builder.js:1065`</td>
 	</tr>
 	
@@ -576,15 +636,29 @@ with the &#x60;Markdown Parser&#x60;</td>
 
 
 	<tr>
-		<td>description</td>
+		<th>description</th>
 		<td>Checks an array of items (class items) to see if an item is in that list</td>
 	</tr>
 
 	<tr>
-		<td>Parameters</td>
+		<th>Parameters</th>
 		<td>
-		- a <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> The Array of items to check
-		- b <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The object to find
+			<ul>
+				<li> 
+				a <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> The Array of items to check
+
+				<!-- level 2 -->
+				<!-- level 2 -->
+
+				</li>
+				<li> 
+				b <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The object to find
+
+				<!-- level 2 -->
+				<!-- level 2 -->
+
+				</li>
+			</ul>
 		</td>
 	</tr>
 
@@ -602,17 +676,17 @@ with the &#x60;Markdown Parser&#x60;</td>
 
 <table>
 	<tr>
-		<td></td>
-		<td></description>
+		<th></th>
+		<th>description</th>
 	</tr>
 	<tr>
-		<td>type</td>
+		<th>type</th>
 		<td></td>
 	</tr>
 	
 
   <tr>
-		<td>defined</td>
+		<th>defined</th>
 		<td>`lib/builder.js:708`</td>
 	</tr>
 	
@@ -620,22 +694,25 @@ with the &#x60;Markdown Parser&#x60;</td>
 
 
 	<tr>
-		<td>description</td>
+		<th>description</th>
 		<td>Makes the default directories needed</td>
 	</tr>
 
 	<tr>
-		<td>Parameters</td>
+		<th>Parameters</th>
 		<td>
-		- cb Callback The callback to execute after it's completed
+			<ul>
+				<li> 
+				cb Callback The callback to execute after it's completed
+
+				<!-- level 2 -->
+				<!-- level 2 -->
+
+				</li>
+			</ul>
 		</td>
 	</tr>
 
-	<tr>
-		<td>Return</td>
-		<td>
-		</td>
-	</tr>
 
 </table>
 
@@ -644,17 +721,17 @@ with the &#x60;Markdown Parser&#x60;</td>
 
 <table>
 	<tr>
-		<td></td>
-		<td></description>
+		<th></th>
+		<th>description</th>
 	</tr>
 	<tr>
-		<td>type</td>
+		<th>type</th>
 		<td></td>
 	</tr>
 	
 
   <tr>
-		<td>defined</td>
+		<th>defined</th>
 		<td>`lib/builder.js:138`</td>
 	</tr>
 	
@@ -662,14 +739,22 @@ with the &#x60;Markdown Parser&#x60;</td>
 
 
 	<tr>
-		<td>description</td>
+		<th>description</th>
 		<td>Wrapper around the Markdown parser so it can be normalized or even side stepped</td>
 	</tr>
 
 	<tr>
-		<td>Parameters</td>
+		<th>Parameters</th>
 		<td>
-		- data <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The Markdown string to parse
+			<ul>
+				<li> 
+				data <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The Markdown string to parse
+
+				<!-- level 2 -->
+				<!-- level 2 -->
+
+				</li>
+			</ul>
 		</td>
 	</tr>
 
@@ -687,17 +772,17 @@ with the &#x60;Markdown Parser&#x60;</td>
 
 <table>
 	<tr>
-		<td></td>
-		<td></description>
+		<th></th>
+		<th>description</th>
 	</tr>
 	<tr>
-		<td>type</td>
+		<th>type</th>
 		<td></td>
 	</tr>
 	
 
   <tr>
-		<td>defined</td>
+		<th>defined</th>
 		<td>`lib/builder.js:1089`</td>
 	</tr>
 	
@@ -705,24 +790,39 @@ with the &#x60;Markdown Parser&#x60;</td>
 
 
 	<tr>
-		<td>description</td>
+		<th>description</th>
 		<td>Merge superclass data into a child class</td>
 	</tr>
 
 	<tr>
-		<td>Parameters</td>
+		<th>Parameters</th>
 		<td>
-		- info <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The item to extend
-		- classItems <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> The list of items to merge in
-		- first <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> Set for the first call
+			<ul>
+				<li> 
+				info <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The item to extend
+
+				<!-- level 2 -->
+				<!-- level 2 -->
+
+				</li>
+				<li> 
+				classItems <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> The list of items to merge in
+
+				<!-- level 2 -->
+				<!-- level 2 -->
+
+				</li>
+				<li> 
+				first <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> Set for the first call
+
+				<!-- level 2 -->
+				<!-- level 2 -->
+
+				</li>
+			</ul>
 		</td>
 	</tr>
 
-	<tr>
-		<td>Return</td>
-		<td>
-		</td>
-	</tr>
 
 </table>
 
@@ -731,17 +831,17 @@ with the &#x60;Markdown Parser&#x60;</td>
 
 <table>
 	<tr>
-		<td></td>
-		<td></description>
+		<th></th>
+		<th>description</th>
 	</tr>
 	<tr>
-		<td>type</td>
+		<th>type</th>
 		<td></td>
 	</tr>
 	
 
   <tr>
-		<td>defined</td>
+		<th>defined</th>
 		<td>`lib/builder.js:370`</td>
 	</tr>
 	
@@ -749,22 +849,25 @@ with the &#x60;Markdown Parser&#x60;</td>
 
 
 	<tr>
-		<td>description</td>
+		<th>description</th>
 		<td>Fetches the remote data and fires the callback when it&#x27;s all complete</td>
 	</tr>
 
 	<tr>
-		<td>Parameters</td>
+		<th>Parameters</th>
 		<td>
-		- cb Callback The callback to execute when complete
+			<ul>
+				<li> 
+				cb Callback The callback to execute when complete
+
+				<!-- level 2 -->
+				<!-- level 2 -->
+
+				</li>
+			</ul>
 		</td>
 	</tr>
 
-	<tr>
-		<td>Return</td>
-		<td>
-		</td>
-	</tr>
 
 </table>
 
@@ -773,17 +876,17 @@ with the &#x60;Markdown Parser&#x60;</td>
 
 <table>
 	<tr>
-		<td></td>
-		<td></description>
+		<th></th>
+		<th>description</th>
 	</tr>
 	<tr>
-		<td>type</td>
+		<th>type</th>
 		<td></td>
 	</tr>
 	
 
   <tr>
-		<td>defined</td>
+		<th>defined</th>
 		<td>`lib/builder.js:1542`</td>
 	</tr>
 	
@@ -791,15 +894,29 @@ with the &#x60;Markdown Parser&#x60;</td>
 
 
 	<tr>
-		<td>description</td>
+		<th>description</th>
 		<td>Sort method of array of objects with a property called __name__</td>
 	</tr>
 
 	<tr>
-		<td>Parameters</td>
+		<th>Parameters</th>
 		<td>
-		- a <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> First object to compare
-		- b <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> Second object to compare
+			<ul>
+				<li> 
+				a <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> First object to compare
+
+				<!-- level 2 -->
+				<!-- level 2 -->
+
+				</li>
+				<li> 
+				b <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> Second object to compare
+
+				<!-- level 2 -->
+				<!-- level 2 -->
+
+				</li>
+			</ul>
 		</td>
 	</tr>
 
@@ -817,17 +934,17 @@ with the &#x60;Markdown Parser&#x60;</td>
 
 <table>
 	<tr>
-		<td></td>
-		<td></description>
+		<th></th>
+		<th>description</th>
 	</tr>
 	<tr>
-		<td>type</td>
+		<th>type</th>
 		<td></td>
 	</tr>
 	
 
   <tr>
-		<td>defined</td>
+		<th>defined</th>
 		<td>`lib/builder.js:309`</td>
 	</tr>
 	
@@ -835,14 +952,22 @@ with the &#x60;Markdown Parser&#x60;</td>
 
 
 	<tr>
-		<td>description</td>
+		<th>description</th>
 		<td>Function to link an external type uses &#x60;NATIVES&#x60; object</td>
 	</tr>
 
 	<tr>
-		<td>Parameters</td>
+		<th>Parameters</th>
 		<td>
-		- name <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The name of the type to link
+			<ul>
+				<li> 
+				name <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The name of the type to link
+
+				<!-- level 2 -->
+				<!-- level 2 -->
+
+				</li>
+			</ul>
 		</td>
 	</tr>
 
@@ -860,17 +985,17 @@ with the &#x60;Markdown Parser&#x60;</td>
 
 <table>
 	<tr>
-		<td></td>
-		<td></description>
+		<th></th>
+		<th>description</th>
 	</tr>
 	<tr>
-		<td>type</td>
+		<th>type</th>
 		<td></td>
 	</tr>
 	
 
   <tr>
-		<td>defined</td>
+		<th>defined</th>
 		<td>`lib/builder.js:499`</td>
 	</tr>
 	
@@ -878,14 +1003,22 @@ with the &#x60;Markdown Parser&#x60;</td>
 
 
 	<tr>
-		<td>description</td>
+		<th>description</th>
 		<td>Populate the meta data for classes</td>
 	</tr>
 
 	<tr>
-		<td>Parameters</td>
+		<th>Parameters</th>
 		<td>
-		- opts <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The original options
+			<ul>
+				<li> 
+				opts <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The original options
+
+				<!-- level 2 -->
+				<!-- level 2 -->
+
+				</li>
+			</ul>
 		</td>
 	</tr>
 
@@ -903,17 +1036,17 @@ with the &#x60;Markdown Parser&#x60;</td>
 
 <table>
 	<tr>
-		<td></td>
-		<td></description>
+		<th></th>
+		<th>description</th>
 	</tr>
 	<tr>
-		<td>type</td>
+		<th>type</th>
 		<td></td>
 	</tr>
 	
 
   <tr>
-		<td>defined</td>
+		<th>defined</th>
 		<td>`lib/builder.js:578`</td>
 	</tr>
 	
@@ -921,14 +1054,22 @@ with the &#x60;Markdown Parser&#x60;</td>
 
 
 	<tr>
-		<td>description</td>
+		<th>description</th>
 		<td>Populate the meta data for files</td>
 	</tr>
 
 	<tr>
-		<td>Parameters</td>
+		<th>Parameters</th>
 		<td>
-		- opts <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The original options
+			<ul>
+				<li> 
+				opts <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The original options
+
+				<!-- level 2 -->
+				<!-- level 2 -->
+
+				</li>
+			</ul>
 		</td>
 	</tr>
 
@@ -946,17 +1087,17 @@ with the &#x60;Markdown Parser&#x60;</td>
 
 <table>
 	<tr>
-		<td></td>
-		<td></description>
+		<th></th>
+		<th>description</th>
 	</tr>
 	<tr>
-		<td>type</td>
+		<th>type</th>
 		<td></td>
 	</tr>
 	
 
   <tr>
-		<td>defined</td>
+		<th>defined</th>
 		<td>`lib/builder.js:532`</td>
 	</tr>
 	
@@ -964,14 +1105,22 @@ with the &#x60;Markdown Parser&#x60;</td>
 
 
 	<tr>
-		<td>description</td>
+		<th>description</th>
 		<td>Populate the meta data for modules</td>
 	</tr>
 
 	<tr>
-		<td>Parameters</td>
+		<th>Parameters</th>
 		<td>
-		- opts <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The original options
+			<ul>
+				<li> 
+				opts <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The original options
+
+				<!-- level 2 -->
+				<!-- level 2 -->
+
+				</li>
+			</ul>
 		</td>
 	</tr>
 
@@ -989,17 +1138,17 @@ with the &#x60;Markdown Parser&#x60;</td>
 
 <table>
 	<tr>
-		<td></td>
-		<td></description>
+		<th></th>
+		<th>description</th>
 	</tr>
 	<tr>
-		<td>type</td>
+		<th>type</th>
 		<td></td>
 	</tr>
 	
 
   <tr>
-		<td>defined</td>
+		<th>defined</th>
 		<td>`lib/builder.js:790`</td>
 	</tr>
 	
@@ -1007,29 +1156,68 @@ with the &#x60;Markdown Parser&#x60;</td>
 
 
 	<tr>
-		<td>description</td>
+		<th>description</th>
 		<td>Ported from [Selleck](https://github.com/rgrove/selleck)
 Renders the handlebars templates with the default View class.</td>
 	</tr>
 
 	<tr>
-		<td>Parameters</td>
+		<th>Parameters</th>
 		<td>
-		- source HTML The default template to parse
-		- view Class The default view handler
-		- layout HTML The HTML from the layout to use.
-		- partials <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> List of partials to include in this template
-		- callback Callback  
-			- err <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Error" class="crosslink external" target="_blank">Error</a> 
-			- html HTML The assembled template markup
+			<ul>
+				<li> 
+				source HTML The default template to parse
+
+				<!-- level 2 -->
+				<!-- level 2 -->
+
+				</li>
+				<li> 
+				view Class The default view handler
+
+				<!-- level 2 -->
+				<!-- level 2 -->
+
+				</li>
+				<li> 
+				layout HTML The HTML from the layout to use.
+
+				<!-- level 2 -->
+				<!-- level 2 -->
+
+				</li>
+				<li> 
+				partials <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> List of partials to include in this template
+
+				<!-- level 2 -->
+				<!-- level 2 -->
+
+				</li>
+				<li> 
+				callback Callback  
+
+				<!-- level 2 -->
+						<li>
+						err <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Error" class="crosslink external" target="_blank">Error</a> 
+
+						<!-- level 3 -->
+						<!-- level 3 -->
+
+						</li>
+						<li>
+						html HTML The assembled template markup
+
+						<!-- level 3 -->
+						<!-- level 3 -->
+
+						</li>
+				<!-- level 2 -->
+
+				</li>
+			</ul>
 		</td>
 	</tr>
 
-	<tr>
-		<td>Return</td>
-		<td>
-		</td>
-	</tr>
 
 </table>
 
@@ -1038,17 +1226,17 @@ Renders the handlebars templates with the default View class.</td>
 
 <table>
 	<tr>
-		<td></td>
-		<td></description>
+		<th></th>
+		<th>description</th>
 	</tr>
 	<tr>
-		<td>type</td>
+		<th>type</th>
 		<td></td>
 	</tr>
 	
 
   <tr>
-		<td>defined</td>
+		<th>defined</th>
 		<td>`lib/builder.js:1688`</td>
 	</tr>
 	
@@ -1056,23 +1244,32 @@ Renders the handlebars templates with the default View class.</td>
 
 
 	<tr>
-		<td>description</td>
+		<th>description</th>
 		<td>Render the API meta and return the JavaScript</td>
 	</tr>
 
 	<tr>
-		<td>Parameters</td>
+		<th>Parameters</th>
 		<td>
-		- cb Callback The callback
-			- apijs <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The JavaScript code to write API meta data
+			<ul>
+				<li> 
+				cb Callback The callback
+
+				<!-- level 2 -->
+						<li>
+						apijs <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The JavaScript code to write API meta data
+
+						<!-- level 3 -->
+						<!-- level 3 -->
+
+						</li>
+				<!-- level 2 -->
+
+				</li>
+			</ul>
 		</td>
 	</tr>
 
-	<tr>
-		<td>Return</td>
-		<td>
-		</td>
-	</tr>
 
 </table>
 
@@ -1081,17 +1278,17 @@ Renders the handlebars templates with the default View class.</td>
 
 <table>
 	<tr>
-		<td></td>
-		<td></description>
+		<th></th>
+		<th>description</th>
 	</tr>
 	<tr>
-		<td>type</td>
+		<th>type</th>
 		<td></td>
 	</tr>
 	
 
   <tr>
-		<td>defined</td>
+		<th>defined</th>
 		<td>`lib/builder.js:1140`</td>
 	</tr>
 	
@@ -1099,24 +1296,39 @@ Renders the handlebars templates with the default View class.</td>
 
 
 	<tr>
-		<td>description</td>
+		<th>description</th>
 		<td>Render the class file</td>
 	</tr>
 
 	<tr>
-		<td>Parameters</td>
+		<th>Parameters</th>
 		<td>
-		- cb <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> The callback fired when complete
-			- html <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The HTML to render this view
-			- view <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The View Data
+			<ul>
+				<li> 
+				cb <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> The callback fired when complete
+
+				<!-- level 2 -->
+						<li>
+						html <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The HTML to render this view
+
+						<!-- level 3 -->
+						<!-- level 3 -->
+
+						</li>
+						<li>
+						view <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The View Data
+
+						<!-- level 3 -->
+						<!-- level 3 -->
+
+						</li>
+				<!-- level 2 -->
+
+				</li>
+			</ul>
 		</td>
 	</tr>
 
-	<tr>
-		<td>Return</td>
-		<td>
-		</td>
-	</tr>
 
 </table>
 
@@ -1125,17 +1337,17 @@ Renders the handlebars templates with the default View class.</td>
 
 <table>
 	<tr>
-		<td></td>
-		<td></description>
+		<th></th>
+		<th>description</th>
 	</tr>
 	<tr>
-		<td>type</td>
+		<th>type</th>
 		<td></td>
 	</tr>
 	
 
   <tr>
-		<td>defined</td>
+		<th>defined</th>
 		<td>`lib/builder.js:1623`</td>
 	</tr>
 	
@@ -1143,24 +1355,39 @@ Renders the handlebars templates with the default View class.</td>
 
 
 	<tr>
-		<td>description</td>
+		<th>description</th>
 		<td>Render the source file</td>
 	</tr>
 
 	<tr>
-		<td>Parameters</td>
+		<th>Parameters</th>
 		<td>
-		- cb <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> The callback fired when complete
-			- html <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The HTML to render this view
-			- view <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The View Data
+			<ul>
+				<li> 
+				cb <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> The callback fired when complete
+
+				<!-- level 2 -->
+						<li>
+						html <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The HTML to render this view
+
+						<!-- level 3 -->
+						<!-- level 3 -->
+
+						</li>
+						<li>
+						view <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The View Data
+
+						<!-- level 3 -->
+						<!-- level 3 -->
+
+						</li>
+				<!-- level 2 -->
+
+				</li>
+			</ul>
 		</td>
 	</tr>
 
-	<tr>
-		<td>Return</td>
-		<td>
-		</td>
-	</tr>
 
 </table>
 
@@ -1169,17 +1396,17 @@ Renders the handlebars templates with the default View class.</td>
 
 <table>
 	<tr>
-		<td></td>
-		<td></description>
+		<th></th>
+		<th>description</th>
 	</tr>
 	<tr>
-		<td>type</td>
+		<th>type</th>
 		<td></td>
 	</tr>
 	
 
   <tr>
-		<td>defined</td>
+		<th>defined</th>
 		<td>`lib/builder.js:843`</td>
 	</tr>
 	
@@ -1187,24 +1414,39 @@ Renders the handlebars templates with the default View class.</td>
 
 
 	<tr>
-		<td>description</td>
+		<th>description</th>
 		<td>Render the index file</td>
 	</tr>
 
 	<tr>
-		<td>Parameters</td>
+		<th>Parameters</th>
 		<td>
-		- cb <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> The callback fired when complete
-			- html <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The HTML to render this view
-			- view <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The View Data
+			<ul>
+				<li> 
+				cb <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> The callback fired when complete
+
+				<!-- level 2 -->
+						<li>
+						html <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The HTML to render this view
+
+						<!-- level 3 -->
+						<!-- level 3 -->
+
+						</li>
+						<li>
+						view <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The View Data
+
+						<!-- level 3 -->
+						<!-- level 3 -->
+
+						</li>
+				<!-- level 2 -->
+
+				</li>
+			</ul>
 		</td>
 	</tr>
 
-	<tr>
-		<td>Return</td>
-		<td>
-		</td>
-	</tr>
 
 </table>
 
@@ -1213,17 +1455,17 @@ Renders the handlebars templates with the default View class.</td>
 
 <table>
 	<tr>
-		<td></td>
-		<td></description>
+		<th></th>
+		<th>description</th>
 	</tr>
 	<tr>
-		<td>type</td>
+		<th>type</th>
 		<td></td>
 	</tr>
 	
 
   <tr>
-		<td>defined</td>
+		<th>defined</th>
 		<td>`lib/builder.js:901`</td>
 	</tr>
 	
@@ -1231,24 +1473,39 @@ Renders the handlebars templates with the default View class.</td>
 
 
 	<tr>
-		<td>description</td>
+		<th>description</th>
 		<td>Render a module</td>
 	</tr>
 
 	<tr>
-		<td>Parameters</td>
+		<th>Parameters</th>
 		<td>
-		- cb <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> The callback fired when complete
-			- html <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The HTML to render this view
-			- view <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The View Data
+			<ul>
+				<li> 
+				cb <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> The callback fired when complete
+
+				<!-- level 2 -->
+						<li>
+						html <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The HTML to render this view
+
+						<!-- level 3 -->
+						<!-- level 3 -->
+
+						</li>
+						<li>
+						view <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The View Data
+
+						<!-- level 3 -->
+						<!-- level 3 -->
+
+						</li>
+				<!-- level 2 -->
+
+				</li>
+			</ul>
 		</td>
 	</tr>
 
-	<tr>
-		<td>Return</td>
-		<td>
-		</td>
-	</tr>
 
 </table>
 
@@ -1257,17 +1514,17 @@ Renders the handlebars templates with the default View class.</td>
 
 <table>
 	<tr>
-		<td></td>
-		<td></description>
+		<th></th>
+		<th>description</th>
 	</tr>
 	<tr>
-		<td>type</td>
+		<th>type</th>
 		<td></td>
 	</tr>
 	
 
   <tr>
-		<td>defined</td>
+		<th>defined</th>
 		<td>`lib/builder.js:1675`</td>
 	</tr>
 	
@@ -1275,22 +1532,25 @@ Renders the handlebars templates with the default View class.</td>
 
 
 	<tr>
-		<td>description</td>
+		<th>description</th>
 		<td>Write the API meta data used for the AutoComplete widget</td>
 	</tr>
 
 	<tr>
-		<td>Parameters</td>
+		<th>Parameters</th>
 		<td>
-		- cb Callback The callback to execute when complete
+			<ul>
+				<li> 
+				cb Callback The callback to execute when complete
+
+				<!-- level 2 -->
+				<!-- level 2 -->
+
+				</li>
+			</ul>
 		</td>
 	</tr>
 
-	<tr>
-		<td>Return</td>
-		<td>
-		</td>
-	</tr>
 
 </table>
 
@@ -1299,17 +1559,17 @@ Renders the handlebars templates with the default View class.</td>
 
 <table>
 	<tr>
-		<td></td>
-		<td></description>
+		<th></th>
+		<th>description</th>
 	</tr>
 	<tr>
-		<td>type</td>
+		<th>type</th>
 		<td></td>
 	</tr>
 	
 
   <tr>
-		<td>defined</td>
+		<th>defined</th>
 		<td>`lib/builder.js:1493`</td>
 	</tr>
 	
@@ -1317,24 +1577,39 @@ Renders the handlebars templates with the default View class.</td>
 
 
 	<tr>
-		<td>description</td>
+		<th>description</th>
 		<td>Generates the class files under &quot;out&quot;/classes/</td>
 	</tr>
 
 	<tr>
-		<td>Parameters</td>
+		<th>Parameters</th>
 		<td>
-		- cb Callback The callback to execute after it's completed
-			- html <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The HTML to write class view
-			- view <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The View Data
+			<ul>
+				<li> 
+				cb Callback The callback to execute after it's completed
+
+				<!-- level 2 -->
+						<li>
+						html <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The HTML to write class view
+
+						<!-- level 3 -->
+						<!-- level 3 -->
+
+						</li>
+						<li>
+						view <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The View Data
+
+						<!-- level 3 -->
+						<!-- level 3 -->
+
+						</li>
+				<!-- level 2 -->
+
+				</li>
+			</ul>
 		</td>
 	</tr>
 
-	<tr>
-		<td>Return</td>
-		<td>
-		</td>
-	</tr>
 
 </table>
 
@@ -1343,17 +1618,17 @@ Renders the handlebars templates with the default View class.</td>
 
 <table>
 	<tr>
-		<td></td>
-		<td></description>
+		<th></th>
+		<th>description</th>
 	</tr>
 	<tr>
-		<td>type</td>
+		<th>type</th>
 		<td></td>
 	</tr>
 	
 
   <tr>
-		<td>defined</td>
+		<th>defined</th>
 		<td>`lib/builder.js:1565`</td>
 	</tr>
 	
@@ -1361,24 +1636,39 @@ Renders the handlebars templates with the default View class.</td>
 
 
 	<tr>
-		<td>description</td>
+		<th>description</th>
 		<td>Generates the syntax files under &#x60;&quot;out&quot;/files/&#x60;</td>
 	</tr>
 
 	<tr>
-		<td>Parameters</td>
+		<th>Parameters</th>
 		<td>
-		- cb Callback The callback to execute after it's completed
-			- html <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The HTML to write file view
-			- view <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The View Data
+			<ul>
+				<li> 
+				cb Callback The callback to execute after it's completed
+
+				<!-- level 2 -->
+						<li>
+						html <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The HTML to write file view
+
+						<!-- level 3 -->
+						<!-- level 3 -->
+
+						</li>
+						<li>
+						view <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The View Data
+
+						<!-- level 3 -->
+						<!-- level 3 -->
+
+						</li>
+				<!-- level 2 -->
+
+				</li>
+			</ul>
 		</td>
 	</tr>
 
-	<tr>
-		<td>Return</td>
-		<td>
-		</td>
-	</tr>
 
 </table>
 
@@ -1387,17 +1677,17 @@ Renders the handlebars templates with the default View class.</td>
 
 <table>
 	<tr>
-		<td></td>
-		<td></description>
+		<th></th>
+		<th>description</th>
 	</tr>
 	<tr>
-		<td>type</td>
+		<th>type</th>
 		<td></td>
 	</tr>
 	
 
   <tr>
-		<td>defined</td>
+		<th>defined</th>
 		<td>`lib/builder.js:869`</td>
 	</tr>
 	
@@ -1405,24 +1695,39 @@ Renders the handlebars templates with the default View class.</td>
 
 
 	<tr>
-		<td>description</td>
+		<th>description</th>
 		<td>Generates the index.html file</td>
 	</tr>
 
 	<tr>
-		<td>Parameters</td>
+		<th>Parameters</th>
 		<td>
-		- cb Callback The callback to execute after it's completed
-			- html <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The HTML to write index view
-			- view <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The View Data
+			<ul>
+				<li> 
+				cb Callback The callback to execute after it's completed
+
+				<!-- level 2 -->
+						<li>
+						html <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The HTML to write index view
+
+						<!-- level 3 -->
+						<!-- level 3 -->
+
+						</li>
+						<li>
+						view <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The View Data
+
+						<!-- level 3 -->
+						<!-- level 3 -->
+
+						</li>
+				<!-- level 2 -->
+
+				</li>
+			</ul>
 		</td>
 	</tr>
 
-	<tr>
-		<td>Return</td>
-		<td>
-		</td>
-	</tr>
 
 </table>
 
@@ -1431,17 +1736,17 @@ Renders the handlebars templates with the default View class.</td>
 
 <table>
 	<tr>
-		<td></td>
-		<td></description>
+		<th></th>
+		<th>description</th>
 	</tr>
 	<tr>
-		<td>type</td>
+		<th>type</th>
 		<td></td>
 	</tr>
 	
 
   <tr>
-		<td>defined</td>
+		<th>defined</th>
 		<td>`lib/builder.js:1017`</td>
 	</tr>
 	
@@ -1449,24 +1754,39 @@ Renders the handlebars templates with the default View class.</td>
 
 
 	<tr>
-		<td>description</td>
+		<th>description</th>
 		<td>Generates the module files under &quot;out&quot;/modules/</td>
 	</tr>
 
 	<tr>
-		<td>Parameters</td>
+		<th>Parameters</th>
 		<td>
-		- cb Callback The callback to execute after it's completed
-			- html <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The HTML to write module view
-			- view <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The View Data
+			<ul>
+				<li> 
+				cb Callback The callback to execute after it's completed
+
+				<!-- level 2 -->
+						<li>
+						html <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The HTML to write module view
+
+						<!-- level 3 -->
+						<!-- level 3 -->
+
+						</li>
+						<li>
+						view <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The View Data
+
+						<!-- level 3 -->
+						<!-- level 3 -->
+
+						</li>
+				<!-- level 2 -->
+
+				</li>
+			</ul>
 		</td>
 	</tr>
 
-	<tr>
-		<td>Return</td>
-		<td>
-		</td>
-	</tr>
 
 </table>
 
