@@ -51,8 +51,8 @@ Cache for external mixed in data.
 
 | meta | description |
 |------|-------------|
-| type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
-| defined | `lib/server.js:15` |
+| Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
+| Defined | `lib/server.js:15` |
 
 
 

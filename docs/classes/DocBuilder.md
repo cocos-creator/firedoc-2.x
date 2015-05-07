@@ -78,8 +78,8 @@ Counter for stepping into merges
 
 | meta | description |
 |------|-------------|
-| type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a> |
-| defined | `lib/builder.js:1082` |
+| Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a> |
+| Defined | `lib/builder.js:1082` |
 
 
 
@@ -90,8 +90,8 @@ Holder for project meta data
 
 | meta | description |
 |------|-------------|
-| type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
-| defined | `lib/builder.js:451` |
+| Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
+| Defined | `lib/builder.js:451` |
 
 
 
@@ -102,8 +102,8 @@ File counter
 
 | meta | description |
 |------|-------------|
-| type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a> |
-| defined | `lib/builder.js:445` |
+| Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a> |
+| Defined | `lib/builder.js:445` |
 
 
 
@@ -114,8 +114,8 @@ List of native types to cross link to MDN
 
 | meta | description |
 |------|-------------|
-| type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
-| defined | `lib/builder.js:270` |
+| Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
+| Defined | `lib/builder.js:270` |
 
 
 

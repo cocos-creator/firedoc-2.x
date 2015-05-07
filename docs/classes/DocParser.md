@@ -88,8 +88,8 @@ Common errors will get scrubbed instead of being ignored.
 
 | meta | description |
 |------|-------------|
-| type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
-| defined | `lib/docparser.js:187` |
+| Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
+| Defined | `lib/docparser.js:187` |
 
 
 
@@ -103,8 +103,8 @@ implementation rather than a function.
 
 | meta | description |
 |------|-------------|
-| type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
-| defined | `lib/docparser.js:210` |
+| Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
+| Defined | `lib/docparser.js:210` |
 
 
 
@@ -116,8 +116,8 @@ likely to be used for purposes other than JSDoc tags in JavaScript comments.
 
 | meta | description |
 |------|-------------|
-| type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> |
-| defined | `lib/docparser.js:175` |
+| Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> |
+| Defined | `lib/docparser.js:175` |
 
 
 
@@ -130,8 +130,8 @@ digesters are added.
 
 | meta | description |
 |------|-------------|
-| type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> |
-| defined | `lib/docparser.js:93` |
+| Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> |
+| Defined | `lib/docparser.js:93` |
 
 
 
@@ -140,7 +140,7 @@ digesters are added.
 #### Attributes
 
 
-`currentclass`: `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a>`
+`currentclass`: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a>
 
 Defined in `lib/docparser.js:1067`
 
@@ -161,7 +161,7 @@ attribute's value has changed.
 
 
 
-`currentfile`: `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a>`
+`currentfile`: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a>
 
 Defined in `lib/docparser.js:915`
 
@@ -182,7 +182,7 @@ attribute's value has changed.
 
 
 
-`currentmodule`: `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a>`
+`currentmodule`: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a>
 
 Defined in `lib/docparser.js:972`
 
@@ -203,7 +203,7 @@ attribute's value has changed.
 
 
 
-`currentsubmodule`: `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a>`
+`currentsubmodule`: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a>
 
 Defined in `lib/docparser.js:1031`
 
@@ -224,7 +224,7 @@ attribute's value has changed.
 
 
 
-`digesters`: ``
+`digesters`: 
 
 Defined in `lib/docparser.js:855`
 
@@ -245,7 +245,7 @@ attribute's value has changed.
 
 
 
-`dirmap`: ``
+`dirmap`: 
 
 Defined in `lib/docparser.js:905`
 
@@ -266,7 +266,7 @@ attribute's value has changed.
 
 
 
-`emitters`: ``
+`emitters`: 
 
 Defined in `lib/docparser.js:877`
 
@@ -287,7 +287,7 @@ attribute's value has changed.
 
 
 
-`filemap`: ``
+`filemap`: 
 
 Defined in `lib/docparser.js:897`
 
@@ -308,7 +308,7 @@ attribute's value has changed.
 
 
 
-`mainmodule`: `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a>`
+`mainmodule`: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a>
 
 Defined in `lib/docparser.js:936`
 
@@ -329,7 +329,7 @@ attribute's value has changed.
 
 
 
-`syntaxtype`: `<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a>`
+`syntaxtype`: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a>
 
 Defined in `lib/docparser.js:888`
 

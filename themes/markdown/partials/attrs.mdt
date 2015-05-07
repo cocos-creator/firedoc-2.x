@@ -1,5 +1,5 @@
 
-`{{name}}`: `{{#crossLink type}}{{/crossLink}}`
+`{{name}}`: {{#crossLink type}}{{/crossLink}}
 
 {{#if overwritten_from}}
 > Inherited from {{overwritten_from/class}} {{#if foundAt}}but overwritten in{{/if}} `{{{file}}}:{{{line}}}`

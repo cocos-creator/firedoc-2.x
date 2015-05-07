@@ -67,8 +67,8 @@ Holder for the list of directories we are processing.
 
 | meta | description |
 |------|-------------|
-| type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
-| defined | `lib/yuidoc.js:87` |
+| Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
+| Defined | `lib/yuidoc.js:87` |
 
 
 
@@ -79,8 +79,8 @@ Timestamp holder so we know when YUIDoc has finished the parse process.
 
 | meta | description |
 |------|-------------|
-| type | Timestamp |
-| defined | `lib/yuidoc.js:387` |
+| Type | Timestamp |
+| Defined | `lib/yuidoc.js:387` |
 
 
 
@@ -91,8 +91,8 @@ Holds the number of files that we are processing.
 
 | meta | description |
 |------|-------------|
-| type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> |
-| defined | `lib/yuidoc.js:66` |
+| Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> |
+| Defined | `lib/yuidoc.js:66` |
 
 
 
@@ -103,8 +103,8 @@ Holder for the list of files we are processing.
 
 | meta | description |
 |------|-------------|
-| type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
-| defined | `lib/yuidoc.js:80` |
+| Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
+| Defined | `lib/yuidoc.js:80` |
 
 
 
@@ -115,8 +115,8 @@ The default list of configuration options
 
 | meta | description |
 |------|-------------|
-| type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
-| defined | `lib/yuidoc.js:29` |
+| Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
+| Defined | `lib/yuidoc.js:29` |
 
 
 
@@ -127,8 +127,8 @@ Internal holder for configuration options.
 
 | meta | description |
 |------|-------------|
-| type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
-| defined | `lib/yuidoc.js:95` |
+| Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
+| Defined | `lib/yuidoc.js:95` |
 
 
 
@@ -139,8 +139,8 @@ Hash map of dirnames to selleck config options.
 
 | meta | description |
 |------|-------------|
-| type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
-| defined | `lib/yuidoc.js:73` |
+| Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
+| Defined | `lib/yuidoc.js:73` |
 
 
 
@@ -151,8 +151,8 @@ Timestamp holder so we know when YUIDoc started the parse process.
 
 | meta | description |
 |------|-------------|
-| type | Timestamp |
-| defined | `lib/yuidoc.js:366` |
+| Type | Timestamp |
+| Defined | `lib/yuidoc.js:366` |
 
 
 
