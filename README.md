@@ -1,7 +1,7 @@
 FireDoc
 ======
 
-API Doc generator based on YUIDoc.
+API Doc generator based on [YUIDoc](https://github.com/yui/yuidoc).
 
 [![NPM](https://nodei.co/npm/firedoc.png?stars&downloads)](https://nodei.co/npm/firedoc/)
 [![NPM](https://nodei.co/npm-dl/firedoc.png)](https://nodei.co/npm/firedoc/)
