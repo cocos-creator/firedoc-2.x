@@ -1,5 +1,5 @@
 
-# firedoc 0.8.22
+# firedoc 0.8.25
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -46,7 +46,7 @@ The help text to display
 | meta | description |
 |------|-------------|
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> |
-| Defined | [lib/help.js:14](../files/lib_help.js.html#l14) |
+| Defined | [lib/help.js:14](../files/lib_help.js.md#l14) |
 
 
 
@@ -63,7 +63,7 @@ Render the help message as a string
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/help.js:62](../files/lib_help.js.html#l62) |
+| Defined | [lib/help.js:62](../files/lib_help.js.md#l62) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 
@@ -74,7 +74,7 @@ Display the help message, write it to the screen and exit
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/help.js:72](../files/lib_help.js.html#l72) |
+| Defined | [lib/help.js:72](../files/lib_help.js.md#l72) |
 
 
 

@@ -1,5 +1,5 @@
 
-# firedoc 0.8.22
+# firedoc 0.8.25
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -647,8 +647,9 @@ YUI.add('doc-builder', function (Y) {
      */
     addFoundAt: function (a) {
       var self = this;
+      var ext = Y.options.useMarkdown ? '.md' : '.html';
       if (a.file && a.line && !self.options.nocode) {
-        a.foundAt = '../files/' + self.filterFileName(a.file) + '.html#l' + a.line;
+        a.foundAt = '../files/' + self.filterFileName(a.file) + ext + '#l' + a.line;
         if (a.path) {
           a.foundAt = a.path + '#l' + a.line;
         }

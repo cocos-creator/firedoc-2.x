@@ -1,5 +1,5 @@
 
-# firedoc 0.8.22
+# firedoc 0.8.25
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -55,7 +55,7 @@ Escapes HTML characters in _html_.
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/utils.js:31](../files/lib_utils.js.html#l31) |
+| Defined | [lib/utils.js:31](../files/lib_utils.js.md#l31) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 ###### Parameters
@@ -68,7 +68,7 @@ Takes a type string and converts it to a "First letter upper cased" type. e.g. `
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/utils.js:452](../files/lib_utils.js.html#l452) |
+| Defined | [lib/utils.js:452](../files/lib_utils.js.md#l452) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 ###### Parameters
@@ -81,7 +81,7 @@ Walks the tree from this dir and returns all the subdirs
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/utils.js:338](../files/lib_utils.js.html#l338) |
+| Defined | [lib/utils.js:338](../files/lib_utils.js.md#l338) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> 
 
 ###### Parameters
@@ -95,7 +95,7 @@ of the specified _dir_.
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/utils.js:63](../files/lib_utils.js.html#l63) |
+| Defined | [lib/utils.js:63](../files/lib_utils.js.md#l63) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 ###### Parameters
@@ -108,7 +108,7 @@ Loads and returns the content of the specified page file.
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/utils.js:76](../files/lib_utils.js.html#l76) |
+| Defined | [lib/utils.js:76](../files/lib_utils.js.md#l76) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> | Null 
 
 ###### Parameters
@@ -123,7 +123,7 @@ preceding the `.handlebars` extension) to page content.
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/utils.js:91](../files/lib_utils.js.html#l91) |
+| Defined | [lib/utils.js:91](../files/lib_utils.js.md#l91) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 ###### Parameters
@@ -137,7 +137,7 @@ of the specified _dir_.
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/utils.js:125](../files/lib_utils.js.html#l125) |
+| Defined | [lib/utils.js:125](../files/lib_utils.js.md#l125) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 ###### Parameters
@@ -150,7 +150,7 @@ Walk the directory tree to locate the yuidoc.json file.
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/utils.js:224](../files/lib_utils.js.html#l224) |
+| Defined | [lib/utils.js:224](../files/lib_utils.js.md#l224) |
 
 ###### Parameters
 - dir Path The directory to start from
@@ -162,7 +162,7 @@ Localize the string via current Y.options
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/utils.js:492](../files/lib_utils.js.html#l492) |
+| Defined | [lib/utils.js:492](../files/lib_utils.js.md#l492) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 ###### Parameters
@@ -175,7 +175,7 @@ convert string to markdown link
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/utils.js:536](../files/lib_utils.js.html#l536) |
+| Defined | [lib/utils.js:536](../files/lib_utils.js.md#l536) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 ###### Parameters
@@ -188,7 +188,7 @@ Mix/merge/munge data into the template.
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/utils.js:139](../files/lib_utils.js.html#l139) |
+| Defined | [lib/utils.js:139](../files/lib_utils.js.md#l139) |
 
 ###### Parameters
 - inDir <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The starting directory
@@ -207,7 +207,7 @@ lines will be unindented four spaces.
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/utils.js:44](../files/lib_utils.js.html#l44) |
+| Defined | [lib/utils.js:44](../files/lib_utils.js.md#l44) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 ###### Parameters
@@ -220,7 +220,7 @@ Make sure all the paths passed are directories and that they are not in the igno
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/utils.js:364](../files/lib_utils.js.html#l364) |
+| Defined | [lib/utils.js:364](../files/lib_utils.js.md#l364) |
 
 ###### Parameters
 - paths <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> The array of paths to validate
@@ -236,7 +236,7 @@ Courtesy of [Mojito's utils](https://github.com/yahoo/mojito/)
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/utils.js:474](../files/lib_utils.js.html#l474) |
+| Defined | [lib/utils.js:474](../files/lib_utils.js.md#l474) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 ###### Parameters
