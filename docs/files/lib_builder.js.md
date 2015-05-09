@@ -1290,6 +1290,7 @@ YUI.add('doc-builder', function (Y) {
                 i.paramsList.push(name);
               });
             }
+            console.log(i.paramsList.join(','));
             i.methodDescription = self._parseCode(i.description);
             if (i.example && i.example.length) {
               if (i.example.forEach) {

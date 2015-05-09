@@ -223,7 +223,7 @@ Compiles the templates from the meta-data provided by DocParser
 
 | meta | description |
 |------|-------------|
-| Defined | `lib/builder.js:1739` |
+| Defined | `lib/builder.js:1740` |
 
 ###### Parameters
 - cb Callback The callback to execute after it's completed
@@ -238,7 +238,7 @@ Normalizes a file path to a writable filename:
 
 | meta | description |
 |------|-------------|
-| Defined | `lib/builder.js:1726` |
+| Defined | `lib/builder.js:1727` |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 ###### Parameters
@@ -327,7 +327,7 @@ Sort method of array of objects with a property called __name__
 
 | meta | description |
 |------|-------------|
-| Defined | `lib/builder.js:1547` |
+| Defined | `lib/builder.js:1548` |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a> 
 
 ###### Parameters
@@ -412,7 +412,7 @@ Render the API meta and return the JavaScript
 
 | meta | description |
 |------|-------------|
-| Defined | `lib/builder.js:1693` |
+| Defined | `lib/builder.js:1694` |
 
 ###### Parameters
 - cb Callback The callback
@@ -439,7 +439,7 @@ Render the source file
 
 | meta | description |
 |------|-------------|
-| Defined | `lib/builder.js:1628` |
+| Defined | `lib/builder.js:1629` |
 
 ###### Parameters
 - cb <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> The callback fired when complete
@@ -481,7 +481,7 @@ Write the API meta data used for the AutoComplete widget
 
 | meta | description |
 |------|-------------|
-| Defined | `lib/builder.js:1680` |
+| Defined | `lib/builder.js:1681` |
 
 ###### Parameters
 - cb Callback The callback to execute when complete
@@ -493,7 +493,7 @@ Generates the class files under "out"/classes/
 
 | meta | description |
 |------|-------------|
-| Defined | `lib/builder.js:1498` |
+| Defined | `lib/builder.js:1499` |
 
 ###### Parameters
 - cb Callback The callback to execute after it's completed
@@ -507,7 +507,7 @@ Generates the syntax files under `"out"/files/`
 
 | meta | description |
 |------|-------------|
-| Defined | `lib/builder.js:1570` |
+| Defined | `lib/builder.js:1571` |
 
 ###### Parameters
 - cb Callback The callback to execute after it's completed
