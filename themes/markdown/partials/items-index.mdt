@@ -22,7 +22,7 @@
 ##### Methods
 
 {{#is_constructor}}
-  - [`{{methodName}}` **constructor**]({{markdownLink}})
+  - [`{{methodName}}` **constructor**](#{{markdownLink}})
 {{/is_constructor}}
 {{#methods}}
   - [`{{methodName}}`](#{{markdownLink}})
