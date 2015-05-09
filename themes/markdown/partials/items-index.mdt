@@ -4,7 +4,7 @@
 ##### Properties
 
 {{#properties}}
-  - [`{{name}}`]({{markdownLink}})
+  - [`{{name}}`](#{{markdownLink}})
 {{/properties}}
 
 {{/if}}
@@ -13,7 +13,7 @@
 ##### Attributes
 
 {{#attrs}}
-  - [`{{name}}`]({{markdownLink}})
+  - [`{{name}}`](#{{markdownLink}})
 {{/attrs}}
 
 {{/if}}
@@ -25,7 +25,7 @@
   - [`{{name}}` **constructor**]({{markdownLink}})
 {{/is_constructor}}
 {{#methods}}
-  - `{{name}}`
+  - [`{{name}}`](#{{markdownLink}})
 {{/methods}}
 
 {{/if}}
@@ -35,7 +35,7 @@
 ##### Events
 
 {{#events}}
-  - [`{{name}}`]({{markdownLink}})
+  - [`{{name}}`](#{{markdownLink}})
 {{/events}}
 
 {{/if}}
@@ -47,25 +47,25 @@
 ##### Properties
 
 {{#inheritedItems.properties}}
-- `{{name}}`
+- [`{{name}}`](#{{markdownLink}})
 {{/inheritedItems.properties}}
 
 ##### Attributes
 
 {{#inheritedItems.attrs}}
-- `{{name}}`
+- [`{{name}}`](#{{markdownLink}})
 {{/inheritedItems.attrs}}
 
 ##### Methods
 
 {{#inheritedItems.methods}}
-- `{{name}}
+- [`{{name}}`](#{{markdownLink}})
 {{/inheritedItems.methods}}
 
 ##### Events
 
 {{#inheritedItems.events}}
-- `{{name}}
+- [`{{name}}`](#{{markdownLink}})
 {{/inheritedItems.events}}
 
 {{/if}}
