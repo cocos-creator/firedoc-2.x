@@ -1,5 +1,5 @@
 
-# firedoc 0.8.19
+# firedoc 0.8.20
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -63,7 +63,7 @@ Cache for external mixed in data.
 #### Methods
 
 
-##### method: `clazz()`
+##### method: `clazz(req, res)`
 
 `/classes` endpoint
 
@@ -76,7 +76,7 @@ Cache for external mixed in data.
 - res Response Express response object
 
 
-##### method: `files()`
+##### method: `files(req, res)`
 
 `/files` endpoint
 
@@ -89,7 +89,7 @@ Cache for external mixed in data.
 - res Response Express response object
 
 
-##### method: `home()`
+##### method: `home(req, res)`
 
 `/` endpoint
 
@@ -112,7 +112,7 @@ Creates the Express server and prep's YUI for serving
 
 
 
-##### method: `modules()`
+##### method: `modules(req, res)`
 
 `/modules` endpoint
 
@@ -125,7 +125,7 @@ Creates the Express server and prep's YUI for serving
 - res Response Express response object
 
 
-##### method: `parse()`
+##### method: `parse(req, res, next)`
 
 Middleware to parse the API docs per request
 
@@ -149,7 +149,7 @@ Create the routes used to serve YUIDoc files dynamically
 
 
 
-##### method: `start()`
+##### method: `start(options)`
 
 Start the server with the supplied options.
 

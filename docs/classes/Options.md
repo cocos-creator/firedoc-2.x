@@ -1,5 +1,5 @@
 
-# firedoc 0.8.19
+# firedoc 0.8.20
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -36,7 +36,7 @@ Handles argument parsing
 #### Methods
 
 
-##### method: `Options()`
+##### method: `Options(args)`
 
 Parses arguments and returns an Object of config options
 

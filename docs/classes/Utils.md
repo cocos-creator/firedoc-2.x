@@ -1,5 +1,5 @@
 
-# firedoc 0.8.19
+# firedoc 0.8.20
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -49,7 +49,7 @@ Utilities Class
 #### Methods
 
 
-##### method: `escapeHTML()`
+##### method: `escapeHTML(html)`
 
 Escapes HTML characters in _html_.
 
@@ -62,7 +62,7 @@ Escapes HTML characters in _html_.
 - html <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> String to escape.
 
 
-##### method: `fixType()`
+##### method: `fixType(t)`
 
 Takes a type string and converts it to a "First letter upper cased" type. e.g. `(string -> String, object -> Object)`
 
@@ -75,7 +75,7 @@ Takes a type string and converts it to a "First letter upper cased" type. e.g. `
 - t <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The type string to convert
 
 
-##### method: `getDirs()`
+##### method: `getDirs(dir)`
 
 Walks the tree from this dir and returns all the subdirs
 
@@ -88,7 +88,7 @@ Walks the tree from this dir and returns all the subdirs
 - dir <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The dir to begin at
 
 
-##### method: `getLayouts()`
+##### method: `getLayouts(dir)`
 
 Like `getPages()`, but returns only the files under the `layout/` subdirectory
 of the specified _dir_.
@@ -102,7 +102,7 @@ of the specified _dir_.
 - dir <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> Directory path.
 
 
-##### method: `getPage()`
+##### method: `getPage(pagePath)`
 
 Loads and returns the content of the specified page file.
 
@@ -115,7 +115,7 @@ Loads and returns the content of the specified page file.
 - pagePath <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> Path to a single `.handlebars` page.
 
 
-##### method: `getPages()`
+##### method: `getPages(dir)`
 
 Loads pages (files with a `.handlebars` extension) in the specified directory and
 returns an object containing a mapping of page names (the part of the filename)
@@ -130,7 +130,7 @@ preceding the `.handlebars` extension) to page content.
 - dir <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> Directory path.
 
 
-##### method: `getPartials()`
+##### method: `getPartials(dir)`
 
 Like `getPages()`, but returns only the files under the `partial/` subdirectory
 of the specified _dir_.
@@ -144,7 +144,7 @@ of the specified _dir_.
 - dir <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> Directory path.
 
 
-##### method: `getProjectData()`
+##### method: `getProjectData([dir=process.cwd()])`
 
 Walk the directory tree to locate the yuidoc.json file.
 
@@ -156,7 +156,7 @@ Walk the directory tree to locate the yuidoc.json file.
 - dir Path The directory to start from
 
 
-##### method: `localize()`
+##### method: `localize(str)`
 
 Localize the string via current Y.options
 
@@ -169,7 +169,7 @@ Localize the string via current Y.options
 - str <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> the original string that you want to input
 
 
-##### method: `markdownLink()`
+##### method: `markdownLink(str)`
 
 convert string to markdown link
 
@@ -182,7 +182,7 @@ convert string to markdown link
 - str <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> the original string that you want to input
 
 
-##### method: `prepare()`
+##### method: `prepare(inDir, options, callback)`
 
 Mix/merge/munge data into the template.
 
@@ -198,7 +198,7 @@ Mix/merge/munge data into the template.
 	- options <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> Merged options.
 
 
-##### method: `unindent()`
+##### method: `unindent(content)`
 
 Normalizes the initial indentation of the given _content_ so that the first line
 is unindented, and all other lines are unindented to the same degree as the
@@ -214,7 +214,7 @@ lines will be unindented four spaces.
 - content <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> Text to unindent.
 
 
-##### method: `validatePaths()`
+##### method: `validatePaths(paths, [ignore=false])`
 
 Make sure all the paths passed are directories and that they are not in the ignore list.
 
@@ -227,7 +227,7 @@ Make sure all the paths passed are directories and that they are not in the igno
 - ignore <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> A string to call `.indexOf` on a path to determine if it should be ignored
 
 
-##### method: `webpath()`
+##### method: `webpath(url)`
 
 Produces a normalized web path by joining all the parts and normalizing the
 filesystem-like path into web compatible url.

@@ -1,5 +1,5 @@
 
-# firedoc 0.8.19
+# firedoc 0.8.20
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -357,7 +357,7 @@ attribute's value has changed.
 
 ##### Constructor
 
-##### method: `DocParser()`
+##### method: ``
 
 
 
@@ -369,7 +369,7 @@ attribute's value has changed.
 - o <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> the config object
 
 
-##### method: `_resolveFor()`
+##### method: `_resolveFor(value)`
 
 Takes a non-namespaced classname and resolves it to a namespace (to support `@for`)
 
@@ -382,7 +382,7 @@ Takes a non-namespaced classname and resolves it to a namespace (to support `@fo
 - value <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The classname to resolve
 
 
-##### method: `extract()`
+##### method: `extract(filemap, dirmap)`
 
 Accepts a map of filenames to file content.  Returns
 a map of filenames to an array of API comment block
@@ -401,7 +401,7 @@ alternative comment parser.
 - dirmap <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> A map of file names to directory name
 
 
-##### method: `handlecomment()`
+##### method: `handlecomment(comment, file, line)`
 
 Transforms a JavaDoc style comment block (less the start and end of it)
 into a list of tag/text pairs. The leading space and '*' are removed,
@@ -418,7 +418,7 @@ friendly for both markdown and html parsers.
 - line <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The line number it was found on
 
 
-##### method: `implodeString()`
+##### method: `implodeString(str)`
 
 Flatten a string, remove all line breaks and replace them with a token
 
@@ -431,7 +431,7 @@ Flatten a string, remove all line breaks and replace them with a token
 - str <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The string to operate on
 
 
-##### method: `implodeString()`
+##### method: `implodeString(str)`
 
 Un-flatten a string, replace tokens injected with `implodeString`
 
@@ -444,7 +444,7 @@ Un-flatten a string, replace tokens injected with `implodeString`
 - str <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The string to operate on
 
 
-##### method: `parse()`
+##### method: `parse(filemap, dirmap)`
 
 Extracts and transforms the filemap provided to constructor
 
@@ -458,7 +458,7 @@ Extracts and transforms the filemap provided to constructor
 - dirmap <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> A map of file names to directory name
 
 
-##### method: `processblock()`
+##### method: `processblock(an)`
 
 Processes all the tags in a single comment block
 
@@ -470,7 +470,7 @@ Processes all the tags in a single comment block
 - an <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> array of the tag/text pairs
 
 
-##### method: `stringlog()`
+##### method: `stringlog(data)`
 
 Parses the JSON data and formats it into a nice log string for
 filename and line number: `/file/name.js:123`
@@ -484,7 +484,7 @@ filename and line number: `/file/name.js:123`
 - data <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The data block from the parser
 
 
-##### method: `transform()`
+##### method: `transform(commentmap)`
 
 Transforms a map of filenames to arrays of comment blocks into a
 JSON structure that represents the entire processed API doc info
@@ -499,7 +499,7 @@ and relationships between elements for the entire project.
 - commentmap <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The hash of files and parsed comment blocks
 
 
-##### method: `unindent()`
+##### method: `unindent(content)`
 
 Normalizes the initial indentation of the given _content_ so that the first line
 is unindented, and all other lines are unindented to the same degree as the

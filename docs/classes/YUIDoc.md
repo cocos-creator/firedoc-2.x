@@ -1,5 +1,5 @@
 
-# firedoc 0.8.19
+# firedoc 0.8.20
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -164,7 +164,7 @@ Timestamp holder so we know when YUIDoc started the parse process.
 
 ##### Constructor
 
-##### method: `YUIDoc()`
+##### method: ``
 
 
 
@@ -196,7 +196,7 @@ Always exclude these directories
 
 
 
-##### method: `parsedir()`
+##### method: `parsedir(dir)`
 
 Walks the passed directory and grabs all the files recursively.
 
@@ -208,7 +208,7 @@ Walks the passed directory and grabs all the files recursively.
 - dir <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The directory to parse the contents of.
 
 
-##### method: `parsefiles()`
+##### method: `parsefiles(dir, files)`
 
 Gathers all the file data and populates the filemap and dirmap hashes.
 
@@ -254,7 +254,7 @@ Walks the paths and parses the directory contents
 
 
 
-##### method: `writeJSON()`
+##### method: `writeJSON(parser)`
 
 Writes the parser JSON data to disk.
 Applies preprocessors, if any.

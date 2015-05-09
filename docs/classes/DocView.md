@@ -1,5 +1,5 @@
 
-# firedoc 0.8.19
+# firedoc 0.8.20
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -40,7 +40,7 @@ The view class is a **`handlebars`** template helper.
 
 ##### Constructor
 
-##### method: `DocView()`
+##### method: ``
 
 
 
