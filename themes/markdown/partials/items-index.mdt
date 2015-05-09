@@ -4,7 +4,7 @@
 ##### Properties
 
 {{#properties}}
-  - `{{name}}`
+  - [`{{name}}`]({{markdownLink}})
 {{/properties}}
 
 {{/if}}
@@ -13,7 +13,7 @@
 ##### Attributes
 
 {{#attrs}}
-  - `{{name}}`
+  - [`{{name}}`]({{markdownLink}})
 {{/attrs}}
 
 {{/if}}
@@ -22,7 +22,7 @@
 ##### Methods
 
 {{#is_constructor}}
-  - `{{name}}` **constructor**
+  - [`{{name}}` **constructor**]({{markdownLink}})
 {{/is_constructor}}
 {{#methods}}
   - `{{name}}`
@@ -35,7 +35,7 @@
 ##### Events
 
 {{#events}}
-  - `{{name}}`
+  - [`{{name}}`]({{markdownLink}})
 {{/events}}
 
 {{/if}}
