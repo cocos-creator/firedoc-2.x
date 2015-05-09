@@ -40,7 +40,7 @@ YUIDoc main class
 
 ##### Methods
 
-  - [`YUIDoc(config)` **constructor**](method-yuidocconfig)
+  - [`YUIDoc(config)` **constructor**](#method-yuidocconfig)
   - [`_processConfig()`](#method-_processconfig)
   - [`_setDefaultExcludes()`](#method-_setdefaultexcludes)
   - [`parsedir(dir)`](#method-parsedirdir)
