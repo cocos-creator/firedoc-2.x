@@ -19,20 +19,20 @@ Provides the `--server` server option for YUIDoc
 
 ##### Properties
 
-  - [`_externalData`](property-_externaldata)
+  - [`_externalData`](#property-_externaldata)
 
 
 
 ##### Methods
 
-  - `clazz`
-  - `files`
-  - `home`
-  - `init`
-  - `modules`
-  - `parse`
-  - `routes`
-  - `start`
+  - [`clazz`](#method-clazz)
+  - [`files`](#method-files)
+  - [`home`](#method-home)
+  - [`init`](#method-init)
+  - [`modules`](#method-modules)
+  - [`parse`](#method-parse)
+  - [`routes`](#method-routes)
+  - [`start`](#method-start)
 
 
 

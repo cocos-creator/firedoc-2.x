@@ -21,18 +21,18 @@ Ported fileutils methods from [Selleck](http://github.com/rgrove/selleck)
 
 ##### Methods
 
-  - `copyAssets`
-  - `copyDirectory`
-  - `copyFile`
-  - `copyPath`
-  - `deletePath`
-  - `getJSON`
-  - `isDirectory`
-  - `isFile`
-  - `isSymbolicLink`
-  - `lstatSync`
-  - `statSync`
-  - `writeFile`
+  - [`copyAssets`](#method-copyassets)
+  - [`copyDirectory`](#method-copydirectory)
+  - [`copyFile`](#method-copyfile)
+  - [`copyPath`](#method-copypath)
+  - [`deletePath`](#method-deletepath)
+  - [`getJSON`](#method-getjson)
+  - [`isDirectory`](#method-isdirectory)
+  - [`isFile`](#method-isfile)
+  - [`isSymbolicLink`](#method-issymboliclink)
+  - [`lstatSync`](#method-lstatsync)
+  - [`statSync`](#method-statsync)
+  - [`writeFile`](#method-writefile)
 
 
 

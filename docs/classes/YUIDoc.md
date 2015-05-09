@@ -27,28 +27,28 @@ YUIDoc main class
 
 ##### Properties
 
-  - [`dirmap`](property-dirmap)
-  - [`endtime`](property-endtime)
-  - [`filecount`](property-filecount)
-  - [`filemap`](property-filemap)
-  - [`OPTIONS`](property-options)
-  - [`options`](property-options)
-  - [`selleck`](property-selleck)
-  - [`starttime`](property-starttime)
+  - [`dirmap`](#property-dirmap)
+  - [`endtime`](#property-endtime)
+  - [`filecount`](#property-filecount)
+  - [`filemap`](#property-filemap)
+  - [`OPTIONS`](#property-options)
+  - [`options`](#property-options)
+  - [`selleck`](#property-selleck)
+  - [`starttime`](#property-starttime)
 
 
 
 ##### Methods
 
   - [`YUIDoc` **constructor**]()
-  - `_processConfig`
-  - `_setDefaultExcludes`
-  - `parsedir`
-  - `parsefiles`
-  - `run`
-  - `runPreprocessors`
-  - `walk`
-  - `writeJSON`
+  - [`_processConfig`](#method-_processconfig)
+  - [`_setDefaultExcludes`](#method-_setdefaultexcludes)
+  - [`parsedir`](#method-parsedir)
+  - [`parsefiles`](#method-parsefiles)
+  - [`run`](#method-run)
+  - [`runPreprocessors`](#method-runpreprocessors)
+  - [`walk`](#method-walk)
+  - [`writeJSON`](#method-writejson)
 
 
 

@@ -22,39 +22,39 @@ with the parsers data (aggregated in the `'data'` property).
 
 ##### Properties
 
-  - [`CORRECTIONS`](property-corrections)
-  - [`DIGESTERS`](property-digesters)
-  - [`IGNORE_TAGLIST`](property-ignore_taglist)
-  - [`TAGLIST`](property-taglist)
+  - [`CORRECTIONS`](#property-corrections)
+  - [`DIGESTERS`](#property-digesters)
+  - [`IGNORE_TAGLIST`](#property-ignore_taglist)
+  - [`TAGLIST`](#property-taglist)
 
 
 ##### Attributes
 
-  - [`currentclass`](attribute-currentclass)
-  - [`currentfile`](attribute-currentfile)
-  - [`currentmodule`](attribute-currentmodule)
-  - [`currentsubmodule`](attribute-currentsubmodule)
-  - [`digesters`](attribute-digesters)
-  - [`dirmap`](attribute-dirmap)
-  - [`emitters`](attribute-emitters)
-  - [`filemap`](attribute-filemap)
-  - [`mainmodule`](attribute-mainmodule)
-  - [`syntaxtype`](attribute-syntaxtype)
+  - [`currentclass`](#attribute-currentclass)
+  - [`currentfile`](#attribute-currentfile)
+  - [`currentmodule`](#attribute-currentmodule)
+  - [`currentsubmodule`](#attribute-currentsubmodule)
+  - [`digesters`](#attribute-digesters)
+  - [`dirmap`](#attribute-dirmap)
+  - [`emitters`](#attribute-emitters)
+  - [`filemap`](#attribute-filemap)
+  - [`mainmodule`](#attribute-mainmodule)
+  - [`syntaxtype`](#attribute-syntaxtype)
 
 
 ##### Methods
 
   - [`DocParser` **constructor**]()
-  - `_resolveFor`
-  - `extract`
-  - `handlecomment`
-  - `implodeString`
-  - `implodeString`
-  - `parse`
-  - `processblock`
-  - `stringlog`
-  - `transform`
-  - `unindent`
+  - [`_resolveFor`](#method-_resolvefor)
+  - [`extract`](#method-extract)
+  - [`handlecomment`](#method-handlecomment)
+  - [`implodeString`](#method-implodestring)
+  - [`implodeString`](#method-implodestring)
+  - [`parse`](#method-parse)
+  - [`processblock`](#method-processblock)
+  - [`stringlog`](#method-stringlog)
+  - [`transform`](#method-transform)
+  - [`unindent`](#method-unindent)
 
 
 

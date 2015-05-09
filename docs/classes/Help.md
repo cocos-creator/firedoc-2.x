@@ -19,14 +19,14 @@ Shows the help text
 
 ##### Properties
 
-  - [`help`](property-help)
+  - [`help`](#property-help)
 
 
 
 ##### Methods
 
-  - `renderHelp`
-  - `showHelp`
+  - [`renderHelp`](#method-renderhelp)
+  - [`showHelp`](#method-showhelp)
 
 
 

@@ -20,46 +20,46 @@ based templates to generate static HTML content
 
 ##### Properties
 
-  - [`_mergeCounter`](property-_mergecounter)
-  - [`_meta`](property-_meta)
-  - [`files`](property-files)
-  - [`NATIVES`](property-natives)
+  - [`_mergeCounter`](#property-_mergecounter)
+  - [`_meta`](#property-_meta)
+  - [`files`](#property-files)
+  - [`NATIVES`](#property-natives)
 
 
 
 ##### Methods
 
-  - `_addHelpers`
-  - `_inlineCode`
-  - `_mixExternal`
-  - `_parseCode`
-  - `_parseCrossLink`
-  - `addFoundAt`
-  - `augmentData`
-  - `compile`
-  - `filterFileName`
-  - `getProjectMeta`
-  - `hasProperty`
-  - `makeDirs`
-  - `markdown`
-  - `mergeExtends`
-  - `mixExternal`
-  - `nameSort`
-  - `NATIVES_LINKER`
-  - `populateClasses`
-  - `populateFiles`
-  - `populateModules`
-  - `render`
-  - `renderAPIMeta`
-  - `renderClass`
-  - `renderFile`
-  - `renderIndex`
-  - `renderModule`
-  - `writeAPIMeta`
-  - `writeClasses`
-  - `writeFiles`
-  - `writeIndex`
-  - `writeModules`
+  - [`_addHelpers`](#method-_addhelpers)
+  - [`_inlineCode`](#method-_inlinecode)
+  - [`_mixExternal`](#method-_mixexternal)
+  - [`_parseCode`](#method-_parsecode)
+  - [`_parseCrossLink`](#method-_parsecrosslink)
+  - [`addFoundAt`](#method-addfoundat)
+  - [`augmentData`](#method-augmentdata)
+  - [`compile`](#method-compile)
+  - [`filterFileName`](#method-filterfilename)
+  - [`getProjectMeta`](#method-getprojectmeta)
+  - [`hasProperty`](#method-hasproperty)
+  - [`makeDirs`](#method-makedirs)
+  - [`markdown`](#method-markdown)
+  - [`mergeExtends`](#method-mergeextends)
+  - [`mixExternal`](#method-mixexternal)
+  - [`nameSort`](#method-namesort)
+  - [`NATIVES_LINKER`](#method-natives_linker)
+  - [`populateClasses`](#method-populateclasses)
+  - [`populateFiles`](#method-populatefiles)
+  - [`populateModules`](#method-populatemodules)
+  - [`render`](#method-render)
+  - [`renderAPIMeta`](#method-renderapimeta)
+  - [`renderClass`](#method-renderclass)
+  - [`renderFile`](#method-renderfile)
+  - [`renderIndex`](#method-renderindex)
+  - [`renderModule`](#method-rendermodule)
+  - [`writeAPIMeta`](#method-writeapimeta)
+  - [`writeClasses`](#method-writeclasses)
+  - [`writeFiles`](#method-writefiles)
+  - [`writeIndex`](#method-writeindex)
+  - [`writeModules`](#method-writemodules)
 
 
 

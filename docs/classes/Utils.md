@@ -21,20 +21,20 @@ Utilities Class
 
 ##### Methods
 
-  - `escapeHTML`
-  - `fixType`
-  - `getDirs`
-  - `getLayouts`
-  - `getPage`
-  - `getPages`
-  - `getPartials`
-  - `getProjectData`
-  - `localize`
-  - `markdownLink`
-  - `prepare`
-  - `unindent`
-  - `validatePaths`
-  - `webpath`
+  - [`escapeHTML`](#method-escapehtml)
+  - [`fixType`](#method-fixtype)
+  - [`getDirs`](#method-getdirs)
+  - [`getLayouts`](#method-getlayouts)
+  - [`getPage`](#method-getpage)
+  - [`getPages`](#method-getpages)
+  - [`getPartials`](#method-getpartials)
+  - [`getProjectData`](#method-getprojectdata)
+  - [`localize`](#method-localize)
+  - [`markdownLink`](#method-markdownlink)
+  - [`prepare`](#method-prepare)
+  - [`unindent`](#method-unindent)
+  - [`validatePaths`](#method-validatepaths)
+  - [`webpath`](#method-webpath)
 
 
 
