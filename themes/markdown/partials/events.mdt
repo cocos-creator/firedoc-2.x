@@ -5,7 +5,7 @@ Extends `{{extends}}`
 {{/if}}
 
 {{#if foundAt}}
-Defined in: [{{{file}}}:{{{line}}}]({{foundAt}})
+Defined in: [{{{file}}}:{{{line}}}]({{foundAt}}.md)
 {{/if}}
 
 {{#if module}}
