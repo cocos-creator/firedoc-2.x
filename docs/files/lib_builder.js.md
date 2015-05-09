@@ -1232,6 +1232,8 @@ YUI.add('doc-builder', function (Y) {
               i.paramsList.push(name);
             });
           }
+          i.methodName = i.name + '(' + i.paramsList.join(', ') + ')';
+          i.markdownLink = Y.markdownLink('method:' + i.methodName);
           //i.methodDescription = self._parseCode(markdown(i.description));
           i.hasAccessType = i.access;
           i.hasParams = i.paramsList.length;

@@ -22,7 +22,7 @@ The view class is a **`handlebars`** template helper.
 
 ##### Methods
 
-  - [`` **constructor**]()
+  - [`DocView(data, templateName)` **constructor**](method-docviewdata-templatename)
   - [`htmlTitle()`](#method-htmltitle)
   - [`title()`](#method-title)
 
@@ -40,7 +40,7 @@ The view class is a **`handlebars`** template helper.
 
 ##### Constructor
 
-##### method: ``
+##### method: `DocView(data, templateName)`
 
 
 

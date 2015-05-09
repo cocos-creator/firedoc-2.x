@@ -40,7 +40,7 @@ YUIDoc main class
 
 ##### Methods
 
-  - [`` **constructor**]()
+  - [`YUIDoc(config)` **constructor**](method-yuidocconfig)
   - [`_processConfig()`](#method-_processconfig)
   - [`_setDefaultExcludes()`](#method-_setdefaultexcludes)
   - [`parsedir(dir)`](#method-parsedirdir)
@@ -164,7 +164,7 @@ Timestamp holder so we know when YUIDoc started the parse process.
 
 ##### Constructor
 
-##### method: ``
+##### method: `YUIDoc(config)`
 
 
 

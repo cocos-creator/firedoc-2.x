@@ -21,9 +21,9 @@
 {{#if methods}}
 ##### Methods
 
-{{#if is_constructor}}
+{{#is_constructor}}
   - [`{{methodName}}` **constructor**]({{markdownLink}})
-{{/if}}
+{{/is_constructor}}
 {{#methods}}
   - [`{{methodName}}`](#{{markdownLink}})
 {{/methods}}

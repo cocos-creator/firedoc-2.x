@@ -44,7 +44,7 @@ with the parsers data (aggregated in the `'data'` property).
 
 ##### Methods
 
-  - [`` **constructor**]()
+  - [`DocParser(o)` **constructor**](method-docparsero)
   - [`_resolveFor(value)`](#method-_resolveforvalue)
   - [`extract(filemap, dirmap)`](#method-extractfilemap-dirmap)
   - [`handlecomment(comment, file, line)`](#method-handlecommentcomment-file-line)
@@ -357,7 +357,7 @@ attribute's value has changed.
 
 ##### Constructor
 
-##### method: ``
+##### method: `DocParser(o)`
 
 
 

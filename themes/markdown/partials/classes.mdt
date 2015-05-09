@@ -61,10 +61,10 @@ This class is deprecated.
 <!-- Method Block -->
 #### Methods
 
-{{#if is_constructor}}
+{{#is_constructor}}
 ##### Constructor
 {{> method}}
-{{/if}}
+{{/is_constructor}}
 {{#methods}}
 {{> method}}
 {{/methods}}

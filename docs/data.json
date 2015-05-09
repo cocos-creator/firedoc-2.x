@@ -962,7 +962,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 1500,
+            "line": 1502,
             "description": "Generates the class files under \"out\"/classes/",
             "itemtype": "method",
             "name": "writeClasses",
@@ -991,7 +991,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 1549,
+            "line": 1551,
             "description": "Sort method of array of objects with a property called __name__",
             "itemtype": "method",
             "name": "nameSort",
@@ -1017,7 +1017,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 1572,
+            "line": 1574,
             "description": "Generates the syntax files under `\"out\"/files/`",
             "itemtype": "method",
             "name": "writeFiles",
@@ -1046,7 +1046,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 1630,
+            "line": 1632,
             "description": "Render the source file",
             "itemtype": "method",
             "name": "renderFile",
@@ -1075,7 +1075,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 1682,
+            "line": 1684,
             "description": "Write the API meta data used for the AutoComplete widget",
             "itemtype": "method",
             "name": "writeAPIMeta",
@@ -1093,7 +1093,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 1695,
+            "line": 1697,
             "description": "Render the API meta and return the JavaScript",
             "itemtype": "method",
             "name": "renderAPIMeta",
@@ -1118,7 +1118,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 1728,
+            "line": 1730,
             "description": "Normalizes a file path to a writable filename:\n\n   var path = 'lib/file.js';\n   returns 'lib_file.js';",
             "itemtype": "method",
             "name": "filterFileName",
@@ -1139,7 +1139,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 1741,
+            "line": 1743,
             "description": "Compiles the templates from the meta-data provided by DocParser",
             "itemtype": "method",
             "name": "compile",
