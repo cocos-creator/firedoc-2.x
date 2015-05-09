@@ -1,5 +1,5 @@
 
-# firedoc 0.8.20
+# firedoc 0.8.21
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -21,18 +21,18 @@ Ported fileutils methods from [Selleck](http://github.com/rgrove/selleck)
 
 ##### Methods
 
-  - [`copyAssets`](#method-copyassets)
-  - [`copyDirectory`](#method-copydirectory)
-  - [`copyFile`](#method-copyfile)
-  - [`copyPath`](#method-copypath)
-  - [`deletePath`](#method-deletepath)
-  - [`getJSON`](#method-getjson)
-  - [`isDirectory`](#method-isdirectory)
-  - [`isFile`](#method-isfile)
-  - [`isSymbolicLink`](#method-issymboliclink)
-  - [`lstatSync`](#method-lstatsync)
-  - [`statSync`](#method-statsync)
-  - [`writeFile`](#method-writefile)
+  - [`copyAssets(from, dest, deleteFirst, callback)`](#copyassetsfrom-dest-deletefirst-callback)
+  - [`copyDirectory(source, dest, [overwrite=false], callback)`](#copydirectorysource-dest-overwritefalse-callback)
+  - [`copyFile(source, dest, [overwrite=false], callback)`](#copyfilesource-dest-overwritefalse-callback)
+  - [`copyPath(source, dest, [overwrite=false], callback)`](#copypathsource-dest-overwritefalse-callback)
+  - [`deletePath(path)`](#deletepathpath)
+  - [`getJSON(filename)`](#getjsonfilename)
+  - [`isDirectory(path, [link=false])`](#isdirectorypath-linkfalse)
+  - [`isFile(path, [link=false])`](#isfilepath-linkfalse)
+  - [`isSymbolicLink(path)`](#issymboliclinkpath)
+  - [`lstatSync(path)`](#lstatsyncpath)
+  - [`statSync(path)`](#statsyncpath)
+  - [`writeFile(file, data, callback)`](#writefilefile-data-callback)
 
 
 

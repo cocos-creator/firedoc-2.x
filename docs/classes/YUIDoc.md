@@ -1,5 +1,5 @@
 
-# firedoc 0.8.20
+# firedoc 0.8.21
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -40,15 +40,15 @@ YUIDoc main class
 
 ##### Methods
 
-  - [`YUIDoc` **constructor**]()
-  - [`_processConfig`](#method-_processconfig)
-  - [`_setDefaultExcludes`](#method-_setdefaultexcludes)
-  - [`parsedir`](#method-parsedir)
-  - [`parsefiles`](#method-parsefiles)
-  - [`run`](#method-run)
-  - [`runPreprocessors`](#method-runpreprocessors)
-  - [`walk`](#method-walk)
-  - [`writeJSON`](#method-writejson)
+  - [`` **constructor**]()
+  - [`_processConfig()`](#_processconfig)
+  - [`_setDefaultExcludes()`](#_setdefaultexcludes)
+  - [`parsedir(dir)`](#parsedirdir)
+  - [`parsefiles(dir, files)`](#parsefilesdir-files)
+  - [`run()`](#run)
+  - [`runPreprocessors()`](#runpreprocessors)
+  - [`walk()`](#walk)
+  - [`writeJSON(parser)`](#writejsonparser)
 
 
 

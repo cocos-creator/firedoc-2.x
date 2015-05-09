@@ -1,5 +1,5 @@
 
-# firedoc 0.8.20
+# firedoc 0.8.21
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -44,17 +44,17 @@ with the parsers data (aggregated in the `'data'` property).
 
 ##### Methods
 
-  - [`DocParser` **constructor**]()
-  - [`_resolveFor`](#method-_resolvefor)
-  - [`extract`](#method-extract)
-  - [`handlecomment`](#method-handlecomment)
-  - [`implodeString`](#method-implodestring)
-  - [`implodeString`](#method-implodestring)
-  - [`parse`](#method-parse)
-  - [`processblock`](#method-processblock)
-  - [`stringlog`](#method-stringlog)
-  - [`transform`](#method-transform)
-  - [`unindent`](#method-unindent)
+  - [`` **constructor**]()
+  - [`_resolveFor(value)`](#_resolveforvalue)
+  - [`extract(filemap, dirmap)`](#extractfilemap-dirmap)
+  - [`handlecomment(comment, file, line)`](#handlecommentcomment-file-line)
+  - [`implodeString(str)`](#implodestringstr)
+  - [`implodeString(str)`](#implodestringstr)
+  - [`parse(filemap, dirmap)`](#parsefilemap-dirmap)
+  - [`processblock(an)`](#processblockan)
+  - [`stringlog(data)`](#stringlogdata)
+  - [`transform(commentmap)`](#transformcommentmap)
+  - [`unindent(content)`](#unindentcontent)
 
 
 

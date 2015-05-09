@@ -1,5 +1,5 @@
 
-# firedoc 0.8.20
+# firedoc 0.8.21
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -25,14 +25,14 @@ Provides the `--server` server option for YUIDoc
 
 ##### Methods
 
-  - [`clazz`](#method-clazz)
-  - [`files`](#method-files)
-  - [`home`](#method-home)
-  - [`init`](#method-init)
-  - [`modules`](#method-modules)
-  - [`parse`](#method-parse)
-  - [`routes`](#method-routes)
-  - [`start`](#method-start)
+  - [`clazz(req, res)`](#clazzreq-res)
+  - [`files(req, res)`](#filesreq-res)
+  - [`home(req, res)`](#homereq-res)
+  - [`init()`](#init)
+  - [`modules(req, res)`](#modulesreq-res)
+  - [`parse(req, res, next)`](#parsereq-res-next)
+  - [`routes()`](#routes)
+  - [`start(options)`](#startoptions)
 
 
 

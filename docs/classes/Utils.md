@@ -1,5 +1,5 @@
 
-# firedoc 0.8.20
+# firedoc 0.8.21
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -21,20 +21,20 @@ Utilities Class
 
 ##### Methods
 
-  - [`escapeHTML`](#method-escapehtml)
-  - [`fixType`](#method-fixtype)
-  - [`getDirs`](#method-getdirs)
-  - [`getLayouts`](#method-getlayouts)
-  - [`getPage`](#method-getpage)
-  - [`getPages`](#method-getpages)
-  - [`getPartials`](#method-getpartials)
-  - [`getProjectData`](#method-getprojectdata)
-  - [`localize`](#method-localize)
-  - [`markdownLink`](#method-markdownlink)
-  - [`prepare`](#method-prepare)
-  - [`unindent`](#method-unindent)
-  - [`validatePaths`](#method-validatepaths)
-  - [`webpath`](#method-webpath)
+  - [`escapeHTML(html)`](#escapehtmlhtml)
+  - [`fixType(t)`](#fixtypet)
+  - [`getDirs(dir)`](#getdirsdir)
+  - [`getLayouts(dir)`](#getlayoutsdir)
+  - [`getPage(pagePath)`](#getpagepagepath)
+  - [`getPages(dir)`](#getpagesdir)
+  - [`getPartials(dir)`](#getpartialsdir)
+  - [`getProjectData([dir=process.cwd()])`](#getprojectdatadirprocess.cwd)
+  - [`localize(str)`](#localizestr)
+  - [`markdownLink(str)`](#markdownlinkstr)
+  - [`prepare(inDir, options, callback)`](#prepareindir-options-callback)
+  - [`unindent(content)`](#unindentcontent)
+  - [`validatePaths(paths, [ignore=false])`](#validatepathspaths-ignorefalse)
+  - [`webpath(url)`](#webpathurl)
 
 
 

@@ -1,5 +1,5 @@
 
-# firedoc 0.8.20
+# firedoc 0.8.21
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -29,37 +29,37 @@ based templates to generate static HTML content
 
 ##### Methods
 
-  - [`_addHelpers`](#method-_addhelpers)
-  - [`_inlineCode`](#method-_inlinecode)
-  - [`_mixExternal`](#method-_mixexternal)
-  - [`_parseCode`](#method-_parsecode)
-  - [`_parseCrossLink`](#method-_parsecrosslink)
-  - [`addFoundAt`](#method-addfoundat)
-  - [`augmentData`](#method-augmentdata)
-  - [`compile`](#method-compile)
-  - [`filterFileName`](#method-filterfilename)
-  - [`getProjectMeta`](#method-getprojectmeta)
-  - [`hasProperty`](#method-hasproperty)
-  - [`makeDirs`](#method-makedirs)
-  - [`markdown`](#method-markdown)
-  - [`mergeExtends`](#method-mergeextends)
-  - [`mixExternal`](#method-mixexternal)
-  - [`nameSort`](#method-namesort)
-  - [`NATIVES_LINKER`](#method-natives_linker)
-  - [`populateClasses`](#method-populateclasses)
-  - [`populateFiles`](#method-populatefiles)
-  - [`populateModules`](#method-populatemodules)
-  - [`render`](#method-render)
-  - [`renderAPIMeta`](#method-renderapimeta)
-  - [`renderClass`](#method-renderclass)
-  - [`renderFile`](#method-renderfile)
-  - [`renderIndex`](#method-renderindex)
-  - [`renderModule`](#method-rendermodule)
-  - [`writeAPIMeta`](#method-writeapimeta)
-  - [`writeClasses`](#method-writeclasses)
-  - [`writeFiles`](#method-writefiles)
-  - [`writeIndex`](#method-writeindex)
-  - [`writeModules`](#method-writemodules)
+  - [`_addHelpers(helpers)`](#_addhelpershelpers)
+  - [`_inlineCode(html)`](#_inlinecodehtml)
+  - [`_mixExternal()`](#_mixexternal)
+  - [`_parseCode(html)`](#_parsecodehtml)
+  - [`_parseCrossLink(item, [raw=false], [content])`](#_parsecrosslinkitem-rawfalse-content)
+  - [`addFoundAt(a)`](#addfoundata)
+  - [`augmentData(o)`](#augmentdatao)
+  - [`compile(cb)`](#compilecb)
+  - [`filterFileName(f)`](#filterfilenamef)
+  - [`getProjectMeta()`](#getprojectmeta)
+  - [`hasProperty(a, b)`](#haspropertya-b)
+  - [`makeDirs(cb)`](#makedirscb)
+  - [`markdown(data)`](#markdowndata)
+  - [`mergeExtends(info, classItems, first)`](#mergeextendsinfo-classitems-first)
+  - [`mixExternal(cb)`](#mixexternalcb)
+  - [`nameSort(a, b)`](#namesorta-b)
+  - [`NATIVES_LINKER(name)`](#natives_linkername)
+  - [`populateClasses(opts)`](#populateclassesopts)
+  - [`populateFiles(opts)`](#populatefilesopts)
+  - [`populateModules(opts)`](#populatemodulesopts)
+  - [`render(source, view, [layout=null], [partials={}], callback)`](#rendersource-view-layoutnull-partials{}-callback)
+  - [`renderAPIMeta(cb)`](#renderapimetacb)
+  - [`renderClass(cb)`](#renderclasscb)
+  - [`renderFile(cb)`](#renderfilecb)
+  - [`renderIndex(cb)`](#renderindexcb)
+  - [`renderModule(cb)`](#rendermodulecb)
+  - [`writeAPIMeta(cb)`](#writeapimetacb)
+  - [`writeClasses(cb)`](#writeclassescb)
+  - [`writeFiles(cb)`](#writefilescb)
+  - [`writeIndex(cb)`](#writeindexcb)
+  - [`writeModules(cb)`](#writemodulescb)
 
 
 
@@ -223,7 +223,7 @@ Compiles the templates from the meta-data provided by DocParser
 
 | meta | description |
 |------|-------------|
-| Defined | `lib/builder.js:1740` |
+| Defined | `lib/builder.js:1741` |
 
 ###### Parameters
 - cb Callback The callback to execute after it's completed
@@ -238,7 +238,7 @@ Normalizes a file path to a writable filename:
 
 | meta | description |
 |------|-------------|
-| Defined | `lib/builder.js:1727` |
+| Defined | `lib/builder.js:1728` |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 ###### Parameters
@@ -327,7 +327,7 @@ Sort method of array of objects with a property called __name__
 
 | meta | description |
 |------|-------------|
-| Defined | `lib/builder.js:1548` |
+| Defined | `lib/builder.js:1549` |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a> 
 
 ###### Parameters
@@ -412,7 +412,7 @@ Render the API meta and return the JavaScript
 
 | meta | description |
 |------|-------------|
-| Defined | `lib/builder.js:1694` |
+| Defined | `lib/builder.js:1695` |
 
 ###### Parameters
 - cb Callback The callback
@@ -439,7 +439,7 @@ Render the source file
 
 | meta | description |
 |------|-------------|
-| Defined | `lib/builder.js:1629` |
+| Defined | `lib/builder.js:1630` |
 
 ###### Parameters
 - cb <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> The callback fired when complete
@@ -481,7 +481,7 @@ Write the API meta data used for the AutoComplete widget
 
 | meta | description |
 |------|-------------|
-| Defined | `lib/builder.js:1681` |
+| Defined | `lib/builder.js:1682` |
 
 ###### Parameters
 - cb Callback The callback to execute when complete
@@ -493,7 +493,7 @@ Generates the class files under "out"/classes/
 
 | meta | description |
 |------|-------------|
-| Defined | `lib/builder.js:1499` |
+| Defined | `lib/builder.js:1500` |
 
 ###### Parameters
 - cb Callback The callback to execute after it's completed
@@ -507,7 +507,7 @@ Generates the syntax files under `"out"/files/`
 
 | meta | description |
 |------|-------------|
-| Defined | `lib/builder.js:1571` |
+| Defined | `lib/builder.js:1572` |
 
 ###### Parameters
 - cb Callback The callback to execute after it's completed
