@@ -21,18 +21,18 @@ Ported fileutils methods from [Selleck](http://github.com/rgrove/selleck)
 
 ##### Methods
 
-  - [`copyAssets(from, dest, deleteFirst, callback)`](#copyassetsfrom-dest-deletefirst-callback)
-  - [`copyDirectory(source, dest, [overwrite=false], callback)`](#copydirectorysource-dest-overwritefalse-callback)
-  - [`copyFile(source, dest, [overwrite=false], callback)`](#copyfilesource-dest-overwritefalse-callback)
-  - [`copyPath(source, dest, [overwrite=false], callback)`](#copypathsource-dest-overwritefalse-callback)
-  - [`deletePath(path)`](#deletepathpath)
-  - [`getJSON(filename)`](#getjsonfilename)
-  - [`isDirectory(path, [link=false])`](#isdirectorypath-linkfalse)
-  - [`isFile(path, [link=false])`](#isfilepath-linkfalse)
-  - [`isSymbolicLink(path)`](#issymboliclinkpath)
-  - [`lstatSync(path)`](#lstatsyncpath)
-  - [`statSync(path)`](#statsyncpath)
-  - [`writeFile(file, data, callback)`](#writefilefile-data-callback)
+  - [`copyAssets(from, dest, deleteFirst, callback)`](#method-copyassetsfrom-dest-deletefirst-callback)
+  - [`copyDirectory(source, dest, [overwrite=false], callback)`](#method-copydirectorysource-dest-overwritefalse-callback)
+  - [`copyFile(source, dest, [overwrite=false], callback)`](#method-copyfilesource-dest-overwritefalse-callback)
+  - [`copyPath(source, dest, [overwrite=false], callback)`](#method-copypathsource-dest-overwritefalse-callback)
+  - [`deletePath(path)`](#method-deletepathpath)
+  - [`getJSON(filename)`](#method-getjsonfilename)
+  - [`isDirectory(path, [link=false])`](#method-isdirectorypath-linkfalse)
+  - [`isFile(path, [link=false])`](#method-isfilepath-linkfalse)
+  - [`isSymbolicLink(path)`](#method-issymboliclinkpath)
+  - [`lstatSync(path)`](#method-lstatsyncpath)
+  - [`statSync(path)`](#method-statsyncpath)
+  - [`writeFile(file, data, callback)`](#method-writefilefile-data-callback)
 
 
 

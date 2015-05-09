@@ -41,14 +41,14 @@ YUIDoc main class
 ##### Methods
 
   - [`` **constructor**]()
-  - [`_processConfig()`](#_processconfig)
-  - [`_setDefaultExcludes()`](#_setdefaultexcludes)
-  - [`parsedir(dir)`](#parsedirdir)
-  - [`parsefiles(dir, files)`](#parsefilesdir-files)
-  - [`run()`](#run)
-  - [`runPreprocessors()`](#runpreprocessors)
-  - [`walk()`](#walk)
-  - [`writeJSON(parser)`](#writejsonparser)
+  - [`_processConfig()`](#method-_processconfig)
+  - [`_setDefaultExcludes()`](#method-_setdefaultexcludes)
+  - [`parsedir(dir)`](#method-parsedirdir)
+  - [`parsefiles(dir, files)`](#method-parsefilesdir-files)
+  - [`run()`](#method-run)
+  - [`runPreprocessors()`](#method-runpreprocessors)
+  - [`walk()`](#method-walk)
+  - [`writeJSON(parser)`](#method-writejsonparser)
 
 
 

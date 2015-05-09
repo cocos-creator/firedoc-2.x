@@ -45,16 +45,16 @@ with the parsers data (aggregated in the `'data'` property).
 ##### Methods
 
   - [`` **constructor**]()
-  - [`_resolveFor(value)`](#_resolveforvalue)
-  - [`extract(filemap, dirmap)`](#extractfilemap-dirmap)
-  - [`handlecomment(comment, file, line)`](#handlecommentcomment-file-line)
-  - [`implodeString(str)`](#implodestringstr)
-  - [`implodeString(str)`](#implodestringstr)
-  - [`parse(filemap, dirmap)`](#parsefilemap-dirmap)
-  - [`processblock(an)`](#processblockan)
-  - [`stringlog(data)`](#stringlogdata)
-  - [`transform(commentmap)`](#transformcommentmap)
-  - [`unindent(content)`](#unindentcontent)
+  - [`_resolveFor(value)`](#method-_resolveforvalue)
+  - [`extract(filemap, dirmap)`](#method-extractfilemap-dirmap)
+  - [`handlecomment(comment, file, line)`](#method-handlecommentcomment-file-line)
+  - [`implodeString(str)`](#method-implodestringstr)
+  - [`implodeString(str)`](#method-implodestringstr)
+  - [`parse(filemap, dirmap)`](#method-parsefilemap-dirmap)
+  - [`processblock(an)`](#method-processblockan)
+  - [`stringlog(data)`](#method-stringlogdata)
+  - [`transform(commentmap)`](#method-transformcommentmap)
+  - [`unindent(content)`](#method-unindentcontent)
 
 
 

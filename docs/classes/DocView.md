@@ -23,8 +23,8 @@ The view class is a **`handlebars`** template helper.
 ##### Methods
 
   - [`` **constructor**]()
-  - [`htmlTitle()`](#htmltitle)
-  - [`title()`](#title)
+  - [`htmlTitle()`](#method-htmltitle)
+  - [`title()`](#method-title)
 
 
 

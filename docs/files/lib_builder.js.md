@@ -1291,7 +1291,7 @@ YUI.add('doc-builder', function (Y) {
               });
             }
             i.methodName = i.name + '(' + i.paramsList.join(', ') + ')';
-            i.markdownLink = Y.markdownLink(i.methodName);
+            i.markdownLink = Y.markdownLink('method:' + i.methodName);
             i.methodDescription = self._parseCode(i.description);
             if (i.example && i.example.length) {
               if (i.example.forEach) {

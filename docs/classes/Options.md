@@ -21,7 +21,7 @@ Handles argument parsing
 
 ##### Methods
 
-  - [`Options(args)`](#optionsargs)
+  - [`Options(args)`](#method-optionsargs)
 
 
 

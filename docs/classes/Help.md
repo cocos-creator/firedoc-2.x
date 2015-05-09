@@ -25,8 +25,8 @@ Shows the help text
 
 ##### Methods
 
-  - [`renderHelp()`](#renderhelp)
-  - [`showHelp()`](#showhelp)
+  - [`renderHelp()`](#method-renderhelp)
+  - [`showHelp()`](#method-showhelp)
 
 
 

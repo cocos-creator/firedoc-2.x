@@ -21,20 +21,20 @@ Utilities Class
 
 ##### Methods
 
-  - [`escapeHTML(html)`](#escapehtmlhtml)
-  - [`fixType(t)`](#fixtypet)
-  - [`getDirs(dir)`](#getdirsdir)
-  - [`getLayouts(dir)`](#getlayoutsdir)
-  - [`getPage(pagePath)`](#getpagepagepath)
-  - [`getPages(dir)`](#getpagesdir)
-  - [`getPartials(dir)`](#getpartialsdir)
-  - [`getProjectData([dir=process.cwd()])`](#getprojectdatadirprocess.cwd)
-  - [`localize(str)`](#localizestr)
-  - [`markdownLink(str)`](#markdownlinkstr)
-  - [`prepare(inDir, options, callback)`](#prepareindir-options-callback)
-  - [`unindent(content)`](#unindentcontent)
-  - [`validatePaths(paths, [ignore=false])`](#validatepathspaths-ignorefalse)
-  - [`webpath(url)`](#webpathurl)
+  - [`escapeHTML(html)`](#method-escapehtmlhtml)
+  - [`fixType(t)`](#method-fixtypet)
+  - [`getDirs(dir)`](#method-getdirsdir)
+  - [`getLayouts(dir)`](#method-getlayoutsdir)
+  - [`getPage(pagePath)`](#method-getpagepagepath)
+  - [`getPages(dir)`](#method-getpagesdir)
+  - [`getPartials(dir)`](#method-getpartialsdir)
+  - [`getProjectData([dir=process.cwd()])`](#method-getprojectdatadirprocess.cwd)
+  - [`localize(str)`](#method-localizestr)
+  - [`markdownLink(str)`](#method-markdownlinkstr)
+  - [`prepare(inDir, options, callback)`](#method-prepareindir-options-callback)
+  - [`unindent(content)`](#method-unindentcontent)
+  - [`validatePaths(paths, [ignore=false])`](#method-validatepathspaths-ignorefalse)
+  - [`webpath(url)`](#method-webpathurl)
 
 
 

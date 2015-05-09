@@ -25,14 +25,14 @@ Provides the `--server` server option for YUIDoc
 
 ##### Methods
 
-  - [`clazz(req, res)`](#clazzreq-res)
-  - [`files(req, res)`](#filesreq-res)
-  - [`home(req, res)`](#homereq-res)
-  - [`init()`](#init)
-  - [`modules(req, res)`](#modulesreq-res)
-  - [`parse(req, res, next)`](#parsereq-res-next)
-  - [`routes()`](#routes)
-  - [`start(options)`](#startoptions)
+  - [`clazz(req, res)`](#method-clazzreq-res)
+  - [`files(req, res)`](#method-filesreq-res)
+  - [`home(req, res)`](#method-homereq-res)
+  - [`init()`](#method-init)
+  - [`modules(req, res)`](#method-modulesreq-res)
+  - [`parse(req, res, next)`](#method-parsereq-res-next)
+  - [`routes()`](#method-routes)
+  - [`start(options)`](#method-startoptions)
 
 
 
