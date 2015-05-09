@@ -59,7 +59,7 @@
 ##### Methods
 
 {{#inheritedItems.methods}}
-- [`{{name}}`](#{{markdownLink}})
+- [`{{methodName}}`](#{{markdownLink}})
 {{/inheritedItems.methods}}
 
 ##### Events
