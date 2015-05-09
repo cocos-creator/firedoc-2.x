@@ -1,5 +1,5 @@
 
-# firedoc 0.8.18
+# firedoc 0.8.19
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -541,6 +541,22 @@ YUI.add('utils', function (Y) {
   }
 
   Y.localize = localize;
+
+  /**
+   * convert string to markdown link
+   *
+   * @method markdownLink
+   * @param str {String} the original string that you want to input
+   * @return {String} marked string from the param `str`
+   */
+  function markdownLink(str) {
+    return str.replace(/\:/g, '-')
+      .replace(/\(\)/g, '')
+      .toLowerCase();
+  }
+
+  Y.markdownLink = markdownLink;
+
 });
 
 ```

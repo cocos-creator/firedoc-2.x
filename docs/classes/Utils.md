@@ -1,5 +1,5 @@
 
-# firedoc 0.8.18
+# firedoc 0.8.19
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -30,6 +30,7 @@ Utilities Class
   - `getPartials`
   - `getProjectData`
   - `localize`
+  - `markdownLink`
   - `prepare`
   - `unindent`
   - `validatePaths`
@@ -162,6 +163,19 @@ Localize the string via current Y.options
 | meta | description |
 |------|-------------|
 | Defined | `lib/utils.js:492` |
+| Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
+
+###### Parameters
+- str <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> the original string that you want to input
+
+
+##### method: `markdownLink()`
+
+convert string to markdown link
+
+| meta | description |
+|------|-------------|
+| Defined | `lib/utils.js:536` |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 ###### Parameters

@@ -1,5 +1,5 @@
 
-# firedoc 0.8.18
+# firedoc 0.8.19
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -27,20 +27,20 @@ YUIDoc main class
 
 ##### Properties
 
-  - `dirmap`
-  - `endtime`
-  - `filecount`
-  - `filemap`
-  - `OPTIONS`
-  - `options`
-  - `selleck`
-  - `starttime`
+  - [`dirmap`](property-dirmap)
+  - [`endtime`](property-endtime)
+  - [`filecount`](property-filecount)
+  - [`filemap`](property-filemap)
+  - [`OPTIONS`](property-options)
+  - [`options`](property-options)
+  - [`selleck`](property-selleck)
+  - [`starttime`](property-starttime)
 
 
 
 ##### Methods
 
-  - `YUIDoc` **constructor**
+  - [`YUIDoc` **constructor**]()
   - `_processConfig`
   - `_setDefaultExcludes`
   - `parsedir`

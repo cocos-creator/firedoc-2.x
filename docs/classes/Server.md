@@ -1,5 +1,5 @@
 
-# firedoc 0.8.18
+# firedoc 0.8.19
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -19,7 +19,7 @@ Provides the `--server` server option for YUIDoc
 
 ##### Properties
 
-  - `_externalData`
+  - [`_externalData`](property-_externaldata)
 
 
 

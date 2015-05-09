@@ -1,5 +1,5 @@
 
-# firedoc 0.8.18
+# firedoc 0.8.19
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -19,7 +19,7 @@ Shows the help text
 
 ##### Properties
 
-  - `help`
+  - [`help`](property-help)
 
 
 

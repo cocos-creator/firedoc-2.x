@@ -1,5 +1,5 @@
 
-# firedoc 0.8.18
+# firedoc 0.8.19
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -1261,6 +1261,11 @@ YUI.add('doc-builder', function (Y) {
         }
 
         classItems.map(function (i) {
+          // in markdown mode, we need to set a `markdownLink`
+          if (Y.options.useMarkdown) {
+            i.markdownLink = Y.markdownLink(i.itemtype + ':' + i.name);
+          }
+          // let the extended class items to `inheritedItems`
           if (i && i.extended_from) {
             var plural = classitemPlurals[i.itemtype];
             if (plural) {

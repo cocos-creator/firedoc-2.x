@@ -1,5 +1,5 @@
 
-# firedoc 0.8.18
+# firedoc 0.8.19
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -22,29 +22,29 @@ with the parsers data (aggregated in the `'data'` property).
 
 ##### Properties
 
-  - `CORRECTIONS`
-  - `DIGESTERS`
-  - `IGNORE_TAGLIST`
-  - `TAGLIST`
+  - [`CORRECTIONS`](property-corrections)
+  - [`DIGESTERS`](property-digesters)
+  - [`IGNORE_TAGLIST`](property-ignore_taglist)
+  - [`TAGLIST`](property-taglist)
 
 
 ##### Attributes
 
-  - `currentclass`
-  - `currentfile`
-  - `currentmodule`
-  - `currentsubmodule`
-  - `digesters`
-  - `dirmap`
-  - `emitters`
-  - `filemap`
-  - `mainmodule`
-  - `syntaxtype`
+  - [`currentclass`](attribute-currentclass)
+  - [`currentfile`](attribute-currentfile)
+  - [`currentmodule`](attribute-currentmodule)
+  - [`currentsubmodule`](attribute-currentsubmodule)
+  - [`digesters`](attribute-digesters)
+  - [`dirmap`](attribute-dirmap)
+  - [`emitters`](attribute-emitters)
+  - [`filemap`](attribute-filemap)
+  - [`mainmodule`](attribute-mainmodule)
+  - [`syntaxtype`](attribute-syntaxtype)
 
 
 ##### Methods
 
-  - `DocParser` **constructor**
+  - [`DocParser` **constructor**]()
   - `_resolveFor`
   - `extract`
   - `handlecomment`
