@@ -53,7 +53,7 @@ Copy the theme assets directory
 
 | meta | description |
 |------|-------------|
-| Defined | `lib/files.js:360` |
+| Defined | [lib/files.js:360](../files/lib_files.js.html#l360) |
 
 ###### Parameters
 - from Path The source directory
@@ -68,7 +68,7 @@ Copy a directory from one location to another
 
 | meta | description |
 |------|-------------|
-| Defined | `lib/files.js:37` |
+| Defined | [lib/files.js:37](../files/lib_files.js.html#l37) |
 
 ###### Parameters
 - source Path The source directory
@@ -84,7 +84,7 @@ Copy a file from one location to another
 
 | meta | description |
 |------|-------------|
-| Defined | `lib/files.js:125` |
+| Defined | [lib/files.js:125](../files/lib_files.js.html#l125) |
 
 ###### Parameters
 - source Path The source file
@@ -110,7 +110,7 @@ Known issues:
 
 | meta | description |
 |------|-------------|
-| Defined | `lib/files.js:178` |
+| Defined | [lib/files.js:178](../files/lib_files.js.html#l178) |
 
 ###### Parameters
 - source <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> Source path.
@@ -130,7 +130,7 @@ This method is synchronous.
 
 | meta | description |
 |------|-------------|
-| Defined | `lib/files.js:224` |
+| Defined | [lib/files.js:224](../files/lib_files.js.html#l224) |
 
 ###### Parameters
 - path <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> File or directory to delete.
@@ -142,7 +142,7 @@ Helper method for getting JSON data from a local file
 
 | meta | description |
 |------|-------------|
-| Defined | `lib/files.js:407` |
+| Defined | [lib/files.js:407](../files/lib_files.js.html#l407) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 ###### Parameters
@@ -155,7 +155,7 @@ Check to see if this is a directory
 
 | meta | description |
 |------|-------------|
-| Defined | `lib/files.js:248` |
+| Defined | [lib/files.js:248](../files/lib_files.js.html#l248) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> 
 
 ###### Parameters
@@ -169,7 +169,7 @@ Check to see if this is a File
 
 | meta | description |
 |------|-------------|
-| Defined | `lib/files.js:278` |
+| Defined | [lib/files.js:278](../files/lib_files.js.html#l278) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> 
 
 ###### Parameters
@@ -183,7 +183,7 @@ Check to see if this is a SymLink
 
 | meta | description |
 |------|-------------|
-| Defined | `lib/files.js:305` |
+| Defined | [lib/files.js:305](../files/lib_files.js.html#l305) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> 
 
 ###### Parameters
@@ -197,7 +197,7 @@ doesn't exist. Will still throw on other types of errors.
 
 | meta | description |
 |------|-------------|
-| Defined | `lib/files.js:319` |
+| Defined | [lib/files.js:319](../files/lib_files.js.html#l319) |
 | Return 		 | fs.Stats | Null 
 
 ###### Parameters
@@ -211,7 +211,7 @@ doesn't exist. Will still throw on other types of errors.
 
 | meta | description |
 |------|-------------|
-| Defined | `lib/files.js:340` |
+| Defined | [lib/files.js:340](../files/lib_files.js.html#l340) |
 | Return 		 | fs.Stats | Null 
 
 ###### Parameters
@@ -224,7 +224,7 @@ Helper method for writing files to disk. It wraps the NodeJS file API
 
 | meta | description |
 |------|-------------|
-| Defined | `lib/files.js:422` |
+| Defined | [lib/files.js:422](../files/lib_files.js.html#l422) |
 
 ###### Parameters
 - file Path The filename to write to

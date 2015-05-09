@@ -46,7 +46,7 @@ The view class is a **`handlebars`** template helper.
 
 | meta | description |
 |------|-------------|
-| Defined | `lib/docview.js:15` |
+| Defined | [lib/docview.js:15](../files/lib_docview.js.html#l15) |
 
 ###### Parameters
 - data <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> Meta data to use in this template
@@ -59,7 +59,7 @@ The view class is a **`handlebars`** template helper.
 
 | meta | description |
 |------|-------------|
-| Defined | `lib/docview.js:29` |
+| Defined | [lib/docview.js:29](../files/lib_docview.js.html#l29) |
 
 
 
@@ -69,7 +69,7 @@ The view class is a **`handlebars`** template helper.
 
 | meta | description |
 |------|-------------|
-| Defined | `lib/docview.js:47` |
+| Defined | [lib/docview.js:47](../files/lib_docview.js.html#l47) |
 
 
 

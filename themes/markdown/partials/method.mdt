@@ -12,7 +12,7 @@
 | Extends | `{{extended_from}}` |
   {{/if}}
 {{/if}}
-| Defined | `{{{file}}}:{{{line}}}` |
+| Defined | [{{{file}}}:{{{line}}}]({{foundAt}}) |
 {{#if deprecationMessage}}
 | Deprecated | {{deprecationMessage}} |
 {{/if}}

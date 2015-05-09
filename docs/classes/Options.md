@@ -42,7 +42,7 @@ Parses arguments and returns an Object of config options
 
 | meta | description |
 |------|-------------|
-| Defined | `lib/options.js:20` |
+| Defined | [lib/options.js:20](../files/lib_options.js.html#l20) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 ###### Parameters
