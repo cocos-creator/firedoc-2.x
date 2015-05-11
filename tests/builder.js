@@ -32,6 +32,7 @@ var suite = new YUITest.TestSuite({
             helpers: [
                 path.join(__dirname, 'lib/davglass.js')
             ],
+            themedir: path.join(__dirname, '../themes/default'),
             markdown: {
                 langPrefix: "language-"
             }

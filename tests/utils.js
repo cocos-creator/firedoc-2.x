@@ -92,4 +92,26 @@ suite.add(new YUITest.TestCase({
     }
 }));
 
+suite.add(new YUITest.TestCase({
+    name: 'localize functionality',
+    'test: original text': function() {
+        var text = Y.localize('foobar');
+        Assert.areEqual(text, 'foobar', 'should equal to the original');
+    },
+    'test: default text': function() {
+        var text = Y.localize('!#en foobar');
+        Assert.areEqual(text, 'foobar', 'should equal to the foobar');
+    },
+    'test: flag --zh': function() {
+        var defaultZH = Y.options.zh;
+        var text;
+        Y.options.zh = true;
+        text = Y.localize('!#zh 中文注释');
+        Assert.areEqual(text, '中文注释');
+        text = Y.localize('!#en foobar');
+        Assert.areEqual(text, '');
+        Y.options.zh = defaultZH;
+    }
+}));
+
 YUITest.TestRunner.add(suite);
