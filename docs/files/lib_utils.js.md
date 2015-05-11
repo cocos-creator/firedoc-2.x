@@ -1,5 +1,5 @@
 
-# firedoc 0.8.26
+# firedoc 0.8.27
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -524,7 +524,7 @@ YUI.add('utils', function (Y) {
         };
       }
     }).filter(function(block) {
-      if (!block) {
+      if (!block || !block.raw) {
         return false;
       }
       if (block.all) {
@@ -536,7 +536,7 @@ YUI.add('utils', function (Y) {
         return block.lang === 'en';
       }
     }).map(function(block) {
-      return block.raw;
+      return block.raw.trim();
     }).join('\n');
   }
 

@@ -1,5 +1,5 @@
 
-# firedoc 0.8.26
+# firedoc 0.8.27
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -17,20 +17,19 @@ var fs = require('graceful-fs'),
   path = require('path');
 
 /**
-This is the __module__ description for the `YUIDoc` module.
-
-    var options = {
-        paths: [ './lib' ],
-        outdir: './out'
-    };
-
-    var Y = require('yuidocjs');
-    var json = (new Y.YUIDoc(options)).run();
-
-@class YUIDoc
-@main yuidoc
-*/
-
+ * This is the __module__ description for the `YUIDoc` module.
+ * ```
+ * var options = {
+ *   paths: [ './lib' ],
+ *   outdir: './out'
+ * };
+ * var Y = require('yuidocjs');
+ * var json = (new Y.YUIDoc(options)).run();
+ * ```
+ *
+ * @module yuidoc
+ * @main yuidoc
+ */
 
 YUI.add('yuidoc', function (Y) {
 

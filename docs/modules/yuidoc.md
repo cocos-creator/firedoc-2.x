@@ -1,5 +1,5 @@
 
-# firedoc 0.8.26
+# firedoc 0.8.27
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -13,14 +13,14 @@ Defined in [lib/yuidoc.js:10](../files/lib_yuidoc.js.md#l10)
 
 
 This is the __module__ description for the `YUIDoc` module.
-
-    var options = {
-        paths: [ './lib' ],
-        outdir: './out'
-    };
-
-    var Y = require('yuidocjs');
-    var json = (new Y.YUIDoc(options)).run();
+```
+var options = {
+  paths: [ './lib' ],
+  outdir: './out'
+};
+var Y = require('yuidocjs');
+var json = (new Y.YUIDoc(options)).run();
+```
 
 
 ### Classes
