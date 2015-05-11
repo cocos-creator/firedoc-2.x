@@ -2,7 +2,7 @@
     "project": {
         "name": "firedoc",
         "description": "Fire Doc, Fireball-x's JavaScript Documentation engine forked from YUI.",
-        "version": "0.8.25"
+        "version": "0.8.26"
     },
     "files": {
         "lib/builder.js": {
@@ -189,7 +189,7 @@
             "namespace": "",
             "is_enum": false,
             "file": "lib/docparser.js",
-            "line": 828,
+            "line": 829,
             "description": "The doc parser accepts a **map** of files to file content.\nOnce `parse()` is called, various properties will be populated\nwith the parsers data (aggregated in the `'data'` property).",
             "extends": "Base",
             "is_constructor": 1,
@@ -1289,7 +1289,7 @@
         },
         {
             "file": "lib/docparser.js",
-            "line": 856,
+            "line": 857,
             "description": "Digesters process the tag/text pairs found in a\ncomment block.  They are looked up by tag name.\nThe digester gets the tagname, the value, the\ntarget object to apply values to, and the full\nblock that is being processed.  Digesters can\nbe declared as strings instead of a function --\nin that case, the program will try to look up\nthe key listed and use the function there instead\n(it is an alias).  Digesters can return a host\nobject in the case the tag defines a new key\nblock type (modules/classes/methods/events/properties)",
             "itemtype": "attribute",
             "name": "digesters",
@@ -1299,7 +1299,7 @@
         },
         {
             "file": "lib/docparser.js",
-            "line": 878,
+            "line": 879,
             "description": "Emitters will be schemas for the types of payloads\nthe parser will emit.  Not implemented.",
             "itemtype": "attribute",
             "name": "emitters",
@@ -1309,7 +1309,7 @@
         },
         {
             "file": "lib/docparser.js",
-            "line": 889,
+            "line": 890,
             "description": "Comment syntax type.",
             "itemtype": "attribute",
             "name": "syntaxtype",
@@ -1320,7 +1320,7 @@
         },
         {
             "file": "lib/docparser.js",
-            "line": 898,
+            "line": 899,
             "description": "The map of file names to file content.",
             "itemtype": "attribute",
             "name": "filemap",
@@ -1330,7 +1330,7 @@
         },
         {
             "file": "lib/docparser.js",
-            "line": 906,
+            "line": 907,
             "description": "A map of file names to directory name.  Provided in\ncase this needs to be used to reset the module name\nappropriately -- currently not used",
             "itemtype": "attribute",
             "name": "dirmap",
@@ -1340,7 +1340,7 @@
         },
         {
             "file": "lib/docparser.js",
-            "line": 916,
+            "line": 917,
             "description": "The file currently being parsed",
             "itemtype": "attribute",
             "name": "currentfile",
@@ -1351,7 +1351,7 @@
         },
         {
             "file": "lib/docparser.js",
-            "line": 937,
+            "line": 938,
             "description": "The main documentation block for the module itself.",
             "itemtype": "attribute",
             "name": "mainmodule",
@@ -1362,7 +1362,7 @@
         },
         {
             "file": "lib/docparser.js",
-            "line": 973,
+            "line": 974,
             "description": "The module currently being parsed",
             "itemtype": "attribute",
             "name": "currentmodule",
@@ -1373,7 +1373,7 @@
         },
         {
             "file": "lib/docparser.js",
-            "line": 1032,
+            "line": 1033,
             "description": "The submodule currently being parsed",
             "itemtype": "attribute",
             "name": "currentsubmodule",
@@ -1384,7 +1384,7 @@
         },
         {
             "file": "lib/docparser.js",
-            "line": 1068,
+            "line": 1069,
             "description": "The class currently being parsed",
             "itemtype": "attribute",
             "name": "currentclass",
@@ -1395,7 +1395,7 @@
         },
         {
             "file": "lib/docparser.js",
-            "line": 1107,
+            "line": 1108,
             "description": "Takes a non-namespaced classname and resolves it to a namespace (to support `@for`)",
             "access": "private",
             "tagname": "",
@@ -1418,7 +1418,7 @@
         },
         {
             "file": "lib/docparser.js",
-            "line": 1178,
+            "line": 1179,
             "description": "Normalizes the initial indentation of the given _content_ so that the first line\nis unindented, and all other lines are unindented to the same degree as the\nfirst line. So if the first line has four spaces at the beginning, then all\nlines will be unindented four spaces. Ported from [Selleck](https://github.com/rgrove/selleck)",
             "itemtype": "method",
             "name": "unindent",
@@ -1441,7 +1441,7 @@
         },
         {
             "file": "lib/docparser.js",
-            "line": 1199,
+            "line": 1200,
             "description": "Transforms a JavaDoc style comment block (less the start and end of it)\ninto a list of tag/text pairs. The leading space and '*' are removed,\nbut the remaining whitespace is preserved so that the output should be\nfriendly for both markdown and html parsers.",
             "itemtype": "method",
             "name": "handlecomment",
@@ -1468,7 +1468,7 @@
         },
         {
             "file": "lib/docparser.js",
-            "line": 1277,
+            "line": 1278,
             "description": "Accepts a map of filenames to file content.  Returns\na map of filenames to an array of API comment block\ntext.  This expects the comment to start with / **\non its own line, and end with * / on its own\nline.  Override this function to provide an\nalternative comment parser.",
             "itemtype": "method",
             "name": "extract",
@@ -1494,7 +1494,7 @@
         },
         {
             "file": "lib/docparser.js",
-            "line": 1333,
+            "line": 1334,
             "description": "Processes all the tags in a single comment block",
             "itemtype": "method",
             "name": "processblock",
@@ -1511,7 +1511,7 @@
         },
         {
             "file": "lib/docparser.js",
-            "line": 1407,
+            "line": 1408,
             "description": "Transforms a map of filenames to arrays of comment blocks into a\nJSON structure that represents the entire processed API doc info\nand relationships between elements for the entire project.",
             "itemtype": "method",
             "name": "transform",
@@ -1532,7 +1532,7 @@
         },
         {
             "file": "lib/docparser.js",
-            "line": 1523,
+            "line": 1524,
             "description": "Extracts and transforms the filemap provided to constructor",
             "itemtype": "method",
             "name": "parse",
