@@ -182,9 +182,12 @@
                 <div class="returns-description">
                     {{#if description}}
                         {{#if type}}
-                            <span class="type">{{#crossLink type}}{{/crossLink}}</span>:
+                            <span>类型：</span>
+                            <span class="type">{{#crossLink type}}{{/crossLink}}</span>
                         {{/if}}
-                        {{{description}}}
+                        <p>
+                            {{{description}}}
+                        </p>
                     {{else}}
                         {{#if type}}
                             <span class="type">{{#crossLink type}}{{/crossLink}}</span>:
