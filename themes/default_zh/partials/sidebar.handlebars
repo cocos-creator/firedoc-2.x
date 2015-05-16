@@ -11,19 +11,11 @@
         </div>
 
         <div id="api-tabview-panel">
-            <ul id="api-enums" class="apis enums">
-            {{#enums}}
-                <li>
-                    <a href="{{../projectRoot}}enums/{{name}}.html">{{displayName}}</a>
-                    <a href="{{../projectRoot}}modules/{{module}}.html" class="api-list-item-module">@{{module}}</a>
-                </li>
-            {{/enums}}
-            </ul>
 
             <ul id="api-classes" class="apis classes">
             {{#classes}}
                 <li>
-                    <a class="type" href="{{../projectRoot}}classes/{{name}}.html">{{displayName}}</a>
+                    <a class="class" href="{{../projectRoot}}classes/{{name}}.html">{{displayName}}</a>
                     <a href="{{../projectRoot}}modules/{{module}}.html" class="api-list-item-module">@{{module}}</a>
                 </li>
             {{/classes}}
@@ -33,6 +25,15 @@
             {{#allModules}}
                 <li><a class="module" href="{{../projectRoot}}modules/{{name}}.html">{{displayName}}</a></li>
             {{/allModules}}
+            </ul>
+
+            <ul id="api-enums" class="apis enums">
+            {{#enums}}
+                <li>
+                    <a href="{{../projectRoot}}enums/{{name}}.html">{{displayName}}</a>
+                    <a href="{{../projectRoot}}modules/{{module}}.html" class="api-list-item-module">@{{module}}</a>
+                </li>
+            {{/enums}}
             </ul>
         </div>
     </div>
