@@ -1,6 +1,6 @@
 {
   "name": "firedoc",
-  "version": "0.8.30",
+  "version": "0.8.31",
   "description": "Fire Doc, Fireball-x's JavaScript Documentation engine forked from YUI.",
   "author": "Dav Glass <davglass@gmail.com>",
   "bugs": {
@@ -54,6 +54,9 @@
     {
       "name": "Yorkie Liu",
       "email": "yorkiefixer@gmail.com"
+    },
+    { "name": "Nan Wang",
+      "email": "nantas@gmail.com"
     }
   ],
   "engines": {
