@@ -180,19 +180,15 @@
                 <h4>返回值:</h4>
 
                 <div class="returns-description">
-                    {{#if description}}
-                        {{#if type}}
-                            <span>类型：</span>
-                            <span class="type">{{#crossLink type}}{{/crossLink}}</span>
-                        {{/if}}
-                        <p>
-                            {{{description}}}
-                        </p>
-                    {{else}}
-                        {{#if type}}
-                            <span class="type">{{#crossLink type}}{{/crossLink}}</span>:
-                        {{/if}}
-                    {{/if}}
+                  {{#if type}}
+                    <span>类型：</span>
+                    <span class="type">{{#crossLink type}}{{/crossLink}}</span>
+                  {{/if}}
+                  {{#if description}}
+                    <p>
+                        {{{description}}}
+                    </p>
+                  {{/if}}
                 </div>
             </div>
         {{/return}}
