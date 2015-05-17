@@ -1,5 +1,5 @@
 
-# firedoc 0.8.30
+# firedoc 0.8.32
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -198,7 +198,7 @@ doesn't exist. Will still throw on other types of errors.
 | meta | description |
 |------|-------------|
 | Defined | [lib/files.js:319](../files/lib_files.js.md#l319) |
-| Return 		 | fs.Stats | Null 
+| Return 		 | fs.Stats | null 
 
 ###### Parameters
 - path <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> Path to stat.
@@ -212,7 +212,7 @@ doesn't exist. Will still throw on other types of errors.
 | meta | description |
 |------|-------------|
 | Defined | [lib/files.js:340](../files/lib_files.js.md#l340) |
-| Return 		 | fs.Stats | Null 
+| Return 		 | fs.Stats | null 
 
 ###### Parameters
 - path <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> Path to stat.

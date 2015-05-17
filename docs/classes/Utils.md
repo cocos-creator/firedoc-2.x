@@ -1,5 +1,5 @@
 
-# firedoc 0.8.30
+# firedoc 0.8.32
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -109,7 +109,7 @@ Loads and returns the content of the specified page file.
 | meta | description |
 |------|-------------|
 | Defined | [lib/utils.js:76](../files/lib_utils.js.md#l76) |
-| Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> | Null 
+| Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> | null 
 
 ###### Parameters
 - pagePath <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> Path to a single `.handlebars` page.

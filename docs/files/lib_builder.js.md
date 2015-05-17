@@ -1,5 +1,5 @@
 
-# firedoc 0.8.30
+# firedoc 0.8.32
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -187,7 +187,9 @@ YUI.add('doc-builder', function (Y) {
         newWin = false,
         className = 'crosslink';
 
-      item = fixType(item);
+      // TODO(@yorkie): now remove the unnecessary fixType
+      // will remove this absolutely if this is working for weeks
+      // item = fixType(item);
       item = baseItem = Y.Lang.trim(item.replace('{', '').replace('}', ''));
       //Remove Cruft
       item = item.replace('*', '').replace('[', '').replace(']', '');
@@ -1276,6 +1278,7 @@ YUI.add('doc-builder', function (Y) {
         }
 
         classItems.map(function (i) {
+
           // in markdown mode, we need to set a `markdownLink`
           if (Y.options.useMarkdown) {
             i.markdownLink = Y.markdownLink(i.itemtype + ':' + i.name);
@@ -1443,40 +1446,40 @@ YUI.add('doc-builder', function (Y) {
 
               opts.meta.events.push(i);
               break;
-            }
-          });
+          }
+        });
           
-          // build the classes tree
-          var children = [];
-          self.data.classinherits.forEach(function (inherit) {
-            var at = inherit.indexOf(opts.meta.name);
-            if (at > -1 && at < inherit.length) {
-              var curr = children;
-              for (var i = at + 1; i < inherit.length; i++) {
-                var name = inherit[i];
-                var temp = {'name': name, 'children': []};
-                var needNewChild = true;
-                var pos;
+        // build the classes tree
+        var children = [];
+        self.data.classinherits.forEach(function (inherit) {
+          var at = inherit.indexOf(opts.meta.name);
+          if (at > -1 && at < inherit.length) {
+            var curr = children;
+            for (var i = at + 1; i < inherit.length; i++) {
+              var name = inherit[i];
+              var temp = {'name': name, 'children': []};
+              var needNewChild = true;
+              var pos;
 
-                for (pos = 0; pos < curr.length; pos++) {
-                  if (curr[pos].name === name) {
-                    needNewChild = false;
-                    curr = curr[pos].children;
-                    break;
-                  }
+              for (pos = 0; pos < curr.length; pos++) {
+                if (curr[pos].name === name) {
+                  needNewChild = false;
+                  curr = curr[pos].children;
+                  break;
                 }
-                if (needNewChild) {
-                  if (inherit.length - 1 === i) {
-                    delete temp.children;
-                  }
-                  curr.push(temp);
-                  if (temp.children) {
-                    curr = curr[curr.length - 1].children;
-                  }
+              }
+              if (needNewChild) {
+                if (inherit.length - 1 === i) {
+                  delete temp.children;
+                }
+                curr.push(temp);
+                if (temp.children) {
+                  curr = curr[curr.length - 1].children;
                 }
               }
             }
-          });
+          }
+        });
         if (Object.keys(children).length > 0) {
           opts.meta.children = children;
         }

@@ -462,6 +462,10 @@ td {
     padding: 0;
 }
 
+.params-list .params-list {
+    margin: 0 0 0 2em;
+}
+
 .params-list,
 .returns-description {
     margin: 0 0 0 .7em;
@@ -476,12 +480,12 @@ td {
 }
 
 .params-list .param-description {
-    margin: 0;
+    margin: 0 0 2em 0;
 }
 
 .params-list .param-description p,
 .returns-description p {
-    margin: .5em 0 1.5em 1.5em;
+    margin: .5em 0 1.5em 0em;
 }
 
 .param .type {
@@ -697,4 +701,3 @@ ul.index-list {
     border-bottom-color: #fafafa;
     bottom: -1px;
 }
-
