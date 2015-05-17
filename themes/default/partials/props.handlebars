@@ -59,9 +59,7 @@
     </div>
 
     <div class="extended-detail">
-        <div class="description">
-            {{{propertyDescription}}}
-        </div>
+        <div class="description">{{{propertyDescription}}}</div>
 
         {{#if default}}
             <p class="default"><strong>Default:</strong> <span class="default-value">{{default}}</span></p>
@@ -70,7 +68,6 @@
         {{#example}}
             <div class="example">
                 <h4>Example:</h4>
-
                 <div class="example-content">
                     {{{.}}}
                 </div>
@@ -92,9 +89,7 @@
                         <span class="type">{{#crossLink type}}{{/crossLink}}</span>
                     {{/if}}
 
-                    <div class="param-description">
-                        {{{description}}}
-                    </div>
+                    <div class="param-description">{{{description}}}</div>
 
                     {{#if subprops}}
                         <ul class="params-list">
@@ -108,10 +103,7 @@
                                     <code class="param-name">{{name}}</code>
                                     <span class="type">{{#crossLink type}}{{/crossLink}}</span>
                                 {{/if}}
-
-                                <div class="param-description">
-                                    {{{description}}}
-                                </div>
+                                <div class="param-description">{{{description}}}</div>
                             </li>
                             {{/subprops}}
                         </ul>
