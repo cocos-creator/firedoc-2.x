@@ -107,3 +107,33 @@ var NumberableBool = {
 ```
 
 You can write all `@property` in the same comment block as the enum declaration.
+
+## Example Link to File
+
+Use `@example` with `@link` to display code in a file as example.
+
+```js
+/**
+* @method example
+* @example {@link path/to/example.js }
+*/
+```
+
+The path `path/to/example.js` is based at your execution path (or cwd). 
+
+## Detailed Properties of Object Parameter
+
+If you want to detail the properties of a object parameter for a method, use the following pattern:
+
+```js
+/**
+ * @method star
+ * @param {String} command The command to run
+ * @param {Array} args List of string arguments
+ * @param {Object} options
+ * @param {String} options.cwd
+ * @param {Object} options.env
+ * @param {Array|String} options.stdio
+ * @param {Array} options.customFds
+ */
+```
