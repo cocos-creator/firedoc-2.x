@@ -1,7 +1,7 @@
 FireDoc
 ======
 
-API Doc generator based on [YUIDoc](https://github.com/yui/yuidoc).
+API Doc generator based on [YUIDoc](https://github.com/yui/yuidoc). We use this tool to document a large JavaScript game engine [Fireball](http://github.com/fireball-x/fireball).
 
 [![NPM](https://nodei.co/npm/firedoc.png?stars&downloads)](https://nodei.co/npm/firedoc/)
 [![NPM](https://nodei.co/npm-dl/firedoc.png)](https://nodei.co/npm/firedoc/)
@@ -14,7 +14,7 @@ Overview
 
 FireDoc is forked from YUIDoc and mainly supported the following features:
 
-- methods of module
+- direct members of module
 - file-based `@example`
 - single-line `@property`
 - added new tag `@enum`
