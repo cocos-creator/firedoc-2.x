@@ -7,6 +7,16 @@ Firedoc is based on YUIDoc so it only process comments, not actual code.
 
 Firedoc has the following enhanced features:
 
+## Contents
+
+- [Members for Module](#members-for-module)
+- [Callback Function](#callback-function)
+- [Multi-language Description](#multi-language-description)
+- [Single-line Property/Parameter Declaration](#single-line-propertyparameter-declaration)
+- [Enum](#enum)
+- [Example Link to File](#example-link-to-file)
+- [Detailed Properties of Object Parameter](#detailed-properties-of-object-parameter)
+
 ## Members for Module
 
 In both JSDoc and YUIDoc, properties and methods can only exists under `@class`. Firedoc supports direct member of modules. 
