@@ -3,11 +3,9 @@
 Firedoc is compatible with all YUIDoc tags (http://yui.github.io/yuidoc/syntax/). 
 If you find some tags not working with Firedoc feel free to [submit an issue](https://github.com/fireball-x/firedoc/issues).
 
-Firedoc is based on YUIDoc so it only process comments, not actual code.
+> Firedoc is based on YUIDoc so it only process comments, not actual code.
 
 Firedoc has the following enhanced features:
-
-## Contents
 
 - [Members for Module](#members-for-module)
 - [Callback Function](#callback-function)
