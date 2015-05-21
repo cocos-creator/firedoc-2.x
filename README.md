@@ -12,25 +12,17 @@ API Doc generator based on [YUIDoc](https://github.com/yui/yuidoc). We use this 
 Overview
 --------
 
-FireDoc is forked from YUIDoc and mainly supported the following features:
+FireDoc is forked from YUIDoc and added some powerful enhanced features at [Syntax Guide](GUIDE.md)
 
-- direct members of module
-- file-based `@example`
-- single-line `@property`
-- added new tag `@enum`
-- added new tag `@callback`
-- added "Inherited tree"
-- markdown-based template
+> YUIDoc is a [Node.js](http://nodejs.org/) application used at build time to
+> generate API documentation for JavaScript code. YUIDoc is comment-driven and supports a wide
+> range of JavaScript coding styles. The output of YUIDoc is API documentation formatted as a
+> set of HTML pages including information about methods, properties, custom events and
+> inheritance for JavaScript objects.
 
-YUIDoc is a [Node.js](http://nodejs.org/) application used at build time to
-generate API documentation for JavaScript code. YUIDoc is comment-driven and supports a wide
-range of JavaScript coding styles. The output of YUIDoc is API documentation formatted as a
-set of HTML pages including information about methods, properties, custom events and
-inheritance for JavaScript objects.
-
-YUIDoc was originally written for the YUI Project; it uses YUI JavaScript and CSS in the
-generated files and it supports common YUI conventions like Custom Events. That said,
-it can be used easily and productively on non-YUI code.
+> YUIDoc was originally written for the YUI Project; it uses YUI JavaScript and CSS in the
+> generated files and it supports common YUI conventions like Custom Events. That said,
+> it can be used easily and productively on non-YUI code.
 
 Installation
 ------------
