@@ -1,7 +1,7 @@
 FireDoc
 ======
 
-API Doc generator based on [YUIDoc](https://github.com/yui/yuidoc). We use this tool to document a large JavaScript game engine [Fireball](http://github.com/fireball-x/fireball) at [docs-zh.fireball-x.com/api](http://docs-zh.fireball-x.com/api/) and self-document [FireDoc] itself at:
+API Doc generator based on [YUIDoc](https://github.com/yui/yuidoc). We use this tool to document a large JavaScript game engine [Fireball](http://github.com/fireball-x/fireball) at [docs-zh.fireball-x.com/api](http://docs-zh.fireball-x.com/api/) and self-document firedoc itself at:
 
 - English: http://fireball-x.github.io/firedoc/ or http://fireball-x.github.io/firedoc/en
 - 中文: http://fireball-x.github.io/firedoc/zh
