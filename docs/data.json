@@ -2,7 +2,7 @@
     "project": {
         "name": "firedoc",
         "description": "Fire Doc, Fireball-x's JavaScript Documentation engine forked from YUI.",
-        "version": "1.0.0"
+        "version": "1.0.1"
     },
     "files": {
         "lib/builder.js": {
