@@ -60,7 +60,9 @@ Documentation
 
 * [User Guides](GUIDE.md)
 * [Change Logs](https://github.com/fireball-x/firedoc/releases)
-* [API Docs](docs)
+* [API Docs(markdown)](docs)
+* [API Docs(html)](http://fireball-x.github.io/firedoc/)
+* [中文文档](http://fireball-x.github.io/firedoc/zh/)
 
 Contributing
 ------------
