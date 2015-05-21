@@ -1,7 +1,10 @@
 FireDoc
 ======
 
-API Doc generator based on [YUIDoc](https://github.com/yui/yuidoc). We use this tool to document a large JavaScript game engine [Fireball](http://github.com/fireball-x/fireball) at [docs-zh.fireball-x.com/api/](http://docs-zh.fireball-x.com/api/)
+API Doc generator based on [YUIDoc](https://github.com/yui/yuidoc). We use this tool to document a large JavaScript game engine [Fireball](http://github.com/fireball-x/fireball) at [docs-zh.fireball-x.com/api](http://docs-zh.fireball-x.com/api/) and self-document [FireDoc] itself at:
+
+- English: http://fireball-x.github.io/firedoc/ or http://fireball-x.github.io/firedoc/en
+- 中文: http://fireball-x.github.io/firedoc/zh
 
 [![NPM](https://nodei.co/npm/firedoc.png?stars&downloads)](https://nodei.co/npm/firedoc/)
 [![NPM](https://nodei.co/npm-dl/firedoc.png)](https://nodei.co/npm/firedoc/)
@@ -12,7 +15,7 @@ API Doc generator based on [YUIDoc](https://github.com/yui/yuidoc). We use this 
 Overview
 --------
 
-FireDoc is forked from YUIDoc and added some powerful enhanced features at [Syntax Guide](GUIDE.md)
+FireDoc is forked from YUIDoc and added some powerful enhanced features at [Syntax Guide](GUIDE.md).
 
 > YUIDoc is a [Node.js](http://nodejs.org/) application used at build time to
 > generate API documentation for JavaScript code. YUIDoc is comment-driven and supports a wide
