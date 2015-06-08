@@ -1,5 +1,5 @@
 
-# firedoc 1.0.1
+# firedoc 1.1.0
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
