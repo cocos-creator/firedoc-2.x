@@ -55,7 +55,8 @@
       "name": "Yorkie Liu",
       "email": "yorkiefixer@gmail.com"
     },
-    { "name": "Nan Wang",
+    {
+      "name": "Nan Wang",
       "email": "nantas@gmail.com"
     }
   ],
@@ -73,13 +74,15 @@
   ],
   "main": "./lib/index",
   "bin": {
-    "firedoc": "./lib/cli.js"
+    "firedoc": "./lib/cli.js",
+    "firedoc-theme": "./lib/cli-theme.js"
   },
   "dependencies": {
     "express": "^4.12.3",
     "graceful-fs": "2.x",
     "markdown-it": "^4.1.0",
     "minimatch": "^2.0.1",
+    "minimist": "^1.1.1",
     "rimraf": "2.x",
     "yui": "^3.18.1"
   },
