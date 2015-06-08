@@ -88,7 +88,7 @@ Or just run:
 $ firedoc-theme uninstall firedoc-theme-notab
 ```
 
-Even you are able to clear all installed themes by the following commands:
+Even you are able to clear all installed themes by the following command:
 
 ```sh
 $ firedoc-theme clear
