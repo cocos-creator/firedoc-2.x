@@ -84,6 +84,7 @@
     "minimatch": "^2.0.1",
     "minimist": "^1.1.1",
     "rimraf": "2.x",
+    "rmdir": "^1.1.0",
     "yui": "^3.18.1"
   },
   "devDependencies": {
