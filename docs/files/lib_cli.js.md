@@ -42,12 +42,15 @@ Y.log(opts, 'info', 'yuidoc');
 if (options.server) {
   Y.Server.start(options);
 } else {
-  var json = (new Y.YUIDoc(options)).run();
-  if (json === null) {
-    process.exit(1);
-  }
-  options = Y.Project.mix(json, options);
+  runAndCompile();
+}
 
+function runAndCompile () {
+  var json = (new Y.YUIDoc(options)).run();
+  if (json === null) 
+    return process.exit(1);
+
+  options = Y.Project.mix(json, options);
   if (!options.parseOnly) {
     var builder = new Y.DocBuilder(options, json);
     builder.compile(function () {
@@ -57,5 +60,7 @@ if (options.server) {
     });
   }
 }
+
+
 
 ```
