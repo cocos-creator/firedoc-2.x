@@ -1,5 +1,5 @@
 
-# firedoc 1.1.2
+# firedoc 1.1.3
 
 Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
 
@@ -154,7 +154,13 @@ YUI.add('options', function (Y) {
       case "-T":
       case "--theme":
         var theme = args.shift();
-        options.themedir = path.join(__dirname, '../', 'themes', theme);
+        if (theme.search('/') === -1) {
+          if (!path.isAbsolute(theme)) 
+            theme = path.join(process.env.PWD, theme);
+        } else {
+          theme = path.join(__dirname, '../', 'themes', theme);
+        }
+        options.themedir = theme;
         break;
       case '--md':
       case '--markdown':
