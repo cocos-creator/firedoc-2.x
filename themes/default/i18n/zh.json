@@ -1,7 +1,17 @@
 {
   "sidebar": {
     "CLASSES": "类型",
-    "MODULES": "模组",
-    "ENUMS": "枚举"
-  }
+    "MODULES": "模块",
+    "ENUMS": "枚举",
+    "SEARCH_PLACEHOLDER": "关键字"
+  },
+  "CLASS": "类型",
+  "MODULE": "模块",
+  "ENUM": "枚举",
+  "PARENT_MODULE": "父模块",
+
+  "PROPERTIES": "属性（properties）",
+  "ATTRUBUTES": "属性（attributes）",
+  "METHODS": "方法",
+  "EVENTS": "事件"
 }

@@ -2,6 +2,16 @@
   "sidebar": {
     "CLASSES": "Classes",
     "MODULES": "Modules",
-    "ENUMS": "Enums"
-  }
+    "ENUMS": "Enums",
+    "SEARCH_PLACEHOLDER": "Type to filter APIs"
+  },
+  "CLASS": "Class",
+  "MODULE": "Module",
+  "ENUM": "Enum",
+  "PARENT_MODULE": "Parent Module",
+
+  "PROPERTIES": "Properties",
+  "ATTRUBUTES": "Attributes",
+  "METHODS": "Methods",
+  "EVENTS": "Events"
 }

@@ -1,4 +1,4 @@
-<h1>{{name}} Class</h1>
+<h1>{{name}} {{i18n.CLASS}}</h1>
 <div class="box meta">
     {{#if uses}}
         <div class="uses">
@@ -25,10 +25,10 @@
 
     {{#if module}}
         {{#if submodule}}
-            Module: {{#crossLinkModule submodule}}{{/crossLinkModule}}<br>
-            Parent Module: {{#crossLinkModule module}}{{/crossLinkModule}}
+            {{i18n.MODULE}}: {{#crossLinkModule submodule}}{{/crossLinkModule}}<br>
+            {{i18n.PARENT_MODULE}}: {{#crossLinkModule module}}{{/crossLinkModule}}
         {{else}}
-            Module: {{#crossLinkModule module}}{{/crossLinkModule}}
+            {{i18n.MODULE}}: {{#crossLinkModule module}}{{/crossLinkModule}}
         {{/if}}
     {{/if}}
 
@@ -60,7 +60,7 @@
 
 {{#if members.properties}}
     <div class="properties-detail">
-        <h2>Properties</h2>
+        <h2>{{i18n.PROPERTIES}}</h2>
         {{#members.properties}}{{>props}}{{/members.properties}}
         <div class="no-visible-items-message">
             <p>There are no properties that match your current filter settings. You can change your filter settings in the index section on this page. <a href="#index" class="index-jump-link">index</a></p>
@@ -70,7 +70,7 @@
 
 {{#if members.attributes}}
     <div class="attrs-detail">
-        <h2>Attributes</h2>
+        <h2>{{i18n.ATTRUBUTES}}</h2>
         {{#members.attributes}}{{> attrs}}{{/members.attributes}}
     </div>
 {{/if}}
@@ -81,7 +81,7 @@
 
 {{#if members.methods}}
     <div class="methods-detail">
-        <h2>Methods</h2>
+        <h2>{{i18n.METHODS}}</h2>
         {{#members.methods}}{{> method}}{{/members.methods}}
         <div class="no-visible-items-message">
             <p>There are no methods that match your current filter settings. You can change your filter settings in the index section on this page. <a href="#index" class="index-jump-link">index</a></p>
@@ -92,7 +92,7 @@
 
 {{#if members.events}}
     <div class="events-detail">
-        <h2>Events</h2>
+        <h2>{{i18n.EVENTS}}</h2>
         {{#members.events}}{{> events}}{{/members.events}}
         <div class="no-visible-items-message">
             <p>There are no events that match your current filter settings. You can change your filter settings in the index section on this page. <a href="#index" class="index-jump-link">index</a></p>
