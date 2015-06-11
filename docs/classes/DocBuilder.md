@@ -79,7 +79,7 @@ Counter for stepping into merges
 | meta | description |
 |------|-------------|
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a> |
-| Defined | [lib/builder.js:1097](../files/lib_builder.js.md#l1097) |
+| Defined | [lib/builder.js:1207](../files/lib_builder.js.md#l1207) |
 
 
 
@@ -223,7 +223,7 @@ Compiles the templates from the meta-data provided by DocParser
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:1759](../files/lib_builder.js.md#l1759) |
+| Defined | [lib/builder.js:1868](../files/lib_builder.js.md#l1868) |
 
 ###### Parameters
 - cb Callback The callback to execute after it's completed
@@ -238,7 +238,7 @@ Normalizes a file path to a writable filename:
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:1746](../files/lib_builder.js.md#l1746) |
+| Defined | [lib/builder.js:1855](../files/lib_builder.js.md#l1855) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 ###### Parameters
@@ -262,7 +262,7 @@ Checks an array of items (class items) to see if an item is in that list
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:1080](../files/lib_builder.js.md#l1080) |
+| Defined | [lib/builder.js:1190](../files/lib_builder.js.md#l1190) |
 | Return 		 |  
 
 ###### Parameters
@@ -301,7 +301,7 @@ Merge superclass data into a child class
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:1104](../files/lib_builder.js.md#l1104) |
+| Defined | [lib/builder.js:1214](../files/lib_builder.js.md#l1214) |
 
 ###### Parameters
 - info <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The item to extend
@@ -327,7 +327,7 @@ Sort method of array of objects with a property called __name__
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:1567](../files/lib_builder.js.md#l1567) |
+| Defined | [lib/builder.js:1677](../files/lib_builder.js.md#l1677) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a> 
 
 ###### Parameters
@@ -394,7 +394,7 @@ Renders the handlebars templates with the default View class.
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:793](../files/lib_builder.js.md#l793) |
+| Defined | [lib/builder.js:903](../files/lib_builder.js.md#l903) |
 
 ###### Parameters
 - source HTML The default template to parse
@@ -412,7 +412,7 @@ Render the API meta and return the JavaScript
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:1713](../files/lib_builder.js.md#l1713) |
+| Defined | [lib/builder.js:1823](../files/lib_builder.js.md#l1823) |
 
 ###### Parameters
 - cb Callback The callback
@@ -425,7 +425,7 @@ Render the class file
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:1155](../files/lib_builder.js.md#l1155) |
+| Defined | [lib/builder.js:1265](../files/lib_builder.js.md#l1265) |
 
 ###### Parameters
 - cb <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> The callback fired when complete
@@ -439,7 +439,7 @@ Render the source file
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:1648](../files/lib_builder.js.md#l1648) |
+| Defined | [lib/builder.js:1758](../files/lib_builder.js.md#l1758) |
 
 ###### Parameters
 - cb <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> The callback fired when complete
@@ -453,7 +453,7 @@ Render the index file
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:846](../files/lib_builder.js.md#l846) |
+| Defined | [lib/builder.js:956](../files/lib_builder.js.md#l956) |
 
 ###### Parameters
 - cb <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> The callback fired when complete
@@ -467,7 +467,7 @@ Render a module
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:904](../files/lib_builder.js.md#l904) |
+| Defined | [lib/builder.js:1014](../files/lib_builder.js.md#l1014) |
 
 ###### Parameters
 - cb <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> The callback fired when complete
@@ -481,7 +481,7 @@ Write the API meta data used for the AutoComplete widget
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:1700](../files/lib_builder.js.md#l1700) |
+| Defined | [lib/builder.js:1810](../files/lib_builder.js.md#l1810) |
 
 ###### Parameters
 - cb Callback The callback to execute when complete
@@ -493,7 +493,7 @@ Generates the class files under "out"/classes/
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:1518](../files/lib_builder.js.md#l1518) |
+| Defined | [lib/builder.js:1628](../files/lib_builder.js.md#l1628) |
 
 ###### Parameters
 - cb Callback The callback to execute after it's completed
@@ -507,7 +507,7 @@ Generates the syntax files under `"out"/files/`
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:1590](../files/lib_builder.js.md#l1590) |
+| Defined | [lib/builder.js:1700](../files/lib_builder.js.md#l1700) |
 
 ###### Parameters
 - cb Callback The callback to execute after it's completed
@@ -521,7 +521,7 @@ Generates the index.html file
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:872](../files/lib_builder.js.md#l872) |
+| Defined | [lib/builder.js:982](../files/lib_builder.js.md#l982) |
 
 ###### Parameters
 - cb Callback The callback to execute after it's completed
@@ -535,7 +535,7 @@ Generates the module files under "out"/modules/
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:1032](../files/lib_builder.js.md#l1032) |
+| Defined | [lib/builder.js:1142](../files/lib_builder.js.md#l1142) |
 
 ###### Parameters
 - cb Callback The callback to execute after it's completed
