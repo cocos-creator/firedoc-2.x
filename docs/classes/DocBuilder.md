@@ -1,7 +1,7 @@
 
-# firedoc 1.1.4
+# Fireball Engine API
 
-Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
+Fireball is the game engine for the future.
 
 ### `DocBuilder` Class
 
@@ -20,46 +20,62 @@ based templates to generate static HTML content
 
 ##### Properties
 
-  - [`_mergeCounter`](#property-_mergecounter)
-  - [`_meta`](#property-_meta)
-  - [`files`](#property-files)
   - [`NATIVES`](#property-natives)
+  - [`files`](#property-files)
+  - [`_meta`](#property-_meta)
+  - [`project`](#property-project)
+  - [`i18n`](#property-i18n)
+  - [`modules`](#property-modules)
+  - [`classes`](#property-classes)
+  - [`files`](#property-files)
+  - [`_mergeCounter`](#property-_mergecounter)
 
 
 
 ##### Methods
 
-  - [`_addHelpers(helpers)`](#method-_addhelpershelpers)
-  - [`_inlineCode(html)`](#method-_inlinecodehtml)
-  - [`_mixExternal()`](#method-_mixexternal)
-  - [`_parseCode(html)`](#method-_parsecodehtml)
-  - [`_parseCrossLink(item, [raw=false], [content])`](#method-_parsecrosslinkitem-rawfalse-content)
-  - [`addFoundAt(a)`](#method-addfoundata)
-  - [`augmentData(o)`](#method-augmentdatao)
-  - [`compile(cb)`](#method-compilecb)
-  - [`filterFileName(f)`](#method-filterfilenamef)
-  - [`getProjectMeta()`](#method-getprojectmeta)
-  - [`hasProperty(a, b)`](#method-haspropertya-b)
-  - [`makeDirs(cb)`](#method-makedirscb)
-  - [`markdown(data)`](#method-markdowndata)
-  - [`mergeExtends(info, classItems, first)`](#method-mergeextendsinfo-classitems-first)
-  - [`mixExternal(cb)`](#method-mixexternalcb)
-  - [`nameSort(a, b)`](#method-namesorta-b)
-  - [`NATIVES_LINKER(name)`](#method-natives_linkername)
-  - [`populateClasses(opts)`](#method-populateclassesopts)
-  - [`populateFiles(opts)`](#method-populatefilesopts)
-  - [`populateModules(opts)`](#method-populatemodulesopts)
-  - [`render(source, view, [layout=null], [partials={}], callback)`](#method-rendersource-view-layoutnull-partials{}-callback)
-  - [`renderAPIMeta(cb)`](#method-renderapimetacb)
-  - [`renderClass(cb)`](#method-renderclasscb)
-  - [`renderFile(cb)`](#method-renderfilecb)
-  - [`renderIndex(cb)`](#method-renderindexcb)
-  - [`renderModule(cb)`](#method-rendermodulecb)
-  - [`writeAPIMeta(cb)`](#method-writeapimetacb)
-  - [`writeClasses(cb)`](#method-writeclassescb)
-  - [`writeFiles(cb)`](#method-writefilescb)
-  - [`writeIndex(cb)`](#method-writeindexcb)
-  - [`writeModules(cb)`](#method-writemodulescb)
+  - [`_addHelpers`](#method-_addhelpers)
+  - [`markdown`](#method-markdown)
+  - [`_parseCrossLink`](#method-_parsecrosslink)
+  - [`NATIVES_LINKER`](#method-natives_linker)
+  - [`_mixExternal`](#method-_mixexternal)
+  - [`mixExternal`](#method-mixexternal)
+  - [`getProjectMeta`](#method-getprojectmeta)
+  - [`populateClasses`](#method-populateclasses)
+  - [`populateModules`](#method-populatemodules)
+  - [`populateFiles`](#method-populatefiles)
+  - [`addFoundAt`](#method-addfoundat)
+  - [`augmentData`](#method-augmentdata)
+  - [`makeDirs`](#method-makedirs)
+  - [`_parseCode`](#method-_parsecode)
+  - [`_inlineCode`](#method-_inlinecode)
+  - [`buildAPI`](#method-buildapi)
+  - [`buildMembers`](#method-buildmembers)
+  - [`extendMembers`](#method-extendmembers)
+  - [`buildMember`](#method-buildmember)
+  - [`getExpandIterator`](#method-getexpanditerator)
+  - [`expandMembersFromModules`](#method-expandmembersfrommodules)
+  - [`expandMembersFromModules`](#method-expandmembersfrommodules)
+  - [`getMethodName`](#method-getmethodname)
+  - [`getViewType`](#method-getviewtype)
+  - [`getClassInheritanceTree`](#method-getclassinheritancetree)
+  - [`appendClassToModule`](#method-appendclasstomodule)
+  - [`render`](#method-render)
+  - [`renderIndex`](#method-renderindex)
+  - [`writeIndex`](#method-writeindex)
+  - [`renderModule`](#method-rendermodule)
+  - [`writeModules`](#method-writemodules)
+  - [`hasProperty`](#method-hasproperty)
+  - [`mergeExtends`](#method-mergeextends)
+  - [`renderClass`](#method-renderclass)
+  - [`writeClasses`](#method-writeclasses)
+  - [`nameSort`](#method-namesort)
+  - [`writeFiles`](#method-writefiles)
+  - [`renderFile`](#method-renderfile)
+  - [`writeAPIMeta`](#method-writeapimeta)
+  - [`renderAPIMeta`](#method-renderapimeta)
+  - [`filterFileName`](#method-filterfilename)
+  - [`compile`](#method-compile)
 
 
 
@@ -72,50 +88,110 @@ based templates to generate static HTML content
 
 
 
-##### property: `_mergeCounter`
-
-Counter for stepping into merges
-
-| meta | description |
-|------|-------------|
-| Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a> |
-| Defined | [lib/builder.js:1207](../files/lib_builder.js.md#l1207) |
+##### property: `NATIVES`
 
 
-
-
-##### property: `_meta`
-
-Holder for project meta data
 
 | meta | description |
 |------|-------------|
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
-| Defined | [lib/builder.js:453](../files/lib_builder.js.md#l453) |
+| Defined | [lib/builder.js:271](../files/lib_builder.js.md#l271) |
 
 
 
 
 ##### property: `files`
 
-File counter
+
 
 | meta | description |
 |------|-------------|
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a> |
-| Defined | [lib/builder.js:447](../files/lib_builder.js.md#l447) |
+| Defined | [lib/builder.js:446](../files/lib_builder.js.md#l446) |
 
 
 
 
-##### property: `NATIVES`
+##### property: `_meta`
 
-List of native types to cross link to MDN
+
 
 | meta | description |
 |------|-------------|
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
-| Defined | [lib/builder.js:272](../files/lib_builder.js.md#l272) |
+| Defined | [lib/builder.js:452](../files/lib_builder.js.md#l452) |
+
+
+
+
+##### property: `project`
+
+
+
+| meta | description |
+|------|-------------|
+| Type | Unknown |
+| Defined | [lib/builder.js:1067](../files/lib_builder.js.md#l1067) |
+
+
+
+
+##### property: `i18n`
+
+
+
+| meta | description |
+|------|-------------|
+| Type | Unknown |
+| Defined | [lib/builder.js:1082](../files/lib_builder.js.md#l1082) |
+
+
+
+
+##### property: `modules`
+
+
+
+| meta | description |
+|------|-------------|
+| Type | Unknown |
+| Defined | [lib/builder.js:1101](../files/lib_builder.js.md#l1101) |
+
+
+
+
+##### property: `classes`
+
+
+
+| meta | description |
+|------|-------------|
+| Type | Unknown |
+| Defined | [lib/builder.js:1123](../files/lib_builder.js.md#l1123) |
+
+
+
+
+##### property: `files`
+
+
+
+| meta | description |
+|------|-------------|
+| Type | Unknown |
+| Defined | [lib/builder.js:1150](../files/lib_builder.js.md#l1150) |
+
+
+
+
+##### property: `_mergeCounter`
+
+
+
+| meta | description |
+|------|-------------|
+| Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a> |
+| Defined | [lib/builder.js:1336](../files/lib_builder.js.md#l1336) |
 
 
 
@@ -126,63 +202,38 @@ List of native types to cross link to MDN
 #### Methods
 
 
-##### method: `_addHelpers(helpers)`
+##### method: `_addHelpers`
 
 Register a `Y.Handlebars` helper method
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:121](../files/lib_builder.js.md#l121) |
+| Defined | [lib/builder.js:120](../files/lib_builder.js.md#l120) |
 
 ###### Parameters
 - helpers <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> Object containing a hash of names and functions
 
 
-##### method: `_inlineCode(html)`
+##### method: `markdown`
 
-Ported from [Selleck](https://github.com/rgrove/selleck), this handles ```'s in fields
-that are not parsed by the **Markdown** parser.
+Wrapper around the Markdown parser so it can be normalized or even side stepped
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:774](../files/lib_builder.js.md#l774) |
+| Defined | [lib/builder.js:137](../files/lib_builder.js.md#l137) |
 | Return 		 | HTML 
 
 ###### Parameters
-- html HTML The HTML to parse
+- data <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The Markdown string to parse
 
 
-##### method: `_mixExternal()`
-
-Mixes the various external data soures together into the local data, augmenting
-it with flags.
-
-| meta | description |
-|------|-------------|
-| Defined | [lib/builder.js:325](../files/lib_builder.js.md#l325) |
-
-
-
-##### method: `_parseCode(html)`
-
-Parses `<pre class="code prettyprint"><code>` tags and adds the __prettyprint__ `className` to them
-
-| meta | description |
-|------|-------------|
-| Defined | [lib/builder.js:761](../files/lib_builder.js.md#l761) |
-| Return 		 | HTML 
-
-###### Parameters
-- html HTML The HTML to parse
-
-
-##### method: `_parseCrossLink(item, [raw=false], [content])`
+##### method: `_parseCrossLink`
 
 Parse the item to be cross linked and return an HREF linked to the item
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:166](../files/lib_builder.js.md#l166) |
+| Defined | [lib/builder.js:165](../files/lib_builder.js.md#l165) |
 
 ###### Parameters
 - item <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The item to crossLink
@@ -190,46 +241,486 @@ Parse the item to be cross linked and return an HREF linked to the item
 - content <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> crossLink helper content
 
 
-##### method: `addFoundAt(a)`
+##### method: `NATIVES_LINKER`
+
+Function to link an external type uses `NATIVES` object
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/builder.js:310](../files/lib_builder.js.md#l310) |
+| Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
+
+###### Parameters
+- name <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The name of the type to link
+
+
+##### method: `_mixExternal`
+
+Mixes the various external data soures together into the local data, augmenting
+it with flags.
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/builder.js:324](../files/lib_builder.js.md#l324) |
+
+
+
+##### method: `mixExternal`
+
+Fetches the remote data and fires the callback when it's all complete
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/builder.js:371](../files/lib_builder.js.md#l371) |
+
+###### Parameters
+- cb Callback The callback to execute when complete
+
+
+##### method: `getProjectMeta`
+
+Prep the meta data to be fed to Selleck
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/builder.js:459](../files/lib_builder.js.md#l459) |
+| Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
+
+
+
+##### method: `populateClasses`
+
+Populate the meta data for classes
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/builder.js:500](../files/lib_builder.js.md#l500) |
+| Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
+
+###### Parameters
+- opts <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The original options
+
+
+##### method: `populateModules`
+
+Populate the meta data for modules
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/builder.js:533](../files/lib_builder.js.md#l533) |
+| Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
+
+###### Parameters
+- opts <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The original options
+
+
+##### method: `populateFiles`
+
+Populate the meta data for files
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/builder.js:579](../files/lib_builder.js.md#l579) |
+| Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
+
+###### Parameters
+- opts <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The original options
+
+
+##### method: `addFoundAt`
 
 Parses file and line number from an item object and build's an HREF
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:635](../files/lib_builder.js.md#l635) |
+| Defined | [lib/builder.js:634](../files/lib_builder.js.md#l634) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 ###### Parameters
 - a <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The item to parse
 
 
-##### method: `augmentData(o)`
+##### method: `augmentData`
 
 Augments the **DocParser** meta data to provide default values for certain keys as well as parses all descriptions
 with the `Markdown Parser`
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:652](../files/lib_builder.js.md#l652) |
+| Defined | [lib/builder.js:651](../files/lib_builder.js.md#l651) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 ###### Parameters
 - o <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The object to recurse and augment
 
 
-##### method: `compile(cb)`
+##### method: `makeDirs`
 
-Compiles the templates from the meta-data provided by DocParser
+Makes the default directories needed
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:1868](../files/lib_builder.js.md#l1868) |
+| Defined | [lib/builder.js:710](../files/lib_builder.js.md#l710) |
 
 ###### Parameters
 - cb Callback The callback to execute after it's completed
 
 
-##### method: `filterFileName(f)`
+##### method: `_parseCode`
+
+Parses `<pre class="code prettyprint"><code>` tags and adds the __prettyprint__ `className` to them
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/builder.js:760](../files/lib_builder.js.md#l760) |
+| Return 		 | HTML 
+
+###### Parameters
+- html HTML The HTML to parse
+
+
+##### method: `_inlineCode`
+
+Ported from [Selleck](https://github.com/rgrove/selleck), this handles ```'s in fields
+that are not parsed by the **Markdown** parser.
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/builder.js:773](../files/lib_builder.js.md#l773) |
+| Return 		 | HTML 
+
+###### Parameters
+- html HTML The HTML to parse
+
+
+##### method: `buildAPI`
+
+build the uniform API to export the theme context
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/builder.js:793](../files/lib_builder.js.md#l793) |
+| Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
+
+
+
+##### method: `buildMembers`
+
+build the members
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/builder.js:827](../files/lib_builder.js.md#l827) |
+| Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> 
+
+
+
+##### method: `extendMembers`
+
+extends members array
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/builder.js:852](../files/lib_builder.js.md#l852) |
+| Return 		 |  
+
+
+
+##### method: `buildMember`
+
+build the member
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/builder.js:869](../files/lib_builder.js.md#l869) |
+| Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
+
+###### Parameters
+- memeber <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The member object
+- forceBeMethod <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> force make the build process be for method
+- parent <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The parent context
+
+
+##### method: `getExpandIterator`
+
+generate expand function
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/builder.js:923](../files/lib_builder.js.md#l923) |
+
+###### Parameters
+- parent <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The object to be set
+
+
+##### method: `expandMembersFromModules`
+
+extends modules
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/builder.js:947](../files/lib_builder.js.md#l947) |
+
+
+
+##### method: `expandMembersFromModules`
+
+extends members from classes
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/builder.js:965](../files/lib_builder.js.md#l965) |
+
+
+
+##### method: `getMethodName`
+
+build the method name by its name and parameters
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/builder.js:983](../files/lib_builder.js.md#l983) |
+
+###### Parameters
+- name <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The function/method name
+- params <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> The function/method parameters list
+	- name <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The name of the parameter
+
+
+##### method: `getViewType`
+
+get dest view type md or html
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/builder.js:997](../files/lib_builder.js.md#l997) |
+| Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
+
+
+
+##### method: `getClassInheritanceTree`
+
+get class inheritance tree
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/builder.js:1011](../files/lib_builder.js.md#l1011) |
+| Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
+
+
+
+##### method: `appendClassToModule`
+
+append the clazz to its module
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/builder.js:1051](../files/lib_builder.js.md#l1051) |
+
+###### Parameters
+- clazz <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The class object
+	- module <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The module name of this clazz object
+
+
+##### method: `render`
+
+Ported from [Selleck](https://github.com/rgrove/selleck)
+Renders the handlebars templates with the default View class.
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/builder.js:1165](../files/lib_builder.js.md#l1165) |
+
+###### Parameters
+- source HTML The default template to parse
+- view Class The default view handler
+- layout HTML The HTML from the layout to use.
+- partials <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> List of partials to include in this template
+- callback Callback 
+	- err <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Error" class="crosslink external" target="_blank">Error</a> 
+	- html HTML The assembled template markup
+
+
+##### method: `renderIndex`
+
+Render the index file
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/builder.js:1216](../files/lib_builder.js.md#l1216) |
+
+###### Parameters
+- cb <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> The callback fired when complete
+	- html <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The HTML to render this view
+	- view <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The View Data
+
+
+##### method: `writeIndex`
+
+Generates the index.html file
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/builder.js:1232](../files/lib_builder.js.md#l1232) |
+
+###### Parameters
+- cb Callback The callback to execute after it's completed
+	- html <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The HTML to write index view
+	- view <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The View Data
+
+
+##### method: `renderModule`
+
+Render a module
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/builder.js:1264](../files/lib_builder.js.md#l1264) |
+
+###### Parameters
+- cb <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> The callback fired when complete
+	- html <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The HTML to render this view
+	- view <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The View Data
+
+
+##### method: `writeModules`
+
+Generates the module files under "out"/modules/
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/builder.js:1280](../files/lib_builder.js.md#l1280) |
+
+###### Parameters
+- cb Callback The callback to execute after it's completed
+	- html <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The HTML to write module view
+	- view <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The View Data
+
+
+##### method: `hasProperty`
+
+Checks an array of items (class items) to see if an item is in that list
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/builder.js:1319](../files/lib_builder.js.md#l1319) |
+| Return 		 |  
+
+###### Parameters
+- a <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> The Array of items to check
+- b <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The object to find
+
+
+##### method: `mergeExtends`
+
+Merge superclass data into a child class
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/builder.js:1343](../files/lib_builder.js.md#l1343) |
+
+###### Parameters
+- info <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The item to extend
+- classItems <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> The list of items to merge in
+- first <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> Set for the first call
+
+
+##### method: `renderClass`
+
+Render the class file
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/builder.js:1397](../files/lib_builder.js.md#l1397) |
+
+###### Parameters
+- cb <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> The callback fired when complete
+	- html <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The HTML to render this view
+	- view <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The View Data
+
+
+##### method: `writeClasses`
+
+Generates the class files under "out"/classes/
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/builder.js:1414](../files/lib_builder.js.md#l1414) |
+
+###### Parameters
+- cb Callback The callback to execute after it's completed
+	- html <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The HTML to write class view
+	- view <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The View Data
+
+
+##### method: `nameSort`
+
+Sort method of array of objects with a property called __name__
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/builder.js:1454](../files/lib_builder.js.md#l1454) |
+| Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a> 
+
+###### Parameters
+- a <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> First object to compare
+- b <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> Second object to compare
+
+
+##### method: `writeFiles`
+
+Generates the syntax files under `"out"/files/`
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/builder.js:1477](../files/lib_builder.js.md#l1477) |
+
+###### Parameters
+- cb Callback The callback to execute after it's completed
+	- html <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The HTML to write file view
+	- view <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The View Data
+
+
+##### method: `renderFile`
+
+Render the source file
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/builder.js:1535](../files/lib_builder.js.md#l1535) |
+
+###### Parameters
+- cb <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> The callback fired when complete
+	- html <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The HTML to render this view
+	- view <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The View Data
+
+
+##### method: `writeAPIMeta`
+
+Write the API meta data used for the AutoComplete widget
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/builder.js:1587](../files/lib_builder.js.md#l1587) |
+
+###### Parameters
+- cb Callback The callback to execute when complete
+
+
+##### method: `renderAPIMeta`
+
+Render the API meta and return the JavaScript
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/builder.js:1600](../files/lib_builder.js.md#l1600) |
+
+###### Parameters
+- cb Callback The callback
+	- apijs <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The JavaScript code to write API meta data
+
+
+##### method: `filterFileName`
 
 Normalizes a file path to a writable filename:
 
@@ -238,309 +729,23 @@ Normalizes a file path to a writable filename:
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:1855](../files/lib_builder.js.md#l1855) |
+| Defined | [lib/builder.js:1632](../files/lib_builder.js.md#l1632) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 ###### Parameters
 - f <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The filename to normalize
 
 
-##### method: `getProjectMeta()`
+##### method: `compile`
 
-Prep the meta data to be fed to Selleck
-
-| meta | description |
-|------|-------------|
-| Defined | [lib/builder.js:460](../files/lib_builder.js.md#l460) |
-| Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
-
-
-
-##### method: `hasProperty(a, b)`
-
-Checks an array of items (class items) to see if an item is in that list
+Compiles the templates from the meta-data provided by DocParser
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:1190](../files/lib_builder.js.md#l1190) |
-| Return 		 |  
-
-###### Parameters
-- a <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> The Array of items to check
-- b <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The object to find
-
-
-##### method: `makeDirs(cb)`
-
-Makes the default directories needed
-
-| meta | description |
-|------|-------------|
-| Defined | [lib/builder.js:711](../files/lib_builder.js.md#l711) |
+| Defined | [lib/builder.js:1645](../files/lib_builder.js.md#l1645) |
 
 ###### Parameters
 - cb Callback The callback to execute after it's completed
-
-
-##### method: `markdown(data)`
-
-Wrapper around the Markdown parser so it can be normalized or even side stepped
-
-| meta | description |
-|------|-------------|
-| Defined | [lib/builder.js:138](../files/lib_builder.js.md#l138) |
-| Return 		 | HTML 
-
-###### Parameters
-- data <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The Markdown string to parse
-
-
-##### method: `mergeExtends(info, classItems, first)`
-
-Merge superclass data into a child class
-
-| meta | description |
-|------|-------------|
-| Defined | [lib/builder.js:1214](../files/lib_builder.js.md#l1214) |
-
-###### Parameters
-- info <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The item to extend
-- classItems <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> The list of items to merge in
-- first <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> Set for the first call
-
-
-##### method: `mixExternal(cb)`
-
-Fetches the remote data and fires the callback when it's all complete
-
-| meta | description |
-|------|-------------|
-| Defined | [lib/builder.js:372](../files/lib_builder.js.md#l372) |
-
-###### Parameters
-- cb Callback The callback to execute when complete
-
-
-##### method: `nameSort(a, b)`
-
-Sort method of array of objects with a property called __name__
-
-| meta | description |
-|------|-------------|
-| Defined | [lib/builder.js:1677](../files/lib_builder.js.md#l1677) |
-| Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a> 
-
-###### Parameters
-- a <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> First object to compare
-- b <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> Second object to compare
-
-
-##### method: `NATIVES_LINKER(name)`
-
-Function to link an external type uses `NATIVES` object
-
-| meta | description |
-|------|-------------|
-| Defined | [lib/builder.js:311](../files/lib_builder.js.md#l311) |
-| Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
-
-###### Parameters
-- name <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The name of the type to link
-
-
-##### method: `populateClasses(opts)`
-
-Populate the meta data for classes
-
-| meta | description |
-|------|-------------|
-| Defined | [lib/builder.js:501](../files/lib_builder.js.md#l501) |
-| Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
-
-###### Parameters
-- opts <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The original options
-
-
-##### method: `populateFiles(opts)`
-
-Populate the meta data for files
-
-| meta | description |
-|------|-------------|
-| Defined | [lib/builder.js:580](../files/lib_builder.js.md#l580) |
-| Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
-
-###### Parameters
-- opts <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The original options
-
-
-##### method: `populateModules(opts)`
-
-Populate the meta data for modules
-
-| meta | description |
-|------|-------------|
-| Defined | [lib/builder.js:534](../files/lib_builder.js.md#l534) |
-| Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
-
-###### Parameters
-- opts <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The original options
-
-
-##### method: `render(source, view, [layout=null], [partials={}], callback)`
-
-Ported from [Selleck](https://github.com/rgrove/selleck)
-Renders the handlebars templates with the default View class.
-
-| meta | description |
-|------|-------------|
-| Defined | [lib/builder.js:903](../files/lib_builder.js.md#l903) |
-
-###### Parameters
-- source HTML The default template to parse
-- view Class The default view handler
-- layout HTML The HTML from the layout to use.
-- partials <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> List of partials to include in this template
-- callback Callback  
-	- err <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Error" class="crosslink external" target="_blank">Error</a> 
-	- html HTML The assembled template markup
-
-
-##### method: `renderAPIMeta(cb)`
-
-Render the API meta and return the JavaScript
-
-| meta | description |
-|------|-------------|
-| Defined | [lib/builder.js:1823](../files/lib_builder.js.md#l1823) |
-
-###### Parameters
-- cb Callback The callback
-	- apijs <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The JavaScript code to write API meta data
-
-
-##### method: `renderClass(cb)`
-
-Render the class file
-
-| meta | description |
-|------|-------------|
-| Defined | [lib/builder.js:1265](../files/lib_builder.js.md#l1265) |
-
-###### Parameters
-- cb <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> The callback fired when complete
-	- html <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The HTML to render this view
-	- view <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The View Data
-
-
-##### method: `renderFile(cb)`
-
-Render the source file
-
-| meta | description |
-|------|-------------|
-| Defined | [lib/builder.js:1758](../files/lib_builder.js.md#l1758) |
-
-###### Parameters
-- cb <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> The callback fired when complete
-	- html <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The HTML to render this view
-	- view <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The View Data
-
-
-##### method: `renderIndex(cb)`
-
-Render the index file
-
-| meta | description |
-|------|-------------|
-| Defined | [lib/builder.js:956](../files/lib_builder.js.md#l956) |
-
-###### Parameters
-- cb <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> The callback fired when complete
-	- html <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The HTML to render this view
-	- view <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The View Data
-
-
-##### method: `renderModule(cb)`
-
-Render a module
-
-| meta | description |
-|------|-------------|
-| Defined | [lib/builder.js:1014](../files/lib_builder.js.md#l1014) |
-
-###### Parameters
-- cb <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> The callback fired when complete
-	- html <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The HTML to render this view
-	- view <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The View Data
-
-
-##### method: `writeAPIMeta(cb)`
-
-Write the API meta data used for the AutoComplete widget
-
-| meta | description |
-|------|-------------|
-| Defined | [lib/builder.js:1810](../files/lib_builder.js.md#l1810) |
-
-###### Parameters
-- cb Callback The callback to execute when complete
-
-
-##### method: `writeClasses(cb)`
-
-Generates the class files under "out"/classes/
-
-| meta | description |
-|------|-------------|
-| Defined | [lib/builder.js:1628](../files/lib_builder.js.md#l1628) |
-
-###### Parameters
-- cb Callback The callback to execute after it's completed
-	- html <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The HTML to write class view
-	- view <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The View Data
-
-
-##### method: `writeFiles(cb)`
-
-Generates the syntax files under `"out"/files/`
-
-| meta | description |
-|------|-------------|
-| Defined | [lib/builder.js:1700](../files/lib_builder.js.md#l1700) |
-
-###### Parameters
-- cb Callback The callback to execute after it's completed
-	- html <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The HTML to write file view
-	- view <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The View Data
-
-
-##### method: `writeIndex(cb)`
-
-Generates the index.html file
-
-| meta | description |
-|------|-------------|
-| Defined | [lib/builder.js:982](../files/lib_builder.js.md#l982) |
-
-###### Parameters
-- cb Callback The callback to execute after it's completed
-	- html <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The HTML to write index view
-	- view <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The View Data
-
-
-##### method: `writeModules(cb)`
-
-Generates the module files under "out"/modules/
-
-| meta | description |
-|------|-------------|
-| Defined | [lib/builder.js:1142](../files/lib_builder.js.md#l1142) |
-
-###### Parameters
-- cb Callback The callback to execute after it's completed
-	- html <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The HTML to write module view
-	- view <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The View Data
 
 
 

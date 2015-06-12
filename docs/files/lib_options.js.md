@@ -1,7 +1,7 @@
 
-# firedoc 1.1.4
+# Fireball Engine API
 
-Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
+Fireball is the game engine for the future.
 
 
 ### File: `lib/options.js`
@@ -37,7 +37,9 @@ YUI.add('options', function (Y) {
 
     var options = {
       port: 3000,
-      nocode: false
+      lang: 'en',
+      nocode: false,
+      themedir: path.join(__dirname, '../themes/default')
     };
 
     while (args.length > 0) {
@@ -45,10 +47,11 @@ YUI.add('options', function (Y) {
       // options.* defined in ./builder.js
       switch (v) {
       case '--en':
-        options.themedir = path.join(__dirname, '../themes/default');
+        options.lang = 'en';
         break;
       case '--zh':
         options.zh = true;
+        options.lang = 'zh';
         options.themedir = path.join(__dirname, '../themes/default_zh');
         break;
       case '--lint':
@@ -185,6 +188,9 @@ YUI.add('options', function (Y) {
         break;
       case "--no-sort":
         options.dontsortfields = true;
+        break;
+      case '--lang':
+        options.lang = args.shift();
         break;
       default:
         if (!options.paths) {

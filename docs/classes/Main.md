@@ -1,7 +1,7 @@
 
-# firedoc 1.1.4
+# Fireball Engine API
 
-Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
+Fireball is the game engine for the future.
 
 ### `Main` Class
 

@@ -1,7 +1,7 @@
 
-# firedoc 1.1.4
+# Fireball Engine API
 
-Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
+Fireball is the game engine for the future.
 
 ### `YUIDoc` Class
 
@@ -27,28 +27,28 @@ YUIDoc main class
 
 ##### Properties
 
-  - [`dirmap`](#property-dirmap)
-  - [`endtime`](#property-endtime)
-  - [`filecount`](#property-filecount)
-  - [`filemap`](#property-filemap)
   - [`OPTIONS`](#property-options)
-  - [`options`](#property-options)
+  - [`filecount`](#property-filecount)
   - [`selleck`](#property-selleck)
+  - [`filemap`](#property-filemap)
+  - [`dirmap`](#property-dirmap)
+  - [`options`](#property-options)
   - [`starttime`](#property-starttime)
+  - [`endtime`](#property-endtime)
 
 
 
 ##### Methods
 
-  - [`YUIDoc(config)` **constructor**](#method-yuidocconfig)
-  - [`_processConfig()`](#method-_processconfig)
-  - [`_setDefaultExcludes()`](#method-_setdefaultexcludes)
-  - [`parsedir(dir)`](#method-parsedirdir)
-  - [`parsefiles(dir, files)`](#method-parsefilesdir-files)
-  - [`run()`](#method-run)
-  - [`runPreprocessors()`](#method-runpreprocessors)
-  - [`walk()`](#method-walk)
-  - [`writeJSON(parser)`](#method-writejsonparser)
+  - [`` **constructor**](#)
+  - [`_setDefaultExcludes`](#method-_setdefaultexcludes)
+  - [`_processConfig`](#method-_processconfig)
+  - [`walk`](#method-walk)
+  - [`parsedir`](#method-parsedir)
+  - [`parsefiles`](#method-parsefiles)
+  - [`runPreprocessors`](#method-runpreprocessors)
+  - [`writeJSON`](#method-writejson)
+  - [`run`](#method-run)
 
 
 
@@ -61,57 +61,9 @@ YUIDoc main class
 
 
 
-##### property: `dirmap`
-
-Holder for the list of directories we are processing.
-
-| meta | description |
-|------|-------------|
-| Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
-| Defined | [lib/yuidoc.js:86](../files/lib_yuidoc.js.md#l86) |
-
-
-
-
-##### property: `endtime`
-
-Timestamp holder so we know when YUIDoc has finished the parse process.
-
-| meta | description |
-|------|-------------|
-| Type | Timestamp |
-| Defined | [lib/yuidoc.js:386](../files/lib_yuidoc.js.md#l386) |
-
-
-
-
-##### property: `filecount`
-
-Holds the number of files that we are processing.
-
-| meta | description |
-|------|-------------|
-| Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> |
-| Defined | [lib/yuidoc.js:65](../files/lib_yuidoc.js.md#l65) |
-
-
-
-
-##### property: `filemap`
-
-Holder for the list of files we are processing.
-
-| meta | description |
-|------|-------------|
-| Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
-| Defined | [lib/yuidoc.js:79](../files/lib_yuidoc.js.md#l79) |
-
-
-
-
 ##### property: `OPTIONS`
 
-The default list of configuration options
+
 
 | meta | description |
 |------|-------------|
@@ -121,21 +73,21 @@ The default list of configuration options
 
 
 
-##### property: `options`
+##### property: `filecount`
 
-Internal holder for configuration options.
+
 
 | meta | description |
 |------|-------------|
-| Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
-| Defined | [lib/yuidoc.js:94](../files/lib_yuidoc.js.md#l94) |
+| Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> |
+| Defined | [lib/yuidoc.js:65](../files/lib_yuidoc.js.md#l65) |
 
 
 
 
 ##### property: `selleck`
 
-Hash map of dirnames to selleck config options.
+
 
 | meta | description |
 |------|-------------|
@@ -145,14 +97,62 @@ Hash map of dirnames to selleck config options.
 
 
 
+##### property: `filemap`
+
+
+
+| meta | description |
+|------|-------------|
+| Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
+| Defined | [lib/yuidoc.js:79](../files/lib_yuidoc.js.md#l79) |
+
+
+
+
+##### property: `dirmap`
+
+
+
+| meta | description |
+|------|-------------|
+| Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
+| Defined | [lib/yuidoc.js:86](../files/lib_yuidoc.js.md#l86) |
+
+
+
+
+##### property: `options`
+
+
+
+| meta | description |
+|------|-------------|
+| Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
+| Defined | [lib/yuidoc.js:94](../files/lib_yuidoc.js.md#l94) |
+
+
+
+
 ##### property: `starttime`
 
-Timestamp holder so we know when YUIDoc started the parse process.
+
 
 | meta | description |
 |------|-------------|
 | Type | Timestamp |
 | Defined | [lib/yuidoc.js:365](../files/lib_yuidoc.js.md#l365) |
+
+
+
+
+##### property: `endtime`
+
+
+
+| meta | description |
+|------|-------------|
+| Type | Timestamp |
+| Defined | [lib/yuidoc.js:386](../files/lib_yuidoc.js.md#l386) |
 
 
 
@@ -164,29 +164,17 @@ Timestamp holder so we know when YUIDoc started the parse process.
 
 ##### Constructor
 
-##### method: `YUIDoc(config)`
+##### method: ``
 
 
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/yuidoc.js:48](../files/lib_yuidoc.js.md#l48) |
-
-###### Parameters
-- config <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The config object
-
-
-##### method: `_processConfig()`
-
-Does post process on self.options.
-
-| meta | description |
-|------|-------------|
-| Defined | [lib/yuidoc.js:126](../files/lib_yuidoc.js.md#l126) |
+| Defined | [:]() |
 
 
 
-##### method: `_setDefaultExcludes()`
+##### method: `_setDefaultExcludes`
 
 Always exclude these directories
 
@@ -196,7 +184,27 @@ Always exclude these directories
 
 
 
-##### method: `parsedir(dir)`
+##### method: `_processConfig`
+
+Does post process on self.options.
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/yuidoc.js:126](../files/lib_yuidoc.js.md#l126) |
+
+
+
+##### method: `walk`
+
+Walks the paths and parses the directory contents
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/yuidoc.js:137](../files/lib_yuidoc.js.md#l137) |
+
+
+
+##### method: `parsedir`
 
 Walks the passed directory and grabs all the files recursively.
 
@@ -208,7 +216,7 @@ Walks the passed directory and grabs all the files recursively.
 - dir <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The directory to parse the contents of.
 
 
-##### method: `parsefiles(dir, files)`
+##### method: `parsefiles`
 
 Gathers all the file data and populates the filemap and dirmap hashes.
 
@@ -221,18 +229,7 @@ Gathers all the file data and populates the filemap and dirmap hashes.
 - files <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> List of files to parse.
 
 
-##### method: `run()`
-
-Process the config, walk the file tree and write out the JSON data.
-
-| meta | description |
-|------|-------------|
-| Defined | [lib/yuidoc.js:359](../files/lib_yuidoc.js.md#l359) |
-| Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
-
-
-
-##### method: `runPreprocessors()`
+##### method: `runPreprocessors`
 
 Applies preprocessors to the data tree. 
 This function first clones the data and operates on the clone.
@@ -244,17 +241,7 @@ This function first clones the data and operates on the clone.
 
 
 
-##### method: `walk()`
-
-Walks the paths and parses the directory contents
-
-| meta | description |
-|------|-------------|
-| Defined | [lib/yuidoc.js:137](../files/lib_yuidoc.js.md#l137) |
-
-
-
-##### method: `writeJSON(parser)`
+##### method: `writeJSON`
 
 Writes the parser JSON data to disk.
 Applies preprocessors, if any.
@@ -266,6 +253,17 @@ Applies preprocessors, if any.
 
 ###### Parameters
 - parser <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The DocParser instance to use
+
+
+##### method: `run`
+
+Process the config, walk the file tree and write out the JSON data.
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/yuidoc.js:359](../files/lib_yuidoc.js.md#l359) |
+| Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
+
 
 
 

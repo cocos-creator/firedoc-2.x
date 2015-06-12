@@ -1,13 +1,13 @@
 
-# firedoc 1.1.4
+# Fireball Engine API
 
-Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
+Fireball is the game engine for the future.
 
 
 
 ### Classes
-- [`CLI`](classes/CLI.md) from [yuidoc](modules/yuidoc.md)
 - [`DocBuilder`](classes/DocBuilder.md) from [yuidoc](modules/yuidoc.md)
+- [`CLI`](classes/CLI.md) from [yuidoc](modules/yuidoc.md)
 - [`DocParser`](classes/DocParser.md) from [yuidoc](modules/yuidoc.md)
 - [`DocView`](classes/DocView.md) from [yuidoc](modules/yuidoc.md)
 - [`Files`](classes/Files.md) from [yuidoc](modules/yuidoc.md)

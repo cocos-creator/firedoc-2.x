@@ -1,7 +1,7 @@
 
-# firedoc 1.1.4
+# Fireball Engine API
 
-Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
+Fireball is the game engine for the future.
 
 ### `DocView` Class
 
@@ -22,9 +22,9 @@ The view class is a **`handlebars`** template helper.
 
 ##### Methods
 
-  - [`DocView(data, templateName)` **constructor**](#method-docviewdata-templatename)
-  - [`htmlTitle()`](#method-htmltitle)
-  - [`title()`](#method-title)
+  - [`` **constructor**](#)
+  - [`htmlTitle`](#method-htmltitle)
+  - [`title`](#method-title)
 
 
 
@@ -40,20 +40,17 @@ The view class is a **`handlebars`** template helper.
 
 ##### Constructor
 
-##### method: `DocView(data, templateName)`
+##### method: ``
 
 
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/docview.js:15](../files/lib_docview.js.md#l15) |
-
-###### Parameters
-- data <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> Meta data to use in this template
-- templateName <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The name of the template file to render.
+| Defined | [:]() |
 
 
-##### method: `htmlTitle()`
+
+##### method: `htmlTitle`
 
 **Mustache** `lambda` method for setting the HTML title
 
@@ -63,7 +60,7 @@ The view class is a **`handlebars`** template helper.
 
 
 
-##### method: `title()`
+##### method: `title`
 
 **Mustache** `lambda` method for setting the title
 

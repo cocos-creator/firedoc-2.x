@@ -1,7 +1,7 @@
 
-# firedoc 1.1.4
+# Fireball Engine API
 
-Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
+Fireball is the game engine for the future.
 
 ### `Files` Class
 
@@ -21,18 +21,18 @@ Ported fileutils methods from [Selleck](http://github.com/rgrove/selleck)
 
 ##### Methods
 
-  - [`copyAssets(from, dest, deleteFirst, callback)`](#method-copyassetsfrom-dest-deletefirst-callback)
-  - [`copyDirectory(source, dest, [overwrite=false], callback)`](#method-copydirectorysource-dest-overwritefalse-callback)
-  - [`copyFile(source, dest, [overwrite=false], callback)`](#method-copyfilesource-dest-overwritefalse-callback)
-  - [`copyPath(source, dest, [overwrite=false], callback)`](#method-copypathsource-dest-overwritefalse-callback)
-  - [`deletePath(path)`](#method-deletepathpath)
-  - [`getJSON(filename)`](#method-getjsonfilename)
-  - [`isDirectory(path, [link=false])`](#method-isdirectorypath-linkfalse)
-  - [`isFile(path, [link=false])`](#method-isfilepath-linkfalse)
-  - [`isSymbolicLink(path)`](#method-issymboliclinkpath)
-  - [`lstatSync(path)`](#method-lstatsyncpath)
-  - [`statSync(path)`](#method-statsyncpath)
-  - [`writeFile(file, data, callback)`](#method-writefilefile-data-callback)
+  - [`copyDirectory`](#method-copydirectory)
+  - [`copyFile`](#method-copyfile)
+  - [`copyPath`](#method-copypath)
+  - [`deletePath`](#method-deletepath)
+  - [`isDirectory`](#method-isdirectory)
+  - [`isFile`](#method-isfile)
+  - [`isSymbolicLink`](#method-issymboliclink)
+  - [`lstatSync`](#method-lstatsync)
+  - [`statSync`](#method-statsync)
+  - [`copyAssets`](#method-copyassets)
+  - [`getJSON`](#method-getjson)
+  - [`writeFile`](#method-writefile)
 
 
 
@@ -47,22 +47,7 @@ Ported fileutils methods from [Selleck](http://github.com/rgrove/selleck)
 #### Methods
 
 
-##### method: `copyAssets(from, dest, deleteFirst, callback)`
-
-Copy the theme assets directory
-
-| meta | description |
-|------|-------------|
-| Defined | [lib/files.js:360](../files/lib_files.js.md#l360) |
-
-###### Parameters
-- from Path The source directory
-- dest Path The destination directory
-- deleteFirst <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> Should the directory be deleted if it exists
-- callback <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> The callback to be executed
-
-
-##### method: `copyDirectory(source, dest, [overwrite=false], callback)`
+##### method: `copyDirectory`
 
 Copy a directory from one location to another
 
@@ -78,7 +63,7 @@ Copy a directory from one location to another
 - callback <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> The callback to be executed when complete.
 
 
-##### method: `copyFile(source, dest, [overwrite=false], callback)`
+##### method: `copyFile`
 
 Copy a file from one location to another
 
@@ -95,7 +80,7 @@ Copy a file from one location to another
 	- err <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Error" class="crosslink external" target="_blank">Error</a> The Error returned from Node
 
 
-##### method: `copyPath(source, dest, [overwrite=false], callback)`
+##### method: `copyPath`
 
 If _source_ is a file, copies it to _dest_. If it's a directory, recursively
 copies it and all files and directories it contains to _dest_.
@@ -121,7 +106,7 @@ if they already exist.
 	- err <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Error" class="crosslink external" target="_blank">Error</a> 
 
 
-##### method: `deletePath(path)`
+##### method: `deletePath`
 
 If _path_ is a file, deletes it. If _path_ is a directory, recursively deletes
 it and all files and directories it contains.
@@ -136,20 +121,7 @@ This method is synchronous.
 - path <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> File or directory to delete.
 
 
-##### method: `getJSON(filename)`
-
-Helper method for getting JSON data from a local file
-
-| meta | description |
-|------|-------------|
-| Defined | [lib/files.js:407](../files/lib_files.js.md#l407) |
-| Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
-
-###### Parameters
-- filename Path The filename to parse JSON from
-
-
-##### method: `isDirectory(path, [link=false])`
+##### method: `isDirectory`
 
 Check to see if this is a directory
 
@@ -163,7 +135,7 @@ Check to see if this is a directory
 - link <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> Also validate a symlink
 
 
-##### method: `isFile(path, [link=false])`
+##### method: `isFile`
 
 Check to see if this is a File
 
@@ -177,7 +149,7 @@ Check to see if this is a File
 - link <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> Also validate a symlink
 
 
-##### method: `isSymbolicLink(path)`
+##### method: `isSymbolicLink`
 
 Check to see if this is a SymLink
 
@@ -190,7 +162,7 @@ Check to see if this is a SymLink
 - path Path The path to check
 
 
-##### method: `lstatSync(path)`
+##### method: `lstatSync`
 
 Like `fs.lstatSync()`, but returns `null` instead of throwing when _path_
 doesn't exist. Will still throw on other types of errors.
@@ -204,7 +176,7 @@ doesn't exist. Will still throw on other types of errors.
 - path <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> Path to stat.
 
 
-##### method: `statSync(path)`
+##### method: `statSync`
 
 Like `fs.statSync()`, but returns `null` instead of throwing when _path_
 doesn't exist. Will still throw on other types of errors.
@@ -218,7 +190,35 @@ doesn't exist. Will still throw on other types of errors.
 - path <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> Path to stat.
 
 
-##### method: `writeFile(file, data, callback)`
+##### method: `copyAssets`
+
+Copy the theme assets directory
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/files.js:360](../files/lib_files.js.md#l360) |
+
+###### Parameters
+- from Path The source directory
+- dest Path The destination directory
+- deleteFirst <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> Should the directory be deleted if it exists
+- callback <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> The callback to be executed
+
+
+##### method: `getJSON`
+
+Helper method for getting JSON data from a local file
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/files.js:407](../files/lib_files.js.md#l407) |
+| Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
+
+###### Parameters
+- filename Path The filename to parse JSON from
+
+
+##### method: `writeFile`
 
 Helper method for writing files to disk. It wraps the NodeJS file API
 
@@ -229,7 +229,7 @@ Helper method for writing files to disk. It wraps the NodeJS file API
 ###### Parameters
 - file Path The filename to write to
 - data <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The data to write
-- callback Callback  
+- callback Callback 
 
 
 

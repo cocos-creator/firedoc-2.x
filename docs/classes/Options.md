@@ -1,7 +1,7 @@
 
-# firedoc 1.1.4
+# Fireball Engine API
 
-Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
+Fireball is the game engine for the future.
 
 ### `Options` Class
 
@@ -21,7 +21,7 @@ Handles argument parsing
 
 ##### Methods
 
-  - [`Options(args)`](#method-optionsargs)
+  - [`Options`](#method-options)
 
 
 
@@ -36,7 +36,7 @@ Handles argument parsing
 #### Methods
 
 
-##### method: `Options(args)`
+##### method: `Options`
 
 Parses arguments and returns an Object of config options
 

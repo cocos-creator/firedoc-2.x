@@ -1,7 +1,7 @@
 
-# firedoc 1.1.4
+# Fireball Engine API
 
-Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
+Fireball is the game engine for the future.
 
 ### `Help` Class
 
@@ -25,8 +25,8 @@ Shows the help text
 
 ##### Methods
 
-  - [`renderHelp()`](#method-renderhelp)
-  - [`showHelp()`](#method-showhelp)
+  - [`renderHelp`](#method-renderhelp)
+  - [`showHelp`](#method-showhelp)
 
 
 
@@ -41,7 +41,7 @@ Shows the help text
 
 ##### property: `help`
 
-The help text to display
+
 
 | meta | description |
 |------|-------------|
@@ -57,7 +57,7 @@ The help text to display
 #### Methods
 
 
-##### method: `renderHelp()`
+##### method: `renderHelp`
 
 Render the help message as a string
 
@@ -68,7 +68,7 @@ Render the help message as a string
 
 
 
-##### method: `showHelp()`
+##### method: `showHelp`
 
 Display the help message, write it to the screen and exit
 

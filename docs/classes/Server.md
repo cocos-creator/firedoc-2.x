@@ -1,7 +1,7 @@
 
-# firedoc 1.1.4
+# Fireball Engine API
 
-Fire Doc, Fireball-x&#x27;s JavaScript Documentation engine forked from YUI.
+Fireball is the game engine for the future.
 
 ### `Server` Class
 
@@ -25,14 +25,14 @@ Provides the `--server` server option for YUIDoc
 
 ##### Methods
 
-  - [`clazz(req, res)`](#method-clazzreq-res)
-  - [`files(req, res)`](#method-filesreq-res)
-  - [`home(req, res)`](#method-homereq-res)
-  - [`init()`](#method-init)
-  - [`modules(req, res)`](#method-modulesreq-res)
-  - [`parse(req, res, next)`](#method-parsereq-res-next)
-  - [`routes()`](#method-routes)
-  - [`start(options)`](#method-startoptions)
+  - [`parse`](#method-parse)
+  - [`routes`](#method-routes)
+  - [`files`](#method-files)
+  - [`clazz`](#method-clazz)
+  - [`modules`](#method-modules)
+  - [`home`](#method-home)
+  - [`init`](#method-init)
+  - [`start`](#method-start)
 
 
 
@@ -47,7 +47,7 @@ Provides the `--server` server option for YUIDoc
 
 ##### property: `_externalData`
 
-Cache for external mixed in data.
+
 
 | meta | description |
 |------|-------------|
@@ -63,69 +63,7 @@ Cache for external mixed in data.
 #### Methods
 
 
-##### method: `clazz(req, res)`
-
-`/classes` endpoint
-
-| meta | description |
-|------|-------------|
-| Defined | [lib/server.js:129](../files/lib_server.js.md#l129) |
-
-###### Parameters
-- req Request Express request object
-- res Response Express response object
-
-
-##### method: `files(req, res)`
-
-`/files` endpoint
-
-| meta | description |
-|------|-------------|
-| Defined | [lib/server.js:106](../files/lib_server.js.md#l106) |
-
-###### Parameters
-- req Request Express request object
-- res Response Express response object
-
-
-##### method: `home(req, res)`
-
-`/` endpoint
-
-| meta | description |
-|------|-------------|
-| Defined | [lib/server.js:161](../files/lib_server.js.md#l161) |
-
-###### Parameters
-- req Request Express request object
-- res Response Express response object
-
-
-##### method: `init()`
-
-Creates the Express server and prep's YUI for serving
-
-| meta | description |
-|------|-------------|
-| Defined | [lib/server.js:173](../files/lib_server.js.md#l173) |
-
-
-
-##### method: `modules(req, res)`
-
-`/modules` endpoint
-
-| meta | description |
-|------|-------------|
-| Defined | [lib/server.js:145](../files/lib_server.js.md#l145) |
-
-###### Parameters
-- req Request Express request object
-- res Response Express response object
-
-
-##### method: `parse(req, res, next)`
+##### method: `parse`
 
 Middleware to parse the API docs per request
 
@@ -139,7 +77,7 @@ Middleware to parse the API docs per request
 - next <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> Express next callback
 
 
-##### method: `routes()`
+##### method: `routes`
 
 Create the routes used to serve YUIDoc files dynamically
 
@@ -149,7 +87,69 @@ Create the routes used to serve YUIDoc files dynamically
 
 
 
-##### method: `start(options)`
+##### method: `files`
+
+`/files` endpoint
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/server.js:106](../files/lib_server.js.md#l106) |
+
+###### Parameters
+- req Request Express request object
+- res Response Express response object
+
+
+##### method: `clazz`
+
+`/classes` endpoint
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/server.js:129](../files/lib_server.js.md#l129) |
+
+###### Parameters
+- req Request Express request object
+- res Response Express response object
+
+
+##### method: `modules`
+
+`/modules` endpoint
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/server.js:145](../files/lib_server.js.md#l145) |
+
+###### Parameters
+- req Request Express request object
+- res Response Express response object
+
+
+##### method: `home`
+
+`/` endpoint
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/server.js:161](../files/lib_server.js.md#l161) |
+
+###### Parameters
+- req Request Express request object
+- res Response Express response object
+
+
+##### method: `init`
+
+Creates the Express server and prep's YUI for serving
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/server.js:173](../files/lib_server.js.md#l173) |
+
+
+
+##### method: `start`
 
 Start the server with the supplied options.
 
