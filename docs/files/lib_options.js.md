@@ -50,9 +50,7 @@ YUI.add('options', function (Y) {
         options.lang = 'en';
         break;
       case '--zh':
-        options.zh = true;
         options.lang = 'zh';
-        options.themedir = path.join(__dirname, '../themes/default_zh');
         break;
       case '--lint':
         options.lint = true;

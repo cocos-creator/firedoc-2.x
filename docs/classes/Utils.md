@@ -236,7 +236,7 @@ convert string to markdown link
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/utils.js:539](../files/lib_utils.js.md#l539) |
+| Defined | [lib/utils.js:535](../files/lib_utils.js.md#l535) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 ###### Parameters

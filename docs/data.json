@@ -2,7 +2,7 @@
     "project": {
         "name": "firedoc",
         "description": "Fire Doc, Fireball-x's JavaScript Documentation engine forked from YUI.",
-        "version": "1.5.1"
+        "version": "1.5.2"
     },
     "files": {
         "lib/builder.js": {
@@ -2730,7 +2730,7 @@
         },
         {
             "file": "lib/utils.js",
-            "line": 539,
+            "line": 535,
             "description": "convert string to markdown link",
             "itemtype": "method",
             "name": "markdownLink",
