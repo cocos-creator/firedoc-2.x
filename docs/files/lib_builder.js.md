@@ -799,6 +799,116 @@ YUI.add('doc-builder', function (Y) {
       html = html.replace(/__\{\{SELLECK_BACKTICK\}\}__/g, '`');
       return html;
     },
+
+    buildAPI: function (cb) {
+      var self = this;
+      Y.prepare([DEFAULT_THEME, themeDir], self.getProjectMeta(), function (err, opts) {
+        opts.meta.title = self.data.project.name;
+        opts.meta.project = {
+          'root': './',
+          'assets': './assets',
+          'logo': self._resolveUrl(self.data.project.logo, opts)
+        };
+        self.buildMembers();
+        opts.meta.modules = self.modules;
+        opts.meta.classes = self.classes;
+        console.log(opts.meta.classes);
+        // console.log(opts.meta.classes[0]);
+        cb();
+      });
+    },
+
+    buildMembers: function () {
+      var self = this;
+      self.data.classitems.forEach(function (member) {
+        var parent;
+        if (member.class) {
+          parent = self.data.classes[member.class];
+        } else if (member.module) {
+          parent = self.data.modules[member.module];
+        }
+        if (!parent) return;
+        if (!parent.members) {
+          parent.members = [];
+        }
+        parent.members.push(self.buildMember(member, false, parent));
+      });
+    },
+
+    buildMember: function (member, forceBeMethod ,parent) {
+      var self = this;
+      member.description = self._parseCode(member.description);
+      member.hasAccessType = !!member.access;
+      member.readonly = member.readonly === '';
+      member['final'] = member['final'] === '';
+      member.type = member.type || 'Unknown';
+      member.config = member.itemtype === 'config';
+
+      if (Y.options.useMarkdown) {
+        member.markdownLink = Y.markdownLink(member.itemtype + ':' + member.name);
+      }
+      if (member['extended_from']) {
+        // inherited items
+      }
+      if (member.example) {
+        if (!Array.isArray(member.example)) {
+          member.example = [member.example];
+        }
+        member.example = member.example.map(function (v) {
+          return self._parseCode(self.markdown(v))
+        }).join('');
+      }
+      if (parent) {
+        var classMod = member.submodule || member.module;
+        var parentMod = parent.submodule || parent.module;
+        if (classMod !== parentMod) {
+          member.providedBy = classMod;
+        }
+      }
+      if (member.itemtype === 'method' || forceBeMethod) {
+        member.methodDisplay = self.getMethodName(member.name, member.params);
+        member.hasParams = (member.params || []).length > 0;
+        if (member['return']) {
+          member.hasReturn = true;
+          member.returnType = member['return'].type;
+        } else {
+          member.returnType = '';
+        }
+      }
+      if (member.itemtype === 'attribute') {
+        member.emit = self.options.attributesEmit;
+      }
+      return member;
+    },
+
+    getMethodName: function (name, params) {
+      return name + '(' + (params || []).map(function (v) {
+        return v.name;
+      }).join(', ') + ')';
+    },
+
+    get modules () {
+      var self = this;
+      return Object.keys(self.data.modules).map(
+        function (name) {
+          return self.data.modules[name];
+        }
+      );
+    },
+
+    get classes () {
+      var self = this;
+      return Object.keys(self.data.classes).map(
+        function (name) {
+          var clazz = self.data.classes[name];
+          if (clazz['is_constructor']) {
+            clazz.constructor = self.buildMember(clazz, true);
+          }
+          return clazz;
+        }
+      );
+    },
+
     /**
      * Ported from [Selleck](https://github.com/rgrove/selleck)
      * Renders the handlebars templates with the default View class.
@@ -1727,7 +1837,6 @@ YUI.add('doc-builder', function (Y) {
      * @async
      */
     renderAPIMeta: function (cb) {
-
       var opts = {
         meta: {}
       };
@@ -1789,6 +1898,7 @@ YUI.add('doc-builder', function (Y) {
           false,
           function () {
             var cstack = new Y.Parallel();
+            self.buildAPI(cstack.add(noop));
             self.writeModules(cstack.add(function () {
               self.writeClasses(cstack.add(function () {
                 if (!self.options.nocode) {
@@ -1796,13 +1906,6 @@ YUI.add('doc-builder', function (Y) {
                 }
               }));
             }));
-            /*
-            self.writeModules(cstack.add(noop));
-            self.writeClasses(cstack.add(noop));
-            if (!self.options.nocode) {
-                self.writeFiles(cstack.add(noop));
-            }
-            */
             self.writeIndex(cstack.add(noop));
             self.writeAPIMeta(cstack.add(noop));
 
@@ -1810,9 +1913,7 @@ YUI.add('doc-builder', function (Y) {
               var endtime = (new Date()).getTime();
               var timer = ((endtime - starttime) / 1000) + ' seconds';
               Y.log('Finished writing ' + self.files + ' files in ' + timer, 'info', 'builder');
-              if (cb) {
-                cb();
-              }
+              if (typeof cb === 'function') cb();
             });
           });
         });

@@ -1,42 +1,42 @@
 ### Index
 
-{{#if properties}}
+{{#if members.properties}}
 ##### Properties
 
-{{#properties}}
+{{#members.properties}}
   - [`{{name}}`](#{{markdownLink}})
-{{/properties}}
+{{/members.properties}}
 
 {{/if}}
 
-{{#if attrs}}
+{{#if members.attributes}}
 ##### Attributes
 
-{{#attrs}}
+{{#members.attributes}}
   - [`{{name}}`](#{{markdownLink}})
-{{/attrs}}
+{{/members.attributes}}
 
 {{/if}}
 
-{{#if methods}}
+{{#if members.methods}}
 ##### Methods
 
 {{#is_constructor}}
-  - [`{{methodName}}` **constructor**](#{{markdownLink}})
+  - [`{{name}}` **constructor**](#{{markdownLink}})
 {{/is_constructor}}
-{{#methods}}
-  - [`{{methodName}}`](#{{markdownLink}})
-{{/methods}}
+{{#members.methods}}
+  - [`{{name}}`](#{{markdownLink}})
+{{/members.methods}}
 
 {{/if}}
 
-{{#if events}}
+{{#if members.events}}
 
 ##### Events
 
-{{#events}}
+{{#members.events}}
   - [`{{name}}`](#{{markdownLink}})
-{{/events}}
+{{/members.events}}
 
 {{/if}}
 
@@ -46,27 +46,27 @@
 
 ##### Properties
 
-{{#inheritedItems.properties}}
+{{#members.inherited.properties}}
 - [`{{name}}`](#{{markdownLink}})
-{{/inheritedItems.properties}}
+{{/members.inherited.properties}}
 
 ##### Attributes
 
-{{#inheritedItems.attrs}}
+{{#members.inherited.attributes}}
 - [`{{name}}`](#{{markdownLink}})
-{{/inheritedItems.attrs}}
+{{/members.inherited.attributes}}
 
 ##### Methods
 
-{{#inheritedItems.methods}}
+{{#members.inherited.methods}}
 - [`{{methodName}}`](#{{markdownLink}})
-{{/inheritedItems.methods}}
+{{/members.inherited.methods}}
 
 ##### Events
 
-{{#inheritedItems.events}}
+{{#members.inherited.events}}
 - [`{{name}}`](#{{markdownLink}})
-{{/inheritedItems.events}}
+{{/members.inherited.events}}
 
 {{/if}}
 

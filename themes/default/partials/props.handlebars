@@ -4,7 +4,7 @@
     <span class="type">{{#crossLink type}}{{/crossLink}}</span>
 
     {{#if deprecated}}
-        <span class="flag deprecated"{{#if deprecationMessage}} title="{{deprecationMessage}}"{{/if}}>deprecated</span>
+        <span class="flag deprecated"{{#if deprecationMessage}} title="{{deprecationMessage}}"{{/if}}>{{i18n.DEPRECATED}}</span>
     {{/if}}
 
     {{#if access}}
@@ -16,14 +16,14 @@
     {{/if}}
 
     {{#if static}}
-        <span class="flag static">static</span>
+        <span class="flag static">{{i18n.STATIC}}</span>
     {{/if}}
 
     </h3>
 
     <div class="meta">
         {{#if overwritten_from}}
-            <p>Inherited from
+            <p>{{i18n.INHERITED_FROM}}
             <a href="{{crossLinkRaw overwritten_from/class}}#property_{{overwritten_from/name}}" class="type">
                 {{overwritten_from/class}}
             </a>
@@ -32,7 +32,7 @@
             {{/if}}
         {{else}}
             {{#if extended_from}}
-                <p>Inherited from
+                <p>{{i18n.INHERITED_FROM}}
                 <a href="{{crossLinkRaw extended_from}}#property_{{name}}" class="type">{{extended_from}}</a>:
             {{else}}
                 {{#providedBy}}
@@ -40,7 +40,7 @@
                 {{/providedBy}}
                 <p>
                 {{#if foundAt}}
-                Defined in
+                    {{i18n.DEFINED_IN}}
                 {{/if}}
             {{/if}}
         {{/if}}
@@ -50,7 +50,7 @@
         </p>
 
         {{#if deprecationMessage}}
-            <p class="deprecated">Deprecated: <span class="message">{{deprecationMessage}}</span></p>
+            <p class="deprecated">{{i18n.DEPRECATED}}: <span class="message">{{deprecationMessage}}</span></p>
         {{/if}}
 
         {{#if since}}
@@ -59,15 +59,15 @@
     </div>
 
     <div class="extended-detail">
-        <div class="description">{{{propertyDescription}}}</div>
+        <div class="description">{{{description}}}</div>
 
         {{#if default}}
-            <p class="default"><strong>Default:</strong> <span class="default-value">{{default}}</span></p>
+            <p class="default"><strong>{{i18n.DEFAULTS}}:</strong> <span class="default-value">{{default}}</span></p>
         {{/if}}
 
         {{#example}}
             <div class="example">
-                <h4>Example:</h4>
+                <h4>{{i18n.EXAMPLES}}:</h4>
                 <div class="example-content">
                     {{{.}}}
                 </div>

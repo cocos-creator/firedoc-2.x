@@ -1,39 +1,41 @@
 <div id="api-list">
     <div id="api-tabview" class="tabview">
         <ul class="tabs">
-            <li><a href="#api-classes">Classes</a></li>
-            <li><a href="#api-modules">Modules</a></li>
-            <li><a href="#api-enums">Enums</a></li>
+            <li><a href="#api-classes">{{i18n.sidebar.CLASSES}}</a></li>
+            <li><a href="#api-modules">{{i18n.sidebar.MODULES}}</a></li>
+            <li><a href="#api-enums">{{i18n.sidebar.ENUMS}}</a></li>
         </ul>
 
         <div id="api-tabview-filter">
-            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+            <input type="search" id="api-filter" placeholder="{{i18n.sidebar.SEARCH_PLACEHOLDER}}">
         </div>
 
         <div id="api-tabview-panel">
 
             <ul id="api-classes" class="apis classes">
-            {{#classes}}
+            {{#globals.classes}}
                 <li>
-                    <a class="class" href="{{../projectRoot}}classes/{{name}}.html">{{displayName}}</a>
-                    <a href="{{../projectRoot}}modules/{{module}}.html" class="api-list-item-module">@{{module}}</a>
+                    <a class="class" href="{{../project.root}}/classes/{{name}}.html">{{name}}</a>
+                    <a href="{{../project.root}}modules/{{module}}.html" class="api-list-item-module">@{{module}}</a>
                 </li>
-            {{/classes}}
+            {{/globals.classes}}
             </ul>
 
             <ul id="api-modules" class="apis modules">
-            {{#allModules}}
-                <li><a class="module" href="{{../projectRoot}}modules/{{name}}.html">{{displayName}}</a></li>
-            {{/allModules}}
+            {{#globals.modules}}
+                <li><a class="module" href="{{../project.root}}/modules/{{name}}.html">{{name}}</a></li>
+            {{/globals.modules}}
             </ul>
 
             <ul id="api-enums" class="apis enums">
-            {{#enums}}
+            {{#globals.classes}}
+                {{#if is_enum}}
                 <li>
-                    <a href="{{../projectRoot}}enums/{{name}}.html">{{displayName}}</a>
-                    <a href="{{../projectRoot}}modules/{{module}}.html" class="api-list-item-module">@{{module}}</a>
+                    <a class="class" href="{{../project.root}}/enums/{{name}}.html">{{name}}</a>
+                    <a href="{{../project.root}}modules/{{module}}.html" class="api-list-item-module">@{{module}}</a>
                 </li>
-            {{/enums}}
+                {{/if}}
+            {{/globals.classes}}
             </ul>
         </div>
     </div>

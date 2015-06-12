@@ -1,12 +1,12 @@
 
-{{#if projectName}}
-# {{projectName}} {{projectVersion}}
+{{#if project.name}}
+# {{project.name}} {{project.version}}
 {{else}}
 # Fireball Engine API
 {{/if}}
 
-{{#if projectDescription}}
-{{projectDescription}}
+{{#if project.description}}
+{{project.description}}
 {{else}}
 Fireball is the game engine for the future.
 {{/if}}

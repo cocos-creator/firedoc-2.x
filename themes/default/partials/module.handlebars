@@ -41,7 +41,7 @@
 {{/if}}
 
 <div class="box intro">
-    {{{moduleDescription}}}
+    {{{description}}}
 </div>
 
 {{#example}}
@@ -54,17 +54,17 @@
 {{/example}}
 
 <!-- Class member index -->
-{{#if moduleClasses}}
+{{#if classes}}
 <div class="index-section properties">
     <h3>Class</h3>
     <ul class="index-list properties">
-        {{#moduleClasses}}
+        {{#classes}}
         <li class="index-item">
             <a href="{{../projectRoot}}classes/{{name}}.html">
-                {{displayName}}
+                {{name}}
             </a>
         </li>
-        {{/moduleClasses}}
+        {{/classes}}
     </ul>
 </div>
 {{/if}}
@@ -85,35 +85,35 @@
 {{/if}}
 
 <h3>Direct Members</h3>
-{{#moduleItems}}{{> items-index}}{{/moduleItems}}
+{{> items-index}}
 
 <div class="yui3-g">
 
-    {{#if moduleItems.properties}}
+    {{#if members.properties}}
         <div class="yui3-u-1-2">
             <h3>Properties:</h3>
-            {{#moduleItems.properties}}{{> props}}{{/moduleItems.properties}}
+            {{#members.properties}}{{> props}}{{/members.properties}}
         </div>
     {{/if}}
 
-    {{#if moduleItems.attrs}}
+    {{#if members.attributes}}
         <div class="yui3-u-1-2">
             <h3>Attributes:</h3>
-            {{#moduleItems.attrs}}{{> attrs}}{{/moduleItems.attrs}}
+            {{#members.attributes}}{{> attrs}}{{/members.attributes}}
         </div>
     {{/if}}
     
-    {{#if moduleItems.methods}}
+    {{#if members.methods}}
         <div class="yui3-u-1-2">
             <h3>Methods:</h3>
-            {{#moduleItems.methods}}{{> method}}{{/moduleItems.methods}}
+            {{#members.methods}}{{> method}}{{/members.methods}}
         </div>
     {{/if}}
 
-    {{#if moduleItems.events}}
+    {{#if members.events}}
         <div class="yui3-u-1-2">
             <h3>Events:</h3>
-            {{#moduleItems.events}}{{> method}}{{/moduleItems.events}}
+            {{#members.events}}{{> method}}{{/members.events}}
         </div>
     {{/if}}
 

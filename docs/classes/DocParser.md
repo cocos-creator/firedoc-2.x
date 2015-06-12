@@ -224,7 +224,7 @@ attribute's value has changed.
 
 
 
-`digesters`: 
+`digesters`: Unknown
 
 Defined in `lib/docparser.js:871`
 
@@ -245,7 +245,7 @@ attribute's value has changed.
 
 
 
-`dirmap`: 
+`dirmap`: Unknown
 
 Defined in `lib/docparser.js:921`
 
@@ -266,7 +266,7 @@ attribute's value has changed.
 
 
 
-`emitters`: 
+`emitters`: Unknown
 
 Defined in `lib/docparser.js:893`
 
@@ -287,7 +287,7 @@ attribute's value has changed.
 
 
 
-`filemap`: 
+`filemap`: Unknown
 
 Defined in `lib/docparser.js:913`
 

@@ -695,7 +695,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 793,
+            "line": 903,
             "description": "Ported from [Selleck](https://github.com/rgrove/selleck)\nRenders the handlebars templates with the default View class.",
             "itemtype": "method",
             "name": "render",
@@ -748,7 +748,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 846,
+            "line": 956,
             "description": "Render the index file",
             "itemtype": "method",
             "name": "renderIndex",
@@ -777,7 +777,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 872,
+            "line": 982,
             "description": "Generates the index.html file",
             "itemtype": "method",
             "name": "writeIndex",
@@ -806,7 +806,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 904,
+            "line": 1014,
             "description": "Render a module",
             "itemtype": "method",
             "name": "renderModule",
@@ -835,7 +835,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 1032,
+            "line": 1142,
             "description": "Generates the module files under \"out\"/modules/",
             "itemtype": "method",
             "name": "writeModules",
@@ -864,7 +864,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 1080,
+            "line": 1190,
             "description": "Checks an array of items (class items) to see if an item is in that list",
             "itemtype": "method",
             "name": "hasProperty",
@@ -889,7 +889,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 1097,
+            "line": 1207,
             "description": "Counter for stepping into merges",
             "access": "private",
             "tagname": "",
@@ -902,7 +902,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 1104,
+            "line": 1214,
             "description": "Merge superclass data into a child class",
             "itemtype": "method",
             "name": "mergeExtends",
@@ -929,7 +929,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 1155,
+            "line": 1265,
             "description": "Render the class file",
             "itemtype": "method",
             "name": "renderClass",
@@ -958,7 +958,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 1518,
+            "line": 1628,
             "description": "Generates the class files under \"out\"/classes/",
             "itemtype": "method",
             "name": "writeClasses",
@@ -987,7 +987,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 1567,
+            "line": 1677,
             "description": "Sort method of array of objects with a property called __name__",
             "itemtype": "method",
             "name": "nameSort",
@@ -1013,7 +1013,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 1590,
+            "line": 1700,
             "description": "Generates the syntax files under `\"out\"/files/`",
             "itemtype": "method",
             "name": "writeFiles",
@@ -1042,7 +1042,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 1648,
+            "line": 1758,
             "description": "Render the source file",
             "itemtype": "method",
             "name": "renderFile",
@@ -1071,7 +1071,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 1700,
+            "line": 1810,
             "description": "Write the API meta data used for the AutoComplete widget",
             "itemtype": "method",
             "name": "writeAPIMeta",
@@ -1089,7 +1089,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 1713,
+            "line": 1823,
             "description": "Render the API meta and return the JavaScript",
             "itemtype": "method",
             "name": "renderAPIMeta",
@@ -1114,7 +1114,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 1746,
+            "line": 1855,
             "description": "Normalizes a file path to a writable filename:\n\n   var path = 'lib/file.js';\n   returns 'lib_file.js';",
             "itemtype": "method",
             "name": "filterFileName",
@@ -1135,7 +1135,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 1759,
+            "line": 1868,
             "description": "Compiles the templates from the meta-data provided by DocParser",
             "itemtype": "method",
             "name": "compile",
