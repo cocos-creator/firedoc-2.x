@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8">
     <title>{{htmlTitle}}</title>
-    <link rel="stylesheet" href="{{project.assets}}/vendor/prettify/prettify-min.css">
-    <link rel="stylesheet" href="{{project.assets}}/css/main.css" id="site_styles">
-    <link rel="shortcut icon" type="image/png" href="{{project.assets}}/favicon.png">
-    <script src="{{project.assets}}/vendor/yui-min.js"></script>
+    <link rel="stylesheet" href="{{assets}}/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="{{assets}}/css/main.css" id="site_styles">
+    <link rel="shortcut icon" type="image/png" href="{{assets}}/favicon.png">
+    <script src="{{assets}}/vendor/yui-min.js"></script>
 </head>
 <body>
 
@@ -15,19 +15,19 @@
         <div class="content">
             <div class="project-title">
                 <a href="http://docs-zh.fireball-x.com">
-                    {{#if projectLogo}}
-                        <img class="logo" src="{{projectLogo}}" title="{{projectName}}">
+                    {{#if project.logo}}
+                        <img class="logo" src="{{project.logo}}" title="{{project.name}}">
                     {{else}}
                         <img class="logo" src="http://docs-zh.fireball-x.com/images/logo.png" title="Fireball Engine API">
                     {{/if}}
                 </a>
-                {{#if projectName}}
-                    <h1 class="project-name">{{projectName}}</h1>{{#if projectVersion}} <span class="project-version">{{projectVersion}}</span>{{/if}}
+                {{#if project.name}}
+                    <h1 class="project-name">{{project.name}}</h1>{{#if project.version}} <span class="project-version">{{project.version}}</span>{{/if}}
                 {{else}}
                     <h1 class="project-name">Fireball Engine API</h1>
                 {{/if}}
-                {{#if projectDescription}}
-                    <p class="description">{{projectDescription}}</p>
+                {{#if project.description}}
+                    <p class="description">{{project.description}}</p>
                 {{else}}
                     <p class="description">Fireball is the game engine for the future.</p>
                 {{/if}}
@@ -48,15 +48,15 @@
 
     </div>
 </div>
-<script src="{{project.assets}}/vendor/prettify/prettify-min.js"></script>
+<script src="{{assets}}/vendor/prettify/prettify-min.js"></script>
 <script>prettyPrint();</script>
-<script src="{{project.assets}}/vendor/jquery.min.js"></script>
-<script src="{{project.assets}}/js/jquery-offscreen-trigger.js"></script>
-<script src="{{project.assets}}/js/yui-prettify.js"></script>
-<script src="{{project.assets}}/../api.js"></script>
-<script src="{{project.assets}}/js/api-filter.js"></script>
-<script src="{{project.assets}}/js/api-list.js"></script>
-<script src="{{project.assets}}/js/api-search.js"></script>
-<script src="{{project.assets}}/js/apidocs.js"></script>
+<script src="{{assets}}/vendor/jquery.min.js"></script>
+<script src="{{assets}}/js/jquery-offscreen-trigger.js"></script>
+<script src="{{assets}}/js/yui-prettify.js"></script>
+<script src="{{assets}}/../api.js"></script>
+<script src="{{assets}}/js/api-filter.js"></script>
+<script src="{{assets}}/js/api-list.js"></script>
+<script src="{{assets}}/js/api-search.js"></script>
+<script src="{{assets}}/js/apidocs.js"></script>
 </body>
 </html>
