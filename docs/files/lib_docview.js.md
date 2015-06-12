@@ -21,6 +21,8 @@ YUI.add('docview', function (Y) {
    * Licensed under the BSD License.
   */
 
+  var path = require('path');
+
   /**
    * View class borrowed from [Selleck](https://github.com/rgrove/selleck)  
    * The view class is a **`handlebars`** template helper.
@@ -29,8 +31,9 @@ YUI.add('docview', function (Y) {
    * @param {Object} data Meta data to use in this template
    * @param {String} templateName The name of the template file to render.
    **/
-  function DocView(data, templateName) {
+  function DocView(data, templateName, cwd) {
     this.templateName = templateName;
+    this.assets = path.join(cwd || '', 'assets');
     Y.mix(this, data);
   }
 

@@ -6,7 +6,7 @@ Fireball is the game engine for the future.
 ### `DocView` Class
 
 
-Defined in: [lib/docview.js:15](../files/lib/docview.js.js)
+Defined in: [lib/docview.js:17](../files/lib/docview.js.js)
 
 Module: [yuidoc](../modules/yuidoc.md)
 
@@ -56,7 +56,7 @@ The view class is a **`handlebars`** template helper.
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/docview.js:29](../files/lib_docview.js.md#l29) |
+| Defined | [lib/docview.js:32](../files/lib_docview.js.md#l32) |
 
 
 
@@ -66,7 +66,7 @@ The view class is a **`handlebars`** template helper.
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/docview.js:47](../files/lib_docview.js.md#l47) |
+| Defined | [lib/docview.js:50](../files/lib_docview.js.md#l50) |
 
 
 

@@ -57,6 +57,7 @@ YUI.add('doc-builder', function (Y) {
     themeDir = DEFAULT_THEME;
 
   Y.DocBuilder = function (options, data) {
+    var self = this;
     this.options = options;
     if (options.helpers) {
       this._addHelpers(options.helpers);
@@ -1280,7 +1281,7 @@ YUI.add('doc-builder', function (Y) {
     renderModule: function (mod, cb) {
       var self = this;
       var api = self.api;
-      var view = new Y.DocView(mod);
+      var view = new Y.DocView(mod, null, '../');
       self.render('{{>module}}', view, api.layouts.main, api.partials, function (err, html) {
         self.files += 1;
         cb(html, view);
@@ -1413,7 +1414,7 @@ YUI.add('doc-builder', function (Y) {
     renderClass: function (clazz, cb) {
       var self = this;
       var api = self.api;
-      var view = new Y.DocView(clazz);
+      var view = new Y.DocView(clazz, null, '../');
       var tmpl = clazz['is_enum'] ? '{{>enums}}' : '{{>classes}}';
       self.render(tmpl, view, api.layouts.main, api.partials, function (err, html) {
         self.files += 1;
@@ -1583,7 +1584,7 @@ YUI.add('doc-builder', function (Y) {
           }
 
           opts.meta.fileData = str;
-          var view = new Y.DocView(opts.meta, 'index');
+          var view = new Y.DocView(opts.meta, 'index', '..');
           var mainLayout = opts.layouts[layout];
           self.render('{{>files}}', view, mainLayout, opts.partials, function (err, html) {
             self.files++;
