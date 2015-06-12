@@ -479,6 +479,7 @@ YUI.add('docparser', function (Y) {
               name: value,
               file: target.file,
               line: target.line,
+              type: 'modules',
               // localize the description
               description: Y.localize(target.description)
             });
@@ -597,7 +598,13 @@ YUI.add('docparser', function (Y) {
         }
 
         // set `is_enum` when the tagname is "enum"
-        host.is_enum = (tagname === 'enum');
+        if (tagname === 'enum') {
+          host['is_enum'] = true;
+          host.type = 'enums';
+        } else {
+          host['is_enum'] = false;
+          host.type = 'classes';
+        }
 
         //Merge host and target in case the class was defined in a "for" tag
         //before it was defined in a "class" tag

@@ -33,8 +33,15 @@ YUI.add('docview', function (Y) {
    **/
   function DocView(data, templateName, cwd) {
     this.templateName = templateName;
+    this.cwd = path.join(cwd || '');
     this.assets = path.join(cwd || '', 'assets');
     Y.mix(this, data);
+
+    // register helpers
+    var self = this;
+    Y.Handlebars.registerHelper('relink', function (item, options) {
+      return path.join(self.cwd, item);
+    });
   }
 
   DocView.prototype = {
@@ -69,6 +76,7 @@ YUI.add('docview', function (Y) {
       }
       return title;
     }
+
   };
 
   Y.DocView = DocView;

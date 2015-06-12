@@ -7,7 +7,7 @@ Fireball is the game engine for the future.
 
 Extends `Base`
 
-Defined in: [lib/docparser.js:843](../files/lib/docparser.js.js)
+Defined in: [lib/docparser.js:850](../files/lib/docparser.js.js)
 
 Module: [yuidoc](../modules/yuidoc.md)
 
@@ -136,7 +136,7 @@ with the parsers data (aggregated in the `'data'` property).
 
 `digesters`: Unknown
 
-Defined in `lib/docparser.js:871`
+Defined in `lib/docparser.js:878`
 
 
 
@@ -167,7 +167,7 @@ attribute's value has changed.
 
 `emitters`: Unknown
 
-Defined in `lib/docparser.js:893`
+Defined in `lib/docparser.js:900`
 
 
 
@@ -189,7 +189,7 @@ attribute's value has changed.
 
 `syntaxtype`: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a>
 
-Defined in `lib/docparser.js:904`
+Defined in `lib/docparser.js:911`
 
 
 
@@ -210,7 +210,7 @@ attribute's value has changed.
 
 `filemap`: Unknown
 
-Defined in `lib/docparser.js:913`
+Defined in `lib/docparser.js:920`
 
 
 
@@ -231,7 +231,7 @@ attribute's value has changed.
 
 `dirmap`: Unknown
 
-Defined in `lib/docparser.js:921`
+Defined in `lib/docparser.js:928`
 
 
 
@@ -254,7 +254,7 @@ attribute's value has changed.
 
 `currentfile`: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a>
 
-Defined in `lib/docparser.js:931`
+Defined in `lib/docparser.js:938`
 
 
 
@@ -275,7 +275,7 @@ attribute's value has changed.
 
 `mainmodule`: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a>
 
-Defined in `lib/docparser.js:952`
+Defined in `lib/docparser.js:959`
 
 
 
@@ -296,7 +296,7 @@ attribute's value has changed.
 
 `currentmodule`: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a>
 
-Defined in `lib/docparser.js:988`
+Defined in `lib/docparser.js:995`
 
 
 
@@ -317,7 +317,7 @@ attribute's value has changed.
 
 `currentsubmodule`: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a>
 
-Defined in `lib/docparser.js:1047`
+Defined in `lib/docparser.js:1054`
 
 
 
@@ -338,7 +338,7 @@ attribute's value has changed.
 
 `currentclass`: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a>
 
-Defined in `lib/docparser.js:1083`
+Defined in `lib/docparser.js:1090`
 
 
 
@@ -420,7 +420,7 @@ Takes a non-namespaced classname and resolves it to a namespace (to support `@fo
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/docparser.js:1122](../files/lib_docparser.js.md#l1122) |
+| Defined | [lib/docparser.js:1129](../files/lib_docparser.js.md#l1129) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 ###### Parameters
@@ -436,7 +436,7 @@ lines will be unindented four spaces. Ported from [Selleck](https://github.com/r
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/docparser.js:1193](../files/lib_docparser.js.md#l1193) |
+| Defined | [lib/docparser.js:1200](../files/lib_docparser.js.md#l1200) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 ###### Parameters
@@ -452,7 +452,7 @@ friendly for both markdown and html parsers.
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/docparser.js:1214](../files/lib_docparser.js.md#l1214) |
+| Defined | [lib/docparser.js:1221](../files/lib_docparser.js.md#l1221) |
 
 ###### Parameters
 - comment <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The comment to parse
@@ -471,7 +471,7 @@ alternative comment parser.
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/docparser.js:1292](../files/lib_docparser.js.md#l1292) |
+| Defined | [lib/docparser.js:1299](../files/lib_docparser.js.md#l1299) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 ###### Parameters
@@ -485,7 +485,7 @@ Processes all the tags in a single comment block
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/docparser.js:1348](../files/lib_docparser.js.md#l1348) |
+| Defined | [lib/docparser.js:1355](../files/lib_docparser.js.md#l1355) |
 
 ###### Parameters
 - an <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> array of the tag/text pairs
@@ -499,7 +499,7 @@ and relationships between elements for the entire project.
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/docparser.js:1422](../files/lib_docparser.js.md#l1422) |
+| Defined | [lib/docparser.js:1429](../files/lib_docparser.js.md#l1429) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 ###### Parameters
@@ -512,7 +512,7 @@ Extracts and transforms the filemap provided to constructor
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/docparser.js:1538](../files/lib_docparser.js.md#l1538) |
+| Defined | [lib/docparser.js:1545](../files/lib_docparser.js.md#l1545) |
 | Return 		 | <a href="../classes/DocParser.html" class="crosslink">DocParser</a> 
 
 ###### Parameters

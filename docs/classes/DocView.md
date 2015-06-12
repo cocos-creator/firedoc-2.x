@@ -56,7 +56,7 @@ The view class is a **`handlebars`** template helper.
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/docview.js:32](../files/lib_docview.js.md#l32) |
+| Defined | [lib/docview.js:39](../files/lib_docview.js.md#l39) |
 
 
 
@@ -66,7 +66,7 @@ The view class is a **`handlebars`** template helper.
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/docview.js:50](../files/lib_docview.js.md#l50) |
+| Defined | [lib/docview.js:57](../files/lib_docview.js.md#l57) |
 
 
 
