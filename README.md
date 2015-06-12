@@ -94,6 +94,8 @@ Even you are able to clear all installed themes by the following command:
 $ firedoc-theme clear
 ```
 
+If you are wanting to write a new theme and need some details, you could go to: [themes README](themes).
+
 Test
 -------------
 
