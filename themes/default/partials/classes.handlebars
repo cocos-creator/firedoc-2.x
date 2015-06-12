@@ -13,13 +13,13 @@
 
     {{#if extends}}
         <div class="extends">
-            Extends {{#crossLink extends}}{{/crossLink}}
+            {{i18n.EXTENDS_FOR}} {{#crossLink extends}}{{/crossLink}}
         </div>
     {{/if}}
 
     {{#if foundAt}}
         <div class="foundat">
-            Defined in: <a href="{{foundAt}}">`{{{file}}}:{{{line}}}`</a>
+            {{i18n.DEFINED_IN}}: <a href="{{foundAt}}">`{{{file}}}:{{{line}}}`</a>
         </div>
     {{/if}}
 

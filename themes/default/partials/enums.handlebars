@@ -57,39 +57,39 @@
 
 <a name="index" class="anchor-link"></a>
 <div class="index">
-<h2>Index</h2>
+    <h2>{{i18n.INDEX}}</h2>
+    {{>options}}
+    {{#if members.properties}}
+        <div class="index-section properties">
+            <h3>{{i18n.PROPERTIES}}</h3>
+            <ul class="index-list properties{{#if extends}} extends{{/if}}">
+                {{#members.properties}}
+                    <li class="index-item property{{#if access}} {{access}}{{/if}}{{#if deprecated}} deprecated{{/if}}{{#if overwritten_from}} inherited{{/if}}{{#if extended_from}} inherited{{/if}}">
+                        <a href="#property_{{name}}">{{name}}</a>
 
-{{>options}}
+                        {{#if static}}
+                            <span class="flag static">{{i18n.STATIC}}</span>
+                        {{/if}}
+                    </li>
+                {{/members.properties}}
+            </ul>
+        </div>
+    {{/if}}
 
-{{#if members.properties}}
-    <div class="index-section properties">
-        <h3>Properties</h3>
-        <ul class="index-list properties{{#if extends}} extends{{/if}}">
-            {{#members.properties}}
-                <li class="index-item property{{#if access}} {{access}}{{/if}}{{#if deprecated}} deprecated{{/if}}{{#if overwritten_from}} inherited{{/if}}{{#if extended_from}} inherited{{/if}}">
-                    <a href="#property_{{name}}">{{name}}</a>
-
-                    {{#if static}}
-                        <span class="flag static">static</span>
-                    {{/if}}
-                </li>
-            {{/members.properties}}
-        </ul>
-    </div>
-{{/if}}
+</div>
 
 <div class="class-detail">
 
-{{#if members.properties}}
-    <div class="properties-detail">
-        <h2>Properties</h2>
-        {{#members.properties}}{{>props}}{{/members.properties}}
-        <div class="no-visible-items-message">
-            <p>There are no properties that match your current filter settings. You can change your filter settings in the index section on this page. <a href="#index" class="index-jump-link">index</a></p>
-        </div>
+    {{#if members.properties}}
+        <div class="properties-detail">
+            <h2>{{i18n.PROPERTIES}}</h2>
+            {{#members.properties}}{{>props}}{{/members.properties}}
+            <div class="no-visible-items-message">
+                <p>There are no properties that match your current filter settings. You can change your filter settings in the index section on this page. <a href="#index" class="index-jump-link">index</a></p>
+            </div>
 
-    </div>
-{{/if}}
+        </div>
+    {{/if}}
 
 </div>
 

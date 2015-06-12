@@ -5,6 +5,33 @@
     "ENUMS": "Enums",
     "SEARCH_PLACEHOLDER": "Type to filter APIs"
   },
+
+  "options": {
+    "SHOW": "Show",
+    "PROTECTED": "Protected",
+    "PRIVATE": "Private",
+    "DEPRECATED": "Deprecated"
+  },
+
+  "INDEX_WELCOME": "Browse to a module or class using the sidebar to view its API documentation.",
+  "INDEX_TITLE": "Keyboard Shortcuts",
+  "INDEX_GUIDES_1": "ress <kbd>s</kbd> to focus the API search box.",
+  "INDEX_GUIDES_2": "Use <kbd>Up</kbd> and <kbd>Down</kbd> to select classes, modules, and search results.",
+  "INDEX_GUIDES_3": "With the API search box or sidebar focused, use <kbd><span class='cmd'>&#x2318;</span>-Left</kbd> or <kbd><span class='cmd'>&#x2318;</span>-Right</kbd> to switch sidebar tabs.",
+  "INDEX_GUIDES_4": "With the API search box or sidebar focused, use <kbd>Ctrl+Left</kbd> and <kbd>Ctrl+Right</kbd> to switch sidebar tabs.",
+
+  "INDEX": "Index",
+  "STATIC": "static",
+  "DEPRECATED": "deprecated",
+  "CHAINABLE": "chainable",
+  "ASYNC": "async",
+  "OPTIONAL": "optional",
+  "DEFAULTS": "default",
+  "EXAMPLES": "examples",
+  "PARAMETERS": "parameters",
+  "RETURNS": "returns",
+  "TYPE": "type",
+
   "CLASS": "Class",
   "MODULE": "Module",
   "ENUM": "Enum",
@@ -13,5 +40,13 @@
   "PROPERTIES": "Properties",
   "ATTRUBUTES": "Attributes",
   "METHODS": "Methods",
-  "EVENTS": "Events"
+  "EVENTS": "Events",
+
+  "INHERITED_MEMBERS": "inherited members",
+  "INHERITANCE_TREE": "Inheritance Tree",
+
+  "CONSTRUCTOR": "Constructor",
+  "DEFINED_IN": "Defined in",
+  "EXTENDS_FOR": "Extends",
+  "INHERITED_FROM": "Inherited from"
 }
