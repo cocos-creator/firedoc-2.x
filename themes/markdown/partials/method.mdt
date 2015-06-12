@@ -1,7 +1,7 @@
 
-##### method: `{{methodName}}`
+##### method: `{{name}}`
 
-{{{methodDescription}}}
+{{{description}}}
 
 | meta | description |
 |------|-------------|

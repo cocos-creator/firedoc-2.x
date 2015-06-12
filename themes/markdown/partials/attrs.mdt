@@ -20,7 +20,7 @@ Available since {{since}}
 
 ---------------------
 
-{{{propertyDescription}}}
+{{{description}}}
 
 {{#if default}}
 **Default**: {{default}}
@@ -37,8 +37,8 @@ attribute's value has changed.
 
 {{/if}}
 
-{{#example}}
+{{#if example}}
 ##### Examples
 
-{{{.}}}
-{{/example}}
+{{{example}}}
+{{/if}}

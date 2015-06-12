@@ -2,20 +2,22 @@
 {{#if enums}}
 ### Enums
 {{#enums}}
-- [`{{displayName}}`](enums/{{name}}.md) from [{{module}}](modules/{{module}}.md)
+{{#if is_enum}}
+- [`{{name}}`](enums/{{name}}.md) from [{{module}}](modules/{{module}}.md)
+{{/if}}
 {{/enums}}
 {{/if}}
 
 {{#if classes}}
 ### Classes
 {{#classes}}
-- [`{{displayName}}`](classes/{{name}}.md) from [{{module}}](modules/{{module}}.md)
+- [`{{name}}`](classes/{{name}}.md) from [{{module}}](modules/{{module}}.md)
 {{/classes}}
 {{/if}}
 
 {{#if modules}}
 ### Module
 {{#modules}}
-- [`{{displayName}}`](modules/{{name}}.md)
+- [`{{name}}`](modules/{{name}}.md)
 {{/modules}}
 {{/if}}

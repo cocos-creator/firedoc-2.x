@@ -30,7 +30,7 @@ This event is deprecated.
 {{/if}}
 
 
-{{{eventDescription}}}
+{{{description}}}
 
 ### Index
 

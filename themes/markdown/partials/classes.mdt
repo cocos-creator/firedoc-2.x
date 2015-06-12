@@ -30,33 +30,33 @@ This class is deprecated.
 {{/if}}
 
 
-{{{classDescription}}}
+{{{description}}}
 
 {{> items-index}}
 
 ### Details
 
-{{#if properties}}
+{{#if members.properties}}
 
 #### Properties
 
-{{#properties}}
+{{#members.properties}}
 {{> props}}
-{{/properties}}
+{{/members.properties}}
 
 {{/if}}
 
-{{#if attrs}}
+{{#if members.attributes}}
 
 #### Attributes
 
-{{#attrs}}
+{{#members.attributes}}
 {{> attrs}}
-{{/attrs}}
+{{/members.attributes}}
 
 {{/if}}
 
-{{#if methods}}
+{{#if members.methods}}
 
 <!-- Method Block -->
 #### Methods
@@ -65,18 +65,18 @@ This class is deprecated.
 ##### Constructor
 {{> method}}
 {{/is_constructor}}
-{{#methods}}
+{{#members.methods}}
 {{> method}}
-{{/methods}}
+{{/members.methods}}
 
 {{/if}}
 
-{{#if events}}
+{{#if members.events}}
 
 #### Events
 
-{{#events}}
+{{#members.events}}
 {{> events}}
-{{/events}}
+{{/members.events}}
 
 {{/if}}

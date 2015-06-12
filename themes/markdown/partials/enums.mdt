@@ -30,36 +30,24 @@ This enum is deprecated.
 {{/if}}
 
 
-{{{classDescription}}}
+{{{description}}}
 
 ### Index
 
-{{#if properties}}
+{{#if members.properties}}
 ##### Properties
-{{#properties}}
-  - `{{name}}`
-{{/properties}}
-{{/if}}
 
-{{#if attrs}}
-##### Attributes
-{{#attrs}}
+{{#members.properties}}
   - `{{name}}`
-{{/attrs}}
+{{/members.properties}}
 {{/if}}
 
 ### Details
 
-{{#if properties}}
+{{#if members.properties}}
 #### Properties
-{{#properties}}
-{{> props}}
-{{/properties}}
-{{/if}}
 
-{{#if attrs}}
-#### Attributes
-{{#attrs}}
-{{> attrs}}
-{{/attrs}}
+{{#members.properties}}
+{{> props}}
+{{/members.properties}}
 {{/if}}

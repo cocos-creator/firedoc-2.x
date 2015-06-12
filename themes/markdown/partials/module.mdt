@@ -37,27 +37,30 @@ This module is deprecated.
 {{{.}}}
 {{/example}}
 
-{{#if moduleClasses}}
+{{#if classes}}
 ### Classes
-  {{#moduleClasses}}
-  - [{{displayName}}](../classes/{{name}}.md)
-  {{/moduleClasses}}
+  {{#classes}}
+  - [{{name}}](../classes/{{name}}.md)
+  {{/classes}}
 {{/if}}
 
-{{#if moduleEnums}}
+{{#if classes}}
 ### Enums
-  {{#moduleEnums}}
-  - [{{displayName}}](../enums/{{name}}.md)
-  {{/moduleEnums}}
+  {{#classes}}
+  {{#if is_enum}}
+  - [{{name}}](../enums/{{name}}.md)
+  {{/if}}
+  {{/classes}}
 {{/if}}
 
 {{#if subModules}}
 ### Sub Modules
   {{#subModules}}
-  - [{{displayName}}]({{name}}.md) {{{description}}}
+  - [{{name}}]({{name}}.md) {{{description}}}
   {{/subModules}}
 {{/if}}
 
+{{#if members}}
 ### Direct Members
-{{#moduleItems}}{{> items-index}}{{/moduleItems}}
-
+{{> items-index}}
+{{/if}}
