@@ -180,6 +180,7 @@ YUI.add('doc-builder', function (Y) {
      * @param {String} [content] crossLink helper content
      */
     _parseCrossLink: function (item, raw, content) {
+      item = item || 'unknown';
       var self = this;
       var base = '../',
         baseItem,
@@ -776,7 +777,9 @@ YUI.add('doc-builder', function (Y) {
     _parseCode: function (html) {
       html = html || '';
       //html = html.replace(/<pre><code>/g, '<pre class="code"><code class="prettyprint">');
-      html = html.replace(/<pre><code/g, '<pre class="code prettyprint"><code');
+      html = html.replace(/<pre><code>/g, '<pre class="code prettyprint"><code>\n');
+      html = html.replace(/\&gt;/g, '>');
+      html = html.replace(/\&lt;/g, '<');
       return html;
     },
     /**

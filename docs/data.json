@@ -2,7 +2,7 @@
     "project": {
         "name": "firedoc",
         "description": "Fire Doc, Fireball-x's JavaScript Documentation engine forked from YUI.",
-        "version": "1.5.3"
+        "version": "1.5.4"
     },
     "files": {
         "lib/builder.js": {
@@ -437,7 +437,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 271,
+            "line": 272,
             "description": "List of native types to cross link to MDN",
             "itemtype": "property",
             "name": "NATIVES",
@@ -448,7 +448,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 310,
+            "line": 311,
             "description": "Function to link an external type uses `NATIVES` object",
             "itemtype": "method",
             "name": "NATIVES_LINKER",
@@ -471,7 +471,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 324,
+            "line": 325,
             "description": "Mixes the various external data soures together into the local data, augmenting\nit with flags.",
             "itemtype": "method",
             "name": "_mixExternal",
@@ -483,7 +483,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 371,
+            "line": 372,
             "description": "Fetches the remote data and fires the callback when it's all complete",
             "itemtype": "method",
             "name": "mixExternal",
@@ -501,7 +501,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 446,
+            "line": 447,
             "description": "File counter",
             "itemtype": "property",
             "name": "files",
@@ -512,7 +512,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 452,
+            "line": 453,
             "description": "Holder for project meta data",
             "itemtype": "property",
             "name": "_meta",
@@ -525,7 +525,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 459,
+            "line": 460,
             "description": "Prep the meta data to be fed to Selleck",
             "itemtype": "method",
             "name": "getProjectMeta",
@@ -539,7 +539,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 500,
+            "line": 501,
             "description": "Populate the meta data for classes",
             "itemtype": "method",
             "name": "populateClasses",
@@ -560,7 +560,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 533,
+            "line": 534,
             "description": "Populate the meta data for modules",
             "itemtype": "method",
             "name": "populateModules",
@@ -581,7 +581,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 579,
+            "line": 580,
             "description": "Populate the meta data for files",
             "itemtype": "method",
             "name": "populateFiles",
@@ -602,7 +602,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 634,
+            "line": 635,
             "description": "Parses file and line number from an item object and build's an HREF",
             "itemtype": "method",
             "name": "addFoundAt",
@@ -623,7 +623,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 651,
+            "line": 652,
             "description": "Augments the **DocParser** meta data to provide default values for certain keys as well as parses all descriptions\nwith the `Markdown Parser`",
             "itemtype": "method",
             "name": "augmentData",
@@ -644,7 +644,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 710,
+            "line": 711,
             "description": "Makes the default directories needed",
             "itemtype": "method",
             "name": "makeDirs",
@@ -661,7 +661,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 760,
+            "line": 761,
             "description": "Parses `<pre><code>` tags and adds the __prettyprint__ `className` to them",
             "itemtype": "method",
             "name": "_parseCode",
@@ -684,7 +684,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 773,
+            "line": 776,
             "description": "Ported from [Selleck](https://github.com/rgrove/selleck), this handles ```'s in fields\nthat are not parsed by the **Markdown** parser.",
             "itemtype": "method",
             "name": "_inlineCode",
@@ -707,7 +707,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 793,
+            "line": 796,
             "description": "build the uniform API to export the theme context",
             "itemtype": "method",
             "name": "buildAPI",
@@ -721,7 +721,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 827,
+            "line": 830,
             "description": "build the members",
             "itemtype": "method",
             "name": "buildMembers",
@@ -735,7 +735,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 852,
+            "line": 855,
             "description": "extends members array",
             "itemtype": "method",
             "name": "extendMembers",
@@ -748,7 +748,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 869,
+            "line": 872,
             "description": "build the member",
             "itemtype": "method",
             "name": "buildMember",
@@ -779,7 +779,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 929,
+            "line": 932,
             "description": "generate expand function",
             "itemtype": "method",
             "name": "getExpandIterator",
@@ -798,7 +798,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 953,
+            "line": 956,
             "description": "extends modules",
             "itemtype": "method",
             "name": "expandMembersFromModules",
@@ -808,7 +808,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 971,
+            "line": 974,
             "description": "extends members from classes",
             "itemtype": "method",
             "name": "expandMembersFromModules",
@@ -818,7 +818,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 989,
+            "line": 992,
             "description": "build the method name by its name and parameters",
             "itemtype": "method",
             "name": "getMethodName",
@@ -847,7 +847,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 1003,
+            "line": 1006,
             "description": "get dest view type md or html",
             "itemtype": "method",
             "name": "getViewType",
@@ -861,7 +861,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 1017,
+            "line": 1020,
             "description": "get class inheritance tree",
             "itemtype": "method",
             "name": "getClassInheritanceTree",
@@ -875,7 +875,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 1057,
+            "line": 1060,
             "description": "append the clazz to its module",
             "itemtype": "method",
             "name": "appendClassToModule",
@@ -899,7 +899,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 1073,
+            "line": 1076,
             "description": "Get the project to export",
             "itemtype": "property",
             "name": "project",
@@ -909,7 +909,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 1088,
+            "line": 1091,
             "description": "Get i18n object",
             "itemtype": "property",
             "name": "i18n",
@@ -919,7 +919,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 1107,
+            "line": 1110,
             "description": "Get modules object to export",
             "itemtype": "property",
             "name": "modules",
@@ -929,7 +929,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 1129,
+            "line": 1132,
             "description": "Get classes object to export",
             "itemtype": "property",
             "name": "classes",
@@ -939,7 +939,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 1156,
+            "line": 1159,
             "description": "Get files object to export",
             "itemtype": "property",
             "name": "files",
@@ -949,7 +949,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 1171,
+            "line": 1174,
             "description": "Ported from [Selleck](https://github.com/rgrove/selleck)\nRenders the handlebars templates with the default View class.",
             "itemtype": "method",
             "name": "render",
@@ -1002,7 +1002,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 1222,
+            "line": 1225,
             "description": "Render the index file",
             "itemtype": "method",
             "name": "renderIndex",
@@ -1031,7 +1031,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 1238,
+            "line": 1241,
             "description": "Generates the index.html file",
             "itemtype": "method",
             "name": "writeIndex",
@@ -1060,7 +1060,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 1270,
+            "line": 1273,
             "description": "Render a module",
             "itemtype": "method",
             "name": "renderModule",
@@ -1089,7 +1089,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 1286,
+            "line": 1289,
             "description": "Generates the module files under \"out\"/modules/",
             "itemtype": "method",
             "name": "writeModules",
@@ -1118,7 +1118,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 1325,
+            "line": 1328,
             "description": "Checks an array of items (class items) to see if an item is in that list",
             "itemtype": "method",
             "name": "hasProperty",
@@ -1143,7 +1143,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 1342,
+            "line": 1345,
             "description": "Counter for stepping into merges",
             "access": "private",
             "tagname": "",
@@ -1156,7 +1156,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 1349,
+            "line": 1352,
             "description": "Merge superclass data into a child class",
             "itemtype": "method",
             "name": "mergeExtends",
@@ -1183,7 +1183,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 1403,
+            "line": 1406,
             "description": "Render the class file",
             "itemtype": "method",
             "name": "renderClass",
@@ -1212,7 +1212,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 1420,
+            "line": 1423,
             "description": "Generates the class files under \"out\"/classes/",
             "itemtype": "method",
             "name": "writeClasses",
@@ -1241,7 +1241,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 1460,
+            "line": 1463,
             "description": "Sort method of array of objects with a property called __name__",
             "itemtype": "method",
             "name": "nameSort",
@@ -1267,7 +1267,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 1483,
+            "line": 1486,
             "description": "Generates the syntax files under `\"out\"/files/`",
             "itemtype": "method",
             "name": "writeFiles",
@@ -1296,7 +1296,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 1541,
+            "line": 1544,
             "description": "Render the source file",
             "itemtype": "method",
             "name": "renderFile",
@@ -1325,7 +1325,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 1593,
+            "line": 1596,
             "description": "Write the API meta data used for the AutoComplete widget",
             "itemtype": "method",
             "name": "writeAPIMeta",
@@ -1343,7 +1343,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 1606,
+            "line": 1609,
             "description": "Render the API meta and return the JavaScript",
             "itemtype": "method",
             "name": "renderAPIMeta",
@@ -1368,7 +1368,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 1638,
+            "line": 1641,
             "description": "Normalizes a file path to a writable filename:\n\n   var path = 'lib/file.js';\n   returns 'lib_file.js';",
             "itemtype": "method",
             "name": "filterFileName",
@@ -1389,7 +1389,7 @@
         },
         {
             "file": "lib/builder.js",
-            "line": 1651,
+            "line": 1654,
             "description": "Compiles the templates from the meta-data provided by DocParser",
             "itemtype": "method",
             "name": "compile",
@@ -3010,23 +3010,23 @@
     "warnings": [
         {
             "message": "unknown tag: name",
-            "line": " lib/builder.js:1073"
+            "line": " lib/builder.js:1076"
         },
         {
             "message": "unknown tag: name",
-            "line": " lib/builder.js:1088"
+            "line": " lib/builder.js:1091"
         },
         {
             "message": "unknown tag: name",
-            "line": " lib/builder.js:1107"
+            "line": " lib/builder.js:1110"
         },
         {
             "message": "unknown tag: name",
-            "line": " lib/builder.js:1129"
+            "line": " lib/builder.js:1132"
         },
         {
             "message": "unknown tag: name",
-            "line": " lib/builder.js:1156"
+            "line": " lib/builder.js:1159"
         },
         {
             "message": "unknown tag: exports",

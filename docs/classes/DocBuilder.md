@@ -95,7 +95,7 @@ based templates to generate static HTML content
 | meta | description |
 |------|-------------|
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
-| Defined | [lib/builder.js:271](../files/lib_builder.js.md#l271) |
+| Defined | [lib/builder.js:272](../files/lib_builder.js.md#l272) |
 
 
 
@@ -107,7 +107,7 @@ based templates to generate static HTML content
 | meta | description |
 |------|-------------|
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a> |
-| Defined | [lib/builder.js:446](../files/lib_builder.js.md#l446) |
+| Defined | [lib/builder.js:447](../files/lib_builder.js.md#l447) |
 
 
 
@@ -119,7 +119,7 @@ based templates to generate static HTML content
 | meta | description |
 |------|-------------|
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
-| Defined | [lib/builder.js:452](../files/lib_builder.js.md#l452) |
+| Defined | [lib/builder.js:453](../files/lib_builder.js.md#l453) |
 
 
 
@@ -131,7 +131,7 @@ based templates to generate static HTML content
 | meta | description |
 |------|-------------|
 | Type | Unknown |
-| Defined | [lib/builder.js:1073](../files/lib_builder.js.md#l1073) |
+| Defined | [lib/builder.js:1076](../files/lib_builder.js.md#l1076) |
 
 
 
@@ -143,7 +143,7 @@ based templates to generate static HTML content
 | meta | description |
 |------|-------------|
 | Type | Unknown |
-| Defined | [lib/builder.js:1088](../files/lib_builder.js.md#l1088) |
+| Defined | [lib/builder.js:1091](../files/lib_builder.js.md#l1091) |
 
 
 
@@ -155,7 +155,7 @@ based templates to generate static HTML content
 | meta | description |
 |------|-------------|
 | Type | Unknown |
-| Defined | [lib/builder.js:1107](../files/lib_builder.js.md#l1107) |
+| Defined | [lib/builder.js:1110](../files/lib_builder.js.md#l1110) |
 
 
 
@@ -167,7 +167,7 @@ based templates to generate static HTML content
 | meta | description |
 |------|-------------|
 | Type | Unknown |
-| Defined | [lib/builder.js:1129](../files/lib_builder.js.md#l1129) |
+| Defined | [lib/builder.js:1132](../files/lib_builder.js.md#l1132) |
 
 
 
@@ -179,7 +179,7 @@ based templates to generate static HTML content
 | meta | description |
 |------|-------------|
 | Type | Unknown |
-| Defined | [lib/builder.js:1156](../files/lib_builder.js.md#l1156) |
+| Defined | [lib/builder.js:1159](../files/lib_builder.js.md#l1159) |
 
 
 
@@ -191,7 +191,7 @@ based templates to generate static HTML content
 | meta | description |
 |------|-------------|
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a> |
-| Defined | [lib/builder.js:1342](../files/lib_builder.js.md#l1342) |
+| Defined | [lib/builder.js:1345](../files/lib_builder.js.md#l1345) |
 
 
 
@@ -247,7 +247,7 @@ Function to link an external type uses `NATIVES` object
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:310](../files/lib_builder.js.md#l310) |
+| Defined | [lib/builder.js:311](../files/lib_builder.js.md#l311) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 ###### Parameters
@@ -261,7 +261,7 @@ it with flags.
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:324](../files/lib_builder.js.md#l324) |
+| Defined | [lib/builder.js:325](../files/lib_builder.js.md#l325) |
 
 
 
@@ -271,7 +271,7 @@ Fetches the remote data and fires the callback when it's all complete
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:371](../files/lib_builder.js.md#l371) |
+| Defined | [lib/builder.js:372](../files/lib_builder.js.md#l372) |
 
 ###### Parameters
 - cb Callback The callback to execute when complete
@@ -283,7 +283,7 @@ Prep the meta data to be fed to Selleck
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:459](../files/lib_builder.js.md#l459) |
+| Defined | [lib/builder.js:460](../files/lib_builder.js.md#l460) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 
@@ -294,7 +294,7 @@ Populate the meta data for classes
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:500](../files/lib_builder.js.md#l500) |
+| Defined | [lib/builder.js:501](../files/lib_builder.js.md#l501) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 ###### Parameters
@@ -307,7 +307,7 @@ Populate the meta data for modules
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:533](../files/lib_builder.js.md#l533) |
+| Defined | [lib/builder.js:534](../files/lib_builder.js.md#l534) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 ###### Parameters
@@ -320,7 +320,7 @@ Populate the meta data for files
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:579](../files/lib_builder.js.md#l579) |
+| Defined | [lib/builder.js:580](../files/lib_builder.js.md#l580) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 ###### Parameters
@@ -333,7 +333,7 @@ Parses file and line number from an item object and build's an HREF
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:634](../files/lib_builder.js.md#l634) |
+| Defined | [lib/builder.js:635](../files/lib_builder.js.md#l635) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 ###### Parameters
@@ -347,7 +347,7 @@ with the `Markdown Parser`
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:651](../files/lib_builder.js.md#l651) |
+| Defined | [lib/builder.js:652](../files/lib_builder.js.md#l652) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 ###### Parameters
@@ -360,7 +360,7 @@ Makes the default directories needed
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:710](../files/lib_builder.js.md#l710) |
+| Defined | [lib/builder.js:711](../files/lib_builder.js.md#l711) |
 
 ###### Parameters
 - cb Callback The callback to execute after it's completed
@@ -368,11 +368,12 @@ Makes the default directories needed
 
 ##### method: `_parseCode`
 
-Parses `<pre class="code prettyprint"><code>` tags and adds the __prettyprint__ `className` to them
+Parses `<pre class="code prettyprint"><code>
+` tags and adds the __prettyprint__ `className` to them
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:760](../files/lib_builder.js.md#l760) |
+| Defined | [lib/builder.js:761](../files/lib_builder.js.md#l761) |
 | Return 		 | HTML 
 
 ###### Parameters
@@ -386,7 +387,7 @@ that are not parsed by the **Markdown** parser.
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:773](../files/lib_builder.js.md#l773) |
+| Defined | [lib/builder.js:776](../files/lib_builder.js.md#l776) |
 | Return 		 | HTML 
 
 ###### Parameters
@@ -399,7 +400,7 @@ build the uniform API to export the theme context
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:793](../files/lib_builder.js.md#l793) |
+| Defined | [lib/builder.js:796](../files/lib_builder.js.md#l796) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 
@@ -410,7 +411,7 @@ build the members
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:827](../files/lib_builder.js.md#l827) |
+| Defined | [lib/builder.js:830](../files/lib_builder.js.md#l830) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> 
 
 
@@ -421,8 +422,8 @@ extends members array
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:852](../files/lib_builder.js.md#l852) |
-| Return 		 |  
+| Defined | [lib/builder.js:855](../files/lib_builder.js.md#l855) |
+| Return 		 | unknown 
 
 
 
@@ -432,7 +433,7 @@ build the member
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:869](../files/lib_builder.js.md#l869) |
+| Defined | [lib/builder.js:872](../files/lib_builder.js.md#l872) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 ###### Parameters
@@ -447,7 +448,7 @@ generate expand function
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:929](../files/lib_builder.js.md#l929) |
+| Defined | [lib/builder.js:932](../files/lib_builder.js.md#l932) |
 
 ###### Parameters
 - parent <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The object to be set
@@ -459,7 +460,7 @@ extends modules
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:953](../files/lib_builder.js.md#l953) |
+| Defined | [lib/builder.js:956](../files/lib_builder.js.md#l956) |
 
 
 
@@ -469,7 +470,7 @@ extends members from classes
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:971](../files/lib_builder.js.md#l971) |
+| Defined | [lib/builder.js:974](../files/lib_builder.js.md#l974) |
 
 
 
@@ -479,7 +480,7 @@ build the method name by its name and parameters
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:989](../files/lib_builder.js.md#l989) |
+| Defined | [lib/builder.js:992](../files/lib_builder.js.md#l992) |
 
 ###### Parameters
 - name <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The function/method name
@@ -493,7 +494,7 @@ get dest view type md or html
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:1003](../files/lib_builder.js.md#l1003) |
+| Defined | [lib/builder.js:1006](../files/lib_builder.js.md#l1006) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 
@@ -504,7 +505,7 @@ get class inheritance tree
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:1017](../files/lib_builder.js.md#l1017) |
+| Defined | [lib/builder.js:1020](../files/lib_builder.js.md#l1020) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 
@@ -515,7 +516,7 @@ append the clazz to its module
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:1057](../files/lib_builder.js.md#l1057) |
+| Defined | [lib/builder.js:1060](../files/lib_builder.js.md#l1060) |
 
 ###### Parameters
 - clazz <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The class object
@@ -529,7 +530,7 @@ Renders the handlebars templates with the default View class.
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:1171](../files/lib_builder.js.md#l1171) |
+| Defined | [lib/builder.js:1174](../files/lib_builder.js.md#l1174) |
 
 ###### Parameters
 - source HTML The default template to parse
@@ -547,7 +548,7 @@ Render the index file
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:1222](../files/lib_builder.js.md#l1222) |
+| Defined | [lib/builder.js:1225](../files/lib_builder.js.md#l1225) |
 
 ###### Parameters
 - cb <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> The callback fired when complete
@@ -561,7 +562,7 @@ Generates the index.html file
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:1238](../files/lib_builder.js.md#l1238) |
+| Defined | [lib/builder.js:1241](../files/lib_builder.js.md#l1241) |
 
 ###### Parameters
 - cb Callback The callback to execute after it's completed
@@ -575,7 +576,7 @@ Render a module
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:1270](../files/lib_builder.js.md#l1270) |
+| Defined | [lib/builder.js:1273](../files/lib_builder.js.md#l1273) |
 
 ###### Parameters
 - cb <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> The callback fired when complete
@@ -589,7 +590,7 @@ Generates the module files under "out"/modules/
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:1286](../files/lib_builder.js.md#l1286) |
+| Defined | [lib/builder.js:1289](../files/lib_builder.js.md#l1289) |
 
 ###### Parameters
 - cb Callback The callback to execute after it's completed
@@ -603,8 +604,8 @@ Checks an array of items (class items) to see if an item is in that list
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:1325](../files/lib_builder.js.md#l1325) |
-| Return 		 |  
+| Defined | [lib/builder.js:1328](../files/lib_builder.js.md#l1328) |
+| Return 		 | unknown 
 
 ###### Parameters
 - a <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> The Array of items to check
@@ -617,7 +618,7 @@ Merge superclass data into a child class
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:1349](../files/lib_builder.js.md#l1349) |
+| Defined | [lib/builder.js:1352](../files/lib_builder.js.md#l1352) |
 
 ###### Parameters
 - info <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The item to extend
@@ -631,7 +632,7 @@ Render the class file
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:1403](../files/lib_builder.js.md#l1403) |
+| Defined | [lib/builder.js:1406](../files/lib_builder.js.md#l1406) |
 
 ###### Parameters
 - cb <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> The callback fired when complete
@@ -645,7 +646,7 @@ Generates the class files under "out"/classes/
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:1420](../files/lib_builder.js.md#l1420) |
+| Defined | [lib/builder.js:1423](../files/lib_builder.js.md#l1423) |
 
 ###### Parameters
 - cb Callback The callback to execute after it's completed
@@ -659,7 +660,7 @@ Sort method of array of objects with a property called __name__
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:1460](../files/lib_builder.js.md#l1460) |
+| Defined | [lib/builder.js:1463](../files/lib_builder.js.md#l1463) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a> 
 
 ###### Parameters
@@ -673,7 +674,7 @@ Generates the syntax files under `"out"/files/`
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:1483](../files/lib_builder.js.md#l1483) |
+| Defined | [lib/builder.js:1486](../files/lib_builder.js.md#l1486) |
 
 ###### Parameters
 - cb Callback The callback to execute after it's completed
@@ -687,7 +688,7 @@ Render the source file
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:1541](../files/lib_builder.js.md#l1541) |
+| Defined | [lib/builder.js:1544](../files/lib_builder.js.md#l1544) |
 
 ###### Parameters
 - cb <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> The callback fired when complete
@@ -701,7 +702,7 @@ Write the API meta data used for the AutoComplete widget
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:1593](../files/lib_builder.js.md#l1593) |
+| Defined | [lib/builder.js:1596](../files/lib_builder.js.md#l1596) |
 
 ###### Parameters
 - cb Callback The callback to execute when complete
@@ -713,7 +714,7 @@ Render the API meta and return the JavaScript
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:1606](../files/lib_builder.js.md#l1606) |
+| Defined | [lib/builder.js:1609](../files/lib_builder.js.md#l1609) |
 
 ###### Parameters
 - cb Callback The callback
@@ -729,7 +730,7 @@ Normalizes a file path to a writable filename:
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:1638](../files/lib_builder.js.md#l1638) |
+| Defined | [lib/builder.js:1641](../files/lib_builder.js.md#l1641) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 ###### Parameters
@@ -742,7 +743,7 @@ Compiles the templates from the meta-data provided by DocParser
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:1651](../files/lib_builder.js.md#l1651) |
+| Defined | [lib/builder.js:1654](../files/lib_builder.js.md#l1654) |
 
 ###### Parameters
 - cb Callback The callback to execute after it's completed
