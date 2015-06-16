@@ -19,6 +19,9 @@ docsghpages:
 	cp -r ./docs-ghpages/en/* ./docs-ghpages/
 	sh ./scripts/ghpages.sh
 
+notab:
+	./lib/cli.js ./lib --en -o 'docs-ghpages/en' --theme '../firedoc-theme-notab/'
+
 deploydocs: version
 	./scripts/docs.sh
 
