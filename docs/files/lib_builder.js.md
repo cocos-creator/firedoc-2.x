@@ -13,7 +13,7 @@ Fireball is the game engine for the future.
  * Code licensed under the BSD License:
  * https://github.com/yui/yuidoc/blob/master/LICENSE
  */
-var MarkdownIt = require('markdown-it'),
+var marked = require('marked'),
   fs = require('graceful-fs'),
   noop = function () {},
   path = require('path'),
@@ -64,7 +64,6 @@ YUI.add('doc-builder', function (Y) {
     if (options.themedir) {
       themeDir = options.themedir;
     }
-    this.md = new MarkdownIt(options.markdown);
     this.data = data;
     Y.log('Building..', 'info', 'builder');
     this.files = 0;
@@ -154,7 +153,7 @@ YUI.add('doc-builder', function (Y) {
       if (Y.options.useMarkdown) {
         return data;
       }
-      var html = this.md.render(data);
+      var html = marked(data);
       //Only reprocess if helpers were asked for
       if (this.options.helpers || (html.indexOf('{{#crossLink') > -1)) {
         try {
@@ -455,10 +454,10 @@ YUI.add('doc-builder', function (Y) {
     },
     /**
      * File counter
-     * @property files
+     * @property filesCount
      * @type Number
      */
-    files: null,
+    filesCount: null,
     /**
      * Holder for project meta data
      * @property _meta
@@ -1243,7 +1242,7 @@ YUI.add('doc-builder', function (Y) {
       var api = self.api;
       var view = new Y.DocView(api.meta);
       self.render('{{>index}}', view, api.layouts.main, api.partials, function (err, html) {
-        self.files += 1;
+        self.filesCount += 1;
         cb(html, view);
       });
     },
@@ -1291,7 +1290,7 @@ YUI.add('doc-builder', function (Y) {
       var api = self.api;
       var view = new Y.DocView(mod, null, '../');
       self.render('{{>module}}', view, api.layouts.main, api.partials, function (err, html) {
-        self.files += 1;
+        self.filesCount += 1;
         cb(html, view);
       });
     },
@@ -1425,7 +1424,7 @@ YUI.add('doc-builder', function (Y) {
       var view = new Y.DocView(clazz, null, '../');
       var tmpl = clazz['is_enum'] ? '{{>enums}}' : '{{>classes}}';
       self.render(tmpl, view, api.layouts.main, api.partials, function (err, html) {
-        self.files += 1;
+        self.filesCount += 1;
         cb(html, view);
       });
     },
@@ -1595,7 +1594,7 @@ YUI.add('doc-builder', function (Y) {
           var view = new Y.DocView(opts.meta, 'index', '..');
           var mainLayout = opts.layouts[layout];
           self.render('{{>files}}', view, mainLayout, opts.partials, function (err, html) {
-            self.files++;
+            self.filesCount++;
             cb(html, view, data);
           });
 
@@ -1698,7 +1697,7 @@ YUI.add('doc-builder', function (Y) {
             cstack.done(function () {
               var endtime = (new Date()).getTime();
               var timer = ((endtime - starttime) / 1000) + ' seconds';
-              Y.log('Finished writing ' + self.files + ' files in ' + timer, 'info', 'builder');
+              Y.log('Finished writing ' + self.filesCount + ' files in ' + timer, 'info', 'builder');
               if (typeof cb === 'function') cb();
             });
           });

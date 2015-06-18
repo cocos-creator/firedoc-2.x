@@ -1,7 +1,6 @@
 {
   "name": "firedoc",
   "version": "1.5.6",
-  "description": "Fire Doc, Fireball-x's JavaScript Documentation engine forked from YUI.",
   "author": "Dav Glass <davglass@gmail.com>",
   "bugs": {
     "url": "http://github.com/fireball-x/firedoc/issues"
@@ -80,7 +79,7 @@
   "dependencies": {
     "express": "^4.12.3",
     "graceful-fs": "2.x",
-    "markdown-it": "^4.1.0",
+    "marked": "^0.3.3",
     "minimatch": "^2.0.1",
     "minimist": "^1.1.1",
     "rimraf": "2.x",
