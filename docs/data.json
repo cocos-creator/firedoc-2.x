@@ -1,7 +1,7 @@
 {
     "project": {
         "name": "firedoc",
-        "version": "1.5.6"
+        "version": "1.5.8"
     },
     "files": {
         "lib/builder.js": {

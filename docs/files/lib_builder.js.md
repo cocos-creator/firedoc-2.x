@@ -813,8 +813,8 @@ YUI.add('doc-builder', function (Y) {
       this.buildMembers();
       
       // set components
-      this.api.meta.modules = this.modules;
       this.api.meta.classes = this.classes;
+      this.api.meta.modules = this.modules;
       this.api.meta.files = this.files;
       this.api.meta.globals = this.api.meta;
       this.api.meta.i18n = this.i18n;
@@ -911,7 +911,7 @@ YUI.add('doc-builder', function (Y) {
           member.example = [member.example];
         }
         member.example = member.example.map(function (v) {
-          return self._parseCode(self.markdown(v))
+          return self._parseCode(self.markdown(v.trim()))
         }).join('');
       }
       if (parent) {
