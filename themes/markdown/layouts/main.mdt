@@ -1,6 +1,6 @@
 
-{{#if project.name}}
-# {{project.name}} {{project.version}}
+{{#if globals.project.name}}
+# {{globals.project.name}} {{globals.project.version}}
 {{else}}
 # Fireball Engine API
 {{/if}}
