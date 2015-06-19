@@ -1,5 +1,5 @@
 
-# Fireball Engine API
+# firedoc 1.5.9
 
 Fireball is the game engine for the future.
 
@@ -500,9 +500,9 @@ YUI.add('doc-builder', function (Y) {
       } else {
         obj.meta = this._meta;
       }
+      obj.meta.project = {};
       Y.each(this.data.project, function (v, k) {
-        var key = k.substring(0, 1).toUpperCase() + k.substring(1, k.length);
-        obj.meta['project' + key] = v;
+        obj.meta.project[k.toLowerCase()] = v;
       });
       return obj;
     },
@@ -1089,11 +1089,11 @@ YUI.add('doc-builder', function (Y) {
      */
     get project () {
       var root = path.join(process.env.PWD, this.options.outdir);
-      return {
-        'logo': this._resolveUrl(this.data.project.logo),
-        'root': root,
-        'assets': path.join(root, '/assets')
-      };
+      var proj = this.data.project;
+      proj.logo = this._resolveUrl(proj.logo),
+      proj.root = root;
+      proj.assets = path.join(root, '/assets')
+      return proj;
     },
 
     /**
