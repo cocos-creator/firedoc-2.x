@@ -95,7 +95,7 @@ Renders the handlebars templates with the default View class.
 #### Properties
 
 
-#### NATIVES
+##### NATIVES
 
 > List of native types to cross link to MDN
 
@@ -106,7 +106,7 @@ Renders the handlebars templates with the default View class.
 
 
 
-#### filesCount
+##### filesCount
 
 > File counter
 
@@ -117,7 +117,7 @@ Renders the handlebars templates with the default View class.
 
 
 
-#### _meta
+##### _meta
 
 > Holder for project meta data
 
@@ -128,7 +128,7 @@ Renders the handlebars templates with the default View class.
 
 
 
-#### project
+##### project
 
 > Get the project to export
 
@@ -139,7 +139,7 @@ Renders the handlebars templates with the default View class.
 
 
 
-#### i18n
+##### i18n
 
 > Get i18n object
 
@@ -150,7 +150,7 @@ Renders the handlebars templates with the default View class.
 
 
 
-#### modules
+##### modules
 
 > Get modules object to export
 
@@ -161,7 +161,7 @@ Renders the handlebars templates with the default View class.
 
 
 
-#### classes
+##### classes
 
 > Get classes object to export
 
@@ -172,7 +172,7 @@ Renders the handlebars templates with the default View class.
 
 
 
-#### files
+##### files
 
 > Get files object to export
 
@@ -183,7 +183,7 @@ Renders the handlebars templates with the default View class.
 
 
 
-#### _mergeCounter
+##### _mergeCounter
 
 > Counter for stepping into merges
 

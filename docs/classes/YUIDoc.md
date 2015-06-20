@@ -62,7 +62,7 @@ Applies preprocessors, if any.
 #### Properties
 
 
-#### OPTIONS
+##### OPTIONS
 
 > The default list of configuration options
 
@@ -73,7 +73,7 @@ Applies preprocessors, if any.
 
 
 
-#### filecount
+##### filecount
 
 > Holds the number of files that we are processing.
 
@@ -84,7 +84,7 @@ Applies preprocessors, if any.
 
 
 
-#### selleck
+##### selleck
 
 > Hash map of dirnames to selleck config options.
 
@@ -95,7 +95,7 @@ Applies preprocessors, if any.
 
 
 
-#### filemap
+##### filemap
 
 > Holder for the list of files we are processing.
 
@@ -106,7 +106,7 @@ Applies preprocessors, if any.
 
 
 
-#### dirmap
+##### dirmap
 
 > Holder for the list of directories we are processing.
 
@@ -117,7 +117,7 @@ Applies preprocessors, if any.
 
 
 
-#### options
+##### options
 
 > Internal holder for configuration options.
 
@@ -128,7 +128,7 @@ Applies preprocessors, if any.
 
 
 
-#### starttime
+##### starttime
 
 > Timestamp holder so we know when YUIDoc started the parse process.
 
@@ -139,7 +139,7 @@ Applies preprocessors, if any.
 
 
 
-#### endtime
+##### endtime
 
 > Timestamp holder so we know when YUIDoc has finished the parse process.
 

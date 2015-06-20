@@ -44,7 +44,7 @@ Provides the `--server` server option for YUIDoc
 #### Properties
 
 
-#### _externalData
+##### _externalData
 
 > Cache for external mixed in data.
 

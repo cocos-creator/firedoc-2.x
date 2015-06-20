@@ -38,7 +38,7 @@ Shows the help text
 #### Properties
 
 
-#### help
+##### help
 
 > The help text to display
 

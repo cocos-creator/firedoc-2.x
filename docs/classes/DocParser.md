@@ -114,7 +114,7 @@ and relationships between elements for the entire project.
 #### Properties
 
 
-#### TAGLIST
+##### TAGLIST
 
 > A list of known tags.  This populates a member variable
 during initialization, and will be updated if additional
@@ -127,7 +127,7 @@ digesters are added.
 
 
 
-#### IGNORE_TAGLIST
+##### IGNORE_TAGLIST
 
 > A list of ignored tags. These tags should be ignored because there is
 likely to be used for purposes other than JSDoc tags in JavaScript comments.
@@ -139,7 +139,7 @@ likely to be used for purposes other than JSDoc tags in JavaScript comments.
 
 
 
-#### CORRECTIONS
+##### CORRECTIONS
 
 > Common errors will get scrubbed instead of being ignored.
 
@@ -150,7 +150,7 @@ likely to be used for purposes other than JSDoc tags in JavaScript comments.
 
 
 
-#### DIGESTERS
+##### DIGESTERS
 
 > A map of the default tag processors, keyed by the
 tag name.  Multiple tags can use the same digester
