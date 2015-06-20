@@ -61,7 +61,7 @@ doesn't exist. Will still throw on other types of errors.
 #### Methods
 
 
-##### method: `copyDirectory`
+##### copyDirectory
 
 Copy a directory from one location to another
 
@@ -77,7 +77,7 @@ Copy a directory from one location to another
 - callback <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> The callback to be executed when complete.
 
 
-##### method: `copyFile`
+##### copyFile
 
 Copy a file from one location to another
 
@@ -94,7 +94,7 @@ Copy a file from one location to another
 	- err <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Error" class="crosslink external" target="_blank">Error</a> The Error returned from Node
 
 
-##### method: `copyPath`
+##### copyPath
 
 If _source_ is a file, copies it to _dest_. If it's a directory, recursively
 copies it and all files and directories it contains to _dest_.
@@ -120,7 +120,7 @@ if they already exist.
 	- err <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Error" class="crosslink external" target="_blank">Error</a> 
 
 
-##### method: `deletePath`
+##### deletePath
 
 If _path_ is a file, deletes it. If _path_ is a directory, recursively deletes
 it and all files and directories it contains.
@@ -135,7 +135,7 @@ This method is synchronous.
 - path <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> File or directory to delete.
 
 
-##### method: `isDirectory`
+##### isDirectory
 
 Check to see if this is a directory
 
@@ -149,7 +149,7 @@ Check to see if this is a directory
 - link <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> Also validate a symlink
 
 
-##### method: `isFile`
+##### isFile
 
 Check to see if this is a File
 
@@ -163,7 +163,7 @@ Check to see if this is a File
 - link <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> Also validate a symlink
 
 
-##### method: `isSymbolicLink`
+##### isSymbolicLink
 
 Check to see if this is a SymLink
 
@@ -176,7 +176,7 @@ Check to see if this is a SymLink
 - path Path The path to check
 
 
-##### method: `lstatSync`
+##### lstatSync
 
 Like `fs.lstatSync()`, but returns `null` instead of throwing when _path_
 doesn't exist. Will still throw on other types of errors.
@@ -190,7 +190,7 @@ doesn't exist. Will still throw on other types of errors.
 - path <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> Path to stat.
 
 
-##### method: `statSync`
+##### statSync
 
 Like `fs.statSync()`, but returns `null` instead of throwing when _path_
 doesn't exist. Will still throw on other types of errors.
@@ -204,7 +204,7 @@ doesn't exist. Will still throw on other types of errors.
 - path <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> Path to stat.
 
 
-##### method: `copyAssets`
+##### copyAssets
 
 Copy the theme assets directory
 
@@ -219,7 +219,7 @@ Copy the theme assets directory
 - callback <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> The callback to be executed
 
 
-##### method: `getJSON`
+##### getJSON
 
 Helper method for getting JSON data from a local file
 
@@ -232,7 +232,7 @@ Helper method for getting JSON data from a local file
 - filename Path The filename to parse JSON from
 
 
-##### method: `writeFile`
+##### writeFile
 
 Helper method for writing files to disk. It wraps the NodeJS file API
 

@@ -201,7 +201,7 @@ Renders the handlebars templates with the default View class.
 #### Methods
 
 
-##### method: `_addHelpers`
+##### _addHelpers
 
 Register a `Y.Handlebars` helper method
 
@@ -213,7 +213,7 @@ Register a `Y.Handlebars` helper method
 - helpers <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> Object containing a hash of names and functions
 
 
-##### method: `markdown`
+##### markdown
 
 Wrapper around the Markdown parser so it can be normalized or even side stepped
 
@@ -226,7 +226,7 @@ Wrapper around the Markdown parser so it can be normalized or even side stepped
 - data <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The Markdown string to parse
 
 
-##### method: `_parseCrossLink`
+##### _parseCrossLink
 
 Parse the item to be cross linked and return an HREF linked to the item
 
@@ -240,7 +240,7 @@ Parse the item to be cross linked and return an HREF linked to the item
 - content <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> crossLink helper content
 
 
-##### method: `NATIVES_LINKER`
+##### NATIVES_LINKER
 
 Function to link an external type uses `NATIVES` object
 
@@ -253,7 +253,7 @@ Function to link an external type uses `NATIVES` object
 - name <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The name of the type to link
 
 
-##### method: `_mixExternal`
+##### _mixExternal
 
 Mixes the various external data soures together into the local data, augmenting
 it with flags.
@@ -264,7 +264,7 @@ it with flags.
 
 
 
-##### method: `mixExternal`
+##### mixExternal
 
 Fetches the remote data and fires the callback when it's all complete
 
@@ -276,7 +276,7 @@ Fetches the remote data and fires the callback when it's all complete
 - cb Callback The callback to execute when complete
 
 
-##### method: `getProjectMeta`
+##### getProjectMeta
 
 Prep the meta data to be fed to Selleck
 
@@ -287,7 +287,7 @@ Prep the meta data to be fed to Selleck
 
 
 
-##### method: `populateClasses`
+##### populateClasses
 
 Populate the meta data for classes
 
@@ -300,7 +300,7 @@ Populate the meta data for classes
 - opts <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The original options
 
 
-##### method: `populateModules`
+##### populateModules
 
 Populate the meta data for modules
 
@@ -313,7 +313,7 @@ Populate the meta data for modules
 - opts <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The original options
 
 
-##### method: `populateFiles`
+##### populateFiles
 
 Populate the meta data for files
 
@@ -326,7 +326,7 @@ Populate the meta data for files
 - opts <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The original options
 
 
-##### method: `addFoundAt`
+##### addFoundAt
 
 Parses file and line number from an item object and build's an HREF
 
@@ -339,7 +339,7 @@ Parses file and line number from an item object and build's an HREF
 - a <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The item to parse
 
 
-##### method: `augmentData`
+##### augmentData
 
 Augments the **DocParser** meta data to provide default values for certain keys as well as parses all descriptions
 with the `Markdown Parser`
@@ -353,7 +353,7 @@ with the `Markdown Parser`
 - o <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The object to recurse and augment
 
 
-##### method: `makeDirs`
+##### makeDirs
 
 Makes the default directories needed
 
@@ -365,7 +365,7 @@ Makes the default directories needed
 - cb Callback The callback to execute after it's completed
 
 
-##### method: `_parseCode`
+##### _parseCode
 
 Parses `<pre class="code prettyprint"><code>
 ` tags and adds the __prettyprint__ `className` to them
@@ -379,7 +379,7 @@ Parses `<pre class="code prettyprint"><code>
 - html HTML The HTML to parse
 
 
-##### method: `_inlineCode`
+##### _inlineCode
 
 Ported from [Selleck](https://github.com/rgrove/selleck), this handles ```'s in fields
 that are not parsed by the **Markdown** parser.
@@ -393,7 +393,7 @@ that are not parsed by the **Markdown** parser.
 - html HTML The HTML to parse
 
 
-##### method: `buildAPI`
+##### buildAPI
 
 build the uniform API to export the theme context
 
@@ -404,7 +404,7 @@ build the uniform API to export the theme context
 
 
 
-##### method: `buildMembers`
+##### buildMembers
 
 build the members
 
@@ -415,7 +415,7 @@ build the members
 
 
 
-##### method: `extendMembers`
+##### extendMembers
 
 extends members array
 
@@ -426,7 +426,7 @@ extends members array
 
 
 
-##### method: `buildMember`
+##### buildMember
 
 build the member
 
@@ -441,7 +441,7 @@ build the member
 - parent <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The parent context
 
 
-##### method: `getExpandIterator`
+##### getExpandIterator
 
 generate expand function
 
@@ -453,7 +453,7 @@ generate expand function
 - parent <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The object to be set
 
 
-##### method: `expandMembersFromModules`
+##### expandMembersFromModules
 
 extends modules
 
@@ -463,7 +463,7 @@ extends modules
 
 
 
-##### method: `expandMembersFromModules`
+##### expandMembersFromModules
 
 extends members from classes
 
@@ -473,7 +473,7 @@ extends members from classes
 
 
 
-##### method: `getMethodName`
+##### getMethodName
 
 build the method name by its name and parameters
 
@@ -487,7 +487,7 @@ build the method name by its name and parameters
 	- name <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The name of the parameter
 
 
-##### method: `getViewType`
+##### getViewType
 
 get dest view type md or html
 
@@ -498,7 +498,7 @@ get dest view type md or html
 
 
 
-##### method: `getClassInheritanceTree`
+##### getClassInheritanceTree
 
 get class inheritance tree
 
@@ -509,7 +509,7 @@ get class inheritance tree
 
 
 
-##### method: `appendClassToModule`
+##### appendClassToModule
 
 append the clazz to its module
 
@@ -522,7 +522,7 @@ append the clazz to its module
 	- module <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The module name of this clazz object
 
 
-##### method: `render`
+##### render
 
 Ported from [Selleck](https://github.com/rgrove/selleck)
 Renders the handlebars templates with the default View class.
@@ -541,7 +541,7 @@ Renders the handlebars templates with the default View class.
 	- html HTML The assembled template markup
 
 
-##### method: `renderIndex`
+##### renderIndex
 
 Render the index file
 
@@ -555,7 +555,7 @@ Render the index file
 	- view <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The View Data
 
 
-##### method: `writeIndex`
+##### writeIndex
 
 Generates the index.html file
 
@@ -569,7 +569,7 @@ Generates the index.html file
 	- view <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The View Data
 
 
-##### method: `renderModule`
+##### renderModule
 
 Render a module
 
@@ -583,7 +583,7 @@ Render a module
 	- view <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The View Data
 
 
-##### method: `writeModules`
+##### writeModules
 
 Generates the module files under "out"/modules/
 
@@ -597,7 +597,7 @@ Generates the module files under "out"/modules/
 	- view <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The View Data
 
 
-##### method: `hasProperty`
+##### hasProperty
 
 Checks an array of items (class items) to see if an item is in that list
 
@@ -611,7 +611,7 @@ Checks an array of items (class items) to see if an item is in that list
 - b <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The object to find
 
 
-##### method: `mergeExtends`
+##### mergeExtends
 
 Merge superclass data into a child class
 
@@ -625,7 +625,7 @@ Merge superclass data into a child class
 - first <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> Set for the first call
 
 
-##### method: `renderClass`
+##### renderClass
 
 Render the class file
 
@@ -639,7 +639,7 @@ Render the class file
 	- view <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The View Data
 
 
-##### method: `writeClasses`
+##### writeClasses
 
 Generates the class files under "out"/classes/
 
@@ -653,7 +653,7 @@ Generates the class files under "out"/classes/
 	- view <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The View Data
 
 
-##### method: `nameSort`
+##### nameSort
 
 Sort method of array of objects with a property called __name__
 
@@ -667,7 +667,7 @@ Sort method of array of objects with a property called __name__
 - b <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> Second object to compare
 
 
-##### method: `writeFiles`
+##### writeFiles
 
 Generates the syntax files under `"out"/files/`
 
@@ -681,7 +681,7 @@ Generates the syntax files under `"out"/files/`
 	- view <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The View Data
 
 
-##### method: `renderFile`
+##### renderFile
 
 Render the source file
 
@@ -695,7 +695,7 @@ Render the source file
 	- view <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The View Data
 
 
-##### method: `writeAPIMeta`
+##### writeAPIMeta
 
 Write the API meta data used for the AutoComplete widget
 
@@ -707,7 +707,7 @@ Write the API meta data used for the AutoComplete widget
 - cb Callback The callback to execute when complete
 
 
-##### method: `renderAPIMeta`
+##### renderAPIMeta
 
 Render the API meta and return the JavaScript
 
@@ -720,7 +720,7 @@ Render the API meta and return the JavaScript
 	- apijs <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The JavaScript code to write API meta data
 
 
-##### method: `filterFileName`
+##### filterFileName
 
 Normalizes a file path to a writable filename:
 
@@ -736,7 +736,7 @@ Normalizes a file path to a writable filename:
 - f <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The filename to normalize
 
 
-##### method: `compile`
+##### compile
 
 Compiles the templates from the meta-data provided by DocParser
 

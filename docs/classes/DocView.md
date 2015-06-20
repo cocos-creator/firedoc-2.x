@@ -40,7 +40,7 @@ The view class is a **`handlebars`** template helper.
 
 ##### Constructor
 
-##### method: ``
+##### 
 
 
 
@@ -50,7 +50,7 @@ The view class is a **`handlebars`** template helper.
 
 
 
-##### method: `htmlTitle`
+##### htmlTitle
 
 **Mustache** `lambda` method for setting the HTML title
 
@@ -60,7 +60,7 @@ The view class is a **`handlebars`** template helper.
 
 
 
-##### method: `title`
+##### title
 
 **Mustache** `lambda` method for setting the title
 

@@ -62,7 +62,7 @@ Provides the `--server` server option for YUIDoc
 #### Methods
 
 
-##### method: `parse`
+##### parse
 
 Middleware to parse the API docs per request
 
@@ -76,7 +76,7 @@ Middleware to parse the API docs per request
 - next <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> Express next callback
 
 
-##### method: `routes`
+##### routes
 
 Create the routes used to serve YUIDoc files dynamically
 
@@ -86,7 +86,7 @@ Create the routes used to serve YUIDoc files dynamically
 
 
 
-##### method: `files`
+##### files
 
 `/files` endpoint
 
@@ -99,7 +99,7 @@ Create the routes used to serve YUIDoc files dynamically
 - res Response Express response object
 
 
-##### method: `clazz`
+##### clazz
 
 `/classes` endpoint
 
@@ -112,7 +112,7 @@ Create the routes used to serve YUIDoc files dynamically
 - res Response Express response object
 
 
-##### method: `modules`
+##### modules
 
 `/modules` endpoint
 
@@ -125,7 +125,7 @@ Create the routes used to serve YUIDoc files dynamically
 - res Response Express response object
 
 
-##### method: `home`
+##### home
 
 `/` endpoint
 
@@ -138,7 +138,7 @@ Create the routes used to serve YUIDoc files dynamically
 - res Response Express response object
 
 
-##### method: `init`
+##### init
 
 Creates the Express server and prep's YUI for serving
 
@@ -148,7 +148,7 @@ Creates the Express server and prep's YUI for serving
 
 
 
-##### method: `start`
+##### start
 
 Start the server with the supplied options.
 

@@ -36,7 +36,7 @@ Handles argument parsing
 #### Methods
 
 
-##### method: `Options`
+##### Options
 
 Parses arguments and returns an Object of config options
 

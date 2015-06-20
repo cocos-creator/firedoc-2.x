@@ -158,7 +158,7 @@ Applies preprocessors, if any.
 
 ##### Constructor
 
-##### method: ``
+##### 
 
 
 
@@ -168,7 +168,7 @@ Applies preprocessors, if any.
 
 
 
-##### method: `_setDefaultExcludes`
+##### _setDefaultExcludes
 
 Always exclude these directories
 
@@ -178,7 +178,7 @@ Always exclude these directories
 
 
 
-##### method: `_processConfig`
+##### _processConfig
 
 Does post process on self.options.
 
@@ -188,7 +188,7 @@ Does post process on self.options.
 
 
 
-##### method: `walk`
+##### walk
 
 Walks the paths and parses the directory contents
 
@@ -198,7 +198,7 @@ Walks the paths and parses the directory contents
 
 
 
-##### method: `parsedir`
+##### parsedir
 
 Walks the passed directory and grabs all the files recursively.
 
@@ -210,7 +210,7 @@ Walks the passed directory and grabs all the files recursively.
 - dir <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The directory to parse the contents of.
 
 
-##### method: `parsefiles`
+##### parsefiles
 
 Gathers all the file data and populates the filemap and dirmap hashes.
 
@@ -223,7 +223,7 @@ Gathers all the file data and populates the filemap and dirmap hashes.
 - files <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> List of files to parse.
 
 
-##### method: `runPreprocessors`
+##### runPreprocessors
 
 Applies preprocessors to the data tree. 
 This function first clones the data and operates on the clone.
@@ -235,7 +235,7 @@ This function first clones the data and operates on the clone.
 
 
 
-##### method: `writeJSON`
+##### writeJSON
 
 Writes the parser JSON data to disk.
 Applies preprocessors, if any.
@@ -249,7 +249,7 @@ Applies preprocessors, if any.
 - parser <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The DocParser instance to use
 
 
-##### method: `run`
+##### run
 
 Process the config, walk the file tree and write out the JSON data.
 

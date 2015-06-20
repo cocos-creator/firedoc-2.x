@@ -399,7 +399,7 @@ attribute's value has changed.
 
 ##### Constructor
 
-##### method: ``
+##### 
 
 
 
@@ -409,7 +409,7 @@ attribute's value has changed.
 
 
 
-##### method: `stringlog`
+##### stringlog
 
 Parses the JSON data and formats it into a nice log string for
 filename and line number: `/file/name.js:123`
@@ -423,7 +423,7 @@ filename and line number: `/file/name.js:123`
 - data <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The data block from the parser
 
 
-##### method: `implodeString`
+##### implodeString
 
 Flatten a string, remove all line breaks and replace them with a token
 
@@ -436,7 +436,7 @@ Flatten a string, remove all line breaks and replace them with a token
 - str <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The string to operate on
 
 
-##### method: `implodeString`
+##### implodeString
 
 Un-flatten a string, replace tokens injected with `implodeString`
 
@@ -449,7 +449,7 @@ Un-flatten a string, replace tokens injected with `implodeString`
 - str <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The string to operate on
 
 
-##### method: `_resolveFor`
+##### _resolveFor
 
 Takes a non-namespaced classname and resolves it to a namespace (to support `@for`)
 
@@ -462,7 +462,7 @@ Takes a non-namespaced classname and resolves it to a namespace (to support `@fo
 - value <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The classname to resolve
 
 
-##### method: `unindent`
+##### unindent
 
 Normalizes the initial indentation of the given _content_ so that the first line
 is unindented, and all other lines are unindented to the same degree as the
@@ -478,7 +478,7 @@ lines will be unindented four spaces. Ported from [Selleck](https://github.com/r
 - content <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> Text to unindent.
 
 
-##### method: `handlecomment`
+##### handlecomment
 
 Transforms a JavaDoc style comment block (less the start and end of it)
 into a list of tag/text pairs. The leading space and '*' are removed,
@@ -495,7 +495,7 @@ friendly for both markdown and html parsers.
 - line <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The line number it was found on
 
 
-##### method: `extract`
+##### extract
 
 Accepts a map of filenames to file content.  Returns
 a map of filenames to an array of API comment block
@@ -514,7 +514,7 @@ alternative comment parser.
 - dirmap <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> A map of file names to directory name
 
 
-##### method: `processblock`
+##### processblock
 
 Processes all the tags in a single comment block
 
@@ -526,7 +526,7 @@ Processes all the tags in a single comment block
 - an <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> array of the tag/text pairs
 
 
-##### method: `transform`
+##### transform
 
 Transforms a map of filenames to arrays of comment blocks into a
 JSON structure that represents the entire processed API doc info
@@ -541,7 +541,7 @@ and relationships between elements for the entire project.
 - commentmap <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The hash of files and parsed comment blocks
 
 
-##### method: `parse`
+##### parse
 
 Extracts and transforms the filemap provided to constructor
 

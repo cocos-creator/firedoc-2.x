@@ -56,7 +56,7 @@ Shows the help text
 #### Methods
 
 
-##### method: `renderHelp`
+##### renderHelp
 
 Render the help message as a string
 
@@ -67,7 +67,7 @@ Render the help message as a string
 
 
 
-##### method: `showHelp`
+##### showHelp
 
 Display the help message, write it to the screen and exit
 
