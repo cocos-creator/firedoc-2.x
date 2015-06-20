@@ -23,8 +23,8 @@ The view class is a **`handlebars`** template helper.
 ##### Methods
 
   - [`` **constructor**](#) 
-  - [`htmlTitle`](#method-htmltitle) **Mustache** &#x60;lambda&#x60; method for setting the HTML title
-  - [`title`](#method-title) **Mustache** &#x60;lambda&#x60; method for setting the title
+  - [`htmlTitle`](#method-htmltitle) **Mustache** `lambda` method for setting the HTML title
+  - [`title`](#method-title) **Mustache** `lambda` method for setting the title
 
 
 

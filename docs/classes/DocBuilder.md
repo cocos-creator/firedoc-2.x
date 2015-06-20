@@ -34,24 +34,24 @@ based templates to generate static HTML content
 
 ##### Methods
 
-  - [`_addHelpers`](#method-_addhelpers) Register a &#x60;Y.Handlebars&#x60; helper method
+  - [`_addHelpers`](#method-_addhelpers) Register a `Y.Handlebars` helper method
   - [`markdown`](#method-markdown) Wrapper around the Markdown parser so it can be normalized or even side stepped
   - [`_parseCrossLink`](#method-_parsecrosslink) Parse the item to be cross linked and return an HREF linked to the item
-  - [`NATIVES_LINKER`](#method-natives_linker) Function to link an external type uses &#x60;NATIVES&#x60; object
+  - [`NATIVES_LINKER`](#method-natives_linker) Function to link an external type uses `NATIVES` object
   - [`_mixExternal`](#method-_mixexternal) Mixes the various external data soures together into the local data, augmenting
 it with flags.
-  - [`mixExternal`](#method-mixexternal) Fetches the remote data and fires the callback when it&#x27;s all complete
+  - [`mixExternal`](#method-mixexternal) Fetches the remote data and fires the callback when it's all complete
   - [`getProjectMeta`](#method-getprojectmeta) Prep the meta data to be fed to Selleck
   - [`populateClasses`](#method-populateclasses) Populate the meta data for classes
   - [`populateModules`](#method-populatemodules) Populate the meta data for modules
   - [`populateFiles`](#method-populatefiles) Populate the meta data for files
-  - [`addFoundAt`](#method-addfoundat) Parses file and line number from an item object and build&#x27;s an HREF
+  - [`addFoundAt`](#method-addfoundat) Parses file and line number from an item object and build's an HREF
   - [`augmentData`](#method-augmentdata) Augments the **DocParser** meta data to provide default values for certain keys as well as parses all descriptions
-with the &#x60;Markdown Parser&#x60;
+with the `Markdown Parser`
   - [`makeDirs`](#method-makedirs) Makes the default directories needed
-  - [`_parseCode`](#method-_parsecode) Parses &#x60;&lt;pre class=&quot;code prettyprint&quot;&gt;&lt;code&gt;
-&#x60; tags and adds the __prettyprint__ &#x60;className&#x60; to them
-  - [`_inlineCode`](#method-_inlinecode) Ported from [Selleck](https://github.com/rgrove/selleck), this handles &#x60;&#x60;&#x60;&#x27;s in fields
+  - [`_parseCode`](#method-_parsecode) Parses `<pre class="code prettyprint"><code>
+` tags and adds the __prettyprint__ `className` to them
+  - [`_inlineCode`](#method-_inlinecode) Ported from [Selleck](https://github.com/rgrove/selleck), this handles ```'s in fields
 that are not parsed by the **Markdown** parser.
   - [`buildAPI`](#method-buildapi) build the uniform API to export the theme context
   - [`buildMembers`](#method-buildmembers) build the members
@@ -69,20 +69,20 @@ Renders the handlebars templates with the default View class.
   - [`renderIndex`](#method-renderindex) Render the index file
   - [`writeIndex`](#method-writeindex) Generates the index.html file
   - [`renderModule`](#method-rendermodule) Render a module
-  - [`writeModules`](#method-writemodules) Generates the module files under &quot;out&quot;/modules/
+  - [`writeModules`](#method-writemodules) Generates the module files under "out"/modules/
   - [`hasProperty`](#method-hasproperty) Checks an array of items (class items) to see if an item is in that list
   - [`mergeExtends`](#method-mergeextends) Merge superclass data into a child class
   - [`renderClass`](#method-renderclass) Render the class file
-  - [`writeClasses`](#method-writeclasses) Generates the class files under &quot;out&quot;/classes/
+  - [`writeClasses`](#method-writeclasses) Generates the class files under "out"/classes/
   - [`nameSort`](#method-namesort) Sort method of array of objects with a property called __name__
-  - [`writeFiles`](#method-writefiles) Generates the syntax files under &#x60;&quot;out&quot;/files/&#x60;
+  - [`writeFiles`](#method-writefiles) Generates the syntax files under `"out"/files/`
   - [`renderFile`](#method-renderfile) Render the source file
   - [`writeAPIMeta`](#method-writeapimeta) Write the API meta data used for the AutoComplete widget
   - [`renderAPIMeta`](#method-renderapimeta) Render the API meta and return the JavaScript
   - [`filterFileName`](#method-filterfilename) Normalizes a file path to a writable filename:
 
-   var path = &#x27;lib/file.js&#x27;;
-   returns &#x27;lib_file.js&#x27;;
+   var path = 'lib/file.js';
+   returns 'lib_file.js';
   - [`compile`](#method-compile) Compiles the templates from the meta-data provided by DocParser
 
 

@@ -65,16 +65,16 @@ appropriately -- currently not used
 
   - [`` **constructor**](#) 
   - [`stringlog`](#method-stringlog) Parses the JSON data and formats it into a nice log string for
-filename and line number: &#x60;/file/name.js:123&#x60;
+filename and line number: `/file/name.js:123`
   - [`implodeString`](#method-implodestring) Flatten a string, remove all line breaks and replace them with a token
-  - [`implodeString`](#method-implodestring) Un-flatten a string, replace tokens injected with &#x60;implodeString&#x60;
-  - [`_resolveFor`](#method-_resolvefor) Takes a non-namespaced classname and resolves it to a namespace (to support &#x60;@for&#x60;)
+  - [`implodeString`](#method-implodestring) Un-flatten a string, replace tokens injected with `implodeString`
+  - [`_resolveFor`](#method-_resolvefor) Takes a non-namespaced classname and resolves it to a namespace (to support `@for`)
   - [`unindent`](#method-unindent) Normalizes the initial indentation of the given _content_ so that the first line
 is unindented, and all other lines are unindented to the same degree as the
 first line. So if the first line has four spaces at the beginning, then all
 lines will be unindented four spaces. Ported from [Selleck](https://github.com/rgrove/selleck)
   - [`handlecomment`](#method-handlecomment) Transforms a JavaDoc style comment block (less the start and end of it)
-into a list of tag/text pairs. The leading space and &#x27;*&#x27; are removed,
+into a list of tag/text pairs. The leading space and '*' are removed,
 but the remaining whitespace is preserved so that the output should be
 friendly for both markdown and html parsers.
   - [`extract`](#method-extract) Accepts a map of filenames to file content.  Returns
