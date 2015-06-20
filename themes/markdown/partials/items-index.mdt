@@ -40,7 +40,7 @@
 
 {{/if}}
 
-{{#if extends}}
+{{#if members.inherited}}
 
 ### Inherited members
 
