@@ -21,7 +21,7 @@ Handles argument parsing
 
 ##### Methods
 
-  - [`Options`](#method-options)
+  - [`Options`](#method-options) Parses arguments and returns an Object of config options
 
 
 

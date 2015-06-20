@@ -40,15 +40,17 @@ YUIDoc main class
 
 ##### Methods
 
-  - [`` **constructor**](#)
-  - [`_setDefaultExcludes`](#method-_setdefaultexcludes)
-  - [`_processConfig`](#method-_processconfig)
-  - [`walk`](#method-walk)
-  - [`parsedir`](#method-parsedir)
-  - [`parsefiles`](#method-parsefiles)
-  - [`runPreprocessors`](#method-runpreprocessors)
-  - [`writeJSON`](#method-writejson)
-  - [`run`](#method-run)
+  - [`` **constructor**](#) 
+  - [`_setDefaultExcludes`](#method-_setdefaultexcludes) Always exclude these directories
+  - [`_processConfig`](#method-_processconfig) Does post process on self.options.
+  - [`walk`](#method-walk) Walks the paths and parses the directory contents
+  - [`parsedir`](#method-parsedir) Walks the passed directory and grabs all the files recursively.
+  - [`parsefiles`](#method-parsefiles) Gathers all the file data and populates the filemap and dirmap hashes.
+  - [`runPreprocessors`](#method-runpreprocessors) Applies preprocessors to the data tree. 
+This function first clones the data and operates on the clone.
+  - [`writeJSON`](#method-writejson) Writes the parser JSON data to disk.
+Applies preprocessors, if any.
+  - [`run`](#method-run) Process the config, walk the file tree and write out the JSON data.
 
 
 

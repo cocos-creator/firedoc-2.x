@@ -36,31 +36,58 @@ implementation rather than a function.
 
 ##### Attributes
 
-  - [`digesters`](#attribute-digesters)
-  - [`emitters`](#attribute-emitters)
-  - [`syntaxtype`](#attribute-syntaxtype)
-  - [`filemap`](#attribute-filemap)
-  - [`dirmap`](#attribute-dirmap)
-  - [`currentfile`](#attribute-currentfile)
-  - [`mainmodule`](#attribute-mainmodule)
-  - [`currentmodule`](#attribute-currentmodule)
-  - [`currentsubmodule`](#attribute-currentsubmodule)
-  - [`currentclass`](#attribute-currentclass)
+  - [`digesters`](#attribute-digesters) Digesters process the tag/text pairs found in a
+comment block.  They are looked up by tag name.
+The digester gets the tagname, the value, the
+target object to apply values to, and the full
+block that is being processed.  Digesters can
+be declared as strings instead of a function --
+in that case, the program will try to look up
+the key listed and use the function there instead
+(it is an alias).  Digesters can return a host
+object in the case the tag defines a new key
+block type (modules/classes/methods/events/properties)
+  - [`emitters`](#attribute-emitters) Emitters will be schemas for the types of payloads
+the parser will emit.  Not implemented.
+  - [`syntaxtype`](#attribute-syntaxtype) Comment syntax type.
+  - [`filemap`](#attribute-filemap) The map of file names to file content.
+  - [`dirmap`](#attribute-dirmap) A map of file names to directory name.  Provided in
+case this needs to be used to reset the module name
+appropriately -- currently not used
+  - [`currentfile`](#attribute-currentfile) The file currently being parsed
+  - [`mainmodule`](#attribute-mainmodule) The main documentation block for the module itself.
+  - [`currentmodule`](#attribute-currentmodule) The module currently being parsed
+  - [`currentsubmodule`](#attribute-currentsubmodule) The submodule currently being parsed
+  - [`currentclass`](#attribute-currentclass) The class currently being parsed
 
 
 ##### Methods
 
-  - [`` **constructor**](#)
-  - [`stringlog`](#method-stringlog)
-  - [`implodeString`](#method-implodestring)
-  - [`implodeString`](#method-implodestring)
-  - [`_resolveFor`](#method-_resolvefor)
-  - [`unindent`](#method-unindent)
-  - [`handlecomment`](#method-handlecomment)
-  - [`extract`](#method-extract)
-  - [`processblock`](#method-processblock)
-  - [`transform`](#method-transform)
-  - [`parse`](#method-parse)
+  - [`` **constructor**](#) 
+  - [`stringlog`](#method-stringlog) Parses the JSON data and formats it into a nice log string for
+filename and line number: &#x60;/file/name.js:123&#x60;
+  - [`implodeString`](#method-implodestring) Flatten a string, remove all line breaks and replace them with a token
+  - [`implodeString`](#method-implodestring) Un-flatten a string, replace tokens injected with &#x60;implodeString&#x60;
+  - [`_resolveFor`](#method-_resolvefor) Takes a non-namespaced classname and resolves it to a namespace (to support &#x60;@for&#x60;)
+  - [`unindent`](#method-unindent) Normalizes the initial indentation of the given _content_ so that the first line
+is unindented, and all other lines are unindented to the same degree as the
+first line. So if the first line has four spaces at the beginning, then all
+lines will be unindented four spaces. Ported from [Selleck](https://github.com/rgrove/selleck)
+  - [`handlecomment`](#method-handlecomment) Transforms a JavaDoc style comment block (less the start and end of it)
+into a list of tag/text pairs. The leading space and &#x27;*&#x27; are removed,
+but the remaining whitespace is preserved so that the output should be
+friendly for both markdown and html parsers.
+  - [`extract`](#method-extract) Accepts a map of filenames to file content.  Returns
+a map of filenames to an array of API comment block
+text.  This expects the comment to start with / **
+on its own line, and end with * / on its own
+line.  Override this function to provide an
+alternative comment parser.
+  - [`processblock`](#method-processblock) Processes all the tags in a single comment block
+  - [`transform`](#method-transform) Transforms a map of filenames to arrays of comment blocks into a
+JSON structure that represents the entire processed API doc info
+and relationships between elements for the entire project.
+  - [`parse`](#method-parse) Extracts and transforms the filemap provided to constructor
 
 
 

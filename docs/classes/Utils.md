@@ -21,20 +21,30 @@ Utilities Class
 
 ##### Methods
 
-  - [`escapeHTML`](#method-escapehtml)
-  - [`unindent`](#method-unindent)
-  - [`getLayouts`](#method-getlayouts)
-  - [`getPage`](#method-getpage)
-  - [`getPages`](#method-getpages)
-  - [`getPartials`](#method-getpartials)
-  - [`prepare`](#method-prepare)
-  - [`getProjectData`](#method-getprojectdata)
-  - [`getDirs`](#method-getdirs)
-  - [`validatePaths`](#method-validatepaths)
-  - [`fixType`](#method-fixtype)
-  - [`webpath`](#method-webpath)
-  - [`localize`](#method-localize)
-  - [`markdownLink`](#method-markdownlink)
+  - [`escapeHTML`](#method-escapehtml) Escapes HTML characters in _html_.
+  - [`unindent`](#method-unindent) Normalizes the initial indentation of the given _content_ so that the first line
+is unindented, and all other lines are unindented to the same degree as the
+first line. So if the first line has four spaces at the beginning, then all
+lines will be unindented four spaces.
+  - [`getLayouts`](#method-getlayouts) Like &#x60;getPages()&#x60;, but returns only the files under the &#x60;layout/&#x60; subdirectory
+of the specified _dir_.
+  - [`getPage`](#method-getpage) Loads and returns the content of the specified page file.
+  - [`getPages`](#method-getpages) Loads pages (files with a &#x60;.handlebars&#x60; extension) in the specified directory and
+returns an object containing a mapping of page names (the part of the filename)
+preceding the &#x60;.handlebars&#x60; extension) to page content.
+  - [`getPartials`](#method-getpartials) Like &#x60;getPages()&#x60;, but returns only the files under the &#x60;partial/&#x60; subdirectory
+of the specified _dir_.
+  - [`prepare`](#method-prepare) Mix/merge/munge data into the template.
+  - [`getProjectData`](#method-getprojectdata) Walk the directory tree to locate the yuidoc.json file.
+  - [`getDirs`](#method-getdirs) Walks the tree from this dir and returns all the subdirs
+  - [`validatePaths`](#method-validatepaths) Make sure all the paths passed are directories and that they are not in the ignore list.
+  - [`fixType`](#method-fixtype) Takes a type string and converts it to a &quot;First letter upper cased&quot; type. e.g. &#x60;(string -&gt; String, object -&gt; Object)&#x60;
+  - [`webpath`](#method-webpath) Produces a normalized web path by joining all the parts and normalizing the
+filesystem-like path into web compatible url.
+Supports relative and absolute paths.
+Courtesy of [Mojito&#x27;s utils](https://github.com/yahoo/mojito/)
+  - [`localize`](#method-localize) Localize the string via current Y.options
+  - [`markdownLink`](#method-markdownlink) convert string to markdown link
 
 
 

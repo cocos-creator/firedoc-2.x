@@ -21,18 +21,32 @@ Ported fileutils methods from [Selleck](http://github.com/rgrove/selleck)
 
 ##### Methods
 
-  - [`copyDirectory`](#method-copydirectory)
-  - [`copyFile`](#method-copyfile)
-  - [`copyPath`](#method-copypath)
-  - [`deletePath`](#method-deletepath)
-  - [`isDirectory`](#method-isdirectory)
-  - [`isFile`](#method-isfile)
-  - [`isSymbolicLink`](#method-issymboliclink)
-  - [`lstatSync`](#method-lstatsync)
-  - [`statSync`](#method-statsync)
-  - [`copyAssets`](#method-copyassets)
-  - [`getJSON`](#method-getjson)
-  - [`writeFile`](#method-writefile)
+  - [`copyDirectory`](#method-copydirectory) Copy a directory from one location to another
+  - [`copyFile`](#method-copyfile) Copy a file from one location to another
+  - [`copyPath`](#method-copypath) If _source_ is a file, copies it to _dest_. If it&#x27;s a directory, recursively
+copies it and all files and directories it contains to _dest_.
+
+Note that when attempting to copy a file into a directory, you should specify
+the full path to the new file (including the new filename). Otherwise, it will
+be interpreted as an attempt to copy the _source_ file *over* the _dest_
+directory instead of *into* it.
+
+Known issues:
+- Doesn&#x27;t preserve ownership or permissions on copied files/directories.
+  - [`deletePath`](#method-deletepath) If _path_ is a file, deletes it. If _path_ is a directory, recursively deletes
+it and all files and directories it contains.
+
+This method is synchronous.
+  - [`isDirectory`](#method-isdirectory) Check to see if this is a directory
+  - [`isFile`](#method-isfile) Check to see if this is a File
+  - [`isSymbolicLink`](#method-issymboliclink) Check to see if this is a SymLink
+  - [`lstatSync`](#method-lstatsync) Like &#x60;fs.lstatSync()&#x60;, but returns &#x60;null&#x60; instead of throwing when _path_
+doesn&#x27;t exist. Will still throw on other types of errors.
+  - [`statSync`](#method-statsync) Like &#x60;fs.statSync()&#x60;, but returns &#x60;null&#x60; instead of throwing when _path_
+doesn&#x27;t exist. Will still throw on other types of errors.
+  - [`copyAssets`](#method-copyassets) Copy the theme assets directory
+  - [`getJSON`](#method-getjson) Helper method for getting JSON data from a local file
+  - [`writeFile`](#method-writefile) Helper method for writing files to disk. It wraps the NodeJS file API
 
 
 

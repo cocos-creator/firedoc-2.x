@@ -25,14 +25,14 @@ Provides the `--server` server option for YUIDoc
 
 ##### Methods
 
-  - [`parse`](#method-parse)
-  - [`routes`](#method-routes)
-  - [`files`](#method-files)
-  - [`clazz`](#method-clazz)
-  - [`modules`](#method-modules)
-  - [`home`](#method-home)
-  - [`init`](#method-init)
-  - [`start`](#method-start)
+  - [`parse`](#method-parse) Middleware to parse the API docs per request
+  - [`routes`](#method-routes) Create the routes used to serve YUIDoc files dynamically
+  - [`files`](#method-files) &#x60;/files&#x60; endpoint
+  - [`clazz`](#method-clazz) &#x60;/classes&#x60; endpoint
+  - [`modules`](#method-modules) &#x60;/modules&#x60; endpoint
+  - [`home`](#method-home) &#x60;/&#x60; endpoint
+  - [`init`](#method-init) Creates the Express server and prep&#x27;s YUI for serving
+  - [`start`](#method-start) Start the server with the supplied options.
 
 
 

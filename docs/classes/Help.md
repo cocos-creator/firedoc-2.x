@@ -25,8 +25,8 @@ Shows the help text
 
 ##### Methods
 
-  - [`renderHelp`](#method-renderhelp)
-  - [`showHelp`](#method-showhelp)
+  - [`renderHelp`](#method-renderhelp) Render the help message as a string
+  - [`showHelp`](#method-showhelp) Display the help message, write it to the screen and exit
 
 
 
