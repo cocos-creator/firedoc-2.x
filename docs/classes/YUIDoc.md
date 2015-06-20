@@ -27,14 +27,14 @@ YUIDoc main class
 
 ##### Properties
 
-  - [`OPTIONS`](#property-options)
-  - [`filecount`](#property-filecount)
-  - [`selleck`](#property-selleck)
-  - [`filemap`](#property-filemap)
-  - [`dirmap`](#property-dirmap)
-  - [`options`](#property-options)
-  - [`starttime`](#property-starttime)
-  - [`endtime`](#property-endtime)
+  - [`OPTIONS`](#property-options) `Object` The default list of configuration options
+  - [`filecount`](#property-filecount) `Boolean` Holds the number of files that we are processing.
+  - [`selleck`](#property-selleck) `Object` Hash map of dirnames to selleck config options.
+  - [`filemap`](#property-filemap) `Object` Holder for the list of files we are processing.
+  - [`dirmap`](#property-dirmap) `Object` Holder for the list of directories we are processing.
+  - [`options`](#property-options) `Object` Internal holder for configuration options.
+  - [`starttime`](#property-starttime) `Timestamp` Timestamp holder so we know when YUIDoc started the parse process.
+  - [`endtime`](#property-endtime) `Timestamp` Timestamp holder so we know when YUIDoc has finished the parse process.
 
 
 
@@ -60,73 +60,89 @@ YUIDoc main class
 #### Properties
 
 
-The default list of configuration options
+#### OPTIONS
 
+> The default list of configuration options
+
+| meta | description |
 |------|-------------|
-| Name | OPTIONS    |
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
 | Defined | [lib/yuidoc.js:28](../files/lib_yuidoc.js.md#l28) |
 
 
 
-Holds the number of files that we are processing.
+#### filecount
 
+> Holds the number of files that we are processing.
+
+| meta | description |
 |------|-------------|
-| Name | filecount    |
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> |
 | Defined | [lib/yuidoc.js:65](../files/lib_yuidoc.js.md#l65) |
 
 
 
-Hash map of dirnames to selleck config options.
+#### selleck
 
+> Hash map of dirnames to selleck config options.
+
+| meta | description |
 |------|-------------|
-| Name | selleck    |
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
 | Defined | [lib/yuidoc.js:72](../files/lib_yuidoc.js.md#l72) |
 
 
 
-Holder for the list of files we are processing.
+#### filemap
 
+> Holder for the list of files we are processing.
+
+| meta | description |
 |------|-------------|
-| Name | filemap    |
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
 | Defined | [lib/yuidoc.js:79](../files/lib_yuidoc.js.md#l79) |
 
 
 
-Holder for the list of directories we are processing.
+#### dirmap
 
+> Holder for the list of directories we are processing.
+
+| meta | description |
 |------|-------------|
-| Name | dirmap    |
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
 | Defined | [lib/yuidoc.js:86](../files/lib_yuidoc.js.md#l86) |
 
 
 
-Internal holder for configuration options.
+#### options
 
+> Internal holder for configuration options.
+
+| meta | description |
 |------|-------------|
-| Name | options    |
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
 | Defined | [lib/yuidoc.js:94](../files/lib_yuidoc.js.md#l94) |
 
 
 
-Timestamp holder so we know when YUIDoc started the parse process.
+#### starttime
 
+> Timestamp holder so we know when YUIDoc started the parse process.
+
+| meta | description |
 |------|-------------|
-| Name | starttime    |
 | Type | Timestamp |
 | Defined | [lib/yuidoc.js:365](../files/lib_yuidoc.js.md#l365) |
 
 
 
-Timestamp holder so we know when YUIDoc has finished the parse process.
+#### endtime
 
+> Timestamp holder so we know when YUIDoc has finished the parse process.
+
+| meta | description |
 |------|-------------|
-| Name | endtime    |
 | Type | Timestamp |
 | Defined | [lib/yuidoc.js:386](../files/lib_yuidoc.js.md#l386) |
 

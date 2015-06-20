@@ -19,7 +19,7 @@ Provides the `--server` server option for YUIDoc
 
 ##### Properties
 
-  - [`_externalData`](#property-_externaldata)
+  - [`_externalData`](#property-_externaldata) `Object` Cache for external mixed in data.
 
 
 
@@ -44,10 +44,12 @@ Provides the `--server` server option for YUIDoc
 #### Properties
 
 
-Cache for external mixed in data.
+#### _externalData
 
+> Cache for external mixed in data.
+
+| meta | description |
 |------|-------------|
-| Name | _externalData    |
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
 | Defined | [lib/server.js:15](../files/lib_server.js.md#l15) |
 

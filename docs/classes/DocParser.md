@@ -22,10 +22,16 @@ with the parsers data (aggregated in the `'data'` property).
 
 ##### Properties
 
-  - [`TAGLIST`](#property-taglist)
-  - [`IGNORE_TAGLIST`](#property-ignore_taglist)
-  - [`CORRECTIONS`](#property-corrections)
-  - [`DIGESTERS`](#property-digesters)
+  - [`TAGLIST`](#property-taglist) `Array` A list of known tags.  This populates a member variable
+during initialization, and will be updated if additional
+digesters are added.
+  - [`IGNORE_TAGLIST`](#property-ignore_taglist) `Array` A list of ignored tags. These tags should be ignored because there is
+likely to be used for purposes other than JSDoc tags in JavaScript comments.
+  - [`CORRECTIONS`](#property-corrections) `Object` Common errors will get scrubbed instead of being ignored.
+  - [`DIGESTERS`](#property-digesters) `Object` A map of the default tag processors, keyed by the
+tag name.  Multiple tags can use the same digester
+by supplying the string name that points to the
+implementation rather than a function.
 
 
 ##### Attributes
@@ -81,43 +87,51 @@ with the parsers data (aggregated in the `'data'` property).
 #### Properties
 
 
-A list of known tags.  This populates a member variable
+#### TAGLIST
+
+> A list of known tags.  This populates a member variable
 during initialization, and will be updated if additional
 digesters are added.
 
+| meta | description |
 |------|-------------|
-| Name | TAGLIST    |
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> |
 | Defined | [lib/docparser.js:93](../files/lib_docparser.js.md#l93) |
 
 
 
-A list of ignored tags. These tags should be ignored because there is
+#### IGNORE_TAGLIST
+
+> A list of ignored tags. These tags should be ignored because there is
 likely to be used for purposes other than JSDoc tags in JavaScript comments.
 
+| meta | description |
 |------|-------------|
-| Name | IGNORE_TAGLIST    |
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> |
 | Defined | [lib/docparser.js:175](../files/lib_docparser.js.md#l175) |
 
 
 
-Common errors will get scrubbed instead of being ignored.
+#### CORRECTIONS
 
+> Common errors will get scrubbed instead of being ignored.
+
+| meta | description |
 |------|-------------|
-| Name | CORRECTIONS    |
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
 | Defined | [lib/docparser.js:187](../files/lib_docparser.js.md#l187) |
 
 
 
-A map of the default tag processors, keyed by the
+#### DIGESTERS
+
+> A map of the default tag processors, keyed by the
 tag name.  Multiple tags can use the same digester
 by supplying the string name that points to the
 implementation rather than a function.
 
+| meta | description |
 |------|-------------|
-| Name | DIGESTERS    |
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
 | Defined | [lib/docparser.js:210](../files/lib_docparser.js.md#l210) |
 

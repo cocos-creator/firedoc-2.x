@@ -20,15 +20,15 @@ based templates to generate static HTML content
 
 ##### Properties
 
-  - [`NATIVES`](#property-natives)
-  - [`filesCount`](#property-filescount)
-  - [`_meta`](#property-_meta)
-  - [`project`](#property-project)
-  - [`i18n`](#property-i18n)
-  - [`modules`](#property-modules)
-  - [`classes`](#property-classes)
-  - [`files`](#property-files)
-  - [`_mergeCounter`](#property-_mergecounter)
+  - [`NATIVES`](#property-natives) `Object` List of native types to cross link to MDN
+  - [`filesCount`](#property-filescount) `Number` File counter
+  - [`_meta`](#property-_meta) `Object` Holder for project meta data
+  - [`project`](#property-project) `Unknown` Get the project to export
+  - [`i18n`](#property-i18n) `Unknown` Get i18n object
+  - [`modules`](#property-modules) `Unknown` Get modules object to export
+  - [`classes`](#property-classes) `Unknown` Get classes object to export
+  - [`files`](#property-files) `Unknown` Get files object to export
+  - [`_mergeCounter`](#property-_mergecounter) `Number` Counter for stepping into merges
 
 
 
@@ -87,82 +87,100 @@ based templates to generate static HTML content
 #### Properties
 
 
-List of native types to cross link to MDN
+#### NATIVES
 
+> List of native types to cross link to MDN
+
+| meta | description |
 |------|-------------|
-| Name | NATIVES    |
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
 | Defined | [lib/builder.js:271](../files/lib_builder.js.md#l271) |
 
 
 
-File counter
+#### filesCount
 
+> File counter
+
+| meta | description |
 |------|-------------|
-| Name | filesCount    |
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a> |
 | Defined | [lib/builder.js:446](../files/lib_builder.js.md#l446) |
 
 
 
-Holder for project meta data
+#### _meta
 
+> Holder for project meta data
+
+| meta | description |
 |------|-------------|
-| Name | _meta    |
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
 | Defined | [lib/builder.js:452](../files/lib_builder.js.md#l452) |
 
 
 
-Get the project to export
+#### project
 
+> Get the project to export
+
+| meta | description |
 |------|-------------|
-| Name | project    |
 | Type | Unknown |
 | Defined | [lib/builder.js:1075](../files/lib_builder.js.md#l1075) |
 
 
 
-Get i18n object
+#### i18n
 
+> Get i18n object
+
+| meta | description |
 |------|-------------|
-| Name | i18n    |
 | Type | Unknown |
 | Defined | [lib/builder.js:1090](../files/lib_builder.js.md#l1090) |
 
 
 
-Get modules object to export
+#### modules
 
+> Get modules object to export
+
+| meta | description |
 |------|-------------|
-| Name | modules    |
 | Type | Unknown |
 | Defined | [lib/builder.js:1109](../files/lib_builder.js.md#l1109) |
 
 
 
-Get classes object to export
+#### classes
 
+> Get classes object to export
+
+| meta | description |
 |------|-------------|
-| Name | classes    |
 | Type | Unknown |
 | Defined | [lib/builder.js:1131](../files/lib_builder.js.md#l1131) |
 
 
 
-Get files object to export
+#### files
 
+> Get files object to export
+
+| meta | description |
 |------|-------------|
-| Name | files    |
 | Type | Unknown |
 | Defined | [lib/builder.js:1158](../files/lib_builder.js.md#l1158) |
 
 
 
-Counter for stepping into merges
+#### _mergeCounter
 
+> Counter for stepping into merges
+
+| meta | description |
 |------|-------------|
-| Name | _mergeCounter    |
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a> |
 | Defined | [lib/builder.js:1344](../files/lib_builder.js.md#l1344) |
 

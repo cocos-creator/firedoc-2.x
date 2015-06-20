@@ -4,7 +4,7 @@
 ##### Properties
 
 {{#members.properties}}
-  - [`{{name}}`](#{{markdownLink}})
+  - [`{{name}}`](#{{markdownLink}}) `{{type}}` {{description}}
 {{/members.properties}}
 
 {{/if}}
