@@ -60,97 +60,73 @@ YUIDoc main class
 #### Properties
 
 
+The default list of configuration options
 
-##### property: `OPTIONS`
-
-
-
-| meta | description |
 |------|-------------|
+| Name | OPTIONS    |
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
 | Defined | [lib/yuidoc.js:28](../files/lib_yuidoc.js.md#l28) |
 
 
 
+Holds the number of files that we are processing.
 
-##### property: `filecount`
-
-
-
-| meta | description |
 |------|-------------|
+| Name | filecount    |
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> |
 | Defined | [lib/yuidoc.js:65](../files/lib_yuidoc.js.md#l65) |
 
 
 
+Hash map of dirnames to selleck config options.
 
-##### property: `selleck`
-
-
-
-| meta | description |
 |------|-------------|
+| Name | selleck    |
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
 | Defined | [lib/yuidoc.js:72](../files/lib_yuidoc.js.md#l72) |
 
 
 
+Holder for the list of files we are processing.
 
-##### property: `filemap`
-
-
-
-| meta | description |
 |------|-------------|
+| Name | filemap    |
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
 | Defined | [lib/yuidoc.js:79](../files/lib_yuidoc.js.md#l79) |
 
 
 
+Holder for the list of directories we are processing.
 
-##### property: `dirmap`
-
-
-
-| meta | description |
 |------|-------------|
+| Name | dirmap    |
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
 | Defined | [lib/yuidoc.js:86](../files/lib_yuidoc.js.md#l86) |
 
 
 
+Internal holder for configuration options.
 
-##### property: `options`
-
-
-
-| meta | description |
 |------|-------------|
+| Name | options    |
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
 | Defined | [lib/yuidoc.js:94](../files/lib_yuidoc.js.md#l94) |
 
 
 
+Timestamp holder so we know when YUIDoc started the parse process.
 
-##### property: `starttime`
-
-
-
-| meta | description |
 |------|-------------|
+| Name | starttime    |
 | Type | Timestamp |
 | Defined | [lib/yuidoc.js:365](../files/lib_yuidoc.js.md#l365) |
 
 
 
+Timestamp holder so we know when YUIDoc has finished the parse process.
 
-##### property: `endtime`
-
-
-
-| meta | description |
 |------|-------------|
+| Name | endtime    |
 | Type | Timestamp |
 | Defined | [lib/yuidoc.js:386](../files/lib_yuidoc.js.md#l386) |
 

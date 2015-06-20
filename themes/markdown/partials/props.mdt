@@ -1,11 +1,8 @@
 
+{{{description}}}
 
-##### property: `{{name}}`
-
-{{{propertyDescription}}}
-
-| meta | description |
 |------|-------------|
+| Name | {{name}}    |
 | Type | {{#crossLink type}}{{/crossLink}} |
 {{#if overwritten_from}}
 | Overwritten | inherited from {{overwritten_from/class}} but overwritten in `{{{file}}}:{{{line}}}` |

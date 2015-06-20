@@ -87,109 +87,82 @@ based templates to generate static HTML content
 #### Properties
 
 
+List of native types to cross link to MDN
 
-##### property: `NATIVES`
-
-
-
-| meta | description |
 |------|-------------|
+| Name | NATIVES    |
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
 | Defined | [lib/builder.js:271](../files/lib_builder.js.md#l271) |
 
 
 
+File counter
 
-##### property: `filesCount`
-
-
-
-| meta | description |
 |------|-------------|
+| Name | filesCount    |
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a> |
 | Defined | [lib/builder.js:446](../files/lib_builder.js.md#l446) |
 
 
 
+Holder for project meta data
 
-##### property: `_meta`
-
-
-
-| meta | description |
 |------|-------------|
+| Name | _meta    |
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
 | Defined | [lib/builder.js:452](../files/lib_builder.js.md#l452) |
 
 
 
+Get the project to export
 
-##### property: `project`
-
-
-
-| meta | description |
 |------|-------------|
+| Name | project    |
 | Type | Unknown |
 | Defined | [lib/builder.js:1075](../files/lib_builder.js.md#l1075) |
 
 
 
+Get i18n object
 
-##### property: `i18n`
-
-
-
-| meta | description |
 |------|-------------|
+| Name | i18n    |
 | Type | Unknown |
 | Defined | [lib/builder.js:1090](../files/lib_builder.js.md#l1090) |
 
 
 
+Get modules object to export
 
-##### property: `modules`
-
-
-
-| meta | description |
 |------|-------------|
+| Name | modules    |
 | Type | Unknown |
 | Defined | [lib/builder.js:1109](../files/lib_builder.js.md#l1109) |
 
 
 
+Get classes object to export
 
-##### property: `classes`
-
-
-
-| meta | description |
 |------|-------------|
+| Name | classes    |
 | Type | Unknown |
 | Defined | [lib/builder.js:1131](../files/lib_builder.js.md#l1131) |
 
 
 
+Get files object to export
 
-##### property: `files`
-
-
-
-| meta | description |
 |------|-------------|
+| Name | files    |
 | Type | Unknown |
 | Defined | [lib/builder.js:1158](../files/lib_builder.js.md#l1158) |
 
 
 
+Counter for stepping into merges
 
-##### property: `_mergeCounter`
-
-
-
-| meta | description |
 |------|-------------|
+| Name | _mergeCounter    |
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a> |
 | Defined | [lib/builder.js:1344](../files/lib_builder.js.md#l1344) |
 

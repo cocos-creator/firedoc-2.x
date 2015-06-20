@@ -38,13 +38,10 @@ Shows the help text
 #### Properties
 
 
+The help text to display
 
-##### property: `help`
-
-
-
-| meta | description |
 |------|-------------|
+| Name | help    |
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> |
 | Defined | [lib/help.js:14](../files/lib_help.js.md#l14) |
 
