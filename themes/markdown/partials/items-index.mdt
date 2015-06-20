@@ -4,7 +4,7 @@
 ##### Properties
 
 {{#members.properties}}
-  - [`{{name}}`](#{{markdownLink}}) `{{type}}` {{description}}
+  - [`{{name}}`](#{{markdownLink}}) `{{type}}` {{{description}}}
 {{/members.properties}}
 
 {{/if}}
@@ -13,7 +13,7 @@
 ##### Attributes
 
 {{#members.attributes}}
-  - [`{{name}}`](#{{markdownLink}}) {{description}}
+  - [`{{name}}`](#{{markdownLink}}) {{{description}}}
 {{/members.attributes}}
 
 {{/if}}
@@ -22,10 +22,10 @@
 ##### Methods
 
 {{#is_constructor}}
-  - [`{{name}}` **constructor**](#{{markdownLink}}) {{description}}
+  - [`{{name}}` **constructor**](#{{markdownLink}}) {{{description}}}
 {{/is_constructor}}
 {{#members.methods}}
-  - [`{{name}}`](#{{markdownLink}}) {{description}}
+  - [`{{name}}`](#{{markdownLink}}) {{{description}}}
 {{/members.methods}}
 
 {{/if}}
@@ -35,7 +35,7 @@
 ##### Events
 
 {{#members.events}}
-  - [`{{name}}`](#{{markdownLink}}) {{description}}
+  - [`{{name}}`](#{{markdownLink}}) {{{description}}}
 {{/members.events}}
 
 {{/if}}
