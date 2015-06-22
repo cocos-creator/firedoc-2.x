@@ -1,5 +1,5 @@
 
-# firedoc 1.5.10
+# firedoc 1.5.11
 
 Fireball is the game engine for the future.
 
@@ -20,11 +20,11 @@ var marked = require('marked'),
   TEMPLATE;
 
 /**
-* Takes the `JSON` data from the `DocParser` class, creates and parses markdown and handlebars
-based templates to generate static HTML content
-* @class DocBuilder
-* @module yuidoc
-*/
+ * Takes the `JSON` data from the `DocParser` class, creates and parses markdown and handlebars
+ * based templates to generate static HTML content
+ * @class DocBuilder
+ * @module yuidoc
+ */
 
 YUI.add('doc-builder', function (Y) {
   /*jshint onevar:false */
@@ -827,7 +827,7 @@ YUI.add('doc-builder', function (Y) {
       // build locals.js
       var locals;
       try {
-        locals = require(this.options.themedir + 'locals.js');
+        locals = require(this.options.themedir + '/locals.js');
       } catch (e) {
         locals = function () {};
       }
