@@ -27,6 +27,6 @@ deploydocs: version
 	./scripts/docs.sh
 
 test:
-	npm test
+	NODE_ENV=test mocha ./test/test-*.js
 
-.PHONY: docs clean
+.PHONY: docs clean test
