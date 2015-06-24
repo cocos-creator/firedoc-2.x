@@ -77,6 +77,7 @@
   },
   "dependencies": {
     "commander": "^2.8.1",
+    "debug": "^2.2.0",
     "express": "^4.12.3",
     "glob": "^5.0.10",
     "graceful-fs": "2.x",
