@@ -2,6 +2,8 @@
 
 var debug = require('debug');
 var program = require('commander');
+var path = require('path');
+var spawn = require('child_process').spawn;
 var Firedoc = require('../lib/firedoc').Firedoc;
 
 program
@@ -27,4 +29,11 @@ var doc = new Firedoc({
   lang: program.lang,
   theme: program.theme
 });
-doc.build();
+doc.build(function () {
+  var serve = path.join(__dirname, '../node_modules/.bin/serve');
+  var dest = path.join(__dirname, '../', program.dest || 'out');
+  spawn(serve, [dest], {
+    'stdio': 'inherit'
+  });
+});
+
