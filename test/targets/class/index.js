@@ -10,6 +10,7 @@
  */
 
 /**
+ * The name2
  * @property name2
  * @type Object
  */
@@ -22,15 +23,15 @@
  */
 
 /**
- * method1 description 2
- * @method method2_with_description
- * @param {String} name - The name description
- * @return {String} The return value
+ * The second class
+ * @class SecondClazz
  */
 
 /**
- * The second class
- * @class SecondClazz
+ * method2 description 2
+ * @method method2_with_description
+ * @param {String} name - The name description
+ * @return {String} The return value
  */
 
 /**

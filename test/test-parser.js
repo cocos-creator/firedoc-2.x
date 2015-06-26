@@ -129,9 +129,6 @@ describe('firedoc.parser', function () {
     before(function () {
       ast = parser.parse('js', doc.filemap, doc.dirmap);
     });
-    it('should check ast', function () {
-      console.log(ast);
-    });
     it('should check undefined module', function () {
       assert.ok(ast.modules.undefinedmodule);
     });
@@ -157,6 +154,55 @@ describe('firedoc.parser', function () {
       assert.equal(true, enumEx.isEnum);
       assert.equal('enums', enumEx.type);
       assert.equal('The enum description', enumEx.description);
+    });
+    it('should check members', function () {
+      var members = ast.members;
+      assert.equal('property', members[0].itemtype);
+      assert.equal('ClazzExample', members[0].clazz);
+      assert.equal('undefinedmodule', members[0].module);
+      assert.equal('The prop 1', members[0].description);
+      assert.equal('property', members[1].itemtype);
+      assert.equal('ClazzExample', members[1].clazz);
+      assert.equal('undefinedmodule', members[1].module);
+      assert.equal('The name2', members[1].description);
+      assert.equal('method1 description', members[2].description);
+      assert.equal('method1', members[2].name);
+      assert.deepEqual(
+        [ 
+          {
+            name: 'name', 
+            description: '', 
+            type: 'String'
+          }
+        ],
+        members[2].params
+      );
+      assert.deepEqual(
+        {
+          description: '', 
+          type: 'String'
+        },
+        members[2].return
+      );
+      assert.equal('method2 description 2', members[3].description);
+      assert.equal('method2_with_description', members[3].name);
+      assert.deepEqual(
+        [ 
+          {
+            name: 'name',
+            description: 'The name description',
+            type: 'String' 
+          } 
+        ],
+        members[3].params
+      );
+      assert.deepEqual(
+        { 
+          description: 'The return value', 
+          type: 'String' 
+        },
+        members[3].return
+      );
     });
   });
 
