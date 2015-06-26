@@ -80,16 +80,13 @@ describe('firedoc.parser', function () {
     var src = path.join(__dirname, './targets/module');
     var doc = new Firedoc({'path': src});
     var ast;
-
     before(function (next) {
       doc._processConfig();
       doc.walk(next);
     });
-
     before(function () {
       ast = parser.parse('js', doc.filemap, doc.dirmap);
     });
-
     var submodule1, submodule2;
     it('should check files and codes', function () {
       assert.equal(4, _.keys(ast.files).length);
@@ -121,5 +118,23 @@ describe('firedoc.parser', function () {
     });
   });
 
+  describe('classes', function () {
+    var src = path.join(__dirname, './targets/class');
+    var doc = new Firedoc({'path': src});
+    var ast;
+    before(function (next) {
+      doc._processConfig();
+      doc.walk(next);
+    });
+    before(function () {
+      ast = parser.parse('js', doc.filemap, doc.dirmap);
+    });
+    it('should check ast', function () {
+      console.log(ast);
+    });
+    it('should check undefined module', function () {
+      assert.ok(ast.modules.undefinedmodule);
+    });
+  });
 
 });
