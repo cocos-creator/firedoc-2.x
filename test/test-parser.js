@@ -116,6 +116,21 @@ describe('firedoc.parser', function () {
       assert.deepEqual(submodule1, ast.modules.submod1);
       assert.deepEqual(submodule2, ast.modules.submod2);
     });
+    it('should check direct methods', function () {
+      assert.equal('Direct method', ast.members[0].description);
+      assert.equal('method', ast.members[0].itemtype);
+      assert.equal('directMethod', ast.members[0].name);
+      assert.equal('', ast.members[0].clazz);
+      assert.equal('mod1', ast.members[0].module);
+      assert.equal(true, ast.members[0].isGlobal);
+      assert.deepEqual(
+        { 
+          description: '', 
+          type: 'String' 
+        },
+        ast.members[0].return
+      );
+    });
   });
 
   describe('classes', function () {

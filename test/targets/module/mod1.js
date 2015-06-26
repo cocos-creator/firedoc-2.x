@@ -7,3 +7,9 @@
  * @submodule submod1
  * @submodule submod2
  */
+
+/**
+ * Direct method
+ * @method directMethod
+ * @return {String}
+ */
