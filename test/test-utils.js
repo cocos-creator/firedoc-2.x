@@ -1,7 +1,7 @@
 
-var path = require('path');
-var assert = require('assert');
-var utils = require('../lib/utils.js');
+const path = require('path');
+const assert = require('assert');
+const utils = require('../lib/utils.js');
 
 describe('firedoc.utils', function () {
 
