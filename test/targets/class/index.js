@@ -1,8 +1,8 @@
 
 /**
  * Class description
- * @class ClazzExample
  * @module undefinedmodule
+ * @class ClazzExample
  */
 
 /**
@@ -31,4 +31,9 @@
 /**
  * The second class
  * @class SecondClazz
+ */
+
+/**
+ * The enum description
+ * @enum EnumEx
  */

@@ -135,6 +135,29 @@ describe('firedoc.parser', function () {
     it('should check undefined module', function () {
       assert.ok(ast.modules.undefinedmodule);
     });
+    it('should check class1', function () {
+      var class1 = ast.classes.ClazzExample;
+      assert.equal('ClazzExample', class1.name);
+      assert.equal('undefinedmodule', class1.module);
+      assert.equal(false, class1.isEnum);
+      assert.equal('classes', class1.type);
+      assert.equal('Class description', class1.description);
+    });
+    it('should check class2', function () {
+      var class2 = ast.classes.SecondClazz;
+      assert.equal('SecondClazz', class2.name);
+      assert.equal('undefinedmodule', class2.module);
+      assert.equal(false, class2.isEnum);
+      assert.equal('classes', class2.type);
+      assert.equal('The second class', class2.description);
+    });
+    it('should check enum', function () {
+      var enumEx = ast.classes.EnumEx;
+      assert.equal('EnumEx', enumEx.name);
+      assert.equal(true, enumEx.isEnum);
+      assert.equal('enums', enumEx.type);
+      assert.equal('The enum description', enumEx.description);
+    });
   });
 
 });
