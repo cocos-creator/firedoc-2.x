@@ -38,4 +38,5 @@
 /**
  * The enum description
  * @enum EnumEx
+ * @extends UnknownEnum
  */

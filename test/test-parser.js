@@ -219,6 +219,17 @@ describe('firedoc.parser', function () {
         members[3].return
       );
     });
+    it('should check inheritedMembers', function () {
+      assert.deepEqual([
+        [ 
+          'ClazzExample',
+          'SecondClazz'
+        ],
+        [
+          'EnumEx'
+        ]
+      ], ast.inheritedMembers);
+    });
   });
 
 });
