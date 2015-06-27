@@ -3,6 +3,7 @@ const _ = require('underscore');
 const path = require('path');
 const assert = require('assert');
 const parser = require('../lib/docparser');
+const builder = require('../lib/builder');
 const Firedoc = require('../lib/firedoc').Firedoc;
 
 describe('firedoc.parser', function () {
@@ -77,6 +78,11 @@ describe('firedoc.parser', function () {
     it('should check inherited members', function () {
       assert.deepEqual([], ast.inheritedMembers);
     });
+
+    it('should compile the ast', function (next) {
+      builder.compile(ast, doc.options, next);
+    });
+
   });
 
   describe('modules', function () {
@@ -133,6 +139,9 @@ describe('firedoc.parser', function () {
         },
         ast.members[0].return
       );
+    });
+    it('should compile the ast', function (next) {
+      builder.compile(ast, doc.options, next);
     });
   });
 
@@ -233,6 +242,9 @@ describe('firedoc.parser', function () {
         ]
       ], ast.inheritedMembers);
     });
+    it('should compile the ast', function (next) {
+      builder.compile(ast, doc.options, next);
+    });
   });
 
   describe('members', function () {
@@ -304,6 +316,9 @@ describe('firedoc.parser', function () {
           ]
         }
       ], example2.params);
+    });
+    it('should compile the ast', function (next) {
+      builder.compile(ast, doc.options, next);
     });
   });
 
