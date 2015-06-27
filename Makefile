@@ -30,6 +30,6 @@ deploydocs: version
 	./scripts/docs.sh
 
 test:
-	NODE_ENV=test $(ISTANBUL_EXEC) cover $(MOCHA_EXEC) -- -R spec ./test/test-*.js
+	NODE_ENV=test $(ISTANBUL_EXEC) cover $(MOCHA_EXEC) -- -R spec --timeout 3000 ./test/test-*.js
 
 .PHONY: docs clean test
