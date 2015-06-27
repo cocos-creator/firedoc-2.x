@@ -232,4 +232,75 @@ describe('firedoc.parser', function () {
     });
   });
 
+  describe('members', function () {
+    var src = path.join(__dirname, './targets/members');
+    var doc = new Firedoc({'path': src});
+    var ast;
+    before(function (next) {
+      doc._processConfig();
+      doc.walk(next);
+    });
+    before(function () {
+      ast = parser.parse('js', doc.filemap, doc.dirmap);
+    });
+    it('should check members', function () {
+      var example1 = ast.members[0];
+      assert.equal(8, example1.line);
+      assert.equal('example_optional', example1.name);
+      assert.deepEqual([
+        {
+          name: 'x',
+          description: 'The default value is 10(test)',
+          type: 'Number',
+          optional: true,
+          optdefault: '10'
+        },
+        { 
+          name: 'y',
+          description: '',
+          type: 'Object',
+          optional: true,
+          optdefault: '{}' 
+        },
+        { 
+          name: 'z',
+          description: '',
+          type: 'Array',
+          optional: true,
+          optdefault: '[]' 
+        }
+      ], example1.params);
+
+      var example2 = ast.members[1];
+      assert.deepEqual([
+        {
+          name: 'o',
+          description: '',
+          type: 'Object',
+          props: [
+            { 
+              name: 'x', 
+              description: '', 
+              type: 'Number' 
+            },
+            { 
+              name: 'y',
+              description: '',
+              type: 'Object',
+              optional: true,
+              optdefault: '{}',
+              props: [
+                {
+                  name: 'a',
+                  description: '',
+                  type: 'Boolean'
+                }
+              ]
+            }
+          ]
+        }
+      ], example2.params);
+    });
+  });
+
 });
