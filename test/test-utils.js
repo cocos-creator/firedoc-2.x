@@ -1,7 +1,9 @@
 
+const _ = require('underscore');
 const path = require('path');
 const assert = require('assert');
-const utils = require('../lib/utils.js');
+const utils = require('../lib/utils');
+const Firedoc = require('../lib/firedoc').Firedoc;
 
 describe('firedoc.utils', function () {
 
@@ -101,6 +103,19 @@ describe('firedoc.utils', function () {
   describe('.markdownLink', function () {
     it('should call markdownLink', function () {
       assert.equal('foobarx-10-20', utils.markdownLink('foobar(x,10,20)'));
+    });
+  });
+
+  describe('.buildFileTree', function () {
+    it('should call buildFileTree', function (next) {
+      var src = path.join(__dirname, './targets/basic');
+      var doc = new Firedoc({'path': src, 'parseOnly': true});
+      doc.build(function (err, ast, options) {
+        var filetree = utils.buildFileTree(_.values(ast.files));
+        assert.equal('test/targets/basic/index.js', filetree.test.targets.basic['index.js'].path);
+        assert.equal('test_targets_basic_index.js', filetree.test.targets.basic['index.js'].name);
+        next();
+      });
     });
   });
 
