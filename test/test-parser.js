@@ -59,7 +59,7 @@ describe('firedoc.parser', function () {
     it('should check members', function () {
       _.each(ast.members, function (member) {
         assert.equal('test/targets/basic/index.js', member.file);
-        assert.equal(12, member.line);
+        assert.equal(11, member.line);
         assert.equal('method', member.itemtype);
         assert.equal('method1', member.name);
         assert.equal('ExampleClass', member.clazz);
