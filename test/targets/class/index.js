@@ -25,6 +25,7 @@
 /**
  * The second class
  * @class SecondClazz
+ * @extends ClazzExample
  */
 
 /**
