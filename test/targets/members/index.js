@@ -11,6 +11,7 @@
  * @param {Number} [x=10] The default value is 10(test)
  * @param {Object} [y=object]
  * @param {Array} [z=array]
+ * @constructor
  * @return {Number}
  */
 

@@ -4,6 +4,7 @@
  *
  * @module exampleModule
  * @class ExampleClass
+ * @project test
  */
 
 /**

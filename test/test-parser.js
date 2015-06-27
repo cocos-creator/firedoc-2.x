@@ -23,8 +23,9 @@ describe('firedoc.parser', function () {
     });
 
     it('should check project', function () {
-      // TODO(Yorkie): check project
-      assert.deepEqual(ast.project, {});
+      assert.deepEqual(ast.project, {
+        'name': 'test'
+      });
       assert.equal('js', ast.syntaxType);
     });
     it('should check files', function () {
@@ -56,7 +57,7 @@ describe('firedoc.parser', function () {
     it('should check members', function () {
       _.each(ast.members, function (member) {
         assert.equal('test/targets/basic/index.js', member.file);
-        assert.equal(9, member.line);
+        assert.equal(10, member.line);
         assert.equal('method', member.itemtype);
         assert.equal('method1', member.name);
         assert.equal('ExampleClass', member.clazz);
@@ -247,6 +248,7 @@ describe('firedoc.parser', function () {
       var example1 = ast.members[0];
       assert.equal(8, example1.line);
       assert.equal('example_optional', example1.name);
+      assert.equal(true, example1.isConstructor);
       assert.deepEqual([
         {
           name: 'x',
