@@ -347,7 +347,7 @@ describe('firedoc.parser', function () {
     });
     it('should check members', function () {
       var example1 = ast.members[0];
-      assert.equal(8, example1.line);
+      assert.equal(15, example1.line);
       assert.equal('example_optional', example1.name);
       assert.equal(true, example1.isConstructor);
       assert.deepEqual([
@@ -374,6 +374,23 @@ describe('firedoc.parser', function () {
           type: 'Array',
           optional: true,
           optdefault: '[]' 
+        },
+        {
+          name: 'callback',
+          description: 'common callback',
+          type: 'commoncall',
+          props: [
+            {
+              'description': 'The error as first argument',
+              'type': 'Error',
+              'name': 'err'
+            },
+            {
+              'description': 'The returned object',
+              'type': 'Object',
+              'name': 'obj'
+            }
+          ]
         }
       ], example1.params);
 

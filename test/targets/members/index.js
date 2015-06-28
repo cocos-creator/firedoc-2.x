@@ -6,11 +6,19 @@
  */
 
 /**
+ * common callback
+ * @callback commoncall
+ * @param {Error} err - The error as first argument
+ * @param {Object} obj - The returned object
+ */
+
+/**
  * example method
  * @method example_optional
  * @param {Number} [x=10] The default value is 10(test)
  * @param {Object} [y=object]
  * @param {Array} [z=array]
+ * @param {commoncall} callback
  * @constructor
  * @return {Number}
  * @example
