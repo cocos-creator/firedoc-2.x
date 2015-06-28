@@ -36,6 +36,13 @@
  */
 
 /**
+ * extended from class1 and rewritten in this class
+ * @method method1
+ * @param {String} name
+ * @return {String}
+ */
+
+/**
  * The enum description
  * @enum EnumEx
  * @extends UnknownEnum

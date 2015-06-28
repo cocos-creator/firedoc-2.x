@@ -324,7 +324,13 @@ describe('firedoc.parser', function () {
       ], ast.inheritedMembers);
     });
     it('should compile the ast', function (next) {
-      builder.compile(ast, doc.options, next);
+      var ctx = builder.compile(ast, doc.options, next);
+      ctx.on('class', function (locals) {
+        if (locals.name === 'SecondClazz') {
+          assert.equal(locals.members[1].name, 'method1');
+          assert.ok(locals.members[1].overwrittenFrom);
+        }
+      });
     });
   });
 
