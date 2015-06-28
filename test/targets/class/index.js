@@ -19,7 +19,7 @@
  * method1 description
  * @method method1
  * @param {String} name
- * @return {String}
+ * @return {String|Number}
  */
 
 /**
@@ -39,7 +39,7 @@
  * extended from class1 and rewritten in this class
  * @method method1
  * @param {String} name
- * @return {String}
+ * @return {String|Boolean}
  */
 
 /**

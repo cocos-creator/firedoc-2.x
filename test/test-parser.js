@@ -288,7 +288,7 @@ describe('firedoc.parser', function () {
       assert.deepEqual(
         {
           description: '', 
-          type: 'String'
+          type: 'String|Number'
         },
         members[2].return
       );
