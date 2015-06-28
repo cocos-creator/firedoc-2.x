@@ -3,27 +3,73 @@ const _ = require('underscore');
 const path = require('path');
 const assert = require('assert');
 const utils = require('../lib/utils');
-const helpers = require('../lib/helpers');
+const parser = require('../lib/docparser');
+const builder = require('../lib/builder');
 const Firedoc = require('../lib/firedoc').Firedoc;
+const Handlebars = require('handlebars');
 
 describe('filedoc.helpers', function () {
 
+  var src = path.join(__dirname, './targets/class');
+  var doc = new Firedoc({'path': src});
+  var ast, ctx;
+  var callOptions = {
+    fn: function () {
+      return '';
+    }
+  };
+
+  before(function (next) {
+    doc._processConfig();
+    doc.walk(next);
+  });
+  before(function (next) {
+    ast = parser.parse('js', doc.filemap, doc.dirmap);
+    ctx = builder.compile(ast, doc.options, next);
+  });
+
   describe('.renderFileTree', function () {
     it('should render 1-level file tree', function (next) {
-      var src = path.join(__dirname, './targets/basic');
-      var doc = new Firedoc({'path': src, 'parseOnly': true});
-      doc.build(function (err, ast, options) {
-        var filetree = utils.buildFileTree(_.values(ast.files));
-        var html = helpers.renderFileTree(filetree);
-        assert.equal(html, '<ul><li>test/<ul><li>targets/<ul><li>basic/<ul><li><a href="../files/test_targets_basic_index.js.html">index.js</a></li></ul></li></ul></li></ul></li></ul>')
-        next();
-      });
+      var filetree = utils.buildFileTree(_.values(ast.files));
+      var html = ctx.helpers.renderFileTree.call(ctx, filetree);
+      assert.ok(html);
+      next();
     });
   });
 
   describe('.crossLink', function () {
-    it('should crossLink the link', function () {
-      
+    it('shoud return empty', function () {
+      var ret = ctx.helpers.crossLink.call(ctx, null, callOptions);
+      assert.equal(ret, 'unknown');
+    });
+    it('should crossLink with 2 links', function () {
+      var ret = ctx.helpers.crossLink.call(ctx, 'Number|Object');
+      assert.equal(ret, 'Number | Object');
+    });
+    it('should crossLink with 1 link', function () {
+      var ret = ctx.helpers.crossLink.call(ctx, 'Array', callOptions);
+      assert.equal(ret, 'Array');
+    });
+    it('should link natives', function () {
+      ctx.options.linkNatives = true;
+      var ret = ctx.helpers.crossLink.call(ctx, 'Array', callOptions);
+      assert.equal(ret, '<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a>');
+    });
+    it('should crossLink class/name', function () {
+      var ret = ctx.helpers.crossLink.call(ctx, 'ClazzExample/method1', callOptions);
+      assert.equal(ret, '<a href="../classes/ClazzExample.html#method_method1" class="crosslink">method1</a>');
+    });
+    it('should crossLink property', function () {
+      var ret = ctx.helpers.crossLink.call(ctx, 'ClazzExample/name:property', callOptions);
+      assert.equal(ret, '<a href="../classes/ClazzExample.html#property_name" class="crosslink">name</a>');
+    });
+    it('should crossLink attribute', function () {
+      var ret = ctx.helpers.crossLink.call(ctx, 'SecondClazz/attr1:attr', callOptions);
+      assert.equal(ret, '<a href="../classes/SecondClazz.html#attr_attr1" class="crosslink">attr1</a>');
+    });
+    it('should crossLink event', function () {
+      var ret = ctx.helpers.crossLink.call(ctx, 'SecondClazz/evt1:event', callOptions);
+      assert.equal(ret, '<a href="../classes/SecondClazz.html#event_evt1" class="crosslink">evt1</a>');
     });
   });
 

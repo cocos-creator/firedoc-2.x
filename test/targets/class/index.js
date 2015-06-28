@@ -43,6 +43,16 @@
  */
 
 /**
+ * attribute
+ * @attribute attr1
+ */
+
+/**
+ * event ex
+ * @event evt1
+ */
+
+/**
  * The enum description
  * @enum EnumEx
  * @extends UnknownEnum
