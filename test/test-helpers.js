@@ -71,8 +71,8 @@ describe('filedoc.helpers', function () {
       assert.equal(ret, '<a href="../classes/SecondClazz.html#attr_attr1" class="crosslink">attr1</a>');
     });
     it('should crossLink event', function () {
-      var ret = ctx.helpers.crossLink.call(ctx, 'SecondClazz/evt1:event', callOptions);
-      assert.equal(ret, '<a href="../classes/SecondClazz.html#event_evt1" class="crosslink">evt1</a>');
+      var ret = ctx.helpers.crossLink.call(ctx, 'ClazzExample/evt1:event', callOptions);
+      assert.equal(ret, '<a href="../classes/ClazzExample.html#event_evt1" class="crosslink">evt1</a>');
     });
     it('should crossLink webbase', function () {
       // TODO(Yorkie)

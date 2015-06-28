@@ -5,22 +5,22 @@
  * @class ClazzExample
  */
 
-/**
- * @property {String} name - The prop 1
- */
+  /**
+   * @property {String} name - The prop 1
+   */
 
-/**
- * The name2
- * @property name2
- * @type Object
- */
+  /**
+   * The name2
+   * @property name2
+   * @type Object
+   */
 
-/**
- * method1 description
- * @method method1
- * @param {String} name
- * @return {String|Number}
- */
+  /**
+   * method1 description
+   * @method method1
+   * @param {String} name
+   * @return {String|Number}
+   */
 
 /**
  * The second class
@@ -28,29 +28,35 @@
  * @extends ClazzExample
  */
 
-/**
- * method2 description 2
- * @method method2_with_description
- * @param {String} name - The name description
- * @return {String} The return value
- */
+  /**
+   * method2 description 2
+   * @method method2_with_description
+   * @param {String} name - The name description
+   * @return {String} The return value
+   */
 
-/**
- * extended from class1 and rewritten in this class
- * @method method1
- * @param {String} name
- * @return {String|Boolean}
- */
+  /**
+   * extended from class1 and rewritten in this class
+   * @method method1
+   * @param {String} name
+   * @return {String|Boolean}
+   */
 
-/**
- * attribute
- * @attribute attr1
- */
+  /**
+   * attribute
+   * @attribute attr1
+   */
 
-/**
- * event ex
- * @event evt1
- */
+  /**
+   * close attrubute
+   * @attribute attr2
+   */
+
+  /**
+   * event ex
+   * @event evt1
+   * @for ClazzExample
+   */
 
 /**
  * The enum description
