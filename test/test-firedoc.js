@@ -66,7 +66,7 @@ describe('firedoc.Firedoc', function () {
     });
   });
 
-  it('parse only and lint', function (next) {
+  it('parse only', function (next) {
     var doc = Firedoc({
       'path': src,
       'parseOnly': true
@@ -74,6 +74,17 @@ describe('firedoc.Firedoc', function () {
     doc.build(function (err, ast, options) {
       assert.deepEqual(ast, require('../lib/ast').AST);
       assert.deepEqual(options.path, src);
+      next();
+    });
+  });
+
+  it('lint', function (next) {
+    var doc = Firedoc({
+      'path': path.join(__dirname, './targets/warnings'),
+      'lint': true
+    });
+    doc.build(function (err) {
+      assert.ok(err.length);
       next();
     });
   });
