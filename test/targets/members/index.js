@@ -65,6 +65,7 @@
  *     require('ipc').on('foo:bar', function(message) {
  *       console.log(message);  // Prints "Hello World!"
  *     });
+ *     require("look");
  *   </script>
  * </body>
  * </html>

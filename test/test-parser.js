@@ -454,7 +454,7 @@ describe('firedoc.parser', function () {
         assert.equal(example4.name, 'md_link_in_method_params_desc');
         assert.equal(example4.params[0].description, '<p>A <a href="https://github.com/atom/electron/blob/master/docs/api/browser-window.md#class-webcontents">WebContents</a> object</p>\n');
         var example5 = locals.members[4];
-        // console.log(example5.example);
+        assert.ok(/(&#39|&amp|&quot);/.test(example5.example) === false);
       });
     });
   });
