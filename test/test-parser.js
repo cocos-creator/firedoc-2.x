@@ -442,6 +442,9 @@ describe('firedoc.parser', function () {
       assert.equal(example4.params[0].optional, true);
       assert.equal(example4.params[0].name, 'webContents');
       assert.equal(example4.params[0].description, 'A [WebContents](https://github.com/atom/electron/blob/master/docs/api/browser-window.md#class-webcontents) object');
+
+      var example5 = ast.members[4];
+      assert.ok(example5.example);
     });
     it('should compile the ast', function (next) {
       var ctx = builder.compile(ast, doc.options, next);
@@ -450,6 +453,8 @@ describe('firedoc.parser', function () {
         assert.equal(example4.methodDisplay, 'md_link_in_method_params_desc(webContents)');
         assert.equal(example4.name, 'md_link_in_method_params_desc');
         assert.equal(example4.params[0].description, '<p>A <a href="https://github.com/atom/electron/blob/master/docs/api/browser-window.md#class-webcontents">WebContents</a> object</p>\n');
+        var example5 = locals.members[4];
+        // console.log(example5.example);
       });
     });
   });

@@ -52,3 +52,21 @@
  * @method md_link_in_method_params_desc
  * @param {Object} [webContents] - A [WebContents](https://github.com/atom/electron/blob/master/docs/api/browser-window.md#class-webcontents) object
  */
+
+/**
+ * html example
+ * @method html_example
+ * @example
+ * ```
+ * // index.html
+ * <html>
+ * <body>
+ *   <script>
+ *     require('ipc').on('foo:bar', function(message) {
+ *       console.log(message);  // Prints "Hello World!"
+ *     });
+ *   </script>
+ * </body>
+ * </html>
+ */
+
