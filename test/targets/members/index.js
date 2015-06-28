@@ -26,7 +26,15 @@
  * @param {Number} o.x
  * @param {Object} [o.y=object]
  * @param {Boolean} o.y.a
+ * @public
  * @return {Number}
  * @example {@link test/examples/ex0.js}
  * @example {@link test/examples/ex1.js}
+ */
+
+/**
+ * const test
+ * @property const_property
+ * @const
+ * @deprecated this is just deprecated
  */

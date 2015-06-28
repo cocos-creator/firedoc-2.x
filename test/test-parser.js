@@ -378,6 +378,7 @@ describe('firedoc.parser', function () {
       ], example1.params);
 
       var example2 = ast.members[1];
+      assert.equal(example2.access, 'public');
       assert.deepEqual([ 
         '```Not found for the example path: test/examples/ex0.js',
         '```// this is an example js for test\nvar foo = bar;' 
@@ -410,6 +411,11 @@ describe('firedoc.parser', function () {
           ]
         }
       ], example2.params);
+
+      var example3 = ast.members[2];
+      assert.equal(example3.final, '');
+      assert.equal(example3.deprecated, true);
+      assert.equal(example3.deprecationMessage, 'this is just deprecated');
     });
     it('should compile the ast', function (next) {
       builder.compile(ast, doc.options, next);
