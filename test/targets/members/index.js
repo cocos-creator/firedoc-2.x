@@ -13,6 +13,10 @@
  * @param {Array} [z=array]
  * @constructor
  * @return {Number}
+ * @example
+ * ```
+ * example
+ * ```
  */
 
 /**
@@ -23,4 +27,6 @@
  * @param {Object} [o.y=object]
  * @param {Boolean} o.y.a
  * @return {Number}
+ * @example {@link test/examples/ex0.js}
+ * @example {@link test/examples/ex1.js}
  */

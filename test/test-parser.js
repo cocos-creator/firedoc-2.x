@@ -351,6 +351,9 @@ describe('firedoc.parser', function () {
       assert.equal('example_optional', example1.name);
       assert.equal(true, example1.isConstructor);
       assert.deepEqual([
+        '\n```\nexample\n```'
+      ], example1.example);
+      assert.deepEqual([
         {
           name: 'x',
           description: 'The default value is 10(test)',
@@ -375,6 +378,10 @@ describe('firedoc.parser', function () {
       ], example1.params);
 
       var example2 = ast.members[1];
+      assert.deepEqual([ 
+        '```Not found for the example path: test/examples/ex0.js',
+        '```// this is an example js for test\nvar foo = bar;' 
+      ], example2.example);
       assert.deepEqual([
         {
           name: 'o',
