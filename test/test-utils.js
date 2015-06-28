@@ -73,6 +73,18 @@ describe('firedoc.utils', function () {
       assert.ok(actual.layouts);
       assert.ok(actual.partials);
     });
+    it('should use same dirs', function () {
+      var actual = utils.prepare([themedir, themedir], {});
+      assert.ok(actual.meta);
+      assert.ok(actual.layouts);
+      assert.ok(actual.partials);
+    });
+    it('should use skipLoad', function () {
+      var actual = utils.prepare([themedir], {skipLoad: true});
+      assert.ok(actual.meta);
+      assert.deepEqual(actual.layouts, {});
+      assert.deepEqual(actual.partials, {});
+    });
   });
 
   describe('.fixType', function () {
@@ -116,6 +128,17 @@ describe('firedoc.utils', function () {
         assert.equal('test_targets_basic_index.js', filetree.test.targets.basic['index.js'].name);
         next();
       });
+    });
+  });
+
+  describe('.stringlog', function () {
+    it('should return the sinle', function () {
+      var data = {
+        file: 'file',
+        line: 20
+      };
+      var actual = utils.stringlog(data);
+      assert.equal(actual, ' file:20');
     });
   });
 
