@@ -54,6 +54,10 @@ describe('filedoc.helpers', function () {
       var ret = ctx.helpers.crossLink.call(ctx, 'Array', callOptions);
       assert.equal(ret, '<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a>');
     });
+    it('should crosslink a dot class', function () {
+      var ret = ctx.helpers.crossLink.call(ctx, 'Clazz.Example', callOptions);
+      assert.equal(ret, '<a href="../classes/ClazzExample.html" class="crosslink">Clazz.Example</a>');
+    });
     it('should crossLink class/name', function () {
       var ret = ctx.helpers.crossLink.call(ctx, 'ClazzExample/method1', callOptions);
       assert.equal(ret, '<a href="../classes/ClazzExample.html#method_method1" class="crosslink">method1</a>');
