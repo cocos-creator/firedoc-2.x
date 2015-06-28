@@ -13,3 +13,8 @@
  * @method directMethod
  * @return {String}
  */
+
+/**
+ * Class
+ * @class class1
+ */
