@@ -59,7 +59,7 @@
    */
 
 /**
- * The enum description
+ * The enum description [example](undefinedmodule.ClazzExample.method1)
  * @enum EnumEx
  * @extend UnknownEnum
  */

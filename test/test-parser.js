@@ -79,6 +79,7 @@ describe('firedoc.parser', function () {
       ctx = builder.compile(ast, doc.options, next);
       ctx.on('index', function (locals, html) {
         assert.equal(locals.layout, 'main');
+        assert.ok(locals.namespaces);
         assert.ok(locals.i18n);
         var class1 = locals.classes[0];
         assert.ok(class1.globals);
@@ -263,7 +264,7 @@ describe('firedoc.parser', function () {
       assert.equal('EnumEx', enumEx.name);
       assert.equal(true, enumEx.isEnum);
       assert.equal('enums', enumEx.type);
-      assert.equal('The enum description', enumEx.description);
+      assert.equal('The enum description [example](undefinedmodule.ClazzExample.method1)', enumEx.description);
     });
     it('should check members', function () {
       var members = ast.members;
@@ -332,6 +333,11 @@ describe('firedoc.parser', function () {
           assert.equal(locals.members[1].name, 'method1');
           assert.ok(locals.members[1].overwrittenFrom);
         }
+      });
+      ctx.on('enum', function (locals) {
+        assert.equal(locals.name, 'EnumEx');
+        assert.equal(locals.namespace, 'undefinedmodule.EnumEx');
+        console.log(locals.description);
       });
     });
   });
