@@ -42,6 +42,7 @@ describe('firedoc.parser', function () {
         assert.equal('test/targets/basic/index.js', mod.file);
         assert.equal(2, mod.line);
         assert.equal('modules', mod.type);
+        assert.equal('yorkiefixer@gmail.com', mod.author);
       });
     });
     it('should check classes', function () {
@@ -56,7 +57,7 @@ describe('firedoc.parser', function () {
     it('should check members', function () {
       _.each(ast.members, function (member) {
         assert.equal('test/targets/basic/index.js', member.file);
-        assert.equal(11, member.line);
+        assert.equal(12, member.line);
         assert.equal('method', member.itemtype);
         assert.equal('method1', member.name);
         assert.equal('ExampleClass', member.clazz);
