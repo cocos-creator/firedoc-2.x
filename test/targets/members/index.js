@@ -46,3 +46,9 @@
  * @const
  * @deprecated this is just deprecated
  */
+
+/**
+ * markdown link in method parameter description
+ * @method md_link_in_method_params_desc
+ * @param {Object} [webContents] - A [WebContents](https://github.com/atom/electron/blob/master/docs/api/browser-window.md#class-webcontents) object
+ */

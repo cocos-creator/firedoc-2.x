@@ -435,9 +435,22 @@ describe('firedoc.parser', function () {
       assert.equal(example3.final, '');
       assert.equal(example3.deprecated, true);
       assert.equal(example3.deprecationMessage, 'this is just deprecated');
+
+      var example4 = ast.members[3];
+      assert.equal(example4.name, 'md_link_in_method_params_desc');
+      assert.equal(example4.params[0].type, 'Object');
+      assert.equal(example4.params[0].optional, true);
+      assert.equal(example4.params[0].name, 'webContents');
+      assert.equal(example4.params[0].description, 'A [WebContents](https://github.com/atom/electron/blob/master/docs/api/browser-window.md#class-webcontents) object');
     });
     it('should compile the ast', function (next) {
-      builder.compile(ast, doc.options, next);
+      var ctx = builder.compile(ast, doc.options, next);
+      ctx.on('module', function (locals) {
+        var example4 = locals.members[3];
+        assert.equal(example4.methodDisplay, 'md_link_in_method_params_desc(webContents)');
+        assert.equal(example4.name, 'md_link_in_method_params_desc');
+        assert.equal(example4.params[0].description, '<p>A <a href="https://github.com/atom/electron/blob/master/docs/api/browser-window.md#class-webcontents">WebContents</a> object</p>\n');
+      });
     });
   });
 
