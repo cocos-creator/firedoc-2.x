@@ -32,4 +32,7 @@ deploydocs: version
 test:
 	NODE_ENV=test $(ISTANBUL_EXEC) cover $(MOCHA_EXEC) -- -R spec --timeout 3000 ./test/test-*.js
 
+test.nocoverage:
+	NODE_ENV=test $(MOCHA_EXEC) --timeout 3000 ./test/test-*.js
+
 .PHONY: docs clean test

@@ -9,20 +9,16 @@ const Firedoc = require('../lib/firedoc').Firedoc;
 describe('firedoc.parser', function () {
 
   describe('basic', function () {
-
     var src = path.join(__dirname, './targets/basic');
     var doc = new Firedoc({'path': src});
-    var ast;
-
+    var ast, ctx;
     before(function (next) {
       doc._processConfig();
       doc.walk(next);
     });
-
     before(function () {
       ast = parser.parse('js', doc.filemap, doc.dirmap);
     });
-
     it('should check project', function () {
       assert.deepEqual(ast.project, {
         'name': 'test',
@@ -78,11 +74,75 @@ describe('firedoc.parser', function () {
     it('should check inherited members', function () {
       assert.deepEqual([], ast.inheritedMembers);
     });
-
     it('should compile the ast', function (next) {
-      builder.compile(ast, doc.options, next);
+      ctx = builder.compile(ast, doc.options, next);
+      ctx.on('index', function (locals, html) {
+        assert.equal(locals.layout, 'main');
+        assert.ok(locals.i18n);
+        var class1 = locals.classes[0];
+        assert.ok(class1.globals);
+        assert.ok(class1.i18n);
+        assert.equal(class1.description, '<p>Module Description</p>\n');
+        assert.equal(class1.foundAt, '../files/test_targets_basic_index.js.html#l2');
+        assert.equal(class1.namespace, 'exampleModule.ExampleClass');
+        assert.deepEqual(class1.project, {
+          name: 'test',
+          description: 'test',
+          logo: 'https://github.com/fireball-x/firedoc',
+          root: '/Users/yorkie/workspace/firebox/firedoc/Users/yorkie/workspace/firebox/firedoc/out',
+          assets: '/Users/yorkie/workspace/firebox/firedoc/Users/yorkie/workspace/firebox/firedoc/out/assets'
+        });
+        var mod1 = locals.modules[0];
+        assert.ok(mod1.globals);
+        assert.ok(mod1.i18n);
+        assert.equal(mod1.description, '<p>Module Description</p>\n');
+        assert.equal(mod1.foundAt, '../files/test_targets_basic_index.js.html#l2');
+        assert.equal(mod1.namespace, 'exampleModule');
+        assert.deepEqual(mod1.classes, [class1]);
+        assert.deepEqual(mod1.properties, []);
+        assert.deepEqual(mod1.attributes, []);
+        assert.deepEqual(mod1.methods, []);
+        assert.deepEqual(mod1.events, []);
+      });
+      ctx.on('apimeta', function (apimeta) {
+        assert.ok(apimeta.project);
+        assert.ok(apimeta.files);
+        assert.ok(apimeta.enums);
+        assert.ok(apimeta.classes);
+        assert.ok(apimeta.modules);
+      });
+      ctx.on('file', function (locals) {
+        assert.ok(locals.name);
+        assert.ok(locals.code);
+        assert.ok(locals.path);
+        assert.ok(locals.i18n);
+        assert.ok(locals.globals);
+      });
+      ctx.on('module', function (locals) {
+        assert.ok(locals.name);
+        assert.ok(locals.assets);
+        assert.ok(locals.classes);
+        assert.ok(locals.submodules);
+        assert.ok(locals.fors);
+        assert.ok(locals.file);
+        assert.ok(locals.line);
+        assert.ok(locals.description);
+        assert.ok(locals.foundAt);
+        assert.ok(locals.members);
+        assert.ok(locals.project);
+        assert.ok(locals.i18n);
+        assert.ok(locals.namespace);
+        assert.ok(locals.properties);
+        assert.ok(locals.attributes);
+        assert.ok(locals.methods);
+        assert.ok(locals.events);
+        assert.ok(locals.globals);
+        assert.equal(locals.type, 'modules');
+      });
+      ctx.on('class', function (locals) {
+        // console.log(locals);
+      });
     });
-
   });
 
   describe('modules', function () {
