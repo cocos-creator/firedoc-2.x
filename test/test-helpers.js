@@ -29,11 +29,10 @@ describe('filedoc.helpers', function () {
   });
 
   describe('.renderFileTree', function () {
-    it('should render 1-level file tree', function (next) {
+    it('should render 1-level file tree', function () {
       var filetree = utils.buildFileTree(_.values(ast.files));
       var html = ctx.helpers.renderFileTree.call(ctx, filetree);
       assert.ok(html);
-      next();
     });
   });
 
@@ -70,6 +69,19 @@ describe('filedoc.helpers', function () {
     it('should crossLink event', function () {
       var ret = ctx.helpers.crossLink.call(ctx, 'SecondClazz/evt1:event', callOptions);
       assert.equal(ret, '<a href="../classes/SecondClazz.html#event_evt1" class="crosslink">evt1</a>');
+    });
+    it('should crossLink webbase', function () {
+      // TODO(Yorkie)
+    });
+  });
+
+  describe('.crossLinkRaw', function () {
+    before(function () {
+      ctx.options.linkNatives = true;
+    });
+    it('should return 2 links', function () {
+      var ret = ctx.helpers.crossLinkRaw.call(ctx, 'Number|Object', callOptions);
+      assert.equal(ret, 'https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number | https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object');
     });
   });
 
