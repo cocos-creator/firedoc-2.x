@@ -79,7 +79,6 @@ describe('firedoc.parser', function () {
       ctx = builder.compile(ast, doc.options, next);
       ctx.on('index', function (locals, html) {
         assert.equal(locals.layout, 'main');
-        assert.ok(locals.namespaces);
         assert.ok(locals.i18n);
         var class1 = locals.classes[0];
         assert.ok(class1.globals);
@@ -337,7 +336,6 @@ describe('firedoc.parser', function () {
       ctx.on('enum', function (locals) {
         assert.equal(locals.name, 'EnumEx');
         assert.equal(locals.namespace, 'undefinedmodule.EnumEx');
-        console.log(locals.description);
       });
     });
   });
