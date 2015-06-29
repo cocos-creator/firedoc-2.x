@@ -336,6 +336,7 @@ describe('firedoc.parser', function () {
       ctx.on('enum', function (locals) {
         assert.equal(locals.name, 'EnumEx');
         assert.equal(locals.namespace, 'undefinedmodule.EnumEx');
+        assets.equal(locals.description, '<p>The enum description <a href="classes/ClazzExample.html#method_method1">example</a></p>\n');
       });
     });
   });
