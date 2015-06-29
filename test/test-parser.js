@@ -91,8 +91,8 @@ describe('firedoc.parser', function () {
           name: 'test',
           description: 'test',
           logo: 'https://github.com/fireball-x/firedoc',
-          root: '/Users/yorkie/workspace/firebox/firedoc/Users/yorkie/workspace/firebox/firedoc/out',
-          assets: '/Users/yorkie/workspace/firebox/firedoc/Users/yorkie/workspace/firebox/firedoc/out/assets'
+          root: path.join(__dirname, '../out'),
+          assets: path.join(__dirname, '../out/assets'),
         });
         var mod1 = locals.modules[0];
         assert.ok(mod1.globals);

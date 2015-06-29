@@ -21,8 +21,8 @@ describe('firedoc.Firedoc', function () {
       excludes: '.DS_Store,.svn,CVS,.git,build_rollup_tmp,build_tmp,node_modules',
       norecurse: false,
       version: '0.1.0',
-      theme: '/Users/yorkie/workspace/firebox/firedoc/themes/default',
-      dest: '/Users/yorkie/workspace/firebox/firedoc/out',
+      theme: path.join(__dirname, '../themes/default'),
+      dest: path.join(__dirname, '../out'),
       syntaxtype: 'js'
     });
   });
@@ -37,8 +37,8 @@ describe('firedoc.Firedoc', function () {
       excludes: '.DS_Store,.svn,CVS,.git,build_rollup_tmp,build_tmp,node_modules',
       norecurse: false,
       version: '0.1.0',
-      theme: '/Users/yorkie/workspace/firebox/firedoc/themes/default',
-      dest: '/Users/yorkie/workspace/firebox/firedoc/out',
+      theme: path.join(__dirname, '../themes/default'),
+      dest: path.join(__dirname, '../out'),
       syntaxtype: 'js'
     });
   });
