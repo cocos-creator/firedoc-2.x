@@ -7,7 +7,7 @@ Y.APIFilter = Y.Base.create('apiFilter', Y.Base, [Y.AutoCompleteBase], {
         this._syncUIACBase();
     },
     getDisplayName: function(name) {
-        Y.each(Y.YUIDoc.meta.allModules, function(i) {
+        Y.each(window.apimeta.modules, function(i) {
             if (i.name === name && i.displayName) {
                 name = i.displayName;
             }
@@ -32,7 +32,7 @@ Y.APIFilter = Y.Base.create('apiFilter', Y.Base, [Y.AutoCompleteBase], {
                 var self = this;
                 return function(q) {
                     var type = self.get('queryType');
-                    var data = Y.YUIDoc.meta[type];
+                    var data = window.apimeta[type];
                     var classifiedData = {};
 
                     // optimize for empty array, directly returns []

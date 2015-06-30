@@ -25,14 +25,15 @@ var doc = new Firedoc({
   lint: program.lint,
   parseOnly: program.parseOnly,
   markdown: program.markdown,
+  http: true,
   dest: program.dest,
   lang: program.lang,
   theme: program.theme
 });
 doc.build(function () {
   var serve = path.join(__dirname, '../node_modules/.bin/serve');
-  var dest = path.join(__dirname, '../', program.dest || 'out');
-  spawn(serve, [dest], {
+  var dest = path.join(__dirname, '../', doc.options.dest || 'out');
+  spawn(serve, [dest, '-H'], {
     'stdio': 'inherit'
   });
 });
