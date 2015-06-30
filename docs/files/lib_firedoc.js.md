@@ -1,104 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>lib_firedoc.js</title>
-    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
-    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
-    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
-    <script src="../assets/vendor/yui-min.js"></script>
-</head>
-<body>
 
-<div id="doc">
-    <header class="main-header">
-        <div class="content">
-            <div class="project-title">
-                <a href="http://docs-zh.fireball-x.com">
-                        <img class="logo" src="http://docs-zh.fireball-x.com/images/logo.png" title="Fireball Engine API">
-                </a>
-                    <h1 class="project-name">Fireball Engine API</h1>
-                    <p class="description">Fireball is the game engine for the future.</p>
-            </div>
-            <ul class="jump-links">
-                <li><a href="#index" class="index-jump-link">index</a></li>
-                <li><a href="#top" class="top-jump-link">top</a></li>
-            </ul>
-        </div>
-    </header>
-    <div id="bd" class="main-body">
+# firedoc 1.8.0
 
-        <div id="docs-sidebar" class="sidebar apidocs"><div id="api-list">
-    <div id="api-tabview" class="tabview">
-        <ul class="tabs">
-            <li><a href="#api-classes">Classes</a></li>
-            <li><a href="#api-modules">Modules</a></li>
-            <li><a href="#api-enums">Enums</a></li>
-        </ul>
+Fireball is the game engine for the future.
 
-        <div id="api-tabview-filter">
-            <input type="search" id="api-filter" placeholder="Type to filter APIs">
-        </div>
 
-        <div id="api-tabview-panel">
+### File: ``
 
-            <ul id="api-classes" class="apis classes">
-                <li>
-                    <a class="class" href="/Users/yorkie/workspace/fireball-x/firedoc/docs/classes/AST.html">firedoc.AST</a>
-                    <a href="/Users/yorkie/workspace/fireball-x/firedoc/docs/modules/firedoc.html" class="api-list-item-module">@firedoc</a>
-                </li>
-                <li>
-                    <a class="class" href="/Users/yorkie/workspace/fireball-x/firedoc/docs/classes/BuilderContext.html">firedoc.BuilderContext</a>
-                    <a href="/Users/yorkie/workspace/fireball-x/firedoc/docs/modules/firedoc.html" class="api-list-item-module">@firedoc</a>
-                </li>
-                <li>
-                    <a class="class" href="/Users/yorkie/workspace/fireball-x/firedoc/docs/classes/DocParser.html">firedoc.DocParser</a>
-                    <a href="/Users/yorkie/workspace/fireball-x/firedoc/docs/modules/firedoc.html" class="api-list-item-module">@firedoc</a>
-                </li>
-                <li>
-                    <a class="class" href="/Users/yorkie/workspace/fireball-x/firedoc/docs/classes/DocView.html">firedoc.DocView</a>
-                    <a href="/Users/yorkie/workspace/fireball-x/firedoc/docs/modules/firedoc.html" class="api-list-item-module">@firedoc</a>
-                </li>
-                <li>
-                    <a class="class" href="/Users/yorkie/workspace/fireball-x/firedoc/docs/classes/Firedoc.html">firedoc.Firedoc</a>
-                    <a href="/Users/yorkie/workspace/fireball-x/firedoc/docs/modules/firedoc.html" class="api-list-item-module">@firedoc</a>
-                </li>
-                <li>
-                    <a class="class" href="/Users/yorkie/workspace/fireball-x/firedoc/docs/classes/Locals.html">firedoc.Locals</a>
-                    <a href="/Users/yorkie/workspace/fireball-x/firedoc/docs/modules/firedoc.html" class="api-list-item-module">@firedoc</a>
-                </li>
-                <li>
-                    <a class="class" href="/Users/yorkie/workspace/fireball-x/firedoc/docs/classes/ParserContext.html">firedoc.ParserContext</a>
-                    <a href="/Users/yorkie/workspace/fireball-x/firedoc/docs/modules/firedoc.html" class="api-list-item-module">@firedoc</a>
-                </li>
-            </ul>
+```js
 
-            <ul id="api-modules" class="apis modules">
-                <li><a class="module" href="/modules/firedoc.html">firedoc</a></li>
-                <li><a class="module" href="/modules/helpers.html">helpers</a></li>
-                <li><a class="module" href="/modules/utils.html">utils</a></li>
-            </ul>
-
-            <ul id="api-enums" class="apis enums">
-            </ul>
-        </div>
-    </div>
-</div>
-</div>
-
-        <div id="docs-main" class="apidocs">
-            <div class="content container"><h1 class="file-heading">File: </h1>
-
-<div class="file">
-  <pre class="code prettyprint linenums">
 /**
- * This is the __module__ description for the &#x60;YUIDoc&#x60; module.
- * &#x60;&#x60;&#x60;
+ * This is the __module__ description for the `YUIDoc` module.
+ * ```
  * var options = {
- *   paths: [ &#x27;./lib&#x27; ],
- *   outdir: &#x27;./out&#x27;
+ *   paths: [ './lib' ],
+ *   outdir: './out'
  * };
- * &#x60;&#x60;&#x60;
+ * ```
  *
  * @module firedoc
  * @submodule helpers
@@ -106,11 +23,11 @@
  * @main firedoc
  */
 
-const _ = require(&#x27;underscore&#x27;);
-const path = require(&#x27;path&#x27;);
-const fs = require(&#x27;graceful-fs&#x27;);
-const readdirp = require(&#x27;readdirp&#x27;);
-const debug = require(&#x27;debug&#x27;)(&#x27;firedoc&#x27;);
+const _ = require('underscore');
+const path = require('path');
+const fs = require('graceful-fs');
+const readdirp = require('readdirp');
+const debug = require('debug')('firedoc');
 
 /**
  * Firedoc main class
@@ -154,28 +71,28 @@ function Firedoc (config) {
    */
   this.options = {
     writeJSON: true,
-    extensions: &#x27;.js&#x27;,
+    extensions: '.js',
     excludes: [
-      &#x27;.git&#x27;,
-      &#x27;.svn&#x27;,
-      &#x27;CVS&#x27;,
-      &#x27;build_rollup_tmp&#x27;,
-      &#x27;build_tmp&#x27;,
-      &#x27;node_modules&#x27;
+      '.git',
+      '.svn',
+      'CVS',
+      'build_rollup_tmp',
+      'build_tmp',
+      'node_modules'
     ],
     norecurse: false,
-    path: &#x27;./&#x27;,
+    path: './',
     cwd: process.cwd(),
     http: false,
-    dest: path.join(process.cwd(), &#x27;out&#x27;),
-    theme: path.join(__dirname, &#x27;../themes/default&#x27;),
-    syntaxtype: &#x27;js&#x27;
+    dest: path.join(process.cwd(), 'out'),
+    theme: path.join(__dirname, '../themes/default'),
+    syntaxtype: 'js'
   };
 
   // setup options
   var cwd = config.cwd || this.options.cwd;
-  if (fs.existsSync(cwd + &#x27;/package.json&#x27;)) {
-    var pkg = require(cwd + &#x27;/package.json&#x27;);
+  if (fs.existsSync(cwd + '/package.json')) {
+    var pkg = require(cwd + '/package.json');
     var firedocOption = pkg.firedoc;
     delete pkg.firedoc;
     this.options.project = pkg;
@@ -192,6 +109,11 @@ function Firedoc (config) {
   this.options.theme = config.theme || this.options.theme;
   this.options.markdown = config.markdown || this.options.markdown;
   this.options.syntaxtype = config.syntaxtype || this.options.syntaxtype;
+
+  // if `markdown` enabled, set theme
+  if (this.options.markdown === true) {
+    this.options.theme = path.join(__dirname, '../themes/markdown');
+  }
 };
 exports.Firedoc = Firedoc;
 
@@ -208,29 +130,29 @@ Firedoc.prototype = {
     readdirp(
       {
         root: this.options.path,
-        fileFilter: &#x27;*.@(js|rs|ts|coffee)&#x27;,
+        fileFilter: '*.@(js|rs|ts|coffee)',
         directoryFilter: self.options.excludes.map(
           function (ex) {
-            return &#x27;!&#x27; + ex;
+            return '!' + ex;
           }
         )
       }
-    ).on(&#x27;data&#x27;, function (entry) {
-      var text = fs.readFileSync(entry.fullPath, &#x27;utf8&#x27;);
+    ).on('data', function (entry) {
+      var text = fs.readFileSync(entry.fullPath, 'utf8');
       self.filecount += 1;
-      self.filemap[entry.fullPath] = text.replace(/\r?\n|\r/g, &#x27;\n&#x27;);
+      self.filemap[entry.fullPath] = text.replace(/\r?\n|\r/g, '\n');
       self.dirmap[entry.fullPath] = entry.fullParentDir;
-    }).on(&#x27;end&#x27;, callback);
+    }).on('end', callback);
   },
 
   lint: function (warnings) {
     var code = 0, count = 0;
-    if (warnings &amp;&amp; warnings.length) {
+    if (warnings && warnings.length) {
       code = 1;
-      console.log(&#x27;YUIDoc found&#x27;, warnings.length, &#x27;lint errors in your docs&#x27;);
+      console.log('YUIDoc found', warnings.length, 'lint errors in your docs');
       warnings.forEach(function (item) {
         count++;
-        console.log(&#x27;#&#x27; + count, item.message, item.line + &#x27;\n&#x27;);
+        console.log('#' + count, item.message, item.line + '\n');
       });
     }
   },
@@ -241,24 +163,24 @@ Firedoc.prototype = {
    * @param {Function} callback
    */
   build: function (callback) {
-    debug(&#x27;Starting from: &#x27; + this.options.path);
+    debug('Starting from: ' + this.options.path);
     var self = this;
     this.walk(function () {
-      var parser = require(&#x27;./docparser&#x27;);
-      var builder = require(&#x27;./builder&#x27;);
+      var parser = require('./docparser');
+      var builder = require('./builder');
       var ast = parser.parse(
         self.options.syntaxtype,
         self.filemap,
         self.dirmap);
 
-      debug(&#x27;Parsing completed&#x27;);
+      debug('Parsing completed');
       if (self.options.lint) {
-        debug(&#x27;lint the warnings from ast&#x27;);
+        debug('lint the warnings from ast');
         self.lint(ast.warnings);
         if (_.isFunction(callback)) return callback(ast.warnings);
       }
       if (self.options.parseOnly) {
-        debug(&#x27;skip the build because parse only&#x27;);
+        debug('skip the build because parse only');
         if (_.isFunction(callback)) callback(null, ast, self.options);
         return;
       }
@@ -266,22 +188,5 @@ Firedoc.prototype = {
     });
   }
 };
-</pre>
-</div>
-</div>
-        </div>
 
-    </div>
-</div>
-<script src="../assets/vendor/prettify/prettify-min.js"></script>
-<script>prettyPrint();</script>
-<script src="../assets/vendor/jquery.min.js"></script>
-<script src="../assets/js/jquery-offscreen-trigger.js"></script>
-<script src="../assets/js/yui-prettify.js"></script>
-<script src="../assets/../api.js"></script>
-<script src="../assets/js/api-filter.js"></script>
-<script src="../assets/js/api-list.js"></script>
-<script src="../assets/js/api-search.js"></script>
-<script src="../assets/js/apidocs.js"></script>
-</body>
-</html>
+```

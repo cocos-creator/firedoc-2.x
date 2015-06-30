@@ -1,539 +1,148 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>DocParser</title>
-    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
-    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
-    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
-    <script src="../assets/vendor/yui-min.js"></script>
-</head>
-<body>
 
-<div id="doc">
-    <header class="main-header">
-        <div class="content">
-            <div class="project-title">
-                <a href="http://docs-zh.fireball-x.com">
-                        <img class="logo" src="http://docs-zh.fireball-x.com/images/logo.png" title="Fireball Engine API">
-                </a>
-                    <h1 class="project-name">Fireball Engine API</h1>
-                    <p class="description">Fireball is the game engine for the future.</p>
-            </div>
-            <ul class="jump-links">
-                <li><a href="#index" class="index-jump-link">index</a></li>
-                <li><a href="#top" class="top-jump-link">top</a></li>
-            </ul>
-        </div>
-    </header>
-    <div id="bd" class="main-body">
+# firedoc 1.8.0
 
-        <div id="docs-sidebar" class="sidebar apidocs"><div id="api-list">
-    <div id="api-tabview" class="tabview">
-        <ul class="tabs">
-            <li><a href="#api-classes">Classes</a></li>
-            <li><a href="#api-modules">Modules</a></li>
-            <li><a href="#api-enums">Enums</a></li>
-        </ul>
+Fireball is the game engine for the future.
 
-        <div id="api-tabview-filter">
-            <input type="search" id="api-filter" placeholder="Type to filter APIs">
-        </div>
-
-        <div id="api-tabview-panel">
-
-            <ul id="api-classes" class="apis classes">
-                <li>
-                    <a class="class" href="/Users/yorkie/workspace/fireball-x/firedoc/docs/classes/AST.html">firedoc.AST</a>
-                    <a href="/Users/yorkie/workspace/fireball-x/firedoc/docs/modules/firedoc.html" class="api-list-item-module">@firedoc</a>
-                </li>
-                <li>
-                    <a class="class" href="/Users/yorkie/workspace/fireball-x/firedoc/docs/classes/BuilderContext.html">firedoc.BuilderContext</a>
-                    <a href="/Users/yorkie/workspace/fireball-x/firedoc/docs/modules/firedoc.html" class="api-list-item-module">@firedoc</a>
-                </li>
-                <li>
-                    <a class="class" href="/Users/yorkie/workspace/fireball-x/firedoc/docs/classes/DocParser.html">firedoc.DocParser</a>
-                    <a href="/Users/yorkie/workspace/fireball-x/firedoc/docs/modules/firedoc.html" class="api-list-item-module">@firedoc</a>
-                </li>
-                <li>
-                    <a class="class" href="/Users/yorkie/workspace/fireball-x/firedoc/docs/classes/DocView.html">firedoc.DocView</a>
-                    <a href="/Users/yorkie/workspace/fireball-x/firedoc/docs/modules/firedoc.html" class="api-list-item-module">@firedoc</a>
-                </li>
-                <li>
-                    <a class="class" href="/Users/yorkie/workspace/fireball-x/firedoc/docs/classes/Firedoc.html">firedoc.Firedoc</a>
-                    <a href="/Users/yorkie/workspace/fireball-x/firedoc/docs/modules/firedoc.html" class="api-list-item-module">@firedoc</a>
-                </li>
-                <li>
-                    <a class="class" href="/Users/yorkie/workspace/fireball-x/firedoc/docs/classes/Locals.html">firedoc.Locals</a>
-                    <a href="/Users/yorkie/workspace/fireball-x/firedoc/docs/modules/firedoc.html" class="api-list-item-module">@firedoc</a>
-                </li>
-                <li>
-                    <a class="class" href="/Users/yorkie/workspace/fireball-x/firedoc/docs/classes/ParserContext.html">firedoc.ParserContext</a>
-                    <a href="/Users/yorkie/workspace/fireball-x/firedoc/docs/modules/firedoc.html" class="api-list-item-module">@firedoc</a>
-                </li>
-            </ul>
-
-            <ul id="api-modules" class="apis modules">
-                <li><a class="module" href="/Users/yorkie/workspace/fireball-x/firedoc/docs/modules/firedoc.html">firedoc</a></li>
-                <li><a class="module" href="/Users/yorkie/workspace/fireball-x/firedoc/docs/modules/helpers.html">helpers</a></li>
-                <li><a class="module" href="/Users/yorkie/workspace/fireball-x/firedoc/docs/modules/utils.html">utils</a></li>
-            </ul>
-
-            <ul id="api-enums" class="apis enums">
-            </ul>
-        </div>
-    </div>
-</div>
-</div>
-
-        <div id="docs-main" class="apidocs">
-            <div class="content container"><h1>DocParser Class</h1>
-<div class="box meta">
+### `DocParser` Class
 
 
 
-            Module: <a href="../modules/firedoc.html">firedoc</a>
-
-</div>
-
-
-<div class="box intro">
-    
-</div>
-
-<!-- Class member index -->
-
-
-<a name="index" class="anchor-link"></a>
-<div class="index">
-    <h2>Index</h2>
-    <div id="api-options">
-        Show:
-    
-        <label for="api-show-protected">
-            <input type="checkbox" id="api-show-protected">
-            Protected
-        </label>
-    
-        <label for="api-show-private">
-            <input type="checkbox" id="api-show-private">
-            Private
-        </label>
-        <label for="api-show-deprecated">
-            <input type="checkbox" id="api-show-deprecated">
-            Deprecated
-        </label>
-    
-    </div>
-
-<div class="index-section properties">
-    <h3>Properties</h3>
-    <ul class="index-list properties">
-        <li class="index-item property">
-            <a href="#property_IGNORE_TAGLIST">IGNORE_TAGLIST</a>
-        </li>
-        <li class="index-item property">
-            <a href="#property_CORRECTIONS">CORRECTIONS</a>
-        </li>
-        <li class="index-item property">
-            <a href="#property_TAGLIST">TAGLIST</a>
-        </li>
-        <li class="index-item property">
-            <a href="#property_DIGESTERS">DIGESTERS</a>
-        </li>
-    </ul>
-</div>
-
-
-<div class="index-section methods">
-    <h3>Methods</h3>
-    <ul class="index-list methods">
-
-        <li class="index-item method private">
-            <a href="#method_implodeString">implodeString</a>
-        </li>
-        <li class="index-item method private">
-            <a href="#method_implodeString">implodeString</a>
-        </li>
-        <li class="index-item method private">
-            <a href="#method_stringlog">stringlog</a>
-        </li>
-    </ul>
-</div>
-
-
-
-
-</div>
-<div class="class-detail">
-
-    <div class="properties-detail">
-        <h2>Properties</h2>
-        <a name="property_IGNORE_TAGLIST" class="anchor-link"></a>
-<div class="property item">
-    <h3 class="name"><code>IGNORE_TAGLIST</code>
-    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a></span>
+Module: [firedoc](../modules/firedoc.md)
 
 
 
 
 
-    </h3>
 
-    <div class="meta">
-                <p>
-                    Defined in
-        <a href="../files/lib_ast.js.md#l31">`lib/ast.js:31`</a>
-        </p>
+### Index
 
+##### Properties
 
-    </div>
-
-    <div class="extended-detail">
-        <div class="description">A list of ignored tags. These tags should be ignored because there is
-likely to be used for purposes other than JSDoc tags in JavaScript comments.</div>
-
-
-
-    </div>
-</div>
-<a name="property_CORRECTIONS" class="anchor-link"></a>
-<div class="property item">
-    <h3 class="name"><code>CORRECTIONS</code>
-    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
-
-
-
-
-
-    </h3>
-
-    <div class="meta">
-                <p>
-                    Defined in
-        <a href="../files/lib_ast.js.md#l41">`lib/ast.js:41`</a>
-        </p>
-
-
-    </div>
-
-    <div class="extended-detail">
-        <div class="description">Common errors will get scrubbed instead of being ignored.</div>
-
-
-
-    </div>
-</div>
-<a name="property_TAGLIST" class="anchor-link"></a>
-<div class="property item">
-    <h3 class="name"><code>TAGLIST</code>
-    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a></span>
-
-
-
-
-
-    </h3>
-
-    <div class="meta">
-                <p>
-                    Defined in
-        <a href="../files/lib_ast.js.md#l78">`lib/ast.js:78`</a>
-        </p>
-
-
-    </div>
-
-    <div class="extended-detail">
-        <div class="description">A list of known tags.  This populates a member variable
+  - [`IGNORE_TAGLIST`](#property-ignore_taglist) `Array` A list of ignored tags. These tags should be ignored because there is
+likely to be used for purposes other than JSDoc tags in JavaScript comments.
+  - [`CORRECTIONS`](#property-corrections) `Object` Common errors will get scrubbed instead of being ignored.
+  - [`TAGLIST`](#property-taglist) `Array` A list of known tags.  This populates a member variable
 during initialization, and will be updated if additional
-digesters are added.</div>
-
-
-
-    </div>
-</div>
-<a name="property_DIGESTERS" class="anchor-link"></a>
-<div class="property item">
-    <h3 class="name"><code>DIGESTERS</code>
-    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
-
-
-
-
-
-    </h3>
-
-    <div class="meta">
-                <p>
-                    Defined in
-        <a href="../files/lib_ast.js.md#l529">`lib/ast.js:529`</a>
-        </p>
-
-
-    </div>
-
-    <div class="extended-detail">
-        <div class="description">A map of the default tag processors, keyed by the
+digesters are added.
+  - [`DIGESTERS`](#property-digesters) `Object` A map of the default tag processors, keyed by the
 tag name.  Multiple tags can use the same digester
 by supplying the string name that points to the
-implementation rather than a function.</div>
+implementation rather than a function.
 
 
 
-    </div>
-</div>
+##### Methods
 
-        <div class="no-visible-items-message">
-            <p>There are no properties that match your current filter settings. You can change your filter settings in the index section on this page. <a href="#index" class="index-jump-link">index</a></p>
-        </div>
-    </div>
-
-
-
-    <div class="methods-detail">
-        <h2>Methods</h2>
-        <a name="method_implodeString" class="anchor-link"></a>
-<div class="method item private">
-    <h3 class="name"><code>implodeString</code>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>str</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-        <span class="returns-inline">
-            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
-        </span>
-
-
-        <span class="flag private">private</span>
-
-
-
-
-
-    </h3>
-
-    <div class="meta">
-                <p>
-                    Defined in
-        <a href="../files/lib_ast.js.md#l1066">`lib/ast.js:1066`</a>
-        </p>
-
-
-
-    </div>
-
-    <div class="extended-detail">
-
-        <div class="description">
-            Flatten a string, remove all line breaks and replace them with a token
-        </div>
-
-            <div class="params">
-                <h4>parameters:</h4>
-
-                <ul class="params-list">
-                    <li class="param">
-                            <code class="param-name">str</code>
-                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
-
-
-                        <div class="param-description">
-                            The string to operate on
-                        </div>
-
-                    </li>
-                </ul>
-            </div>
-
-            <div class="returns">
-                <h4>returns:</h4>
-
-                <div class="returns-description">
-                        <span>type:</span>
-                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
-                    <p>
-                        The modified string
-                    </p>
-                </div>
-            </div>
-
-    </div>
-</div>
-<a name="method_implodeString" class="anchor-link"></a>
-<div class="method item private">
-    <h3 class="name"><code>implodeString</code>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>str</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-        <span class="returns-inline">
-            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
-        </span>
-
-
-        <span class="flag private">private</span>
-
-
-
-
-
-    </h3>
-
-    <div class="meta">
-                <p>
-                    Defined in
-        <a href="../files/lib_ast.js.md#l1077">`lib/ast.js:1077`</a>
-        </p>
-
-
-
-    </div>
-
-    <div class="extended-detail">
-
-        <div class="description">
-            Un-flatten a string, replace tokens injected with `implodeString`
-        </div>
-
-            <div class="params">
-                <h4>parameters:</h4>
-
-                <ul class="params-list">
-                    <li class="param">
-                            <code class="param-name">str</code>
-                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
-
-
-                        <div class="param-description">
-                            The string to operate on
-                        </div>
-
-                    </li>
-                </ul>
-            </div>
-
-            <div class="returns">
-                <h4>returns:</h4>
-
-                <div class="returns-description">
-                        <span>type:</span>
-                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
-                    <p>
-                        The modified string
-                    </p>
-                </div>
-            </div>
-
-    </div>
-</div>
-<a name="method_stringlog" class="anchor-link"></a>
-<div class="method item private">
-    <h3 class="name"><code>stringlog</code>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>data</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-        <span class="returns-inline">
-            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
-        </span>
-
-
-        <span class="flag private">private</span>
-
-
-
-
-
-    </h3>
-
-    <div class="meta">
-                    <p>Provided by the <a href="../modules/utils.html" class="module-name">utils</a> module.</p>
-                <p>
-                    Defined in
-        <a href="../files/lib_utils.js.md#l434">`lib/utils.js:434`</a>
-        </p>
-
-
-
-    </div>
-
-    <div class="extended-detail">
-
-        <div class="description">
-            Parses the JSON data and formats it into a nice log string for
+  - [`implodeString`](#method-implodestring) Flatten a string, remove all line breaks and replace them with a token
+  - [`implodeString`](#method-implodestring) Un-flatten a string, replace tokens injected with `implodeString`
+  - [`stringlog`](#method-stringlog) Parses the JSON data and formats it into a nice log string for
 filename and line number: `/file/name.js:123`
-        </div>
-
-            <div class="params">
-                <h4>parameters:</h4>
-
-                <ul class="params-list">
-                    <li class="param">
-                            <code class="param-name">data</code>
-                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
 
 
-                        <div class="param-description">
-                            The data block from the parser
-                        </div>
-
-                    </li>
-                </ul>
-            </div>
-
-            <div class="returns">
-                <h4>returns:</h4>
-
-                <div class="returns-description">
-                        <span>type:</span>
-                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
-                    <p>
-                        The formatted string.
-                    </p>
-                </div>
-            </div>
-
-    </div>
-</div>
-
-        <div class="no-visible-items-message">
-            <p>There are no methods that match your current filter settings. You can change your filter settings in the index section on this page. <a href="#index" class="index-jump-link">index</a></p>
-        </div>
-    </div>
 
 
-</div>
 
-</div>
-        </div>
+### Details
 
-    </div>
-</div>
-<script src="../assets/vendor/prettify/prettify-min.js"></script>
-<script>prettyPrint();</script>
-<script src="../assets/vendor/jquery.min.js"></script>
-<script src="../assets/js/jquery-offscreen-trigger.js"></script>
-<script src="../assets/js/yui-prettify.js"></script>
-<script src="../assets/../api.js"></script>
-<script src="../assets/js/api-filter.js"></script>
-<script src="../assets/js/api-list.js"></script>
-<script src="../assets/js/api-search.js"></script>
-<script src="../assets/js/apidocs.js"></script>
-</body>
-</html>
+
+#### Properties
+
+
+##### IGNORE_TAGLIST
+
+> A list of ignored tags. These tags should be ignored because there is
+likely to be used for purposes other than JSDoc tags in JavaScript comments.
+
+| meta | description |
+|------|-------------|
+| Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> |
+| Defined | [lib/ast.js:31](../files/lib_ast.js.md#l31) |
+
+
+
+##### CORRECTIONS
+
+> Common errors will get scrubbed instead of being ignored.
+
+| meta | description |
+|------|-------------|
+| Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
+| Defined | [lib/ast.js:41](../files/lib_ast.js.md#l41) |
+
+
+
+##### TAGLIST
+
+> A list of known tags.  This populates a member variable
+during initialization, and will be updated if additional
+digesters are added.
+
+| meta | description |
+|------|-------------|
+| Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> |
+| Defined | [lib/ast.js:78](../files/lib_ast.js.md#l78) |
+
+
+
+##### DIGESTERS
+
+> A map of the default tag processors, keyed by the
+tag name.  Multiple tags can use the same digester
+by supplying the string name that points to the
+implementation rather than a function.
+
+| meta | description |
+|------|-------------|
+| Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
+| Defined | [lib/ast.js:529](../files/lib_ast.js.md#l529) |
+
+
+
+
+
+
+<!-- Method Block -->
+#### Methods
+
+
+##### implodeString
+
+Flatten a string, remove all line breaks and replace them with a token
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/ast.js:1066](../files/lib_ast.js.md#l1066) |
+| Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
+
+###### Parameters
+- str <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The string to operate on
+
+
+##### implodeString
+
+Un-flatten a string, replace tokens injected with `implodeString`
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/ast.js:1077](../files/lib_ast.js.md#l1077) |
+| Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
+
+###### Parameters
+- str <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The string to operate on
+
+
+##### stringlog
+
+Parses the JSON data and formats it into a nice log string for
+filename and line number: `/file/name.js:123`
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/utils.js:417](../files/lib_utils.js.md#l417) |
+| Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
+
+###### Parameters
+- data <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The data block from the parser
+
+
+
