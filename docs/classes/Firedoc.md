@@ -1,5 +1,5 @@
 
-# firedoc 1.8.0
+# firedoc 1.8.2
 
 test
 
@@ -99,7 +99,7 @@ Walks the paths and parses the directory contents
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/firedoc.js:118](../files/lib_firedoc.js.md#l118) |
+| Defined | [lib/firedoc.js:121](../files/lib_firedoc.js.md#l121) |
 
 
 
@@ -109,7 +109,7 @@ Process the config, walk the file tree and write out the JSON data.
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/firedoc.js:156](../files/lib_firedoc.js.md#l156) |
+| Defined | [lib/firedoc.js:159](../files/lib_firedoc.js.md#l159) |
 
 ###### Parameters
 - callback <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> 

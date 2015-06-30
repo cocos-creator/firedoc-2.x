@@ -1,5 +1,5 @@
 
-# firedoc 1.8.0
+# firedoc 1.8.2
 
 Fireball is the game engine for the future.
 
@@ -118,6 +118,9 @@ function Firedoc (config) {
   }
   if (!path.isAbsolute(this.options.path)) {
     this.options.path = path.join(process.cwd(), this.options.path);
+  }
+  if (!path.isAbsolute(this.options.dest)) {
+    this.options.dest = path.join(process.cwd(), this.options.dest);
   }
 };
 exports.Firedoc = Firedoc;

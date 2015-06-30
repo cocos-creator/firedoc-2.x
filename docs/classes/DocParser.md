@@ -1,5 +1,5 @@
 
-# firedoc 1.8.0
+# firedoc 1.8.2
 
 test
 
