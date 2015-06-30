@@ -1,7 +1,7 @@
 
 # firedoc 1.8.0
 
-Fireball is the game engine for the future.
+test
 
 ### `Firedoc` Class
 
@@ -99,7 +99,7 @@ Walks the paths and parses the directory contents
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/firedoc.js:113](../files/lib_firedoc.js.md#l113) |
+| Defined | [lib/firedoc.js:112](../files/lib_firedoc.js.md#l112) |
 
 
 
@@ -109,7 +109,7 @@ Process the config, walk the file tree and write out the JSON data.
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/firedoc.js:151](../files/lib_firedoc.js.md#l151) |
+| Defined | [lib/firedoc.js:150](../files/lib_firedoc.js.md#l150) |
 
 ###### Parameters
 - callback <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> 

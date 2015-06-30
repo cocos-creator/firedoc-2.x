@@ -16,6 +16,7 @@ Fireball is the game engine for the future.
 const _ = require('underscore');
 const path = require('path');
 const utils = require('./utils');
+const debug = require('debug')('firedoc:local');
 const MarkdownIt = require('markdown-it');
 const md = new MarkdownIt();
 
@@ -88,7 +89,7 @@ var Locals = {
         mod.description = self.parseCode(self.markdown(mod.description));
         mod.members = mod.members || [];
         mod.project = self.project;
-        mod.globals = self.metadata;
+        mod.globals = self;
         mod.i18n = self.i18n;
         return mod;
       }
@@ -108,7 +109,7 @@ var Locals = {
         clazz.description = self.parseCode(self.markdown(clazz.description));
         clazz.members = clazz.members || [];
         clazz.project = self.project;
-        clazz.globals = self.meta;
+        clazz.globals = self;
         clazz.i18n = self.i18n;
         clazz.inheritance = self.getInheritanceTree(clazz);
         if (clazz.isConstructor) {
@@ -605,13 +606,19 @@ var Locals = {
     this.context = context;
     this.options = context.options;
     this.ast = context.ast;
+
+    debug('Initializing markdown-it rulers');
     this.initMarkdownRulers();
 
+    debug('Creating the instance by utils.prepare');
     var instance = utils.prepare([this.options.theme], this.options);
+
+    debug('Done preparation, ready for setting classes and modules');
     instance.meta.classes = this.classes;
     instance.meta.modules = this.modules;
 
     // attach/build members to classes and modules
+    debug('Building members');
     this.buildMembers();
 
     // set files i18n and globals
@@ -628,8 +635,9 @@ var Locals = {
     var locals;
     var meta = instance.meta;
     try {
-      locals = require(this.options.theme + '/locals.js');
+      locals = require(path.join(process.cwd(), this.options.theme, '/locals.js'));
     } catch (e) {
+      console.warn('Failed on loading theme script: ' + e);
       locals = function () {};
     }
     locals(meta.modules, meta.classes, meta);

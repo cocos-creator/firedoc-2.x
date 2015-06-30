@@ -1,7 +1,7 @@
 
 # firedoc 1.8.0
 
-Fireball is the game engine for the future.
+test
 
 ### `BuilderContext` Class
 
@@ -327,7 +327,7 @@ Render
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:523](../files/lib_builder.js.md#l523) |
+| Defined | [lib/builder.js:524](../files/lib_builder.js.md#l524) |
 
 
 
@@ -337,7 +337,7 @@ Write api.json
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:550](../files/lib_builder.js.md#l550) |
+| Defined | [lib/builder.js:551](../files/lib_builder.js.md#l551) |
 
 ###### Parameters
 - locals <a href="../classes/Locals.html" class="crosslink">Locals</a> The locals
@@ -349,7 +349,7 @@ Function to link an external type uses `NATIVES` object
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:680](../files/lib_builder.js.md#l680) |
+| Defined | [lib/builder.js:681](../files/lib_builder.js.md#l681) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 ###### Parameters
@@ -362,7 +362,7 @@ compile
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:696](../files/lib_builder.js.md#l696) |
+| Defined | [lib/builder.js:697](../files/lib_builder.js.md#l697) |
 
 ###### Parameters
 - ast <a href="../classes/AST.html" class="crosslink">AST</a> The `AST` object

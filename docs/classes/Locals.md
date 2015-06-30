@@ -1,12 +1,12 @@
 
 # firedoc 1.8.0
 
-Fireball is the game engine for the future.
+test
 
 ### `Locals` Class
 
 
-Defined in: [lib/locals.js:13](../files/lib/locals.js.js)
+Defined in: [lib/locals.js:14](../files/lib/locals.js.js)
 
 Module: [utils](../modules/utils.md)
 Parent Module: [firedoc](../modules/firedoc.md)
@@ -70,7 +70,7 @@ with the `Markdown Parser`
 | meta | description |
 |------|-------------|
 | Type | <a href="../classes/BuilderContext.html" class="crosslink">BuilderContext</a> |
-| Defined | [lib/locals.js:20](../files/lib_locals.js.md#l20) |
+| Defined | [lib/locals.js:21](../files/lib_locals.js.md#l21) |
 
 
 
@@ -81,7 +81,7 @@ with the `Markdown Parser`
 | meta | description |
 |------|-------------|
 | Type | Option |
-| Defined | [lib/locals.js:25](../files/lib_locals.js.md#l25) |
+| Defined | [lib/locals.js:26](../files/lib_locals.js.md#l26) |
 
 
 
@@ -92,7 +92,7 @@ with the `Markdown Parser`
 | meta | description |
 |------|-------------|
 | Type | <a href="../classes/AST.html" class="crosslink">AST</a> |
-| Defined | [lib/locals.js:30](../files/lib_locals.js.md#l30) |
+| Defined | [lib/locals.js:31](../files/lib_locals.js.md#l31) |
 
 
 
@@ -103,7 +103,7 @@ with the `Markdown Parser`
 | meta | description |
 |------|-------------|
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
-| Defined | [lib/locals.js:35](../files/lib_locals.js.md#l35) |
+| Defined | [lib/locals.js:36](../files/lib_locals.js.md#l36) |
 
 
 
@@ -114,7 +114,7 @@ with the `Markdown Parser`
 | meta | description |
 |------|-------------|
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
-| Defined | [lib/locals.js:52](../files/lib_locals.js.md#l52) |
+| Defined | [lib/locals.js:53](../files/lib_locals.js.md#l53) |
 
 
 
@@ -125,7 +125,7 @@ with the `Markdown Parser`
 | meta | description |
 |------|-------------|
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
-| Defined | [lib/locals.js:70](../files/lib_locals.js.md#l70) |
+| Defined | [lib/locals.js:71](../files/lib_locals.js.md#l71) |
 
 
 
@@ -136,7 +136,7 @@ with the `Markdown Parser`
 | meta | description |
 |------|-------------|
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
-| Defined | [lib/locals.js:89](../files/lib_locals.js.md#l89) |
+| Defined | [lib/locals.js:90](../files/lib_locals.js.md#l90) |
 
 
 
@@ -147,7 +147,7 @@ with the `Markdown Parser`
 | meta | description |
 |------|-------------|
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
-| Defined | [lib/locals.js:113](../files/lib_locals.js.md#l113) |
+| Defined | [lib/locals.js:114](../files/lib_locals.js.md#l114) |
 
 
 
@@ -158,7 +158,7 @@ with the `Markdown Parser`
 | meta | description |
 |------|-------------|
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a> |
-| Defined | [lib/locals.js:439](../files/lib_locals.js.md#l439) |
+| Defined | [lib/locals.js:440](../files/lib_locals.js.md#l440) |
 
 
 
@@ -175,7 +175,7 @@ Initialize the markdownit rulers
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/locals.js:127](../files/lib_locals.js.md#l127) |
+| Defined | [lib/locals.js:128](../files/lib_locals.js.md#l128) |
 
 
 
@@ -185,7 +185,7 @@ Parses file and line number from an item object and build's an HREF
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/locals.js:155](../files/lib_locals.js.md#l155) |
+| Defined | [lib/locals.js:156](../files/lib_locals.js.md#l156) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 ###### Parameters
@@ -198,7 +198,7 @@ build the method name by its name and parameters
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/locals.js:173](../files/lib_locals.js.md#l173) |
+| Defined | [lib/locals.js:174](../files/lib_locals.js.md#l174) |
 
 ###### Parameters
 - name <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The function/method name
@@ -213,7 +213,7 @@ Parses `<pre class="code prettyprint"><code>
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/locals.js:187](../files/lib_locals.js.md#l187) |
+| Defined | [lib/locals.js:188](../files/lib_locals.js.md#l188) |
 | Return 		 | HTML 
 
 ###### Parameters
@@ -226,7 +226,7 @@ Wrapper around the Markdown parser so it can be normalized or even side stepped
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/locals.js:202](../files/lib_locals.js.md#l202) |
+| Defined | [lib/locals.js:203](../files/lib_locals.js.md#l203) |
 | Return 		 | HTML 
 
 ###### Parameters
@@ -239,7 +239,7 @@ append the clazz to its module
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/locals.js:231](../files/lib_locals.js.md#l231) |
+| Defined | [lib/locals.js:232](../files/lib_locals.js.md#l232) |
 
 ###### Parameters
 - clazz <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The class object
@@ -252,7 +252,7 @@ get class inheritance tree
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/locals.js:247](../files/lib_locals.js.md#l247) |
+| Defined | [lib/locals.js:248](../files/lib_locals.js.md#l248) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 
@@ -263,7 +263,7 @@ build the member
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/locals.js:287](../files/lib_locals.js.md#l287) |
+| Defined | [lib/locals.js:288](../files/lib_locals.js.md#l288) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 ###### Parameters
@@ -278,7 +278,7 @@ build the members
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/locals.js:352](../files/lib_locals.js.md#l352) |
+| Defined | [lib/locals.js:353](../files/lib_locals.js.md#l353) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> 
 
 
@@ -290,7 +290,7 @@ with the `Markdown Parser`
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/locals.js:379](../files/lib_locals.js.md#l379) |
+| Defined | [lib/locals.js:380](../files/lib_locals.js.md#l380) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 ###### Parameters
@@ -303,7 +303,7 @@ Merge superclass data into a child class
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/locals.js:447](../files/lib_locals.js.md#l447) |
+| Defined | [lib/locals.js:448](../files/lib_locals.js.md#l448) |
 
 ###### Parameters
 - info <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The item to extend
@@ -317,7 +317,7 @@ generate expand function
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/locals.js:500](../files/lib_locals.js.md#l500) |
+| Defined | [lib/locals.js:501](../files/lib_locals.js.md#l501) |
 
 ###### Parameters
 - parent <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The object to be set
@@ -329,7 +329,7 @@ extends members array
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/locals.js:525](../files/lib_locals.js.md#l525) |
+| Defined | [lib/locals.js:526](../files/lib_locals.js.md#l526) |
 
 ###### Parameters
 - meta <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The meta object
@@ -341,7 +341,7 @@ extends modules
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/locals.js:545](../files/lib_locals.js.md#l545) |
+| Defined | [lib/locals.js:546](../files/lib_locals.js.md#l546) |
 
 ###### Parameters
 - meta <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The meta object
@@ -353,7 +353,7 @@ extends members from classes
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/locals.js:567](../files/lib_locals.js.md#l567) |
+| Defined | [lib/locals.js:568](../files/lib_locals.js.md#l568) |
 
 ###### Parameters
 - meta <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The meta object
@@ -365,7 +365,7 @@ Create a locals object from context
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/locals.js:589](../files/lib_locals.js.md#l589) |
+| Defined | [lib/locals.js:590](../files/lib_locals.js.md#l590) |
 
 ###### Parameters
 - context <a href="../classes/BuilderContext.html" class="crosslink">BuilderContext</a> The `BuilderContext` instance

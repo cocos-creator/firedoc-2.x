@@ -98,7 +98,7 @@ var BuilderContext = {
         var themeJSON = path.join(this.options.theme, 'theme.json');
         if (fs.existsSync(themeJSON)) {
           debug('loading theme from ' + themeJSON);
-          metadata = require(themeJSON);
+          metadata = require(path.join(process.cwd(), themeJSON));
         } else {
           debug('loading the default theme');
           metadata = require('../themes/default/theme.json');
@@ -505,6 +505,7 @@ var BuilderContext = {
         return Locals.create(self);
       })
       .then(function render (locals) {
+        debug('Popluating files, classes, modules');
         locals = self.populateFiles(locals);
         locals = self.populateClasses(locals);
         locals = self.populateModules(locals);

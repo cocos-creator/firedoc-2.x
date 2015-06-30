@@ -102,17 +102,16 @@ function Firedoc (config) {
   }
 
   // setup options from config
-  this.options.cwd = config.cwd || this.options.cwd;
-  this.options.lang = config.lang || this.options.lang;
-  this.options.http = config.http || this.options.http;
-  this.options.dest = config.dest || this.options.dest;
-  this.options.theme = config.theme || this.options.theme;
-  this.options.markdown = config.markdown || this.options.markdown;
-  this.options.syntaxtype = config.syntaxtype || this.options.syntaxtype;
+  for (var key in config) {
+    if (!_.isUndefined(config[key])) this.options[key] = config[key];
+  }
 
   // if `markdown` enabled, set theme
   if (this.options.markdown === true) {
     this.options.theme = path.join(__dirname, '../themes/markdown');
+  }
+  if (!path.isAbsolute(this.options.path)) {
+    this.options.path = path.join(process.cwd(), this.options.path);
   }
 };
 exports.Firedoc = Firedoc;

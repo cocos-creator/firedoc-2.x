@@ -1,7 +1,7 @@
 
 # firedoc 1.8.0
 
-Fireball is the game engine for the future.
+test
 
 ### `ParserContext` Class
 
@@ -82,7 +82,7 @@ The ParserContext
 | meta | description |
 |------|-------------|
 | Type | Any |
-| Defined | [lib/context.js:114](../files/lib_context.js.md#l114) |
+| Defined | [lib/context.js:115](../files/lib_context.js.md#l115) |
 
 
 
@@ -93,7 +93,7 @@ The ParserContext
 | meta | description |
 |------|-------------|
 | Type | Any |
-| Defined | [lib/context.js:146](../files/lib_context.js.md#l146) |
+| Defined | [lib/context.js:148](../files/lib_context.js.md#l148) |
 
 
 
@@ -104,7 +104,7 @@ The ParserContext
 | meta | description |
 |------|-------------|
 | Type | Any |
-| Defined | [lib/context.js:172](../files/lib_context.js.md#l172) |
+| Defined | [lib/context.js:176](../files/lib_context.js.md#l176) |
 
 
 
@@ -121,7 +121,7 @@ reset the context
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/context.js:177](../files/lib_context.js.md#l177) |
+| Defined | [lib/context.js:181](../files/lib_context.js.md#l181) |
 
 
 

@@ -1,14 +1,14 @@
 
 # firedoc 1.8.0
 
-Fireball is the game engine for the future.
+test
 
 
 ## `utils` Module
 
 
 
-Defined in [lib/locals.js:13](../files/lib_locals.js.md#l13)
+Defined in [lib/locals.js:14](../files/lib_locals.js.md#l14)
 
 
 
