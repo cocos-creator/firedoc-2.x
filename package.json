@@ -137,8 +137,8 @@
     "yui": true
   },
   "firedoc": {
-    "linkNatives": "true",
-    "attributesEmit": "true",
+    "linkNatives": true,
+    "attributesEmit": true,
     "path": "./lib",
     "dest": "./docs"
   }
