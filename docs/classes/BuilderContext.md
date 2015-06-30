@@ -163,7 +163,7 @@ Add helper
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:106](../files/lib_builder.js.md#l106) |
+| Defined | [lib/builder.js:110](../files/lib_builder.js.md#l110) |
 
 ###### Parameters
 - name <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The helper name
@@ -176,7 +176,7 @@ Add helpers
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:118](../files/lib_builder.js.md#l118) |
+| Defined | [lib/builder.js:122](../files/lib_builder.js.md#l122) |
 
 ###### Parameters
 - helpers <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
@@ -189,7 +189,7 @@ that are not parsed by the **Markdown** parser.
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:130](../files/lib_builder.js.md#l130) |
+| Defined | [lib/builder.js:134](../files/lib_builder.js.md#l134) |
 | Return 		 | HTML 
 
 ###### Parameters
@@ -202,7 +202,7 @@ Parse the item to be cross linked and return an HREF linked to the item
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:148](../files/lib_builder.js.md#l148) |
+| Defined | [lib/builder.js:152](../files/lib_builder.js.md#l152) |
 
 ###### Parameters
 - item <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The item to crossLink
@@ -216,7 +216,7 @@ Populate the meta data for classes
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:256](../files/lib_builder.js.md#l256) |
+| Defined | [lib/builder.js:260](../files/lib_builder.js.md#l260) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 ###### Parameters
@@ -229,7 +229,7 @@ Populate the meta data for modules
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:280](../files/lib_builder.js.md#l280) |
+| Defined | [lib/builder.js:284](../files/lib_builder.js.md#l284) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 ###### Parameters
@@ -242,7 +242,7 @@ Populate the meta data for files
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:305](../files/lib_builder.js.md#l305) |
+| Defined | [lib/builder.js:309](../files/lib_builder.js.md#l309) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 ###### Parameters
@@ -255,7 +255,7 @@ Parses file and line number from an item object and build's an HREF
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:325](../files/lib_builder.js.md#l325) |
+| Defined | [lib/builder.js:329](../files/lib_builder.js.md#l329) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 ###### Parameters
@@ -268,7 +268,7 @@ Fetches the remote data and fires the callback when it's all complete
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:336](../files/lib_builder.js.md#l336) |
+| Defined | [lib/builder.js:340](../files/lib_builder.js.md#l340) |
 | Return 		 | Promise 
 
 ###### Parameters
@@ -281,7 +281,7 @@ Makes the default directories needed
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:409](../files/lib_builder.js.md#l409) |
+| Defined | [lib/builder.js:413](../files/lib_builder.js.md#l413) |
 
 
 
@@ -291,7 +291,7 @@ Set `BuilderContext` context and return
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:425](../files/lib_builder.js.md#l425) |
+| Defined | [lib/builder.js:429](../files/lib_builder.js.md#l429) |
 | Return 		 | <a href="../classes/BuilderContext.html" class="crosslink">BuilderContext</a> 
 
 ###### Parameters
@@ -305,7 +305,7 @@ correct the theme
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:442](../files/lib_builder.js.md#l442) |
+| Defined | [lib/builder.js:446](../files/lib_builder.js.md#l446) |
 
 
 
@@ -315,7 +315,7 @@ Compule the AST
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:464](../files/lib_builder.js.md#l464) |
+| Defined | [lib/builder.js:468](../files/lib_builder.js.md#l468) |
 
 ###### Parameters
 - callback <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> The callback
@@ -327,7 +327,7 @@ Render
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:524](../files/lib_builder.js.md#l524) |
+| Defined | [lib/builder.js:528](../files/lib_builder.js.md#l528) |
 
 
 
@@ -337,7 +337,7 @@ Write api.json
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:551](../files/lib_builder.js.md#l551) |
+| Defined | [lib/builder.js:555](../files/lib_builder.js.md#l555) |
 
 ###### Parameters
 - locals <a href="../classes/Locals.html" class="crosslink">Locals</a> The locals
@@ -349,7 +349,7 @@ Function to link an external type uses `NATIVES` object
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:681](../files/lib_builder.js.md#l681) |
+| Defined | [lib/builder.js:685](../files/lib_builder.js.md#l685) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 ###### Parameters
@@ -362,7 +362,7 @@ compile
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:697](../files/lib_builder.js.md#l697) |
+| Defined | [lib/builder.js:701](../files/lib_builder.js.md#l701) |
 
 ###### Parameters
 - ast <a href="../classes/AST.html" class="crosslink">AST</a> The `AST` object

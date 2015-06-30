@@ -6,9 +6,9 @@ test
 ### `ClazzExample` Class
 
 
-Defined in: [test/targets/module/mod1.js:2](../files/test/targets/module/mod1.js.js)
+Defined in: [lib/locals.js:14](../files/lib/locals.js.js)
 
-Module: [submod2](../modules/submod2.md)
+Module: [utils](../modules/utils.md)
 Parent Module: [undefinedmodule](../modules/undefinedmodule.md)
 
 
@@ -106,7 +106,7 @@ method2 description
 
 Defined in: [test/targets/class/index.js:60](../files/test_targets_class_index.js.md#l60)
 
-Module: [submod2](../modules/submod2.md)
+Module: [utils](../modules/utils.md)
 Parent Module: [undefinedmodule](../modules/undefinedmodule.md)
 
 

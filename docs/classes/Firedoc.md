@@ -99,7 +99,7 @@ Walks the paths and parses the directory contents
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/firedoc.js:112](../files/lib_firedoc.js.md#l112) |
+| Defined | [lib/firedoc.js:118](../files/lib_firedoc.js.md#l118) |
 
 
 
@@ -109,7 +109,7 @@ Process the config, walk the file tree and write out the JSON data.
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/firedoc.js:150](../files/lib_firedoc.js.md#l150) |
+| Defined | [lib/firedoc.js:156](../files/lib_firedoc.js.md#l156) |
 
 ###### Parameters
 - callback <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> 

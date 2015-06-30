@@ -9,7 +9,7 @@ Extends `UnknownEnum`
 
 Defined in: [test/targets/class/index.js:66](../files/test/targets/class/index.js.js)
 
-Module: [submod2](../modules/submod2.md)
+Module: [utils](../modules/utils.md)
 Parent Module: [undefinedmodule](../modules/undefinedmodule.md)
 
 

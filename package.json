@@ -141,5 +141,9 @@
     "attributesEmit": true,
     "path": "./lib",
     "dest": "./docs"
+  },
+  "firedoc.test": {
+    "path": "./test/targets",
+    "dest": "./out"
   }
 }

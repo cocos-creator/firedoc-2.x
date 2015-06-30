@@ -9,7 +9,7 @@ Extends `ClazzExample`
 
 Defined in: [test/targets/class/index.js:30](../files/test/targets/class/index.js.js)
 
-Module: [submod2](../modules/submod2.md)
+Module: [utils](../modules/utils.md)
 Parent Module: [undefinedmodule](../modules/undefinedmodule.md)
 
 
@@ -191,7 +191,7 @@ method2 description
 
 Defined in: [test/targets/class/index.js:60](../files/test_targets_class_index.js.md#l60)
 
-Module: [submod2](../modules/submod2.md)
+Module: [utils](../modules/utils.md)
 Parent Module: [undefinedmodule](../modules/undefinedmodule.md)
 
 

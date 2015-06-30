@@ -135,7 +135,7 @@ window.apimeta = {
     {
       "name": "submod2",
       "namespace": "mod1.submod2",
-      "module": "warnings",
+      "module": "mod1",
       "description": "Sub Module Description 2"
     },
     {
@@ -151,7 +151,7 @@ window.apimeta = {
     {
       "name": "utils",
       "namespace": "firedoc.utils",
-      "module": "exampleModule",
+      "module": "undefinedmodule",
       "description": "Utilities modules"
     },
     {
