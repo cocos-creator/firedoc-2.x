@@ -1,64 +1,37 @@
 window.apimeta = {
-  "enums": [],
+  "enums": [
+    {
+      "name": "EnumEx",
+      "namespace": "undefinedmodule.EnumEx",
+      "module": "undefinedmodule",
+      "description": "<p>The enum description <a href=\"classes/ClazzExample.html#method_method1\">example</a></p>\n"
+    }
+  ],
   "classes": [
     {
-      "name": "AST",
-      "namespace": "firedoc.AST",
-      "module": "firedoc",
-      "description": "The AST(Abstract syntax tree) of the comment"
+      "name": "ClazzExample",
+      "namespace": "undefinedmodule.ClazzExample",
+      "module": "undefinedmodule",
+      "description": "<p>&lt;p&gt;Class description&lt;/p&gt;</p>\n"
     },
     {
-      "name": "BuilderContext",
-      "namespace": "firedoc.BuilderContext",
-      "module": "firedoc",
-      "description": "The Builder Context"
+      "name": "SecondClazz",
+      "namespace": "undefinedmodule.SecondClazz",
+      "module": "undefinedmodule",
+      "description": "<p>The second class</p>\n"
     },
     {
-      "name": "DocParser",
-      "namespace": "firedoc.DocParser",
-      "module": "firedoc",
+      "name": "ThirdClazz",
+      "namespace": "undefinedmodule.ThirdClazz",
+      "module": "undefinedmodule",
       "description": ""
-    },
-    {
-      "name": "DocView",
-      "namespace": "firedoc.DocView",
-      "module": "firedoc",
-      "description": "View class borrowed from [Selleck](https://github.com/rgrove/selleck)\nThe view class is a **`handlebars`** template helper."
-    },
-    {
-      "name": "Firedoc",
-      "namespace": "firedoc.Firedoc",
-      "module": "firedoc",
-      "description": "Firedoc main class"
-    },
-    {
-      "name": "Locals",
-      "namespace": "firedoc.Locals",
-      "module": "firedoc",
-      "description": "The Theme Locals"
-    },
-    {
-      "name": "ParserContext",
-      "namespace": "firedoc.ParserContext",
-      "module": "firedoc",
-      "description": "The ParserContext"
     }
   ],
   "modules": [
     {
-      "name": "firedoc",
-      "namespace": "firedoc",
-      "description": "The firedoc module"
-    },
-    {
-      "name": "helpers",
-      "module": "firedoc",
-      "description": "The helpers module"
-    },
-    {
-      "name": "utils",
-      "module": "firedoc",
-      "description": "Utilities modules"
+      "name": "undefinedmodule",
+      "namespace": "undefinedmodule",
+      "description": "<p>Class description</p>\n"
     }
   ]
 }

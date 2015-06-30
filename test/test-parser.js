@@ -91,6 +91,7 @@ describe('firedoc.parser', function () {
           description: 'test',
           logo: 'https://github.com/fireball-x/firedoc',
           root: path.join(__dirname, '../out'),
+          base: path.join(__dirname, '../out'),
           assets: path.join(__dirname, '../out/assets'),
         });
         var mod1 = locals.modules[0];
@@ -106,8 +107,6 @@ describe('firedoc.parser', function () {
         assert.deepEqual(mod1.events, []);
       });
       ctx.on('apimeta', function (apimeta) {
-        assert.ok(apimeta.project);
-        assert.ok(apimeta.files);
         assert.ok(apimeta.enums);
         assert.ok(apimeta.classes);
         assert.ok(apimeta.modules);
