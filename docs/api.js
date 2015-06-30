@@ -1,108 +1,163 @@
-YUI.add("yuidoc-meta", function(Y) {
-   Y.YUIDoc = { meta: {
-    "classes": [
-        {
-            "displayName": "Help",
-            "name": "Help",
-            "namespace": "",
-            "module": "yuidoc",
-            "description": "Shows the help text",
-            "access": "public"
-        },
-        {
-            "displayName": "CLI",
-            "name": "CLI",
-            "namespace": "",
-            "module": "yuidoc",
-            "description": "Parses the arguments, creates the options and passes them to `Y.YUIDoc` and then `Y.DocBuilder`.",
-            "access": "public"
-        },
-        {
-            "displayName": "DocParser",
-            "name": "DocParser",
-            "namespace": "",
-            "module": "yuidoc",
-            "description": "The doc parser accepts a **map** of files to file content.\nOnce `parse()` is called, various properties will be populated\nwith the parsers data (aggregated in the `'data'` property).",
-            "access": "public"
-        },
-        {
-            "displayName": "DocView",
-            "name": "DocView",
-            "namespace": "",
-            "module": "yuidoc",
-            "description": "View class borrowed from [Selleck](https://github.com/rgrove/selleck)  \nThe view class is a **`handlebars`** template helper.",
-            "access": "public"
-        },
-        {
-            "displayName": "Files",
-            "name": "Files",
-            "namespace": "",
-            "module": "yuidoc",
-            "description": "Ported fileutils methods from [Selleck](http://github.com/rgrove/selleck)",
-            "access": "public"
-        },
-        {
-            "displayName": "DocBuilder",
-            "name": "DocBuilder",
-            "module": "yuidoc",
-            "description": "Takes the `JSON` data from the `DocParser` class, creates and parses markdown and handlebars\nbased templates to generate static HTML content",
-            "access": "public"
-        },
-        {
-            "displayName": "Main",
-            "name": "Main",
-            "namespace": "",
-            "module": "yuidoc",
-            "description": "Module creates the YUI instance with the required modules, uses them and exports the **Y** to be used\nby the _CLI class_ or by extenders: `require('yuidocjs');`  \nYou can use it like this:  \n\n    var options = {\n        paths: [ './lib' ],\n        outdir: './out'\n    };\n\n    var Y = require('yuidocjs');\n    var json = (new Y.YUIDoc(options)).run();",
-            "access": "public"
-        },
-        {
-            "displayName": "Options",
-            "name": "Options",
-            "namespace": "",
-            "module": "yuidoc",
-            "description": "Handles argument parsing",
-            "access": "public"
-        },
-        {
-            "displayName": "Server",
-            "name": "Server",
-            "namespace": "",
-            "module": "yuidoc",
-            "description": "Provides the `--server` server option for YUIDoc",
-            "access": "public"
-        },
-        {
-            "displayName": "Utils",
-            "name": "Utils",
-            "namespace": "",
-            "module": "yuidoc",
-            "description": "Utilities Class",
-            "access": "public"
-        },
-        {
-            "displayName": "YUIDoc",
-            "name": "YUIDoc",
-            "namespace": "",
-            "module": "yuidoc",
-            "description": "YUIDoc main class\n\n     var options = {\n         paths: [ './lib' ],\n         outdir: './out'\n     };\n\n     var Y = require('yuidoc');\n     var json = (new Y.YUIDoc(options)).run();",
-            "access": "public"
-        }
-    ],
-    "enums": [],
-    "modules": [
-        {
-            "displayName": "yuidoc",
-            "name": "yuidoc",
-            "submodules": []
-        }
-    ],
-    "allModules": [
-        {
-            "displayName": "yuidoc",
-            "name": "yuidoc",
-            "description": "This is the __module__ description for the `YUIDoc` module.\n```\nvar options = {\n  paths: [ './lib' ],\n  outdir: './out'\n};\nvar Y = require('yuidocjs');\nvar json = (new Y.YUIDoc(options)).run();\n```"
-        }
-    ]
-} };
-});
+window.apimeta = {
+  "enums": [
+    {
+      "name": "EnumEx",
+      "namespace": "undefinedmodule.EnumEx",
+      "module": "undefinedmodule",
+      "description": "The enum description [example](undefinedmodule.ClazzExample.method1)"
+    }
+  ],
+  "classes": [
+    {
+      "name": "AST",
+      "namespace": "firedoc.AST",
+      "module": "firedoc",
+      "description": "The AST(Abstract syntax tree) of the comment"
+    },
+    {
+      "name": "BuilderContext",
+      "namespace": "firedoc.BuilderContext",
+      "module": "firedoc",
+      "description": "The Builder Context"
+    },
+    {
+      "name": "ClazzExample",
+      "namespace": "undefinedmodule.ClazzExample",
+      "module": "undefinedmodule",
+      "description": "Class description"
+    },
+    {
+      "name": "DocParser",
+      "namespace": "firedoc.DocParser",
+      "module": "firedoc",
+      "description": ""
+    },
+    {
+      "name": "DocView",
+      "namespace": "firedoc.DocView",
+      "module": "firedoc",
+      "description": "View class borrowed from [Selleck](https://github.com/rgrove/selleck)\nThe view class is a **`handlebars`** template helper."
+    },
+    {
+      "name": "ExampleClass",
+      "namespace": "exampleModule.ExampleClass",
+      "module": "exampleModule",
+      "description": "Module Description"
+    },
+    {
+      "name": "Firedoc",
+      "namespace": "firedoc.Firedoc",
+      "module": "firedoc",
+      "description": "Firedoc main class"
+    },
+    {
+      "name": "Locals",
+      "namespace": "firedoc.Locals",
+      "module": "firedoc",
+      "description": "The Theme Locals"
+    },
+    {
+      "name": "ParserContext",
+      "namespace": "firedoc.ParserContext",
+      "module": "firedoc",
+      "description": "The ParserContext"
+    },
+    {
+      "name": "SecondClazz",
+      "namespace": "undefinedmodule.SecondClazz",
+      "module": "undefinedmodule",
+      "description": "The second class"
+    },
+    {
+      "name": "ThirdClazz",
+      "namespace": "undefinedmodule.ThirdClazz",
+      "module": "undefinedmodule",
+      "description": ""
+    },
+    {
+      "name": "class1",
+      "namespace": "mod1.class1",
+      "module": "mod1",
+      "description": "Class"
+    },
+    {
+      "name": "cls1",
+      "namespace": "mod1.cls1",
+      "module": "mod1",
+      "description": ""
+    },
+    {
+      "name": "cls2",
+      "namespace": "mod1.cls2",
+      "module": "mod1",
+      "description": ""
+    },
+    {
+      "name": "missing_extends",
+      "namespace": "warnings.missing_extends",
+      "module": "warnings",
+      "description": ""
+    }
+  ],
+  "modules": [
+    {
+      "name": "exampleModule",
+      "namespace": "exampleModule",
+      "description": "Module Description"
+    },
+    {
+      "name": "firedoc",
+      "namespace": "firedoc",
+      "description": "The firedoc module"
+    },
+    {
+      "name": "helpers",
+      "namespace": "firedoc.helpers",
+      "module": "firedoc",
+      "description": "The helpers module"
+    },
+    {
+      "name": "mod1",
+      "namespace": "mod1",
+      "description": "Module Description 1"
+    },
+    {
+      "name": "mod2",
+      "namespace": "mod2",
+      "description": "Module Description 2"
+    },
+    {
+      "name": "submod1",
+      "namespace": "mod1.submod1",
+      "module": "mod1",
+      "description": "Sub Module Description 1"
+    },
+    {
+      "name": "submod2",
+      "namespace": "mod1.submod2",
+      "module": "mod1",
+      "description": "Sub Module Description 2"
+    },
+    {
+      "name": "testmembers",
+      "namespace": "testmembers",
+      "description": "This module is used to test members"
+    },
+    {
+      "name": "undefinedmodule",
+      "namespace": "undefinedmodule",
+      "description": "Class description"
+    },
+    {
+      "name": "utils",
+      "namespace": "firedoc.utils",
+      "module": "undefinedmodule",
+      "description": "Utilities modules"
+    },
+    {
+      "name": "warnings",
+      "namespace": "warnings",
+      "description": ""
+    }
+  ]
+}

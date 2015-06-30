@@ -1,85 +1,88 @@
 
-# firedoc 1.5.12
+# firedoc 1.8.0
 
 Fireball is the game engine for the future.
 
 
-### File: `lib/docview.js`
+### File: ``
 
 ```js
 /* global YUI */
+
 /**
- * Copyright (c) 2011, Yahoo! Inc. All rights reserved.
- * Code licensed under the BSD License:
- * https://github.com/yui/yuidoc/blob/master/LICENSE
+ * The firedoc module
+ * @module firedoc
  */
-YUI.add('docview', function (Y) {
 
-  /*
-   * Selleck
-   * Copyright (c) 2011 Yahoo! Inc.
-   * Licensed under the BSD License.
-  */
+const _ = require('underscore');
+const path = require('path');
+const Handlebars = require('handlebars');
 
-  var path = require('path');
+/**
+ * View class borrowed from [Selleck](https://github.com/rgrove/selleck)  
+ * The view class is a **`handlebars`** template helper.
+ *
+ * @class DocView
+ * @constructor
+ * @param {Object} data Meta data to use in this template
+ * @param {String} templateName The name of the template file to render.
+ **/
+function DocView (data, templateName, cwd) {
+  this.templateName = templateName;
+  this.cwd = path.join(cwd || '');
+  this.assets = path.join(cwd || '', 'assets');
+  _.extend(this, data);
 
+  // register helpers
+  var self = this;
+  Handlebars.registerHelper('relink', function (item, options) {
+    item = item || '';
+    if (self.project.local) {
+      return '//' + self.project.root + '/' + item;
+    } else {
+      return self.project.baseurl + '/' + item;
+    }
+  });
+}
+
+DocView.prototype = {
   /**
-   * View class borrowed from [Selleck](https://github.com/rgrove/selleck)  
-   * The view class is a **`handlebars`** template helper.
-   * @class DocView
-   * @constructor
-   * @param {Object} data Meta data to use in this template
-   * @param {String} templateName The name of the template file to render.
-   **/
-  function DocView(data, templateName, cwd) {
-    this.templateName = templateName;
-    this.cwd = path.join(cwd || '');
-    this.assets = path.join(cwd || '', 'assets');
-    Y.mix(this, data);
-
-    // register helpers
-    var self = this;
-    Y.Handlebars.registerHelper('relink', function (item, options) {
-      return path.join(self.cwd, item);
-    });
-  }
-
-  DocView.prototype = {
-    /**
-     * **Mustache** `lambda` method for setting the HTML title
-     * @method htmlTitle
-     */
-    htmlTitle: function () {
-      var name = this.displayName || this.name,
-        title = name;
-
+   * **Mustache** `lambda` method for setting the HTML title
+   * @method htmlTitle
+   */
+  htmlTitle: function () {
+    var name = this.name;
+    var title = name;
+    try {
       if (title) {
-        if (this.projectName) {
-          title += ' - ' + this.projectName;
+        if (this.project.name) {
+          title += ' - ' + this.project.name;
         }
       } else {
-        title = this.projectName;
+        title = this.project.name;
       }
-      return title;
-    },
+    } catch (e) {}
+    return title;
+  },
 
-    /**
-     * **Mustache** `lambda` method for setting the title
-     * @method title
-     */
-    title: function () {
-      var name = this.displayName || this.name,
-        title = this.projectName;
-
+  /**
+   * **Mustache** `lambda` method for setting the title
+   * @method title
+   */
+  title: function () {
+    var name = this.name;
+    var title = name;
+    try {
+      title = this.project.name;
       if (name) {
         title += ': ' + name;
       }
-      return title;
-    }
+    } catch (e) {}
+    return title;
+  }
 
-  };
+};
 
-  Y.DocView = DocView;
-});
+exports.DocView = DocView;
 
 ```

@@ -1,3 +1,6 @@
+MOCHA_EXEC=node_modules/.bin/_mocha
+ISTANBUL_EXEC=node_modules/.bin/istanbul
+
 all:
 	npm -g i .
 
@@ -27,6 +30,9 @@ deploydocs: version
 	./scripts/docs.sh
 
 test:
-	npm test
+	NODE_ENV=test $(ISTANBUL_EXEC) cover $(MOCHA_EXEC) -- -R spec --timeout 3000 ./test/test-*.js
 
-.PHONY: docs clean
+test.nocoverage:
+	NODE_ENV=test $(MOCHA_EXEC) --timeout 3000 ./test/test-*.js
+
+.PHONY: docs clean test
