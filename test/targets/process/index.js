@@ -4,8 +4,17 @@
  */
 
   /**
+   * @method dm1
+   */
+
+  /**
+   * @method dm2
+   * @process page
+   */
+
+  /**
    * @class cls1
-   * @proces page
+   * @process page
    */
 
     /**
@@ -14,7 +23,7 @@
 
     /**
      * @method md2
-     * @proces core
+     * @process core
      */
 
   /**

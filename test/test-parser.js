@@ -472,9 +472,27 @@ describe('firedoc.parser', function () {
     before(function () {
       ast = parser.parse('js', doc.filemap, doc.dirmap);
     });
-    it('should check module class', function () {
+    it('should check module', function () {
       var mod1 = ast.modules.mod1;
       assert.deepEqual(mod1.process, ['core']);
+    });
+    it('should check class', function () {
+      var cls1 = ast.classes.cls1;
+      assert.deepEqual(cls1.process, ['page']);
+      var cls2 = ast.classes.cls2;
+      assert.deepEqual(cls2.process, ['core']);
+    });
+    it('should check members', function () {
+      var dm1 = _.findWhere(ast.members, {'name': 'dm1'});
+      assert.deepEqual(dm1.process, ['core']);
+      var dm2 = _.findWhere(ast.members, {'name': 'dm2'});
+      assert.deepEqual(dm2.process, ['page']);
+      var md1InCls1 = _.findWhere(ast.members, {'name': 'md1', 'clazz': 'cls1'});
+      assert.deepEqual(md1InCls1.process, ['page']);
+      var md2InCls1 = _.findWhere(ast.members, {'name': 'md2', 'clazz': 'cls1'});
+      assert.deepEqual(md2InCls1.process, ['core']);
+      var md1InCls2 = _.findWhere(ast.members, {'name': 'md1', 'clazz': 'cls2'});
+      assert.deepEqual(md1InCls2.process, ['core']);
     });
   });
 
