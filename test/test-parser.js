@@ -294,8 +294,8 @@ describe('firedoc.parser', function () {
         },
         members[2].return
       );
-      assert.equal('method2 description 2', members[3].description);
-      assert.equal('method2_with_description', members[3].name);
+      assert.equal('method2 description 2', members[4].description);
+      assert.equal('method2_with_description', members[4].name);
       assert.deepEqual(
         [ 
           {
@@ -304,14 +304,14 @@ describe('firedoc.parser', function () {
             type: 'String' 
           } 
         ],
-        members[3].params
+        members[4].params
       );
       assert.deepEqual(
         { 
           description: 'The return value', 
           type: 'String' 
         },
-        members[3].return
+        members[4].return
       );
     });
     it('should check inheritedMembers', function () {
@@ -326,8 +326,10 @@ describe('firedoc.parser', function () {
       var ctx = builder.compile(ast, doc.options, next);
       ctx.on('class', function (locals) {
         if (locals.name === 'SecondClazz') {
-          assert.equal(locals.members[1].name, 'method1');
-          assert.ok(locals.members[1].overwrittenFrom);
+          var method1 = _.findWhere(locals.members, {'name': 'method1'});
+          assert.ok(method1.overwrittenFrom);
+          var method2 = _.findWhere(locals.members, {'name': 'method2'});
+          assert.ok(method2.extendedFrom);
         }
       });
       ctx.on('enum', function (locals) {

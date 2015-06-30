@@ -22,6 +22,11 @@
    * @return {String|Number}
    */
 
+  /**
+   * method2 description
+   * @method method2
+   */
+
 /**
  * The second class
  * @class SecondClazz
