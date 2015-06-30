@@ -11,7 +11,10 @@ const Handlebars = require('handlebars');
 describe('filedoc.helpers', function () {
 
   var src = path.join(__dirname, './targets/class');
-  var doc = new Firedoc({'path': src});
+  var doc = new Firedoc({
+    'path': src,
+    'linkNatives': false
+  });
   var ast, ctx;
   var callOptions = {
     fn: function () {

@@ -136,15 +136,10 @@
     "unused": "vars",
     "yui": true
   },
-  "yuidoc": {
-    "name": "FireDoc",
-    "options": {
-      "linkNatives": "true",
-      "attributesEmit": "true",
-      "paths": [
-        "./lib"
-      ],
-      "outdir": "./docs"
-    }
+  "firedoc": {
+    "linkNatives": "true",
+    "attributesEmit": "true",
+    "path": "./lib",
+    "dest": "./docs"
   }
 }

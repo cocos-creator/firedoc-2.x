@@ -13,50 +13,26 @@ describe('firedoc.Firedoc', function () {
 
   it('should create new Firedoc', function () {
     var doc = new Firedoc({'path': src});
-    assert.deepEqual(doc.options, {
-      path: src,
-      quiet: false,
-      writeJSON: true,
-      extensions: '.js',
-      excludes: [
-        '.git',
-        '.svn',
-        'CVS',
-        'build_rollup_tmp',
-        'build_tmp',
-        'node_modules'
-      ],
-      norecurse: false,
-      version: '0.1.0',
-      cwd: path.join(__dirname, '..'),
-      theme: path.join(__dirname, '../themes/default'),
-      dest: path.join(__dirname, '../out'),
-      syntaxtype: 'js'
-    });
+    assert.equal(doc.options.path, src);
+    assert.equal(doc.options.extensions, '.js');
+    assert.equal(doc.options.cwd, path.join(__dirname, '..'));
+    assert.equal(doc.options.dest, path.join(__dirname, '../out'));
+    assert.equal(doc.options.theme, path.join(__dirname, '../themes/default'));
+    assert.equal(doc.options.syntaxtype, 'js');
+    assert.ok(doc.options.project);
+    assert.ok(doc.options.excludes);
   });
 
   it('should create new Firedoc without the keyword new', function () {
     var doc = Firedoc({'path': src});
-    assert.deepEqual(doc.options, {
-      path: src,
-      quiet: false,
-      writeJSON: true,
-      extensions: '.js',
-      excludes: [
-        '.git',
-        '.svn',
-        'CVS',
-        'build_rollup_tmp',
-        'build_tmp',
-        'node_modules'
-      ],
-      norecurse: false,
-      version: '0.1.0',
-      cwd: path.join(__dirname, '..'),
-      theme: path.join(__dirname, '../themes/default'),
-      dest: path.join(__dirname, '../out'),
-      syntaxtype: 'js'
-    });
+    assert.equal(doc.options.path, src);
+    assert.equal(doc.options.extensions, '.js');
+    assert.equal(doc.options.cwd, path.join(__dirname, '..'));
+    assert.equal(doc.options.dest, path.join(__dirname, '../out'));
+    assert.equal(doc.options.theme, path.join(__dirname, '../themes/default'));
+    assert.equal(doc.options.syntaxtype, 'js');
+    assert.ok(doc.options.project);
+    assert.ok(doc.options.excludes);
   });
 
   it('should call build', function (next) {
