@@ -4,6 +4,7 @@ name=$1
 remote=$2
 
 cd $THEMEDIR
+rm -rf $name
 git clone $remote $name
 
 echo "installing the npm dependencies for $name"
