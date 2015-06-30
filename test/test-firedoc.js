@@ -18,9 +18,17 @@ describe('firedoc.Firedoc', function () {
       quiet: false,
       writeJSON: true,
       extensions: '.js',
-      excludes: '.DS_Store,.svn,CVS,.git,build_rollup_tmp,build_tmp,node_modules',
+      excludes: [
+        '.git',
+        '.svn',
+        'CVS',
+        'build_rollup_tmp',
+        'build_tmp',
+        'node_modules'
+      ],
       norecurse: false,
       version: '0.1.0',
+      cwd: path.join(__dirname, '..'),
       theme: path.join(__dirname, '../themes/default'),
       dest: path.join(__dirname, '../out'),
       syntaxtype: 'js'
@@ -34,9 +42,17 @@ describe('firedoc.Firedoc', function () {
       quiet: false,
       writeJSON: true,
       extensions: '.js',
-      excludes: '.DS_Store,.svn,CVS,.git,build_rollup_tmp,build_tmp,node_modules',
+      excludes: [
+        '.git',
+        '.svn',
+        'CVS',
+        'build_rollup_tmp',
+        'build_tmp',
+        'node_modules'
+      ],
       norecurse: false,
       version: '0.1.0',
+      cwd: path.join(__dirname, '..'),
       theme: path.join(__dirname, '../themes/default'),
       dest: path.join(__dirname, '../out'),
       syntaxtype: 'js'

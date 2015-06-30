@@ -20,7 +20,6 @@ describe('filedoc.helpers', function () {
   };
 
   before(function (next) {
-    doc._processConfig();
     doc.walk(next);
   });
   before(function (next) {

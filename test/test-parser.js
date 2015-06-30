@@ -10,10 +10,9 @@ describe('firedoc.parser', function () {
 
   describe('basic', function () {
     var src = path.join(__dirname, './targets/basic');
-    var doc = new Firedoc({'path': src});
+    var doc = new Firedoc({'path': src, cwd: src});
     var ast, ctx;
     before(function (next) {
-      doc._processConfig();
       doc.walk(next);
     });
     before(function () {
@@ -78,6 +77,7 @@ describe('firedoc.parser', function () {
     it('should compile the ast', function (next) {
       ctx = builder.compile(ast, doc.options, next);
       ctx.on('index', function (locals, html) {
+        assert.equal(locals.project, require('./targets/basic/package.json'));
         assert.equal(locals.layout, 'main');
         assert.ok(locals.i18n);
         var class1 = locals.classes[0];
@@ -172,7 +172,6 @@ describe('firedoc.parser', function () {
     var doc = new Firedoc({'path': src});
     var ast;
     before(function (next) {
-      doc._processConfig();
       doc.walk(next);
     });
     before(function () {
@@ -233,7 +232,6 @@ describe('firedoc.parser', function () {
     var doc = new Firedoc({'path': src});
     var ast;
     before(function (next) {
-      doc._processConfig();
       doc.walk(next);
     });
     before(function () {
@@ -319,6 +317,10 @@ describe('firedoc.parser', function () {
         [ 
           'ClazzExample',
           'SecondClazz'
+        ],
+        [
+          'ClazzExample',
+          'ThirdClazz'
         ]
       ], ast.inheritedMembers);
     });
@@ -345,7 +347,6 @@ describe('firedoc.parser', function () {
     var doc = new Firedoc({'path': src});
     var ast;
     before(function (next) {
-      doc._processConfig();
       doc.walk(next);
     });
     before(function () {
@@ -468,7 +469,6 @@ describe('firedoc.parser', function () {
     var doc = new Firedoc({'path': src});
     var ast;
     before(function (next) {
-      doc._processConfig();
       doc.walk(next);
     });
     before(function () {

@@ -68,3 +68,8 @@
  * @enum EnumEx
  * @extend UnknownEnum
  */
+
+/**
+ * @class ThirdClazz
+ * @extends ClazzExample
+ */
