@@ -92,15 +92,14 @@
 
 
         <div class="foundat">
-            Defined in: <a href="../files/lib_locals.js.html#l13"><code>lib&#x2F;locals.js:13</code></a>
+            Defined in: <a href="../files/lib_locals.js.md#l13">`lib/locals.js:13`</a>
         </div>
 
 </div>
 
 
 <div class="box intro">
-    <p>Utilities modules</p>
-
+    Utilities modules
 </div>
 
 
@@ -240,7 +239,7 @@
                     <p>Provided by the <a href="../modules/utils.html" class="module-name">utils</a> module.</p>
                 <p>
                     Defined in
-        <a href="../files/lib_utils.js.html#l22"><code>lib&#x2F;utils.js:22</code></a>
+        <a href="../files/lib_utils.js.md#l22">`lib/utils.js:22`</a>
         </p>
 
 
@@ -250,8 +249,7 @@
     <div class="extended-detail">
 
         <div class="description">
-            <p>Format the process string to array</p>
-
+            Format the process string to array
         </div>
 
             <div class="params">
@@ -313,7 +311,7 @@
                     <p>Provided by the <a href="../modules/utils.html" class="module-name">utils</a> module.</p>
                 <p>
                     Defined in
-        <a href="../files/lib_utils.js.html#l33"><code>lib&#x2F;utils.js:33</code></a>
+        <a href="../files/lib_utils.js.md#l33">`lib/utils.js:33`</a>
         </p>
 
 
@@ -323,8 +321,7 @@
     <div class="extended-detail">
 
         <div class="description">
-            <p>Get the namespace string from a target object</p>
-
+            Get the namespace string from a target object
         </div>
 
             <div class="params">
@@ -415,7 +412,7 @@
                     <p>Provided by the <a href="../modules/utils.html" class="module-name">utils</a> module.</p>
                 <p>
                     Defined in
-        <a href="../files/lib_utils.js.html#l50"><code>lib&#x2F;utils.js:50</code></a>
+        <a href="../files/lib_utils.js.md#l50">`lib/utils.js:50`</a>
         </p>
 
 
@@ -425,8 +422,7 @@
     <div class="extended-detail">
 
         <div class="description">
-            <p>Escapes HTML characters in <em>html</em>.</p>
-
+            Escapes HTML characters in _html_.
         </div>
 
             <div class="params">
@@ -439,8 +435,7 @@
 
 
                         <div class="param-description">
-                            <p>String to escape.</p>
-
+                            String to escape.
                         </div>
 
                     </li>
@@ -489,7 +484,7 @@
                     <p>Provided by the <a href="../modules/utils.html" class="module-name">utils</a> module.</p>
                 <p>
                     Defined in
-        <a href="../files/lib_utils.js.html#l64"><code>lib&#x2F;utils.js:64</code></a>
+        <a href="../files/lib_utils.js.md#l64">`lib/utils.js:64`</a>
         </p>
 
 
@@ -499,8 +494,7 @@
     <div class="extended-detail">
 
         <div class="description">
-            <p>Trim in safe mode</p>
-
+            Trim in safe mode
         </div>
 
             <div class="params">
@@ -562,7 +556,7 @@
                     <p>Provided by the <a href="../modules/utils.html" class="module-name">utils</a> module.</p>
                 <p>
                     Defined in
-        <a href="../files/lib_utils.js.html#l80"><code>lib&#x2F;utils.js:80</code></a>
+        <a href="../files/lib_utils.js.md#l80">`lib/utils.js:80`</a>
         </p>
 
 
@@ -572,11 +566,10 @@
     <div class="extended-detail">
 
         <div class="description">
-            <p>Normalizes the initial indentation of the given <em>content</em> so that the first line
+            Normalizes the initial indentation of the given _content_ so that the first line
 is unindented, and all other lines are unindented to the same degree as the
 first line. So if the first line has four spaces at the beginning, then all
-lines will be unindented four spaces. Ported from <a href="https://github.com/rgrove/selleck">Selleck</a></p>
-
+lines will be unindented four spaces. Ported from [Selleck](https://github.com/rgrove/selleck)
         </div>
 
             <div class="params">
@@ -589,8 +582,7 @@ lines will be unindented four spaces. Ported from <a href="https://github.com/rg
 
 
                         <div class="param-description">
-                            <p>Text to unindent.</p>
-
+                            Text to unindent.
                         </div>
 
                     </li>
@@ -639,7 +631,7 @@ lines will be unindented four spaces. Ported from <a href="https://github.com/rg
                     <p>Provided by the <a href="../modules/utils.html" class="module-name">utils</a> module.</p>
                 <p>
                     Defined in
-        <a href="../files/lib_utils.js.html#l99"><code>lib&#x2F;utils.js:99</code></a>
+        <a href="../files/lib_utils.js.md#l99">`lib/utils.js:99`</a>
         </p>
 
 
@@ -649,10 +641,10 @@ lines will be unindented four spaces. Ported from <a href="https://github.com/rg
     <div class="extended-detail">
 
         <div class="description">
-            <p>Normalizes a file path to a writable filename:</p>
-<p>var path = 'lib/file.js';
-returns 'lib_file.js';</p>
+            Normalizes a file path to a writable filename:
 
+   var path = 'lib/file.js';
+   returns 'lib_file.js';
         </div>
 
             <div class="params">
@@ -665,8 +657,7 @@ returns 'lib_file.js';</p>
 
 
                         <div class="param-description">
-                            <p>The filename to normalize</p>
-
+                            The filename to normalize
                         </div>
 
                     </li>
@@ -718,7 +709,7 @@ returns 'lib_file.js';</p>
                     <p>Provided by the <a href="../modules/utils.html" class="module-name">utils</a> module.</p>
                 <p>
                     Defined in
-        <a href="../files/lib_utils.js.html#l114"><code>lib&#x2F;utils.js:114</code></a>
+        <a href="../files/lib_utils.js.md#l114">`lib/utils.js:114`</a>
         </p>
 
 
@@ -728,8 +719,7 @@ returns 'lib_file.js';</p>
     <div class="extended-detail">
 
         <div class="description">
-            <p>Parses file and line number from an item object and build's an HREF</p>
-
+            Parses file and line number from an item object and build's an HREF
         </div>
 
             <div class="params">
@@ -742,8 +732,7 @@ returns 'lib_file.js';</p>
 
 
                         <div class="param-description">
-                            <p>The item to parse</p>
-
+                            The item to parse
                         </div>
 
                     </li>
@@ -753,8 +742,7 @@ returns 'lib_file.js';</p>
 
 
                         <div class="param-description">
-                            <p>The options</p>
-
+                            The options
                         </div>
 
                             <ul class="params-list">
@@ -823,7 +811,7 @@ returns 'lib_file.js';</p>
                     <p>Provided by the <a href="../modules/utils.html" class="module-name">utils</a> module.</p>
                 <p>
                     Defined in
-        <a href="../files/lib_utils.js.html#l137"><code>lib&#x2F;utils.js:137</code></a>
+        <a href="../files/lib_utils.js.md#l137">`lib/utils.js:137`</a>
         </p>
 
 
@@ -833,9 +821,8 @@ returns 'lib_file.js';</p>
     <div class="extended-detail">
 
         <div class="description">
-            <p>Like <code>getPages()</code>, but returns only the files under the <code>layout/</code> subdirectory
-of the specified <em>dir</em>.</p>
-
+            Like `getPages()`, but returns only the files under the `layout/` subdirectory
+of the specified _dir_.
         </div>
 
             <div class="params">
@@ -848,8 +835,7 @@ of the specified <em>dir</em>.</p>
 
 
                         <div class="param-description">
-                            <p>Directory path.</p>
-
+                            Directory path.
                         </div>
 
                     </li>
@@ -898,7 +884,7 @@ of the specified <em>dir</em>.</p>
                     <p>Provided by the <a href="../modules/utils.html" class="module-name">utils</a> module.</p>
                 <p>
                     Defined in
-        <a href="../files/lib_utils.js.html#l151"><code>lib&#x2F;utils.js:151</code></a>
+        <a href="../files/lib_utils.js.md#l151">`lib/utils.js:151`</a>
         </p>
 
 
@@ -908,8 +894,7 @@ of the specified <em>dir</em>.</p>
     <div class="extended-detail">
 
         <div class="description">
-            <p>Loads and returns the content of the specified page file.</p>
-
+            Loads and returns the content of the specified page file.
         </div>
 
             <div class="params">
@@ -922,8 +907,7 @@ of the specified <em>dir</em>.</p>
 
 
                         <div class="param-description">
-                            <p>Path to a single <code>.handlebars</code> page.</p>
-
+                            Path to a single `.handlebars` page.
                         </div>
 
                     </li>
@@ -937,7 +921,7 @@ of the specified <em>dir</em>.</p>
                         <span>type:</span>
                         <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> | null</span>
                     <p>
-                        Page content, or <code>null</code> if not found.
+                        Page content, or `null` if not found.
                     </p>
                 </div>
             </div>
@@ -972,7 +956,7 @@ of the specified <em>dir</em>.</p>
                     <p>Provided by the <a href="../modules/utils.html" class="module-name">utils</a> module.</p>
                 <p>
                     Defined in
-        <a href="../files/lib_utils.js.html#l168"><code>lib&#x2F;utils.js:168</code></a>
+        <a href="../files/lib_utils.js.md#l168">`lib/utils.js:168`</a>
         </p>
 
 
@@ -982,10 +966,9 @@ of the specified <em>dir</em>.</p>
     <div class="extended-detail">
 
         <div class="description">
-            <p>Loads pages (files with a <code>.handlebars</code> extension) in the specified directory and
+            Loads pages (files with a `.handlebars` extension) in the specified directory and
 returns an object containing a mapping of page names (the part of the filename)
-preceding the <code>.handlebars</code> extension) to page content.</p>
-
+preceding the `.handlebars` extension) to page content.
         </div>
 
             <div class="params">
@@ -998,8 +981,7 @@ preceding the <code>.handlebars</code> extension) to page content.</p>
 
 
                         <div class="param-description">
-                            <p>Directory path.</p>
-
+                            Directory path.
                         </div>
 
                     </li>
@@ -1048,7 +1030,7 @@ preceding the <code>.handlebars</code> extension) to page content.</p>
                     <p>Provided by the <a href="../modules/utils.html" class="module-name">utils</a> module.</p>
                 <p>
                     Defined in
-        <a href="../files/lib_utils.js.html#l211"><code>lib&#x2F;utils.js:211</code></a>
+        <a href="../files/lib_utils.js.md#l211">`lib/utils.js:211`</a>
         </p>
 
 
@@ -1058,9 +1040,8 @@ preceding the <code>.handlebars</code> extension) to page content.</p>
     <div class="extended-detail">
 
         <div class="description">
-            <p>Like <code>getPages()</code>, but returns only the files under the <code>partial/</code> subdirectory
-of the specified <em>dir</em>.</p>
-
+            Like `getPages()`, but returns only the files under the `partial/` subdirectory
+of the specified _dir_.
         </div>
 
             <div class="params">
@@ -1073,8 +1054,7 @@ of the specified <em>dir</em>.</p>
 
 
                         <div class="param-description">
-                            <p>Directory path.</p>
-
+                            Directory path.
                         </div>
 
                     </li>
@@ -1126,7 +1106,7 @@ of the specified <em>dir</em>.</p>
                     <p>Provided by the <a href="../modules/utils.html" class="module-name">utils</a> module.</p>
                 <p>
                     Defined in
-        <a href="../files/lib_utils.js.html#l225"><code>lib&#x2F;utils.js:225</code></a>
+        <a href="../files/lib_utils.js.md#l225">`lib/utils.js:225`</a>
         </p>
 
 
@@ -1136,8 +1116,7 @@ of the specified <em>dir</em>.</p>
     <div class="extended-detail">
 
         <div class="description">
-            <p>Mix/merge/munge data into the template.</p>
-
+            Mix/merge/munge data into the template.
         </div>
 
             <div class="params">
@@ -1150,8 +1129,7 @@ of the specified <em>dir</em>.</p>
 
 
                         <div class="param-description">
-                            <p>The starting directory</p>
-
+                            The starting directory
                         </div>
 
                     </li>
@@ -1161,8 +1139,7 @@ of the specified <em>dir</em>.</p>
 
 
                         <div class="param-description">
-                            <p>The <code>options</code> for the meta data.</p>
-
+                            The `options` for the meta data.
                         </div>
 
                     </li>
@@ -1172,8 +1149,7 @@ of the specified <em>dir</em>.</p>
 
 
                         <div class="param-description">
-                            <p>The callback to excecute when complete</p>
-
+                            The callback to excecute when complete
                         </div>
 
                             <ul class="params-list">
@@ -1231,7 +1207,7 @@ of the specified <em>dir</em>.</p>
                     <p>Provided by the <a href="../modules/utils.html" class="module-name">utils</a> module.</p>
                 <p>
                     Defined in
-        <a href="../files/lib_utils.js.html#l303"><code>lib&#x2F;utils.js:303</code></a>
+        <a href="../files/lib_utils.js.md#l303">`lib/utils.js:303`</a>
         </p>
 
 
@@ -1241,9 +1217,8 @@ of the specified <em>dir</em>.</p>
     <div class="extended-detail">
 
         <div class="description">
-            <p>Takes a type string and converts it to a "First letter upper cased" type.
-e.g. <code>(string -> String, object -> Object)</code></p>
-
+            Takes a type string and converts it to a "First letter upper cased" type.
+e.g. `(string -> String, object -> Object)`
         </div>
 
             <div class="params">
@@ -1256,8 +1231,7 @@ e.g. <code>(string -> String, object -> Object)</code></p>
 
 
                         <div class="param-description">
-                            <p>The type string to convert</p>
-
+                            The type string to convert
                         </div>
 
                     </li>
@@ -1306,7 +1280,7 @@ e.g. <code>(string -> String, object -> Object)</code></p>
                     <p>Provided by the <a href="../modules/utils.html" class="module-name">utils</a> module.</p>
                 <p>
                     Defined in
-        <a href="../files/lib_utils.js.html#l326"><code>lib&#x2F;utils.js:326</code></a>
+        <a href="../files/lib_utils.js.md#l326">`lib/utils.js:326`</a>
         </p>
 
 
@@ -1316,11 +1290,10 @@ e.g. <code>(string -> String, object -> Object)</code></p>
     <div class="extended-detail">
 
         <div class="description">
-            <p>Produces a normalized web path by joining all the parts and normalizing the
+            Produces a normalized web path by joining all the parts and normalizing the
 filesystem-like path into web compatible url.
 Supports relative and absolute paths.
-Courtesy of <a href="https://github.com/yahoo/mojito/">Mojito's utils</a></p>
-
+Courtesy of [Mojito's utils](https://github.com/yahoo/mojito/)
         </div>
 
             <div class="params">
@@ -1333,8 +1306,7 @@ Courtesy of <a href="https://github.com/yahoo/mojito/">Mojito's utils</a></p>
 
 
                         <div class="param-description">
-                            <p>the list of parts to be joined and normalized</p>
-
+                            the list of parts to be joined and normalized
                         </div>
 
                     </li>
@@ -1386,7 +1358,7 @@ Courtesy of <a href="https://github.com/yahoo/mojito/">Mojito's utils</a></p>
                     <p>Provided by the <a href="../modules/utils.html" class="module-name">utils</a> module.</p>
                 <p>
                     Defined in
-        <a href="../files/lib_utils.js.html#l343"><code>lib&#x2F;utils.js:343</code></a>
+        <a href="../files/lib_utils.js.md#l343">`lib/utils.js:343`</a>
         </p>
 
 
@@ -1396,8 +1368,7 @@ Courtesy of <a href="https://github.com/yahoo/mojito/">Mojito's utils</a></p>
     <div class="extended-detail">
 
         <div class="description">
-            <p>Localize the string via current Y.options</p>
-
+            Localize the string via current Y.options
         </div>
 
             <div class="params">
@@ -1410,8 +1381,7 @@ Courtesy of <a href="https://github.com/yahoo/mojito/">Mojito's utils</a></p>
 
 
                         <div class="param-description">
-                            <p>the original string that you want to input</p>
-
+                            the original string that you want to input
                         </div>
 
                     </li>
@@ -1421,8 +1391,7 @@ Courtesy of <a href="https://github.com/yahoo/mojito/">Mojito's utils</a></p>
 
 
                         <div class="param-description">
-                            <p>the language</p>
-
+                            the language
                         </div>
 
                     </li>
@@ -1436,7 +1405,7 @@ Courtesy of <a href="https://github.com/yahoo/mojito/">Mojito's utils</a></p>
                         <span>type:</span>
                         <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
                     <p>
-                        localized string from the param <code>str</code>
+                        localized string from the param `str`
                     </p>
                 </div>
             </div>
@@ -1471,7 +1440,7 @@ Courtesy of <a href="https://github.com/yahoo/mojito/">Mojito's utils</a></p>
                     <p>Provided by the <a href="../modules/utils.html" class="module-name">utils</a> module.</p>
                 <p>
                     Defined in
-        <a href="../files/lib_utils.js.html#l383"><code>lib&#x2F;utils.js:383</code></a>
+        <a href="../files/lib_utils.js.md#l383">`lib/utils.js:383`</a>
         </p>
 
 
@@ -1481,8 +1450,7 @@ Courtesy of <a href="https://github.com/yahoo/mojito/">Mojito's utils</a></p>
     <div class="extended-detail">
 
         <div class="description">
-            <p>convert string to markdown link</p>
-
+            convert string to markdown link
         </div>
 
             <div class="params">
@@ -1495,8 +1463,7 @@ Courtesy of <a href="https://github.com/yahoo/mojito/">Mojito's utils</a></p>
 
 
                         <div class="param-description">
-                            <p>The original string that you want to input</p>
-
+                            The original string that you want to input
                         </div>
 
                     </li>
@@ -1510,7 +1477,7 @@ Courtesy of <a href="https://github.com/yahoo/mojito/">Mojito's utils</a></p>
                         <span>type:</span>
                         <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
                     <p>
-                        marked string from the param <code>str</code>
+                        marked string from the param `str`
                     </p>
                 </div>
             </div>
@@ -1545,7 +1512,7 @@ Courtesy of <a href="https://github.com/yahoo/mojito/">Mojito's utils</a></p>
                     <p>Provided by the <a href="../modules/utils.html" class="module-name">utils</a> module.</p>
                 <p>
                     Defined in
-        <a href="../files/lib_utils.js.html#l398"><code>lib&#x2F;utils.js:398</code></a>
+        <a href="../files/lib_utils.js.md#l398">`lib/utils.js:398`</a>
         </p>
 
 
@@ -1555,8 +1522,7 @@ Courtesy of <a href="https://github.com/yahoo/mojito/">Mojito's utils</a></p>
     <div class="extended-detail">
 
         <div class="description">
-            <p>build file tree object</p>
-
+            build file tree object
         </div>
 
             <div class="params">

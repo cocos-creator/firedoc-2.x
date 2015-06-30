@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Firedoc</title>
+    <title>DocParser</title>
     <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
     <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
@@ -87,23 +87,18 @@
 </div>
 
         <div id="docs-main" class="apidocs">
-            <div class="content container"><h1>Firedoc Class</h1>
+            <div class="content container"><h1>DocParser Class</h1>
 <div class="box meta">
 
 
-        <div class="foundat">
-            Defined in: <a href="../files/lib_firedoc.js.html#l23"><code>lib&#x2F;firedoc.js:23</code></a>
-        </div>
 
-            Module: <a href="../modules/utils.html">utils</a><br>
-            Parent Module: <a href="../modules/firedoc.html">firedoc</a>
+            Module: <a href="../modules/firedoc.html">firedoc</a>
 
 </div>
 
 
 <div class="box intro">
-    <p><p>Firedoc main class</p></p>
-
+    
 </div>
 
 <!-- Class member index -->
@@ -134,17 +129,17 @@
 <div class="index-section properties">
     <h3>Properties</h3>
     <ul class="index-list properties">
-        <li class="index-item property private">
-            <a href="#property_filecount">filecount</a>
+        <li class="index-item property">
+            <a href="#property_IGNORE_TAGLIST">IGNORE_TAGLIST</a>
         </li>
-        <li class="index-item property private">
-            <a href="#property_filemap">filemap</a>
+        <li class="index-item property">
+            <a href="#property_CORRECTIONS">CORRECTIONS</a>
         </li>
-        <li class="index-item property private">
-            <a href="#property_dirmap">dirmap</a>
+        <li class="index-item property">
+            <a href="#property_TAGLIST">TAGLIST</a>
         </li>
-        <li class="index-item property private">
-            <a href="#property_options">options</a>
+        <li class="index-item property">
+            <a href="#property_DIGESTERS">DIGESTERS</a>
         </li>
     </ul>
 </div>
@@ -155,10 +150,13 @@
     <ul class="index-list methods">
 
         <li class="index-item method private">
-            <a href="#method_walk">walk</a>
+            <a href="#method_implodeString">implodeString</a>
         </li>
-        <li class="index-item method">
-            <a href="#method_build">build</a>
+        <li class="index-item method private">
+            <a href="#method_implodeString">implodeString</a>
+        </li>
+        <li class="index-item method private">
+            <a href="#method_stringlog">stringlog</a>
         </li>
     </ul>
 </div>
@@ -171,13 +169,12 @@
 
     <div class="properties-detail">
         <h2>Properties</h2>
-        <a name="property_filecount" class="anchor-link"></a>
-<div class="property item private">
-    <h3 class="name"><code>filecount</code>
-    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+        <a name="property_IGNORE_TAGLIST" class="anchor-link"></a>
+<div class="property item">
+    <h3 class="name"><code>IGNORE_TAGLIST</code>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a></span>
 
 
-        <span class="flag private">private</span>
 
 
 
@@ -186,27 +183,26 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_firedoc.js.html#l35"><code>lib&#x2F;firedoc.js:35</code></a>
+        <a href="../files/lib_ast.js.md#l31">`lib/ast.js:31`</a>
         </p>
 
 
     </div>
 
     <div class="extended-detail">
-        <div class="description"><p>Holds the number of files that we are processing.</p>
-</div>
+        <div class="description">A list of ignored tags. These tags should be ignored because there is
+likely to be used for purposes other than JSDoc tags in JavaScript comments.</div>
 
 
 
     </div>
 </div>
-<a name="property_filemap" class="anchor-link"></a>
-<div class="property item private">
-    <h3 class="name"><code>filemap</code>
+<a name="property_CORRECTIONS" class="anchor-link"></a>
+<div class="property item">
+    <h3 class="name"><code>CORRECTIONS</code>
     <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
 
 
-        <span class="flag private">private</span>
 
 
 
@@ -215,27 +211,54 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_firedoc.js.html#l42"><code>lib&#x2F;firedoc.js:42</code></a>
+        <a href="../files/lib_ast.js.md#l41">`lib/ast.js:41`</a>
         </p>
 
 
     </div>
 
     <div class="extended-detail">
-        <div class="description"><p>Holder for the list of files we are processing.</p>
-</div>
+        <div class="description">Common errors will get scrubbed instead of being ignored.</div>
 
 
 
     </div>
 </div>
-<a name="property_dirmap" class="anchor-link"></a>
-<div class="property item private">
-    <h3 class="name"><code>dirmap</code>
+<a name="property_TAGLIST" class="anchor-link"></a>
+<div class="property item">
+    <h3 class="name"><code>TAGLIST</code>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a></span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                    Defined in
+        <a href="../files/lib_ast.js.md#l78">`lib/ast.js:78`</a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+        <div class="description">A list of known tags.  This populates a member variable
+during initialization, and will be updated if additional
+digesters are added.</div>
+
+
+
+    </div>
+</div>
+<a name="property_DIGESTERS" class="anchor-link"></a>
+<div class="property item">
+    <h3 class="name"><code>DIGESTERS</code>
     <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
 
 
-        <span class="flag private">private</span>
 
 
 
@@ -244,44 +267,17 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_firedoc.js.html#l49"><code>lib&#x2F;firedoc.js:49</code></a>
+        <a href="../files/lib_ast.js.md#l529">`lib/ast.js:529`</a>
         </p>
 
 
     </div>
 
     <div class="extended-detail">
-        <div class="description"><p>Holder for the list of directories we are processing.</p>
-</div>
-
-
-
-    </div>
-</div>
-<a name="property_options" class="anchor-link"></a>
-<div class="property item private">
-    <h3 class="name"><code>options</code>
-    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
-
-
-        <span class="flag private">private</span>
-
-
-
-    </h3>
-
-    <div class="meta">
-                <p>
-                    Defined in
-        <a href="../files/lib_firedoc.js.html#l57"><code>lib&#x2F;firedoc.js:57</code></a>
-        </p>
-
-
-    </div>
-
-    <div class="extended-detail">
-        <div class="description"><p>Internal holder for configuration options.</p>
-</div>
+        <div class="description">A map of the default tag processors, keyed by the
+tag name.  Multiple tags can use the same digester
+by supplying the string name that points to the
+implementation rather than a function.</div>
 
 
 
@@ -297,12 +293,21 @@
 
     <div class="methods-detail">
         <h2>Methods</h2>
-        <a name="method_walk" class="anchor-link"></a>
+        <a name="method_implodeString" class="anchor-link"></a>
 <div class="method item private">
-    <h3 class="name"><code>walk</code>
+    <h3 class="name"><code>implodeString</code>
 
-        <span class="paren">()</span>
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>str</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
 
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+        </span>
 
 
         <span class="flag private">private</span>
@@ -316,7 +321,7 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_firedoc.js.html#l107"><code>lib&#x2F;firedoc.js:107</code></a>
+        <a href="../files/lib_ast.js.md#l1066">`lib/ast.js:1066`</a>
         </p>
 
 
@@ -326,28 +331,58 @@
     <div class="extended-detail">
 
         <div class="description">
-            <p>Walks the paths and parses the directory contents</p>
-
+            Flatten a string, remove all line breaks and replace them with a token
         </div>
 
+            <div class="params">
+                <h4>parameters:</h4>
 
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">str</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+                        <div class="param-description">
+                            The string to operate on
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>returns:</h4>
+
+                <div class="returns-description">
+                        <span>type:</span>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                    <p>
+                        The modified string
+                    </p>
+                </div>
+            </div>
 
     </div>
 </div>
-<a name="method_build" class="anchor-link"></a>
-<div class="method item">
-    <h3 class="name"><code>build</code>
+<a name="method_implodeString" class="anchor-link"></a>
+<div class="method item private">
+    <h3 class="name"><code>implodeString</code>
 
         <div class="args">
             <span class="paren">(</span><ul class="args-list inline commas">
                 <li class="arg">
-                        <code>callback</code>
+                        <code>str</code>
                 </li>
             </ul><span class="paren">)</span>
         </div>
 
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+        </span>
 
 
+        <span class="flag private">private</span>
 
 
 
@@ -358,7 +393,7 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_firedoc.js.html#l145"><code>lib&#x2F;firedoc.js:145</code></a>
+        <a href="../files/lib_ast.js.md#l1077">`lib/ast.js:1077`</a>
         </p>
 
 
@@ -368,8 +403,7 @@
     <div class="extended-detail">
 
         <div class="description">
-            <p>Process the config, walk the file tree and write out the JSON data.</p>
-
+            Un-flatten a string, replace tokens injected with `implodeString`
         </div>
 
             <div class="params">
@@ -377,18 +411,103 @@
 
                 <ul class="params-list">
                     <li class="param">
-                            <code class="param-name">callback</code>
-                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a></span>
+                            <code class="param-name">str</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
 
 
                         <div class="param-description">
-                            
+                            The string to operate on
                         </div>
 
                     </li>
                 </ul>
             </div>
 
+            <div class="returns">
+                <h4>returns:</h4>
+
+                <div class="returns-description">
+                        <span>type:</span>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                    <p>
+                        The modified string
+                    </p>
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_stringlog" class="anchor-link"></a>
+<div class="method item private">
+    <h3 class="name"><code>stringlog</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>data</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+        </span>
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                    <p>Provided by the <a href="../modules/utils.html" class="module-name">utils</a> module.</p>
+                <p>
+                    Defined in
+        <a href="../files/lib_utils.js.md#l434">`lib/utils.js:434`</a>
+        </p>
+
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            Parses the JSON data and formats it into a nice log string for
+filename and line number: `/file/name.js:123`
+        </div>
+
+            <div class="params">
+                <h4>parameters:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">data</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+                        <div class="param-description">
+                            The data block from the parser
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>returns:</h4>
+
+                <div class="returns-description">
+                        <span>type:</span>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                    <p>
+                        The formatted string.
+                    </p>
+                </div>
+            </div>
 
     </div>
 </div>

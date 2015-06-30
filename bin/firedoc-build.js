@@ -7,7 +7,7 @@ var Firedoc = require('../lib/firedoc').Firedoc;
 program
   .option('-l --lint', 'lint the parser')
   .option('--parse-only', 'only parse')
-  .option('-m --markdown', 'generate markdown docs')
+  .option('-M --markdown', 'generate markdown docs')
   .option('-t --theme <dir>', 'specify theme directory')
   .option('-d --dest <dir>', 'the destination folder to build')
   .option('-L --lang <language>', 'the i18n language')

@@ -92,7 +92,7 @@
 
 
         <div class="foundat">
-            Defined in: <a href="../files/lib_context.js.html#l13"><code>lib&#x2F;context.js:13</code></a>
+            Defined in: <a href="../files/lib_context.js.md#l13">`lib/context.js:13`</a>
         </div>
 
             Module: <a href="../modules/firedoc.html">firedoc</a>
@@ -101,8 +101,7 @@
 
 
 <div class="box intro">
-    <p>The ParserContext</p>
-
+    The ParserContext
 </div>
 
 <!-- Class member index -->
@@ -187,15 +186,14 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_context.js.html#l19"><code>lib&#x2F;context.js:19</code></a>
+        <a href="../files/lib_context.js.md#l19">`lib/context.js:19`</a>
         </p>
 
 
     </div>
 
     <div class="extended-detail">
-        <div class="description"><p>The file</p>
-</div>
+        <div class="description">The file</div>
 
 
 
@@ -215,7 +213,7 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_context.js.html#l40"><code>lib&#x2F;context.js:40</code></a>
+        <a href="../files/lib_context.js.md#l40">`lib/context.js:40`</a>
         </p>
 
 
@@ -242,7 +240,7 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_context.js.html#l70"><code>lib&#x2F;context.js:70</code></a>
+        <a href="../files/lib_context.js.md#l70">`lib/context.js:70`</a>
         </p>
 
 
@@ -269,7 +267,7 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_context.js.html#l114"><code>lib&#x2F;context.js:114</code></a>
+        <a href="../files/lib_context.js.md#l114">`lib/context.js:114`</a>
         </p>
 
 
@@ -296,7 +294,7 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_context.js.html#l146"><code>lib&#x2F;context.js:146</code></a>
+        <a href="../files/lib_context.js.md#l146">`lib/context.js:146`</a>
         </p>
 
 
@@ -323,7 +321,7 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_context.js.html#l172"><code>lib&#x2F;context.js:172</code></a>
+        <a href="../files/lib_context.js.md#l172">`lib/context.js:172`</a>
         </p>
 
 
@@ -364,7 +362,7 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_context.js.html#l177"><code>lib&#x2F;context.js:177</code></a>
+        <a href="../files/lib_context.js.md#l177">`lib/context.js:177`</a>
         </p>
 
 
@@ -374,8 +372,7 @@
     <div class="extended-detail">
 
         <div class="description">
-            <p>reset the context</p>
-
+            reset the context
         </div>
 
 

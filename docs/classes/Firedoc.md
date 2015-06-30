@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>ParserContext</title>
+    <title>Firedoc</title>
     <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
     <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
@@ -87,22 +87,22 @@
 </div>
 
         <div id="docs-main" class="apidocs">
-            <div class="content container"><h1>ParserContext Class</h1>
+            <div class="content container"><h1>Firedoc Class</h1>
 <div class="box meta">
 
 
         <div class="foundat">
-            Defined in: <a href="../files/lib_context.js.html#l13"><code>lib&#x2F;context.js:13</code></a>
+            Defined in: <a href="../files/lib_firedoc.js.md#l23">`lib/firedoc.js:23`</a>
         </div>
 
-            Module: <a href="../modules/firedoc.html">firedoc</a>
+            Module: <a href="../modules/utils.html">utils</a><br>
+            Parent Module: <a href="../modules/firedoc.html">firedoc</a>
 
 </div>
 
 
 <div class="box intro">
-    <p>The ParserContext</p>
-
+    Firedoc main class
 </div>
 
 <!-- Class member index -->
@@ -133,23 +133,17 @@
 <div class="index-section properties">
     <h3>Properties</h3>
     <ul class="index-list properties">
-        <li class="index-item property">
-            <a href="#property_file">file</a>
+        <li class="index-item property private">
+            <a href="#property_filecount">filecount</a>
         </li>
-        <li class="index-item property">
-            <a href="#property_mainModule">mainModule</a>
+        <li class="index-item property private">
+            <a href="#property_filemap">filemap</a>
         </li>
-        <li class="index-item property">
-            <a href="#property_module">module</a>
+        <li class="index-item property private">
+            <a href="#property_dirmap">dirmap</a>
         </li>
-        <li class="index-item property">
-            <a href="#property_process">process</a>
-        </li>
-        <li class="index-item property">
-            <a href="#property_submodule">submodule</a>
-        </li>
-        <li class="index-item property">
-            <a href="#property_block">block</a>
+        <li class="index-item property private">
+            <a href="#property_options">options</a>
         </li>
     </ul>
 </div>
@@ -159,8 +153,11 @@
     <h3>Methods</h3>
     <ul class="index-list methods">
 
+        <li class="index-item method private">
+            <a href="#method_walk">walk</a>
+        </li>
         <li class="index-item method">
-            <a href="#method_reset">reset</a>
+            <a href="#method_build">build</a>
         </li>
     </ul>
 </div>
@@ -173,40 +170,13 @@
 
     <div class="properties-detail">
         <h2>Properties</h2>
-        <a name="property_file" class="anchor-link"></a>
-<div class="property item">
-    <h3 class="name"><code>file</code>
-    <span class="type">Any</span>
+        <a name="property_filecount" class="anchor-link"></a>
+<div class="property item private">
+    <h3 class="name"><code>filecount</code>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
 
 
-
-
-
-    </h3>
-
-    <div class="meta">
-                <p>
-                    Defined in
-        <a href="../files/lib_context.js.html#l19"><code>lib&#x2F;context.js:19</code></a>
-        </p>
-
-
-    </div>
-
-    <div class="extended-detail">
-        <div class="description"><p>The file</p>
-</div>
-
-
-
-    </div>
-</div>
-<a name="property_mainModule" class="anchor-link"></a>
-<div class="property item">
-    <h3 class="name"><code>mainModule</code>
-    <span class="type">Any</span>
-
-
+        <span class="flag private">private</span>
 
 
 
@@ -215,25 +185,26 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_context.js.html#l40"><code>lib&#x2F;context.js:40</code></a>
+        <a href="../files/lib_firedoc.js.md#l35">`lib/firedoc.js:35`</a>
         </p>
 
 
     </div>
 
     <div class="extended-detail">
-        <div class="description"></div>
+        <div class="description">Holds the number of files that we are processing.</div>
 
 
 
     </div>
 </div>
-<a name="property_module" class="anchor-link"></a>
-<div class="property item">
-    <h3 class="name"><code>module</code>
-    <span class="type">Any</span>
+<a name="property_filemap" class="anchor-link"></a>
+<div class="property item private">
+    <h3 class="name"><code>filemap</code>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
 
 
+        <span class="flag private">private</span>
 
 
 
@@ -242,25 +213,26 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_context.js.html#l70"><code>lib&#x2F;context.js:70</code></a>
+        <a href="../files/lib_firedoc.js.md#l42">`lib/firedoc.js:42`</a>
         </p>
 
 
     </div>
 
     <div class="extended-detail">
-        <div class="description"></div>
+        <div class="description">Holder for the list of files we are processing.</div>
 
 
 
     </div>
 </div>
-<a name="property_process" class="anchor-link"></a>
-<div class="property item">
-    <h3 class="name"><code>process</code>
-    <span class="type">Any</span>
+<a name="property_dirmap" class="anchor-link"></a>
+<div class="property item private">
+    <h3 class="name"><code>dirmap</code>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
 
 
+        <span class="flag private">private</span>
 
 
 
@@ -269,25 +241,26 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_context.js.html#l114"><code>lib&#x2F;context.js:114</code></a>
+        <a href="../files/lib_firedoc.js.md#l49">`lib/firedoc.js:49`</a>
         </p>
 
 
     </div>
 
     <div class="extended-detail">
-        <div class="description"></div>
+        <div class="description">Holder for the list of directories we are processing.</div>
 
 
 
     </div>
 </div>
-<a name="property_submodule" class="anchor-link"></a>
-<div class="property item">
-    <h3 class="name"><code>submodule</code>
-    <span class="type">Any</span>
+<a name="property_options" class="anchor-link"></a>
+<div class="property item private">
+    <h3 class="name"><code>options</code>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
 
 
+        <span class="flag private">private</span>
 
 
 
@@ -296,41 +269,14 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_context.js.html#l146"><code>lib&#x2F;context.js:146</code></a>
+        <a href="../files/lib_firedoc.js.md#l57">`lib/firedoc.js:57`</a>
         </p>
 
 
     </div>
 
     <div class="extended-detail">
-        <div class="description"></div>
-
-
-
-    </div>
-</div>
-<a name="property_block" class="anchor-link"></a>
-<div class="property item">
-    <h3 class="name"><code>block</code>
-    <span class="type">Any</span>
-
-
-
-
-
-    </h3>
-
-    <div class="meta">
-                <p>
-                    Defined in
-        <a href="../files/lib_context.js.html#l172"><code>lib&#x2F;context.js:172</code></a>
-        </p>
-
-
-    </div>
-
-    <div class="extended-detail">
-        <div class="description"></div>
+        <div class="description">Internal holder for configuration options.</div>
 
 
 
@@ -346,11 +292,53 @@
 
     <div class="methods-detail">
         <h2>Methods</h2>
-        <a name="method_reset" class="anchor-link"></a>
-<div class="method item">
-    <h3 class="name"><code>reset</code>
+        <a name="method_walk" class="anchor-link"></a>
+<div class="method item private">
+    <h3 class="name"><code>walk</code>
 
         <span class="paren">()</span>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                    Defined in
+        <a href="../files/lib_firedoc.js.md#l108">`lib/firedoc.js:108`</a>
+        </p>
+
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            Walks the paths and parses the directory contents
+        </div>
+
+
+
+    </div>
+</div>
+<a name="method_build" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>build</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>callback</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
 
 
 
@@ -364,7 +352,7 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_context.js.html#l177"><code>lib&#x2F;context.js:177</code></a>
+        <a href="../files/lib_firedoc.js.md#l146">`lib/firedoc.js:146`</a>
         </p>
 
 
@@ -374,10 +362,25 @@
     <div class="extended-detail">
 
         <div class="description">
-            <p>reset the context</p>
-
+            Process the config, walk the file tree and write out the JSON data.
         </div>
 
+            <div class="params">
+                <h4>parameters:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">callback</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a></span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
 
 
     </div>

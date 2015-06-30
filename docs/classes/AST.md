@@ -92,7 +92,7 @@
 
 
         <div class="foundat">
-            Defined in: <a href="../files/lib_ast.js.html#l164"><code>lib&#x2F;ast.js:164</code></a>
+            Defined in: <a href="../files/lib_ast.js.md#l164">`lib/ast.js:164`</a>
         </div>
 
             Module: <a href="../modules/firedoc.html">firedoc</a>
@@ -101,8 +101,7 @@
 
 
 <div class="box intro">
-    <p>The AST(Abstract syntax tree) of the comment</p>
-
+    The AST(Abstract syntax tree) of the comment
 </div>
 
 <!-- Class member index -->
@@ -220,15 +219,14 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_ast.js.html#l171"><code>lib&#x2F;ast.js:171</code></a>
+        <a href="../files/lib_ast.js.md#l171">`lib/ast.js:171`</a>
         </p>
 
 
     </div>
 
     <div class="extended-detail">
-        <div class="description"><p>About the project</p>
-</div>
+        <div class="description">About the project</div>
 
 
 
@@ -248,15 +246,14 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_ast.js.html#l176"><code>lib&#x2F;ast.js:176</code></a>
+        <a href="../files/lib_ast.js.md#l176">`lib/ast.js:176`</a>
         </p>
 
 
     </div>
 
     <div class="extended-detail">
-        <div class="description"><p>The files</p>
-</div>
+        <div class="description">The files</div>
 
 
 
@@ -276,15 +273,14 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_ast.js.html#l181"><code>lib&#x2F;ast.js:181</code></a>
+        <a href="../files/lib_ast.js.md#l181">`lib/ast.js:181`</a>
         </p>
 
 
     </div>
 
     <div class="extended-detail">
-        <div class="description"><p>The source codes</p>
-</div>
+        <div class="description">The source codes</div>
 
 
 
@@ -304,15 +300,14 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_ast.js.html#l186"><code>lib&#x2F;ast.js:186</code></a>
+        <a href="../files/lib_ast.js.md#l186">`lib/ast.js:186`</a>
         </p>
 
 
     </div>
 
     <div class="extended-detail">
-        <div class="description"><p>The modules</p>
-</div>
+        <div class="description">The modules</div>
 
 
 
@@ -332,15 +327,14 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_ast.js.html#l191"><code>lib&#x2F;ast.js:191</code></a>
+        <a href="../files/lib_ast.js.md#l191">`lib/ast.js:191`</a>
         </p>
 
 
     </div>
 
     <div class="extended-detail">
-        <div class="description"><p>The classes</p>
-</div>
+        <div class="description">The classes</div>
 
 
 
@@ -360,15 +354,14 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_ast.js.html#l196"><code>lib&#x2F;ast.js:196</code></a>
+        <a href="../files/lib_ast.js.md#l196">`lib/ast.js:196`</a>
         </p>
 
 
     </div>
 
     <div class="extended-detail">
-        <div class="description"><p>The members</p>
-</div>
+        <div class="description">The members</div>
 
 
 
@@ -388,15 +381,14 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_ast.js.html#l201"><code>lib&#x2F;ast.js:201</code></a>
+        <a href="../files/lib_ast.js.md#l201">`lib/ast.js:201`</a>
         </p>
 
 
     </div>
 
     <div class="extended-detail">
-        <div class="description"><p>The inherited members</p>
-</div>
+        <div class="description">The inherited members</div>
 
 
 
@@ -416,15 +408,14 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_ast.js.html#l206"><code>lib&#x2F;ast.js:206</code></a>
+        <a href="../files/lib_ast.js.md#l206">`lib/ast.js:206`</a>
         </p>
 
 
     </div>
 
     <div class="extended-detail">
-        <div class="description"><p>The namespaces map object</p>
-</div>
+        <div class="description">The namespaces map object</div>
 
 
 
@@ -444,15 +435,14 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_ast.js.html#l211"><code>lib&#x2F;ast.js:211</code></a>
+        <a href="../files/lib_ast.js.md#l211">`lib/ast.js:211`</a>
         </p>
 
 
     </div>
 
     <div class="extended-detail">
-        <div class="description"><p>The comments map object</p>
-</div>
+        <div class="description">The comments map object</div>
 
 
 
@@ -472,15 +462,14 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_ast.js.html#l216"><code>lib&#x2F;ast.js:216</code></a>
+        <a href="../files/lib_ast.js.md#l216">`lib/ast.js:216`</a>
         </p>
 
 
     </div>
 
     <div class="extended-detail">
-        <div class="description"><p>The syntax type</p>
-</div>
+        <div class="description">The syntax type</div>
 
 
 
@@ -500,15 +489,14 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_ast.js.html#l221"><code>lib&#x2F;ast.js:221</code></a>
+        <a href="../files/lib_ast.js.md#l221">`lib/ast.js:221`</a>
         </p>
 
 
     </div>
 
     <div class="extended-detail">
-        <div class="description"><p>The context object</p>
-</div>
+        <div class="description">The context object</div>
 
 
 
@@ -557,7 +545,7 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_ast.js.html#l231"><code>lib&#x2F;ast.js:231</code></a>
+        <a href="../files/lib_ast.js.md#l231">`lib/ast.js:231`</a>
         </p>
 
 
@@ -567,8 +555,7 @@
     <div class="extended-detail">
 
         <div class="description">
-            <p>Create a AST object</p>
-
+            Create a AST object
         </div>
 
             <div class="params">
@@ -581,8 +568,7 @@
 
 
                         <div class="param-description">
-                            <p>The files</p>
-
+                            The files
                         </div>
 
                     </li>
@@ -592,8 +578,7 @@
 
 
                         <div class="param-description">
-                            <p>The directorys</p>
-
+                            The directorys
                         </div>
 
                     </li>
@@ -604,8 +589,7 @@
 
 
                         <div class="param-description">
-                            <p>The syntax type: <code>coffee</code> or <code>js</code></p>
-
+                            The syntax type: `coffee` or `js`
                         </div>
 
                     </li>
@@ -644,7 +628,7 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_ast.js.html#l250"><code>lib&#x2F;ast.js:250</code></a>
+        <a href="../files/lib_ast.js.md#l250">`lib/ast.js:250`</a>
         </p>
 
 
@@ -654,8 +638,7 @@
     <div class="extended-detail">
 
         <div class="description">
-            <p>Reset the AST instance</p>
-
+            Reset the AST instance
         </div>
 
 
@@ -695,7 +678,7 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_ast.js.html#l273"><code>lib&#x2F;ast.js:273</code></a>
+        <a href="../files/lib_ast.js.md#l273">`lib/ast.js:273`</a>
         </p>
 
 
@@ -783,7 +766,7 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_ast.js.html#l343"><code>lib&#x2F;ast.js:343</code></a>
+        <a href="../files/lib_ast.js.md#l343">`lib/ast.js:343`</a>
         </p>
 
 
@@ -793,8 +776,7 @@
     <div class="extended-detail">
 
         <div class="description">
-            <p>Processes all the tags in a single comment block</p>
-
+            Processes all the tags in a single comment block
         </div>
 
             <div class="params">
@@ -807,8 +789,7 @@
 
 
                         <div class="param-description">
-                            <p>array of the tag/text pairs</p>
-
+                            array of the tag/text pairs
                         </div>
 
                     </li>
@@ -842,7 +823,7 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_ast.js.html#l416"><code>lib&#x2F;ast.js:416</code></a>
+        <a href="../files/lib_ast.js.md#l416">`lib/ast.js:416`</a>
         </p>
 
 
@@ -852,8 +833,7 @@
     <div class="extended-detail">
 
         <div class="description">
-            <p>Process tag</p>
-
+            Process tag
         </div>
 
             <div class="params">
@@ -923,7 +903,7 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_ast.js.html#l471"><code>lib&#x2F;ast.js:471</code></a>
+        <a href="../files/lib_ast.js.md#l471">`lib/ast.js:471`</a>
         </p>
 
 
@@ -933,13 +913,12 @@
     <div class="extended-detail">
 
         <div class="description">
-            <p>Accepts a map of filenames to file content.  Returns
+            Accepts a map of filenames to file content.  Returns
 a map of filenames to an array of API comment block
 text.  This expects the comment to start with / **
 on its own line, and end with * / on its own
 line.  Override this function to provide an
-alternative comment parser.</p>
-
+alternative comment parser.
         </div>
 
             <div class="params">
@@ -999,7 +978,7 @@ alternative comment parser.</p>
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_ast.js.html#l511"><code>lib&#x2F;ast.js:511</code></a>
+        <a href="../files/lib_ast.js.md#l511">`lib/ast.js:511`</a>
         </p>
 
 
@@ -1009,10 +988,9 @@ alternative comment parser.</p>
     <div class="extended-detail">
 
         <div class="description">
-            <p>Transforms a map of filenames to arrays of comment blocks into a
+            Transforms a map of filenames to arrays of comment blocks into a
 JSON structure that represents the entire processed API doc info
-and relationships between elements for the entire project.</p>
-
+and relationships between elements for the entire project.
         </div>
 
             <div class="params">
@@ -1025,8 +1003,7 @@ and relationships between elements for the entire project.</p>
 
 
                         <div class="param-description">
-                            <p>The hash of files and parsed comment blocks</p>
-
+                            The hash of files and parsed comment blocks
                         </div>
 
                     </li>

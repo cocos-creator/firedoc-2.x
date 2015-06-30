@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>ParserContext</title>
+    <title>firedoc</title>
     <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
     <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
@@ -87,25 +87,66 @@
 </div>
 
         <div id="docs-main" class="apidocs">
-            <div class="content container"><h1>ParserContext Class</h1>
-<div class="box meta">
+            <div class="content container"><h1>firedoc Module</h1>
+<div class="box clearfix meta">
 
 
         <div class="foundat">
-            Defined in: <a href="../files/lib_context.js.html#l13"><code>lib&#x2F;context.js:13</code></a>
+            Defined in: <a href="../files/lib_firedoc.js.md#l2">`lib/firedoc.js:2`</a>
         </div>
-
-            Module: <a href="../modules/firedoc.html">firedoc</a>
 
 </div>
 
 
 <div class="box intro">
-    <p>The ParserContext</p>
-
+    The firedoc module
 </div>
 
+
 <!-- Class member index -->
+<div class="index-section properties">
+    <h3>Class</h3>
+    <ul class="index-list properties">
+        <li class="index-item">
+            <a href="classes/DocParser.html">
+                DocParser
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="classes/AST.html">
+                AST
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="classes/BuilderContext.html">
+                BuilderContext
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="classes/ParserContext.html">
+                ParserContext
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="classes/DocView.html">
+                DocView
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="classes/Firedoc.html">
+                Firedoc
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="classes/Locals.html">
+                Locals
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+<h3>Direct Members</h3>
 
 
 <a name="index" class="anchor-link"></a>
@@ -134,22 +175,7 @@
     <h3>Properties</h3>
     <ul class="index-list properties">
         <li class="index-item property">
-            <a href="#property_file">file</a>
-        </li>
-        <li class="index-item property">
-            <a href="#property_mainModule">mainModule</a>
-        </li>
-        <li class="index-item property">
-            <a href="#property_module">module</a>
-        </li>
-        <li class="index-item property">
-            <a href="#property_process">process</a>
-        </li>
-        <li class="index-item property">
-            <a href="#property_submodule">submodule</a>
-        </li>
-        <li class="index-item property">
-            <a href="#property_block">block</a>
+            <a href="#property_NATIVES">NATIVES</a>
         </li>
     </ul>
 </div>
@@ -160,7 +186,7 @@
     <ul class="index-list methods">
 
         <li class="index-item method">
-            <a href="#method_reset">reset</a>
+            <a href="#method_parse">parse</a>
         </li>
     </ul>
 </div>
@@ -169,14 +195,14 @@
 
 
 </div>
-<div class="class-detail">
+<div class="yui3-g">
 
-    <div class="properties-detail">
-        <h2>Properties</h2>
-        <a name="property_file" class="anchor-link"></a>
+        <div class="yui3-u-1-2">
+            <h3>Properties:</h3>
+            <a name="property_NATIVES" class="anchor-link"></a>
 <div class="property item">
-    <h3 class="name"><code>file</code>
-    <span class="type">Any</span>
+    <h3 class="name"><code>NATIVES</code>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
 
 
 
@@ -185,173 +211,49 @@
     </h3>
 
     <div class="meta">
+                    <p>Provided by the <a href="../modules/firedoc.html" class="module-name">firedoc</a> module.</p>
                 <p>
                     Defined in
-        <a href="../files/lib_context.js.html#l19"><code>lib&#x2F;context.js:19</code></a>
+        <a href="../files/lib_builder.js.md#l24">`lib/builder.js:24`</a>
         </p>
 
 
     </div>
 
     <div class="extended-detail">
-        <div class="description"><p>The file</p>
-</div>
-
-
-
-    </div>
-</div>
-<a name="property_mainModule" class="anchor-link"></a>
-<div class="property item">
-    <h3 class="name"><code>mainModule</code>
-    <span class="type">Any</span>
-
-
-
-
-
-    </h3>
-
-    <div class="meta">
-                <p>
-                    Defined in
-        <a href="../files/lib_context.js.html#l40"><code>lib&#x2F;context.js:40</code></a>
-        </p>
-
-
-    </div>
-
-    <div class="extended-detail">
-        <div class="description"></div>
-
-
-
-    </div>
-</div>
-<a name="property_module" class="anchor-link"></a>
-<div class="property item">
-    <h3 class="name"><code>module</code>
-    <span class="type">Any</span>
-
-
-
-
-
-    </h3>
-
-    <div class="meta">
-                <p>
-                    Defined in
-        <a href="../files/lib_context.js.html#l70"><code>lib&#x2F;context.js:70</code></a>
-        </p>
-
-
-    </div>
-
-    <div class="extended-detail">
-        <div class="description"></div>
-
-
-
-    </div>
-</div>
-<a name="property_process" class="anchor-link"></a>
-<div class="property item">
-    <h3 class="name"><code>process</code>
-    <span class="type">Any</span>
-
-
-
-
-
-    </h3>
-
-    <div class="meta">
-                <p>
-                    Defined in
-        <a href="../files/lib_context.js.html#l114"><code>lib&#x2F;context.js:114</code></a>
-        </p>
-
-
-    </div>
-
-    <div class="extended-detail">
-        <div class="description"></div>
-
-
-
-    </div>
-</div>
-<a name="property_submodule" class="anchor-link"></a>
-<div class="property item">
-    <h3 class="name"><code>submodule</code>
-    <span class="type">Any</span>
-
-
-
-
-
-    </h3>
-
-    <div class="meta">
-                <p>
-                    Defined in
-        <a href="../files/lib_context.js.html#l146"><code>lib&#x2F;context.js:146</code></a>
-        </p>
-
-
-    </div>
-
-    <div class="extended-detail">
-        <div class="description"></div>
-
-
-
-    </div>
-</div>
-<a name="property_block" class="anchor-link"></a>
-<div class="property item">
-    <h3 class="name"><code>block</code>
-    <span class="type">Any</span>
-
-
-
-
-
-    </h3>
-
-    <div class="meta">
-                <p>
-                    Defined in
-        <a href="../files/lib_context.js.html#l172"><code>lib&#x2F;context.js:172</code></a>
-        </p>
-
-
-    </div>
-
-    <div class="extended-detail">
-        <div class="description"></div>
+        <div class="description">List of native types to cross link to MDN</div>
 
 
 
     </div>
 </div>
 
-        <div class="no-visible-items-message">
-            <p>There are no properties that match your current filter settings. You can change your filter settings in the index section on this page. <a href="#index" class="index-jump-link">index</a></p>
         </div>
-    </div>
 
-
-
-    <div class="methods-detail">
-        <h2>Methods</h2>
-        <a name="method_reset" class="anchor-link"></a>
+    
+        <div class="yui3-u-1-2">
+            <h3>Methods:</h3>
+            <a name="method_parse" class="anchor-link"></a>
 <div class="method item">
-    <h3 class="name"><code>reset</code>
+    <h3 class="name"><code>parse</code>
 
-        <span class="paren">()</span>
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>syntaxtype</code>
+                </li>
+                <li class="arg">
+                        <code>files</code>
+                </li>
+                <li class="arg">
+                        <code>dirs</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
 
+        <span class="returns-inline">
+            <span class="type"><a href="../classes/AST.html" class="crosslink">AST</a></span>
+        </span>
 
 
 
@@ -362,9 +264,10 @@
     </h3>
 
     <div class="meta">
+                    <p>Provided by the <a href="../modules/firedoc.html" class="module-name">firedoc</a> module.</p>
                 <p>
                     Defined in
-        <a href="../files/lib_context.js.html#l177"><code>lib&#x2F;context.js:177</code></a>
+        <a href="../files/lib_docparser.js.md#l10">`lib/docparser.js:10`</a>
         </p>
 
 
@@ -374,23 +277,65 @@
     <div class="extended-detail">
 
         <div class="description">
-            <p>reset the context</p>
-
+            parse and generate the `AST` object
         </div>
 
+            <div class="params">
+                <h4>parameters:</h4>
 
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">syntaxtype</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">files</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a></span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">dirs</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a></span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>returns:</h4>
+
+                <div class="returns-description">
+                        <span>type:</span>
+                        <span class="type"><a href="../classes/AST.html" class="crosslink">AST</a></span>
+                    <p>
+                        the ast object
+                    </p>
+                </div>
+            </div>
 
     </div>
 </div>
 
-        <div class="no-visible-items-message">
-            <p>There are no methods that match your current filter settings. You can change your filter settings in the index section on this page. <a href="#index" class="index-jump-link">index</a></p>
         </div>
-    </div>
 
 
 </div>
-
 </div>
         </div>
 

@@ -95,7 +95,7 @@
         </div>
 
         <div class="foundat">
-            Defined in: <a href="../files/lib_builder.js.html#l36"><code>lib&#x2F;builder.js:36</code></a>
+            Defined in: <a href="../files/lib_builder.js.md#l36">`lib/builder.js:36`</a>
         </div>
 
             Module: <a href="../modules/firedoc.html">firedoc</a>
@@ -104,8 +104,7 @@
 
 
 <div class="box intro">
-    <p>The Builder Context</p>
-
+    The Builder Context
 </div>
 
 <!-- Class member index -->
@@ -244,15 +243,14 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_builder.js.html#l43"><code>lib&#x2F;builder.js:43</code></a>
+        <a href="../files/lib_builder.js.md#l43">`lib/builder.js:43`</a>
         </p>
 
 
     </div>
 
     <div class="extended-detail">
-        <div class="description"><p>The AST object</p>
-</div>
+        <div class="description">The AST object</div>
 
 
 
@@ -272,15 +270,14 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_builder.js.html#l48"><code>lib&#x2F;builder.js:48</code></a>
+        <a href="../files/lib_builder.js.md#l48">`lib/builder.js:48`</a>
         </p>
 
 
     </div>
 
     <div class="extended-detail">
-        <div class="description"><p>The command options</p>
-</div>
+        <div class="description">The command options</div>
 
 
 
@@ -300,15 +297,14 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_builder.js.html#l53"><code>lib&#x2F;builder.js:53</code></a>
+        <a href="../files/lib_builder.js.md#l53">`lib/builder.js:53`</a>
         </p>
 
 
     </div>
 
     <div class="extended-detail">
-        <div class="description"><p>The view helpers function</p>
-</div>
+        <div class="description">The view helpers function</div>
 
 
 
@@ -328,15 +324,14 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_builder.js.html#l58"><code>lib&#x2F;builder.js:58</code></a>
+        <a href="../files/lib_builder.js.md#l58">`lib/builder.js:58`</a>
         </p>
 
 
     </div>
 
     <div class="extended-detail">
-        <div class="description"><p>cache the views</p>
-</div>
+        <div class="description">cache the views</div>
 
 
 
@@ -356,15 +351,14 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_builder.js.html#l63"><code>lib&#x2F;builder.js:63</code></a>
+        <a href="../files/lib_builder.js.md#l63">`lib/builder.js:63`</a>
         </p>
 
 
     </div>
 
     <div class="extended-detail">
-        <div class="description"><p>The template</p>
-</div>
+        <div class="description">The template</div>
 
 
 
@@ -384,15 +378,14 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_builder.js.html#l68"><code>lib&#x2F;builder.js:68</code></a>
+        <a href="../files/lib_builder.js.md#l68">`lib/builder.js:68`</a>
         </p>
 
 
     </div>
 
     <div class="extended-detail">
-        <div class="description"><p>records the files</p>
-</div>
+        <div class="description">records the files</div>
 
 
 
@@ -412,15 +405,14 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_builder.js.html#l73"><code>lib&#x2F;builder.js:73</code></a>
+        <a href="../files/lib_builder.js.md#l73">`lib/builder.js:73`</a>
         </p>
 
 
     </div>
 
     <div class="extended-detail">
-        <div class="description"><p>The ext name of current view</p>
-</div>
+        <div class="description">The ext name of current view</div>
 
 
 
@@ -457,7 +449,7 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_builder.js.html#l80"><code>lib&#x2F;builder.js:80</code></a>
+        <a href="../files/lib_builder.js.md#l80">`lib/builder.js:80`</a>
         </p>
 
 
@@ -467,8 +459,7 @@
     <div class="extended-detail">
 
         <div class="description">
-            <p>load the metadata from theme.json</p>
-
+            load the metadata from theme.json
         </div>
 
 
@@ -513,7 +504,7 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_builder.js.html#l106"><code>lib&#x2F;builder.js:106</code></a>
+        <a href="../files/lib_builder.js.md#l106">`lib/builder.js:106`</a>
         </p>
 
 
@@ -523,8 +514,7 @@
     <div class="extended-detail">
 
         <div class="description">
-            <p>Add helper</p>
-
+            Add helper
         </div>
 
             <div class="params">
@@ -537,8 +527,7 @@
 
 
                         <div class="param-description">
-                            <p>The helper name</p>
-
+                            The helper name
                         </div>
 
                     </li>
@@ -548,8 +537,7 @@
 
 
                         <div class="param-description">
-                            <p>The helper logic</p>
-
+                            The helper logic
                         </div>
 
                     </li>
@@ -583,7 +571,7 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_builder.js.html#l118"><code>lib&#x2F;builder.js:118</code></a>
+        <a href="../files/lib_builder.js.md#l118">`lib/builder.js:118`</a>
         </p>
 
 
@@ -593,8 +581,7 @@
     <div class="extended-detail">
 
         <div class="description">
-            <p>Add helpers</p>
-
+            Add helpers
         </div>
 
             <div class="params">
@@ -645,7 +632,7 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_builder.js.html#l130"><code>lib&#x2F;builder.js:130</code></a>
+        <a href="../files/lib_builder.js.md#l130">`lib/builder.js:130`</a>
         </p>
 
 
@@ -655,9 +642,8 @@
     <div class="extended-detail">
 
         <div class="description">
-            <p>Ported from <a href="https://github.com/rgrove/selleck">Selleck</a>, this handles <code>&#x60;</code>'s in fields
-that are not parsed by the <strong>Markdown</strong> parser.</p>
-
+            Ported from [Selleck](https://github.com/rgrove/selleck), this handles ```'s in fields
+that are not parsed by the **Markdown** parser.
         </div>
 
             <div class="params">
@@ -670,8 +656,7 @@ that are not parsed by the <strong>Markdown</strong> parser.</p>
 
 
                         <div class="param-description">
-                            <p>The HTML to parse</p>
-
+                            The HTML to parse
                         </div>
 
                     </li>
@@ -723,7 +708,7 @@ that are not parsed by the <strong>Markdown</strong> parser.</p>
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_builder.js.html#l148"><code>lib&#x2F;builder.js:148</code></a>
+        <a href="../files/lib_builder.js.md#l148">`lib/builder.js:148`</a>
         </p>
 
 
@@ -733,8 +718,7 @@ that are not parsed by the <strong>Markdown</strong> parser.</p>
     <div class="extended-detail">
 
         <div class="description">
-            <p>Parse the item to be cross linked and return an HREF linked to the item</p>
-
+            Parse the item to be cross linked and return an HREF linked to the item
         </div>
 
             <div class="params">
@@ -747,8 +731,7 @@ that are not parsed by the <strong>Markdown</strong> parser.</p>
 
 
                         <div class="param-description">
-                            <p>The item to crossLink</p>
-
+                            The item to crossLink
                         </div>
 
                     </li>
@@ -760,8 +743,7 @@ that are not parsed by the <strong>Markdown</strong> parser.</p>
 
 
                         <div class="param-description">
-                            <p>Do not wrap it in HTML</p>
-
+                            Do not wrap it in HTML
                         </div>
 
                     </li>
@@ -772,8 +754,7 @@ that are not parsed by the <strong>Markdown</strong> parser.</p>
 
 
                         <div class="param-description">
-                            <p>crossLink helper content</p>
-
+                            crossLink helper content
                         </div>
 
                     </li>
@@ -810,7 +791,7 @@ that are not parsed by the <strong>Markdown</strong> parser.</p>
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_builder.js.html#l256"><code>lib&#x2F;builder.js:256</code></a>
+        <a href="../files/lib_builder.js.md#l256">`lib/builder.js:256`</a>
         </p>
 
 
@@ -820,8 +801,7 @@ that are not parsed by the <strong>Markdown</strong> parser.</p>
     <div class="extended-detail">
 
         <div class="description">
-            <p>Populate the meta data for classes</p>
-
+            Populate the meta data for classes
         </div>
 
             <div class="params">
@@ -834,8 +814,7 @@ that are not parsed by the <strong>Markdown</strong> parser.</p>
 
 
                         <div class="param-description">
-                            <p>The original options</p>
-
+                            The original options
                         </div>
 
                     </li>
@@ -883,7 +862,7 @@ that are not parsed by the <strong>Markdown</strong> parser.</p>
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_builder.js.html#l280"><code>lib&#x2F;builder.js:280</code></a>
+        <a href="../files/lib_builder.js.md#l280">`lib/builder.js:280`</a>
         </p>
 
 
@@ -893,8 +872,7 @@ that are not parsed by the <strong>Markdown</strong> parser.</p>
     <div class="extended-detail">
 
         <div class="description">
-            <p>Populate the meta data for modules</p>
-
+            Populate the meta data for modules
         </div>
 
             <div class="params">
@@ -907,8 +885,7 @@ that are not parsed by the <strong>Markdown</strong> parser.</p>
 
 
                         <div class="param-description">
-                            <p>The original options</p>
-
+                            The original options
                         </div>
 
                     </li>
@@ -956,7 +933,7 @@ that are not parsed by the <strong>Markdown</strong> parser.</p>
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_builder.js.html#l305"><code>lib&#x2F;builder.js:305</code></a>
+        <a href="../files/lib_builder.js.md#l305">`lib/builder.js:305`</a>
         </p>
 
 
@@ -966,8 +943,7 @@ that are not parsed by the <strong>Markdown</strong> parser.</p>
     <div class="extended-detail">
 
         <div class="description">
-            <p>Populate the meta data for files</p>
-
+            Populate the meta data for files
         </div>
 
             <div class="params">
@@ -980,8 +956,7 @@ that are not parsed by the <strong>Markdown</strong> parser.</p>
 
 
                         <div class="param-description">
-                            <p>The original options</p>
-
+                            The original options
                         </div>
 
                     </li>
@@ -1029,7 +1004,7 @@ that are not parsed by the <strong>Markdown</strong> parser.</p>
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_builder.js.html#l325"><code>lib&#x2F;builder.js:325</code></a>
+        <a href="../files/lib_builder.js.md#l325">`lib/builder.js:325`</a>
         </p>
 
 
@@ -1039,8 +1014,7 @@ that are not parsed by the <strong>Markdown</strong> parser.</p>
     <div class="extended-detail">
 
         <div class="description">
-            <p>Parses file and line number from an item object and build's an HREF</p>
-
+            Parses file and line number from an item object and build's an HREF
         </div>
 
             <div class="params">
@@ -1053,8 +1027,7 @@ that are not parsed by the <strong>Markdown</strong> parser.</p>
 
 
                         <div class="param-description">
-                            <p>The item to parse</p>
-
+                            The item to parse
                         </div>
 
                     </li>
@@ -1102,7 +1075,7 @@ that are not parsed by the <strong>Markdown</strong> parser.</p>
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_builder.js.html#l336"><code>lib&#x2F;builder.js:336</code></a>
+        <a href="../files/lib_builder.js.md#l336">`lib/builder.js:336`</a>
         </p>
 
 
@@ -1112,8 +1085,7 @@ that are not parsed by the <strong>Markdown</strong> parser.</p>
     <div class="extended-detail">
 
         <div class="description">
-            <p>Fetches the remote data and fires the callback when it's all complete</p>
-
+            Fetches the remote data and fires the callback when it's all complete
         </div>
 
             <div class="params">
@@ -1126,8 +1098,7 @@ that are not parsed by the <strong>Markdown</strong> parser.</p>
 
 
                         <div class="param-description">
-                            <p>The callback to execute when complete</p>
-
+                            The callback to execute when complete
                         </div>
 
                     </li>
@@ -1166,7 +1137,7 @@ that are not parsed by the <strong>Markdown</strong> parser.</p>
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_builder.js.html#l409"><code>lib&#x2F;builder.js:409</code></a>
+        <a href="../files/lib_builder.js.md#l409">`lib/builder.js:409`</a>
         </p>
 
 
@@ -1176,8 +1147,7 @@ that are not parsed by the <strong>Markdown</strong> parser.</p>
     <div class="extended-detail">
 
         <div class="description">
-            <p>Makes the default directories needed</p>
-
+            Makes the default directories needed
         </div>
 
 
@@ -1214,7 +1184,7 @@ that are not parsed by the <strong>Markdown</strong> parser.</p>
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_builder.js.html#l425"><code>lib&#x2F;builder.js:425</code></a>
+        <a href="../files/lib_builder.js.md#l425">`lib/builder.js:425`</a>
         </p>
 
 
@@ -1224,8 +1194,7 @@ that are not parsed by the <strong>Markdown</strong> parser.</p>
     <div class="extended-detail">
 
         <div class="description">
-            <p>Set <code>BuilderContext</code> context and return</p>
-
+            Set `BuilderContext` context and return
         </div>
 
             <div class="params">
@@ -1287,7 +1256,7 @@ that are not parsed by the <strong>Markdown</strong> parser.</p>
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_builder.js.html#l442"><code>lib&#x2F;builder.js:442</code></a>
+        <a href="../files/lib_builder.js.md#l442">`lib/builder.js:442`</a>
         </p>
 
 
@@ -1297,8 +1266,7 @@ that are not parsed by the <strong>Markdown</strong> parser.</p>
     <div class="extended-detail">
 
         <div class="description">
-            <p>correct the theme</p>
-
+            correct the theme
         </div>
 
 
@@ -1329,7 +1297,7 @@ that are not parsed by the <strong>Markdown</strong> parser.</p>
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_builder.js.html#l461"><code>lib&#x2F;builder.js:461</code></a>
+        <a href="../files/lib_builder.js.md#l461">`lib/builder.js:461`</a>
         </p>
 
 
@@ -1339,8 +1307,7 @@ that are not parsed by the <strong>Markdown</strong> parser.</p>
     <div class="extended-detail">
 
         <div class="description">
-            <p>Compule the AST</p>
-
+            Compule the AST
         </div>
 
             <div class="params">
@@ -1353,8 +1320,7 @@ that are not parsed by the <strong>Markdown</strong> parser.</p>
 
 
                         <div class="param-description">
-                            <p>The callback</p>
-
+                            The callback
                         </div>
 
                     </li>
@@ -1382,7 +1348,7 @@ that are not parsed by the <strong>Markdown</strong> parser.</p>
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_builder.js.html#l520"><code>lib&#x2F;builder.js:520</code></a>
+        <a href="../files/lib_builder.js.md#l520">`lib/builder.js:520`</a>
         </p>
 
 
@@ -1392,8 +1358,7 @@ that are not parsed by the <strong>Markdown</strong> parser.</p>
     <div class="extended-detail">
 
         <div class="description">
-            <p>Render</p>
-
+            Render
         </div>
 
 
@@ -1424,7 +1389,7 @@ that are not parsed by the <strong>Markdown</strong> parser.</p>
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_builder.js.html#l547"><code>lib&#x2F;builder.js:547</code></a>
+        <a href="../files/lib_builder.js.md#l547">`lib/builder.js:547`</a>
         </p>
 
 
@@ -1434,8 +1399,7 @@ that are not parsed by the <strong>Markdown</strong> parser.</p>
     <div class="extended-detail">
 
         <div class="description">
-            <p>Write api.json</p>
-
+            Write api.json
         </div>
 
             <div class="params">
@@ -1448,8 +1412,7 @@ that are not parsed by the <strong>Markdown</strong> parser.</p>
 
 
                         <div class="param-description">
-                            <p>The locals</p>
-
+                            The locals
                         </div>
 
                     </li>
@@ -1487,7 +1450,7 @@ that are not parsed by the <strong>Markdown</strong> parser.</p>
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_builder.js.html#l677"><code>lib&#x2F;builder.js:677</code></a>
+        <a href="../files/lib_builder.js.md#l677">`lib/builder.js:677`</a>
         </p>
 
 
@@ -1497,8 +1460,7 @@ that are not parsed by the <strong>Markdown</strong> parser.</p>
     <div class="extended-detail">
 
         <div class="description">
-            <p>Function to link an external type uses <code>NATIVES</code> object</p>
-
+            Function to link an external type uses `NATIVES` object
         </div>
 
             <div class="params">
@@ -1511,8 +1473,7 @@ that are not parsed by the <strong>Markdown</strong> parser.</p>
 
 
                         <div class="param-description">
-                            <p>The name of the type to link</p>
-
+                            The name of the type to link
                         </div>
 
                     </li>
@@ -1563,7 +1524,7 @@ that are not parsed by the <strong>Markdown</strong> parser.</p>
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_builder.js.html#l693"><code>lib&#x2F;builder.js:693</code></a>
+        <a href="../files/lib_builder.js.md#l693">`lib/builder.js:693`</a>
         </p>
 
 
@@ -1573,8 +1534,7 @@ that are not parsed by the <strong>Markdown</strong> parser.</p>
     <div class="extended-detail">
 
         <div class="description">
-            <p>compile</p>
-
+            compile
         </div>
 
             <div class="params">
@@ -1587,8 +1547,7 @@ that are not parsed by the <strong>Markdown</strong> parser.</p>
 
 
                         <div class="param-description">
-                            <p>The <code>AST</code> object</p>
-
+                            The `AST` object
                         </div>
 
                     </li>
@@ -1598,8 +1557,7 @@ that are not parsed by the <strong>Markdown</strong> parser.</p>
 
 
                         <div class="param-description">
-                            <p>The options</p>
-
+                            The options
                         </div>
 
                     </li>
@@ -1609,8 +1567,7 @@ that are not parsed by the <strong>Markdown</strong> parser.</p>
 
 
                         <div class="param-description">
-                            <p>fired when compile has completed</p>
-
+                            fired when compile has completed
                         </div>
 
                     </li>

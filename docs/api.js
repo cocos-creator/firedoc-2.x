@@ -5,13 +5,13 @@ window.apimeta = {
       "name": "AST",
       "namespace": "firedoc.AST",
       "module": "firedoc",
-      "description": "<p>The AST(Abstract syntax tree) of the comment</p>\n"
+      "description": "The AST(Abstract syntax tree) of the comment"
     },
     {
       "name": "BuilderContext",
       "namespace": "firedoc.BuilderContext",
       "module": "firedoc",
-      "description": "<p>The Builder Context</p>\n"
+      "description": "The Builder Context"
     },
     {
       "name": "DocParser",
@@ -23,42 +23,42 @@ window.apimeta = {
       "name": "DocView",
       "namespace": "firedoc.DocView",
       "module": "firedoc",
-      "description": "<p><p>View class borrowed from <a href=\"https://github.com/rgrove/selleck\">Selleck</a>\nThe view class is a <strong><code>handlebars</code></strong> template helper.</p></p>\n"
+      "description": "View class borrowed from [Selleck](https://github.com/rgrove/selleck)\nThe view class is a **`handlebars`** template helper."
     },
     {
       "name": "Firedoc",
       "namespace": "firedoc.Firedoc",
       "module": "firedoc",
-      "description": "<p><p>Firedoc main class</p></p>\n"
+      "description": "Firedoc main class"
     },
     {
       "name": "Locals",
       "namespace": "firedoc.Locals",
       "module": "firedoc",
-      "description": "<p>The Theme Locals</p>\n"
+      "description": "The Theme Locals"
     },
     {
       "name": "ParserContext",
       "namespace": "firedoc.ParserContext",
       "module": "firedoc",
-      "description": "<p>The ParserContext</p>\n"
+      "description": "The ParserContext"
     }
   ],
   "modules": [
     {
       "name": "firedoc",
       "namespace": "firedoc",
-      "description": "<p>The firedoc module</p>\n"
+      "description": "The firedoc module"
     },
     {
       "name": "helpers",
       "module": "firedoc",
-      "description": "<p>The helpers module</p>\n"
+      "description": "The helpers module"
     },
     {
       "name": "utils",
       "module": "firedoc",
-      "description": "<p>Utilities modules</p>\n"
+      "description": "Utilities modules"
     }
   ]
 }

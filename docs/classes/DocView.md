@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>lib_helpers.js</title>
+    <title>DocView</title>
     <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
     <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
@@ -74,9 +74,9 @@
             </ul>
 
             <ul id="api-modules" class="apis modules">
-                <li><a class="module" href="/modules/firedoc.html">firedoc</a></li>
-                <li><a class="module" href="/modules/helpers.html">helpers</a></li>
-                <li><a class="module" href="/modules/utils.html">utils</a></li>
+                <li><a class="module" href="/Users/yorkie/workspace/fireball-x/firedoc/docs/modules/firedoc.html">firedoc</a></li>
+                <li><a class="module" href="/Users/yorkie/workspace/fireball-x/firedoc/docs/modules/helpers.html">helpers</a></li>
+                <li><a class="module" href="/Users/yorkie/workspace/fireball-x/firedoc/docs/modules/utils.html">utils</a></li>
             </ul>
 
             <ul id="api-enums" class="apis enums">
@@ -87,104 +87,154 @@
 </div>
 
         <div id="docs-main" class="apidocs">
-            <div class="content container"><h1 class="file-heading">File: </h1>
+            <div class="content container"><h1>DocView Class</h1>
+<div class="box meta">
 
-<div class="file">
-  <pre class="code prettyprint linenums">
-/**
- * The helpers module
- *
- * @module helpers
- * @main helpers
- */
 
-const _ = require(&#x27;underscore&#x27;);
+        <div class="foundat">
+            Defined in: <a href="../files/lib_docview.js.md#l12">`lib/docview.js:12`</a>
+        </div>
 
-/**
- * Build file tree
- * @method renderFileTree
- */
-// TODO(Yorkie): remove the buildFileTree
-exports.buildFileTree = function onbuildFileTree (items) {
-  var out = &#x27;&lt;ul&gt;&#x27;;
-  _.each(items, function (i, k) {
-    out += &#x27;&lt;li&gt;&#x27;;
-    if (_.isObject(i)) {
-      if (!i.path) {
-        out += k + &#x27;/&#x27; + onbuildFileTree(i);
-      } else {
-        out += &#x27;&lt;a href=&quot;../files/&#x27; + i.name + &#x27;.html&quot;&gt;&#x27; + k + &#x27;&lt;/a&gt;&#x27;;
-      }
-    }
-    out += &#x27;&lt;/li&gt;&#x27;;
-  });
-  out += &#x27;&lt;/ul&gt;&#x27;;
-  return out;
-};
-exports.renderFileTree = exports.buildFileTree;
+            Module: <a href="../modules/firedoc.html">firedoc</a>
 
-/**
- * Create cross link
- * @method crossLink
- */
-exports.crossLink = function oncrossLink (item, options) {
-  var str = &#x27;&#x27;;
-  if (!item) {
-    item = &#x27;&#x27;;
-  }
-  if (item.indexOf(&#x27;|&#x27;) &gt; 0) {
-    var parts = item.split(&#x27;|&#x27;),
-      p = [];
-    _.each(parts, function (i) {
-      p.push(this._parseCrossLink.call(this, i));
-    }, this);
-    str = p.join(&#x27; | &#x27;);
-  } else {
-    str = this._parseCrossLink.call(this, item, false, options.fn(this));
-  }
-  return str;
-};
-
-/**
- * Create cross link module
- * @method crossLinkModule
- */
-exports.crossLinkModule = function oncrossLinkModule (item, options) {
-  var str = item;
-  if (this.ast.modules[item]) {
-    var content = options.fn(this);
-    if (content === &quot;&quot;) {
-      content = item;
-    }
-    str = &#x27;&lt;a href=&quot;../modules/&#x27; + item.replace(/\//g, &#x27;_&#x27;) +
-          &#x27;.html&quot;&gt;&#x27; + content + &#x27;&lt;/a&gt;&#x27;;
-  }
-  return str;
-};
-
-/**
- * Create cross link to raw
- * @method crossLinkRaw
- */
-exports.crossLinkRaw = function oncrossLinkRaw (item, options) {
-  var str = &#x27;&#x27;;
-  if (!item) {
-    item = &#x27;&#x27;;
-  }
-  if (item.indexOf(&#x27;|&#x27;) &gt; 0) {
-    var parts = item.split(&#x27;|&#x27;),
-      p = [];
-    _.each(parts, function (i) {
-      p.push(this._parseCrossLink.call(this, i, true));
-    }, this);
-    str = p.join(&#x27; | &#x27;);
-  } else {
-    str = this._parseCrossLink.call(this, item, true);
-  }
-  return str;
-};
-</pre>
 </div>
+
+
+<div class="box intro">
+    View class borrowed from [Selleck](https://github.com/rgrove/selleck)
+The view class is a **`handlebars`** template helper.
+</div>
+
+<!-- Class member index -->
+
+
+<a name="index" class="anchor-link"></a>
+<div class="index">
+    <h2>Index</h2>
+    <div id="api-options">
+        Show:
+    
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+    
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+    
+    </div>
+
+
+
+<div class="index-section methods">
+    <h3>Methods</h3>
+    <ul class="index-list methods">
+
+        <li class="index-item method">
+            <a href="#method_htmlTitle">htmlTitle</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_title">title</a>
+        </li>
+    </ul>
+</div>
+
+
+
+
+</div>
+<div class="class-detail">
+
+
+
+
+    <div class="methods-detail">
+        <h2>Methods</h2>
+        <a name="method_htmlTitle" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>htmlTitle</code>
+
+        <span class="paren">()</span>
+
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                    Defined in
+        <a href="../files/lib_docview.js.md#l40">`lib/docview.js:40`</a>
+        </p>
+
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            **Mustache** `lambda` method for setting the HTML title
+        </div>
+
+
+
+    </div>
+</div>
+<a name="method_title" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>title</code>
+
+        <span class="paren">()</span>
+
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                    Defined in
+        <a href="../files/lib_docview.js.md#l59">`lib/docview.js:59`</a>
+        </p>
+
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            **Mustache** `lambda` method for setting the title
+        </div>
+
+
+
+    </div>
+</div>
+
+        <div class="no-visible-items-message">
+            <p>There are no methods that match your current filter settings. You can change your filter settings in the index section on this page. <a href="#index" class="index-jump-link">index</a></p>
+        </div>
+    </div>
+
+
+</div>
+
 </div>
         </div>
 

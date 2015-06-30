@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>lib_helpers.js</title>
+    <title>helpers</title>
     <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
     <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
@@ -74,9 +74,9 @@
             </ul>
 
             <ul id="api-modules" class="apis modules">
-                <li><a class="module" href="/modules/firedoc.html">firedoc</a></li>
-                <li><a class="module" href="/modules/helpers.html">helpers</a></li>
-                <li><a class="module" href="/modules/utils.html">utils</a></li>
+                <li><a class="module" href="/Users/yorkie/workspace/fireball-x/firedoc/docs/modules/firedoc.html">firedoc</a></li>
+                <li><a class="module" href="/Users/yorkie/workspace/fireball-x/firedoc/docs/modules/helpers.html">helpers</a></li>
+                <li><a class="module" href="/Users/yorkie/workspace/fireball-x/firedoc/docs/modules/utils.html">utils</a></li>
             </ul>
 
             <ul id="api-enums" class="apis enums">
@@ -87,103 +87,239 @@
 </div>
 
         <div id="docs-main" class="apidocs">
-            <div class="content container"><h1 class="file-heading">File: </h1>
+            <div class="content container"><h1>helpers Module</h1>
+<div class="box clearfix meta">
 
-<div class="file">
-  <pre class="code prettyprint linenums">
-/**
- * The helpers module
- *
- * @module helpers
- * @main helpers
- */
 
-const _ = require(&#x27;underscore&#x27;);
+        <div class="foundat">
+            Defined in: <a href="../files/lib_firedoc.js.md#l2">`lib/firedoc.js:2`</a>
+        </div>
 
-/**
- * Build file tree
- * @method renderFileTree
- */
-// TODO(Yorkie): remove the buildFileTree
-exports.buildFileTree = function onbuildFileTree (items) {
-  var out = &#x27;&lt;ul&gt;&#x27;;
-  _.each(items, function (i, k) {
-    out += &#x27;&lt;li&gt;&#x27;;
-    if (_.isObject(i)) {
-      if (!i.path) {
-        out += k + &#x27;/&#x27; + onbuildFileTree(i);
-      } else {
-        out += &#x27;&lt;a href=&quot;../files/&#x27; + i.name + &#x27;.html&quot;&gt;&#x27; + k + &#x27;&lt;/a&gt;&#x27;;
-      }
-    }
-    out += &#x27;&lt;/li&gt;&#x27;;
-  });
-  out += &#x27;&lt;/ul&gt;&#x27;;
-  return out;
-};
-exports.renderFileTree = exports.buildFileTree;
+</div>
 
-/**
- * Create cross link
- * @method crossLink
- */
-exports.crossLink = function oncrossLink (item, options) {
-  var str = &#x27;&#x27;;
-  if (!item) {
-    item = &#x27;&#x27;;
-  }
-  if (item.indexOf(&#x27;|&#x27;) &gt; 0) {
-    var parts = item.split(&#x27;|&#x27;),
-      p = [];
-    _.each(parts, function (i) {
-      p.push(this._parseCrossLink.call(this, i));
-    }, this);
-    str = p.join(&#x27; | &#x27;);
-  } else {
-    str = this._parseCrossLink.call(this, item, false, options.fn(this));
-  }
-  return str;
-};
 
-/**
- * Create cross link module
- * @method crossLinkModule
- */
-exports.crossLinkModule = function oncrossLinkModule (item, options) {
-  var str = item;
-  if (this.ast.modules[item]) {
-    var content = options.fn(this);
-    if (content === &quot;&quot;) {
-      content = item;
-    }
-    str = &#x27;&lt;a href=&quot;../modules/&#x27; + item.replace(/\//g, &#x27;_&#x27;) +
-          &#x27;.html&quot;&gt;&#x27; + content + &#x27;&lt;/a&gt;&#x27;;
-  }
-  return str;
-};
+<div class="box intro">
+    The helpers module
+</div>
 
-/**
- * Create cross link to raw
- * @method crossLinkRaw
- */
-exports.crossLinkRaw = function oncrossLinkRaw (item, options) {
-  var str = &#x27;&#x27;;
-  if (!item) {
-    item = &#x27;&#x27;;
-  }
-  if (item.indexOf(&#x27;|&#x27;) &gt; 0) {
-    var parts = item.split(&#x27;|&#x27;),
-      p = [];
-    _.each(parts, function (i) {
-      p.push(this._parseCrossLink.call(this, i, true));
-    }, this);
-    str = p.join(&#x27; | &#x27;);
-  } else {
-    str = this._parseCrossLink.call(this, item, true);
-  }
-  return str;
-};
-</pre>
+
+<!-- Class member index -->
+<div class="index-section properties">
+    <h3>Class</h3>
+    <ul class="index-list properties">
+        <li class="index-item">
+            <a href="classes/.html">
+                
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+<h3>Direct Members</h3>
+
+
+<a name="index" class="anchor-link"></a>
+<div class="index">
+    <h2>Index</h2>
+    <div id="api-options">
+        Show:
+    
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+    
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+    
+    </div>
+
+
+
+<div class="index-section methods">
+    <h3>Methods</h3>
+    <ul class="index-list methods">
+
+        <li class="index-item method">
+            <a href="#method_renderFileTree">renderFileTree</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_crossLink">crossLink</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_crossLinkModule">crossLinkModule</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_crossLinkRaw">crossLinkRaw</a>
+        </li>
+    </ul>
+</div>
+
+
+
+
+</div>
+<div class="yui3-g">
+
+
+    
+        <div class="yui3-u-1-2">
+            <h3>Methods:</h3>
+            <a name="method_renderFileTree" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>renderFileTree</code>
+
+        <span class="paren">()</span>
+
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                    <p>Provided by the <a href="../modules/utils.html" class="module-name">utils</a> module.</p>
+                <p>
+                    Defined in
+        <a href="../files/lib_helpers.js.md#l11">`lib/helpers.js:11`</a>
+        </p>
+
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            Build file tree
+        </div>
+
+
+
+    </div>
+</div>
+<a name="method_crossLink" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>crossLink</code>
+
+        <span class="paren">()</span>
+
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                    <p>Provided by the <a href="../modules/utils.html" class="module-name">utils</a> module.</p>
+                <p>
+                    Defined in
+        <a href="../files/lib_helpers.js.md#l34">`lib/helpers.js:34`</a>
+        </p>
+
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            Create cross link
+        </div>
+
+
+
+    </div>
+</div>
+<a name="method_crossLinkModule" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>crossLinkModule</code>
+
+        <span class="paren">()</span>
+
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                    <p>Provided by the <a href="../modules/utils.html" class="module-name">utils</a> module.</p>
+                <p>
+                    Defined in
+        <a href="../files/lib_helpers.js.md#l56">`lib/helpers.js:56`</a>
+        </p>
+
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            Create cross link module
+        </div>
+
+
+
+    </div>
+</div>
+<a name="method_crossLinkRaw" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>crossLinkRaw</code>
+
+        <span class="paren">()</span>
+
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                    <p>Provided by the <a href="../modules/utils.html" class="module-name">utils</a> module.</p>
+                <p>
+                    Defined in
+        <a href="../files/lib_helpers.js.md#l73">`lib/helpers.js:73`</a>
+        </p>
+
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            Create cross link to raw
+        </div>
+
+
+
+    </div>
+</div>
+
+        </div>
+
+
 </div>
 </div>
         </div>

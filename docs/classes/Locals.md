@@ -92,7 +92,7 @@
 
 
         <div class="foundat">
-            Defined in: <a href="../files/lib_locals.js.html#l13"><code>lib&#x2F;locals.js:13</code></a>
+            Defined in: <a href="../files/lib_locals.js.md#l13">`lib/locals.js:13`</a>
         </div>
 
             Module: <a href="../modules/utils.html">utils</a><br>
@@ -102,8 +102,7 @@
 
 
 <div class="box intro">
-    <p>The Theme Locals</p>
-
+    The Theme Locals
 </div>
 
 <!-- Class member index -->
@@ -242,15 +241,14 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_locals.js.html#l20"><code>lib&#x2F;locals.js:20</code></a>
+        <a href="../files/lib_locals.js.md#l20">`lib/locals.js:20`</a>
         </p>
 
 
     </div>
 
     <div class="extended-detail">
-        <div class="description"><p>Builder Context</p>
-</div>
+        <div class="description">Builder Context</div>
 
 
 
@@ -270,15 +268,14 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_locals.js.html#l25"><code>lib&#x2F;locals.js:25</code></a>
+        <a href="../files/lib_locals.js.md#l25">`lib/locals.js:25`</a>
         </p>
 
 
     </div>
 
     <div class="extended-detail">
-        <div class="description"><p>The options</p>
-</div>
+        <div class="description">The options</div>
 
 
 
@@ -298,15 +295,14 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_locals.js.html#l30"><code>lib&#x2F;locals.js:30</code></a>
+        <a href="../files/lib_locals.js.md#l30">`lib/locals.js:30`</a>
         </p>
 
 
     </div>
 
     <div class="extended-detail">
-        <div class="description"><p>The AST object</p>
-</div>
+        <div class="description">The AST object</div>
 
 
 
@@ -326,15 +322,14 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_locals.js.html#l35"><code>lib&#x2F;locals.js:35</code></a>
+        <a href="../files/lib_locals.js.md#l35">`lib/locals.js:35`</a>
         </p>
 
 
     </div>
 
     <div class="extended-detail">
-        <div class="description"><p>Get the project to export</p>
-</div>
+        <div class="description">Get the project to export</div>
 
 
 
@@ -354,15 +349,14 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_locals.js.html#l52"><code>lib&#x2F;locals.js:52</code></a>
+        <a href="../files/lib_locals.js.md#l52">`lib/locals.js:52`</a>
         </p>
 
 
     </div>
 
     <div class="extended-detail">
-        <div class="description"><p>Get i18n object</p>
-</div>
+        <div class="description">Get i18n object</div>
 
 
 
@@ -382,15 +376,14 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_locals.js.html#l70"><code>lib&#x2F;locals.js:70</code></a>
+        <a href="../files/lib_locals.js.md#l70">`lib/locals.js:70`</a>
         </p>
 
 
     </div>
 
     <div class="extended-detail">
-        <div class="description"><p>Get modules object to export</p>
-</div>
+        <div class="description">Get modules object to export</div>
 
 
 
@@ -410,15 +403,14 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_locals.js.html#l89"><code>lib&#x2F;locals.js:89</code></a>
+        <a href="../files/lib_locals.js.md#l89">`lib/locals.js:89`</a>
         </p>
 
 
     </div>
 
     <div class="extended-detail">
-        <div class="description"><p>Get classes object to export</p>
-</div>
+        <div class="description">Get classes object to export</div>
 
 
 
@@ -438,15 +430,14 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_locals.js.html#l113"><code>lib&#x2F;locals.js:113</code></a>
+        <a href="../files/lib_locals.js.md#l113">`lib/locals.js:113`</a>
         </p>
 
 
     </div>
 
     <div class="extended-detail">
-        <div class="description"><p>Get files object to export</p>
-</div>
+        <div class="description">Get files object to export</div>
 
 
 
@@ -467,15 +458,14 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_locals.js.html#l439"><code>lib&#x2F;locals.js:439</code></a>
+        <a href="../files/lib_locals.js.md#l439">`lib/locals.js:439`</a>
         </p>
 
 
     </div>
 
     <div class="extended-detail">
-        <div class="description"><p>Counter for stepping into merges</p>
-</div>
+        <div class="description">Counter for stepping into merges</div>
 
 
 
@@ -509,7 +499,7 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_locals.js.html#l127"><code>lib&#x2F;locals.js:127</code></a>
+        <a href="../files/lib_locals.js.md#l127">`lib/locals.js:127`</a>
         </p>
 
 
@@ -519,8 +509,7 @@
     <div class="extended-detail">
 
         <div class="description">
-            <p>Initialize the markdownit rulers</p>
-
+            Initialize the markdownit rulers
         </div>
 
 
@@ -554,7 +543,7 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_locals.js.html#l155"><code>lib&#x2F;locals.js:155</code></a>
+        <a href="../files/lib_locals.js.md#l155">`lib/locals.js:155`</a>
         </p>
 
 
@@ -564,8 +553,7 @@
     <div class="extended-detail">
 
         <div class="description">
-            <p>Parses file and line number from an item object and build's an HREF</p>
-
+            Parses file and line number from an item object and build's an HREF
         </div>
 
             <div class="params">
@@ -578,8 +566,7 @@
 
 
                         <div class="param-description">
-                            <p>The item to parse</p>
-
+                            The item to parse
                         </div>
 
                     </li>
@@ -627,7 +614,7 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_locals.js.html#l173"><code>lib&#x2F;locals.js:173</code></a>
+        <a href="../files/lib_locals.js.md#l173">`lib/locals.js:173`</a>
         </p>
 
 
@@ -637,8 +624,7 @@
     <div class="extended-detail">
 
         <div class="description">
-            <p>build the method name by its name and parameters</p>
-
+            build the method name by its name and parameters
         </div>
 
             <div class="params">
@@ -651,8 +637,7 @@
 
 
                         <div class="param-description">
-                            <p>The function/method name</p>
-
+                            The function/method name
                         </div>
 
                     </li>
@@ -662,8 +647,7 @@
 
 
                         <div class="param-description">
-                            <p>The function/method parameters list</p>
-
+                            The function/method parameters list
                         </div>
 
                             <ul class="params-list">
@@ -712,7 +696,7 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_locals.js.html#l187"><code>lib&#x2F;locals.js:187</code></a>
+        <a href="../files/lib_locals.js.md#l187">`lib/locals.js:187`</a>
         </p>
 
 
@@ -722,8 +706,8 @@
     <div class="extended-detail">
 
         <div class="description">
-            <p>Parses <code><pre><code></code> tags and adds the <strong>prettyprint</strong> <code>className</code> to them</p>
-
+            Parses `<pre class="code prettyprint"><code>
+` tags and adds the __prettyprint__ `className` to them
         </div>
 
             <div class="params">
@@ -736,8 +720,7 @@
 
 
                         <div class="param-description">
-                            <p>The HTML to parse</p>
-
+                            The HTML to parse
                         </div>
 
                     </li>
@@ -786,7 +769,7 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_locals.js.html#l202"><code>lib&#x2F;locals.js:202</code></a>
+        <a href="../files/lib_locals.js.md#l202">`lib/locals.js:202`</a>
         </p>
 
 
@@ -796,8 +779,7 @@
     <div class="extended-detail">
 
         <div class="description">
-            <p>Wrapper around the Markdown parser so it can be normalized or even side stepped</p>
-
+            Wrapper around the Markdown parser so it can be normalized or even side stepped
         </div>
 
             <div class="params">
@@ -810,8 +792,7 @@
 
 
                         <div class="param-description">
-                            <p>The Markdown string to parse</p>
-
+                            The Markdown string to parse
                         </div>
 
                     </li>
@@ -856,7 +837,7 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_locals.js.html#l231"><code>lib&#x2F;locals.js:231</code></a>
+        <a href="../files/lib_locals.js.md#l231">`lib/locals.js:231`</a>
         </p>
 
 
@@ -866,8 +847,7 @@
     <div class="extended-detail">
 
         <div class="description">
-            <p>append the clazz to its module</p>
-
+            append the clazz to its module
         </div>
 
             <div class="params">
@@ -880,8 +860,7 @@
 
 
                         <div class="param-description">
-                            <p>The class object</p>
-
+                            The class object
                         </div>
 
                             <ul class="params-list">
@@ -923,7 +902,7 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_locals.js.html#l247"><code>lib&#x2F;locals.js:247</code></a>
+        <a href="../files/lib_locals.js.md#l247">`lib/locals.js:247`</a>
         </p>
 
 
@@ -933,8 +912,7 @@
     <div class="extended-detail">
 
         <div class="description">
-            <p>get class inheritance tree</p>
-
+            get class inheritance tree
         </div>
 
 
@@ -985,7 +963,7 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_locals.js.html#l287"><code>lib&#x2F;locals.js:287</code></a>
+        <a href="../files/lib_locals.js.md#l287">`lib/locals.js:287`</a>
         </p>
 
 
@@ -995,8 +973,7 @@
     <div class="extended-detail">
 
         <div class="description">
-            <p>build the member</p>
-
+            build the member
         </div>
 
             <div class="params">
@@ -1009,8 +986,7 @@
 
 
                         <div class="param-description">
-                            <p>The member object</p>
-
+                            The member object
                         </div>
 
                     </li>
@@ -1020,8 +996,7 @@
 
 
                         <div class="param-description">
-                            <p>force make the build process be for method</p>
-
+                            force make the build process be for method
                         </div>
 
                     </li>
@@ -1031,8 +1006,7 @@
 
 
                         <div class="param-description">
-                            <p>The parent context</p>
-
+                            The parent context
                         </div>
 
                     </li>
@@ -1074,7 +1048,7 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_locals.js.html#l352"><code>lib&#x2F;locals.js:352</code></a>
+        <a href="../files/lib_locals.js.md#l352">`lib/locals.js:352`</a>
         </p>
 
 
@@ -1084,8 +1058,7 @@
     <div class="extended-detail">
 
         <div class="description">
-            <p>build the members</p>
-
+            build the members
         </div>
 
 
@@ -1130,7 +1103,7 @@
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_locals.js.html#l379"><code>lib&#x2F;locals.js:379</code></a>
+        <a href="../files/lib_locals.js.md#l379">`lib/locals.js:379`</a>
         </p>
 
 
@@ -1140,9 +1113,8 @@
     <div class="extended-detail">
 
         <div class="description">
-            <p>Augments the <strong>DocParser</strong> meta data to provide default values for certain keys as well as parses all descriptions
-with the <code>Markdown Parser</code></p>
-
+            Augments the **DocParser** meta data to provide default values for certain keys as well as parses all descriptions
+with the `Markdown Parser`
         </div>
 
             <div class="params">
@@ -1155,8 +1127,7 @@ with the <code>Markdown Parser</code></p>
 
 
                         <div class="param-description">
-                            <p>The object to recurse and augment</p>
-
+                            The object to recurse and augment
                         </div>
 
                     </li>
@@ -1207,7 +1178,7 @@ with the <code>Markdown Parser</code></p>
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_locals.js.html#l447"><code>lib&#x2F;locals.js:447</code></a>
+        <a href="../files/lib_locals.js.md#l447">`lib/locals.js:447`</a>
         </p>
 
 
@@ -1217,8 +1188,7 @@ with the <code>Markdown Parser</code></p>
     <div class="extended-detail">
 
         <div class="description">
-            <p>Merge superclass data into a child class</p>
-
+            Merge superclass data into a child class
         </div>
 
             <div class="params">
@@ -1231,8 +1201,7 @@ with the <code>Markdown Parser</code></p>
 
 
                         <div class="param-description">
-                            <p>The item to extend</p>
-
+                            The item to extend
                         </div>
 
                     </li>
@@ -1242,8 +1211,7 @@ with the <code>Markdown Parser</code></p>
 
 
                         <div class="param-description">
-                            <p>The list of items to merge in</p>
-
+                            The list of items to merge in
                         </div>
 
                     </li>
@@ -1253,8 +1221,7 @@ with the <code>Markdown Parser</code></p>
 
 
                         <div class="param-description">
-                            <p>Set for the first call</p>
-
+                            Set for the first call
                         </div>
 
                     </li>
@@ -1289,7 +1256,7 @@ with the <code>Markdown Parser</code></p>
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_locals.js.html#l500"><code>lib&#x2F;locals.js:500</code></a>
+        <a href="../files/lib_locals.js.md#l500">`lib/locals.js:500`</a>
         </p>
 
 
@@ -1299,8 +1266,7 @@ with the <code>Markdown Parser</code></p>
     <div class="extended-detail">
 
         <div class="description">
-            <p>generate expand function</p>
-
+            generate expand function
         </div>
 
             <div class="params">
@@ -1313,8 +1279,7 @@ with the <code>Markdown Parser</code></p>
 
 
                         <div class="param-description">
-                            <p>The object to be set</p>
-
+                            The object to be set
                         </div>
 
                     </li>
@@ -1348,7 +1313,7 @@ with the <code>Markdown Parser</code></p>
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_locals.js.html#l525"><code>lib&#x2F;locals.js:525</code></a>
+        <a href="../files/lib_locals.js.md#l525">`lib/locals.js:525`</a>
         </p>
 
 
@@ -1358,8 +1323,7 @@ with the <code>Markdown Parser</code></p>
     <div class="extended-detail">
 
         <div class="description">
-            <p>extends members array</p>
-
+            extends members array
         </div>
 
             <div class="params">
@@ -1372,8 +1336,7 @@ with the <code>Markdown Parser</code></p>
 
 
                         <div class="param-description">
-                            <p>The meta object</p>
-
+                            The meta object
                         </div>
 
                     </li>
@@ -1407,7 +1370,7 @@ with the <code>Markdown Parser</code></p>
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_locals.js.html#l545"><code>lib&#x2F;locals.js:545</code></a>
+        <a href="../files/lib_locals.js.md#l545">`lib/locals.js:545`</a>
         </p>
 
 
@@ -1417,8 +1380,7 @@ with the <code>Markdown Parser</code></p>
     <div class="extended-detail">
 
         <div class="description">
-            <p>extends modules</p>
-
+            extends modules
         </div>
 
             <div class="params">
@@ -1431,8 +1393,7 @@ with the <code>Markdown Parser</code></p>
 
 
                         <div class="param-description">
-                            <p>The meta object</p>
-
+                            The meta object
                         </div>
 
                     </li>
@@ -1466,7 +1427,7 @@ with the <code>Markdown Parser</code></p>
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_locals.js.html#l567"><code>lib&#x2F;locals.js:567</code></a>
+        <a href="../files/lib_locals.js.md#l567">`lib/locals.js:567`</a>
         </p>
 
 
@@ -1476,8 +1437,7 @@ with the <code>Markdown Parser</code></p>
     <div class="extended-detail">
 
         <div class="description">
-            <p>extends members from classes</p>
-
+            extends members from classes
         </div>
 
             <div class="params">
@@ -1490,8 +1450,7 @@ with the <code>Markdown Parser</code></p>
 
 
                         <div class="param-description">
-                            <p>The meta object</p>
-
+                            The meta object
                         </div>
 
                     </li>
@@ -1525,7 +1484,7 @@ with the <code>Markdown Parser</code></p>
     <div class="meta">
                 <p>
                     Defined in
-        <a href="../files/lib_locals.js.html#l589"><code>lib&#x2F;locals.js:589</code></a>
+        <a href="../files/lib_locals.js.md#l589">`lib/locals.js:589`</a>
         </p>
 
 
@@ -1535,8 +1494,7 @@ with the <code>Markdown Parser</code></p>
     <div class="extended-detail">
 
         <div class="description">
-            <p>Create a locals object from context</p>
-
+            Create a locals object from context
         </div>
 
             <div class="params">
@@ -1549,8 +1507,7 @@ with the <code>Markdown Parser</code></p>
 
 
                         <div class="param-description">
-                            <p>The <code>BuilderContext</code> instance</p>
-
+                            The `BuilderContext` instance
                         </div>
 
                     </li>

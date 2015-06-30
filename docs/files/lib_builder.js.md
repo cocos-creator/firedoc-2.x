@@ -229,7 +229,7 @@ var BuilderContext = {
    */
   inlineCode: function (html) {
     if (this.options.markdown) return html;
-    html = html.replace(/\\&#x60;/g, &#x27;`&#x27;);
+    html = html.replace(/\\&#x60;/g, &#x27;__{{SELLECK_BACKTICK}}__&#x27;);
     html = html.replace(/&#x60;(.+?)&#x60;/g, function (match, code) {
       return &#x27;&lt;code&gt;&#x27; + utils.escapeHTML(code) + &#x27;&lt;/code&gt;&#x27;;
     });
