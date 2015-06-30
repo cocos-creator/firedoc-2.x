@@ -319,9 +319,6 @@ describe('firedoc.parser', function () {
         [ 
           'ClazzExample',
           'SecondClazz'
-        ],
-        [
-          'EnumEx'
         ]
       ], ast.inheritedMembers);
     });
@@ -336,7 +333,7 @@ describe('firedoc.parser', function () {
       ctx.on('enum', function (locals) {
         assert.equal(locals.name, 'EnumEx');
         assert.equal(locals.namespace, 'undefinedmodule.EnumEx');
-        assets.equal(locals.description, '<p>The enum description <a href="classes/ClazzExample.html#method_method1">example</a></p>\n');
+        assert.equal(locals.description, '<p>The enum description <a href="classes/ClazzExample.html#method_method1">example</a></p>\n');
       });
     });
   });
@@ -461,6 +458,23 @@ describe('firedoc.parser', function () {
         var example5 = locals.members[4];
         assert.ok(/(&#39|&amp|&quot);/.test(example5.example) === false);
       });
+    });
+  });
+  
+  describe('process', function () {
+    var src = path.join(__dirname, './targets/process');
+    var doc = new Firedoc({'path': src});
+    var ast;
+    before(function (next) {
+      doc._processConfig();
+      doc.walk(next);
+    });
+    before(function () {
+      ast = parser.parse('js', doc.filemap, doc.dirmap);
+    });
+    it('should check module class', function () {
+      var mod1 = ast.modules.mod1;
+      assert.deepEqual(mod1.process, ['core']);
     });
   });
 
