@@ -9,9 +9,9 @@ var Firedoc = require('../lib/firedoc').Firedoc;
 program
   .option('-l --lint', 'lint the parser')
   .option('--parse-only', 'only parse')
-  .option('-m --markdown', 'generate markdown docs')
-  .option('-t --theme <dir>', 'specify theme directory')
-  .option('-d --dest <dir>', 'the destination folder to build')
+  .option('-M --markdown', 'generate markdown docs')
+  .option('-T --theme <dir>', 'specify theme directory')
+  .option('-D --dest <dir>', 'the destination folder to build')
   .option('-L --lang <language>', 'the i18n language')
   .option('-v --verbose', 'print all verbose information')
   .parse(process.argv);
@@ -31,10 +31,14 @@ var doc = new Firedoc({
   theme: program.theme
 });
 doc.build(function () {
+  
+});
+
+function onbuild () {
   var serve = path.join(__dirname, '../node_modules/.bin/serve');
   var dest = path.join(__dirname, '../', doc.options.dest || 'out');
   spawn(serve, [dest, '-H'], {
     'stdio': 'inherit'
   });
-});
+}
 

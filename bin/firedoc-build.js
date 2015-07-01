@@ -25,8 +25,8 @@ var doc = new Firedoc({
   parseOnly: program.parseOnly,
   markdown: program.markdown,
   http: program.http || false,
-  dest: program.dest,
-  lang: program.lang,
-  theme: program.theme
+  dest: program.dest || './out',
+  lang: program.lang || 'en',
+  theme: program.theme || 'default'
 });
 doc.build();
