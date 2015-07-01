@@ -7,9 +7,10 @@ var Firedoc = require('../lib/firedoc').Firedoc;
 program
   .option('-l --lint', 'lint the parser')
   .option('--parse-only', 'only parse')
+  .option('-H --http', 'build doc for web')
   .option('-M --markdown', 'generate markdown docs')
-  .option('-t --theme <dir>', 'specify theme directory')
-  .option('-d --dest <dir>', 'the destination folder to build')
+  .option('-T --theme <dir>', 'specify theme directory')
+  .option('-D --dest <dir>', 'the destination folder to build')
   .option('-L --lang <language>', 'the i18n language')
   .option('-v --verbose', 'print all verbose information')
   .parse(process.argv);
@@ -23,6 +24,7 @@ var doc = new Firedoc({
   lint: program.lint,
   parseOnly: program.parseOnly,
   markdown: program.markdown,
+  http: program.http || false,
   dest: program.dest,
   lang: program.lang,
   theme: program.theme
