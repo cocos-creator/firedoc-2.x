@@ -138,7 +138,9 @@
   "firedoc": {
     "linkNatives": true,
     "attributesEmit": true,
-    "path": "./lib",
+    "paths": [
+      "./lib"
+    ],
     "dest": "./docs"
   },
   "firedoc.test": {
