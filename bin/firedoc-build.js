@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
-var debug = require('debug');
-var program = require('commander');
-var Firedoc = require('../lib/firedoc').Firedoc;
+const debug = require('debug');
+const program = require('commander');
+const Firedoc = require('../lib/firedoc').Firedoc;
 
 program
   .option('-l --lint', 'lint the parser')
