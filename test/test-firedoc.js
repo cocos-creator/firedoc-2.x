@@ -12,8 +12,8 @@ describe('firedoc.Firedoc', function () {
   var src = path.join(__dirname, './targets/basic');
 
   it('should create new Firedoc', function () {
-    var doc = new Firedoc({'path': src});
-    assert.equal(doc.options.path, src);
+    var doc = new Firedoc({'paths': [src]});
+    assert.deepEqual(doc.options.paths, [src]);
     assert.equal(doc.options.extensions, '.js');
     assert.equal(doc.options.cwd, path.join(__dirname, '..'));
     assert.equal(doc.options.dest, path.join(__dirname, '../out'));
@@ -24,8 +24,8 @@ describe('firedoc.Firedoc', function () {
   });
 
   it('should create new Firedoc without the keyword new', function () {
-    var doc = Firedoc({'path': src});
-    assert.equal(doc.options.path, src);
+    var doc = Firedoc({'paths': [src]});
+    assert.deepEqual(doc.options.paths, [src]);
     assert.equal(doc.options.extensions, '.js');
     assert.equal(doc.options.cwd, path.join(__dirname, '..'));
     assert.equal(doc.options.dest, path.join(__dirname, '../out'));
@@ -37,14 +37,14 @@ describe('firedoc.Firedoc', function () {
 
   it('should call build', function (next) {
     var stub = sinon.stub(builder, 'compile');
-    var doc = Firedoc({'path': src});
+    var doc = Firedoc({'paths': [src]});
     stub.callsArg(2);
     doc.build(function () {
       var arg = stub.args[0];
       var ast = arg[0];
       var options = arg[1];
       assert.deepEqual(ast, require('../lib/ast').AST);
-      assert.deepEqual(options.path, src);
+      assert.deepEqual(options.paths, [src]);
       assert.deepEqual(options.excludes, [
         '.git',
         '.svn',
