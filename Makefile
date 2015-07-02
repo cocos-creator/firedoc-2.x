@@ -17,8 +17,8 @@ docsghpages:
 	-rm -rf ./docs-ghpages
 	-mkdir -p ./docs-ghpages/en
 	-mkdir -p ./docs-ghpages/zh
-	firedoc build ./ --lang en -D 'docs-ghpages/en'
-	firedoc build ./ --lang zh -D 'docs-ghpages/zh'
+	firedoc build ./ --lang en -D 'docs-ghpages/en' --theme notab -Hv
+	firedoc build ./ --lang zh -D 'docs-ghpages/zh' --theme notab -Hv
 	cp -r ./docs-ghpages/en/* ./docs-ghpages/
 	sh ./scripts/ghpages.sh
 

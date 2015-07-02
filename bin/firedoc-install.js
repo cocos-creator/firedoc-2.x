@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
-var url = require('url');
-var path = require('path');
-var program = require('commander');
-var spawn = require('child_process').spawn;
+const url = require('url');
+const path = require('path');
+const program = require('commander');
+const spawn = require('child_process').spawn;
 
 program
   .option('-a --alias <name>', 'specify the theme/plugin name')
