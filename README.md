@@ -1,5 +1,4 @@
-FireDoc [![Circle CI](https://circleci.com/gh/fireball-x/firedoc/tree/master.svg?style=shield)](https://circleci.com/gh/fireball-x/firedoc/tree/master)
-=======
+# FireDoc [![Circle CI](https://circleci.com/gh/fireball-x/firedoc/tree/master.svg?style=shield)](https://circleci.com/gh/fireball-x/firedoc/tree/master)
 
 API Doc generator rewritten from [YUIDoc](https://github.com/yui/yuidoc). We use this tool to document a large JavaScript game engine [Fireball](http://github.com/fireball-x/fireball) at [docs-zh.fireball-x.com/api](http://docs-zh.fireball-x.com/api/) and self-document firedoc itself at:
 
