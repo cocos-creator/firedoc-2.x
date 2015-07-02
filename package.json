@@ -144,7 +144,9 @@
     "dest": "./docs"
   },
   "firedoc.test": {
-    "path": "./test/targets",
+    "paths": [
+      "./test/targets"
+    ],
     "dest": "./out"
   }
 }

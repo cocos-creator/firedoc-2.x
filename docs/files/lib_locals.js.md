@@ -1,5 +1,5 @@
 
-# firedoc 1.8.2
+# firedoc 1.8.7
 
 Fireball is the game engine for the future.
 
@@ -635,7 +635,11 @@ var Locals = {
     var locals;
     var meta = instance.meta;
     try {
-      locals = require(path.join(process.cwd(), this.options.theme, '/locals.js'));
+      if (path.isAbsolute(this.options.theme)) {
+        locals = require(path.join(this.options.theme, '/locals.js'));
+      } else {
+        locals = require(path.join(process.cwd(), this.options.theme, '/locals.js'));
+      }
     } catch (e) {
       console.warn('Failed on loading theme script: ' + e);
       locals = function () {};

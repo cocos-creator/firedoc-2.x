@@ -1,5 +1,5 @@
 
-# firedoc 1.8.2
+# firedoc 1.8.7
 
 Fireball is the game engine for the future.
 

@@ -1,5 +1,5 @@
 
-# firedoc 1.8.2
+# firedoc 1.8.7
 
 Fireball is the game engine for the future.
 
@@ -833,8 +833,10 @@ const DIGESTERS = {
     if (target._raw.process) {
       target.process = utils.fmtProcess(target._raw.process);
     } else {
-      var modProcess = this.modules[this.context.module].process;
-      target.process = modProcess;
+      var mod = this.modules[this.context.module];
+      if (mod) {
+        target.process = mod.process;
+      }
     }
 
     if (target._raw.extends) {
@@ -980,7 +982,7 @@ const DIGESTERS = {
     }
 
     value.forEach(function (v) {
-      v = trim(v);
+      v = utils.safetrim(v);
       target[tagname].push(v);
     });
   },

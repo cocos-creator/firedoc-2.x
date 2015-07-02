@@ -1,7 +1,7 @@
 
-# firedoc 1.8.2
+# firedoc 1.8.7
 
-test
+Fireball is the game engine for the future.
 
 ### `Firedoc` Class
 
@@ -30,6 +30,7 @@ Firedoc main class
 ##### Methods
 
   - [`walk`](#method-walk) Walks the paths and parses the directory contents
+  - [`walkOne`](#method-walkone) Walk one path
   - [`build`](#method-build) Process the config, walk the file tree and write out the JSON data.
 
 
@@ -99,8 +100,23 @@ Walks the paths and parses the directory contents
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/firedoc.js:121](../files/lib_firedoc.js.md#l121) |
+| Defined | [lib/firedoc.js:135](../files/lib_firedoc.js.md#l135) |
 
+###### Parameters
+- next <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> 
+
+
+##### walkOne
+
+Walk one path
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/firedoc.js:157](../files/lib_firedoc.js.md#l157) |
+
+###### Parameters
+- path <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The path to walk
+- next <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> 
 
 
 ##### build
@@ -109,7 +125,7 @@ Process the config, walk the file tree and write out the JSON data.
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/firedoc.js:159](../files/lib_firedoc.js.md#l159) |
+| Defined | [lib/firedoc.js:203](../files/lib_firedoc.js.md#l203) |
 
 ###### Parameters
 - callback <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> 

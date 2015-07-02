@@ -24,9 +24,9 @@ var doc = new Firedoc({
   lint: program.lint,
   parseOnly: program.parseOnly,
   markdown: program.markdown,
-  http: program.http || false,
-  dest: program.dest || './out',
-  lang: program.lang || 'en',
-  theme: program.theme || 'default'
+  http: program.http,
+  dest: program.dest,
+  lang: program.lang,
+  theme: program.theme
 });
 doc.build();

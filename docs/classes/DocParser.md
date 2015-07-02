@@ -1,7 +1,7 @@
 
-# firedoc 1.8.2
+# firedoc 1.8.7
 
-test
+Fireball is the game engine for the future.
 
 ### `DocParser` Class
 
@@ -111,7 +111,7 @@ Flatten a string, remove all line breaks and replace them with a token
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/ast.js:1066](../files/lib_ast.js.md#l1066) |
+| Defined | [lib/ast.js:1068](../files/lib_ast.js.md#l1068) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 ###### Parameters
@@ -124,7 +124,7 @@ Un-flatten a string, replace tokens injected with `implodeString`
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/ast.js:1077](../files/lib_ast.js.md#l1077) |
+| Defined | [lib/ast.js:1079](../files/lib_ast.js.md#l1079) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 ###### Parameters
