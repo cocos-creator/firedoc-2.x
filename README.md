@@ -67,18 +67,19 @@ $ firedoc <path> --lang <lang>
 The following is the helper of `firedoc-build(1)`:
 
 ```
-Usage: firedoc-build [options]
+  Usage: firedoc-build [options]
 
-Options:
+  Options:
 
-  -h, --help            output usage information
-  -l --lint             lint the parser
-  --parse-only          only parse
-  -M --markdown         generate markdown docs
-  -t --theme <dir>      specify theme directory
-  -d --dest <dir>       the destination folder to build
-  -L --lang <language>  the i18n language
-  -v --verbose          print all verbose information
+    -h, --help            output usage information
+    -l --lint             lint the parser
+    --parse-only          only parse
+    -H --http             build doc for web
+    -M --markdown         generate markdown docs
+    -T --theme <dir>      specify theme directory
+    -D --dest <dir>       the destination folder to build
+    -L --lang <language>  the i18n language
+    -v --verbose          print all verbose information
 ```
 
 `--lang` option is required for multi-language description. Currently firedoc supports `en` and `zh` language option. Adding those option will generate docs for that specific language.
