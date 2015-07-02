@@ -10,7 +10,7 @@ describe('firedoc.parser', function () {
 
   describe('basic', function () {
     var src = path.join(__dirname, './targets/basic');
-    var doc = new Firedoc({'path': src, cwd: src});
+    var doc = new Firedoc({'paths': [src], cwd: src});
     var ast, ctx;
     before(function (next) {
       doc.walk(next);
@@ -168,7 +168,7 @@ describe('firedoc.parser', function () {
 
   describe('modules', function () {
     var src = path.join(__dirname, './targets/module');
-    var doc = new Firedoc({'path': src});
+    var doc = new Firedoc({'paths': [src]});
     var ast;
     before(function (next) {
       doc.walk(next);
@@ -228,7 +228,7 @@ describe('firedoc.parser', function () {
 
   describe('classes', function () {
     var src = path.join(__dirname, './targets/class');
-    var doc = new Firedoc({'path': src});
+    var doc = new Firedoc({'paths': [src]});
     var ast;
     before(function (next) {
       doc.walk(next);
@@ -343,7 +343,7 @@ describe('firedoc.parser', function () {
 
   describe('members', function () {
     var src = path.join(__dirname, './targets/members');
-    var doc = new Firedoc({'path': src});
+    var doc = new Firedoc({'paths': [src]});
     var ast;
     before(function (next) {
       doc.walk(next);
@@ -465,7 +465,7 @@ describe('firedoc.parser', function () {
   
   describe('process', function () {
     var src = path.join(__dirname, './targets/process');
-    var doc = new Firedoc({'path': src});
+    var doc = new Firedoc({'paths': [src]});
     var ast;
     before(function (next) {
       doc.walk(next);

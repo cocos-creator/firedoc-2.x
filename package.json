@@ -101,8 +101,7 @@
   },
   "scripts": {
     "docs": "make docs",
-    "pretest": "jshint ./lib/*.js",
-    "test": "make test"
+    "test": "make test.nocoverage"
   },
   "preferGlobal": "true",
   "licenses": [
