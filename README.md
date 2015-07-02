@@ -10,8 +10,8 @@ API Doc generator rewritten from [YUIDoc](https://github.com/yui/yuidoc). We use
 [![NPM](https://nodei.co/npm-dl/firedoc.png)](https://nodei.co/npm/firedoc/)
 
 [![Circle CI](https://circleci.com/gh/fireball-x/firedoc/tree/master.svg?style=shield)](https://circleci.com/gh/fireball-x/firedoc/tree/master)
-[![npm Version](https://img.shields.io/npm/v/firedoc.svg?style=flat-square)](https://www.npmjs.org/package/firedoc)
-[![Dependency Status](https://img.shields.io/david/fireball-x/firedoc.svg?style=flat-square)](https://david-dm.org/fireball-x/firedoc)
+[![npm Version](https://img.shields.io/npm/v/firedoc.svg?style=shield)](https://www.npmjs.org/package/firedoc)
+[![Dependency Status](https://img.shields.io/david/fireball-x/firedoc.svg?style=shield)](https://david-dm.org/fireball-x/firedoc)
 
 Overview
 --------
