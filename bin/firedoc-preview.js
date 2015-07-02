@@ -30,14 +30,11 @@ var doc = new Firedoc({
   lang: program.lang,
   theme: program.theme
 });
-doc.build(function () {
-  
-});
+doc.build(onbuild);
 
 function onbuild () {
   var serve = path.join(__dirname, '../node_modules/.bin/serve');
-  var dest = path.join(__dirname, '../', doc.options.dest || 'out');
-  spawn(serve, [dest, '-H'], {
+  spawn(serve, [doc.options.dest, '-H'], {
     'stdio': 'inherit'
   });
 }
