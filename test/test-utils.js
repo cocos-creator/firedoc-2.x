@@ -142,4 +142,16 @@ describe('firedoc.utils', function () {
     });
   });
 
+  describe('.defineReadonly', function () {
+    var obj = {};
+    it('define property', function () {
+      utils.defineReadonly(obj, 'x', 10);
+      assert.equal(10, obj.x);
+    });
+    it('change the obj.x', function () {
+      obj.x = 100;
+      assert.equal(10, obj.x);
+    });
+  });
+
 });
