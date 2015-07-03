@@ -185,7 +185,7 @@ describe('firedoc.parser', function () {
       var mod1 = ast.modules.mod1;
       assert.equal('class1', mod1.classes.class1.name);
       assert.equal('test/targets/module/mod1.js', mod1.file);
-      assert.equal('2', mod1.line);
+      assert.equal(2, mod1.line);
       assert.equal('mod1', mod1.name);
       assert.equal('mod1', mod1.mainName);
       assert.equal('main', mod1.tag);
