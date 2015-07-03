@@ -178,12 +178,14 @@ describe('firedoc.parser', function () {
     });
     var submodule1, submodule2;
     it('should check files and codes', function () {
-      assert.equal(4, _.keys(ast.files).length);
-      assert.equal(4, _.keys(ast.codes).length);
+      assert.equal(5, _.keys(ast.files).length);
+      assert.equal(5, _.keys(ast.codes).length);
     });
     it('should check mod1', function () {
       var mod1 = ast.modules.mod1;
       assert.equal('class1', mod1.classes.class1.name);
+      assert.equal('test/targets/module/mod1.js', mod1.file);
+      assert.equal('2', mod1.line);
       assert.equal('mod1', mod1.name);
       assert.equal('mod1', mod1.mainName);
       assert.equal('main', mod1.tag);
