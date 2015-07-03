@@ -178,8 +178,8 @@ describe('firedoc.parser', function () {
     });
     var submodule1, submodule2;
     it('should check files and codes', function () {
-      assert.equal(5, _.keys(ast.files).length);
-      assert.equal(5, _.keys(ast.codes).length);
+      assert.equal(6, _.keys(ast.files).length);
+      assert.equal(6, _.keys(ast.codes).length);
     });
     it('should check mod1', function () {
       var mod1 = ast.modules.mod1;
@@ -207,6 +207,7 @@ describe('firedoc.parser', function () {
     it('should check submodules', function () {
       assert.deepEqual(submodule1, ast.modules.submod1);
       assert.deepEqual(submodule2, ast.modules.submod2);
+      assert.equal('test/targets/module/submod1.js', ast.modules.submod1.file);
     });
     it('should check direct methods', function () {
       assert.equal('Direct method', ast.members[0].description);
