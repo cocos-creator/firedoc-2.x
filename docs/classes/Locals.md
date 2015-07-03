@@ -1,5 +1,5 @@
 
-# firedoc 1.8.7
+# firedoc 1.8.16
 
 Fireball is the game engine for the future.
 
@@ -8,7 +8,7 @@ Fireball is the game engine for the future.
 
 Defined in: [lib/locals.js:14](../files/lib/locals.js.js)
 
-Module: [utils](../modules/utils.md)
+Module: [digesters](../modules/digesters.md)
 Parent Module: [firedoc](../modules/firedoc.md)
 
 

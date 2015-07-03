@@ -1,5 +1,5 @@
 
-# firedoc 1.8.7
+# firedoc 1.8.16
 
 Fireball is the game engine for the future.
 
@@ -245,6 +245,7 @@ var BuilderContext = {
       }
     }
     if (!link && self.options.linkNatives) {
+      item = utils.fixType(item);
       if (NATIVES && NATIVES[item]) {
         href = linkNativeType(item);
         if (href) {
@@ -607,9 +608,10 @@ var BuilderContext = {
     var html = this.render('index', view, locals);
     var filename = this.options.markdown ? '/readme.md' : '/index.html';
     var dest = this.options.dest + filename;
+
+    debug('Start writing index.html');
     return fs.writeFileAsync(dest, html, 'utf8').then(function () {
       self.emit('index', view, html, dest);
-      debug('index.html finished');
     });
   },
 
@@ -623,9 +625,10 @@ var BuilderContext = {
         var view = new DocView(file, null, '../');
         var html = self.render('file', view, locals);
         var dest = path.join(self.options.dest, 'files', file.name.replace(/\//g, '_') + self.extname);
+
+        debug('Start writing file: ' + file.name);
         return fs.writeFileAsync(dest, html, 'utf8').then(function () {
           self.emit('file', view, html, dest);
-          debug(dest + ' finished');
         });
       }
     );
@@ -641,9 +644,10 @@ var BuilderContext = {
         var view = new DocView(e, null, '../');
         var html = self.render('enum', view, locals);
         var dest = path.join(self.options.dest, 'enums', e.name + self.extname);
+
+        debug('Start writing enum: ' + e.name);
         return fs.writeFileAsync(dest, html, 'utf8').then(function () {
           self.emit('enum', view, html, dest);
-          debug(dest + ' finished');
         });
       }
     );
@@ -659,9 +663,10 @@ var BuilderContext = {
         var view = new DocView(clazz, null, '../');
         var html = self.render('class', view, locals);
         var dest = path.join(self.options.dest, 'classes', clazz.name + self.extname);
+
+        debug('Start writing class: ' + clazz.name);
         return fs.writeFileAsync(dest, html, 'utf8').then(function () {
           self.emit('class', view, html, dest);
-          debug(dest + ' finished');
         });
       }
     );
@@ -677,9 +682,10 @@ var BuilderContext = {
         var view = new DocView(mod, null, '../');
         var html = self.render('module', view, locals);
         var dest = path.join(self.options.dest, 'modules', mod.name + self.extname);
+
+        debug('Start writing module: ' + mod.name);
         return fs.writeFileAsync(dest, html, 'utf8').then(function () {
           self.emit('module', view, html, dest);
-          debug(dest + ' finished');
         });
       }
     );
@@ -699,7 +705,6 @@ BuilderContext = _.extend(BuilderContext, emitter);
  * @return {String} The combined URL
  */
 function linkNativeType (name) {
-  name = utils.fixType(name);
   var url = 'https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/';
   if (NATIVES[name] !== 1) {
     url = NATIVES[name];

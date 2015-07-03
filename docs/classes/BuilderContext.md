@@ -1,5 +1,5 @@
 
-# firedoc 1.8.7
+# firedoc 1.8.16
 
 Fireball is the game engine for the future.
 
@@ -216,7 +216,7 @@ Populate the meta data for classes
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:260](../files/lib_builder.js.md#l260) |
+| Defined | [lib/builder.js:261](../files/lib_builder.js.md#l261) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 ###### Parameters
@@ -229,7 +229,7 @@ Populate the meta data for modules
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:284](../files/lib_builder.js.md#l284) |
+| Defined | [lib/builder.js:285](../files/lib_builder.js.md#l285) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 ###### Parameters
@@ -242,7 +242,7 @@ Populate the meta data for files
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:309](../files/lib_builder.js.md#l309) |
+| Defined | [lib/builder.js:310](../files/lib_builder.js.md#l310) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 ###### Parameters
@@ -255,7 +255,7 @@ Parses file and line number from an item object and build's an HREF
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:329](../files/lib_builder.js.md#l329) |
+| Defined | [lib/builder.js:330](../files/lib_builder.js.md#l330) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 ###### Parameters
@@ -268,7 +268,7 @@ Fetches the remote data and fires the callback when it's all complete
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:340](../files/lib_builder.js.md#l340) |
+| Defined | [lib/builder.js:341](../files/lib_builder.js.md#l341) |
 | Return 		 | Promise 
 
 ###### Parameters
@@ -281,7 +281,7 @@ Makes the default directories needed
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:413](../files/lib_builder.js.md#l413) |
+| Defined | [lib/builder.js:414](../files/lib_builder.js.md#l414) |
 
 
 
@@ -291,7 +291,7 @@ Set `BuilderContext` context and return
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:429](../files/lib_builder.js.md#l429) |
+| Defined | [lib/builder.js:430](../files/lib_builder.js.md#l430) |
 | Return 		 | <a href="../classes/BuilderContext.html" class="crosslink">BuilderContext</a> 
 
 ###### Parameters
@@ -305,7 +305,7 @@ correct the theme
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:446](../files/lib_builder.js.md#l446) |
+| Defined | [lib/builder.js:447](../files/lib_builder.js.md#l447) |
 
 
 
@@ -315,7 +315,7 @@ Compule the AST
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:468](../files/lib_builder.js.md#l468) |
+| Defined | [lib/builder.js:469](../files/lib_builder.js.md#l469) |
 
 ###### Parameters
 - callback <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> The callback
@@ -327,7 +327,7 @@ Render
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:528](../files/lib_builder.js.md#l528) |
+| Defined | [lib/builder.js:529](../files/lib_builder.js.md#l529) |
 
 
 
@@ -337,7 +337,7 @@ Write api.json
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:555](../files/lib_builder.js.md#l555) |
+| Defined | [lib/builder.js:556](../files/lib_builder.js.md#l556) |
 
 ###### Parameters
 - locals <a href="../classes/Locals.html" class="crosslink">Locals</a> The locals
@@ -349,7 +349,7 @@ Function to link an external type uses `NATIVES` object
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:685](../files/lib_builder.js.md#l685) |
+| Defined | [lib/builder.js:691](../files/lib_builder.js.md#l691) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 ###### Parameters
@@ -362,7 +362,7 @@ compile
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/builder.js:701](../files/lib_builder.js.md#l701) |
+| Defined | [lib/builder.js:706](../files/lib_builder.js.md#l706) |
 
 ###### Parameters
 - ast <a href="../classes/AST.html" class="crosslink">AST</a> The `AST` object

@@ -1,3 +1,12 @@
+
+# firedoc 1.8.16
+
+Fireball is the game engine for the future.
+
+
+### File: ``
+
+```js
 /**
  * @module tags
  */
@@ -368,3 +377,4 @@ module.exports =
   "writeonce"
 
 ];
+```

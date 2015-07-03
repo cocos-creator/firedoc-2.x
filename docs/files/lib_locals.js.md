@@ -1,5 +1,5 @@
 
-# firedoc 1.8.7
+# firedoc 1.8.16
 
 Fireball is the game engine for the future.
 
@@ -149,7 +149,7 @@ var Locals = {
             /^https?:\/\//.test(attr[1]) === false) {
             var target = ast.namespacesMap[attr[1]];
             var ext = options.markdown ? '.md' : '.html';
-            if (target.parent && target.itemtype) {
+            if (target && target.parent && target.itemtype) {
               var url = target.parent.type + '/' + target.parent.name + ext +
                 '#' + target.itemtype + '_' + target.name;
               attr[1] = url;

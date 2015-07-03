@@ -1,14 +1,14 @@
 
-# firedoc 1.8.7
+# firedoc 1.8.16
 
 Fireball is the game engine for the future.
 
 ### `Firedoc` Class
 
 
-Defined in: [lib/firedoc.js:23](../files/lib/firedoc.js.js)
+Defined in: [lib/firedoc.js:25](../files/lib/firedoc.js.js)
 
-Module: [utils](../modules/utils.md)
+Module: [digesters](../modules/digesters.md)
 Parent Module: [firedoc](../modules/firedoc.md)
 
 
@@ -50,7 +50,7 @@ Firedoc main class
 | meta | description |
 |------|-------------|
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a> |
-| Defined | [lib/firedoc.js:35](../files/lib_firedoc.js.md#l35) |
+| Defined | [lib/firedoc.js:37](../files/lib_firedoc.js.md#l37) |
 
 
 
@@ -61,7 +61,7 @@ Firedoc main class
 | meta | description |
 |------|-------------|
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
-| Defined | [lib/firedoc.js:42](../files/lib_firedoc.js.md#l42) |
+| Defined | [lib/firedoc.js:44](../files/lib_firedoc.js.md#l44) |
 
 
 
@@ -72,7 +72,7 @@ Firedoc main class
 | meta | description |
 |------|-------------|
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
-| Defined | [lib/firedoc.js:49](../files/lib_firedoc.js.md#l49) |
+| Defined | [lib/firedoc.js:51](../files/lib_firedoc.js.md#l51) |
 
 
 
@@ -83,7 +83,7 @@ Firedoc main class
 | meta | description |
 |------|-------------|
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
-| Defined | [lib/firedoc.js:57](../files/lib_firedoc.js.md#l57) |
+| Defined | [lib/firedoc.js:59](../files/lib_firedoc.js.md#l59) |
 
 
 
@@ -100,7 +100,7 @@ Walks the paths and parses the directory contents
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/firedoc.js:135](../files/lib_firedoc.js.md#l135) |
+| Defined | [lib/firedoc.js:138](../files/lib_firedoc.js.md#l138) |
 
 ###### Parameters
 - next <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> 
@@ -112,7 +112,7 @@ Walk one path
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/firedoc.js:157](../files/lib_firedoc.js.md#l157) |
+| Defined | [lib/firedoc.js:160](../files/lib_firedoc.js.md#l160) |
 
 ###### Parameters
 - path <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The path to walk
@@ -125,7 +125,7 @@ Process the config, walk the file tree and write out the JSON data.
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/firedoc.js:203](../files/lib_firedoc.js.md#l203) |
+| Defined | [lib/firedoc.js:207](../files/lib_firedoc.js.md#l207) |
 
 ###### Parameters
 - callback <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> 

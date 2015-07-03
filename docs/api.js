@@ -46,6 +46,12 @@ window.apimeta = {
   ],
   "modules": [
     {
+      "name": "digesters",
+      "namespace": "firedoc.digesters",
+      "module": "firedoc",
+      "description": "A map of the default tag processors, keyed by the\ntag name.  Multiple tags can use the same digester\nby supplying the string name that points to the\nimplementation rather than a function."
+    },
+    {
       "name": "firedoc",
       "namespace": "firedoc",
       "description": "The firedoc module"
@@ -55,6 +61,12 @@ window.apimeta = {
       "namespace": "firedoc.helpers",
       "module": "firedoc",
       "description": "The helpers module"
+    },
+    {
+      "name": "tags",
+      "namespace": "firedoc.tags",
+      "module": "firedoc",
+      "description": ""
     },
     {
       "name": "utils",

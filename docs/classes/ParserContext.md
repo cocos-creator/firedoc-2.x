@@ -1,14 +1,15 @@
 
-# firedoc 1.8.7
+# firedoc 1.8.16
 
 Fireball is the game engine for the future.
 
 ### `ParserContext` Class
 
 
-Defined in: [lib/context.js:13](../files/lib/context.js.js)
+Defined in: [lib/ast/context.js:13](../files/lib/ast/context.js.js)
 
-Module: [firedoc](../modules/firedoc.md)
+Module: [digesters](../modules/digesters.md)
+Parent Module: [firedoc](../modules/firedoc.md)
 
 
 
@@ -49,7 +50,7 @@ The ParserContext
 | meta | description |
 |------|-------------|
 | Type | Any |
-| Defined | [lib/context.js:19](../files/lib_context.js.md#l19) |
+| Defined | [lib/ast/context.js:19](../files/lib_ast_context.js.md#l19) |
 
 
 
@@ -60,7 +61,7 @@ The ParserContext
 | meta | description |
 |------|-------------|
 | Type | Any |
-| Defined | [lib/context.js:40](../files/lib_context.js.md#l40) |
+| Defined | [lib/ast/context.js:41](../files/lib_ast_context.js.md#l41) |
 
 
 
@@ -71,7 +72,7 @@ The ParserContext
 | meta | description |
 |------|-------------|
 | Type | Any |
-| Defined | [lib/context.js:70](../files/lib_context.js.md#l70) |
+| Defined | [lib/ast/context.js:71](../files/lib_ast_context.js.md#l71) |
 
 
 
@@ -82,7 +83,7 @@ The ParserContext
 | meta | description |
 |------|-------------|
 | Type | Any |
-| Defined | [lib/context.js:115](../files/lib_context.js.md#l115) |
+| Defined | [lib/ast/context.js:118](../files/lib_ast_context.js.md#l118) |
 
 
 
@@ -93,7 +94,7 @@ The ParserContext
 | meta | description |
 |------|-------------|
 | Type | Any |
-| Defined | [lib/context.js:148](../files/lib_context.js.md#l148) |
+| Defined | [lib/ast/context.js:151](../files/lib_ast_context.js.md#l151) |
 
 
 
@@ -104,7 +105,7 @@ The ParserContext
 | meta | description |
 |------|-------------|
 | Type | Any |
-| Defined | [lib/context.js:176](../files/lib_context.js.md#l176) |
+| Defined | [lib/ast/context.js:179](../files/lib_ast_context.js.md#l179) |
 
 
 
@@ -121,7 +122,7 @@ reset the context
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/context.js:181](../files/lib_context.js.md#l181) |
+| Defined | [lib/ast/context.js:184](../files/lib_ast_context.js.md#l184) |
 
 
 

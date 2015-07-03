@@ -1,5 +1,5 @@
 
-# firedoc 1.8.7
+# firedoc 1.8.16
 
 Fireball is the game engine for the future.
 
@@ -15,6 +15,8 @@ Fireball is the game engine for the future.
 - [`ParserContext`](classes/ParserContext.md) from [firedoc](modules/firedoc.md)
 
 ### Module
+- [`digesters`](modules/digesters.md)
 - [`firedoc`](modules/firedoc.md)
 - [`helpers`](modules/helpers.md)
+- [`tags`](modules/tags.md)
 - [`utils`](modules/utils.md)

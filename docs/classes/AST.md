@@ -1,12 +1,12 @@
 
-# firedoc 1.8.7
+# firedoc 1.8.16
 
 Fireball is the game engine for the future.
 
 ### `AST` Class
 
 
-Defined in: [lib/ast.js:164](../files/lib/ast.js.js)
+Defined in: [lib/ast.js:65](../files/lib/ast.js.js)
 
 Module: [firedoc](../modules/firedoc.md)
 
@@ -67,7 +67,7 @@ and relationships between elements for the entire project.
 | meta | description |
 |------|-------------|
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
-| Defined | [lib/ast.js:171](../files/lib_ast.js.md#l171) |
+| Defined | [lib/ast.js:72](../files/lib_ast.js.md#l72) |
 
 
 
@@ -78,7 +78,7 @@ and relationships between elements for the entire project.
 | meta | description |
 |------|-------------|
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
-| Defined | [lib/ast.js:176](../files/lib_ast.js.md#l176) |
+| Defined | [lib/ast.js:77](../files/lib_ast.js.md#l77) |
 
 
 
@@ -89,7 +89,7 @@ and relationships between elements for the entire project.
 | meta | description |
 |------|-------------|
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
-| Defined | [lib/ast.js:181](../files/lib_ast.js.md#l181) |
+| Defined | [lib/ast.js:82](../files/lib_ast.js.md#l82) |
 
 
 
@@ -100,7 +100,7 @@ and relationships between elements for the entire project.
 | meta | description |
 |------|-------------|
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
-| Defined | [lib/ast.js:186](../files/lib_ast.js.md#l186) |
+| Defined | [lib/ast.js:87](../files/lib_ast.js.md#l87) |
 
 
 
@@ -111,7 +111,7 @@ and relationships between elements for the entire project.
 | meta | description |
 |------|-------------|
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
-| Defined | [lib/ast.js:191](../files/lib_ast.js.md#l191) |
+| Defined | [lib/ast.js:92](../files/lib_ast.js.md#l92) |
 
 
 
@@ -122,7 +122,7 @@ and relationships between elements for the entire project.
 | meta | description |
 |------|-------------|
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> |
-| Defined | [lib/ast.js:196](../files/lib_ast.js.md#l196) |
+| Defined | [lib/ast.js:97](../files/lib_ast.js.md#l97) |
 
 
 
@@ -133,7 +133,7 @@ and relationships between elements for the entire project.
 | meta | description |
 |------|-------------|
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> |
-| Defined | [lib/ast.js:201](../files/lib_ast.js.md#l201) |
+| Defined | [lib/ast.js:102](../files/lib_ast.js.md#l102) |
 
 
 
@@ -144,7 +144,7 @@ and relationships between elements for the entire project.
 | meta | description |
 |------|-------------|
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
-| Defined | [lib/ast.js:206](../files/lib_ast.js.md#l206) |
+| Defined | [lib/ast.js:107](../files/lib_ast.js.md#l107) |
 
 
 
@@ -155,7 +155,7 @@ and relationships between elements for the entire project.
 | meta | description |
 |------|-------------|
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
-| Defined | [lib/ast.js:211](../files/lib_ast.js.md#l211) |
+| Defined | [lib/ast.js:112](../files/lib_ast.js.md#l112) |
 
 
 
@@ -166,7 +166,7 @@ and relationships between elements for the entire project.
 | meta | description |
 |------|-------------|
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> |
-| Defined | [lib/ast.js:216](../files/lib_ast.js.md#l216) |
+| Defined | [lib/ast.js:117](../files/lib_ast.js.md#l117) |
 
 
 
@@ -177,7 +177,7 @@ and relationships between elements for the entire project.
 | meta | description |
 |------|-------------|
 | Type | Context |
-| Defined | [lib/ast.js:221](../files/lib_ast.js.md#l221) |
+| Defined | [lib/ast.js:122](../files/lib_ast.js.md#l122) |
 
 
 
@@ -194,7 +194,7 @@ Create a AST object
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/ast.js:231](../files/lib_ast.js.md#l231) |
+| Defined | [lib/ast.js:132](../files/lib_ast.js.md#l132) |
 | Return 		 | <a href="../classes/AST.html" class="crosslink">AST</a> 
 
 ###### Parameters
@@ -209,7 +209,7 @@ Reset the AST instance
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/ast.js:250](../files/lib_ast.js.md#l250) |
+| Defined | [lib/ast.js:151](../files/lib_ast.js.md#l151) |
 
 
 
@@ -219,7 +219,7 @@ Reset the AST instance
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/ast.js:273](../files/lib_ast.js.md#l273) |
+| Defined | [lib/ast.js:174](../files/lib_ast.js.md#l174) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 ###### Parameters
@@ -234,7 +234,7 @@ Processes all the tags in a single comment block
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/ast.js:343](../files/lib_ast.js.md#l343) |
+| Defined | [lib/ast.js:244](../files/lib_ast.js.md#l244) |
 
 ###### Parameters
 - an <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> array of the tag/text pairs
@@ -246,7 +246,7 @@ Process tag
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/ast.js:416](../files/lib_ast.js.md#l416) |
+| Defined | [lib/ast.js:320](../files/lib_ast.js.md#l320) |
 
 ###### Parameters
 - item <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
@@ -265,7 +265,7 @@ alternative comment parser.
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/ast.js:471](../files/lib_ast.js.md#l471) |
+| Defined | [lib/ast.js:376](../files/lib_ast.js.md#l376) |
 
 ###### Parameters
 - files <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
@@ -280,7 +280,7 @@ and relationships between elements for the entire project.
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/ast.js:511](../files/lib_ast.js.md#l511) |
+| Defined | [lib/ast.js:416](../files/lib_ast.js.md#l416) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 ###### Parameters

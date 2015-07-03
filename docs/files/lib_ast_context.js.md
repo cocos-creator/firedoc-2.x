@@ -1,4 +1,13 @@
 
+# firedoc 1.8.16
+
+Fireball is the game engine for the future.
+
+
+### File: ``
+
+```js
+
 /**
  * The firedoc module
  * @module firedoc
@@ -6,9 +15,9 @@
 
 const _ = require('underscore');
 const path = require('path');
-const utils = require('./utils');
+const utils = require('../utils');
 const debug = require('debug')('firedoc:context');
-const AST = require('./ast').AST;
+const AST = require('../ast').AST;
 
 /**
  * The ParserContext
@@ -198,3 +207,5 @@ var ParserContext = {
 };
 
 exports.ParserContext = ParserContext;
+
+```
