@@ -7,4 +7,5 @@ ddc
 npm-debug.log
 
 docs-ghpages
+bower_components
 themes/firedoc-theme-notab
