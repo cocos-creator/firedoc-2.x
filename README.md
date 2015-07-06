@@ -134,6 +134,8 @@ firedoc build <path> --theme [path/to/your/theme]
 Firedoc supports that you can install a theme from [Github](https://github.com), [Bitbucket](https://bitbucket.org) or any other valid url.
 
 ```sh
+$ firedoc install notab
+$ firedoc install firedoc-theme-notab
 $ firedoc install https://github.com/fireball-x/firedoc-theme-notab
 ```
 
