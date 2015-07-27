@@ -110,6 +110,16 @@ describe('firedoc.utils', function () {
       assert.equal('english', utils.localize(raw));
       assert.equal('中文', utils.localize(raw, 'zh'));
     });
+    it('should localize a complex string', function () {
+      var raw = ''+
+        '!#zh: 这个类用来封装编辑器针对节点的操作。\n'+
+        'Note: 接口中以 "N" 结尾的使用的都是 Runtime 的原生 Node 类型。\n'+
+        '!#en: This is a wrapper class for operating...';
+      var en = utils.localize(raw);
+      var zh = utils.localize(raw, 'zh');
+      console.log(en);
+      console.log(zh);
+    });
   });
 
   describe('.markdownLink', function () {
