@@ -1,5 +1,5 @@
 
-# firedoc 1.8.16
+# firedoc 1.9.1
 
 Fireball is the game engine for the future.
 
@@ -28,6 +28,7 @@ digesters are added.
 
   - [`stringlog`](#method-stringlog) Parses the JSON data and formats it into a nice log string for
 filename and line number: `/file/name.js:123`
+  - [`defineReadonly`](#method-definereadonly) Define the readonly properties
 
 
 
@@ -66,11 +67,21 @@ filename and line number: `/file/name.js:123`
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/utils.js:417](../files/lib_utils.js.md#l417) |
+| Defined | [lib/utils.js:418](../files/lib_utils.js.md#l418) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 ###### Parameters
 - data <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> The data block from the parser
+
+
+##### defineReadonly
+
+Define the readonly properties
+
+| meta | description |
+|------|-------------|
+| Defined | [lib/utils.js:446](../files/lib_utils.js.md#l446) |
+
 
 
 

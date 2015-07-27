@@ -1,5 +1,5 @@
 
-# firedoc 1.8.16
+# firedoc 1.9.1
 
 Fireball is the game engine for the future.
 
@@ -246,7 +246,7 @@ Process tag
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/ast.js:320](../files/lib_ast.js.md#l320) |
+| Defined | [lib/ast.js:327](../files/lib_ast.js.md#l327) |
 
 ###### Parameters
 - item <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
@@ -265,7 +265,7 @@ alternative comment parser.
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/ast.js:376](../files/lib_ast.js.md#l376) |
+| Defined | [lib/ast.js:383](../files/lib_ast.js.md#l383) |
 
 ###### Parameters
 - files <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
@@ -280,7 +280,7 @@ and relationships between elements for the entire project.
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/ast.js:416](../files/lib_ast.js.md#l416) |
+| Defined | [lib/ast.js:423](../files/lib_ast.js.md#l423) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> 
 
 ###### Parameters

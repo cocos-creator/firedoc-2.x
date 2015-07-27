@@ -1,12 +1,12 @@
 
-# firedoc 1.8.16
+# firedoc 1.9.1
 
 Fireball is the game engine for the future.
 
 ### `ParserContext` Class
 
 
-Defined in: [lib/ast/context.js:13](../files/lib/ast/context.js.js)
+Defined in: [lib/ast/context.js:12](../files/lib/ast/context.js.js)
 
 Module: [digesters](../modules/digesters.md)
 Parent Module: [firedoc](../modules/firedoc.md)
@@ -50,7 +50,7 @@ The ParserContext
 | meta | description |
 |------|-------------|
 | Type | Any |
-| Defined | [lib/ast/context.js:19](../files/lib_ast_context.js.md#l19) |
+| Defined | [lib/ast/context.js:18](../files/lib_ast_context.js.md#l18) |
 
 
 
@@ -61,7 +61,7 @@ The ParserContext
 | meta | description |
 |------|-------------|
 | Type | Any |
-| Defined | [lib/ast/context.js:41](../files/lib_ast_context.js.md#l41) |
+| Defined | [lib/ast/context.js:40](../files/lib_ast_context.js.md#l40) |
 
 
 
@@ -72,7 +72,7 @@ The ParserContext
 | meta | description |
 |------|-------------|
 | Type | Any |
-| Defined | [lib/ast/context.js:71](../files/lib_ast_context.js.md#l71) |
+| Defined | [lib/ast/context.js:70](../files/lib_ast_context.js.md#l70) |
 
 
 

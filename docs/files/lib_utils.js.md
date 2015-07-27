@@ -1,5 +1,5 @@
 
-# firedoc 1.8.16
+# firedoc 1.9.1
 
 Fireball is the game engine for the future.
 
@@ -12,6 +12,7 @@ Fireball is the game engine for the future.
 /**
  * Utilities modules
  * @module utils
+ * @main utils
  */
 
 const _ = require('underscore');
@@ -450,6 +451,19 @@ function stringlog(data) {
   return ' ' + file + ':' + line;
 }
 exports.stringlog = stringlog;
+
+/**
+ * Define the readonly properties
+ * @method defineReadonly
+ */
+function defineReadonly (obj, name, val) {
+  Object.defineProperty(obj, name, {
+    get: function () {
+      return val;
+    }
+  });
+}
+exports.defineReadonly = defineReadonly;
 
 
 ```

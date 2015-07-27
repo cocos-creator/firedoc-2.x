@@ -1,5 +1,5 @@
 
-# firedoc 1.8.16
+# firedoc 1.9.1
 
 Fireball is the game engine for the future.
 
@@ -9,6 +9,7 @@ Fireball is the game engine for the future.
 ```js
 /**
  * @module tags
+ * @main tags
  */
 
 module.exports =

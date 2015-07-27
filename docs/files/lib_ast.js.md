@@ -1,5 +1,5 @@
 
-# firedoc 1.8.16
+# firedoc 1.9.1
 
 Fireball is the game engine for the future.
 
@@ -273,7 +273,13 @@ var AST = {
     function onreduce (map, item) {
       var key = utils.safetrim(item.tag);
       var val = utils.safetrim(item.value);
-      map[key] = _.isString(val) ? utils.safetrim(val) : val;
+      if (!map[key]) {
+        map[key] = val;
+      } else if (!_.isArray(map[key])) {
+        map[key] = [map[key], val];
+      } else {
+        map[key].push(val);
+      }
       return map;
     }
 
@@ -290,7 +296,8 @@ var AST = {
 
     // post process
     if (this.context.block.host) {
-      _.extend(this.context.block.host, this.context.block.target);
+      this.context.block.host = _.extend(
+        this.context.block.host, this.context.block.target);
     } else {
       var target = this.context.block.target;
       target.clazz = this.context.clazz;
@@ -360,16 +367,16 @@ var AST = {
       if (_.isString(digest)) {
         digest = DIGESTERS[digest];
       }
+
       var block = this.context.block;
-      _.each(block.self, function (item) {
-        if (item.tag === 'description') {
-          block.target.description = item.value;
-        } else if (item.tag === 'type') {
-          block.target.type = utils.fixType(item.value);
-        } else if (item.tag === 'extends') {
-          block.target.extends = utils.fixType(item.value);
-        }
-      });
+      var target = block.target;
+      if (target._raw.description)
+        target.description = target._raw.description;
+      if (target._raw.type)
+        target.type = utils.fixType(target._raw.type);
+      if (target._raw.extends)
+        target.extends = utils.fixType(target._raw.extends);
+
       if (_.isFunction(digest)) {
         // here we only push and run later
         // because CORRECTION perhaps doesn't apply the later tags.

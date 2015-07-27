@@ -1,11 +1,10 @@
 
-# firedoc 1.8.16
+# firedoc 1.9.1
 
 Fireball is the game engine for the future.
 
 ### `BuilderContext` Class
 
-Extends `EventEmitter`
 
 Defined in: [lib/builder.js:36](../files/lib/builder.js.js)
 

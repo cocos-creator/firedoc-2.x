@@ -1,5 +1,5 @@
 
-# firedoc 1.8.16
+# firedoc 1.9.1
 
 Fireball is the game engine for the future.
 
@@ -10,19 +10,13 @@ Fireball is the game engine for the future.
 
 /**
  * This is the __module__ description for the `YUIDoc` module.
- * ```
- * var options = {
- *   paths: [ './lib' ],
- *   outdir: './out'
- * };
- * ```
  *
  * @module firedoc
+ * @main firedoc
  * @submodule helpers
  * @submodule utils
  * @submodule tags
  * @submodule digesters
- * @main firedoc
  */
 
 const _ = require('underscore');

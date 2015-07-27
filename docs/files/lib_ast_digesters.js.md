@@ -1,5 +1,5 @@
 
-# firedoc 1.8.16
+# firedoc 1.9.1
 
 Fireball is the game engine for the future.
 
@@ -266,32 +266,31 @@ module.exports = {
     if (target._raw.process) {
       target.process = utils.fmtProcess(target._raw.process);
     }
-    if (!target._raw.submodule) {
-      if (!this.context.mainModule) {
-        this.context.mainModule = {
-          tag: tagname,
-          name: value,
-          file: target.file,
-          line: target.line,
-          type: 'modules',
-          description: utils.localize(target.description)
-        };
-      }
-      if (this.context.mainModule._main &&
-        this.context.mainModule.name === target.name) {
-        target.file = this.context.mainModule.file;
-        target.line = this.context.mainModule.line;
-      }
-      return this.modules[value];
+    if (target._raw && target._raw.main === value) {
+      this.context.mainModule = {
+        tag: tagname,
+        name: value,
+        file: target.file,
+        line: target.line,
+        type: 'modules',
+        description: utils.localize(target.description)
+      };
     }
-    return null;
+    var mainModule = this.context.mainModule;
+    var currModule = this.modules[value];
+
+    if (!currModule._main && target._raw.main === currModule.name) {
+      utils.defineReadonly(currModule, 'file', mainModule.file);
+      utils.defineReadonly(currModule, 'line', mainModule.line);
+    }
+    return currModule;
   },
 
   //Setting the description for the module..
   'main': function (tagname, value, target, block) {
     var o = target;
     o.mainName = value;
-    o.tag = tagname;
+    o.tag = 'main';
     o.itemtype = 'main';
     o.description = utils.localize(o.description);
     o._main = true;

@@ -1,5 +1,5 @@
 
-# firedoc 1.8.16
+# firedoc 1.9.1
 
 Fireball is the game engine for the future.
 
@@ -9,7 +9,6 @@ Fireball is the game engine for the future.
 ```js
 
 /**
- * The firedoc module
  * @module firedoc
  */
 
@@ -112,6 +111,7 @@ var ParserContext = {
 
     if (!_.has(this.ast.modules, val)) {
       this.ast.modules[val] = {
+        'tag': 'module',
         'name': val,
         'namespace': val,
         'type': 'modules',

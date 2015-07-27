@@ -1,5 +1,5 @@
 
-# firedoc 1.8.16
+# firedoc 1.9.1
 
 Fireball is the game engine for the future.
 
@@ -23,7 +23,6 @@ const md = new MarkdownIt();
 /**
  * The Theme Locals
  * @class Locals
- * @main Locals
  */
 var Locals = {
 
@@ -221,13 +220,14 @@ var Locals = {
     if (this.options.markdown) {
       return data;
     }
-    var html = md.render(data || '');
+    var html = _.unescape(md.render(data || ''));
+
     //Only reprocess if helpers were asked for
     if (this.options.helpers || (html.indexOf('{{#crossLink') > -1)) {
       try {
         // markdown-it auto-escapes quotation marks (and unfortunately
         // does not expose the escaping function)
-        html = html.replace(/&quot;/g, "\"");
+        // html = html.replace(/&quot;/g, "\"");
         html = (Handlebars.compile(html))({});
       } catch (hError) {
         //Remove all the extra escapes

@@ -1,5 +1,5 @@
 
-# firedoc 1.8.16
+# firedoc 1.9.1
 
 Fireball is the game engine for the future.
 
@@ -70,7 +70,7 @@ with the `Markdown Parser`
 | meta | description |
 |------|-------------|
 | Type | <a href="../classes/BuilderContext.html" class="crosslink">BuilderContext</a> |
-| Defined | [lib/locals.js:21](../files/lib_locals.js.md#l21) |
+| Defined | [lib/locals.js:20](../files/lib_locals.js.md#l20) |
 
 
 
@@ -81,7 +81,7 @@ with the `Markdown Parser`
 | meta | description |
 |------|-------------|
 | Type | Option |
-| Defined | [lib/locals.js:26](../files/lib_locals.js.md#l26) |
+| Defined | [lib/locals.js:25](../files/lib_locals.js.md#l25) |
 
 
 
@@ -92,7 +92,7 @@ with the `Markdown Parser`
 | meta | description |
 |------|-------------|
 | Type | <a href="../classes/AST.html" class="crosslink">AST</a> |
-| Defined | [lib/locals.js:31](../files/lib_locals.js.md#l31) |
+| Defined | [lib/locals.js:30](../files/lib_locals.js.md#l30) |
 
 
 
@@ -103,7 +103,7 @@ with the `Markdown Parser`
 | meta | description |
 |------|-------------|
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
-| Defined | [lib/locals.js:36](../files/lib_locals.js.md#l36) |
+| Defined | [lib/locals.js:35](../files/lib_locals.js.md#l35) |
 
 
 
@@ -114,7 +114,7 @@ with the `Markdown Parser`
 | meta | description |
 |------|-------------|
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
-| Defined | [lib/locals.js:53](../files/lib_locals.js.md#l53) |
+| Defined | [lib/locals.js:52](../files/lib_locals.js.md#l52) |
 
 
 
@@ -125,7 +125,7 @@ with the `Markdown Parser`
 | meta | description |
 |------|-------------|
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
-| Defined | [lib/locals.js:71](../files/lib_locals.js.md#l71) |
+| Defined | [lib/locals.js:70](../files/lib_locals.js.md#l70) |
 
 
 
@@ -136,7 +136,7 @@ with the `Markdown Parser`
 | meta | description |
 |------|-------------|
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
-| Defined | [lib/locals.js:90](../files/lib_locals.js.md#l90) |
+| Defined | [lib/locals.js:89](../files/lib_locals.js.md#l89) |
 
 
 
@@ -147,7 +147,7 @@ with the `Markdown Parser`
 | meta | description |
 |------|-------------|
 | Type | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> |
-| Defined | [lib/locals.js:114](../files/lib_locals.js.md#l114) |
+| Defined | [lib/locals.js:113](../files/lib_locals.js.md#l113) |
 
 
 
@@ -175,7 +175,7 @@ Initialize the markdownit rulers
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/locals.js:128](../files/lib_locals.js.md#l128) |
+| Defined | [lib/locals.js:127](../files/lib_locals.js.md#l127) |
 
 
 
@@ -185,7 +185,7 @@ Parses file and line number from an item object and build's an HREF
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/locals.js:156](../files/lib_locals.js.md#l156) |
+| Defined | [lib/locals.js:155](../files/lib_locals.js.md#l155) |
 | Return 		 | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> 
 
 ###### Parameters
@@ -198,7 +198,7 @@ build the method name by its name and parameters
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/locals.js:174](../files/lib_locals.js.md#l174) |
+| Defined | [lib/locals.js:173](../files/lib_locals.js.md#l173) |
 
 ###### Parameters
 - name <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> The function/method name
@@ -213,7 +213,7 @@ Parses `<pre class="code prettyprint"><code>
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/locals.js:188](../files/lib_locals.js.md#l188) |
+| Defined | [lib/locals.js:187](../files/lib_locals.js.md#l187) |
 | Return 		 | HTML 
 
 ###### Parameters
@@ -226,7 +226,7 @@ Wrapper around the Markdown parser so it can be normalized or even side stepped
 
 | meta | description |
 |------|-------------|
-| Defined | [lib/locals.js:203](../files/lib_locals.js.md#l203) |
+| Defined | [lib/locals.js:202](../files/lib_locals.js.md#l202) |
 | Return 		 | HTML 
 
 ###### Parameters

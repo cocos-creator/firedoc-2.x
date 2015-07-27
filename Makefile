@@ -11,7 +11,7 @@ help:
 	./scripts/help.sh
 
 docs: docsghpages
-	./lib/cli.js ./lib --markdown
+	firedoc build ./lib --markdown
 
 docsghpages:
 	-rm -rf ./docs-ghpages
