@@ -1,0 +1,1826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>lib_ast_digesters.js</title>
+  <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+  <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+  <link rel="shortcut icon" type="image/ico" href="../assets/favicon.ico">
+  <link rel="stylesheet" href="../assets/css/solarized_light.css">
+  <script src="../assets/vendor/yui-min.js"></script>
+</head>
+<body>
+
+<div id="doc">
+  <header class="main-header">
+    <div class="content">
+      <div class="project-title">
+        <a href="http://docs.fireball-x.com">
+          <img class="logo" src="http://docs.fireball-x.com/images/logo.png"
+            title="Fireball Editor API">
+        </a>
+          <h1 class="project-name">firedoc</h1>
+          <span class="project-version">1.9.2</span>
+          <p class="description">Fireball is the game engine for the future.</p>
+        </div>
+        <ul class="jump-links">
+          <li><a href="#index" class="index-jump-link">index</a></li>
+          <li><a href="#top" class="top-jump-link">top</a></li>
+        </ul>
+    </div>
+  </header>
+  <div id="bd" class="main-body">
+    <div id="docs-sidebar" class="sidebar apidocs"><div id="api-list" style="height:100%">
+  <div id="api-tabview" class="tabview" style="height:100%">
+    <div id="api-tabview-filter">
+      <input type="search" id="api-filter" placeholder="Type to filter APIs">
+    </div>
+    <div id="api-tabview-panel">
+      <ul id="api-items" class="apis items">
+        <li>
+          <div class="api-list-item-clickable wave-btn">
+            <a class="module" href="/modules/digesters.html">firedoc.digesters</a>
+            <i class="flag">module</i>
+          </div>
+          <div class="members-list hidden">
+            
+            
+                <h3>properties</h3>
+                <ul class="apis members api-members">
+                    <li class="">
+                      <a class="name" href="/modules/digesters.html#property_throws">
+                        throws
+                      </a>
+                    </li>
+                </ul>
+            
+            
+            
+                <h3>methods</h3>
+                <ul class="apis members api-members">
+                    <li class="private">
+                      <a class="name" href="/modules/digesters.html#method_implodeString">
+                        implodeString
+                      </a>
+                    </li>
+                    <li class="private">
+                      <a class="name" href="/modules/digesters.html#method_implodeString">
+                        implodeString
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/digesters.html#method_params">
+                        params
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/digesters.html#method_return">
+                        return
+                      </a>
+                    </li>
+                </ul>
+            
+          </div>
+        </li>
+        <li>
+          <div class="api-list-item-clickable wave-btn">
+            <a class="module" href="/modules/firedoc.html">firedoc</a>
+            <i class="flag">module</i>
+          </div>
+          <div class="members-list hidden">
+            
+            
+                <h3>properties</h3>
+                <ul class="apis members api-members">
+                    <li class="">
+                      <a class="name" href="/modules/firedoc.html#property_IGNORE_TAGLIST">
+                        IGNORE_TAGLIST
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/firedoc.html#property_CORRECTIONS">
+                        CORRECTIONS
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/firedoc.html#property_SHORT_TAGS">
+                        SHORT_TAGS
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/firedoc.html#property_NATIVES">
+                        NATIVES
+                      </a>
+                    </li>
+                </ul>
+            
+            
+            
+                <h3>methods</h3>
+                <ul class="apis members api-members">
+                    <li class="">
+                      <a class="name" href="/modules/firedoc.html#method_parse">
+                        parse
+                      </a>
+                    </li>
+                </ul>
+            
+          </div>
+        </li>
+        <li>
+          <div class="api-list-item-clickable wave-btn">
+            <a class="module" href="/modules/helpers.html">firedoc.helpers</a>
+            <i class="flag">module</i>
+          </div>
+          <div class="members-list hidden">
+            
+            
+            
+            
+            
+                <h3>methods</h3>
+                <ul class="apis members api-members">
+                    <li class="">
+                      <a class="name" href="/modules/helpers.html#method_renderFileTree">
+                        renderFileTree
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/helpers.html#method_crossLink">
+                        crossLink
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/helpers.html#method_crossLinkModule">
+                        crossLinkModule
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/helpers.html#method_crossLinkRaw">
+                        crossLinkRaw
+                      </a>
+                    </li>
+                </ul>
+            
+          </div>
+        </li>
+        <li>
+          <div class="api-list-item-clickable wave-btn">
+            <a class="module" href="/modules/tags.html">firedoc.tags</a>
+            <i class="flag">module</i>
+          </div>
+          <div class="members-list hidden">
+            
+            
+                <h3>properties</h3>
+                <ul class="apis members api-members">
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_async">
+                        async
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_author">
+                        author
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_attribute">
+                        attribute
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_beta">
+                        beta
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_broadcast">
+                        broadcast
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_bubbles">
+                        bubbles
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_callback">
+                        callback
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_category">
+                        category
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_chainable">
+                        chainable
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_class">
+                        class
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_conditional">
+                        conditional
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_config">
+                        config
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_const">
+                        const
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_constructs">
+                        constructs
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_constructor">
+                        constructor
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_contributor">
+                        contributor
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_default">
+                        default
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_deprecated">
+                        deprecated
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_description">
+                        description
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_YUI">
+                        YUI
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_enum">
+                        enum
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_event">
+                        event
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_evil">
+                        evil
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_extension">
+                        extension
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_extensionfor">
+                        extensionfor
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_extension_for">
+                        extension_for
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_example">
+                        example
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_experimental">
+                        experimental
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_extends">
+                        extends
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_file">
+                        file
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_final">
+                        final
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_fireonce">
+                        fireonce
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_for">
+                        for
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_global">
+                        global
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_icon">
+                        icon
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_in">
+                        in
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_initonly">
+                        initonly
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_injects">
+                        injects
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_knownissue">
+                        knownissue
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_line">
+                        line
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_method">
+                        method
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_module">
+                        module
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_main">
+                        main
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_optional">
+                        optional
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_required">
+                        required
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_param">
+                        param
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_plugin">
+                        plugin
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_preventable">
+                        preventable
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_private">
+                        private
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_process">
+                        process
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_project">
+                        project
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_logo">
+                        logo
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_property">
+                        property
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_protected">
+                        protected
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_public">
+                        public
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_queuable">
+                        queuable
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_readonly">
+                        readonly
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_requires">
+                        requires
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_return">
+                        return
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_see">
+                        see
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_since">
+                        since
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_static">
+                        static
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_submodule">
+                        submodule
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_description">
+                        description
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_title">
+                        title
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_todo">
+                        todo
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_type">
+                        type
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_url">
+                        url
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_uses">
+                        uses
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_value">
+                        value
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/tags.html#property_writeonce">
+                        writeonce
+                      </a>
+                    </li>
+                </ul>
+            
+            
+            
+            
+          </div>
+        </li>
+        <li>
+          <div class="api-list-item-clickable wave-btn">
+            <a class="module" href="/modules/utils.html">firedoc.utils</a>
+            <i class="flag">module</i>
+          </div>
+          <div class="members-list hidden">
+            
+            
+            
+            
+            
+                <h3>methods</h3>
+                <ul class="apis members api-members">
+                    <li class="">
+                      <a class="name" href="/modules/utils.html#method_fmtProcess">
+                        fmtProcess
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/utils.html#method_getNamespace">
+                        getNamespace
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/utils.html#method_escapeHTML">
+                        escapeHTML
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/utils.html#method_safetrim">
+                        safetrim
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/utils.html#method_unindent">
+                        unindent
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/utils.html#method_filterFileName">
+                        filterFileName
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/utils.html#method_getFoundAt">
+                        getFoundAt
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/utils.html#method_getLayouts">
+                        getLayouts
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/utils.html#method_getPages">
+                        getPages
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/utils.html#method_getPartials">
+                        getPartials
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/utils.html#method_prepare">
+                        prepare
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/utils.html#method_fixType">
+                        fixType
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/utils.html#method_webpath">
+                        webpath
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/utils.html#method_localize">
+                        localize
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/utils.html#method_markdownLink">
+                        markdownLink
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/modules/utils.html#method_buildFileTree">
+                        buildFileTree
+                      </a>
+                    </li>
+                </ul>
+            
+          </div>
+        </li>
+        <li>
+          <div class="api-list-item-clickable wave-btn">
+            <a class="class" 
+              href="/classes/AST.html" 
+              title="firedoc.AST">firedoc.AST</a>
+            <i class="flag">class</i>
+          </div>
+          <div class="members-list hidden">
+            
+            
+                <h3>properties</h3>
+                <ul class="apis members api-members">
+                    <li class="">
+                      <a class="name" href="/classes/AST.html#property_project">
+                        project
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/AST.html#property_files">
+                        files
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/AST.html#property_codes">
+                        codes
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/AST.html#property_modules">
+                        modules
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/AST.html#property_classes">
+                        classes
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/AST.html#property_members">
+                        members
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/AST.html#property_inheritedMembers">
+                        inheritedMembers
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/AST.html#property_namespacesMap">
+                        namespacesMap
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/AST.html#property_commentsMap">
+                        commentsMap
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/AST.html#property_syntaxType">
+                        syntaxType
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/AST.html#property_context">
+                        context
+                      </a>
+                    </li>
+                </ul>
+            
+            
+            
+                <h3>methods</h3>
+                <ul class="apis members api-members">
+                    <li class="">
+                      <a class="name" href="/classes/AST.html#method_create">
+                        create
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/AST.html#method_reset">
+                        reset
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/AST.html#method_oncomment">
+                        oncomment
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/AST.html#method_onblock">
+                        onblock
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/AST.html#method_ontag">
+                        ontag
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/AST.html#method_extract">
+                        extract
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/AST.html#method_transform">
+                        transform
+                      </a>
+                    </li>
+                </ul>
+            
+          </div>
+        </li>
+        <li>
+          <div class="api-list-item-clickable wave-btn">
+            <a class="class" 
+              href="/classes/BuilderContext.html" 
+              title="firedoc.BuilderContext">firedoc.BuilderContext</a>
+            <i class="flag">class</i>
+          </div>
+          <div class="members-list hidden">
+            
+            
+                <h3>properties</h3>
+                <ul class="apis members api-members">
+                    <li class="">
+                      <a class="name" href="/classes/BuilderContext.html#property_ast">
+                        ast
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/BuilderContext.html#property_options">
+                        options
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/BuilderContext.html#property_helpers">
+                        helpers
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/BuilderContext.html#property_cacheView">
+                        cacheView
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/BuilderContext.html#property_template">
+                        template
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/BuilderContext.html#property_files">
+                        files
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/BuilderContext.html#property_viewExtname">
+                        viewExtname
+                      </a>
+                    </li>
+                </ul>
+            
+            
+            
+                <h3>methods</h3>
+                <ul class="apis members api-members">
+                    <li class="">
+                      <a class="name" href="/classes/BuilderContext.html#method_metadata">
+                        metadata
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/BuilderContext.html#method_addHelper">
+                        addHelper
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/BuilderContext.html#method_addHelpers">
+                        addHelpers
+                      </a>
+                    </li>
+                    <li class="private">
+                      <a class="name" href="/classes/BuilderContext.html#method__inlineCode">
+                        _inlineCode
+                      </a>
+                    </li>
+                    <li class="private">
+                      <a class="name" href="/classes/BuilderContext.html#method__parseCrossLink">
+                        _parseCrossLink
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/BuilderContext.html#method_populateClasses">
+                        populateClasses
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/BuilderContext.html#method_populateModules">
+                        populateModules
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/BuilderContext.html#method_populateFiles">
+                        populateFiles
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/BuilderContext.html#method_addFoundAt">
+                        addFoundAt
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/BuilderContext.html#method_mixExternal">
+                        mixExternal
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/BuilderContext.html#method_makeDirs">
+                        makeDirs
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/BuilderContext.html#method_init">
+                        init
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/BuilderContext.html#method_correctTheme">
+                        correctTheme
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/BuilderContext.html#method_compile">
+                        compile
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/BuilderContext.html#method_render">
+                        render
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/BuilderContext.html#method_writeApiMeta">
+                        writeApiMeta
+                      </a>
+                    </li>
+                    <li class="private">
+                      <a class="name" href="/classes/BuilderContext.html#method_NATIVES_LINKER">
+                        NATIVES_LINKER
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/BuilderContext.html#method_compile">
+                        compile
+                      </a>
+                    </li>
+                </ul>
+            
+          </div>
+        </li>
+        <li>
+          <div class="api-list-item-clickable wave-btn">
+            <a class="class" 
+              href="/classes/DocParser.html" 
+              title="firedoc.DocParser">firedoc.DocParser</a>
+            <i class="flag">class</i>
+          </div>
+          <div class="members-list hidden">
+            
+            
+                <h3>properties</h3>
+                <ul class="apis members api-members">
+                    <li class="">
+                      <a class="name" href="/classes/DocParser.html#property_TAGLIST">
+                        TAGLIST
+                      </a>
+                    </li>
+                </ul>
+            
+            
+            
+                <h3>methods</h3>
+                <ul class="apis members api-members">
+                    <li class="private">
+                      <a class="name" href="/classes/DocParser.html#method_stringlog">
+                        stringlog
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/DocParser.html#method_defineReadonly">
+                        defineReadonly
+                      </a>
+                    </li>
+                </ul>
+            
+          </div>
+        </li>
+        <li>
+          <div class="api-list-item-clickable wave-btn">
+            <a class="class" 
+              href="/classes/DocView.html" 
+              title="firedoc.DocView">firedoc.DocView</a>
+            <i class="flag">class</i>
+          </div>
+          <div class="members-list hidden">
+            
+            
+            
+            
+            
+                <h3>methods</h3>
+                <ul class="apis members api-members">
+                    <li class="">
+                      <a class="name" href="/classes/DocView.html#method_htmlTitle">
+                        htmlTitle
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/DocView.html#method_title">
+                        title
+                      </a>
+                    </li>
+                </ul>
+            
+          </div>
+        </li>
+        <li>
+          <div class="api-list-item-clickable wave-btn">
+            <a class="class" 
+              href="/classes/Firedoc.html" 
+              title="firedoc.Firedoc">firedoc.Firedoc</a>
+            <i class="flag">class</i>
+          </div>
+          <div class="members-list hidden">
+            
+            
+                <h3>properties</h3>
+                <ul class="apis members api-members">
+                    <li class="private">
+                      <a class="name" href="/classes/Firedoc.html#property_filecount">
+                        filecount
+                      </a>
+                    </li>
+                    <li class="private">
+                      <a class="name" href="/classes/Firedoc.html#property_filemap">
+                        filemap
+                      </a>
+                    </li>
+                    <li class="private">
+                      <a class="name" href="/classes/Firedoc.html#property_dirmap">
+                        dirmap
+                      </a>
+                    </li>
+                    <li class="private">
+                      <a class="name" href="/classes/Firedoc.html#property_options">
+                        options
+                      </a>
+                    </li>
+                </ul>
+            
+            
+            
+                <h3>methods</h3>
+                <ul class="apis members api-members">
+                    <li class="">
+                      <a class="name" href="/classes/Firedoc.html#method_walk">
+                        walk
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/Firedoc.html#method_walkOne">
+                        walkOne
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/Firedoc.html#method_build">
+                        build
+                      </a>
+                    </li>
+                </ul>
+            
+          </div>
+        </li>
+        <li>
+          <div class="api-list-item-clickable wave-btn">
+            <a class="class" 
+              href="/classes/Locals.html" 
+              title="firedoc.Locals">firedoc.Locals</a>
+            <i class="flag">class</i>
+          </div>
+          <div class="members-list hidden">
+            
+            
+                <h3>properties</h3>
+                <ul class="apis members api-members">
+                    <li class="">
+                      <a class="name" href="/classes/Locals.html#property_context">
+                        context
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/Locals.html#property_options">
+                        options
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/Locals.html#property_ast">
+                        ast
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/Locals.html#property_project">
+                        project
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/Locals.html#property_i18n">
+                        i18n
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/Locals.html#property_modules">
+                        modules
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/Locals.html#property_classes">
+                        classes
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/Locals.html#property_files">
+                        files
+                      </a>
+                    </li>
+                    <li class="private">
+                      <a class="name" href="/classes/Locals.html#property__mergeCounter">
+                        _mergeCounter
+                      </a>
+                    </li>
+                </ul>
+            
+            
+            
+                <h3>methods</h3>
+                <ul class="apis members api-members">
+                    <li class="">
+                      <a class="name" href="/classes/Locals.html#method_initMarkdownRulers">
+                        initMarkdownRulers
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/Locals.html#method_addFoundAt">
+                        addFoundAt
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/Locals.html#method_getMethodName">
+                        getMethodName
+                      </a>
+                    </li>
+                    <li class="private">
+                      <a class="name" href="/classes/Locals.html#method__parseCode">
+                        _parseCode
+                      </a>
+                    </li>
+                    <li class="private">
+                      <a class="name" href="/classes/Locals.html#method_markdown">
+                        markdown
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/Locals.html#method_appendClassToModule">
+                        appendClassToModule
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/Locals.html#method_getClassInheritanceTree">
+                        getClassInheritanceTree
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/Locals.html#method_buildMember">
+                        buildMember
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/Locals.html#method_buildMembers">
+                        buildMembers
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/Locals.html#method_augmentData">
+                        augmentData
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/Locals.html#method_mergeExtends">
+                        mergeExtends
+                      </a>
+                    </li>
+                    <li class="private">
+                      <a class="name" href="/classes/Locals.html#method_getExpandIterator">
+                        getExpandIterator
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/Locals.html#method_extendMembers">
+                        extendMembers
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/Locals.html#method_expandMembersFromModules">
+                        expandMembersFromModules
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/Locals.html#method_expandMembersFromModules">
+                        expandMembersFromModules
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/Locals.html#method_create">
+                        create
+                      </a>
+                    </li>
+                </ul>
+            
+          </div>
+        </li>
+        <li>
+          <div class="api-list-item-clickable wave-btn">
+            <a class="class" 
+              href="/classes/ParserContext.html" 
+              title="firedoc.ParserContext">firedoc.ParserContext</a>
+            <i class="flag">class</i>
+          </div>
+          <div class="members-list hidden">
+            
+            
+                <h3>properties</h3>
+                <ul class="apis members api-members">
+                    <li class="">
+                      <a class="name" href="/classes/ParserContext.html#property_file">
+                        file
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/ParserContext.html#property_mainModule">
+                        mainModule
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/ParserContext.html#property_module">
+                        module
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/ParserContext.html#property_process">
+                        process
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/ParserContext.html#property_submodule">
+                        submodule
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="name" href="/classes/ParserContext.html#property_block">
+                        block
+                      </a>
+                    </li>
+                </ul>
+            
+            
+            
+                <h3>methods</h3>
+                <ul class="apis members api-members">
+                    <li class="">
+                      <a class="name" href="/classes/ParserContext.html#method_reset">
+                        reset
+                      </a>
+                    </li>
+                </ul>
+            
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+    <div id="docs-main" class="apidocs">
+      <div class="content container"><h1 class="file-heading">File: lib_ast_digesters.js</h1>
+
+<div class="file">
+  <pre class="code prettyprint linenums">
+/**
+ * A map of the default tag processors, keyed by the
+ * tag name.  Multiple tags can use the same digester
+ * by supplying the string name that points to the
+ * implementation rather than a function.
+ * @module digesters
+ * @main digesters
+ */
+
+const _ = require(&#x27;underscore&#x27;);
+const fs = require(&#x27;graceful-fs&#x27;);
+const utils = require(&#x27;../utils&#x27;);
+
+const REGEX_TYPE = /(.*?)\{(.*?)\}(.*)/;
+const REGEX_GLOBAL_LINES = /\r\n|\n/g;
+const REGEX_FIRSTWORD = /^\s*?(\[([^\[\]]+)\]\*?|[^\s]+)\s*\-?\s*(.*)/;
+const REGEX_OPTIONAL = /^\[(.*)\]$/;
+
+/**
+ * Flatten a string, remove all line breaks and replace them with a token
+ * @method implodeString
+ * @private
+ * @param {String} str The string to operate on
+ * @return {String} The modified string
+ */
+function implodeString (str) {
+  return (str || &#x27;&#x27;).replace(REGEX_GLOBAL_LINES, &#x27;!~FIREDOC_LINE~!&#x27;);
+}
+
+/**
+ * Un-flatten a string, replace tokens injected with &#x60;implodeString&#x60;
+ * @method implodeString
+ * @private
+ * @param {String} str The string to operate on
+ * @return {String} The modified string
+ */
+function explodeString (str) {
+  return (str || &#x27;&#x27;).replace(/!~FIREDOC_LINE~!/g, &#x27;\n&#x27;);
+}
+
+module.exports = {
+  /**
+   * Handle with params
+   * @method params
+   */
+  &#x27;param&#x27;: function (tagname, value, target, block) {
+    target.params = target.params || [];
+    if (!value) {
+      this.warnings.push({
+        message: &#x27;param name/type/descript missing&#x27;,
+        line: utils.stringlog(block)
+      });
+      console.warn(&#x27;param name/type/descript missing: &#x27; + utils.stringlog(block));
+      return;
+    }
+
+    var type, name, parts, optional, optdefault, parent, multiple, len, result,
+      desc = implodeString(utils.safetrim(value)),
+      match = REGEX_TYPE.exec(desc),
+      host = target.params,
+      type_;
+
+    // Extract {type}
+    if (match) {
+      type_ = utils.safetrim(match[2]);
+      type = utils.safetrim(match[2]);
+      desc = utils.safetrim(match[1] + match[3]);
+    }
+
+    // extract the first word, this is the param name
+    match = REGEX_FIRSTWORD.exec(desc);
+    if (match) {
+      name = utils.safetrim(explodeString(match[1]));
+      desc = utils.safetrim(match[3]);
+    }
+
+    if (!name) {
+      if (value &amp;&amp; value.match(/callback/i)) {
+        this.warnings.push({
+          message: &#x27;Fixing missing name for callback&#x27;,
+          line: utils.stringlog(block)
+        });
+        console.warn(&#x27;Fixing missing name for callback:&#x27; + utils.stringlog(block));
+        name = &#x27;callback&#x27;;
+        type = &#x27;Callback&#x27;;
+      } else {
+        this.warnings.push({
+          message: &#x27;param name missing: &#x27; + value,
+          line: utils.stringlog(block)
+        });
+        console.warn(&#x27;param name missing: &#x27; + value + &#x27;:&#x27; + utils.stringlog(block));
+        name = &#x27;UNKNOWN&#x27;;
+      }
+    }
+
+    len = name.length - 1;
+    if (name.charAt(len) === &#x27;*&#x27;) {
+        multiple = true;
+        name = name.substr(0, len);
+    }
+
+    // extract [name], optional param
+    if (name.indexOf(&#x27;[&#x27;) &gt; -1) {
+      match = REGEX_OPTIONAL.exec(name);
+      if (match) {
+        optional = true;
+        name = utils.safetrim(match[1]);
+        // extract optional=defaultvalue
+        parts = name.split(&#x27;=&#x27;);
+        if (parts.length &gt; 1) {
+          name = parts[0];
+          optdefault = parts[1];
+          //Add some shortcuts for object/array defaults
+          if (optdefault.toLowerCase() === &#x27;object&#x27;) {
+            optdefault = &#x27;{}&#x27;;
+          }
+          if (optdefault.toLowerCase() === &#x27;array&#x27;) {
+            optdefault = &#x27;[]&#x27;;
+          }
+        }
+      }
+    }
+
+    // This should run after the check for optional parameters
+    // and before the check for child parameters
+    // because the signature for 0..n params is [...args]
+    if (name.substr(0, 3) === &#x27;...&#x27;) {
+      multiple = true;
+      name = name.substr(3);
+    }
+
+    // parse object.prop, indicating a child property for object
+    if (name.indexOf(&#x27;.&#x27;) &gt; -1) {
+      match = name.split(&#x27;.&#x27;);
+      parent = utils.safetrim(match[0]);
+      _.each(target.params, function (param) {
+        if (param.name === parent) {
+          param.props = param.props || [];
+          host = param.props;
+          match.shift();
+          name = utils.safetrim(match.join(&#x27;.&#x27;));
+          if (match.length &gt; 1) {
+            var pname = name.split(&#x27;.&#x27;)[0], par;
+            _.each(param.props, function (o) {
+              if (o.name === pname) {
+                par = o;
+              }
+            });
+            if (par) {
+              match = name.split(&#x27;.&#x27;);
+              match.shift();
+              name = match.join(&#x27;.&#x27;);
+              par.props = par.props || [];
+              host = par.props;
+            }
+          }
+        }
+      });
+    }
+
+    result = {
+      name: name,
+      description: explodeString(desc)
+    };
+
+    if (type) {
+      // find types from classitems
+      var item = _.findWhere(this.members, {&#x27;name&#x27;: type});
+      if (!item &amp;&amp; this.context.clazz) {
+        item = this.classes[this.context.clazz].types[type];
+      }
+      if (!item &amp;&amp; this.context.module) {
+        item = this.modules[this.context.module].types[type];
+      }
+      // finded the type
+      if (item &amp;&amp; item.params) {
+        // Dont remove the clone, because the item.params will be
+        // used by multiple results, so that we need to clone a new
+        // one for its own usage.
+        result.description = result.description || item.description;
+        result.props = _.clone(item.params);
+        result.type = type_;
+      } else {
+        result.type = type;
+      }
+    }
+
+    if (optional) {
+      result.optional = true;
+      if (optdefault) {
+        result.optdefault = optdefault;
+      }
+    }
+
+    if (multiple) {
+      result.multiple = true;
+    }
+
+    // localize the description
+    result.description = utils.localize(result.description);
+
+    // push localized result to host
+    host.push(result);
+  },
+
+  /**
+   * Handle with return
+   * @method return
+   */
+  &#x27;return&#x27;: function (tagname, value, target, block) {
+    var desc = implodeString(utils.safetrim(value)),
+      type,
+      match = REGEX_TYPE.exec(desc),
+      result = {};
+
+    if (match) {
+      type = utils.safetrim(match[2]);
+      desc = utils.safetrim(match[1] + match[3]);
+    }
+
+    result = {
+      description: utils.unindent(explodeString(desc))
+    };
+
+    if (type) {
+      result.type = type;
+    }
+
+    // remove the fist char &#x27;-&#x27; for @return tag
+    result.description = result.description.replace(/^\s?-\s?/, &#x27;&#x27;);
+
+    // localize the description
+    result.description = utils.localize(result.description);
+
+    target[tagname] = result;
+  },
+
+  /**
+   * Handle with throws
+   * @property throws
+   */
+  &#x27;throws&#x27;: &#x27;return&#x27;,
+
+  &#x27;injects&#x27;: &#x27;return&#x27;,
+
+  // trying to overwrite the constructor value is a bad idea
+  &#x27;constructor&#x27;: function (tagname, value, target, block) {
+    target.isConstructor = true;
+  },
+
+  // A key bock type for declaring modules and submodules
+  // subsequent class and member blocks will be assigned
+  // to this module.
+  &#x27;module&#x27;: function (tagname, value, target, block) {
+    this.context.module = value;
+    if (target._raw.process) {
+      target.process = utils.fmtProcess(target._raw.process);
+    }
+    if (target._raw &amp;&amp; target._raw.main === value) {
+      this.context.mainModule = {
+        tag: tagname,
+        name: value,
+        file: target.file,
+        line: target.line,
+        type: &#x27;modules&#x27;,
+        description: utils.localize(target.description)
+      };
+    }
+    var mainModule = this.context.mainModule;
+    var currModule = this.modules[value];
+
+    if (!currModule._main &amp;&amp; target._raw.main === currModule.name) {
+      utils.defineReadonly(currModule, &#x27;file&#x27;, mainModule.file);
+      utils.defineReadonly(currModule, &#x27;line&#x27;, mainModule.line);
+    }
+    return currModule;
+  },
+
+  //Setting the description for the module..
+  &#x27;main&#x27;: function (tagname, value, target, block) {
+    var o = target;
+    o.mainName = value;
+    o.tag = &#x27;main&#x27;;
+    o.itemtype = &#x27;main&#x27;;
+    o.description = utils.localize(o.description);
+    o._main = true;
+    this.context.mainModule = o;
+  },
+
+  // accepts a single project definition for the source tree
+  &#x27;project&#x27;: function (tagname, value, target, block) {
+    this.project.name = value;
+    this.project.description = this.project.description || value;
+  },
+  
+  // accepts a single project logo definition
+  &#x27;logo&#x27;: function (tagname, value, target, block) {
+    this.project.logo = value;
+  },
+
+  // A key bock type for declaring submodules.  subsequent class and
+  // member blocks will be assigned to this submodule.
+  &#x27;submodule&#x27;: function (tagname, value, target, block) {
+    this.context.submodule = value;
+
+    var host = this.modules[value];
+    var clazz = this.context.clazz;
+    var parent = this.context.module;
+    if (parent) {
+      host.module = parent;
+      var parentModule = this.context.ast.modules[parent];
+      if (parentModule) {
+        this.context.ast.modules[parent].submodules[host.name] = host;
+      }
+    }
+    if (clazz &amp;&amp; this.classes[clazz]) {
+      this.classes[clazz].submodule = value;
+    }
+    return host;
+  },
+
+  // this is a way to abstract the definitions of callback arguments
+  &#x27;callback&#x27;: function (tagname, value, target, block) {
+    target.name = value;
+    target.isTypeDef = true;
+  },
+
+  // A key bock type for declaring classes, subsequent
+  // member blocks will be assigned to this class
+  &#x27;class&#x27;: function (tagname, value, target, block) {
+    var self = this;
+    var fullname, host, parent;
+
+    // set the process and attach the process on &#x60;target&#x60;
+    if (target._raw.process) {
+      target.process = utils.fmtProcess(target._raw.process);
+    } else {
+      var mod = this.modules[this.context.module];
+      if (mod) {
+        target.process = mod.process;
+      }
+    }
+
+    if (target._raw.extends) {
+      var extended = target._raw.extends;
+      if (!extended) {
+        console.warn(&#x27;usage: &#x60;@extends &lt;class&gt;&#x60;, but only found &#x60;@extends&#x60;&#x27;);
+      } else if (!this.inheritedMembers.length) {
+        this.inheritedMembers.push([extended, value]);
+      } else {
+        var needNewItem = true;
+        var item, at;
+        _.some(this.inheritedMembers, function (member) {
+          item = member;
+          at = member.indexOf(extended);
+          if (member.length - 1 === at) {
+            return true;  // break
+          }
+          if (member[at + 1] === value) {
+            needNewItem = false;
+            return true;
+          }
+          if (at !== -1) {
+            return true;
+          }
+        }, this);
+        if (needNewItem) {
+          if (extended !== item[item.length - 1]) {
+            var newItem = item.slice(0, at + 1);
+            newItem.push(value);
+            self.inheritedMembers.push(newItem);
+          } else {
+            item.push(value);
+          }
+        }
+      }
+    }
+    
+    this.context.clazz = value;
+
+    fullname = this.context.clazz;
+    host = this.classes[fullname] || {};
+    parent = this.context.module;
+
+    if (parent &amp;&amp; host) {
+      host.module = parent;
+    }
+
+    // set &#x60;is_enum&#x60; when the tagname is &quot;enum&quot;
+    if (tagname === &#x27;enum&#x27;) {
+      host.isEnum = true;
+      host.type = &#x27;enums&#x27;;
+    } else {
+      host.isEnum = false;
+      host.type = &#x27;classes&#x27;;
+    }
+
+    //Merge host and target in case the class was defined in a &quot;for&quot; tag
+    //before it was defined in a &quot;class&quot; tag
+    host = _.extend(host, target);
+    this.classes[fullname] = host;
+    parent = this.context.submodule;
+    if (parent) {
+      host.submodule = parent;
+    }
+
+    // localize
+    host.description = utils.localize(host.description);
+    target.description = host.description;
+    return host;
+  },
+
+  // just defer from class in their names
+  &#x27;enum&#x27;: &#x27;class&#x27;,
+
+  // change &#x27;const&#x27; to final property
+  &#x27;const&#x27;: function (tagname, value, target, block) {
+    target.itemtype = &#x27;property&#x27;;
+    target.name = value;
+    /*jshint sub:true */
+    target[&#x27;final&#x27;] = &#x27;&#x27;;
+  },
+
+  // supported classitems
+  &#x27;property&#x27;: function (tagname, value, target, block) {
+    var match, name, desc, type;
+
+    target.itemtype = tagname;
+    target.name = value;
+
+    if (target._raw.process) {
+      target.process = utils.fmtProcess(target._raw.process);
+    }
+
+    if (tagname === &#x27;property&#x27;) {
+      var propM = value.match(/^\{(.+)\} ([a-zA-Z0-9_]+)\s*\-?\s*(.+)?$/);
+      if (propM &amp;&amp; propM.length === 4) {
+        value = propM[2];
+        target.type = propM[1];
+        target.name = propM[2];
+        target.description = propM[3];
+      }
+    }
+
+    if (!target.type) {
+      desc = implodeString(utils.safetrim(value));
+      match = REGEX_TYPE.exec(desc);
+
+      // Extract {type}
+      if (match) {
+        type = utils.safetrim(match[2]);
+        name = utils.safetrim(match[1] + match[3]);
+        target.type = type;
+        target.name = name;
+      }
+    }
+
+    // localize the description
+    target.description = utils.localize(target.description);
+  },
+  &#x27;method&#x27;: &#x27;property&#x27;,
+  &#x27;attribute&#x27;: &#x27;property&#x27;,
+  &#x27;config&#x27;: &#x27;property&#x27;,
+  &#x27;event&#x27;: &#x27;property&#x27;,
+
+  // access fields
+  &#x27;public&#x27;: function (tagname, value, target, block) {
+    target.access = tagname;
+    target.tagname = value;
+  },
+  &#x27;private&#x27;: &#x27;public&#x27;,
+  &#x27;protected&#x27;: &#x27;public&#x27;,
+  &#x27;inner&#x27;: &#x27;public&#x27;,
+
+  // tags that can have multiple occurances in a single block
+  &#x27;todo&#x27;: function (tagname, value, target, block) {
+    if (!_.isArray(target[tagname])) {
+      target[tagname] = [];
+    }
+    //If the item is @tag one,two
+    if (value.indexOf(&#x27;,&#x27;) &gt; -1) {
+      value = value.split(&#x27;,&#x27;);
+    } else {
+      value = [value];
+    }
+
+    value.forEach(function (v) {
+      v = utils.safetrim(v);
+      target[tagname].push(v);
+    });
+  },
+  &#x27;extension_for&#x27;: &#x27;extensionfor&#x27;,
+  &#x27;extensionfor&#x27;: function (tagname, value, target, block) {
+    var clazz = this.context.clazz;
+    if (this.classes[clazz]) {
+      this.classes[clazz].extension_for.push(value);
+    }
+  },
+  &#x27;example&#x27;: function (tagname, value, target, block) {
+    if (value) {
+      var linkMatch = value.match(/\{@link (.+)\}/);
+      if (linkMatch &amp;&amp; linkMatch.length === 2) {
+        var relative = utils.safetrim(linkMatch[1]);
+        var examplePath = process.cwd() + &#x27;/&#x27; + relative;
+        if (fs.existsSync(examplePath)) {
+          value = fs.readFileSync(examplePath, &#x27;utf8&#x27;);
+          value = &#x27;&#x60;&#x60;&#x60;&#x27; + value;
+        } else {
+          value = &#x27;&#x60;&#x60;&#x60;Not found for the example path: &#x27; + relative;
+        }
+      }
+    }
+
+    if (!_.isArray(target[tagname])) {
+      target[tagname] = [];
+    }
+
+    var e = value;
+    block.forEach(function (v) {
+      if (v.tag === &#x27;example&#x27;) {
+        if (v.value.indexOf(value) &gt; -1) {
+          e = v.value;
+        }
+      }
+    });
+
+    target[tagname].push(e);
+  },
+  &#x27;url&#x27;: &#x27;todo&#x27;,
+  &#x27;icon&#x27;: &#x27;todo&#x27;,
+  &#x27;see&#x27;: &#x27;todo&#x27;,
+  &#x27;requires&#x27;: &#x27;todo&#x27;,
+  &#x27;knownissue&#x27;: &#x27;todo&#x27;,
+  &#x27;uses&#x27;: &#x27;todo&#x27;,
+  &#x27;category&#x27;: &#x27;todo&#x27;,
+  &#x27;unimplemented&#x27;: &#x27;todo&#x27;,
+
+  genericValueTag: function (tagname, value, target, block) {
+    target[tagname] = value;
+  },
+
+  &#x27;author&#x27;: &#x27;genericValueTag&#x27;,
+  &#x27;contributor&#x27;: &#x27;genericValueTag&#x27;,
+  &#x27;since&#x27;: &#x27;genericValueTag&#x27;,
+
+  &#x27;deprecated&#x27;: function (tagname, value, target, block) {
+    target.deprecated = true;
+    if (typeof value === &#x27;string&#x27; &amp;&amp; value.length) {
+      target.deprecationMessage = value;
+    }
+  },
+
+  // updates the current class only (doesn&#x27;t create
+  // a new class definition)
+  &#x27;for&#x27;: function (tagname, value, target, block) {
+    var ns, file, mod;
+    this.context.clazz = value;
+
+    ns = ((this.classes[value]) ? this.classes[value].namespace : &#x27;&#x27;);
+    this.context.namespace = ns;
+
+    file = this.context.file;
+    if (file) {
+      this.files[file].fors[value] = 1;
+    }
+
+    mod = this.context.module;
+    if (mod) {
+      this.modules[mod].fors[value] = 1;
+    }
+
+    mod = this.context.submodule;
+    if (mod) {
+      this.modules[mod].fors[value] = 1;
+    }
+  }
+};
+</pre>
+</div>
+</div>
+    </div>
+  </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/vendor/jquery.min.js"></script>
+<script src="../assets/vendor/jquery-scrollto.js"></script>
+<script src="../assets/vendor/highlight.min.js"></script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>
