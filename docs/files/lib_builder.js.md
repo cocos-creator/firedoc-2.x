@@ -1,5 +1,5 @@
 
-# firedoc 1.9.1
+# firedoc 1.9.2
 
 Fireball is the game engine for the future.
 
@@ -286,8 +286,8 @@ var BuilderContext = {
         classes.push(clazz);
       }
     });
-    opts.meta.classes = _.sortBy(classes, 'name');
-    opts.meta.enums = _.sortBy(enums, 'name');
+    opts.meta.classes = classes;
+    opts.meta.enums = enums;
     return opts;
   },
   

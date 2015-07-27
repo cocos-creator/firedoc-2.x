@@ -1,14 +1,14 @@
 
-# firedoc 1.9.1
+# firedoc 1.9.2
 
 Fireball is the game engine for the future.
 
 
 
 ### Classes
+- [`DocParser`](classes/DocParser.md) from [firedoc](modules/firedoc.md)
 - [`AST`](classes/AST.md) from [firedoc](modules/firedoc.md)
 - [`BuilderContext`](classes/BuilderContext.md) from [firedoc](modules/firedoc.md)
-- [`DocParser`](classes/DocParser.md) from [firedoc](modules/firedoc.md)
 - [`DocView`](classes/DocView.md) from [firedoc](modules/firedoc.md)
 - [`Firedoc`](classes/Firedoc.md) from [firedoc](modules/firedoc.md)
 - [`Locals`](classes/Locals.md) from [firedoc](modules/firedoc.md)

@@ -1,5 +1,5 @@
 
-# firedoc 1.9.1
+# firedoc 1.9.2
 
 Fireball is the game engine for the future.
 
@@ -624,7 +624,6 @@ var Locals = {
     // set files i18n and globals
     instance.meta.files = this.files;
     instance.meta.i18n = this.i18n;
-    instance.meta.globals = instance.meta;
 
     // merge extends
     this.extendMembers(instance.meta);
@@ -644,7 +643,10 @@ var Locals = {
       console.warn('Failed on loading theme script: ' + e);
       locals = function () {};
     }
-    locals(meta.modules, meta.classes, meta);
+    locals(meta.modules, meta.classes, instance.meta);
+
+    // globals should be set after running the locals.js
+    instance.meta.globals = instance.meta;
     return instance;
   }
 
