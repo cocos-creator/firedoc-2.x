@@ -5,7 +5,7 @@ const fs = require('fs');
 const path = require('path');
 const url = require('url');
 const npm = require('npm');
-const git = require('nodegit');
+const exec = require('child_process').execSync;
 const rimraf = require('rimraf');
 const semver = require('semver');
 const program = require('commander');
@@ -142,7 +142,7 @@ rimrafAsync(destdir)
 .then(function () {
   debug('Start cloning "' + remote + 
         '" into "' + path.relative(process.cwd(), destdir) + '"');
-  return git.Clone(remote, destdir, cloneOption);
+  return exec(`git clone ${remote} ${destdir}`);
 })
 .then(function () {
   debug('Start installing the dependencies');

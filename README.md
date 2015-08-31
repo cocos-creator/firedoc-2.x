@@ -153,6 +153,12 @@ $ firedoc install <url> --name different-theme-name
 
 If you are wanting to write a new theme and need some details, you could go to: [themes README](themes).
 
+**Note**: please make sure you have the installed following dependencies before using theme functionality:
+
+- Node.js or IO.js which supports:
+  + Template string
+  + Synchronous `child_prcess` spawn
+- `git` command-line tool
 
 Test
 -------------
