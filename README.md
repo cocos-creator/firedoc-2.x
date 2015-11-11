@@ -79,6 +79,7 @@ The following is the helper of `firedoc-build(1)`:
     -T --theme <dir>      specify theme directory
     -D --dest <dir>       the destination folder to build
     -L --lang <language>  the i18n language
+    -S --source           whether or not output source files and show the link in 'Defined in' section.
     -v --verbose          print all verbose information
 ```
 
