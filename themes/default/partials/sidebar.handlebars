@@ -16,14 +16,14 @@
             {{#globals.classes}}
                 <li>
                     <a class="class" href="{{project.base}}/classes/{{name}}.html">{{namespace}}</a>
-                    <a href="{{project.base}}/modules/{{module}}.html" class="api-list-item-module">@{{module}}</a>
+                    <a href="{{../base}}/modules/{{module}}.html" class="api-list-item-module">@{{module}}</a>
                 </li>
             {{/globals.classes}}
             </ul>
 
             <ul id="api-modules" class="apis modules">
             {{#globals.modules}}
-                <li><a class="module" href="{{../project.root}}/modules/{{name}}.html">{{name}}</a></li>
+                <li><a class="module" href="{{../base}}/modules/{{name}}.html">{{name}}</a></li>
             {{/globals.modules}}
             </ul>
 
@@ -31,8 +31,8 @@
             {{#globals.classes}}
                 {{#if is_enum}}
                 <li>
-                    <a class="class" href="{{../project.root}}/enums/{{name}}.html">{{name}}</a>
-                    <a href="{{../project.root}}modules/{{module}}.html" class="api-list-item-module">@{{module}}</a>
+                    <a class="class" href="{{../base}}/enums/{{name}}.html">{{name}}</a>
+                    <a href="{{../base}}/modules/{{module}}.html" class="api-list-item-module">@{{module}}</a>
                 </li>
                 {{/if}}
             {{/globals.classes}}
