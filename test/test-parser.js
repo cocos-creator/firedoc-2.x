@@ -360,7 +360,7 @@ describe('firedoc.parser', function () {
       assert.equal('example_optional', example1.name);
       assert.equal(true, example1.isConstructor);
       assert.deepEqual([
-        '\n```\nexample\n```'
+        '```js\nexample\n\n```'
       ], example1.example);
       assert.deepEqual([
         {
@@ -407,7 +407,7 @@ describe('firedoc.parser', function () {
       assert.equal(example2.access, 'public');
       assert.deepEqual([ 
         '```Not found for the example path: test/examples/ex0.js',
-        '```// this is an example js for test\nvar foo = bar;' 
+        '```js\n// this is an example js for test\nvar foo = bar;\n```' 
       ], example2.example);
       assert.deepEqual([
         {
