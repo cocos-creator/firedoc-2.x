@@ -10,7 +10,7 @@ describe('firedoc.parser', function () {
 
   describe('basic', function () {
     var src = path.join(__dirname, './targets/basic');
-    var doc = new Firedoc({'paths': [src], cwd: src});
+    var doc = new Firedoc({'paths': [src], cwd: src, withSrc: true});
     var ast, ctx;
     before(function (next) {
       doc.walk(next);

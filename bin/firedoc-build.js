@@ -13,6 +13,7 @@ program
   .option('-D --dest <dir>', 'the destination folder to build')
   .option('-L --lang <language>', 'the i18n language')
   .option('-v --verbose', 'print all verbose information')
+  .option('-S --source', 'export source files and create links.')
   .parse(process.argv);
 
 if (program.verbose) {
@@ -27,6 +28,7 @@ var doc = new Firedoc({
   http: program.http,
   dest: program.dest,
   lang: program.lang,
-  theme: program.theme
+  theme: program.theme,
+  withSrc: program.source || false
 });
 doc.build();
