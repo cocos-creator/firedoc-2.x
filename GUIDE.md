@@ -93,6 +93,14 @@ Same as JSDoc syntax:
  */
 ```     
 
+You can also put description ahead:
+```js
+/**
+ * The local position in its parent's coordinate system
+ * @property {Vec2} position
+ */
+```
+
 ## Enum
 
 Use `@enum` with `@property` to document enum definitions.
@@ -116,7 +124,9 @@ var NumberableBool = {
 
 You can write all `@property` in the same comment block as the enum declaration.
 
-## Example Link to File
+## Examples
+
+### Example Link to File
 
 Use `@example` with `@link` to display code in a file as example.
 
@@ -128,6 +138,48 @@ Use `@example` with `@link` to display code in a file as example.
 ```
 
 The path `path/to/example.js` is based at your execution path (or cwd). 
+
+### Example File with Sections
+
+To hold multiple examples in one file, you can write your example file like this:
+
+```js
+/** @section Food */
+
+var this = 'burger';
+
+this.cook();
+
+/** @section Drink */
+
+var this = 'cola';
+```
+
+And link it to your example with `#section` notion:
+
+```js
+/**
+* @method example
+* @example {@link path/to/example.js#Food }
+*/
+```
+
+This will gives you the following example text: 
+
+```js
+var this = 'burger';
+
+this.cook();
+```
+
+### Auto Backtick Wrap
+
+Example code in a linked file or inline will be automatically wrapped in ````js` backtick. No need to add them yourself.
+
+### Example for Class and Modules
+
+Now you can write `@example` tag in class or module block.
+
 
 ## Detailed Properties of Object Parameter
 
