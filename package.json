@@ -1,6 +1,6 @@
 {
   "name": "firedoc",
-  "version": "1.13.2",
+  "version": "1.13.3",
   "author": "Dav Glass <davglass@gmail.com>",
   "bugs": {
     "url": "http://github.com/fireball-x/firedoc/issues"
@@ -103,7 +103,6 @@
   },
   "scripts": {
     "docs": "make docs",
-    "postinstall": "node ./bin/firedoc.js install notab",
     "test": "make test.nocoverage"
   },
   "preferGlobal": "true",
