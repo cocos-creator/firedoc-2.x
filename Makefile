@@ -23,7 +23,7 @@ docsghpages:
 	sh ./scripts/ghpages.sh
 
 notab:
-	./lib/cli.js ./lib --en -o 'docs-ghpages/en' --theme '../firedoc-theme-notab/'
+	node bin/firedoc-build ./lib --en -o 'docs-ghpages/en' --theme notab
 	sh ./scripts/ghpages.sh
 
 deploydocs: version
