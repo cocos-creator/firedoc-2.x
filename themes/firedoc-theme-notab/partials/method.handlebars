@@ -1,0 +1,240 @@
+<a name="method_{{name}}" class="anchor-link"></a>
+<div class="method item{{#if access}} {{access}}{{/if}}{{#if deprecated}} deprecated{{/if}}{{#if overwritten_from}} inherited{{/if}}{{#if extendedFrom}} inherited{{/if}}">
+    <h3 class="name">{{name}} 
+
+
+        {{#if params}}
+            <div class="args">
+                <span class="paren">(</span>
+                <ul class="args-list inline commas">
+                    {{#params}}
+                        <li class="arg">
+                            {{#if optional}}
+                                <span class="optional">[{{name}}
+                                    {{#if optdefault}}={{optdefault}}{{/if}}]</span>
+                            {{else}}
+                                <span>{{name}}</span>
+                            {{/if}}
+                        </li>
+                    {{/params}}
+                </ul>
+                <span class="paren">)</span>
+            </div>
+        {{else}}
+            <span class="paren">( )</span>
+        {{/if}}
+
+        {{#if return}}
+            <span class="returns-inline">
+                <span class="type">
+                    {{#crossLink return.type}}{{/crossLink}}
+                </span>
+            </span>
+        {{/if}}
+
+        {{#if deprecated}}
+            <span class="flag deprecated" {{#if deprecationMessage}} title="{{deprecationMessage}}" {{/if}}>deprecated</span>
+        {{/if}}
+
+        {{#if access}}
+            <span class="flag {{access}}">{{access}}</span>
+        {{/if}}
+
+        {{#if final}}
+            <span class="flag final">final</span>
+        {{/if}}
+
+        {{#if static}}
+            <span class="flag static">static</span>
+        {{/if}}
+
+        {{#if chainable}}
+            <span class="flag chainable">chainable</span>
+        {{/if}}
+
+        {{#if async}}
+            <span class="flag async">async</span>
+        {{/if}}
+
+        {{#if foundAt}}
+            <a class="foundat" href="{{foundAt}}">`{{{file}}}:{{{line}}}`</a>
+        {{/if}}
+
+    </h3>
+
+    <div class="meta">
+        {{#if overwritten_from}}
+            <p>{{i18n.INHERITED_FROM}}
+                <a href="{{crossLinkRaw overwrittenFrom/class}}#method_{{overwritten_from/name}}" class="type">
+                {{overwritten_from/class}}
+            </a>
+                {{#if foundAt}}
+                    but overwritten in
+                {{/if}}
+        {{else}}
+            {{#if extendedFrom}}
+                {{#shouldShowInherit extendedFrom}}
+                    <p>{{@root.i18n.INHERITED_FROM}}
+                        <a href="{{crossLinkRaw ../extendedFrom}}#method_{{name}}" class="type">{{../extendedFrom}}</a>:
+                {{/shouldShowInherit}}
+            {{/if}}
+        {{/if}}
+
+        {{#if deprecationMessage}}
+            <p class="deprecated">{{i18n.DEPRECATED}}:
+                <span class="message">{{deprecationMessage}}</span>
+            </p>
+        {{/if}}
+
+        {{#if since}}
+            <p class="since">{{i18n.AVAILABLE_SINCE}}
+                <span class="message">{{since}}</span>
+            </p>
+        {{/if}}
+
+        {{#if process}}
+            <div class="processRun">
+                process:
+                {{#process}}
+                    <a href="http://docs.fireball-x.com/editor/ipc-channel/#Core_and_Page_Process">{{.}}</a>
+                {{/process}}
+            </div>
+        {{/if}}
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">{{{description}}}</div>
+
+        {{#if params}}
+            <div class="params">
+                <!-- <h4>Parameters:</h4> -->
+                <table class="params-list">
+                    <thead>
+                        <tr>
+                            <th>{{i18n.NAME}}</th>
+                            <th>{{i18n.TYPE}}</th>
+                            {{#if optdefault}}
+                                <th>{{i18n.DEFAULTS}}</th>
+                            {{/if}}
+                            <th class="last">{{i18n.DESCRIPTION}}</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        {{#params}}
+                            <tr>
+                                <td class="name">
+                                    {{#if optional}}
+                                        <code class="param-name optional">{{name}}</code>
+
+                                        <span class="flag optional" title="This parameter is optional.">optional</span>
+                                    {{else}}
+                                        <code class="param-name">{{name}}</code>
+                                    {{/if}}
+                                </td>
+                                <td class="type">
+                                    <span class="type">
+                                        {{#crossLink type}}{{/crossLink}}
+                                    </span>
+                                </td>
+                                {{#if optdefault}}
+                                    <td class="default-value">
+                                        <span>{{optdefault}}</span>
+                                    </td>
+                                {{/if}}
+                                <td valign="middle" class="description last">
+                                    {{{description}}}
+                                    {{#if props}}
+                                        <ul class="params-list">
+                                            {{#props}}
+                                                <li class="param">
+                                                    {{#if optional}}
+                                                        <span class="param-name optional">{{name}}</span>
+                                                        <span class="type">
+                                                            {{#crossLink type}}{{/crossLink}}
+                                                        </span>
+                                                        <span class="flag optional" title="This parameter is optional.">optional</span>
+                                                        {{#if optdefault}}
+                                                            <span>, default: {{optdefault}}</span>
+                                                        {{/if}}
+                                                    {{else}}
+                                                        <span class="param-name">{{name}}</span>
+                                                        <span class="type">
+                                                            {{#crossLink type}}{{/crossLink}}
+                                                        </span>
+                                                    {{/if}}
+
+                                                    <div class="param-description">
+                                                        {{{description}}}
+                                                    </div>
+
+                                                    {{#if props}}
+                                                        <ul class="params-list">
+                                                            {{#props}}
+                                                                <li class="param">
+                                                                    {{#if optional}}
+                                                                        <span class="param-name optional">{{name}}</span>
+                                                                        <span class="type">
+                                                                            {{#crossLink type}}{{/crossLink}}
+                                                                        </span>
+                                                                        <span class="flag optional" title="This parameter is optional.">optional</span>
+                                                                        {{#if optdefault}}
+                                                                            <span>, default: {{optdefault}}</span>
+                                                                        {{/if}}
+                                                                    {{else}}
+                                                                        <span class="param-name">{{name}}</span>
+                                                                        <span class="type">
+                                                                            {{#crossLink type}}{{/crossLink}}
+                                                                        </span>
+                                                                    {{/if}}
+
+                                                                    <div class="param-description">
+                                                                        {{{description}}}
+                                                                    </div>
+                                                                </li>
+                                                            {{/props}}
+                                                        </ul>
+                                                    {{/if}}
+                                                </li>
+                                            {{/props}}
+                                        </ul>
+                                    {{/if}}
+                                </td>
+                            </tr>
+                        {{/params}}
+                    </tbody>
+                </table>
+            </div>
+        {{/if}}
+
+        {{#return}}
+            <div class="returns">
+                <h4>{{../i18n.RETURNS}}:</h4>
+
+                <div class="returns-description">
+                    {{#if type}}
+                        <span>{{@root.i18n.TYPE}}:</span>
+                        <span class="type">
+                            {{#crossLink type}}{{/crossLink}}
+                        </span>
+                    {{/if}}
+                    {{#if description}}
+                        <p>
+                            {{{description}}}
+                        </p>
+                    {{/if}}
+                </div>
+            </div>
+        {{/return}}
+
+        {{#example}}
+            <div class="example">
+                <h4>{{../i18n.EXAMPLES}}:</h4>
+                <div class="example-content">
+                    {{{.}}}
+                </div>
+            </div>
+        {{/example}}
+    </div>
+</div>

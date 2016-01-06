@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{htmlTitle}}</title>
+  <link rel="stylesheet" href="{{assets}}/vendor/prettify/prettify-min.css">
+  <link rel="stylesheet" href="{{assets}}/css/main.css" id="site_styles">
+  <link rel="shortcut icon" type="image/ico" href="{{assets}}/favicon.ico">
+  <link rel="stylesheet" href="{{assets}}/css/solarized_light.css">
+  <script src="{{assets}}/vendor/yui-min.js"></script>
+</head>
+<body>
+
+<div id="doc">
+  <header class="main-header">
+    <div class="content">
+      <div class="project-title">
+        <a href="http://docs.fireball-x.com">
+          {{#if globals.project.logo}}
+          <img class="logo" src="{{project.logo}}" title="{{project.name}}">
+          {{else}}
+          <img class="logo" src="http://docs.fireball-x.com/images/logo.png"
+            title="Fireball Editor API">
+          {{/if}}
+        </a>
+        {{#if globals.project.name}}
+          <h1 class="project-name">{{globals.project.name}}</h1>
+          {{#if globals.project.version}}
+          <span class="project-version">{{globals.project.version}}</span>
+          {{/if}}
+        {{else}}
+          <h1 class="project-name">Fireball Engine API</h1>
+        {{/if}}
+        {{#if globals.project.description}}
+          <p class="description">{{globals.project.description}}</p>
+        {{else}}
+          <p class="description">Fireball is the game engine for the future.</p>
+        {{/if}}
+        </div>
+        <ul class="jump-links">
+          <li><a href="#index" class="index-jump-link">index</a></li>
+          <li><a href="#top" class="top-jump-link">top</a></li>
+        </ul>
+    </div>
+  </header>
+  <div id="bd" class="main-body">
+    <div id="docs-sidebar" class="sidebar apidocs">{{>sidebar}}</div>
+    <div id="docs-main" class="apidocs">
+      <div class="content container">{{>layout_content}}</div>
+    </div>
+  </div>
+</div>
+<script src="{{assets}}/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="{{assets}}/vendor/jquery.min.js"></script>
+<script src="{{assets}}/vendor/jquery-scrollto.js"></script>
+<script src="{{assets}}/vendor/highlight.min.js"></script>
+<script src="{{assets}}/js/yui-prettify.js"></script>
+<script src="{{assets}}/../api.js"></script>
+<script src="{{assets}}/js/api-list.js"></script>
+{{!-- <script src="{{assets}}/js/apidocs.js"></script> --}}
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

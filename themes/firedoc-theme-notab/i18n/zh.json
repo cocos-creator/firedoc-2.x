@@ -1,0 +1,62 @@
+{
+  "sidebar": {
+    "CLASSES": "类型",
+    "MODULES": "模块",
+    "ENUMS": "枚举",
+    "SEARCH_PLACEHOLDER": "关键字",
+    "PROPERTIES": "属性（properties）",
+    "METHODS": "方法",
+    "EVENTS": "事件",
+    "ATTRUBUTES": "属性（attributes）"    
+  },
+
+  "options": {
+    "SHOW": "显示",
+    "PROTECTED": "被保护（Protected）",
+    "PRIVATE": "私有（Private）",
+    "DEPRECATED": "废弃（Deprecated）",
+    "DEPRECATED_DESC": "此接口已废弃。 "
+  },
+
+  "INDEX_WELCOME": "通过浏览左侧目录进行枚举(Enum)、类(Class)以及模组(Module)的浏览。",
+  "INDEX_TITLE": "快捷键指南",
+  "INDEX_GUIDES_1": "按<kbd>s</kbd>可直接进行API搜索",
+  "INDEX_GUIDES_2": "按<kbd>方向上</kbd>或<kbd>方向下</kbd>可进行枚举(Enum)、类(Class)、模组(Module)以及搜索结果的选择",
+  "INDEX_GUIDES_3": "在光标集中在左边API搜索框时, 使用<kbd><span class='cmd'>&#x2318;</span>-Left</kbd>或<kbd><span class='cmd'>&#x2318;</span>-Right</kbd>可切换到下一栏标签，例如可从枚举(Enum)切换到类(Class)。",
+  "INDEX_GUIDES_4": "在光标集中在左边API搜索框时, 使用<kbd>Ctrl+Left</kbd> and <kbd>Ctrl+Right</kbd>可切换到下一栏标签，例如可从枚举(Enum)切换到类(Class)。",
+
+  "INDEX": "索引",
+  "STATIC": "静态",
+  "DEPRECATED": "废弃",
+  "CHAINABLE": "链式",
+  "ASYNC": "异步",
+  "OPTIONAL": "可选",
+  "DEFAULTS": "默认值",
+  "EXAMPLES": "示例",
+  "PARAMETERS": "参数列表",
+  "RETURNS": "返回",
+  "TYPE": "类型",
+  "NAME": "名称",
+  "DESCRIPTION": "描述",
+
+  "CLASS": "类型",
+  "MODULE": "模块",
+  "SUBMODULE": "子模块",
+  "ENUM": "枚举",
+  "PARENT_MODULE": "父模块",
+
+  "PROPERTIES": "属性（properties）",
+  "ATTRUBUTES": "属性（attributes）",
+  "METHODS": "方法",
+  "EVENTS": "事件",
+  "SUB_PROPERTIES": "对象属性",
+
+  "INHERITED_MEMBERS": "继承成员变量",
+  "INHERITANCE_TREE": "继承树",
+
+  "CONSTRUCTOR": "构造函数",
+  "DEFINED_IN": "定义于",
+  "EXTENDS_FOR": "继承于",
+  "INHERITED_FROM": "继承自",
+  "AVAILABLE_SINCE": "最早出现自"
+}

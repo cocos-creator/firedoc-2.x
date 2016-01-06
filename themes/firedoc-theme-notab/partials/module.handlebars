@@ -1,0 +1,140 @@
+
+<h1>
+  <span class="type">{{i18n.MODULE}}</span>
+  <span class="name">{{name}}</span>
+</h1>
+<div class="box clearfix meta">
+  {{#extra}}
+    {{#selleck}}
+      <a class="button link-docs" href="/yui/docs/{{name}}">User Guide &amp; Examples</a>
+    {{/selleck}}
+  {{/extra}}
+
+  {{#if requires}}
+    <div class="uses">
+      Requires
+      <ul class="inline commas">
+        {{#requires}}
+          <li>{{#crossLinkModule .}}{{/crossLinkModule}}</li>
+        {{/requires}}
+      </ul>
+    </div>
+  {{/if}}
+
+  {{#if foundAt}}
+    <div class="foundat">
+      Defined in: <a href="{{foundAt}}">`{{{file}}}:{{{line}}}`</a>
+    </div>
+  {{/if}}
+
+  {{#if process}}
+    <div class="processRun">
+      process:
+      {{#process}}
+        <a href="http://docs.fireball-x.com/editor/ipc-channel/#Core_and_Page_Process">{{.}}</a>
+      {{/process}}
+    </div>
+  {{/if}}
+
+  {{#if since}}
+    <p>Available since {{since}}</p>
+  {{/if}}
+
+</div>
+
+{{#if deprecated}}
+  <div class="box deprecated">
+    <p>
+      {{#if deprecationMessage}}
+        <strong>{{i18n.options.DEPRECADED}}</strong> {{deprecationMessage}}
+      {{else}}
+        {{i18n.options.DEPRECATED_DESC}} 
+      {{/if}}
+    </p>
+  </div>
+{{/if}}
+
+<div class="box intro">
+  {{{description}}}
+</div>
+
+{{#example}}
+  <div class="example">
+    <h4>{{../i18n.EXAMPLES}}:</h4>
+    <div class="example-content">{{{.}}}</div>
+  </div>
+{{/example}}
+
+<!-- Class member index -->
+{{#if classes.length}}
+  <div class="index-section properties">
+    <h3 class="section-title">{{i18n.CLASS}}</h3>
+    <ul>
+      {{#classes}}
+        <li>
+          {{#if isEnum}}
+            <a href="{{@root.base}}/enums/{{name}}.html">
+              {{name}}
+            </a>
+          {{else}}
+          {{#is_not access 'private' }}
+            <a href="{{@root.base}}/classes/{{name}}.html">
+              {{name}}
+            </a>
+          {{/is_not}}
+          {{/if}}
+        </li>
+      {{/classes}}
+    </ul>
+  </div>
+{{/if}}
+
+{{#if submodules.length}}
+  <div class="index-section properties">
+    <h3 class="section-title">{{i18n.SUBMODULE}}</h3>
+    <ul>
+      {{#submodules}}
+        <li>
+          <a href="{{@root.base}}/modules/{{name}}.html">
+            {{name}}
+          </a>
+        </li>
+      {{/submodules}}
+    </ul>
+  </div>
+{{/if}}
+<!--
+<h3>Direct Members</h3>
+{{> items-index}} -->
+
+<div class="yui3-g">
+
+  {{#if members.properties}}
+    <div class="yui3-u-1-2">
+      <h3 class="section-title">{{i18n.PROPERTIES}}</h3>
+      {{#members.properties}}{{> props}}{{/members.properties}}
+    </div>
+  {{/if}}
+
+  {{#if members.attributes}}
+    <div class="yui3-u-1-2">
+      <h3 class="section-title">{{i18n.ATTRIBUTES}}</h3>
+      {{#members.attributes}}{{> attrs}}{{/members.attributes}}
+    </div>
+  {{/if}}
+
+  {{#if members.methods}}
+    <div class="yui3-u-1-2">
+      <h3 class="section-title">{{i18n.METHODS}}</h3>
+      {{#members.methods}}{{> method}}{{/members.methods}}
+    </div>
+  {{/if}}
+
+  {{#if members.events}}
+    <div class="yui3-u-1-2">
+      <h3 class="section-title">{{i18n.EVENTS}}</h3>
+      {{#members.events}}{{> method}}{{/members.events}}
+    </div>
+  {{/if}}
+
+</div>

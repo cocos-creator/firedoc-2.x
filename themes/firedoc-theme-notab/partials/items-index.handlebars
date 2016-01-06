@@ -1,0 +1,147 @@
+
+<a name="index" class="anchor-link"></a>
+<div class="index">
+  <h3>{{i18n.INDEX}}</h3>
+  {{> options}}
+
+  {{#if members.properties}}
+    <div class="index-section properties">
+      <h4>{{i18n.PROPERTIES}}</h4>
+      <ul class="index-list properties">
+        {{#members.properties}}
+        <li class="index-item property{{#if access}} {{access}}{{/if}}{{#if deprecated}} deprecated{{/if}}{{#if overwritten_from}} inherited{{/if}}">
+            <a href="#property_{{name}}">{{name}}</a>
+            {{#if static}}
+              <span class="badge badge-static static">static</span>
+            {{/if}}
+        </li>
+        {{/members.properties}}
+      </ul>
+    </div>
+  {{/if}}
+
+  {{#if members.attributes}}
+    <div class="index-section attrs">
+      <h4>{{i18n.ATTRIBUTES}}</h4>
+      <ul class="index-list attrs">
+        {{#members.attributes}}
+        <li class="index-item attr{{#if access}} {{access}}{{/if}}{{#if deprecated}} deprecated{{/if}}{{#if overwritten_from}} inherited{{/if}}">
+          <a href="#attr_{{name}}">{{name}}</a>
+        </li>
+        {{/members.attributes}}
+      </ul>
+    </div>
+  {{/if}}
+
+  {{#if members.methods}}
+    <div class="index-section methods">
+      <h4>{{i18n.METHODS}}</h4>
+      <ul class="index-list methods">
+        {{#is_constructor}}
+        <li class="index-item method{{#if access}} {{access}}{{/if}}{{#if deprecated}} deprecated{{/if}} constructor">
+          <a href="#method_{{name}}">{{name}}</a>
+          <span class="flag constructor">constructor</span>
+          {{#if static}}
+            <span class="badge badge-static static">static</span>
+          {{/if}}
+          {{#if deprecated}}
+            <span class="badge badge-deprecated deprecated">deprecated</span>
+          {{/if}}
+        </li>
+        {{/is_constructor}}
+
+        {{#members.methods}}
+        <li class="index-item method{{#if access}} {{access}}{{/if}}{{#if deprecated}} deprecated{{/if}}{{#if overwritten_from}} inherited{{/if}}">
+          <a href="#method_{{name}}">{{name}}</a>
+          {{#if static}}
+            <span class="badge badge-static static">static</span>
+          {{/if}}
+          {{#if deprecated}}
+            <span class="badge badge-deprecated deprecated">deprecated</span>
+          {{/if}}
+        </li>
+        {{/members.methods}}
+      </ul>
+    </div>
+  {{/if}}
+
+  {{#if members.events}}
+    <div class="index-section events">
+      <h4>{{i18n.EVENTS}}</h4>
+      <ul class="index-list events">
+        {{#members.events}}
+        <li class="index-item event{{#if access}} {{access}}{{/if}}{{#if deprecated}} deprecated{{/if}}{{#if overwritten_from}} inherited{{/if}}">
+          <a href="#event_{{name}}">{{name}}</a>
+          {{#if static}}
+            <span class="badge badge-static static">static</span>
+          {{/if}}
+          {{#if deprecated}}
+            <span class="badge badge-deprecated deprecated">deprecated</span>
+          {{/if}}
+        </li>
+        {{/members.events}}
+      </ul>
+    </div>
+  {{/if}}
+
+  {{#if members.inherited}}
+    <div class="index-section inherits-members">
+      <h4>{{i18n.INHERITED_MEMBERS}}</h4>
+      <!-- Property -->
+      {{#if members.inherited.properties}}
+        <h5>{{i18n.PROPERTIES}}</h5>
+        <ul class="index-list properties">
+        {{#members.inherited.properties}}
+          <li class="index-item property{{#if access}} {{access}}{{/if}}{{#if deprecated}} deprecated{{/if}}">
+            <a href="{{extended_from}}.html#property_{{name}}">{{name}}</a>
+          </li>
+        {{/members.inherited.properties}}
+        </ul>
+      {{/if}}
+
+      <!-- Attribute -->
+      {{#if members.inherited.attributes}}
+        <h5>{{i18n.ATTRIBUTES}}</h5>
+        <ul class="index-list attrs">
+        {{#members.inherited.attributes}}
+          <li class="index-item attr{{#if access}} {{access}}{{/if}}{{#if deprecated}} deprecated{{/if}}">
+            <a href="{{extended_from}}.html#attr_{{name}}">{{name}}</a>
+          </li>
+        {{/members.inherited.attributes}}
+        </ul>
+      {{/if}}
+
+      <!-- Method -->
+      {{#if members.inherited.methods}}
+        <h5>{{i18n.METHODS}}</h5>
+        <ul class="index-list methods">
+        {{#members.inherited.methods}}
+          <li class="index-item method{{#if access}} {{access}}{{/if}}{{#if deprecated}} deprecated{{/if}}">
+            <a href="{{extended_from}}.html#method_{{name}}">{{name}}</a>
+          </li>
+        {{/members.inherited.methods}}
+        </ul>
+      {{/if}}
+
+      <!-- Event -->
+      {{#if members.inherited.events}}
+        <h5>{{i18n.EVENTS}}</h5>
+        <ul class="index-list events">
+        {{#inheritedItems.events}}
+          <li class="index-item event{{#if access}} {{access}}{{/if}}{{#if deprecated}} deprecated{{/if}}">
+            <a href="{{extended_from}}.html#event_{{name}}">{{name}}</a>
+          </li>
+        {{/inheritedItems.events}}
+        </ul>
+      {{/if}}
+    </div>
+  {{/if}}
+
+  {{#if inheritance}}
+    <div class="index-section inherits-tree">
+      <h4>{{i18n.INHERITANCE_TREE}}</h4>
+      {{> class-tree}}
+    </div>
+  {{/if}}
+
+</div>

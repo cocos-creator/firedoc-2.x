@@ -1,0 +1,52 @@
+<div id="api-list" style="height:100%">
+  <div id="api-tabview" class="tabview" style="height:100%">
+    <div id="api-tabview-filter">
+      <input type="search" id="api-filter" placeholder="Type to filter APIs">
+    </div>
+    <div id="api-tabview-panel">
+      <ul id="api-items" class="apis items">
+      {{#globals.modules}}
+        <li>
+          <div class="api-list-item-clickable wave-btn">
+            <a class="module" href="{{../base}}/modules/{{name}}.html">{{namespace}}</a>
+            <i class="flag">{{i18n.sidebar.MODULES}}</i>
+          </div>
+          <div class="members-list hidden">
+            {{> sidebar-members}}
+          </div>
+        </li>
+      {{/globals.modules}}
+      <hr class="sidebar-divider">
+      {{#globals.classes}}
+        {{#is_not access 'private' }}
+        <li>
+          <div class="api-list-item-clickable wave-btn">
+            <a class="class" 
+              href="{{@root.base}}/classes/{{name}}.html" 
+              title="{{namespace}}">{{namespace}}</a>
+            <i class="flag">{{i18n.sidebar.CLASSES}}</i>
+          </div>
+          <div class="members-list hidden">
+            {{> sidebar-members classname=name}}
+          </div>
+        </li>
+        {{/is_not}}
+      {{/globals.classes}}
+      <hr class="sidebar-divider">
+      {{#globals.enums}}
+        <li>
+          <div class="api-list-item-clickable">
+            <a class="enum" 
+              href="{{../base}}/enums/{{name}}.html" 
+              title="{{namespace}}">{{namespace}}</a>
+            <i class="flag">{{i18n.sidebar.ENUMS}}</i>
+          </div>
+        </li>
+        <div class="members-list hidden">
+          {{> sidebar-members}}
+        </div>
+      {{/globals.enums}}
+      </ul>
+    </div>
+  </div>
+</div>

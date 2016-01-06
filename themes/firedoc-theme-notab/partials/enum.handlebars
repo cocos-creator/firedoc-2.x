@@ -1,0 +1,70 @@
+<h1>
+  <span class="type">{{i18n.ENUM}}</span>
+  <span class="name">{{name}}</span>
+</h1>
+
+<div class="box meta">
+  {{#if uses}}
+    <div class="uses">
+      Uses
+      <ul class="inline commas">
+        {{#uses}}
+          <li><a href="{{.}}.html">{{.}}</a></li>
+        {{/uses}}
+      </ul>
+    </div>
+  {{/if}}
+
+  {{#if extends}}
+    <div class="extends">
+      {{i18n.EXTENDS_FOR}} {{#crossLink extends}}{{/crossLink}}
+    </div>
+  {{/if}}
+
+  {{#if foundAt}}
+    <div class="foundat">
+      {{i18n.DEFINED_IN}}: <a href="{{foundAt}}">`{{{file}}}:{{{line}}}`</a>
+    </div>
+  {{/if}}
+
+  {{#if module}}
+    {{#if submodule}}
+      {{i18n.MODULE}}: {{#crossLinkModule submodule}}{{/crossLinkModule}}<br>
+      {{i18n.PARENT_MODULE}}: {{#crossLinkModule module}}{{/crossLinkModule}}
+    {{else}}
+      {{i18n.MODULE}}: {{#crossLinkModule module}}{{/crossLinkModule}}
+    {{/if}}
+  {{/if}}
+
+  {{#if since}}
+    <p>{{i18n.AVAILABLE_SINCE}} {{since}}</p>
+  {{/if}}
+</div>
+
+{{#if deprecated}}
+  <div class="box deprecated">
+    <p>
+      {{#if deprecationMessage}}
+          <strong>{{i18n.DEPRECATED}}:</strong> {{deprecationMessage}}
+      {{else}}
+        {{i18n.DEPRECATED_DESC}}
+      {{/if}}
+    </p>
+  </div>
+{{/if}}
+
+<div class="box intro">
+  {{{description}}}
+</div>
+
+<div class="class-detail">
+  {{#if members.properties}}
+    <div class="enum-properties">
+      {{#members.properties}}{{>props}}{{/members.properties}}
+      <div class="no-visible-items-message">
+        <p>There are no properties that match your current filter settings. You can change your filter settings in the index section on this page. <a href="#index" class="index-jump-link">index</a></p>
+      </div>
+    </div>
+  {{/if}}
+
+</div>
