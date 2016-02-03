@@ -1,8 +1,9 @@
+'use strict';
+
 $(document).ready(function () {
 
-  'use strict';
-
   var movedItems = [];
+  var itemToSort = [];
   var itemsCont = $('#api-items');
   var itemsList = $('#api-items>li>.api-list-item-clickable');
   itemsList.on(
@@ -82,6 +83,9 @@ $(document).ready(function () {
   }
 
   function clearMoved () {
+    if (itemToSort.length > 0) {
+      itemToSort = [];
+    }
     var reset = movedItems.shift();
     if (reset) {
       reset();
@@ -99,7 +103,8 @@ $(document).ready(function () {
         if (keyword) {
           if (r.type !== 'member') {
             r.this.find('.members-list').removeClass('hidden');
-            itemsCont.prepend(r.this);
+            itemToSort.push(r);
+            // itemsCont.prepend(r.this);
             // set the reset stuff
             var index = firstRecords.indexOf(r);
             movedItems.push(function reset () {
@@ -122,6 +127,34 @@ $(document).ready(function () {
       }
       return r;
     });
+
+    var keywordL = keyword.toLowerCase();
+    var result = itemToSort.sort(function(a, b) {
+      var idxA = a.ns.indexOf(keywordL);
+      var idxB = b.ns.indexOf(keywordL);
+      if (idxA > idxB) {
+        return 1;
+      } else if (idxA < idxB) {
+        return -1;
+      } else {
+        if (a.name.toLowerCase() === keywordL) {
+          return -1;
+        }
+        if (b.name.toLowerCase() === keywordL) {
+          return 1;
+        }
+        if (a.name > b.name) {
+          return 1;
+        } else if (a.name < b.name) {
+          return -1;
+        }
+        return 0;
+      }
+    }).map(function (r) {
+      return r.this;
+    });
+
+    itemsCont.prepend(result);
   }
 
 });
