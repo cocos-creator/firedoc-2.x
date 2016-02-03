@@ -1,9 +1,11 @@
-# FireDoc [![Circle CI](https://circleci.com/gh/fireball-x/firedoc/tree/master.svg?style=shield)](https://circleci.com/gh/fireball-x/firedoc/tree/master)
+# FireDoc 
 
-API Doc generator rewritten from [YUIDoc](https://github.com/yui/yuidoc). We use this tool to document a large JavaScript game engine [Fireball](http://github.com/fireball-x/fireball) at [docs-zh.fireball-x.com/api](http://docs-zh.fireball-x.com/api/) and self-document firedoc itself at:
+[![Circle CI](https://circleci.com/gh/cocos-creator/firedoc/tree/master.svg?style=shield)](https://circleci.com/gh/cocos-creator/firedoc/tree/master)
 
-- English: http://fireball-x.github.io/firedoc/ or http://fireball-x.github.io/firedoc/en
-- 中文: http://fireball-x.github.io/firedoc/zh
+API Doc generator rewritten from [YUIDoc](https://github.com/yui/yuidoc). We use this tool to self-document firedoc itself at:
+
+- English: http://cocos-creator.github.io/firedoc/ or http://cocos-creator.github.io/firedoc/en
+- 中文: http://cocos-creator.github.io/firedoc/zh
 
 [![NPM](https://nodei.co/npm/firedoc.png?stars&downloads)](https://nodei.co/npm/firedoc/)
 
