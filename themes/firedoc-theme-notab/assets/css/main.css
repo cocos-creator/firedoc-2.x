@@ -114,7 +114,9 @@ a.badge:hover {
 }
 .badge.badge-static {
     background: #2a6496;
-    color: #fff;
+    color: #eee;
+    font-weight: normal;
+    text-shadow: none;
 }
 
 /* -- Paragraphs ------------------------------------------------------------ */
