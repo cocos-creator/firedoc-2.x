@@ -192,6 +192,33 @@
                                                                     <div class="param-description">
                                                                         {{{description}}}
                                                                     </div>
+                                                                    {{#if props}}
+                                                                    <ul class="params-list">
+                                                                        {{#props}}
+                                                                            <li class="param">
+                                                                                {{#if optional}}
+                                                                                    <span class="param-name optional">{{name}}</span>
+                                                                                    <span class="type">
+                                                                                        {{#crossLink type}}{{/crossLink}}
+                                                                                    </span>
+                                                                                    <span class="flag optional" title="This parameter is optional.">optional</span>
+                                                                                    {{#if optdefault}}
+                                                                                        <span>, default: {{optdefault}}</span>
+                                                                                    {{/if}}
+                                                                                {{else}}
+                                                                                    <span class="param-name">{{name}}</span>
+                                                                                    <span class="type">
+                                                                                        {{#crossLink type}}{{/crossLink}}
+                                                                                    </span>
+                                                                                {{/if}}
+
+                                                                                <div class="param-description">
+                                                                                    {{{description}}}
+                                                                                </div>
+                                                                            </li>
+                                                                        {{/props}}
+                                                                    </ul>
+                                                                {{/if}}
                                                                 </li>
                                                             {{/props}}
                                                         </ul>

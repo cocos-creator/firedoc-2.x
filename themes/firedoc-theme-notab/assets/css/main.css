@@ -337,6 +337,7 @@ td {
 }
 .main-body .content {
     padding: 30px 0;
+    margin-bottom: 500px;
 }
 .main-body .content>h1 {
     margin-top: 0;
@@ -588,7 +589,10 @@ table.params-list {
     background-color: transparent;
 }
 .params-list .params-list {
-    margin: 1em 0 0 0.2em;
+    margin: 1em 0 1em 0.2em;
+}
+.params-list .params-list .params-list {
+    margin: 0 0 1em 3em;
 }
 .params-list, .returns-description {
     margin: 0 0 0 0;

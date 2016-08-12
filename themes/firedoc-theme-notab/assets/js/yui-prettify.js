@@ -15,3 +15,12 @@ YUI().use('node', function(Y) {
     location.hash = h;
   }
 });
+
+window.onload = function () {
+  if (location.hash) {
+    $('#docs-main').scrollTo(
+      'a.anchor-link[name="'+location.hash.slice(1)+'"]',
+      500
+    );
+  }
+}
