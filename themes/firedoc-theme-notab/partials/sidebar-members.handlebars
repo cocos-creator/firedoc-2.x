@@ -4,7 +4,7 @@
     <h3>{{i18n.sidebar.PROPERTIES}}</h3>
     <ul class="apis members api-members">
       {{#members.properties}}
-        <li class="{{access}}">
+        <li class="{{access}}{{#if deprecated}} deprecated{{/if}}">
           <a class="name" href="{{@root.base}}/{{parent.type}}/{{#if ../classname}}{{../classname}}{{else}}{{parent.name}}{{/if}}.html#property_{{name}}">
             {{name}}
           </a>
@@ -17,7 +17,7 @@
     <h3>{{i18n.sidebar.EVENTS}}</h3>
     <ul class="apis members api-members">
       {{#members.events}}
-        <li class="{{access}}">
+        <li class="{{access}}{{#if deprecated}} deprecated{{/if}}">
           <a class="name" href="{{@root/base}}/{{parent.type}}/{{#if ../classname}}{{../classname}}{{else}}{{parent.name}}{{/if}}.html#event_{{name}}">
             {{name}}
           </a>
@@ -30,7 +30,7 @@
     <h3>{{i18n.sidebar.ATTRIBUTES}}</h3>
     <ul class="apis members api-members">
       {{#members.attributes}}
-        <li class="{{access}}">
+        <li class="{{access}}{{#if deprecated}} deprecated{{/if}}">
           <a class="name" href="{{@root/base}}/{{parent.type}}/{{#if ../classname}}{{../classname}}{{else}}{{parent.name}}{{/if}}.html#attr_{{name}}">
             {{name}}
           </a>
@@ -43,7 +43,7 @@
     <h3>{{i18n.sidebar.METHODS}}</h3>
     <ul class="apis members api-members">
       {{#members.methods}}
-        <li class="{{access}}">
+        <li class="{{access}}{{#if deprecated}} deprecated{{/if}}">
           <a class="name" href="{{@root/base}}/{{parent.type}}/{{#if ../classname}}{{../classname}}{{else}}{{parent.name}}{{/if}}.html#method_{{name}}">
             {{name}}
           </a>
