@@ -19,7 +19,7 @@
       <hr class="sidebar-divider">
       {{#globals.classes}}
         {{#is_not access 'private' }}
-        <li>
+          <li style="{{#if hide}}display:none{{/if}}" class="{{#if hide}}hide-in-sidebar{{/if}}">
           <div class="api-list-item-clickable wave-btn">
             <a class="class"
               href="{{@root.base}}/classes/{{name}}.html"

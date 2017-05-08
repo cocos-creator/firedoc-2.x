@@ -117,13 +117,18 @@ $(document).ready(function () {
             r.parent.this.find('.members-list').removeClass('hidden');
           }
         } else {
+          if (r.this.hasClass('hide-in-sidebar')) {
+            r.this.css('display', 'none');
+          }
           r.this.find('.members-list').addClass('hidden');
         }
         return true;
       }
     }).map(function (r) {
       if (r.parent) {
-        r.parent.this.show();
+        if (!r.parent.this.hasClass('hide-in-sidebar')) {
+          r.parent.this.show();
+        }
       }
       return r;
     });
