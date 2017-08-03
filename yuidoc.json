@@ -5,7 +5,8 @@
   "url": "http://cocos.com/creator",
   "logo": "",
   "options": {
-    "outdir": "../../creator-api-doc/zh",
+    "version": "1.5.x",
+    "outdir": "../../creator-api-doc/en",
     "sourceURL": {
         "org": "cocos-creator",
         "repo": "engine",

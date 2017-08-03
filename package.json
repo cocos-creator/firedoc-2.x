@@ -103,7 +103,8 @@
   "scripts": {
     "docs": "make docs",
     "test": "make test.nocoverage",
-    "build-api": "node ./bin/firedoc.js build -M --lang zh"
+    "build-api": "node ./bin/firedoc.js build -M --lang zh",
+    "build-api-en": "node ./bin/firedoc.js build -M --lang en"    
   },
   "preferGlobal": "true",
   "licenses": [

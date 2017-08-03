@@ -37,24 +37,27 @@ This module is deprecated.
 {{{.}}}
 {{/example}}
 
-{{#if classes}}
+{{#if hasClasses}}
 ### Classes
+
   {{#classes}}
   - [{{name}}](../classes/{{name}}.md)
   {{/classes}}
 {{/if}}
 
-{{#if meta.enums}}
+{{#if hasEnum}}
 ### Enums
-  {{#meta.enums}}
-  {{#if is_enum}}
+
+  {{#classes}}
+  {{#if isEnum}}
   - [{{name}}](../enums/{{name}}.md)
   {{/if}}
-  {{/meta.enums}}
+  {{/classes}}
 {{/if}}
 
 {{#if subModules}}
 ### Sub Modules
+
   {{#subModules}}
   - [{{name}}]({{name}}.md) {{{description}}}
   {{/subModules}}

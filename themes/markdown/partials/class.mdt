@@ -1,7 +1,7 @@
 ## `{{name}}` Class
 
 {{#if extends}}
-Extends `{{extends}}`
+Extends [`{{extends}}`]({{extends}}.md)
 {{/if}}
 
 {{#if foundAt}}
