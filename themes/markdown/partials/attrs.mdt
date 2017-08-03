@@ -7,7 +7,7 @@
 {{#if extended_from}}
 > Inherited from `{{extended_from}}`
 {{/if}}
-Defined in `{{{file}}}:{{{line}}}`
+Defined in [{{getSourceFile file}}:{{{line}}}]({{getSourceFile file}}#L{{{line}}})
 {{/if}}
 
 {{#if deprecationMessage}}

@@ -39,39 +39,3 @@
 {{/members.events}}
 
 {{/if}}
-
-{{#if members.inherited}}
-
-### Inherited members
-
-##### Properties
-
-{{#members.inherited.properties}}
-- [`{{name}}`](#{{markdownLink}})
-{{/members.inherited.properties}}
-
-##### Attributes
-
-{{#members.inherited.attributes}}
-- [`{{name}}`](#{{markdownLink}})
-{{/members.inherited.attributes}}
-
-##### Methods
-
-{{#members.inherited.methods}}
-- [`{{methodName}}`](#{{markdownLink}})
-{{/members.inherited.methods}}
-
-##### Events
-
-{{#members.inherited.events}}
-- [`{{name}}`](#{{markdownLink}})
-{{/members.inherited.events}}
-
-{{/if}}
-
-{{#if children}}
-
-### Inheritance tree
-
-{{/if}}
