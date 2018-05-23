@@ -1,11 +1,11 @@
-### `{{name}}` Class
+## `{{name}}` Class
 
 {{#if extends}}
-Extends `{{extends}}`
+Extends [`{{extends}}`]({{extends}}.md)
 {{/if}}
 
 {{#if foundAt}}
-Defined in: [{{{file}}}:{{{line}}}](../files/{{{file}}}.js)
+Defined in: [{{getSourceFile file}}:{{{line}}}]({{getSourceFile file}}#L{{{line}}})
 {{/if}}
 
 {{#if module}}

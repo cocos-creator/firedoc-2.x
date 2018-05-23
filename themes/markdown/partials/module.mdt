@@ -15,7 +15,7 @@
 {{/if}}
 
 {{#if foundAt}}
-Defined in [{{{file}}}:{{{line}}}]({{foundAt}})
+Defined in [{{getSourceFile file}}:{{{line}}}]({{getSourceFile file}}#L{{{line}}})
 {{/if}}
 
 {{#if since}}
@@ -37,17 +37,19 @@ This module is deprecated.
 {{{.}}}
 {{/example}}
 
-{{#if classes}}
+{{#if hasClasses}}
 ### Classes
+
   {{#classes}}
   - [{{name}}](../classes/{{name}}.md)
   {{/classes}}
 {{/if}}
 
-{{#if classes}}
+{{#if hasEnum}}
 ### Enums
+
   {{#classes}}
-  {{#if is_enum}}
+  {{#if isEnum}}
   - [{{name}}](../enums/{{name}}.md)
   {{/if}}
   {{/classes}}
@@ -55,12 +57,59 @@ This module is deprecated.
 
 {{#if subModules}}
 ### Sub Modules
+
   {{#subModules}}
   - [{{name}}]({{name}}.md) {{{description}}}
   {{/subModules}}
 {{/if}}
 
 {{#if members}}
-### Direct Members
 {{> items-index}}
+{{/if}}
+
+### Details
+
+{{#if members.properties}}
+
+#### Properties
+
+{{#members.properties}}
+{{> props}}
+{{/members.properties}}
+
+{{/if}}
+
+{{#if members.attributes}}
+
+#### Attributes
+
+{{#members.attributes}}
+{{> attrs}}
+{{/members.attributes}}
+
+{{/if}}
+
+{{#if members.methods}}
+
+<!-- Method Block -->
+#### Methods
+
+{{#is_constructor}}
+##### Constructor
+{{> method}}
+{{/is_constructor}}
+{{#members.methods}}
+{{> method}}
+{{/members.methods}}
+
+{{/if}}
+
+{{#if members.events}}
+
+#### Events
+
+{{#members.events}}
+{{> events}}
+{{/members.events}}
+
 {{/if}}

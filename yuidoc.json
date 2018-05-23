@@ -1,0 +1,21 @@
+{
+  "name": "Cocos Creator API",
+  "description": "",
+  "version": "1.5.x",
+  "url": "http://cocos.com/creator",
+  "logo": "",
+  "options": {
+    "version": "1.5.x",
+    "outdir": "../../creator-api-doc/zh",
+    "sourceURL": {
+        "org": "cocos-creator",
+        "repo": "engine",
+        "branch": "master"
+    },
+    "linkNatives": true,
+    "paths": [
+        "../../fbnew/utils/api/engine"
+    ],
+    "tabtospace": 4
+  }
+}
