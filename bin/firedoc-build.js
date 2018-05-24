@@ -14,6 +14,7 @@ program
   .option('-L --lang <language>', 'the i18n language')
   .option('-v --verbose', 'print all verbose information')
   .option('-S --source', 'export source files and create links.')
+  .option('-C --commitId <id>', 'get the engine branch commit-id')
   .parse(process.argv);
 
 if (program.verbose) {
@@ -29,6 +30,7 @@ var doc = new Firedoc({
   dest: program.dest,
   lang: program.lang,
   theme: program.theme,
-  withSrc: program.source || false
+  withSrc: program.source || false,
+  commitId: program.commitId
 });
 doc.build();
