@@ -48,11 +48,9 @@ This module is deprecated.
 {{#if hasEnum}}
 ### Enums
 
-  {{#classes}}
-  {{#if isEnum}}
+  {{#enums}}
   - [{{name}}](../enums/{{name}}.md)
-  {{/if}}
-  {{/classes}}
+  {{/enums}}
 {{/if}}
 
 {{#if subModules}}
